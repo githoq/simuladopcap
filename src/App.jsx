@@ -445,11 +445,11 @@ const S={
     ...(v==="ghost"?{background:"rgba(255,255,255,0.08)",color:"#94a3b8",border:"1px solid rgba(255,255,255,0.1)"}:{}),
     ...(v==="danger"?{background:"rgba(239,68,68,0.1)",color:"#f87171",border:"1px solid rgba(239,68,68,0.3)"}:{}),
   }),
-  tag:(c="#6366f1")=>({padding:"3px 10px",borderRadius:6,fontSize:10,fontWeight:700,background:`${c}22`,color:c,border:`1px solid ${c}44`}),
+  tag:(c="#1e88e5")=>({padding:"3px 10px",borderRadius:6,fontSize:10,fontWeight:700,background:`${c}22`,color:c,border:`1px solid ${c}44`}),
 };
-function Badge({children,color="#6366f1"}){return <span style={S.tag(color)}>{children}</span>;}
-function Chip({label,value,icon,color="#6366f1"}){return(<div style={{...S.card,padding:"16px 18px",display:"flex",flexDirection:"column",gap:6}}><div style={{fontSize:22}}>{icon}</div><div style={{fontSize:26,fontWeight:900,color,fontFamily:"'Courier New',monospace"}}>{value}</div><div style={{fontSize:10,color:"#475569",fontWeight:600,textTransform:"uppercase",letterSpacing:1}}>{label}</div></div>);}
-function ProgressBar({value,color="#6366f1",height=6}){return(<div style={{height,borderRadius:height/2,background:"rgba(255,255,255,0.06)",overflow:"hidden"}}><div style={{height:"100%",width:`${Math.min(100,Math.max(0,value))}%`,background:color,borderRadius:height/2,transition:"width 0.6s ease"}}/></div>);}
+function Badge({children,color="#1e88e5"}){return <span style={S.tag(color)}>{children}</span>;}
+function Chip({label,value,icon,color="#1e88e5"}){return(<div style={{...S.card,padding:"16px 18px",display:"flex",flexDirection:"column",gap:6}}><div style={{fontSize:22}}>{icon}</div><div style={{fontSize:26,fontWeight:900,color,fontFamily:"'Courier New',monospace"}}>{value}</div><div style={{fontSize:10,color:"#475569",fontWeight:600,textTransform:"uppercase",letterSpacing:1}}>{label}</div></div>);}
+function ProgressBar({value,color="#1e88e5",height=6}){return(<div style={{height,borderRadius:height/2,background:"rgba(255,255,255,0.06)",overflow:"hidden"}}><div style={{height:"100%",width:`${Math.min(100,Math.max(0,value))}%`,background:color,borderRadius:height/2,transition:"width 0.6s ease"}}/></div>);}
 
 /* LOADING SCREEN */
 /* ═══════════════════════════════════════════════════════════════
@@ -457,7 +457,7 @@ function ProgressBar({value,color="#6366f1",height=6}){return(<div style={{heigh
 ═══════════════════════════════════════════════════════════════ */
 function QuestionCard({q, numero, interactive=false, userAnswer=null, onAnswer=null, showResult=false, compact=false}){
   const di=DISCIPLINE_ORDER.indexOf(q.disciplina);
-  const dc=DISC_COLORS[di>=0?di:0]||"#818cf8";
+  const dc=DISC_COLORS[di>=0?di:0]||"#64b5f6";
 
   /* Build header text */
   const hdr=q.cabecalho||(([q.banca,q.orgao,q.cargo,q.ano].filter(Boolean).join(' — '))||null);
@@ -481,7 +481,6 @@ function QuestionCard({q, numero, interactive=false, userAnswer=null, onAnswer=n
       s=s.replace(/^<em>([\s\S]+)<\/em>$/,'<u>$1</u>');
     }
     return s;
-  };  return s.trim();
   };
 
   const qNum=numero||q.numero_original;
@@ -491,7 +490,7 @@ function QuestionCard({q, numero, interactive=false, userAnswer=null, onAnswer=n
     const isSelected=userAnswer===idx;
     const isCorrect=q.correta===idx;
     let bg="rgba(255,255,255,0.025)",bc="rgba(255,255,255,0.08)",col="#92aac8",lBg="rgba(200,167,93,0.08)",lCol="#c8a75d";
-    if(isSelected){bg="rgba(99,102,241,0.1)";bc="rgba(99,102,241,0.45)";col="#e2e8f0";lBg="rgba(99,102,241,0.25)";lCol="#818cf8";}
+    if(isSelected){bg="rgba(30,136,229,0.08)";bc="rgba(30,136,229,0.4)";col="#e2e8f0";lBg="rgba(30,136,229,0.2)";lCol="#64b5f6";}
     if(showResult&&isCorrect){bg="rgba(52,211,153,0.08)";bc="rgba(52,211,153,0.4)";col="#34d399";lBg="rgba(52,211,153,0.2)";lCol="#34d399";}
     if(showResult&&isSelected&&!isCorrect){bg="rgba(248,113,113,0.08)";bc="rgba(248,113,113,0.4)";col="#f87171";lBg="rgba(248,113,113,0.2)";lCol="#f87171";}
     return(
@@ -598,7 +597,7 @@ function LoadingScreen({progress,error}){
       <div style={{marginTop:16,color:"#536880",fontSize:11}}>Verifique se <code style={{color:"#c8a75d"}}>public/questions/database.json</code> existe.</div>
     </div>):(<>
       <div style={{maxWidth:280,width:"100%",height:4,borderRadius:2,background:"rgba(255,255,255,0.06)"}}>
-        <div style={{height:"100%",width:`${progress}%`,background:"linear-gradient(90deg,#6366f1,#38bdf8)",borderRadius:2,transition:"width 0.3s"}}/>
+        <div style={{height:"100%",width:`${progress}%`,background:"linear-gradient(90deg,#1e88e5,#38bdf8)",borderRadius:2,transition:"width 0.3s"}}/>
       </div>
       <div style={{fontSize:11,color:"#475569",fontFamily:"monospace"}}>Carregando banco de questões... {progress}%</div>
     </>)}
@@ -614,7 +613,7 @@ function NavBar({view,setView,qCount,resetHistory}){
       <div><div style={{fontSize:9,fontWeight:700,letterSpacing:4,color:"#c8a75d",fontFamily:"'JetBrains Mono','Courier New',monospace"}}>PC-AP</div><div style={{fontSize:8,color:"#475569",letterSpacing:1}}>SIMULADOS</div></div>
     </div>
     <div style={{display:"flex",gap:2,flex:1}}>
-      {items.map(n=>(<button key={n.id} onClick={()=>setView(n.id)} style={{padding:"6px 12px",borderRadius:8,border:"none",cursor:"pointer",fontSize:12,fontWeight:700,transition:"all 0.2s",background:view===n.id?"rgba(99,102,241,0.18)":"transparent",color:view===n.id?"#818cf8":"#475569",display:"flex",alignItems:"center",gap:5}}><span style={{fontSize:14}}>{n.icon}</span><span>{n.label}</span></button>))}
+      {items.map(n=>(<button key={n.id} onClick={()=>setView(n.id)} style={{padding:"6px 12px",borderRadius:8,border:"none",cursor:"pointer",fontSize:12,fontWeight:700,transition:"all 0.2s",background:view===n.id?"rgba(30,136,229,0.18)":"transparent",color:view===n.id?"#64b5f6":"#475569",display:"flex",alignItems:"center",gap:5}}><span style={{fontSize:14}}>{n.icon}</span><span>{n.label}</span></button>))}
     </div>
     <div style={{display:"flex",gap:8,alignItems:"center",flexShrink:0}}>
       <div style={{padding:"4px 10px",borderRadius:20,background:"rgba(56,189,248,0.1)",border:"1px solid rgba(56,189,248,0.2)",fontSize:10,color:"#c8a75d",fontWeight:700,fontFamily:"monospace"}}>{qCount} Q</div>
@@ -654,7 +653,7 @@ function HomeView({stats,history,setView,currentExam,dbInfo,dbUpdated}){
       <Chip icon="◈" label="No Banco" value={stats.total} color="#38bdf8"/>
       <Chip icon="✓" label="Realizadas" value={stats.used} color="#34d399"/>
       <Chip icon="%" label="Concluído" value={`${stats.percent}%`} color="#fbbf24"/>
-      <Chip icon="◎" label="Simulados" value={history.length} color="#818cf8"/>
+      <Chip icon="◎" label="Simulados" value={history.length} color="#64b5f6"/>
       {history.length>0&&<Chip icon="★" label="Média Geral" value={`${avg}%`} color={avg>=70?"#34d399":avg>=50?"#fbbf24":"#f87171"}/>}
     </div>
     <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:20}}>
@@ -699,7 +698,7 @@ function BankView({questions,usedIds,dbInfo}){
           const used=usedIds.includes(q.id);
           const isExp=expanded===q.id;
           const di=DISCIPLINE_ORDER.indexOf(q.disciplina);
-          const dc=DISC_COLORS[di>=0?di:0]||"#818cf8";
+          const dc=DISC_COLORS[di>=0?di:0]||"#64b5f6";
           const preview=(q.pergunta||"").replace(/<[^>]*>/g,"").slice(0,160);
           return(
             <div key={q.id} style={{opacity:used?.7:1,transition:"opacity 0.2s"}}>
@@ -721,8 +720,8 @@ function BankView({questions,usedIds,dbInfo}){
                 </div>
               ):(
                 /* ── Expanded full QuestionCard ── */
-                <div style={{border:"1px solid rgba(99,102,241,0.25)",borderRadius:14}}>
-                  <div style={{display:"flex",justifyContent:"space-between",alignItems:"center",padding:"8px 16px",background:"rgba(99,102,241,0.06)",borderBottom:"1px solid rgba(99,102,241,0.15)",borderRadius:"14px 14px 0 0"}}>
+                <div style={{border:"1px solid rgba(30,136,229,0.2)",borderRadius:14}}>
+                  <div style={{display:"flex",justifyContent:"space-between",alignItems:"center",padding:"8px 16px",background:"rgba(200,167,93,0.04)",borderBottom:"1px solid rgba(30,136,229,0.12)",borderRadius:"14px 14px 0 0"}}>
                     <div style={{display:"flex",gap:8,alignItems:"center"}}>
                       {used&&<Badge color="#f59e0b">✓ Já utilizada em simulado</Badge>}
                       <span style={{fontSize:9,color:"#c8a75d",fontFamily:"'JetBrains Mono',monospace"}}>ID: {q.id}</span>
@@ -776,7 +775,7 @@ function GeneratorView({questions,usedIds,startExam,notify}){
       <div style={{fontSize:10,fontWeight:700,color:"#c8a75d",letterSpacing:3,fontFamily:"'JetBrains Mono',monospace",marginBottom:16}}>QUESTÕES POR DISCIPLINA</div>
       <div style={{display:"flex",flexDirection:"column",gap:8}}>
         {DISCIPLINE_ORDER.map((d,i)=>{const v=cfg.disciplineConfig[d]||0;const av=avail[d]||0;const tot=allAvail[d]||0;const active=v>0;return(
-          <div key={d} style={{display:"flex",alignItems:"center",gap:10,padding:"10px 14px",borderRadius:10,background:active?"rgba(99,102,241,0.07)":"rgba(255,255,255,0.02)",border:`1px solid ${active?"rgba(99,102,241,0.2)":"rgba(255,255,255,0.05)"}`}}>
+          <div key={d} style={{display:"flex",alignItems:"center",gap:10,padding:"10px 14px",borderRadius:10,background:active?"rgba(30,136,229,0.07)":"rgba(255,255,255,0.02)",border:`1px solid ${active?"rgba(30,136,229,0.15)":"rgba(255,255,255,0.05)"}`}}>
             <div style={{width:7,height:7,borderRadius:"50%",background:DISC_COLORS[i],flexShrink:0}}/>
             <span style={{flex:1,fontSize:12,fontWeight:600,color:active?"#e2e8f0":"#475569"}}>{d}</span>
             <span style={{fontSize:10,color:"#c8a75d",fontFamily:"'JetBrains Mono',monospace",minWidth:70,textAlign:"right"}}>{av}/{tot} livre</span>
@@ -788,9 +787,9 @@ function GeneratorView({questions,usedIds,startExam,notify}){
             {av===0&&tot>0&&<span style={{fontSize:9,color:"#f59e0b"}}>★ Esgotado</span>}
             {tot===0&&<span style={{fontSize:9,color:"#536880"}}>Sem questões</span>}
           </div>);})}
-        <div style={{display:"flex",justifyContent:"space-between",alignItems:"center",padding:"12px 14px",borderRadius:10,background:"rgba(99,102,241,0.1)",border:"1px solid rgba(99,102,241,0.25)",marginTop:4}}>
-          <span style={{fontSize:12,fontWeight:700,color:"#818cf8",fontFamily:"monospace"}}>TOTAL DE QUESTÕES</span>
-          <span style={{fontSize:28,fontWeight:900,color:"#6366f1",fontFamily:"monospace"}}>{total}</span>
+        <div style={{display:"flex",justifyContent:"space-between",alignItems:"center",padding:"12px 14px",borderRadius:10,background:"rgba(30,136,229,0.08)",border:"1px solid rgba(30,136,229,0.2)",marginTop:4}}>
+          <span style={{fontSize:12,fontWeight:700,color:"#64b5f6",fontFamily:"monospace"}}>TOTAL DE QUESTÕES</span>
+          <span style={{fontSize:28,fontWeight:900,color:"#1e88e5",fontFamily:"monospace"}}>{total}</span>
         </div>
       </div>
     </div>
@@ -800,7 +799,7 @@ function GeneratorView({questions,usedIds,startExam,notify}){
         <div><div style={{fontSize:10,color:"#475569",fontWeight:700,marginBottom:10,letterSpacing:1}}>MODO</div>
           <div style={{display:"flex",gap:8}}>
             {[{v:"prova",icon:"🏆",l:"PROVA",d:"Gabarito no final"},{v:"treino",icon:"📖",l:"TREINO",d:"Feedback imediato"}].map(m=>(
-              <button key={m.v} onClick={()=>setCfg(p=>({...p,mode:m.v}))} style={{flex:1,padding:"10px 8px",borderRadius:10,cursor:"pointer",textAlign:"center",border:`1px solid ${cfg.mode===m.v?"rgba(99,102,241,0.5)":"rgba(255,255,255,0.07)"}`,background:cfg.mode===m.v?"rgba(99,102,241,0.15)":"rgba(255,255,255,0.02)",color:cfg.mode===m.v?"#818cf8":"#475569"}}>
+              <button key={m.v} onClick={()=>setCfg(p=>({...p,mode:m.v}))} style={{flex:1,padding:"10px 8px",borderRadius:10,cursor:"pointer",textAlign:"center",border:`1px solid ${cfg.mode===m.v?"rgba(30,136,229,0.45)":"rgba(255,255,255,0.07)"}`,background:cfg.mode===m.v?"rgba(30,136,229,0.12)":"rgba(255,255,255,0.02)",color:cfg.mode===m.v?"#64b5f6":"#475569"}}>
                 <div style={{fontSize:20,marginBottom:4}}>{m.icon}</div><div style={{fontSize:10,fontWeight:700,letterSpacing:1}}>{m.l}</div><div style={{fontSize:9,marginTop:2,opacity:.7}}>{m.d}</div>
               </button>))}
           </div>
@@ -812,7 +811,7 @@ function GeneratorView({questions,usedIds,startExam,notify}){
       </div>
     </div>
     {!previewExam?(
-      <button onClick={handle} disabled={total===0} style={{width:"100%",padding:"16px",borderRadius:14,border:"none",fontWeight:800,fontSize:15,cursor:total===0?"not-allowed":"pointer",transition:"all 0.3s",fontFamily:"monospace",letterSpacing:1,background:total===0?"rgba(99,102,241,0.1)":"linear-gradient(135deg,#4f46e5,#6366f1,#818cf8)",color:total===0?"#334155":"#fff",boxShadow:total>0?"0 8px 32px rgba(99,102,241,0.4)":"none"}}>
+      <button onClick={handle} disabled={total===0} style={{width:"100%",padding:"16px",borderRadius:14,border:"none",fontWeight:800,fontSize:15,cursor:total===0?"not-allowed":"pointer",transition:"all 0.3s",fontFamily:"monospace",letterSpacing:1,background:total===0?"rgba(30,136,229,0.08)":"linear-gradient(135deg,#4f46e5,#1e88e5,#64b5f6)",color:total===0?"#334155":"#fff",boxShadow:total>0?"0 8px 32px rgba(30,136,229,0.35)":"none"}}>
         {total===0?"— Configure as disciplinas acima —":`⚡ GERAR SIMULADO • ${total} QUESTÕES`}
       </button>
     ):(
@@ -863,7 +862,7 @@ function ExamView({exam,finishExam,setView}){
           <button onClick={()=>setShowConfirm(true)} style={{...S.btn("primary"),padding:"6px 16px",fontSize:12}}>✔ Finalizar</button>
         </div>
       </div>
-      <div style={{maxWidth:900,margin:"6px auto 0",height:3,background:"rgba(255,255,255,0.04)",borderRadius:2}}><div style={{height:"100%",width:`${pct}%`,background:`linear-gradient(90deg,${dc},#6366f1)`,borderRadius:2,transition:"width 0.4s"}}/></div>
+      <div style={{maxWidth:900,margin:"6px auto 0",height:3,background:"rgba(255,255,255,0.04)",borderRadius:2}}><div style={{height:"100%",width:`${pct}%`,background:`linear-gradient(90deg,${dc},#1e88e5)`,borderRadius:2,transition:"width 0.4s"}}/></div>
     </div>
     <div style={{maxWidth:900,margin:"0 auto",padding:"20px 16px",flex:1,display:"flex",gap:20,width:"100%",boxSizing:"border-box"}}>
       <div style={{flex:1,minWidth:0,minHeight:0}}>
@@ -910,7 +909,7 @@ function ExamView({exam,finishExam,setView}){
       </div>)}
     </div>
     {showConfirm&&(<div style={{position:"fixed",inset:0,background:"rgba(0,0,0,0.75)",backdropFilter:"blur(10px)",display:"flex",alignItems:"center",justifyContent:"center",zIndex:200,padding:20}}>
-      <div style={{...S.card,padding:32,maxWidth:380,width:"100%",textAlign:"center",borderColor:"rgba(99,102,241,0.3)"}}>
+      <div style={{...S.card,padding:32,maxWidth:380,width:"100%",textAlign:"center",borderColor:"rgba(30,136,229,0.25)"}}>
         <div style={{fontSize:52,marginBottom:16}}>🏁</div>
         <h3 style={{margin:"0 0 10px",fontSize:18,fontWeight:900,fontFamily:"monospace"}}>FINALIZAR SIMULADO?</h3>
         <p style={{color:"#536880",fontSize:13,margin:"0 0 6px"}}>{answered}/{total} questões respondidas</p>
@@ -944,7 +943,7 @@ function ResultsView({results,setView}){
     </div>
     <div style={{display:"flex",gap:4,marginBottom:20,borderBottom:"1px solid rgba(255,255,255,0.06)"}}>
       {[{id:"overview",l:"📊 Visão Geral"},{id:"review",l:"🔍 Revisão"},{id:"chart",l:"📈 Gráfico"}].map(t=>(
-        <button key={t.id} onClick={()=>setTab(t.id)} style={{padding:"8px 16px",borderRadius:"8px 8px 0 0",border:"none",cursor:"pointer",fontSize:12,fontWeight:700,transition:"all 0.2s",background:tab===t.id?"rgba(99,102,241,0.15)":"transparent",color:tab===t.id?"#818cf8":"#475569",borderBottom:tab===t.id?"2px solid #6366f1":"2px solid transparent"}}>{t.l}</button>))}
+        <button key={t.id} onClick={()=>setTab(t.id)} style={{padding:"8px 16px",borderRadius:"8px 8px 0 0",border:"none",cursor:"pointer",fontSize:12,fontWeight:700,transition:"all 0.2s",background:tab===t.id?"rgba(30,136,229,0.12)":"transparent",color:tab===t.id?"#64b5f6":"#475569",borderBottom:tab===t.id?"2px solid #1e88e5":"2px solid transparent"}}>{t.l}</button>))}
     </div>
     {tab==="overview"&&(<div style={{display:"flex",flexDirection:"column",gap:10}}>
       {discRows.map(r=>(<div key={r.d} style={{...S.card,padding:"12px 16px"}}>
@@ -952,7 +951,7 @@ function ResultsView({results,setView}){
         <ProgressBar value={r.pct} color={r.pct>=70?"#34d399":r.pct>=50?"#fbbf24":"#f87171"} height={5}/>
       </div>))}
     </div>)}
-    {tab==="chart"&&(<div style={{...S.card,padding:20}}><div style={{height:280}}><ResponsiveContainer width="100%" height="100%"><BarChart data={chartData} margin={{top:5,right:10,left:-20,bottom:50}}><CartesianGrid strokeDasharray="3 3" stroke="rgba(255,255,255,0.04)"/><XAxis dataKey="name" tick={{fill:"#475569",fontSize:9}} angle={-35} textAnchor="end" interval={0}/><YAxis tick={{fill:"#475569",fontSize:10}}/><Tooltip contentStyle={{background:"#0f1729",border:"1px solid rgba(99,102,241,0.3)",borderRadius:8,color:"#e2e8f0",fontSize:12}}/><Bar dataKey="acertos" name="Acertos" fill="#34d399" radius={[4,4,0,0]}/><Bar dataKey="erros" name="Erros" fill="#f87171" radius={[4,4,0,0]}/></BarChart></ResponsiveContainer></div></div>)}
+    {tab==="chart"&&(<div style={{...S.card,padding:20}}><div style={{height:280}}><ResponsiveContainer width="100%" height="100%"><BarChart data={chartData} margin={{top:5,right:10,left:-20,bottom:50}}><CartesianGrid strokeDasharray="3 3" stroke="rgba(255,255,255,0.04)"/><XAxis dataKey="name" tick={{fill:"#475569",fontSize:9}} angle={-35} textAnchor="end" interval={0}/><YAxis tick={{fill:"#475569",fontSize:10}}/><Tooltip contentStyle={{background:"#0f1729",border:"1px solid rgba(30,136,229,0.25)",borderRadius:8,color:"#e2e8f0",fontSize:12}}/><Bar dataKey="acertos" name="Acertos" fill="#34d399" radius={[4,4,0,0]}/><Bar dataKey="erros" name="Erros" fill="#f87171" radius={[4,4,0,0]}/></BarChart></ResponsiveContainer></div></div>)}
     {tab==="review"&&(<div style={{display:"flex",flexDirection:"column",gap:8}}>
       {results.questions.map(q=>{const ua=results.answers[q.numero_simulado];const ok=ua===q.correta;const blank=ua===undefined||ua===null;const bc=blank?"#475569":ok?"#34d399":"#f87171";const di2=DISCIPLINE_ORDER.indexOf(q.disciplina);return(
         <div key={q.id||q.numero_simulado} style={{...S.card,padding:"12px 16px",borderLeft:`3px solid ${bc}`}}>
@@ -962,7 +961,7 @@ function ResultsView({results,setView}){
               <div style={{display:"flex",gap:6,marginBottom:5,flexWrap:"wrap"}}><span style={{fontSize:10,color:"#c8a75d",fontWeight:700,fontFamily:"monospace"}}>Q{q.numero_simulado}</span><Badge color={DISC_COLORS[di2>=0?di2:0]}>{q.disciplina}</Badge></div>
               <p style={{fontSize:12,color:"#94a3b8",margin:"0 0 7px",lineHeight:1.5}}>{q.pergunta?.slice(0,200)}{q.pergunta?.length>200?"...":""}</p>
               <div style={{display:"flex",gap:10,flexWrap:"wrap"}}><span style={{fontSize:11,color:"#34d399",fontWeight:700}}>Gabarito: {LETTERS[q.correta]||"?"}</span>{!blank&&!ok&&<span style={{fontSize:11,color:"#f87171",fontWeight:700}}>Sua resp.: {LETTERS[ua]||"?"}</span>}{blank&&<span style={{fontSize:11,color:"#475569"}}>Não respondida</span>}</div>
-              {q.linkTec&&<a href={q.linkTec} target="_blank" rel="noopener noreferrer" style={{display:"inline-flex",gap:4,fontSize:10,color:"#6366f1",textDecoration:"none",marginTop:6}}>🔗 TEC Concursos</a>}
+              {q.linkTec&&<a href={q.linkTec} target="_blank" rel="noopener noreferrer" style={{display:"inline-flex",gap:4,fontSize:10,color:"#1e88e5",textDecoration:"none",marginTop:6}}>🔗 TEC Concursos</a>}
             </div>
           </div>
         </div>);})}
@@ -983,7 +982,7 @@ function HistoryView({history,setView,setExamResults}){
     <h2 style={{fontSize:22,fontWeight:900,margin:"0 0 6px",fontFamily:"monospace"}}>◎ HISTÓRICO</h2>
     <p style={{color:"#8fb5cc",fontSize:13,marginBottom:20}}>{history.length} simulados • Média: {avg}% • Melhor: {best}%</p>
     <div style={{display:"grid",gridTemplateColumns:"repeat(3,1fr)",gap:14,marginBottom:24}}>
-      <Chip icon="◎" label="Total Simulados" value={history.length} color="#818cf8"/>
+      <Chip icon="◎" label="Total Simulados" value={history.length} color="#64b5f6"/>
       <Chip icon="★" label="Média Geral" value={`${avg}%`} color={avg>=70?"#34d399":avg>=50?"#fbbf24":"#f87171"}/>
       <Chip icon="▲" label="Melhor Nota" value={`${best}%`} color="#38bdf8"/>
     </div>
@@ -1071,12 +1070,12 @@ export default function App(){
     default:return <HomeView stats={stats} history={history} setView={setView} currentExam={currentExam} dbInfo={dbInfo} dbUpdated={dbUpdated}/>;
   }};
 
-  return(<div style={{minHeight:"100vh",background:"radial-gradient(ellipse at 20% 20%,#0d1930 0%,#080c1a 50%,#04060e 100%)",color:"#e2e8f0",fontFamily:"'Segoe UI','Helvetica Neue',system-ui,sans-serif"}}>
-    <div style={{position:"fixed",inset:0,pointerEvents:"none",zIndex:0,opacity:.4}}><div style={{position:"absolute",inset:0,backgroundImage:"linear-gradient(rgba(56,189,248,0.03) 1px,transparent 1px),linear-gradient(90deg,rgba(56,189,248,0.03) 1px,transparent 1px)",backgroundSize:"60px 60px"}}/></div>
-    <div style={{position:"fixed",inset:0,pointerEvents:"none",zIndex:0}}><div style={{position:"absolute",top:"5%",left:"10%",width:500,height:500,borderRadius:"50%",background:"radial-gradient(circle,rgba(99,102,241,0.06) 0%,transparent 70%)"}}/><div style={{position:"absolute",bottom:"10%",right:"5%",width:400,height:400,borderRadius:"50%",background:"radial-gradient(circle,rgba(56,189,248,0.04) 0%,transparent 70%)"}}/></div>
+  return(<div style={{minHeight:"100vh",background:"radial-gradient(ellipse 120% 80% at 20% 20%,#07111f 0%,#05070e 50%,#030508 100%)",color:"#eef1f7",fontFamily:"'Barlow','Segoe UI','Helvetica Neue',system-ui,sans-serif"}}>
+    <div style={{position:"fixed",inset:0,pointerEvents:"none",zIndex:0,opacity:.4}}><div style={{position:"absolute",inset:0,backgroundImage:"linear-gradient(rgba(200,167,93,0.025) 1px,transparent 1px),linear-gradient(90deg,rgba(200,167,93,0.025) 1px,transparent 1px)",backgroundSize:"60px 60px"}}/></div>
+    <div style={{position:"fixed",inset:0,pointerEvents:"none",zIndex:0}}><div style={{position:"absolute",top:"5%",left:"10%",width:500,height:500,borderRadius:"50%",background:"radial-gradient(circle,rgba(200,167,93,0.04) 0%,transparent 70%)"}}/><div style={{position:"absolute",bottom:"10%",right:"5%",width:400,height:400,borderRadius:"50%",background:"radial-gradient(circle,rgba(30,136,229,0.04) 0%,transparent 70%)"}}/></div>
     {toast&&(<div style={{position:"fixed",top:70,right:20,zIndex:9999,padding:"11px 18px",borderRadius:12,background:toast.type==="error"?"rgba(239,68,68,0.92)":"rgba(16,185,129,0.92)",backdropFilter:"blur(12px)",color:"#fff",fontWeight:700,fontSize:13,boxShadow:"0 8px 32px rgba(0,0,0,.4)",border:"1px solid rgba(255,255,255,0.15)",animation:"slideIn 0.3s ease"}}>{toast.msg}</div>)}
     {view!=="exam"&&<NavBar view={view} setView={setView} qCount={questions.length} resetHistory={resetHistory}/>}
     <div style={{position:"relative",zIndex:1,paddingTop:view!=="exam"?58:0}}>{render()}</div>
-    <style>{`*{box-sizing:border-box}::-webkit-scrollbar{width:6px;height:6px}::-webkit-scrollbar-track{background:rgba(255,255,255,0.02)}::-webkit-scrollbar-thumb{background:rgba(99,102,241,0.3);border-radius:3px}input:focus,select:focus{border-color:rgba(99,102,241,0.5)!important;box-shadow:0 0 0 2px rgba(99,102,241,0.15)}@keyframes slideIn{from{transform:translateX(20px);opacity:0}to{transform:translateX(0);opacity:1}}@keyframes pulse{0%,100%{box-shadow:0 0 0 0 rgba(245,158,11,.4)}50%{box-shadow:0 0 0 10px rgba(245,158,11,0)}}`}</style>
+    <style>{`*{box-sizing:border-box}::-webkit-scrollbar{width:6px;height:6px}::-webkit-scrollbar-track{background:rgba(0,0,0,0.3)}::-webkit-scrollbar-thumb{background:rgba(200,167,93,0.25);border-radius:3px}::-webkit-scrollbar-thumb:hover{background:rgba(200,167,93,0.45)}input:focus,select:focus{border-color:rgba(30,136,229,0.5)!important;box-shadow:0 0 0 2px rgba(30,136,229,0.12)}@keyframes slideIn{from{transform:translateX(20px);opacity:0}to{transform:translateX(0);opacity:1}}@keyframes pulse{0%,100%{box-shadow:0 0 0 0 rgba(200,167,93,0.3)}50%{box-shadow:0 0 0 8px rgba(200,167,93,0)}}@keyframes pulseGold{0%,100%{opacity:0.5}50%{opacity:1}}button:hover{filter:brightness(1.08)}`}</style>
   </div>);
 }
