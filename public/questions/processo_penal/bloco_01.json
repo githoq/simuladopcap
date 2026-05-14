@@ -1,0 +1,74 @@
+[
+  {
+    "id": "fcc_proc_2024_001",
+    "disciplina": "Noções de Direito Processual Penal",
+    "assunto": "Inquérito Policial",
+    "banca": "FCC",
+    "ano": 2024,
+    "orgao": "PC-AP",
+    "pergunta": "O inquérito policial é caracterizado por ser:",
+    "alternativas": [
+      "A) judicial, acusatório e público",
+      "B) extrajudicial, inquisitório e sigiloso",
+      "C) extrajudicial, acusatório e público",
+      "D) judicial, inquisitório e sigiloso",
+      "E) judicial, inquisitório e público"
+    ],
+    "correta": 1,
+    "linkTec": ""
+  },
+  {
+    "id": "fcc_proc_2023_001",
+    "disciplina": "Noções de Direito Processual Penal",
+    "assunto": "Prisão em Flagrante",
+    "banca": "FCC",
+    "ano": 2023,
+    "orgao": "PC-AP",
+    "pergunta": "A prisão em flagrante pode ser realizada por:",
+    "alternativas": [
+      "A) qualquer do povo ou autoridade policial",
+      "B) apenas pela autoridade policial",
+      "C) apenas pelo Ministério Público",
+      "D) apenas pelo juiz de direito",
+      "E) qualquer funcionário público"
+    ],
+    "correta": 0,
+    "linkTec": ""
+  },
+  {
+    "id": "fcc_proc_2022_001",
+    "disciplina": "Noções de Direito Processual Penal",
+    "assunto": "Ação Penal",
+    "banca": "FCC",
+    "ano": 2022,
+    "orgao": "PC-AP",
+    "pergunta": "A ação penal pública incondicionada é promovida pelo:",
+    "alternativas": [
+      "A) ofendido ou seus representantes",
+      "B) Ministério Público, independentemente de representação",
+      "C) Ministério Público, mediante representação do ofendido",
+      "D) Delegado de Polícia",
+      "E) Juiz de ofício"
+    ],
+    "correta": 1,
+    "linkTec": ""
+  },
+  {
+    "id": "fcc_proc_2021_001",
+    "disciplina": "Noções de Direito Processual Penal",
+    "assunto": "Provas",
+    "banca": "FCC",
+    "ano": 2021,
+    "orgao": "PC-AP",
+    "pergunta": "São inadmissíveis no processo penal as provas:",
+    "alternativas": [
+      "A) obtidas por meios lícitos",
+      "B) produzidas no inquérito policial",
+      "C) obtidas por meios ilícitos",
+      "D) produzidas antecipadamente",
+      "E) emprestadas de outro processo"
+    ],
+    "correta": 2,
+    "linkTec": ""
+  }
+]
