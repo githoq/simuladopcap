@@ -1,0 +1,92 @@
+[
+  {
+    "id": "fcc_port_2024_001",
+    "disciplina": "Língua Portuguesa",
+    "assunto": "Interpretação de Texto",
+    "banca": "FCC",
+    "ano": 2024,
+    "orgao": "PC-AP",
+    "pergunta": "Leia o fragmento: 'A leitura é a porta pela qual o conhecimento adentra a mente humana'. O termo 'adentra' significa:",
+    "alternativas": [
+      "A) sai",
+      "B) entra",
+      "C) permanece",
+      "D) bloqueia",
+      "E) fragmenta"
+    ],
+    "correta": 1,
+    "linkTec": ""
+  },
+  {
+    "id": "fcc_port_2024_002",
+    "disciplina": "Língua Portuguesa",
+    "assunto": "Ortografia",
+    "banca": "FCC",
+    "ano": 2024,
+    "orgao": "PC-AP",
+    "pergunta": "Assinale a alternativa em que todas as palavras estão grafadas corretamente:",
+    "alternativas": [
+      "A) excessão, beneficência, imprecindível",
+      "B) exceção, beneficência, imprescindível",
+      "C) excessão, benficência, imprescindível",
+      "D) exceção, beneficência, imprecindível",
+      "E) excesão, beneficência, imprescindível"
+    ],
+    "correta": 1,
+    "linkTec": ""
+  },
+  {
+    "id": "fcc_port_2023_001",
+    "disciplina": "Língua Portuguesa",
+    "assunto": "Concordância Verbal",
+    "banca": "FCC",
+    "ano": 2023,
+    "orgao": "PC-AP",
+    "pergunta": "Assinale a alternativa em que a concordância verbal está correta:",
+    "alternativas": [
+      "A) Fazem dois anos que não o vejo.",
+      "B) Houveram muitos problemas na investigação.",
+      "C) Existem poucos delegados naquela região.",
+      "D) Haviam provas suficientes para o indiciamento.",
+      "E) Faz muitos anos que ele trabalha na polícia."
+    ],
+    "correta": 2,
+    "linkTec": ""
+  },
+  {
+    "id": "fcc_port_2022_001",
+    "disciplina": "Língua Portuguesa",
+    "assunto": "Crase",
+    "banca": "FCC",
+    "ano": 2022,
+    "orgao": "PC-AP",
+    "pergunta": "Assinale a alternativa em que o emprego da crase está correto:",
+    "alternativas": [
+      "A) O policial referiu-se à ele durante o depoimento.",
+      "B) A delegada encaminhou o relatório à Corregedoria.",
+      "C) Compareça à partir das oito horas.",
+      "D) Entregou os documentos à mão própria.",
+      "E) O inquérito foi enviado à todos os delegados."
+    ],
+    "correta": 1,
+    "linkTec": ""
+  },
+  {
+    "id": "fcc_port_2021_001",
+    "disciplina": "Língua Portuguesa",
+    "assunto": "Pronomes",
+    "banca": "FCC",
+    "ano": 2021,
+    "orgao": "PC-AP",
+    "pergunta": "Em 'O delegado os notificou pessoalmente', o pronome 'os' exerce a função sintática de:",
+    "alternativas": [
+      "A) sujeito",
+      "B) objeto indireto",
+      "C) objeto direto",
+      "D) adjunto adverbial",
+      "E) complemento nominal"
+    ],
+    "correta": 2,
+    "linkTec": ""
+  }
+]
