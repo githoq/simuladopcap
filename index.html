@@ -8,15 +8,138 @@
     <meta name="description" content="Plataforma de Simulados para o concurso da Polícia Civil do Amapá — FCC" />
     <title>PC-AP Simulados</title>
     <style>
-      * { box-sizing: border-box; margin: 0; padding: 0; }
-      html, body, #root {
-        min-height: 100vh;
-        background: #080c1a;
-        color: #e2e8f0;
+      *, *::before, *::after { box-sizing: border-box; }
+      html, body, #root { min-height: 100vh; background: #080c1a; color: #e2e8f0; margin: 0; padding: 0; }
+      body { font-family: 'Segoe UI', 'Helvetica Neue', system-ui, sans-serif; -webkit-font-smoothing: antialiased; }
+
+      /* ═══════════════════════════════════════════════════════════
+         BASE HTML FORMATTING — applies to ALL fcc-html elements
+         ═══════════════════════════════════════════════════════════ */
+      .fcc-html em, .fcc-html i         { font-style: italic !important; }
+      .fcc-html strong, .fcc-html b     { font-weight: 700 !important; }
+      .fcc-html u                        { text-decoration: underline !important; }
+      .fcc-html s, .fcc-html del        { text-decoration: line-through; }
+      .fcc-html sup                      { vertical-align: super; font-size: 0.75em; }
+      .fcc-html sub                      { vertical-align: sub; font-size: 0.75em; }
+      .fcc-html p                        { margin: 0 0 0.65em 0; line-height: 1.8; }
+      .fcc-html p:last-child             { margin-bottom: 0; }
+      .fcc-html br                       { display: block; content: ''; }
+      .fcc-html blockquote               { margin: 0.5em 0 0.5em 1.8em; padding-left: 0.8em; border-left: 2px solid rgba(255,255,255,0.18); font-style: italic; }
+      .fcc-html ul, .fcc-html ol        { margin: 0.4em 0 0.4em 1.4em; }
+      .fcc-html li                       { margin-bottom: 0.2em; line-height: 1.65; }
+      .fcc-html table                    { border-collapse: collapse; width: 100%; margin: 0.6em 0; font-size: 0.9em; }
+      .fcc-html th, .fcc-html td        { border: 1px solid rgba(255,255,255,0.18); padding: 4px 9px; line-height: 1.5; }
+      .fcc-html th                       { font-weight: 700; background: rgba(255,255,255,0.05); }
+
+      /* ═══════════════════════════════════════════════════════════
+         TEXTO DE APOIO — bloco literário / texto da FCC
+         ═══════════════════════════════════════════════════════════ */
+      .fcc-apoio-wrap {
+        background: rgba(30, 58, 100, 0.35);
+        border: 1px solid rgba(56, 189, 248, 0.22);
+        border-left: 3px solid #38bdf8;
+        border-radius: 0 10px 10px 0;
+        padding: 14px 18px 12px;
+        margin-bottom: 0;              /* no gap — separator div handles it */
       }
-      body {
-        font-family: 'Segoe UI', 'Helvetica Neue', system-ui, sans-serif;
-        -webkit-font-smoothing: antialiased;
+
+      .fcc-apoio-titulo {
+        text-align: center;
+        font-weight: 700;
+        color: #e2e8f0;
+        font-size: 13.5px;
+        margin-bottom: 10px;
+        line-height: 1.45;
+      }
+      .fcc-apoio-titulo em, .fcc-apoio-titulo i     { font-style: italic !important; }
+      .fcc-apoio-titulo strong, .fcc-apoio-titulo b { font-weight: 700 !important; }
+
+      .fcc-apoio-body {
+        color: #b8c5d6;
+        font-size: 13px;
+        line-height: 1.85;
+      }
+      .fcc-apoio-body em, .fcc-apoio-body i         { font-style: italic !important; color: inherit; }
+      /* <strong> no apoio = grifado amarelo (highlight) da FCC */
+      .fcc-apoio-body strong, .fcc-apoio-body b     {
+        font-weight: 700 !important;
+        background: rgba(251, 210, 60, 0.28);
+        border-radius: 2px;
+        padding: 0 2px;
+        color: #e8d87a;
+      }
+      .fcc-apoio-body u                              { text-decoration: underline !important; }
+      .fcc-apoio-body p                              { margin: 0 0 0.6em 0; }
+      .fcc-apoio-body p:last-child                  { margin-bottom: 0; }
+      .fcc-apoio-body br + br                       { display: block; margin-top: 0.35em; }
+
+      /* ═══════════════════════════════════════════════════════════
+         SEPARADOR — linha divisória entre apoio e pergunta
+         ═══════════════════════════════════════════════════════════ */
+      .fcc-apoio-pergunta-divider {
+        height: 1px;
+        background: linear-gradient(to right, rgba(56,189,248,0.3), transparent);
+        margin: 16px 0 14px;
+      }
+
+      /* ═══════════════════════════════════════════════════════════
+         PERGUNTA PRINCIPAL — enunciado da questão
+         ═══════════════════════════════════════════════════════════ */
+      .fcc-pergunta-wrap {
+        margin-bottom: 14px;
+        padding-bottom: 14px;
+        border-bottom: 1px solid rgba(255,255,255,0.06);
+      }
+      /* Quando existe apoio, adiciona margem extra acima */
+      .fcc-apoio-wrap ~ .fcc-q-img-wrap + .fcc-pergunta-wrap,
+      .fcc-apoio-wrap ~ .fcc-pergunta-wrap {
+        margin-top: 4px;
+      }
+
+      .fcc-pergunta {
+        color: #f1f5f9;
+        font-size: 14px;
+        line-height: 1.82;
+        word-break: break-word;
+      }
+      .fcc-pergunta em, .fcc-pergunta i         { font-style: italic !important; }
+      .fcc-pergunta strong, .fcc-pergunta b     { font-weight: 700 !important; }
+      .fcc-pergunta u                            { text-decoration: underline !important; }
+      .fcc-pergunta p                            { margin: 0 0 0.5em 0; }
+
+      /* ═══════════════════════════════════════════════════════════
+         ALTERNATIVAS — texto das opções A–E
+         ═══════════════════════════════════════════════════════════ */
+      .fcc-alt-text {
+        font-size: 13.5px;
+        line-height: 1.65;
+        flex: 1;
+        padding-top: 2px;
+        word-break: break-word;
+      }
+      /* <em> em alternativas = expressão sublinhada da FCC */
+      .fcc-alt-text em, .fcc-alt-text i         {
+        font-style: normal !important;          /* remove itálico */
+        text-decoration: underline !important;  /* adiciona sublinhado */
+        text-underline-offset: 2px;
+      }
+      .fcc-alt-text strong, .fcc-alt-text b     { font-weight: 700 !important; }
+      .fcc-alt-text u                            { text-decoration: underline !important; }
+      .fcc-alt-text p                            { margin: 0; }
+
+      /* ═══════════════════════════════════════════════════════════
+         IMAGENS DAS QUESTÕES
+         ═══════════════════════════════════════════════════════════ */
+      .fcc-q-img-wrap { text-align: center; margin: 12px 0 14px; }
+      .fcc-q-img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+        margin: 0 auto;
+        border-radius: 8px;
+        border: 1px solid rgba(255,255,255,0.1);
+        object-fit: contain;
+        max-height: 500px;
       }
     </style>
   </head>
