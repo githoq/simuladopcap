@@ -22,6 +22,17 @@ const store = {
   del:(k)=>{try{localStorage.removeItem(k);}catch{}},
 };
 
+/* HTML SANITIZER — safe render of formatted question text */
+function sanitizeHTML(html){
+  if(!html||typeof html!=='string') return '';
+  return html
+    .replace(/<script[\s\S]*?<\/script>/gi,'')
+    .replace(/<iframe[\s\S]*?>/gi,'')
+    .replace(/on\w+="[^"]*"/gi,'')
+    .replace(/on\w+='[^']*'/gi,'')
+    .replace(/javascript:/gi,'#');
+}
+
 /* DATABASE LOADER */
 async function loadQuestionDatabase(onProgress) {
   const res = await fetch("/questions/database.json",{cache:"no-cache"});
@@ -358,6 +369,124 @@ function Chip({label,value,icon,color="#6366f1"}){return(<div style={{...S.card,
 function ProgressBar({value,color="#6366f1",height=6}){return(<div style={{height,borderRadius:height/2,background:"rgba(255,255,255,0.06)",overflow:"hidden"}}><div style={{height:"100%",width:`${Math.min(100,Math.max(0,value))}%`,background:color,borderRadius:height/2,transition:"width 0.6s ease"}}/></div>);}
 
 /* LOADING SCREEN */
+/* ═══════════════════════════════════════════════════════════════
+   QUESTION CARD — TecConcursos style rendering
+═══════════════════════════════════════════════════════════════ */
+function QuestionCard({q, numero, interactive=false, userAnswer=null, onAnswer=null, showResult=false, compact=false}){
+  const di=DISCIPLINE_ORDER.indexOf(q.disciplina);
+  const dc=DISC_COLORS[di>=0?di:0]||"#818cf8";
+
+  /* Build header text */
+  const hdr=q.cabecalho||(([q.banca,q.orgao,q.cargo,q.ano].filter(Boolean).join(' — '))||null);
+
+  /* Strip HTML tags for plain-text preview */
+  const stripTags=s=>(s||"").replace(/<[^>]*>/g,"").replace(/&lt;/g,"<").replace(/&gt;/g,">").replace(/&amp;/g,"&");
+
+  /* Alt text: remove leading "A) " prefix if already embedded in JSON */
+  const cleanAlt=(a,i)=>{
+    const s=a||"";
+    return s.replace(/^[A-Ea-e]\)\s*/,"");
+  };
+
+  const qNum=numero||q.numero_original;
+
+  /* ── alternative rendering ── */
+  const renderAlt=(alt,idx)=>{
+    const isSelected=userAnswer===idx;
+    const isCorrect=q.correta===idx;
+    let bg="rgba(255,255,255,0.025)",bc="rgba(255,255,255,0.08)",col="#94a3b8",lBg="rgba(255,255,255,0.05)",lCol="#475569";
+    if(isSelected){bg="rgba(99,102,241,0.1)";bc="rgba(99,102,241,0.45)";col="#e2e8f0";lBg="rgba(99,102,241,0.25)";lCol="#818cf8";}
+    if(showResult&&isCorrect){bg="rgba(52,211,153,0.08)";bc="rgba(52,211,153,0.4)";col="#34d399";lBg="rgba(52,211,153,0.2)";lCol="#34d399";}
+    if(showResult&&isSelected&&!isCorrect){bg="rgba(248,113,113,0.08)";bc="rgba(248,113,113,0.4)";col="#f87171";lBg="rgba(248,113,113,0.2)";lCol="#f87171";}
+    return(
+      <div key={idx}
+        onClick={interactive&&onAnswer?()=>onAnswer(idx):undefined}
+        style={{display:"flex",gap:10,alignItems:"flex-start",padding:"10px 14px",borderRadius:10,border:`1px solid ${bc}`,background:bg,color:col,cursor:interactive?"pointer":"default",transition:"all 0.18s",marginBottom:6}}>
+        <div style={{width:28,height:28,borderRadius:"50%",background:lBg,color:lCol,display:"flex",alignItems:"center",justifyContent:"center",fontWeight:900,fontSize:12,flexShrink:0,border:`1.5px solid ${bc}`,fontFamily:"Arial,sans-serif"}}>
+          {LETTERS[idx]}
+        </div>
+        <div style={{fontSize:13.5,lineHeight:1.65,flex:1,paddingTop:2}}
+          dangerouslySetInnerHTML={{__html:sanitizeHTML(cleanAlt(alt,idx))}}/>
+        {showResult&&isCorrect&&<span style={{color:"#34d399",fontSize:16,flexShrink:0,paddingTop:4}}>✓</span>}
+        {showResult&&isSelected&&!isCorrect&&<span style={{color:"#f87171",fontSize:16,flexShrink:0,paddingTop:4}}>✗</span>}
+      </div>
+    );
+  };
+
+  return(
+    <div style={{borderRadius:14,background:"rgba(255,255,255,0.025)",border:"1px solid rgba(255,255,255,0.07)",overflow:"hidden"}}>
+
+      {/* ── Header bar (FCC meta) ── */}
+      {hdr&&(
+        <div style={{background:"rgba(56,189,248,0.08)",borderBottom:"1px solid rgba(56,189,248,0.15)",padding:"7px 16px",display:"flex",alignItems:"center",gap:8}}>
+          <span style={{fontSize:10.5,color:"#64748b",fontFamily:"monospace",flex:1,overflow:"hidden",textOverflow:"ellipsis",whiteSpace:"nowrap"}}>
+            {qNum&&<strong style={{color:"#38bdf8",marginRight:6}}>#{qNum}</strong>}{hdr}
+          </span>
+          {q.linkTec&&(
+            <a href={q.linkTec} target="_blank" rel="noreferrer" style={{color:"#38bdf8",fontSize:13,textDecoration:"none",flexShrink:0}} title="Abrir no TEC Concursos">🔗</a>
+          )}
+        </div>
+      )}
+
+      <div style={{padding:"16px 18px"}}>
+
+        {/* ── Discipline / meta badges ── */}
+        <div style={{display:"flex",gap:6,marginBottom:14,flexWrap:"wrap",alignItems:"center"}}>
+          <Badge color={dc}>{q.disciplina}</Badge>
+          {q.assunto&&<Badge color="#475569">{q.assunto}</Badge>}
+          {q.ano&&<Badge color="#334155">{q.banca||"FCC"} · {q.ano}</Badge>}
+          {q.cargo&&<Badge color="#1e293b">{q.cargo}</Badge>}
+        </div>
+
+        {/* ── Texto de Apoio ── */}
+        {q.texto_apoio&&(
+          <div style={{background:"rgba(56,189,248,0.04)",border:"1px solid rgba(56,189,248,0.15)",borderLeft:"3px solid #38bdf8",borderRadius:"0 10px 10px 0",padding:"14px 16px",marginBottom:16}}>
+            {q.texto_apoio_titulo&&(
+              <div style={{textAlign:"center",fontWeight:700,color:"#e2e8f0",fontSize:13.5,marginBottom:10,lineHeight:1.4}}
+                dangerouslySetInnerHTML={{__html:sanitizeHTML(q.texto_apoio_titulo)}}/>
+            )}
+            <div style={{color:"#94a3b8",lineHeight:1.8,fontSize:12.5}}
+              dangerouslySetInnerHTML={{__html:sanitizeHTML(q.texto_apoio)}}/>
+          </div>
+        )}
+
+        {/* ── Image ── */}
+        {q.imagem&&(
+          <div style={{marginBottom:16,textAlign:"center"}}>
+            <img src={q.imagem} alt="Figura da questão"
+              style={{maxWidth:"100%",borderRadius:8,border:"1px solid rgba(255,255,255,0.1)",maxHeight:400,objectFit:"contain"}}
+              onError={e=>{e.target.style.display="none";}}/>
+          </div>
+        )}
+
+        {/* ── Question text ── */}
+        <div style={{marginBottom:14,paddingBottom:14,borderBottom:"1px solid rgba(255,255,255,0.05)"}}>
+          <div style={{color:"#e2e8f0",fontSize:14,lineHeight:1.75}}
+            dangerouslySetInnerHTML={{__html:sanitizeHTML(q.pergunta)}}/>
+        </div>
+
+        {/* ── Alternatives ── */}
+        <div style={{marginBottom:4}}>
+          {q.alternativas.map((alt,idx)=>renderAlt(alt,idx))}
+        </div>
+
+        {/* ── TEC Concursos button ── */}
+        {q.linkTec&&(
+          <div style={{marginTop:14,paddingTop:12,borderTop:"1px solid rgba(255,255,255,0.05)"}}>
+            <a href={q.linkTec} target="_blank" rel="noreferrer"
+              style={{display:"inline-flex",alignItems:"center",gap:8,padding:"9px 18px",borderRadius:10,background:"rgba(56,189,248,0.08)",border:"1px solid rgba(56,189,248,0.25)",color:"#38bdf8",textDecoration:"none",fontSize:12.5,fontWeight:700,transition:"all 0.2s"}}>
+              <span style={{fontSize:14}}>🔗</span>
+              <span>Abrir no TEC Concursos</span>
+              <span style={{fontSize:10,opacity:.7}}>↗</span>
+            </a>
+          </div>
+        )}
+
+      </div>
+    </div>
+  );
+}
+
 function LoadingScreen({progress,error}){
   return(<div style={{minHeight:"100vh",display:"flex",alignItems:"center",justifyContent:"center",flexDirection:"column",gap:20,background:"radial-gradient(ellipse at 20% 20%,#0d1930 0%,#080c1a 50%,#04060e 100%)"}}>
     <div style={{fontSize:64,marginBottom:8}}>🛡️</div>
@@ -464,22 +593,48 @@ function BankView({questions,usedIds,dbInfo}){
       <select value={fUsed} onChange={e=>{setFUsed(e.target.value);setPage(0);}} style={sel}><option value="all">Todas</option><option value="unused">Disponíveis</option><option value="used">Utilizadas</option></select>
     </div>
     {paged.length===0?(<div style={{textAlign:"center",padding:"60px 0",color:"#334155"}}><div style={{fontSize:60,opacity:.4}}>◈</div><div style={{fontSize:14,marginTop:12}}>Nenhuma questão encontrada</div></div>):(
-      <div style={{display:"flex",flexDirection:"column",gap:8}}>
-        {paged.map(q=>{const used=usedIds.includes(q.id);const isExp=expanded===q.id;const di=DISCIPLINE_ORDER.indexOf(q.disciplina);const dc=DISC_COLORS[di>=0?di:0]||"#818cf8";return(
-          <div key={q.id} style={{...S.card,padding:"12px 16px",opacity:used?.65:1,borderColor:isExp?"rgba(99,102,241,0.3)":"rgba(255,255,255,0.06)"}}>
-            <div style={{display:"flex",gap:12,alignItems:"flex-start"}}>
-              <div style={{flex:1}}>
-                <div style={{display:"flex",gap:6,marginBottom:8,flexWrap:"wrap"}}><Badge color={dc}>{q.disciplina}</Badge>{q.assunto&&<Badge color="#475569">{q.assunto}</Badge>}{q.ano&&<Badge color="#334155">{q.ano} • {q.banca||"FCC"}</Badge>}{used&&<Badge color="#334155">✓ Usada</Badge>}</div>
-                <p style={{fontSize:12,color:"#94a3b8",margin:0,lineHeight:1.6,cursor:"pointer"}} onClick={()=>setExpanded(isExp?null:q.id)}>{isExp?q.pergunta:`${q.pergunta?.slice(0,180)||""}${(q.pergunta?.length||0)>180?"...":""}`}</p>
-                {isExp&&(<div style={{marginTop:10,display:"flex",flexDirection:"column",gap:4}}>
-                  {q.alternativas.map((a,ai)=>(<div key={ai} style={{fontSize:11,padding:"4px 10px",borderRadius:6,background:ai===q.correta?"rgba(52,211,153,0.1)":"rgba(255,255,255,0.02)",color:ai===q.correta?"#34d399":"#64748b",border:`1px solid ${ai===q.correta?"rgba(52,211,153,0.3)":"rgba(255,255,255,0.04)"}`}}>{a}{ai===q.correta&&" ✓"}</div>))}
-                  {q.linkTec&&<a href={q.linkTec} target="_blank" rel="noopener noreferrer" style={{display:"inline-flex",gap:5,fontSize:11,color:"#6366f1",textDecoration:"none",marginTop:6,padding:"4px 10px",borderRadius:6,background:"rgba(99,102,241,0.1)",width:"fit-content"}}>🔗 TEC Concursos</a>}
-                  <div style={{fontSize:9,color:"#334155",marginTop:4,fontFamily:"monospace"}}>ID: {q.id}</div>
-                </div>)}
-              </div>
-              <button onClick={()=>setExpanded(isExp?null:q.id)} style={{...S.btn("ghost"),padding:"3px 8px",fontSize:10,flexShrink:0}}>{isExp?"▲":"▼"}</button>
+      <div style={{display:"flex",flexDirection:"column",gap:10}}>
+        {paged.map(q=>{
+          const used=usedIds.includes(q.id);
+          const isExp=expanded===q.id;
+          const di=DISCIPLINE_ORDER.indexOf(q.disciplina);
+          const dc=DISC_COLORS[di>=0?di:0]||"#818cf8";
+          const preview=(q.pergunta||"").replace(/<[^>]*>/g,"").slice(0,160);
+          return(
+            <div key={q.id} style={{opacity:used?.7:1,transition:"opacity 0.2s"}}>
+              {!isExp?(
+                /* ── Collapsed preview ── */
+                <div style={{...S.card,padding:"12px 16px",cursor:"pointer",borderColor:"rgba(255,255,255,0.06)"}}
+                  onClick={()=>setExpanded(q.id)}>
+                  <div style={{display:"flex",gap:10,alignItems:"flex-start"}}>
+                    <div style={{flex:1}}>
+                      <div style={{display:"flex",gap:6,marginBottom:6,flexWrap:"wrap",alignItems:"center"}}>
+                        <Badge color={dc}>{q.disciplina}</Badge>
+                        {q.assunto&&<Badge color="#475569">{q.assunto}</Badge>}
+                        {q.ano&&<Badge color="#334155">{q.banca||"FCC"} · {q.ano}</Badge>}
+                        {used&&<Badge color="#f59e0b">✓ Usada</Badge>}
+                      </div>
+                      <p style={{fontSize:12,color:"#64748b",margin:0,lineHeight:1.55}}>{preview}{preview.length>=160?"...":""}</p>
+                    </div>
+                    <span style={{color:"#334155",fontSize:12,flexShrink:0,marginTop:2}}>▼</span>
+                  </div>
+                </div>
+              ):(
+                /* ── Expanded full QuestionCard ── */
+                <div style={{border:"1px solid rgba(99,102,241,0.25)",borderRadius:14}}>
+                  <div style={{display:"flex",justifyContent:"space-between",alignItems:"center",padding:"8px 16px",background:"rgba(99,102,241,0.06)",borderBottom:"1px solid rgba(99,102,241,0.15)",borderRadius:"14px 14px 0 0"}}>
+                    <div style={{display:"flex",gap:8,alignItems:"center"}}>
+                      {used&&<Badge color="#f59e0b">✓ Já utilizada em simulado</Badge>}
+                      <span style={{fontSize:9,color:"#334155",fontFamily:"monospace"}}>ID: {q.id}</span>
+                    </div>
+                    <button onClick={()=>setExpanded(null)} style={{...S.btn("ghost"),padding:"3px 12px",fontSize:11}}>▲ Fechar</button>
+                  </div>
+                  <QuestionCard q={q} numero={q.numero_original}/>
+                </div>
+              )}
             </div>
-          </div>);})}
+          );
+        })}
       </div>
     )}
     {pages>1&&(<div style={{display:"flex",justifyContent:"center",alignItems:"center",gap:8,marginTop:20}}><button onClick={()=>setPage(p=>Math.max(0,p-1))} disabled={page===0} style={{...S.btn("ghost"),padding:"6px 14px",fontSize:13}}>‹</button><span style={{fontSize:12,color:"#64748b",fontFamily:"monospace"}}>{page+1} / {pages}</span><button onClick={()=>setPage(p=>Math.min(pages-1,p+1))} disabled={page>=pages-1} style={{...S.btn("ghost"),padding:"6px 14px",fontSize:13}}>›</button></div>)}
@@ -611,33 +766,27 @@ function ExamView({exam,finishExam,setView}){
       <div style={{maxWidth:900,margin:"6px auto 0",height:3,background:"rgba(255,255,255,0.04)",borderRadius:2}}><div style={{height:"100%",width:`${pct}%`,background:`linear-gradient(90deg,${dc},#6366f1)`,borderRadius:2,transition:"width 0.4s"}}/></div>
     </div>
     <div style={{maxWidth:900,margin:"0 auto",padding:"20px 16px",flex:1,display:"flex",gap:20,width:"100%",boxSizing:"border-box"}}>
-      <div style={{flex:1,minWidth:0}}>
-        <div style={{display:"flex",justifyContent:"space-between",alignItems:"center",marginBottom:14,flexWrap:"wrap",gap:8}}>
-          <div style={{display:"flex",gap:8,alignItems:"center"}}><Badge color={dc}>{q.disciplina}</Badge>{q.assunto&&<Badge color="#334155">{q.assunto}</Badge>}</div>
-          <button onClick={()=>toggleFlag(q.numero_simulado)} style={{...S.btn(flagged.has(q.numero_simulado)?"outline":"ghost"),padding:"5px 12px",fontSize:11,...(flagged.has(q.numero_simulado)?{color:"#fbbf24",borderColor:"rgba(251,191,36,0.4)",background:"rgba(251,191,36,0.1)"}:{})}}>{flagged.has(q.numero_simulado)?"🚩 Marcada":"⚑ Marcar"}</button>
+      <div style={{flex:1,minWidth:0,minHeight:0}}>
+        {/* Flag button row */}
+        <div style={{display:"flex",justifyContent:"flex-end",marginBottom:8}}>
+          <button onClick={()=>toggleFlag(q.numero_simulado)}
+            style={{...S.btn(flagged.has(q.numero_simulado)?"outline":"ghost"),padding:"5px 14px",fontSize:11,...(flagged.has(q.numero_simulado)?{color:"#fbbf24",borderColor:"rgba(251,191,36,0.4)",background:"rgba(251,191,36,0.1)"}:{})}}>
+            {flagged.has(q.numero_simulado)?"🚩 Marcada":"⚑ Marcar"}
+          </button>
         </div>
-        <div style={{...S.card,padding:"22px 24px",marginBottom:14}}>
-          <div style={{display:"flex",gap:14,alignItems:"flex-start"}}>
-            <div style={{width:38,height:38,borderRadius:10,background:`linear-gradient(135deg,${dc}44,${dc}22)`,border:`1px solid ${dc}55`,display:"flex",alignItems:"center",justifyContent:"center",fontWeight:900,color:dc,fontSize:13,flexShrink:0,fontFamily:"monospace"}}>{q.numero_simulado}</div>
-            <p style={{fontSize:14,lineHeight:1.75,color:"#cbd5e1",margin:0,flex:1,whiteSpace:"pre-wrap"}}>{q.pergunta}</p>
-          </div>
-        </div>
-        <div style={{display:"flex",flexDirection:"column",gap:7}}>
-          {q.alternativas.map((alt,idx)=>{
-            const sel=answers[q.numero_simulado]===idx;const ok=q.correta===idx;
-            let bg="rgba(255,255,255,0.02)",bc="rgba(255,255,255,0.07)",col="#64748b";
-            if(sel){bg="rgba(99,102,241,0.1)";bc="rgba(99,102,241,0.4)";col="#e2e8f0";}
-            if(isTreino&&answers[q.numero_simulado]!==undefined){if(ok){bg="rgba(52,211,153,0.08)";bc="rgba(52,211,153,0.4)";col="#34d399";}else if(sel){bg="rgba(248,113,113,0.08)";bc="rgba(248,113,113,0.4)";col="#f87171";}}
-            return(<button key={idx} onClick={()=>answer(q.numero_simulado,idx)} style={{display:"flex",gap:12,alignItems:"flex-start",padding:"13px 16px",borderRadius:12,border:`1px solid ${bc}`,background:bg,color:col,cursor:"pointer",textAlign:"left",transition:"all 0.18s",width:"100%",outline:"none"}}>
-              <div style={{width:26,height:26,borderRadius:7,background:sel?"rgba(99,102,241,0.25)":"rgba(255,255,255,0.04)",display:"flex",alignItems:"center",justifyContent:"center",fontWeight:900,fontSize:11,flexShrink:0,fontFamily:"monospace",color:sel?"#818cf8":"#334155",border:`1px solid ${sel?"rgba(99,102,241,0.3)":"rgba(255,255,255,0.06)"}`}}>{LETTERS[idx]}</div>
-              <span style={{fontSize:13,lineHeight:1.65,flex:1}}>{alt}</span>
-              {isTreino&&answers[q.numero_simulado]!==undefined&&ok&&<span style={{color:"#34d399",fontSize:16}}>✓</span>}
-              {isTreino&&answers[q.numero_simulado]!==undefined&&sel&&!ok&&<span style={{color:"#f87171",fontSize:16}}>✗</span>}
-            </button>);
-          })}
-        </div>
-        {q.linkTec&&<a href={q.linkTec} target="_blank" rel="noopener noreferrer" style={{display:"inline-flex",alignItems:"center",gap:6,marginTop:14,padding:"7px 14px",borderRadius:9,background:"rgba(99,102,241,0.08)",border:"1px solid rgba(99,102,241,0.2)",color:"#6366f1",textDecoration:"none",fontSize:12,fontWeight:600}}>🔗 TEC Concursos</a>}
-        <div style={{display:"flex",justifyContent:"space-between",alignItems:"center",marginTop:20}}>
+
+        {/* Full TecConcursos-style question card */}
+        <QuestionCard
+          q={q}
+          numero={q.numero_simulado}
+          interactive={true}
+          userAnswer={answers[q.numero_simulado]??null}
+          onAnswer={(idx)=>answer(q.numero_simulado,idx)}
+          showResult={isTreino&&answers[q.numero_simulado]!==undefined}
+        />
+
+        {/* Navigation */}
+        <div style={{display:"flex",justifyContent:"space-between",alignItems:"center",marginTop:16}}>
           <button onClick={()=>setCur(c=>Math.max(0,c-1))} disabled={cur===0} style={{...S.btn("ghost"),opacity:cur===0?.4:1,padding:"9px 18px"}}>← Anterior</button>
           <span style={{fontSize:11,color:"#334155",fontFamily:"monospace"}}>{cur+1} / {total}</span>
           <button onClick={()=>setCur(c=>Math.min(total-1,c+1))} disabled={cur===total-1} style={{...S.btn("ghost"),opacity:cur===total-1?.4:1,padding:"9px 18px"}}>Próxima →</button>
