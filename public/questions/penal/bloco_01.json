@@ -1,0 +1,74 @@
+[
+  {
+    "id": "fcc_penal_2024_001",
+    "disciplina": "Noções de Direito Penal",
+    "assunto": "Princípios",
+    "banca": "FCC",
+    "ano": 2024,
+    "orgao": "PC-AP",
+    "pergunta": "O princípio que determina não haver crime sem lei anterior que o defina é o da:",
+    "alternativas": [
+      "A) culpabilidade",
+      "B) lesividade",
+      "C) legalidade",
+      "D) intervenção mínima",
+      "E) humanidade"
+    ],
+    "correta": 2,
+    "linkTec": ""
+  },
+  {
+    "id": "fcc_penal_2023_001",
+    "disciplina": "Noções de Direito Penal",
+    "assunto": "Crimes contra a Pessoa",
+    "banca": "FCC",
+    "ano": 2023,
+    "orgao": "PC-AP",
+    "pergunta": "O crime de homicídio simples (art. 121 do CP) tem pena de:",
+    "alternativas": [
+      "A) reclusão de 6 a 20 anos",
+      "B) detenção de 6 a 20 anos",
+      "C) reclusão de 6 a 12 anos",
+      "D) reclusão de 4 a 12 anos",
+      "E) detenção de 2 a 10 anos"
+    ],
+    "correta": 2,
+    "linkTec": ""
+  },
+  {
+    "id": "fcc_penal_2022_001",
+    "disciplina": "Noções de Direito Penal",
+    "assunto": "Excludentes de Ilicitude",
+    "banca": "FCC",
+    "ano": 2022,
+    "orgao": "PC-AP",
+    "pergunta": "Não há crime quando o agente pratica o fato em legítima defesa, estado de necessidade, estrito cumprimento do dever legal ou:",
+    "alternativas": [
+      "A) coação moral irresistível",
+      "B) erro de proibição",
+      "C) exercício regular de direito",
+      "D) inimputabilidade",
+      "E) arrependimento posterior"
+    ],
+    "correta": 2,
+    "linkTec": ""
+  },
+  {
+    "id": "fcc_penal_2021_001",
+    "disciplina": "Noções de Direito Penal",
+    "assunto": "Concurso de Pessoas",
+    "banca": "FCC",
+    "ano": 2021,
+    "orgao": "PC-AP",
+    "pergunta": "No concurso de pessoas, todos que concorrem para o crime incidem nas penas a este cominadas. Isso representa o:",
+    "alternativas": [
+      "A) princípio da individualização da pena",
+      "B) princípio do monismo ou unitarismo",
+      "C) princípio da acessoriedade mínima",
+      "D) princípio da pessoalidade",
+      "E) princípio da proporcionalidade"
+    ],
+    "correta": 1,
+    "linkTec": ""
+  }
+]
