@@ -88,5 +88,45 @@
     ],
     "correta": 2,
     "linkTec": ""
+  },
+  {
+    "id": "fcc_port_2021_017",
+    "numero_original": 17,
+    "disciplina": "Língua Portuguesa",
+    "assunto": "Conjunção",
+    "banca": "FCC",
+    "ano": 2021,
+    "cargo": "Técnico Previdenciário",
+    "orgao": "MANAUSPREV",
+    "pergunta": "Em “Visto que o leão insistia em pressioná-lo, ele disse que o reputava um noivo digno de sua filha”, o trecho sublinhado expressa, em relação ao trecho que o sucede, ideia de",
+    "alternativas": [
+      "A) comparação.",
+      "B) consequência.",
+      "C) proporção.",
+      "D) causa.",
+      "E) condição."
+    ],
+    "correta": 3,
+    "linkTec": "https://www.tecconcursos.com.br/questoes/1241284"
+  },
+  {
+    "id": "fcc_port_2020_018",
+    "numero_original": 18,
+    "disciplina": "Língua Portuguesa",
+    "assunto": "Conjunção",
+    "banca": "FCC",
+    "ano": 2020,
+    "cargo": "Assistente Legislativo",
+    "orgao": "ALAP",
+    "pergunta": "O emprego da conjunção como elemento coesivo, com efeito de estabelecer oposição entre ideias, está presente em:",
+    "alternativas": [
+      "A) Mas os vencidos não se contentaram de dormir sobre os louros do vencedor;",
+      "B) ... delito, se o era, puramente literário.",
+      "C) Infelizmente, senhores, o comentário da lei é a eterna malícia.",
+      "D) ... uma vez que cinco pessoas jurassem ser o nome inscrito o próprio nome do candidato.",
+      "E) Nesse mesmo dia ficou decretado que o saco seria feito de um tecido de malhas..."
+    ],
+    "correta": 0,
+    "linkTec": "https://www.tecconcursos.com.br/questoes/1241291"
   }
 ]
