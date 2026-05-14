@@ -1,0 +1,74 @@
+[
+  {
+    "id": "fcc_adm_2024_001",
+    "disciplina": "Noções de Direito Administrativo",
+    "assunto": "Princípios",
+    "banca": "FCC",
+    "ano": 2024,
+    "orgao": "PC-AP",
+    "pergunta": "O princípio da legalidade na Administração Pública significa que o administrador:",
+    "alternativas": [
+      "A) pode fazer tudo o que não é proibido",
+      "B) só pode fazer o que a lei autoriza",
+      "C) pode descumprir a lei em casos urgentes",
+      "D) tem ampla discricionariedade",
+      "E) só obedece a lei nos atos vinculados"
+    ],
+    "correta": 1,
+    "linkTec": ""
+  },
+  {
+    "id": "fcc_adm_2023_001",
+    "disciplina": "Noções de Direito Administrativo",
+    "assunto": "Atos Administrativos",
+    "banca": "FCC",
+    "ano": 2023,
+    "orgao": "PC-AP",
+    "pergunta": "A característica do ato administrativo que impede o particular de recusar-se a cumpri-lo é a:",
+    "alternativas": [
+      "A) autoexecutoriedade",
+      "B) imperatividade",
+      "C) presunção de legitimidade",
+      "D) tipicidade",
+      "E) motivação"
+    ],
+    "correta": 1,
+    "linkTec": ""
+  },
+  {
+    "id": "fcc_adm_2022_001",
+    "disciplina": "Noções de Direito Administrativo",
+    "assunto": "Poderes Administrativos",
+    "banca": "FCC",
+    "ano": 2022,
+    "orgao": "PC-AP",
+    "pergunta": "O poder que permite à Administração impor obrigações unilaterais ao particular em prol do interesse coletivo é o poder:",
+    "alternativas": [
+      "A) discricionário",
+      "B) hierárquico",
+      "C) disciplinar",
+      "D) de polícia",
+      "E) regulamentar"
+    ],
+    "correta": 3,
+    "linkTec": ""
+  },
+  {
+    "id": "fcc_adm_2021_001",
+    "disciplina": "Noções de Direito Administrativo",
+    "assunto": "Licitação",
+    "banca": "FCC",
+    "ano": 2021,
+    "orgao": "PC-AP",
+    "pergunta": "A modalidade de licitação destinada à seleção de trabalhos técnicos, científicos ou artísticos é:",
+    "alternativas": [
+      "A) Concorrência",
+      "B) Tomada de Preços",
+      "C) Convite",
+      "D) Concurso",
+      "E) Leilão"
+    ],
+    "correta": 3,
+    "linkTec": ""
+  }
+]
