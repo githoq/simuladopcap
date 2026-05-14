@@ -1,8 +1,8 @@
 {
-  "databaseVersion": "2.0.0",
+  "databaseVersion": "3.0.0",
   "updatedAt": "2026-05-14",
-  "description": "Banco de questões PC-AP — FCC | Língua Portuguesa: 742Q (4 cadernos TEC 2020-2024) + 8 disciplinas demo",
-  "totalQuestions": 778,
+  "description": "PC-AP Simulados FCC — 741Q Língua Portuguesa (HTML formatado) + 8 disciplinas",
+  "totalQuestions": 772,
   "files": [
     "portugues/bloco_01.json",
     "portugues/bloco_02.json",
