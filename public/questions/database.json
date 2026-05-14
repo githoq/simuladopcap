@@ -1,8 +1,10 @@
 {
-  "databaseVersion": "3.0.0",
+  "databaseVersion": "3.1.0",
   "updatedAt": "2026-05-14",
-  "description": "PC-AP Simulados FCC — 741Q Língua Portuguesa (HTML formatado) + 8 disciplinas",
+  "description": "PC-AP Simulados — 741 Língua Portuguesa (FCC) + 8 disciplinas demo. 8 imagens associadas.",
   "totalQuestions": 772,
+  "totalImages": 8,
+  "imageBasePath": "/assets/questions/",
   "files": [
     "portugues/bloco_01.json",
     "portugues/bloco_02.json",
