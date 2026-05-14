@@ -38,8 +38,8 @@
     "imagem": null,
     "pergunta": "Em <em>“Luzia-me um romance através daquele misterioso e anônimo bilhete”</em>, a expressão sublinhada exerce a mesma função sintática da expressão\nsublinhada em:",
     "alternativas": [
-      "<em>Li e reli este bilhete.</em>",
-      "<em>entrou-me em casa um sujeito desconhecido.</em>",
+      "Li e <u>reli este bilhete.</u>",
+      "entrou-me em <u>casa um sujeito desconhecido.</u>",
       "<em>Tomei uma resolução definitiva.</em>",
       "<em>entregou-me um rolo de papel contendo uma avultada soma.</em>",
       "<em>recebi no meu escritório, na corte, um bilhete anônimo.</em>"
@@ -160,9 +160,9 @@
     "alternativas": [
       "<em>Que o resultado nem sempre era satisfatório, <strong>mostram </strong>as punições prescritas para o caso de fracasso.</em>",
       "<em>Ali <strong>surgiram </strong>conceitos básicos de matemática; ali foram feitas importantes colaborações à astronomia e à metalurgia.</em>",
-      "<em>muitas delas <strong>chegaram </strong>a um alto grau de sofisticação em termos de arquitetura e arte</em>.",
-      "<em><strong>Havia </strong>divindades da cura, Ningishzida, cujo símbolo era uma cobra de duas cabeças – a serpente viria a se tornar depois o emblema da</em> <em>medicina.</em>",
-      "<em>O código de Hamurabi mostra que vários tipos de operações <strong>eram </strong>feitas.</em>"
+      "<em>muitas de<u>chegaram a um alto grau de sofisticação em termos de arquitetura e arte.</u>e arquitetura e arte</em>.",
+      "<stron<u>divindades da cura,</u>vindades da cura, Ningishzida, cujo símbolo era uma cobra de duas cabeças – a serpente viria a se tornar depois o emblema da</em> <em>medicina.",
+      "<u>O código de Hamurabi mostra</u> que vários tipos de operações <strong>eram </strong>feitas."
     ],
     "correta": 0,
     "linkTec": "https://www.tecconcursos.com.br/questoes/2460423"
@@ -590,11 +590,11 @@
     "imagem": null,
     "pergunta": "Considerado o contexto, o elemento sublinhado exerce a mesma função sintática que o também sublinhado em:",
     "alternativas": [
-      "<em>a) Todos sonhamos: não entendemos nossos sonhos.</em>",
-      "<em>b) então esta verdade é um triste comentário à sabedoria do homem moderno.</em>",
-      "<em>c) e no entanto agimos como se de nada estranho corresse em nossas mentes adormecidas.</em>",
-      "<em>d) Imagina-se que tudo seja conhecido − senão por nós, por algum especialista.</em>",
-      "<em>e) orgulhamo-nos de nosso “realismo”.</em>"
+      "a) Todos sonhamos: não <u>entendemos nossos sonhos.</u>",
+      "b) <u>então esta verdade é</u> um triste comentário à sabedoria do homem moderno.",
+      "c) e no entanto agimos como se de nada estranho <u>corresse em nossas mentes adormecidas.</u>",
+      "d) <u>Imagina-se que tudo</u> seja conhecido − senão por nós, por algum especialista.",
+      "e) orgulhamo-nos <u>de nosso “realismo”.</u>"
     ],
     "correta": 0,
     "linkTec": "https://www.tecconcursos.com.br/questoes/2158418"
@@ -734,11 +734,11 @@
     "imagem": null,
     "pergunta": "O termo sublinhado acima exerce, no contexto, a mesma função sintática do que se encontra também sublinhado em:",
     "alternativas": [
-      "<em>A ideia de fuga tem sido alvo de crítica severa nos últimos anos </em>(7º parágrafo).",
-      "<em>A casa junto ao mar, que já foi razoável delícia</em> (4º parágrafo).",
-      "<em>nenhuma central elétrica será capaz de produzir aquilo de que cada um de nós carece na cidade excessivamente iluminada</em> (7º parágrafo).",
-      "<em>senão um modesto território banhado de água por todos os lados e onde não seja obrigatório salvar o mundo</em> (6º parágrafo).",
-      "<em>Como se devesse o homem consumir-se numa fogueira perene</em> (7º parágrafo)."
+      "<em>A ideia de fuga <u>sido alvo de</u>o de crítica severa nos últimos anos </em>(7º parágrafo).",
+      "<em>A casa junto ao mar, que já <u>razoável delícia (4º</u></em> (4º parágrafo).",
+      "<em>nenhuma central elétrica será capaz de produzir aquilo de que cada um de nós car<u>na cidade excessivamente</u>ente iluminada</em> (7º parágrafo).",
+      "<em>senão um modesto território banhado de água por todos os lados e onde não seja obrigatório sal<u>o mundo (6º</u></em> (6º parágrafo).",
+      "<em>Como se deve<u>o homem consumir-se</u>r-se numa fogueira perene</em> (7º parágrafo)."
     ],
     "correta": 4,
     "linkTec": "https://www.tecconcursos.com.br/questoes/2021242"
@@ -926,11 +926,11 @@
     "imagem": null,
     "pergunta": "O termo sublinhado exerce, no contexto, a mesma função sintática que o também sublinhado em:",
     "alternativas": [
-      "<em> Mas como a inflação também era balofa.</em>",
-      "<em>Tive que ouvir um discurso, felizmente breve.</em>",
-      "<em>Depois, quatro músicos interpretaram o “Quarteto Nº 1”, de Villa-Lobos.</em>",
-      "<em>dava para alimentar meu gato por três meses.</em>",
-      "<em>o Baiacu de Ouro, um prêmio literário que recebi em Manaus há uns vinte anos.</em>"
+      " Mas<u> como a inflação també</u>m era balofa.",
+      "Tive que <u>ouvir um discurso,</u> felizmente breve.",
+      "Depois, quatro músicos interpretaram o “Quarteto Nº <u>1”, de Villa-Lobos.</u>",
+      "dava para <u>alimentar meu gato por</u> três meses.",
+      "o Baiacu de Ouro, um prêmio literário que recebi em Manaus <u>há uns vinte anos.</u>"
     ],
     "correta": 0,
     "linkTec": "https://www.tecconcursos.com.br/questoes/2454313"
@@ -950,10 +950,10 @@
     "imagem": null,
     "pergunta": "Em Aliás, não respondeu <em>nada</em>, o termo sublinhado exerce a mesma função sintática da expressão sublinhada em:",
     "alternativas": [
-      "<em>Era um espelho muito silencioso</em>.",
-      "<em>Um quarto espelho chegou a pronunciar nitidamente esta frase</em>:",
-      "<em>Era um espelho muito silencioso</em>.",
-      "<em>Um quarto espelho chegou a pronunciar nitidamente esta frase</em>:",
+      "<u>Era um espelho muito</u>uito silencioso</em>.",
+      "<u>Um quarto espelho chegou</u>egou a pronunc<u>nitidamente esta frase:</u>ase</em>:",
+      "<u>Era um espelho muito</u>uito silencioso</em>.",
+      "<u>Um quarto espelho chegou</u>egou a pronunc<u>nitidamente esta frase:</u>ase</em>:",
       "<em>Lavínia apelou para um quinto espelho</em>,"
     ],
     "correta": 1,
@@ -1022,11 +1022,11 @@
     "imagem": null,
     "pergunta": "Um vocábulo também pode ser formado quando passa de uma classe gramatical a outra, sem a modificação de sua forma. É o que se denomina\nderivação imprópria. Constitui exemplo de derivação imprópria o termo sublinhado em:",
     "alternativas": [
-      "“<em>andorinha que se dispersava num farfalhar calado de gestos</em>”.",
-      "“<em>a ponto de lhe fazerem esquecer o pedido de Natividade</em>”.",
-      "“<em>Considerou que não perdia muito em estudar os rapazes</em>”.",
-      "“<em>Chegou a apanhar uma hipótese</em>”.",
-      "“<em>A alma do velho entrou a ramalhar não sei que desejos retrospectivos</em>”."
+      "“<em>andorinha que se dispers<u>num farfalhar calado</u>lado de gestos</em>”.",
+      "“<em>a ponto de <u>fazerem esquecer o</u>er o pedido de Natividade</em>”.",
+      "“<em>Considerou que não perdia mu<u>em estudar os</u>r os rapazes</em>”.",
+      "“<em>Che<u>a apanhar uma</u> uma hipótese</em>”.",
+      "“<em>A alma do velho ent<u>a ramalhar não</u> não sei que desejos retrospectivos</em>”."
     ],
     "correta": 0,
     "linkTec": "https://www.tecconcursos.com.br/questoes/2340353"
@@ -1046,11 +1046,11 @@
     "imagem": null,
     "pergunta": "Um sufixo é um afixo que se acrescenta ao final de uma palavra para formar novas palavras. O substantivo formado por sufixação a partir de um\noutro substantivo está sublinhado em:",
     "alternativas": [
-      "Acho que apenas escrevo sobres coisas que, acontecendo à minha volta, se relacionem intimamente comigo.",
-      "Este livro é uma surpreendente obra literária e é um libelo acusatório virulento.",
-      "O jovem autor de Nós Matamos o Cão Tinhoso redigira uma nota biográfica igualmente singular.",
-      "Quando tinha 22 anos, e, 1954, fez publicar uma obra seminal e fundadora da moderna ficção moçambicana.",
-      "Honwana é um dos percursores da literatura moçambicana e um dos maiores intérpretes da moçambicanidade."
+      "Acho que apenas escrevo sobres coisas que, acontecendo à minha volta, se <u>relacionem intimamente comigo.</u>",
+      "Este livro é uma surpreendente obra literária e é um libelo <u>acusatório virulento.</u>",
+      "O jovem autor de Nós Matamos o Cão Tinhoso redigira uma nota biográfica <u>igualmente singular.</u>",
+      "Quando tinha 22 anos, e, 1954, fez publicar uma obra seminal <u>e fundadora da</u> moderna ficção moçambicana.",
+      "Honwana é um dos percursores da literatura moçambicana e um dos maiores intérpretes <u>da moçambicanidade.</u>"
     ],
     "correta": 4,
     "linkTec": "https://www.tecconcursos.com.br/questoes/2815806"

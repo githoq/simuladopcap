@@ -206,10 +206,10 @@
     "imagem": null,
     "pergunta": "A expressão sublinhada deve sua flexão ao verbo em negrito em:",
     "alternativas": [
-      "<strong>a) </strong> Àquela época eu <strong>tinha </strong>doze anos e Belonísia se aproximava dos onze.",
-      "<strong>b) </strong> então as coisas que minha avó falava não <strong>faziam </strong>sentido.",
-      "<strong>c) </strong> Olhávamos uma para a outra e nos <strong>deixávamos </strong>caçoar pela desordem que se instaurou nos falares de Donana.",
-      "<strong>d) </strong> Numa manhã, Donana acordou me chamando de Carmelita, dizendo que <strong>iria </strong>dar um jeito em tudo.",
+      "<strong>a) </strong> Àquela época e<u> e Belonísia s</u>a </strong>doze anos e Belonísia se aproximava dos onze.",
+      "<strong>b) </strong<u> que minha avó falav</u>e minha avó falava não <strong>faziam </strong>sentido.",
+      "<strong>c) </strong> Olhávamos uma para a outra e nos <u> pela desordem qu</u>s </strong>caçoar pela desordem que se instaurou nos falares de Donana.",
+      "<strong><u> manhã, Donana acordo</u>hã, Donana acordou me chamando de Carmelita, dizendo que <strong>iria </strong>dar um jeito em tudo.",
       "<strong>e) </strong> Em seus pensamentos, Fusco havia se tornado uma onça, <strong>pedia </strong>para que tivéssemos cuidado."
     ],
     "correta": 3,
@@ -758,11 +758,11 @@
     "imagem": null,
     "pergunta": "Retoma uma expressão mencionada anteriormente no texto o termo sublinhado em:",
     "alternativas": [
-      "<em>se os gêmeos tivessem nascido dele talvez não divergissem</em>.",
-      "<em>a ponto de lhe fazerem esquecer o pedido de Natividade</em>.",
-      "<em>Chegou a apanhar uma hipótese</em>.",
-      "<em>Tal foi a hipótese vaga e colorida</em>.",
-      "mas não o esqueceu de todo."
+      "<u>se os gêmeos</u>meos tivessem nascido dele talvez não divergissem</em>.",
+      "<em>a po<u>de lhe fazer<u>esquecer o pedido</u>er o pedido de Natividade</em>.",
+      "<u>Chegou a apanhar</u>nhar uma hipótese</em>.",
+      "<em><u>foi a hipótese</u>tese vaga e colorida</em>.",
+      "mas <u>não o esqueceu</u> de todo."
     ],
     "correta": 4,
     "linkTec": "https://www.tecconcursos.com.br/questoes/2340349"
@@ -974,11 +974,11 @@
     "imagem": null,
     "pergunta": "Retoma um termo mencionado anteriormente no texto a palavra sublinhada em:",
     "alternativas": [
-      "estava dormindo aos pés de um jatobá ao lado da onça mansa que o cão havia se tomado",
-      "Sabíamos que nosso pai estava na roça, trabalhando todos os dias",
-      "Mesmo assim, minha mãe pedia que a acompanhássemos",
-      "então as coisas que minha avó falava não faziam sentido",
-      "Olhávamos uma para a outra"
+      "estava dormindo aos pés de um jatobá ao lado da onça mansa <u>que o cão</u> havia se tomado",
+      "Sabíamos que nosso pai estava na roça, trabalhando <u>todos os dias</u>",
+      "Mesmo assim, minha mãe pedia <u>que a acompanhássemos</u>",
+      "<u>então as coisas</u> que minha avó falava não faziam sentido",
+      "Olhávamos uma <u>para a outra</u>"
     ],
     "correta": 2,
     "linkTec": "https://www.tecconcursos.com.br/questoes/2848845"
@@ -1022,11 +1022,11 @@
     "imagem": null,
     "pergunta": "O termo sublinhado indica ideia de adição no seguinte segmento:",
     "alternativas": [
-      "Talvez elas não contenham toda a verdade. (1º parágrafo)",
-      "Para lá a família leiri emigrou para prosperar. (2º parágrafo)",
-      "E seus passos eram alegres quando a sirene tocou. (3º parágrafo)",
-      "| leiri-san inspecionava as conversas dos navios que nasciam no estaleiro que dirigia com disciplina. (2º parágrafo)",
-      "Não importava a ela que seu otosan estivesse em um leito de hospital nem que o medo rondasse cada esquina. (3º parágrafo)"
+      "<u>Talvez elas</u> não contenham toda a verdade. (1º parágrafo)",
+      "Para lá a família leiri <u>emigrou para prosperar.</u> (2º parágrafo)",
+      "E seus passos eram <u>alegres quando a</u> sirene tocou. (3º parágrafo)",
+      "| leiri-san inspecionava as conversas dos <u>navios que nasciam</u> no estaleiro que dirigia com disciplina. (2º parágrafo)",
+      "Não importava a ela que seu otosan estivesse em um leito de <u>hospital nem que</u> o medo rondasse cada esquina. (3º parágrafo)"
     ],
     "correta": 4,
     "linkTec": "https://www.tecconcursos.com.br/questoes/2857649"

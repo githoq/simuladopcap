@@ -14,8 +14,8 @@
     "imagem": null,
     "pergunta": "A forma verbal em negrito deve sua flexão ao termo sublinhado em:",
     "alternativas": [
-      "Mas este ano<strong> teve</strong> de desistir.",
-      "<em>b) A favor de ambas as coisas, o curso e a geladeira, <strong>havia</strong> argumento</em>s.",
+      "<u>Mas este ano teve</u>ng> teve</strong> de desistir.",
+      "<em<u>A favor de ambas as coisas,</u>sas, o curso e a geladeira, <strong>havia</strong> argumento</em>s.",
       "<em>c) Foi então que <strong>encontrou </strong>a garrafa de champanh</em>e.",
       "<em>d) E aí <strong>intervinha </strong>outra vozinha</em>",
       "<em>e) <strong> Foi </strong>a gota d’água</em>."
@@ -230,11 +230,11 @@
     "imagem": null,
     "pergunta": "Retoma um termo mencionado anteriormente no texto a palavra sublinhada em:",
     "alternativas": [
-      "<em>a) Durante duas noites não dormiu, fazendo <strong>a</strong> si própria cálculos e ponderações</em>",
-      "<em>b) A antiga estava estragada, e tão estragada que o homem do conserto a aconselhara <strong>a</strong> esquecer “aquele traste”</em>",
-      "<em> Dar de presente para o sobrinho que <strong>a</strong> ajudara com o dinheiro da inscrição</em>?",
-      "<em>d) Foi até lá, abriu a geladeira e, claro, era <strong>a</strong> carne que simplesmente tinha apodrecido</em>",
-      "<em>e) Vestiu-se, foi até <strong>a</strong> loja, e comprou a geladeira nova.</em>"
+      "a) Durante duas noites não dormiu, <u>fazendo a si</u>ong>a</strong> si própria cálculos e ponderações",
+      "b) A antiga estava estragada, e tão estragada que o homem do conserto a <u>aconselhara a esquecer</u>/strong> esquecer “aquele traste”",
+      "<em> Dar de presente para o sobr<u> que a ajudar</u>ong>a</strong> ajudara com o dinheiro da inscrição</em>?",
+      "d) Foi até lá, abriu a geladeira e, claro, <u>era a carne</u>>a</strong> carne que simplesmente tinha apodrecido",
+      "e) Vestiu-se, foi <u>até a loja,</u>>a</strong> loja, e comprou a geladeira nova."
     ],
     "correta": 2,
     "linkTec": "https://www.tecconcursos.com.br/questoes/1818145"
@@ -257,7 +257,7 @@
       "<em>a) Como é que você vai se alimentar se a comida continuar estragando desse jeito</em>?",
       "<em>b) A favor de ambas as coisas, o curso e a geladeira, havia argumentos.</em>",
       "<em>c) Não foi uma decisão fácil, como se pode imaginar</em>",
-      "<em>d) o homem do conserto a aconselhara a esquecer “aquele traste”</em>",
+      "d) o homem do conserto a <u>aconselhara a esquecer</u> “aquele traste”",
       "<em> o dinheiro da inscrição − ajuda de um sobrinho − foi usado para pagar a prestação de uma nova.</em>"
     ],
     "correta": 4,
@@ -350,11 +350,11 @@
     "imagem": null,
     "pergunta": "Retoma uma expressão mencionada anteriormente no texto o termo sublinhado em:",
     "alternativas": [
-      "nem sempre se sabe quem é que as leva (2o parágrafo).",
-      "importa conhecer as causas da perda (2o parágrafo).",
-      "a filha aprendia a fazer flores (2o parágrafo).",
-      "ainda que a pessoa fosse pobre (3o parágrafo).",
-      "esta amiga que se mata para que a outra não padeça (4o parágrafo)."
+      "nem sempre se sabe quem é <u>que as leva</u> (2o parágrafo).",
+      "importa <u>conhecer as causas</u> da perda (2o parágrafo).",
+      "a filha <u>aprendia a fazer</u> flores (2o parágrafo).",
+      "ainda <u>que a pessoa</u> fosse pobre (3o parágrafo).",
+      "esta amiga que se mata para <u>que a outra</u> não padeça (4o parágrafo)."
     ],
     "correta": 0,
     "linkTec": "https://www.tecconcursos.com.br/questoes/1896503"
@@ -374,11 +374,11 @@
     "imagem": null,
     "pergunta": "Retoma uma expressão mencionada anteriormente no texto o termo sublinhado no seguinte trecho:",
     "alternativas": [
-      "não suportava a ideia de entregar a filha <strong>a</strong> uma fera.",
-      "Visto que <strong>o</strong> leão insistia em pressioná-lo.",
-      "ele disse que <strong>o</strong> reputava um noivo digno de sua filha.",
-      "<strong>a</strong> menos que ele extraísse as presas e aparasse as garras.",
-      "O leão, por amor, sujeitou-se com facilidade <strong>a</strong> todas as exigências."
+      "não suportava a ideia de entregar a <u>filha a uma</u>ng>a</strong> uma fera.",
+      "Visto <u>que o leão</u>g>o</strong> leão insistia em pressioná-lo.",
+      "ele disse <u>que o reputava</u>/strong> reputava um noivo digno de sua filha.",
+      "<u>a menos</u>>a</strong> menos que ele extraísse as presas e aparasse as garras.",
+      "O leão, por amor, sujeitou-se com <u>facilidade a todas</u>>a</strong> todas as exigências."
     ],
     "correta": 2,
     "linkTec": "https://www.tecconcursos.com.br/questoes/1898104"
@@ -422,11 +422,11 @@
     "imagem": null,
     "pergunta": "Sem prejuízo para a correção e o sentido, o trecho sublinhado pode ser substituído pelo que se encontra entre parênteses em:",
     "alternativas": [
-      "<em>A máxima, irretocável, à exceção de</em> (à despeito de) <em>pequenos detalhes, funcionou tal qual intuíra Moore.</em>",
+      "A máxima, <u>irretocável, à exceção de (à</u>m> (à despeito de) <em>pequenos detalhes, funcionou tal qual intuíra Moore.",
       "<em>Máquinas similares às hoje existentes </em>(as quais se fabrica atualmente) <em>serão construídas a custos mais baixos.</em>",
-      "<em>Pela</em> (De acordo com a)<em> “Lei de Moore”, a cada dois anos, em média, o desempenho dos chips de computador dobra</em>",
-      "<em>Assim</em> (Portanto)<em>, em um artigo de 1965, o empreendedor Gordon Moore, hoje com 90 anos de idade, apresentou sua célebre ideia.</em>",
-      "<em>Mas só por enquanto, pois</em> (conquanto)<em> se trata do início de um caminho que levará a transformações radicais em diversas áreas.</em>"
+      "<u>Pela (De</u>> (De acordo com a)<em> “Lei de Moore”, a cada dois anos, em média, o desempenho dos chips de computador dobra",
+      "<u>Assim (Portanto),</u>nto)<em>, em um artigo de 1965, o empreendedor Gordon Moore, hoje com 90 anos de idade, apresentou sua célebre ideia.",
+      "Mas só por <u>enquanto, pois (conquanto)</u>anto)<em> se trata do início de um caminho que levará a transformações radicais em diversas áreas."
     ],
     "correta": 2,
     "linkTec": "https://www.tecconcursos.com.br/questoes/1240765"

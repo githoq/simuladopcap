@@ -110,11 +110,11 @@
     "imagem": null,
     "pergunta": "É invariável quanto a gênero e a número o termo sublinhado em:",
     "alternativas": [
-      "<em>vivi uma tremenda aventura.</em>",
-      "<em>quem lhe escreve sou eu.</em>",
-      "<em>eu também sinto saudades de você.</em>",
-      "<em>você nem sabia da existência desse lugar.</em>",
-      "<em>Você poderá vir a qualquer hora.</em>"
+      "vivi <u>uma tremenda aventura.</u>",
+      "<u>quem lhe escreve</u> sou eu.",
+      "<u>eu também sinto</u> saudades de você.",
+      "você nem sabia da <u>existência desse lugar.</u>",
+      "Você poderá vir <u>a qualquer hora.</u>"
     ],
     "correta": 2,
     "linkTec": "https://www.tecconcursos.com.br/questoes/2324051"
@@ -134,7 +134,7 @@
     "imagem": null,
     "pergunta": "É invariável quanto a gênero e a número o termo sublinhado em:",
     "alternativas": [
-      "<em>o outro tinha sido levado pela correnteza</em>.",
+      "<u>o outro tinha</u>inha sido levado pela correnteza</em>.",
       "<em>Ao ver sua própria sombra no fundo da água</em>.",
       "<em>Então deixou sua caça cair.</em>",
       "<em>Ao ver sua própria sombra no fundo da água.</em>",
@@ -494,11 +494,11 @@
     "imagem": null,
     "pergunta": "O termo empregado em sentido figurado está sublinhado em:",
     "alternativas": [
-      "<em> o homem moderno é aquele que viu desabarem, ao sopro da razão, os castelos de cartas das crenças tradicionais</em>. (4º parágrafo)",
-      "<em>O processo de cosmopolitização que produziu o mundo moderno não se restringiu às descobertas dos humanistas e dos navegadores.</em> (2º parágrafo)",
-      "<em>Não que ele esteja próximo das veleidades contemporâneas.</em> (1º parágrafo)",
-      "<em> é possível que tudo o que pensamos saber não tenha consistência maior que a de sonhos</em> (3º parágrafo).",
-      "<em>essa dúvida foi “a mais tremenda máquina de guerra contra a autoridade e a tradição que o homem jamais possuiu”.</em> (3º parágrafo)"
+      "<em> o homem moderno é aquele que viu desaba<u> ao sopro d</u>ro da razão, os castelos de cartas das crenças tradicionais</em>. (4º parágrafo)",
+      "<em>O processo de cosmopolitização que produziu o mundo moderno não se restrin<u>às descobertas dos</u> dos humanistas e dos navegadores.</em> (2º parágrafo)",
+      "<em>Não que ele esteja próx<u>das veleidades contemporâneas.</u>eas.</em> (1º parágrafo)",
+      "<em> é possível que tudo o que pensamos saber não tenha consistência maior q<u> de sonhos (3</u>s</em> (3º parágrafo).",
+      "<em>essa dúvida foi “a mais tremenda máquina de guerra con<u>a autoridade e</u>de e a tradição que o homem jamais possuiu”.</em> (3º parágrafo)"
     ],
     "correta": 0,
     "linkTec": "https://www.tecconcursos.com.br/questoes/2021929"
@@ -542,11 +542,11 @@
     "imagem": null,
     "pergunta": "A expressão em destaque mantém no texto o seu sentido denotativo em:",
     "alternativas": [
-      "<em>Formigas de fogo mordem sob a camisa.</em>",
-      "<em>não pode negar, meio feio?</em>",
-      "<em>brincando com o arco-íris na ponta dos dedos.</em>",
-      "<em>Ele mesmo um cigarro em chamas.</em>",
-      "<em>Toda rosa, o lenço no pescoço, gatinha na janela depois do banho.</em>"
+      "<u>Formigas de fogo mordem</u> sob a camisa.",
+      "não pode negar, <u>meio feio?</u>",
+      "brincando com <u>o arco-íris na</u> ponta dos dedos.",
+      "Ele mesmo <u>um cigarro em</u> chamas.",
+      "Toda rosa, o lenço no <u>pescoço, gatinha na</u> janela depois do banho."
     ],
     "correta": 1,
     "linkTec": "https://www.tecconcursos.com.br/questoes/2153982"
@@ -758,11 +758,11 @@
     "imagem": null,
     "pergunta": "No contexto, o sentido do termo sublinhado está mantido pelo que se encontra entre parênteses em:",
     "alternativas": [
-      "<em>a generosidade e a hombridade (resignação) de Cervantes estão mais do que garantidas.</em>",
-      "<em>a imaginação pode transformar [...] converter o cotidiano em uma peripécia inusitada (incomum).</em>",
-      "<em> O mundo estreito e provinciano (grandioso) de La Mancha.</em>",
-      "<em>o escudeiro pragmático (ponderado) que tenta manter seu mestre na dura realidade.</em>",
-      "<em>um universo de aventuras insólitas (ameaçadoras).</em>"
+      "a generosidade e <u>a hombridade (resignação)</u> de Cervantes estão mais do que garantidas.",
+      "a imaginação pode transformar [...] converter o cotidiano em uma <u>peripécia inusitada (incomum).</u>",
+      " O mundo estreito<u> e provinciano (grandioso</u>) de La Mancha.",
+      "o <u>escudeiro pragmático (ponderado)</u> que tenta manter seu mestre na dura realidade.",
+      "um universo de <u>aventuras insólitas (ameaçadoras).</u>"
     ],
     "correta": 1,
     "linkTec": "https://www.tecconcursos.com.br/questoes/2114093"
@@ -806,11 +806,11 @@
     "imagem": null,
     "pergunta": "Na primeira estrofe, a palavra “bem” está empregada com sentido equivalente daquela sublinhada na frase:",
     "alternativas": [
-      "Ele emprega bem o tempo.",
-      "Penso que você agiu bem.",
-      "Só quero o seu bem.",
-      "A prova foi bem difícil",
-      "Não me sinto bem hoje."
+      "Ele <u>emprega bem o</u> tempo.",
+      "Penso que você <u>agiu bem.</u>",
+      "Só quero o <u>seu bem.</u>",
+      "A prova <u>foi bem difícil</u>",
+      "Não me <u>sinto bem hoje.</u>"
     ],
     "correta": 3,
     "linkTec": "https://www.tecconcursos.com.br/questoes/2155473"
@@ -1046,11 +1046,11 @@
     "imagem": null,
     "pergunta": "Exprime circunstância de tempo o termo sublinhado em:",
     "alternativas": [
-      "<em>Entretanto, os cães o ouviram</em>",
-      "<em>Mas, para que eu não morra de forma indigna</em>",
-      "<em>Então ele se virou para o lobo</em>",
-      "<em>Isso é benfeito para mim</em>",
-      "<em>pois eu, que sou magarefe</em>"
+      "<u>Entretanto,</u> os cães o ouviram",
+      "<u>Mas,</u> para que eu não morra de forma indigna",
+      "<u>Então ele</u> se virou para o lobo",
+      "<u>Isso é</u> benfeito para mim",
+      "<u>pois eu,</u> que sou magarefe"
     ],
     "correta": 2,
     "linkTec": "https://www.tecconcursos.com.br/questoes/2274941"

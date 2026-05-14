@@ -38,11 +38,11 @@
     "imagem": null,
     "pergunta": "Constitui exemplo de derivação imprópria o vocábulo sublinhado em:",
     "alternativas": [
-      "<em>Esta velha angústia</em>,",
-      "<em>Este quase</em>,",
-      "<em>Transbordou da vasilha</em>,",
-      "<em>Porque não são sonhos</em>.",
-      "<em>Estou assim</em>..."
+      "<u>Esta velha angústia,</u>",
+      "<u>Este quase,</u>",
+      "<em>Transbor<u>da vasilha,</u>lha</em>,",
+      "<em>Por<u>não são sonhos.</u>hos</em>.",
+      "<u>Estou assim...</u>"
     ],
     "correta": 1,
     "linkTec": "https://www.tecconcursos.com.br/questoes/2293570"
@@ -350,11 +350,11 @@
     "imagem": null,
     "pergunta": "O cronista relata uma série de eventos ocorridos no passado. Um evento anterior a esse tempo passado está indicado pela forma verbal sublinhada\nem:",
     "alternativas": [
-      "<em>Inácio estava na graça do crescimento, e suas atitudes faziam descobrir um encanto novo no encanto imemorial dos gatos.</em>",
-      "<em>b) Mas Inácio desapareceu − e sua falta é mais importante para mim do que as reformas do ministério.</em>",
-      "<em>c) Eram duas da madrugada quando o pintor Reis Júnior, que passeia a essa hora com o seu cachimbo e o seu cão, me bateu à porta, noticioso.</em>",
-      "<em>d) Em suas andanças, vira um gato cor de ouro como Inácio − cor incomum em gatos comuns − e se dispunha a ajudar-me na captura.</em>",
-      "<em>e) Se for Inácio, pensei, dentro de um ou dois dias estará de volta.</em>"
+      "Inácio estava na graça do crescimento, e suas <u>atitudes faziam descobrir</u> um encanto novo no encanto imemorial dos gatos.",
+      "b) Mas <u>Inácio desapareceu −</u> e sua falta é mais importante para mim do que as reformas do ministério.",
+      "c) Eram duas da madrugada quando o pintor Reis Júnior, <u>que passeia a</u> essa hora com o seu cachimbo e o seu cão, me bateu à porta, noticioso.",
+      "d) Em suas <u>andanças, vira um</u> gato cor de ouro como Inácio − cor incomum em gatos comuns − e se dispunha a ajudar-me na captura.",
+      "e) Se for Inácio, pensei, dentro de um ou dois <u>dias estará de</u> volta."
     ],
     "correta": 3,
     "linkTec": "https://www.tecconcursos.com.br/questoes/2039109"
@@ -1022,11 +1022,11 @@
     "imagem": null,
     "pergunta": "<strong>*comborça</strong>: qualificação humilhante da amante de homem casado\nO verbo em negrito deve sua flexão ao termo sublinhado em:",
     "alternativas": [
-      "“<em><strong>Tinha </strong>três chaves a porta; uma estava com o escrivão, eu levaria outra, a terceira ficava em casa.</em>”",
-      "“<em>A casa em que eu <strong>estava </strong>hospedado era a do escrivão Meneses, que fora casado, em primeiras núpcias, com uma de minhas primas.</em>”",
-      "“<em><strong>Chamavam</strong>-lhe “a santa”, e fazia jus ao título, tão facilmente suportava os esquecimentos do marido.</em>”",
+      "“<em><strong>Tinha </strong><u>uma estava com</u>porta; uma estava com o escrivão, eu levaria outra, a terceira ficava em casa.</em>”",
+      "<u>“A casa em</u>a em que eu <st<u>hospedado era a</u>trong>hospedado era a do escrivão Meneses, que fora casado, em primeiras núpcias, com uma de minhas primas.</em>”",
+      "“<em><strong>C<u>“a santa”,</u>trong>-lhe “a santa”, e fazia jus ao título, tão facilmente suportava os esquecimentos do marido.</em>”",
       "“<em>Naquela noite de Natal <strong>foi </strong>o escrivão ao teatro.</em>”",
-      "“<em><strong>Tinha </strong>comigo um romance, os </em>Três Mosqueteiros<em>, velha tradução creio do Jornal do Comércio.</em>”"
+      "“<em><s<u>comigo um romance,</u>ng>comigo um romance, os </em<u>tradução creio do</u>s<em>, velha tradução creio do Jornal do Comércio.</em>”"
     ],
     "correta": 0,
     "linkTec": "https://www.tecconcursos.com.br/questoes/2152444"
@@ -1142,11 +1142,11 @@
     "imagem": null,
     "pergunta": "Está adequado o emprego do elemento sublinhado na frase:",
     "alternativas": [
-      "O estabelecimento de ensino era conhecido como colégio da Tia Gracinha, nome próprio do qual se recorreu para depois batizar um grupo escolar.",
-      "Os valores a que tinham acesso as alunas daquele colégio eram tradicionais, de acordo com as expectativas daquela época.",
-      "As esperanças de cujas se nutriam aquelas alunas repousavam sobretudo num bom casamento e numa vida doméstica bem administrada.",
-      "A desenvoltura em práticas de atenta higiene era uma das qualidades de que as moças deviam se aplicar naquele colégio.",
-      "Um paralelo entre a educação de hoje e a daquele internato de moças soará risível, pois a liberdade é hoje uma condição à qual ninguém abre mão."
+      "O estabelecimento de ensino era conhecido como colégio da Tia Gracinha, nome <u>próprio do qual se</u> recorreu para depois batizar um grupo escolar.",
+      "Os <u>valores a que tinham</u> acesso as alunas daquele colégio eram tradicionais, de acordo com as expectativas daquela época.",
+      "As <u>esperanças de cujas se</u> nutriam aquelas alunas repousavam sobretudo num bom casamento e numa vida doméstica bem administrada.",
+      "A desenvoltura em práticas de atenta higiene era uma das <u>qualidades de que as</u> moças deviam se aplicar naquele colégio.",
+      "Um paralelo entre a educação de hoje e a daquele internato de moças soará risível, pois a liberdade é hoje uma <u>condição à qual ninguém</u> abre mão."
     ],
     "correta": 1,
     "linkTec": "https://www.tecconcursos.com.br/questoes/2040948"

@@ -662,11 +662,11 @@
     "imagem": null,
     "pergunta": "No contexto em que se insere, o sentido será preservado com a substituição do elemento sublinhado pelo que está entre parênteses em:",
     "alternativas": [
-      "foi vilipendiado (admitido) por obscenidade (1º parágrafo)",
-      "Escaldado pela sanha (vocação) moralista (4º parágrafo)",
-      "escrito em 1928 e proscrito (banido) como pornografia (1º parágrafo)",
-      "o romance genuíno (gratificante) é o que contradiz o autor (3º parágrafo)",
-      "o resultado de uma relação intangível (evidente) entre os dois (6º parágrafo)"
+      "<u>foi vilipendiado (admitido)</u> por obscenidade (1º parágrafo)",
+      "Escaldado <u>pela sanha (vocação)</u> moralista (4º parágrafo)",
+      "escrito em 1928 <u>e proscrito (banido)</u> como pornografia (1º parágrafo)",
+      "o <u>romance genuíno (gratificante)</u> é o que contradiz o autor (3º parágrafo)",
+      "o resultado de uma <u>relação intangível (evidente)</u> entre os dois (6º parágrafo)"
     ],
     "correta": 2,
     "linkTec": "https://www.tecconcursos.com.br/questoes/1885140"
@@ -1142,7 +1142,7 @@
     "imagem": null,
     "pergunta": "Derivação imprópria é um processo em que uma palavra muda de classe gramatical sem mudar de forma. Constitui exemplo de derivação\nimprópria o termo sublinhado em:",
     "alternativas": [
-      "<em>Cervantes era um homem simples e miserável, aparentemente desde muito jovem.</em>",
+      "Cervantes era um homem simples <u>e miserável,</u> aparentemente desde muito jovem.",
       "<em>o crítico Santiago Muñoz Machado analisa as biografias mais importantes do escritor Miguel de Cervantes para saber em que sociedade surgiu</em> <em>Dom Quixote.</em>",
       "<em>Anos depois, li do começo ao fim, desfrutando cada página da história daquela dupla inusitada.</em>",
       "<em>ele passou cinco anos em Argel, onde deve ter sofrido o indescritível.</em>",

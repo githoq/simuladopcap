@@ -90,7 +90,7 @@
       "achou.",
       "faltava.",
       "era.",
-      "tivera."
+      "<u>tivera</u>."
     ],
     "correta": 4,
     "linkTec": "https://www.tecconcursos.com.br/questoes/3218849"
@@ -399,10 +399,10 @@
     "pergunta": "Retoma um termo mencionado anteriormente no texto a palavra sublinhada em:",
     "alternativas": [
       "<em>penetrou na água como um barco a deslizar do estaleiro</em> (3º parágrafo).",
-      "<em>voltou a cabeça ainda assustada para aquele mundo sujo, escuro, inimigo, onde viviam os homens</em> (3º parágrafo).",
+      "<em>voltou a cabeça ainda assustada pa<u>que</u>aquele mundo sujo, escuro, inimigo, onde viviam os homens</em> (3º parágrafo).",
       "<em>Mas felizmente para a tartaruga, incerto é o coração do homem</em> (3º parágrafo).",
       "<em>tanto procura devorar hoje o seu irmão bicho, como amanhã o festeja e liberta</em> (3º parágrafo).",
-      "<em>houve mão que abriu a porta da capoeira e encaminhou a marcha rampante do bicho marinho</em> (3º parágrafo)."
+      "<em>houve <u>que</u> que abriu a porta da capoeira e encaminhou a marcha rampante do bicho marinho</em> (3º parágrafo)."
     ],
     "correta": 3,
     "linkTec": "https://www.tecconcursos.com.br/questoes/2872296"
@@ -518,11 +518,11 @@
     "imagem": null,
     "pergunta": "No contexto em que se insere, expressa sentido de finalidade o termo sublinhado em:",
     "alternativas": [
-      "O boi <strong>nem</strong> precisou falar: era a imagem da revolta contra o sacrifício da espécie.",
-      "desempenho função vital no sistema da Terra.",
-      "estavam abusando de sua docilidade para fabricar cerâmicas vulgares.",
-      "Voltem <strong>para</strong> seus lugares e guardem o que lhes digo.",
-      "Vive onerado de impostos, afligido de doenças, e mal tem tempo de se coçar."
+      "O <u>boi nem precisou</u>/strong> precisou falar: era a imagem da revolta contra o sacrifício da espécie.",
+      "desempenho função <u>vital no sistema</u> da Terra.",
+      "estavam abusando de sua <u>docilidade para fabricar</u> cerâmicas vulgares.",
+      "<u>Voltem para seus</u>ara</strong> seus lugares e guardem o que lhes digo.",
+      "Vive onerado de impostos, afligido de doenças, <u>e mal tem</u> tempo de se coçar."
     ],
     "correta": 2,
     "linkTec": "https://www.tecconcursos.com.br/questoes/2869906"
@@ -974,11 +974,11 @@
     "imagem": null,
     "pergunta": "É invariável quanto a gênero e a número o termo sublinhado em:",
     "alternativas": [
-      "<em>a descoberta de que “pertencemos a algo maior” ou, então, de que “o verdadeiro Deus é o Acaso”, descortinaria uma dimensão adicional da</em> <em>nossa ignorância”</em>.",
-      "<em>O nosso \"Ah! então era isso!” serviria apenas como preâmbulo de um potencializado \"Mas, então, por que tudo isso</em>?”.",
-      "<em>Seja com o “a” minúsculo das metafísicas seculares ou o “A” maiúsculo das religiões, sempre haverá um além</em>.",
-      "<em>Sabemos o que procuramos quando indagamos do sentido de uma palavra.</em>",
-      "<em>ou o sonho que alguém de outro mundo está sonhando.</em>"
+      "<em>a descoberta de que “pertencemos a algo maior” ou, então, de que “o verdadeiro Deus é o Acaso”, descortinaria uma dimensão adicional<u>nossa ignorância”.</u> ignorância”</em>.",
+      "<em>O nosso \"Ah! então era iss<u>serviria apenas como</u>como preâmbulo de um potencializado \"Mas, então, por que tudo isso</em>?”.",
+      "<em>Seja com o “a” minúsculo <u>metafísicas seculares ou</u>s ou o “A” maiúsculo das religiões, sempre haverá um além</em>.",
+      "Sabemos o que procuramos quando indagamos <u>do sentido de</u> uma palavra.",
+      "ou o sonho que alguém <u>de outro mundo</u> está sonhando."
     ],
     "correta": 1,
     "linkTec": "https://www.tecconcursos.com.br/questoes/2869918"
@@ -998,11 +998,11 @@
     "imagem": null,
     "pergunta": "É invariável quanto a gênero e a número o termo sublinhado em",
     "alternativas": [
-      "<em>incerto é o coração do homem</em>",
-      "<em>ela que decerto esperava sepultar-se entre areias claras</em>",
-      "<em>abraçando toda a água</em>",
-      "<em>O caso deu-se aqui na Ilha</em>",
-      "<em>no meio daquele quase nada apareceu um bicho estranho</em>"
+      "<u>incerto é</u> o coração do homem",
+      "ela <u>que decerto esperava</u> sepultar-se entre areias claras",
+      "<u>abraçando toda a</u> água",
+      "<u>O caso deu-se</u> aqui na Ilha",
+      "no meio daquele quase nada apareceu um <u>bicho estranho</u>"
     ],
     "correta": 1,
     "linkTec": "https://www.tecconcursos.com.br/questoes/2872302"

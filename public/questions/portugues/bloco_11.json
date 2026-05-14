@@ -590,11 +590,11 @@
     "imagem": null,
     "pergunta": "Estabelece relação de condição o termo sublinhado em:",
     "alternativas": [
-      "E, realmente, no dia seguinte não foram poucos os que se declararam perplexos com a questão.",
-      "Tirar a camisa no escritório, onde já se vira?",
-      "Curiosamente, fora o seu Justinho e o Simas, ninguém se lembrava como abotoava a camisa.",
-      "E não consigo decidir se começo a abotoar por baixo ou por cima!",
-      "Era como se não se conhecessem."
+      "E, realmente, no dia seguinte não foram poucos os <u>que se declararam</u> perplexos com a questão.",
+      "Tirar a camisa no escritório, onde <u>já se vira?</u>",
+      "Curiosamente, fora o seu Justinho e o Simas, <u>ninguém se lembrava</u> como abotoava a camisa.",
+      "E não consigo <u>decidir se começo</u> a abotoar por baixo ou por cima!",
+      "Era como se <u>não se conhecessem.</u>"
     ],
     "correta": 3,
     "linkTec": "https://www.tecconcursos.com.br/questoes/2849669"
@@ -1146,7 +1146,7 @@
       "chega - descubro",
       "chegará - descobria",
       "chegou - descobri",
-      "chegara - descubro"
+      "<u>chegara</u> - descubro"
     ],
     "correta": 1,
     "linkTec": "https://www.tecconcursos.com.br/questoes/3118033"

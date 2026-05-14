@@ -38,11 +38,11 @@
     "imagem": null,
     "pergunta": "Está empregado em sentido figurado o termo sublinhado no seguinte trecho:",
     "alternativas": [
-      "<em>A revelação do Grande Segredo, é de supor, teria um extraordinário efeito.</em>",
-      "<em>somos um experimento científico abandonado pelos deuses nos confins do</em> “multiverso” (2º parágrafo).",
-      "<em>O nó da questão não é apenas a dificuldade de formular uma conjectura minimamente plausível</em> (1º parágrafo).",
-      "<em>Sabemos o que procuramos quando indagamos do sentido de uma palavra</em> (1º parágrafo).",
-      "<em>uma solução para o enigma da existência que fizesse sentido em termos humanos</em> (1º parágrafo)."
+      "A revelação do Grande Segredo, é de supor, teria um <u>extraordinário efeito.</u>",
+      "<em>somos um experimento científico abandonado pelos deu<u>nos confins do</u>s do</em> “multiverso” (2º parágrafo).",
+      "<u>O nó da</u>ó da questão não é apenas a dificuldade de formular uma conjectura minimamente plausível</em> (1º parágrafo).",
+      "<em>Sabemos o que procuramos quando indaga<u>do sentido de</u>o de uma palavra</em> (1º parágrafo).",
+      "<u>uma solução para</u>para o enigma da existência que fizesse sentido em termos humanos</em> (1º parágrafo)."
     ],
     "correta": 2,
     "linkTec": "https://www.tecconcursos.com.br/questoes/2869921"
@@ -158,11 +158,11 @@
     "imagem": null,
     "pergunta": "O termo empregado com sentido figurado está sublinhado no seguinte trecho:",
     "alternativas": [
-      "<em>A velhice é o tempo do cansaço de todas as coisas.</em>",
-      "<em> nos jornais, não há lugar para ressureições</em>.",
-      "<em>Devo ter perdido o juízo</em>.",
-      "<em>Confesso: sou vítima dessa vaidade</em>.",
-      "<em> como acontece com as estrelas, há sempre a obrigação de brilhar</em>."
+      "<u>A velhice é</u> o tempo do cansaço de todas as coisas.",
+      "<em> nos jornais, não há l<u> para ressureições</u>ções</em>.",
+      "<em>Devo ter perd<u>o juízo.</u>ízo</em>.",
+      "<em>Confesso: sou vítima de<u>vaidade.</u>ade</em>.",
+      "<em> como acontece com as estrelas, há se<u> a obrigação d</u>ão de brilhar</em>."
     ],
     "correta": 1,
     "linkTec": "https://www.tecconcursos.com.br/questoes/3151851"
@@ -662,7 +662,7 @@
     "imagem": null,
     "pergunta": "Indica-se uma expressão de sentido equivalente ao do elemento sublinhado na seguinte frase:",
     "alternativas": [
-      "penitência de quem fica à espera = se resguarda.",
+      "penitência de <u>quem fica à espera =</u> se resguarda.",
       "o cronista dá ao poeta notícias atualizadas - reitera as novidades.",
       "admiro essas frases sintéticas, supostamente simples = de aparente simplicidade.",
       "soa como desculpa por ainda estar vivo = conquanto esteja vivo.",
@@ -782,11 +782,11 @@
     "imagem": null,
     "pergunta": "No contexto dado, o elemento sublinhado é utilizado com sentido pejorativo neste segmento:",
     "alternativas": [
-      "Mas você é especula, hein?",
-      "Os primeiros astrônomos foram grandes especulas.",
-      "Aprendi que especular é investigar, pesquisar, refletir.",
-      "Era Isso o que também se entendia por especular.",
-      "Pensamento especulativo. para muitos, é o princípio mesmo da inquirição filosófica."
+      "Mas você <u>é especula,</u> hein?",
+      "Os primeiros astrônomos foram <u>grandes especulas.</u>",
+      "Aprendi <u>que especular é</u> investigar, pesquisar, refletir.",
+      "Era Isso o que também se entendia <u>por especular.</u>",
+      "<u>Pensamento especulativo.</u> para muitos, é o princípio mesmo da inquirição filosófica."
     ],
     "correta": 0,
     "linkTec": "https://www.tecconcursos.com.br/questoes/3231291"
@@ -830,11 +830,11 @@
     "imagem": null,
     "pergunta": "O elemento sublinhado em <em>Ainda no século 17 os filósofos iluministas ensinaram o valor do devaneio</em> (3º parágrafo) exerce a mesma função sintática\ndaquele sublinhado em:",
     "alternativas": [
-      "<em>E para isso recorro à inteligência artificial generativa</em> (2º parágrafo)",
-      "<em>pois se a pessoa não está prejudicando ninguém</em> (1º parágrafo)",
-      "<em>Só que a mecanização não ativa a Inteligência nem a razão</em> (3º parágrafo)",
-      "<em>As três pessoas que estavam comigo no elevador se recusavam a devanear</em> (1º parágrafo)",
-      "<em>ela está deixando de existir como indivíduo</em> (1º parágrafo)"
+      "<e<u>para isso recorro</u>orro à inteligência artificial generativa</em> (2º parágrafo)",
+      "<em>pois se a pessoa não e<u>prejudicando ninguém (1º</u></em> (1º parágrafo)",
+      "<em<u>que a mecanização não</u> não ativa a Inteligência nem a razão</em> (3º parágrafo)",
+      "<em>As três pessoas que esta<u>comigo no elevador se</u>r se recusavam a devanear</em> (1º parágrafo)",
+      "<em>ela está deixando de exis<u>como indivíduo (1º</u></em> (1º parágrafo)"
     ],
     "correta": 2,
     "linkTec": "https://www.tecconcursos.com.br/questoes/3023289"
@@ -854,11 +854,11 @@
     "imagem": null,
     "pergunta": "1lição: pedaço de lenha\n2trempe: apoio para panela\n3greta: rachadura\nO sujeito posposto ao verbo está sublinhado no seguinte trecho:",
     "alternativas": [
-      "Na verdade nenhum deles prestava atenção às palavras do outro.",
-      "De quando em quando estes se mexiam, porque o lume era fraco e apenas aquecia pedaços deles.",
-      "mas como só estavam iluminadas as alpercatas dele, o gesto passou despercebido.",
-      "as goteiras pingavam lá fora, o vento sacudia os ramos das calingueiras.",
-      "Fabiano sentado no pilão caído, sinha Vitória de pernas cruzadas, as coxas servindo de travesseiros aos filhos."
+      "Na <u>verdade nenhum deles</u> prestava atenção às palavras do outro.",
+      "De quando em <u>quando estes se</u> mexiam, porque o lume era fraco e apenas aquecia pedaços deles.",
+      "mas como só estavam iluminadas <u>as alpercatas dele,</u> o gesto passou despercebido.",
+      "as goteiras pingavam lá fora, <u>o vento sacudia</u> os ramos das calingueiras.",
+      "Fabiano sentado no pilão caído, sinha Vitória de pernas cruzadas, <u>as coxas servindo</u> de travesseiros aos filhos."
     ],
     "correta": 2,
     "linkTec": "https://www.tecconcursos.com.br/questoes/3132154"
@@ -878,11 +878,11 @@
     "imagem": null,
     "pergunta": "Em <em>Silva e Martin estudaram botos-tucuxis</em> (3º parágrafo), a expressão sublinhada exerce a mesma função sintática da expressão sublinhada em:",
     "alternativas": [
-      "<em>Machos exibem objetos vistosos para se valorizar</em> (3º parágrafo).",
-      "<em>o comportamento só faz parte do repertório de alguns bandos</em> (4º parágrafo).",
-      "<em>Em geral o portador era um macho</em> (3º parágrafo).",
-      "<em>Botos machos são mesmo galantes</em> (2º parágrafo).",
-      "<em>os botos saem do rio</em> (1º parágrafo)."
+      "<em>Mac<u>exibem objetos vistosos para</u>para se valorizar</em> (3º parágrafo).",
+      "<u>o comportamento só</u>o só faz parte do repertório de alguns bandos</em> (4º parágrafo).",
+      "<em>Em geral o porta<u>era um macho (3º</u></em> (3º parágrafo).",
+      "<u>Botos machos são</u> são mesmo galantes</em> (2º parágrafo).",
+      "<u>os botos saem</u>saem do rio</em> (1º parágrafo)."
     ],
     "correta": 0,
     "linkTec": "https://www.tecconcursos.com.br/questoes/2871116"
@@ -926,11 +926,11 @@
     "imagem": null,
     "pergunta": "<em>Os arbustos ralos elevam-se por léguas e léguas</em>\nA altemativa em que o trecho sublinhado exerce função sintática semelhante ao de “por léguas e lêguas\" é:",
     "alternativas": [
-      "Impossivel de varar, sem estradas, sem caminho, sem picadas, sem comida e sem água, sem sombra e sem regatos",
-      "São as cobras mais venenosas, a cascavel e o jararacuçu, a jararaca e a coral",
-      "Cobras e lagartos arrastam-se por entre as pedras, sob o sol escaldante do meio-dia",
-      "Agreste e inóspita estende-se a caatinga",
-      "São lagartos enormes, parecem sobrados do princípio do mundo"
+      "<u>Impossivel de varar,</u> sem estradas, sem caminho, sem picadas, sem comida e sem água, sem sombra e sem regatos",
+      "São as cobras mais <u>venenosas, a cascavel e o jararacuçu, a jararaca e a coral</u>",
+      "Cobras e lagartos arrastam-se por entre as <u>pedras, sob o sol escaldante do meio-dia</u>",
+      "Agreste e inóspita <u>estende-se a caatinga</u>",
+      "<u>São lagartos enormes,</u> parecem sobrados do princípio do mundo"
     ],
     "correta": 2,
     "linkTec": "https://www.tecconcursos.com.br/questoes/3204573"
@@ -950,8 +950,8 @@
     "imagem": null,
     "pergunta": "A expressão sublinhada em “É difícil <strong>encontrar o que se busca</strong>” exerce a mesma função sintática da expressão sublinhada em:",
     "alternativas": [
-      "<em>O hierógiifo da existência ganharia uma nova feição</em>.",
-      "<em>A ignorância infinita desconcerta o saber finito</em>.",
+      "<em>O hierógiifo da existên<u>ganharia uma nova feição.</u>ção</em>.",
+      "<em>A ignorância infin<u>desconcerta o saber finito.</u>ito</em>.",
       "<em>ela implicará nova justificada e demanda explicativa</em>.",
       "<em>tornar-se-ia ela própria o Grande Mistério a ser decifrado</em>.",
       "<em>A revelação do Grande Segredo, é de supor, teria um extraordinário efeito.</em>"
@@ -1046,11 +1046,11 @@
     "imagem": null,
     "pergunta": "1lição: pedaço de lenha 2trempe: apoio para panela 3greta: rachadura\nO pronome que, no contexto, indica ideia de posse está sublinhado em:",
     "alternativas": [
-      "<em>um circulo de luz espalhou-se em redor da trempe de pedra</em>",
-      "<em>não havia meio de dominá-las</em>",
-      "<em>e as imagens sucediam-se</em>",
-      "<em>iam exibindo as imagens que lhes vinham ao espírito</em>",
-      "<em>De quando em quando estes se mexiam</em>"
+      "um circulo de luz <u>espalhou-se em</u> redor da trempe de pedra",
+      "não havia meio de <u>dominá-las</u>",
+      "e as imagens <u>sucediam-se</u>",
+      "iam exibindo as imagens <u>que lhes vinham</u> ao espírito",
+      "De quando em quando <u>estes se mexiam</u>"
     ],
     "correta": 3,
     "linkTec": "https://www.tecconcursos.com.br/questoes/3132502"
@@ -1094,11 +1094,11 @@
     "imagem": null,
     "pergunta": "<em><strong>de viagem</strong>. Trad. José Marcos Macedo. Companhia das Letras, edição digital. Adaptado)</em>\n<em>a praia mantém ao longo de toda a costa a sua cômoda amplidão de areia fina</em>\nO trecho sublinhado exerce, no contexto, a mesma função sintática do trecho sublinhado em:",
     "alternativas": [
-      "Torre é, como destino turístico, uma ramificação do balneário vizinho e já foi <em>um idílio</em>.",
-      "não admira que não <em>muito adiante</em> tenha-se aberto uma concorrente mais sossegada.",
-      "Os pequenos se mostraram encantados com <em>essa magnificência</em>.",
-      "Surgiram <em>inúmeras pensões</em>, luxuosas e mais simples.",
-      "cuja pele da nuca se descasca por causa de um <em>sol esturricante</em>."
+      "Torre é, como destino turístico, uma ramificação do balneário vizinho e já <u>foi um idílio.</u>lio</em>.",
+      "não admira que <u>não muito adiante tenha-se</u> tenha-se aberto uma concorrente mais sossegada.",
+      "Os pequenos se mostraram encantados <u>com essa magnificência.</u>cia</em>.",
+      "<u>Surgiram inúmeras pensões,</u>ões</em>, luxuosas e mais simples.",
+      "cuja pele da nuca se descasca por causa de <u>um sol esturricante.</u>nte</em>."
     ],
     "correta": 3,
     "linkTec": "https://www.tecconcursos.com.br/questoes/3225330"
