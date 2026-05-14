@@ -33,6 +33,16 @@ function sanitizeHTML(html){
     .replace(/javascript:/gi,'#');
 }
 
+/* Render HTML with proper line-break and paragraph conversion */
+function renderHTML(html){
+  if(!html||typeof html!=='string') return '';
+  // Convert newlines to visible HTML breaks (critical for poems/verses/paragraphs)
+  const withBreaks = html
+    .replace(/\n\n+/g,'<br><br>')
+    .replace(/\n/g,'<br>');
+  return sanitizeHTML(withBreaks);
+}
+
 /* DATABASE LOADER */
 async function loadQuestionDatabase(onProgress) {
   const res = await fetch("/questions/database.json",{cache:"no-cache"});
@@ -70,22 +80,38 @@ function generateExam(config,questions,usedIds){
 function exportExamPDF(exam){
   /* ── Build questions section ── */
   let questionsHTML="";let lastDisc=null;
+  const pdfRender=(html)=>{
+    if(!html) return '';
+    // Convert \n to <br> for proper line breaks in PDF HTML
+    return html.replace(/\n\n+/g,'<br><br>').replace(/\n/g,'<br>');
+  };
+  const stripPdfLetter=(a)=>{
+    let s=(a||'').trim();
+    s=s.replace(/^[a-eA-E]\)\s*/,'');
+    s=s.replace(/^(<(?:em|strong|i|b|u)>)\s*[a-eA-E]\)\s*/i,'$1');
+    s=s.replace(/^<(?:em|strong|i|b|u)>\s*[a-eA-E]\)\s*<\/(?:em|strong|i|b|u)>\s*/i,'');
+    return s.trim();
+  };
   exam.questions.forEach(q=>{
     if(q.disciplina!==lastDisc){
       questionsHTML+=`<div class="disc-hd">${q.disciplina.toUpperCase()}</div>`;
       lastDisc=q.disciplina;
     }
+    const apoioHTML=q.texto_apoio?`<div class="q-apoio">
+      ${q.texto_apoio_titulo?`<div class="q-apoio-title">${q.texto_apoio_titulo}</div>`:''}
+      <div class="q-apoio-body">${pdfRender(q.texto_apoio)}</div>
+    </div>`:'';
     const alts=q.alternativas.map((a,i)=>`
       <div class="alt-row">
         <span class="alt-ltr">${LETTERS[i]}</span>
-        <span class="alt-txt">${(a||"").replace(/</g,"&lt;").replace(/>/g,"&gt;")}</span>
+        <span class="alt-txt">${pdfRender(stripPdfLetter(a))}</span>
       </div>`).join("");
     questionsHTML+=`<div class="question">
       <div class="q-header">
         <span class="q-num">Questão ${q.numero_simulado}</span>
-        
       </div>
-      <div class="q-text">${(q.pergunta||"").replace(/</g,"&lt;").replace(/>/g,"&gt;")}</div>
+      ${apoioHTML}
+      <div class="q-text">${pdfRender(q.pergunta||'')}</div>
       <div class="alts">${alts}</div>
     </div>`;
   });
@@ -173,11 +199,19 @@ body{font-family:"Times New Roman",Times,serif;font-size:11pt;color:#000;backgro
 .q-header{display:flex;align-items:baseline;gap:8pt;margin-bottom:5pt}
 .q-num{font-weight:bold;font-size:10.5pt;color:#000}
 .q-sub{font-size:8.5pt;color:#555;font-style:italic}
+.q-apoio{background:#f8f9fb;border-left:2.5px solid #4a7fa5;padding:8pt 12pt;margin-bottom:10pt;border-radius:0 4pt 4pt 0}
+.q-apoio-title{text-align:center;font-weight:bold;font-size:10.5pt;margin-bottom:6pt;color:#1a2b3c}
+.q-apoio-body{font-size:10pt;line-height:1.75;color:#1a1a1a}
+.q-apoio-body em,.q-apoio-body i{font-style:italic}
+.q-apoio-body strong,.q-apoio-body b{font-weight:bold}
 .q-text{line-height:1.65;text-align:justify;margin-bottom:7pt;font-size:10.5pt}
 .alts{margin-left:4pt}
 .alt-row{display:flex;gap:6pt;margin-bottom:3pt;line-height:1.5;page-break-inside:avoid}
 .alt-ltr{font-weight:bold;font-size:10.5pt;min-width:14pt;flex-shrink:0}
-.alt-txt{font-size:10.5pt}
+.alt-txt{font-size:10.5pt;line-height:1.5}
+.alt-txt em,.alt-txt i{font-style:italic}
+.alt-txt strong,.alt-txt b{font-weight:bold}
+.alt-txt u{text-decoration:underline}
 
 /* ── PAGE BREAKS ── */
 .pg-break{page-break-before:always}
@@ -384,8 +418,15 @@ function QuestionCard({q, numero, interactive=false, userAnswer=null, onAnswer=n
 
   /* Alt text: remove leading "A) " prefix if already embedded in JSON */
   const cleanAlt=(a,i)=>{
-    const s=a||"";
-    return s.replace(/^[A-Ea-e]\)\s*/,"");
+    if(!a) return '';
+    let s=a.trim();
+    // Strip plain: "a) text"
+    s=s.replace(/^[a-eA-E]\)\s*/,'');
+    // Strip inside HTML: "<em>a) text" -> "<em>text"
+    s=s.replace(/^(<(?:em|strong|i|b|u)>)\s*[a-eA-E]\)\s*/i,'$1');
+    // Strip standalone: "<em>a) </em>text" -> "text"
+    s=s.replace(/^<(?:em|strong|i|b|u)>\s*[a-eA-E]\)\s*<\/(?:em|strong|i|b|u)>\s*/i,'');
+    return s.trim();
   };
 
   const qNum=numero||q.numero_original;
@@ -406,7 +447,7 @@ function QuestionCard({q, numero, interactive=false, userAnswer=null, onAnswer=n
           {LETTERS[idx]}
         </div>
         <div style={{fontSize:13.5,lineHeight:1.65,flex:1,paddingTop:2}}
-          dangerouslySetInnerHTML={{__html:sanitizeHTML(cleanAlt(alt,idx))}}/>
+          dangerouslySetInnerHTML={{__html:renderHTML(cleanAlt(alt,idx))}}/>
         {showResult&&isCorrect&&<span style={{color:"#34d399",fontSize:16,flexShrink:0,paddingTop:4}}>✓</span>}
         {showResult&&isSelected&&!isCorrect&&<span style={{color:"#f87171",fontSize:16,flexShrink:0,paddingTop:4}}>✗</span>}
       </div>
@@ -441,10 +482,10 @@ function QuestionCard({q, numero, interactive=false, userAnswer=null, onAnswer=n
           <div style={{background:"rgba(56,189,248,0.08)",border:"1px solid rgba(56,189,248,0.25)",borderLeft:"3px solid #38bdf8",borderRadius:"0 10px 10px 0",padding:"14px 16px",marginBottom:16}}>
             {q.texto_apoio_titulo&&(
               <div style={{textAlign:"center",fontWeight:700,color:"#e2e8f0",fontSize:13.5,marginBottom:10,lineHeight:1.4}}
-                dangerouslySetInnerHTML={{__html:sanitizeHTML(q.texto_apoio_titulo)}}/>
+                dangerouslySetInnerHTML={{__html:renderHTML(q.texto_apoio_titulo)}}/>
             )}
             <div style={{color:"#b8c5d6",lineHeight:1.8,fontSize:13}}
-              dangerouslySetInnerHTML={{__html:sanitizeHTML(q.texto_apoio)}}/>
+              dangerouslySetInnerHTML={{__html:renderHTML(q.texto_apoio)}}/>
           </div>
         )}
 
@@ -460,7 +501,7 @@ function QuestionCard({q, numero, interactive=false, userAnswer=null, onAnswer=n
         {/* ── Question text ── */}
         <div style={{marginBottom:14,paddingBottom:14,borderBottom:"1px solid rgba(255,255,255,0.05)"}}>
           <div style={{color:"#f1f5f9",fontSize:14,lineHeight:1.8}}
-            dangerouslySetInnerHTML={{__html:sanitizeHTML(q.pergunta)}}/>
+            dangerouslySetInnerHTML={{__html:renderHTML(q.pergunta)}}/>
         </div>
 
         {/* ── Alternatives ── */}
@@ -530,7 +571,7 @@ function HomeView({stats,history,setView,currentExam,dbInfo,dbUpdated}){
       <div><div style={{fontSize:13,fontWeight:700,color:"#34d399"}}>Banco atualizado para v{dbInfo?.version}</div><div style={{fontSize:11,color:"#475569"}}>Novas questões disponíveis. Progresso e histórico preservados.</div></div>
     </div>)}
     <div style={{borderRadius:20,padding:"32px 28px",marginBottom:24,position:"relative",overflow:"hidden",background:"linear-gradient(135deg,rgba(14,26,56,0.95),rgba(21,37,75,0.9))",border:"1px solid rgba(56,189,248,0.2)",boxShadow:"0 0 60px rgba(56,189,248,0.05)"}}>
-      <div style={{position:"absolute",right:-10,top:-10,fontSize:160,opacity:0.04,transform:"rotate(-10deg)",pointerEvents:"none"}}><img src="/shield.png" alt="" style={{width:"100%",height:"auto",opacity:0.15,objectFit:"contain"}} /></div>
+      <div style={{position:"absolute",right:-10,top:-10,fontSize:160,opacity:0.04,transform:"rotate(-10deg)",pointerEvents:"none"}><img src="/shield.png" alt="" style={{width:"100%",height:"auto",opacity:0.15,objectFit:"contain"}} /></div>
       <div style={{position:"absolute",bottom:-20,left:-10,fontSize:120,opacity:0.03,pointerEvents:"none"}}>⚖️</div>
       <div style={{position:"relative",zIndex:1}}>
         <div style={{display:"flex",gap:8,flexWrap:"wrap",marginBottom:14}}>
