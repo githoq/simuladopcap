@@ -530,7 +530,7 @@ function HomeView({stats,history,setView,currentExam,dbInfo,dbUpdated}){
       <div><div style={{fontSize:13,fontWeight:700,color:"#34d399"}}>Banco atualizado para v{dbInfo?.version}</div><div style={{fontSize:11,color:"#475569"}}>Novas questões disponíveis. Progresso e histórico preservados.</div></div>
     </div>)}
     <div style={{borderRadius:20,padding:"32px 28px",marginBottom:24,position:"relative",overflow:"hidden",background:"linear-gradient(135deg,rgba(14,26,56,0.95),rgba(21,37,75,0.9))",border:"1px solid rgba(56,189,248,0.2)",boxShadow:"0 0 60px rgba(56,189,248,0.05)"}}>
-      <div style={{position:"absolute",right:-10,top:-10,fontSize:160,opacity:0.04,transform:"rotate(-10deg)",pointerEvents:"none"}><img src="/shield.png" alt="" style={{width:"100%",height:"auto",opacity:0.15,objectFit:"contain"}} /></div>
+      <div style={{position:"absolute",right:-10,top:-10,fontSize:160,opacity:0.04,transform:"rotate(-10deg)",pointerEvents:"none"}}><img src="/shield.png" alt="" style={{width:"100%",height:"auto",opacity:0.15,objectFit:"contain"}} /></div>
       <div style={{position:"absolute",bottom:-20,left:-10,fontSize:120,opacity:0.03,pointerEvents:"none"}}>⚖️</div>
       <div style={{position:"relative",zIndex:1}}>
         <div style={{display:"flex",gap:8,flexWrap:"wrap",marginBottom:14}}>
