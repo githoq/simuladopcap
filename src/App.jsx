@@ -47,11 +47,6 @@ function renderHTML(html,opts){
     }
   }
   return sanitizeHTML(s);
-} else {
-    // Already has HTML structure — only convert bare newlines that aren't inside tags
-    s=s.replace(/\n/g,'<br>');
-  }
-  return sanitizeHTML(s);
 }
 
 /* DATABASE LOADER */
