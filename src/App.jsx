@@ -57,34 +57,265 @@ function generateExam(config,questions,usedIds){
 
 /* PDF EXPORT — PROVA */
 function exportExamPDF(exam){
-  let body="";let last=null;
+  /* ── Build questions section ── */
+  let questionsHTML="";let lastDisc=null;
   exam.questions.forEach(q=>{
-    if(q.disciplina!==last){body+=`<div class="dh">${q.disciplina.toUpperCase()}</div>`;last=q.disciplina;}
-    body+=`<div class="q"><p class="qn">QUESTÃO ${q.numero_simulado}</p><p class="qt">${(q.pergunta||"").replace(/</g,"&lt;")}</p>${q.alternativas.map(a=>`<p class="alt">${(a||"").replace(/</g,"&lt;")}</p>`).join("")}</div>`;
+    if(q.disciplina!==lastDisc){
+      questionsHTML+=`<div class="disc-hd">${q.disciplina.toUpperCase()}</div>`;
+      lastDisc=q.disciplina;
+    }
+    const alts=q.alternativas.map((a,i)=>`
+      <div class="alt-row">
+        <span class="alt-ltr">${LETTERS[i]}</span>
+        <span class="alt-txt">${(a||"").replace(/</g,"&lt;").replace(/>/g,"&gt;")}</span>
+      </div>`).join("");
+    questionsHTML+=`<div class="question">
+      <div class="q-header">
+        <span class="q-num">Questão ${q.numero_simulado}</span>
+        ${q.assunto?`<span class="q-sub">${q.assunto}</span>`:""}
+      </div>
+      <div class="q-text">${(q.pergunta||"").replace(/</g,"&lt;").replace(/>/g,"&gt;")}</div>
+      <div class="alts">${alts}</div>
+    </div>`;
   });
-  const gab=exam.questions.map(q=>`<div class="gi"><span class="gn">${q.numero_simulado}</span><span class="gl">${LETTERS[q.correta]||"?"}</span></div>`).join("");
-  const html=`<!DOCTYPE html><html lang="pt-BR"><head><meta charset="utf-8"><title>Simulado PC-AP</title>
-<style>*{box-sizing:border-box;margin:0;padding:0}body{font-family:"Times New Roman",serif;font-size:11pt;color:#000}
-.pg{width:210mm;min-height:297mm;padding:20mm;margin:0 auto}.hd{border:2px solid #000;padding:12px;text-align:center;margin-bottom:20px}
-.hd h1{font-size:14pt;font-weight:bold}.hd h2{font-size:11pt;font-weight:normal;margin-top:4px}
-.mt{display:flex;justify-content:space-between;margin-top:12px;font-size:10pt}
-.fd{border-bottom:1px solid #000;padding:4px 0;margin:8px 0}.fd label{font-size:9pt;display:block}
-.dh{background:#000;color:#fff;padding:6px 12px;margin:20px 0 12px;font-size:10pt;font-weight:bold;letter-spacing:1px}
-.q{margin-bottom:20px;page-break-inside:avoid}.qn{font-weight:bold}.qt{margin:6px 0;line-height:1.6;text-align:justify}
-.alt{margin:3px 0 3px 16px;line-height:1.5}.gp{page-break-before:always;padding:20mm}
-.gt{text-align:center;font-size:14pt;font-weight:bold;border-bottom:2px solid #000;padding-bottom:10px;margin-bottom:20px}
-.gg{display:grid;grid-template-columns:repeat(10,1fr);gap:6px}
-.gi{border:1px solid #ccc;padding:6px 4px;text-align:center}.gn{font-size:8pt;color:#666;display:block}.gl{font-weight:bold;font-size:11pt}
-.pn{text-align:right;font-size:9pt;color:#666;margin-top:16px}@media print{body{margin:0}.pg,.gp{margin:0}}</style></head><body>
-<div class="pg"><div class="hd"><h1>POLÍCIA CIVIL DO ESTADO DO AMAPÁ</h1><h2>SIMULADO DE CONCURSO PÚBLICO — FCC</h2>
-<div class="mt"><span>Data: ${new Date().toLocaleDateString("pt-BR")}</span><span>${exam.questions.length} questões</span><span>Tempo: ${exam.timeMinutes} min</span></div></div>
-<div class="fd"><label>Nome completo:</label><div style="height:20px"></div></div>
-<div class="fd"><label>Assinatura:</label><div style="height:20px"></div></div><br>
-<p style="font-size:9pt;color:#555;margin-bottom:16px">INSTRUÇÕES: Assinale apenas uma alternativa por questão.</p>
-${body}<div class="pn">Página 1</div></div>
-<div class="gp"><div class="gt">GABARITO OFICIAL — SIMULADO PC-AP<br><span style="font-size:10pt;font-weight:normal">${new Date().toLocaleDateString("pt-BR")} | ${exam.questions.length} questões</span></div>
-<div class="gg">${gab}</div><div class="pn">Gabarito</div></div></body></html>`;
-  const w=window.open("","_blank");if(w){w.document.write(html);w.document.close();setTimeout(()=>w.print(),800);}
+
+  /* ── Build cartão resposta (answer bubbles) ── */
+  const half=Math.ceil(exam.questions.length/2);
+  const leftQs=exam.questions.slice(0,half);
+  const rightQs=exam.questions.slice(half);
+  const buildCol=qs=>qs.map(q=>`
+    <div class="ans-row">
+      <span class="ans-num">${String(q.numero_simulado).padStart(2,"0")}</span>
+      ${LETTERS.slice(0,q.alternativas.length).map(l=>`<span class="bubble">${l}</span>`).join("")}
+    </div>`).join("");
+  const cartaoHTML=`
+    <div class="cartao-cols">
+      <div class="cartao-col">${buildCol(leftQs)}</div>
+      <div class="cartao-divider"></div>
+      <div class="cartao-col">${buildCol(rightQs)}</div>
+    </div>`;
+
+  /* ── Build gabarito grid ── */
+  const gabRows=exam.questions.map(q=>`
+    <div class="gab-cell">
+      <div class="gab-num">${q.numero_simulado}</div>
+      <div class="gab-ans">${LETTERS[q.correta]||"?"}</div>
+    </div>`).join("");
+
+  /* ── Discipline summary ── */
+  const discSummary=[...new Set(exam.questions.map(q=>q.disciplina))].map(d=>{
+    const cnt=exam.questions.filter(q=>q.disciplina===d).length;
+    return `<div class="disc-item"><span class="disc-name">${d}</span><span class="disc-cnt">${cnt}Q</span></div>`;
+  }).join("");
+
+  const hoje=new Date().toLocaleDateString("pt-BR",{day:"2-digit",month:"long",year:"numeric"});
+
+  const html=`<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Simulado PC-AP — ${exam.questions.length} Questões</title>
+<style>
+/* ── RESET & PAGE ── */
+*{box-sizing:border-box;margin:0;padding:0}
+@page{size:A4 portrait;margin:15mm 15mm 18mm 15mm}
+body{font-family:"Times New Roman",Times,serif;font-size:11pt;color:#000;background:#fff;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+
+/* ── COVER HEADER ── */
+.cover-header{border:2.5px solid #000;margin-bottom:18pt}
+.cover-top{background:#0f1729;color:#fff;padding:12pt 16pt;display:flex;align-items:center;gap:14pt}
+.cover-shield{font-size:28pt;flex-shrink:0}
+.cover-titles{flex:1}
+.cover-titles h1{font-size:13pt;font-weight:bold;letter-spacing:.5px;text-transform:uppercase}
+.cover-titles h2{font-size:10pt;font-weight:normal;margin-top:3pt;opacity:.85}
+.cover-meta{display:grid;grid-template-columns:repeat(3,1fr);border-top:1.5px solid #000;font-size:9.5pt}
+.cover-meta-item{padding:7pt 12pt;border-right:1px solid #000}
+.cover-meta-item:last-child{border-right:none}
+.cover-meta-item .lbl{font-size:7.5pt;text-transform:uppercase;letter-spacing:.5px;color:#555;display:block;margin-bottom:2pt}
+.cover-meta-item .val{font-weight:bold;font-size:10.5pt}
+
+/* ── CANDIDATE FIELDS ── */
+.candidate-fields{margin-bottom:14pt;border:1px solid #ccc;padding:8pt 12pt}
+.field-row{display:flex;gap:16pt;margin-bottom:6pt}
+.field-row:last-child{margin-bottom:0}
+.field{flex:1;border-bottom:1px solid #000;padding-bottom:14pt;position:relative}
+.field label{font-size:8pt;text-transform:uppercase;letter-spacing:.5px;color:#555;position:absolute;top:0}
+
+/* ── INSTRUCTIONS ── */
+.instructions{border:1px solid #999;padding:8pt 12pt;margin-bottom:14pt;background:#f9f9f9}
+.instructions h3{font-size:9.5pt;font-weight:bold;text-transform:uppercase;letter-spacing:.5px;margin-bottom:5pt}
+.instructions ol{margin-left:16pt;font-size:9pt;line-height:1.7}
+
+/* ── DISC SUMMARY ── */
+.disc-summary{margin-bottom:14pt}
+.disc-summary-title{font-size:8pt;font-weight:bold;text-transform:uppercase;letter-spacing:.5px;color:#555;margin-bottom:5pt}
+.disc-summary-grid{display:flex;flex-wrap:wrap;gap:4pt}
+.disc-item{display:flex;align-items:center;gap:5pt;padding:3pt 8pt;border:1px solid #ddd;border-radius:3pt;font-size:8pt}
+.disc-name{color:#333}.disc-cnt{font-weight:bold;color:#000}
+
+/* ── DISCIPLINE HEADER ── */
+.disc-hd{background:#0f1729;color:#fff;padding:5pt 10pt;font-size:9.5pt;font-weight:bold;letter-spacing:1.5px;margin:18pt 0 10pt;text-transform:uppercase;page-break-after:avoid}
+
+/* ── QUESTION ── */
+.question{page-break-inside:avoid;margin-bottom:14pt;padding-bottom:10pt;border-bottom:1px dotted #ccc}
+.question:last-child{border-bottom:none}
+.q-header{display:flex;align-items:baseline;gap:8pt;margin-bottom:5pt}
+.q-num{font-weight:bold;font-size:10.5pt;color:#000}
+.q-sub{font-size:8.5pt;color:#555;font-style:italic}
+.q-text{line-height:1.65;text-align:justify;margin-bottom:7pt;font-size:10.5pt}
+.alts{margin-left:4pt}
+.alt-row{display:flex;gap:6pt;margin-bottom:3pt;line-height:1.5;page-break-inside:avoid}
+.alt-ltr{font-weight:bold;font-size:10.5pt;min-width:14pt;flex-shrink:0}
+.alt-txt{font-size:10.5pt}
+
+/* ── PAGE BREAKS ── */
+.pg-break{page-break-before:always}
+
+/* ── CARTÃO RESPOSTA ── */
+.cartao-header{text-align:center;border:2px solid #000;padding:10pt;margin-bottom:14pt}
+.cartao-header h2{font-size:13pt;font-weight:bold;text-transform:uppercase;letter-spacing:.5px}
+.cartao-header p{font-size:9pt;margin-top:3pt;color:#444}
+.cartao-fields{display:flex;gap:20pt;margin-bottom:12pt}
+.cartao-field{flex:1;border-bottom:1.5px solid #000;padding-bottom:14pt;position:relative}
+.cartao-field label{font-size:8pt;text-transform:uppercase;letter-spacing:.5px;color:#555}
+.cartao-instructions{font-size:8.5pt;color:#444;margin-bottom:12pt;line-height:1.6;border:1px solid #ccc;padding:6pt 10pt;background:#f9f9f9}
+.cartao-cols{display:flex;gap:0}
+.cartao-col{flex:1}
+.cartao-divider{width:1px;background:#000;margin:0 12pt}
+.ans-row{display:flex;align-items:center;gap:5pt;margin-bottom:5pt;padding:2pt 4pt}
+.ans-row:nth-child(even){background:#f5f5f5}
+.ans-num{font-weight:bold;font-size:9pt;min-width:22pt;text-align:right;color:#333}
+.bubble{display:inline-flex;align-items:center;justify-content:center;width:15pt;height:15pt;border:1.5px solid #333;border-radius:50%;font-size:7.5pt;font-weight:bold;cursor:default;font-family:Arial,sans-serif}
+
+/* ── GABARITO ── */
+.gab-header{text-align:center;border:2px solid #000;padding:12pt;margin-bottom:16pt}
+.gab-header h2{font-size:14pt;font-weight:bold;text-transform:uppercase;letter-spacing:1px}
+.gab-header p{font-size:9.5pt;margin-top:4pt;color:#444}
+.gab-warning{border:2px dashed #c00;padding:8pt 12pt;text-align:center;margin-bottom:14pt;color:#c00;font-weight:bold;font-size:10pt;background:#fff8f8}
+.gab-grid{display:grid;grid-template-columns:repeat(10,1fr);gap:5pt;margin-bottom:14pt}
+.gab-cell{border:1.5px solid #ccc;text-align:center;padding:5pt 2pt;border-radius:3pt}
+.gab-num{font-size:7.5pt;color:#777;display:block}
+.gab-ans{font-weight:bold;font-size:12pt;color:#000}
+.gab-disc-breakdown{margin-top:16pt}
+.gab-disc-breakdown h3{font-size:9pt;font-weight:bold;text-transform:uppercase;letter-spacing:.5px;margin-bottom:8pt;border-bottom:1px solid #ccc;padding-bottom:4pt}
+.gab-disc-row{display:flex;justify-content:space-between;font-size:9pt;padding:3pt 0;border-bottom:1px dotted #eee}
+
+/* ── FOOTER ── */
+.page-footer{text-align:right;font-size:7.5pt;color:#888;margin-top:14pt;border-top:1px solid #eee;padding-top:5pt}
+
+@media print{
+  body{margin:0}
+  .no-print{display:none!important}
+  .pg-break{page-break-before:always}
+  .disc-hd{page-break-after:avoid}
+  .question{page-break-inside:avoid}
+  .ans-row{page-break-inside:avoid}
+  .gab-cell{page-break-inside:avoid}
+}
+</style>
+</head>
+<body>
+
+<!-- ══════════ PÁGINA 1 — CAPA + QUESTÕES ══════════ -->
+<div class="cover-header">
+  <div class="cover-top">
+    <div class="cover-shield">🛡️</div>
+    <div class="cover-titles">
+      <h1>Polícia Civil do Estado do Amapá</h1>
+      <h2>Simulado de Concurso Público — Banca FCC</h2>
+    </div>
+  </div>
+  <div class="cover-meta">
+    <div class="cover-meta-item"><span class="lbl">Data</span><span class="val">${hoje}</span></div>
+    <div class="cover-meta-item"><span class="lbl">Total de Questões</span><span class="val">${exam.questions.length} questões</span></div>
+    <div class="cover-meta-item"><span class="lbl">Tempo de Prova</span><span class="val">${exam.timeMinutes} minutos</span></div>
+  </div>
+</div>
+
+<div class="candidate-fields">
+  <div class="field-row">
+    <div class="field"><label>Nome completo</label></div>
+  </div>
+  <div class="field-row">
+    <div class="field"><label>Assinatura</label></div>
+    <div class="field" style="max-width:120pt"><label>CPF</label></div>
+  </div>
+</div>
+
+<div class="instructions">
+  <h3>Instruções Gerais</h3>
+  <ol>
+    <li>Leia atentamente cada questão antes de responder.</li>
+    <li>Assinale apenas <strong>uma</strong> alternativa por questão no Cartão Resposta.</li>
+    <li>Utilize caneta esferográfica de tinta azul ou preta.</li>
+    <li>Questões em branco ou com mais de uma alternativa marcada serão anuladas.</li>
+    <li>Não é permitido o uso de corretivo. Rasuras invalidam a questão.</li>
+    <li>O gabarito oficial está na última página — mantenha-o separado durante a prova.</li>
+  </ol>
+</div>
+
+<div class="disc-summary">
+  <div class="disc-summary-title">Disciplinas desta prova</div>
+  <div class="disc-summary-grid">${discSummary}</div>
+</div>
+
+${questionsHTML}
+
+<!-- ══════════ CARTÃO RESPOSTA ══════════ -->
+<div class="pg-break">
+  <div class="cartao-header">
+    <h2>Cartão de Respostas</h2>
+    <p>Polícia Civil do Amapá — Simulado FCC · ${exam.questions.length} questões · ${hoje}</p>
+  </div>
+
+  <div class="cartao-fields">
+    <div class="cartao-field"><label>Nome completo</label></div>
+    <div class="cartao-field" style="max-width:130pt"><label>Assinatura</label></div>
+  </div>
+
+  <div class="cartao-instructions">
+    <strong>Como marcar:</strong> Preencha completamente a letra correspondente à sua resposta com caneta azul ou preta. Não use corretivo. Rasuras ou marcações duplas anulam a questão.
+  </div>
+
+  ${cartaoHTML}
+  <div class="page-footer">Cartão de Respostas — PC-AP Simulados · ${hoje}</div>
+</div>
+
+<!-- ══════════ GABARITO (ÚLTIMA PÁGINA) ══════════ -->
+<div class="pg-break">
+  <div class="gab-header">
+    <h2>⚠ Gabarito Oficial</h2>
+    <p>Polícia Civil do Amapá — Simulado FCC · ${exam.questions.length} questões · ${hoje}</p>
+  </div>
+
+  <div class="gab-warning">
+    ATENÇÃO: Esta página contém as respostas. Separe-a fisicamente antes de iniciar a prova.
+  </div>
+
+  <div class="gab-grid">${gabRows}</div>
+
+  <div class="gab-disc-breakdown">
+    <h3>Distribuição por Disciplina</h3>
+    ${[...new Set(exam.questions.map(q=>q.disciplina))].map(d=>{
+      const qs=exam.questions.filter(q=>q.disciplina===d);
+      const firstQ=qs[0].numero_simulado;const lastQ=qs[qs.length-1].numero_simulado;
+      return `<div class="gab-disc-row"><span>${d}</span><span>Q${firstQ}–Q${lastQ} · ${qs.length} questões</span></div>`;
+    }).join("")}
+  </div>
+
+  <div class="page-footer">Gabarito Oficial — PC-AP Simulados · Não divulgue antes do fim da prova</div>
+</div>
+
+</body>
+</html>`;
+
+  const w=window.open("","_blank");
+  if(w){
+    w.document.write(html);
+    w.document.close();
+    w.addEventListener("load",()=>setTimeout(()=>w.print(),600));
+    setTimeout(()=>w.print(),1200);
+  }
 }
 
 /* PDF EXPORT — RESULTADO */
@@ -268,12 +499,13 @@ function GeneratorView({questions,usedIds,startExam,notify}){
     {label:"Português 10Q",icon:"📝",vals:{"Língua Portuguesa":10}},
   ];
   const setDisc=(d,v)=>setCfg(p=>({...p,disciplineConfig:{...p.disciplineConfig,[d]:Math.max(0,Math.min(avail[d]||0,v))}}));
+  const [previewExam,setPreviewExam]=useState(null);
   const handle=()=>{
     if(!total){notify("Configure pelo menos uma disciplina","error");return;}
     const exam=generateExam(cfg,questions,usedIds);
     if(!exam.questions.length){notify("Todas as questões foram utilizadas! Resete o histórico.","error");return;}
     if(exam.warnings?.length){const msg=exam.warnings.map(w=>`${w.disc}: ${w.available}/${w.requested}`).join("\n");if(!confirm(`Questões insuficientes:\n${msg}\n\nContinuar?`))return;}
-    startExam(exam);
+    setPreviewExam(exam);
   };
   return(<div style={{maxWidth:800,margin:"0 auto",padding:"24px 16px"}}>
     <h2 style={{fontSize:22,fontWeight:900,margin:"0 0 6px",fontFamily:"monospace"}}>⚡ GERAR SIMULADO</h2>
@@ -324,9 +556,35 @@ function GeneratorView({questions,usedIds,startExam,notify}){
         </div>
       </div>
     </div>
-    <button onClick={handle} disabled={total===0} style={{width:"100%",padding:"16px",borderRadius:14,border:"none",fontWeight:800,fontSize:15,cursor:total===0?"not-allowed":"pointer",transition:"all 0.3s",fontFamily:"monospace",letterSpacing:1,background:total===0?"rgba(99,102,241,0.1)":"linear-gradient(135deg,#4f46e5,#6366f1,#818cf8)",color:total===0?"#334155":"#fff",boxShadow:total>0?"0 8px 32px rgba(99,102,241,0.4)":"none"}}>
-      {total===0?"— Configure as disciplinas acima —":`⚡ GERAR SIMULADO • ${total} QUESTÕES`}
-    </button>
+    {!previewExam?(
+      <button onClick={handle} disabled={total===0} style={{width:"100%",padding:"16px",borderRadius:14,border:"none",fontWeight:800,fontSize:15,cursor:total===0?"not-allowed":"pointer",transition:"all 0.3s",fontFamily:"monospace",letterSpacing:1,background:total===0?"rgba(99,102,241,0.1)":"linear-gradient(135deg,#4f46e5,#6366f1,#818cf8)",color:total===0?"#334155":"#fff",boxShadow:total>0?"0 8px 32px rgba(99,102,241,0.4)":"none"}}>
+        {total===0?"— Configure as disciplinas acima —":`⚡ GERAR SIMULADO • ${total} QUESTÕES`}
+      </button>
+    ):(
+      <div style={{borderRadius:16,background:"rgba(52,211,153,0.08)",border:"1px solid rgba(52,211,153,0.3)",padding:"22px 24px"}}>
+        <div style={{display:"flex",alignItems:"center",gap:12,marginBottom:16}}>
+          <div style={{width:42,height:42,borderRadius:12,background:"rgba(52,211,153,0.15)",display:"flex",alignItems:"center",justifyContent:"center",fontSize:22}}>✅</div>
+          <div>
+            <div style={{fontSize:15,fontWeight:900,color:"#34d399",fontFamily:"monospace"}}>SIMULADO GERADO!</div>
+            <div style={{fontSize:12,color:"#475569",marginTop:2}}>{previewExam.questions.length} questões • {previewExam.timeMinutes} min • {previewExam.mode==="prova"?"Modo Prova":"Modo Treino"}</div>
+          </div>
+        </div>
+        <div style={{display:"flex",gap:10,flexWrap:"wrap"}}>
+          <button onClick={()=>{startExam(previewExam);setPreviewExam(null);}} style={{...S.btn("primary"),flex:1,minWidth:160,padding:"14px",fontSize:14,fontWeight:800}}>
+            ▶ Iniciar Prova
+          </button>
+          <button onClick={()=>exportExamPDF(previewExam)} style={{...S.btn("outline"),flex:1,minWidth:160,padding:"14px",fontSize:14,fontWeight:800}}>
+            📄 Baixar PDF da Prova
+          </button>
+          <button onClick={()=>setPreviewExam(null)} style={{...S.btn("ghost"),padding:"14px 18px",fontSize:13}}>
+            ↩ Refazer
+          </button>
+        </div>
+        <div style={{marginTop:12,fontSize:11,color:"#475569",lineHeight:1.6,borderTop:"1px solid rgba(52,211,153,0.15)",paddingTop:10}}>
+          O PDF inclui: <strong style={{color:"#94a3b8"}}>capa profissional</strong> · <strong style={{color:"#94a3b8"}}>questões FCC</strong> · <strong style={{color:"#94a3b8"}}>cartão de respostas</strong> · <strong style={{color:"#94a3b8"}}>gabarito em página separada</strong>
+        </div>
+      </div>
+    )}
   </div>);
 }
 
@@ -344,7 +602,11 @@ function ExamView({exam,finishExam,setView}){
       <div style={{maxWidth:900,margin:"0 auto",display:"flex",alignItems:"center",justifyContent:"space-between",gap:12,flexWrap:"wrap"}}>
         <div style={{display:"flex",alignItems:"center",gap:10}}><Badge color={isTreino?"#34d399":"#f87171"}>{isTreino?"📖 TREINO":"🏆 PROVA"}</Badge><span style={{fontSize:12,color:"#475569",fontFamily:"monospace"}}>{answered}/{total} respondidas</span></div>
         <div style={{display:"flex",alignItems:"center",gap:8,padding:"7px 16px",borderRadius:10,background:"rgba(255,255,255,0.04)",border:`1px solid ${tcol}33`}}><span style={{fontSize:12}}>⏱</span><span style={{fontSize:22,fontWeight:900,color:tcol,fontFamily:"monospace"}}>{fmtTime(tLeft)}</span></div>
-        <div style={{display:"flex",gap:8}}><button onClick={()=>setShowGrid(!showGrid)} style={{...S.btn("ghost"),padding:"6px 12px",fontSize:12}}>⊞ Grade</button><button onClick={()=>setShowConfirm(true)} style={{...S.btn("primary"),padding:"6px 16px",fontSize:12}}>✔ Finalizar</button></div>
+        <div style={{display:"flex",gap:8}}>
+          <button onClick={()=>exportExamPDF(exam)} style={{...S.btn("ghost"),padding:"6px 12px",fontSize:12,color:"#38bdf8",borderColor:"rgba(56,189,248,0.3)"}}>📄 PDF</button>
+          <button onClick={()=>setShowGrid(!showGrid)} style={{...S.btn("ghost"),padding:"6px 12px",fontSize:12}}>⊞ Grade</button>
+          <button onClick={()=>setShowConfirm(true)} style={{...S.btn("primary"),padding:"6px 16px",fontSize:12}}>✔ Finalizar</button>
+        </div>
       </div>
       <div style={{maxWidth:900,margin:"6px auto 0",height:3,background:"rgba(255,255,255,0.04)",borderRadius:2}}><div style={{height:"100%",width:`${pct}%`,background:`linear-gradient(90deg,${dc},#6366f1)`,borderRadius:2,transition:"width 0.4s"}}/></div>
     </div>
