@@ -59,7 +59,7 @@
     "orgao": "TRT 11",
     "texto_apoio_titulo": "O texto abaixo é uma resposta produzida por inteligência artificial a uma pergunta.",
     "texto_apoio": null,
-    "imagem": null,
+    "imagem": "/assets/questions/questao_008.png",
     "pergunta": "É INCORRETO afirmar que o texto",
     "alternativas": [
       "associa a língua portuguesa ao uso de tecnologias ao tratar do seu futuro.",
