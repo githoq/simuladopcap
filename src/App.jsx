@@ -36,11 +36,17 @@ function sanitizeHTML(html){
 /* Render HTML with proper line-break and paragraph conversion */
 function renderHTML(html){
   if(!html||typeof html!=='string') return '';
-  // Convert newlines to visible HTML breaks (critical for poems/verses/paragraphs)
-  const withBreaks = html
-    .replace(/\n\n+/g,'<br><br>')
-    .replace(/\n/g,'<br>');
-  return sanitizeHTML(withBreaks);
+  let s=html;
+  // If content already has <p> or <br> tags from the parser, don't double-convert
+  const hasHTMLStructure = /<(p|br|div|ul|ol|li|table|blockquote)\b/i.test(s);
+  if(!hasHTMLStructure){
+    // Plain text / minimal HTML — convert newlines to breaks
+    s=s.replace(/\n\n+/g,'<br><br>').replace(/\n/g,'<br>');
+  } else {
+    // Already has HTML structure — only convert bare newlines that aren't inside tags
+    s=s.replace(/\n/g,'<br>');
+  }
+  return sanitizeHTML(s);
 }
 
 /* DATABASE LOADER */
@@ -97,6 +103,8 @@ function exportExamPDF(exam){
       questionsHTML+=`<div class="disc-hd">${q.disciplina.toUpperCase()}</div>`;
       lastDisc=q.disciplina;
     }
+    const imgSrc=q.imagem?(q.imagem.startsWith('http')?q.imagem:q.imagem):'';
+    const imgHTML=imgSrc?`<div class="q-img-wrap"><img src="${imgSrc}" alt="Figura" class="q-img" /></div>`:'';
     const apoioHTML=q.texto_apoio?`<div class="q-apoio">
       ${q.texto_apoio_titulo?`<div class="q-apoio-title">${q.texto_apoio_titulo}</div>`:''}
       <div class="q-apoio-body">${pdfRender(q.texto_apoio)}</div>
@@ -106,11 +114,14 @@ function exportExamPDF(exam){
         <span class="alt-ltr">${LETTERS[i]}</span>
         <span class="alt-txt">${pdfRender(stripPdfLetter(a))}</span>
       </div>`).join("");
+    const dividerHTML=q.texto_apoio?'<div class="q-apoio-divider"></div>':'';
     questionsHTML+=`<div class="question">
       <div class="q-header">
         <span class="q-num">Questão ${q.numero_simulado}</span>
       </div>
       ${apoioHTML}
+      ${dividerHTML}
+      ${imgHTML}
       <div class="q-text">${pdfRender(q.pergunta||'')}</div>
       <div class="alts">${alts}</div>
     </div>`;
@@ -155,7 +166,7 @@ function exportExamPDF(exam){
 <style>
 /* ── RESET & PAGE ── */
 *{box-sizing:border-box;margin:0;padding:0}
-@page{size:A4 portrait;margin:15mm 15mm 18mm 15mm}
+@page{size:A4 portrait;margin:13mm 14mm 16mm 14mm}
 body{font-family:"Times New Roman",Times,serif;font-size:11pt;color:#000;background:#fff;-webkit-print-color-adjust:exact;print-color-adjust:exact}
 
 /* ── COVER HEADER ── */
@@ -194,24 +205,43 @@ body{font-family:"Times New Roman",Times,serif;font-size:11pt;color:#000;backgro
 .disc-hd{background:#1e3a5f;color:#e2e8f0;padding:5pt 12pt;font-size:9.5pt;font-weight:bold;letter-spacing:1.5px;margin:18pt 0 10pt;text-transform:uppercase;page-break-after:avoid;border-left:3px solid #4f9ecf}
 
 /* ── QUESTION ── */
-.question{page-break-inside:avoid;margin-bottom:14pt;padding-bottom:10pt;border-bottom:1px dotted #ccc}
+.question{page-break-inside:avoid;margin-bottom:12pt;padding-bottom:9pt;border-bottom:1px dotted #ccc}
 .question:last-child{border-bottom:none}
-.q-header{display:flex;align-items:baseline;gap:8pt;margin-bottom:5pt}
+/* Prevent apoio+pergunta from splitting */
+.question .q-apoio + .q-apoio-divider + .q-text,
+.question .q-apoio + .q-text { page-break-before:avoid }
+.question .q-text + .alts { page-break-before:avoid }
+.q-header{display:flex;align-items:baseline;gap:8pt;margin-bottom:4pt}
 .q-num{font-weight:bold;font-size:10.5pt;color:#000}
 .q-sub{font-size:8.5pt;color:#555;font-style:italic}
-.q-apoio{background:#f8f9fb;border-left:2.5px solid #4a7fa5;padding:8pt 12pt;margin-bottom:10pt;border-radius:0 4pt 4pt 0}
-.q-apoio-title{text-align:center;font-weight:bold;font-size:10.5pt;margin-bottom:6pt;color:#1a2b3c}
-.q-apoio-body{font-size:10pt;line-height:1.75;color:#1a1a1a}
+.q-apoio{background:#f0f4f8;border-left:3px solid #4a7fa5;padding:10pt 14pt;margin-bottom:0;border-radius:0 4pt 4pt 0;page-break-inside:avoid}
+.q-apoio-title{text-align:center;font-weight:bold;font-size:10.5pt;margin-bottom:7pt;color:#1a2b3c}
+.q-apoio-body{font-size:9.5pt;line-height:1.6;color:#1a1a1a}
 .q-apoio-body em,.q-apoio-body i{font-style:italic}
-.q-apoio-body strong,.q-apoio-body b{font-weight:bold}
-.q-text{line-height:1.65;text-align:justify;margin-bottom:7pt;font-size:10.5pt}
+/* strong no apoio = grifado/highlight FCC */
+.q-apoio-body strong,.q-apoio-body b{font-weight:bold;background:#fde68a;padding:0 1pt;border-radius:1pt}
+.q-apoio-body u{text-decoration:underline}
+.q-apoio-body br{display:block;margin-bottom:0.12em}
+.q-apoio-body p{margin-bottom:0.45em}
+.q-apoio-body br+br{margin-bottom:0.35em}
+.q-apoio-divider{height:1px;background:linear-gradient(to right,#4a7fa5 0%,transparent 80%);margin:10pt 0 8pt}
+.q-img{display:block;max-width:100%;height:auto;margin:8pt auto 10pt;border-radius:4pt;page-break-inside:avoid}
+.q-img-wrap{text-align:center;margin:6pt 0 10pt;page-break-inside:avoid}
+.q-text{line-height:1.6;text-align:justify;margin-bottom:6pt;font-size:10pt;color:#111}
+.q-text em,.q-text i{font-style:italic}
+.q-text strong,.q-text b{font-weight:bold}
+.q-text u{text-decoration:underline}
+.q-text br{display:block;margin-bottom:0.12em}
+.q-text p{margin-bottom:0.45em}
 .alts{margin-left:4pt}
-.alt-row{display:flex;gap:6pt;margin-bottom:3pt;line-height:1.5;page-break-inside:avoid}
-.alt-ltr{font-weight:bold;font-size:10.5pt;min-width:14pt;flex-shrink:0}
-.alt-txt{font-size:10.5pt;line-height:1.5}
-.alt-txt em,.alt-txt i{font-style:italic}
+.alt-row{display:flex;gap:5pt;margin-bottom:2pt;line-height:1.45;page-break-inside:avoid}
+.alt-ltr{font-weight:bold;font-size:10pt;min-width:13pt;flex-shrink:0}
+.alt-txt{font-size:10pt;line-height:1.55}
+/* em em alternativa = sublinhado FCC */
+.alt-txt em,.alt-txt i{font-style:normal;text-decoration:underline;text-underline-offset:2px}
+.alt-txt u{text-decoration:underline;text-underline-offset:2px}
 .alt-txt strong,.alt-txt b{font-weight:bold}
-.alt-txt u{text-decoration:underline}
+.alt-txt br{display:block;margin-bottom:0.1em}
 
 /* ── PAGE BREAKS ── */
 .pg-break{page-break-before:always}
@@ -446,7 +476,7 @@ function QuestionCard({q, numero, interactive=false, userAnswer=null, onAnswer=n
         <div style={{width:28,height:28,borderRadius:"50%",background:lBg,color:lCol,display:"flex",alignItems:"center",justifyContent:"center",fontWeight:900,fontSize:12,flexShrink:0,border:`1.5px solid ${bc}`,fontFamily:"Arial,sans-serif"}}>
           {LETTERS[idx]}
         </div>
-        <div style={{fontSize:13.5,lineHeight:1.65,flex:1,paddingTop:2}}
+        <div className="fcc-html fcc-alt-text"
           dangerouslySetInnerHTML={{__html:renderHTML(cleanAlt(alt,idx))}}/>
         {showResult&&isCorrect&&<span style={{color:"#34d399",fontSize:16,flexShrink:0,paddingTop:4}}>✓</span>}
         {showResult&&isSelected&&!isCorrect&&<span style={{color:"#f87171",fontSize:16,flexShrink:0,paddingTop:4}}>✗</span>}
@@ -479,28 +509,35 @@ function QuestionCard({q, numero, interactive=false, userAnswer=null, onAnswer=n
 
         {/* ── Texto de Apoio ── */}
         {q.texto_apoio&&(
-          <div style={{background:"rgba(56,189,248,0.08)",border:"1px solid rgba(56,189,248,0.25)",borderLeft:"3px solid #38bdf8",borderRadius:"0 10px 10px 0",padding:"14px 16px",marginBottom:16}}>
+          <div className="fcc-apoio-wrap">
             {q.texto_apoio_titulo&&(
-              <div style={{textAlign:"center",fontWeight:700,color:"#e2e8f0",fontSize:13.5,marginBottom:10,lineHeight:1.4}}
+              <div className="fcc-html fcc-apoio-titulo"
                 dangerouslySetInnerHTML={{__html:renderHTML(q.texto_apoio_titulo)}}/>
             )}
-            <div style={{color:"#b8c5d6",lineHeight:1.8,fontSize:13}}
+            <div className="fcc-html fcc-apoio-body"
               dangerouslySetInnerHTML={{__html:renderHTML(q.texto_apoio)}}/>
           </div>
         )}
 
-        {/* ── Image ── */}
+        {/* ── Divider between apoio and pergunta ── */}
+        {q.texto_apoio&&<div className="fcc-apoio-pergunta-divider"/>}
+
+        {/* ── Image (between apoio and pergunta) ── */}
         {q.imagem&&(
-          <div style={{marginBottom:16,textAlign:"center"}}>
-            <img src={q.imagem} alt="Figura da questão"
-              style={{maxWidth:"100%",borderRadius:8,border:"1px solid rgba(255,255,255,0.1)",maxHeight:400,objectFit:"contain"}}
-              onError={e=>{e.target.style.display="none";}}/>
+          <div className="fcc-q-img-wrap">
+            <img
+              src={q.imagem.startsWith('http')||q.imagem.startsWith('/')?q.imagem:`/assets/questions/${q.imagem}`}
+              alt="Figura da questão"
+              className="fcc-q-img"
+              style={{maxHeight:500}}
+              onError={e=>{e.target.parentElement.style.display="none";}}
+            />
           </div>
         )}
 
-        {/* ── Question text ── */}
-        <div style={{marginBottom:14,paddingBottom:14,borderBottom:"1px solid rgba(255,255,255,0.05)"}}>
-          <div style={{color:"#f1f5f9",fontSize:14,lineHeight:1.8}}
+        {/* ── Pergunta principal ── */}
+        <div className="fcc-pergunta-wrap">
+          <div className="fcc-html fcc-pergunta"
             dangerouslySetInnerHTML={{__html:renderHTML(q.pergunta)}}/>
         </div>
 
