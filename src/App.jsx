@@ -8,7 +8,7 @@ const DISCIPLINE_ORDER = [
   "Direito Constitucional","Direito Penal","Direito Processual Penal",
 ];
 const DISC_SHORT = ["Português","Hist./Geo. AP","Rac. Lógico","Informática","Dir. Humanos","Dir. Adm.","Dir. Const.","Dir. Penal","Proc. Penal"];
-const DISC_COLORS = ["#38bdf8","#818cf8","#34d399","#fbbf24","#fb923c","#f472b6","#a78bfa","#60a5fa","#4ade80"];
+const DISC_COLORS=["#1e88e5","#c8a75d","#2e7d32","#f57c00","#c62828","#1565c0","#6a1b9a","#ad1457","#00695c"];
 const SK = { USED:"pcsim_v2_used", HIST:"pcsim_v2_history", CUR:"pcsim_v2_current", DB_VER:"pcsim_db_version" };
 const LETTERS = ["A","B","C","D","E"];
 
@@ -205,24 +205,43 @@ body{font-family:"Times New Roman",Times,serif;font-size:11pt;color:#000;backgro
 .disc-hd{background:#1e3a5f;color:#e2e8f0;padding:5pt 12pt;font-size:9.5pt;font-weight:bold;letter-spacing:1.5px;margin:18pt 0 10pt;text-transform:uppercase;page-break-after:avoid;border-left:3px solid #4f9ecf}
 
 /* ── QUESTION ── */
-.question{page-break-inside:avoid;margin-bottom:12pt;padding-bottom:9pt;border-bottom:1px dotted #ccc}
+/* ── QUESTÃO: regras de paginação inteligente ── */
+.question{
+  margin-bottom:11pt;padding-bottom:8pt;border-bottom:1px dotted #ccc;
+  /* NÃO usar page-break-inside:avoid aqui — questões longas
+     inevitavelmente quebrarão; controlamos onde ocorre a quebra */
+  break-inside:auto;page-break-inside:auto;
+}
 .question:last-child{border-bottom:none}
-/* Prevent apoio+pergunta from splitting */
-.question .q-apoio + .q-apoio-divider + .q-text,
-.question .q-apoio + .q-text { page-break-before:avoid }
-.question .q-text + .alts { page-break-before:avoid }
-.q-header{display:flex;align-items:baseline;gap:8pt;margin-bottom:4pt}
-.q-num{font-weight:bold;font-size:10.5pt;color:#000}
+/* Cabeçalho NUNCA fica sozinho na página */
+.q-header{
+  display:block;margin-bottom:4pt;
+  break-after:avoid;page-break-after:avoid;
+}
+/* Pergunta não começa em página nova separada do apoio */
+.q-text{
+  break-before:avoid;page-break-before:avoid;
+  break-inside:avoid;page-break-inside:avoid;
+}
+/* Alternativas ficam com a pergunta */
+.alts{
+  break-before:avoid;page-break-before:avoid;
+  break-inside:avoid;page-break-inside:avoid;
+}
+/* Cada alternativa individual não quebra */
+.alt-row{break-inside:avoid;page-break-inside:avoid}
+/* Apoio longo pode quebrar, mas com orfãos/viúvas controlados */
+.q-apoio{orphans:3;widows:3}
+.q-num{font-weight:bold;font-size:10.5pt;color:#000;display:inline-block}
 .q-sub{font-size:8.5pt;color:#555;font-style:italic}
 .q-apoio{background:#f0f4f8;border-left:3px solid #4a7fa5;padding:10pt 14pt;margin-bottom:0;border-radius:0 4pt 4pt 0;page-break-inside:avoid}
 .q-apoio-title{text-align:center;font-weight:bold;font-size:10.5pt;margin-bottom:7pt;color:#1a2b3c}
 .q-apoio-body{font-size:9.5pt;line-height:1.6;color:#1a1a1a}
 .q-apoio-body em,.q-apoio-body i{font-style:italic}
-/* strong no apoio = grifado/highlight FCC */
-.q-apoio-body strong,.q-apoio-body b{font-weight:bold;background:#fde68a;padding:0 1pt;border-radius:1pt}
-.q-apoio-body u{text-decoration:underline}
-.q-apoio-body br{display:block;margin-bottom:0.12em}
-.q-apoio-body p{margin-bottom:0.45em}
+.q-apoio-body strong,.q-apoio-body b{font-weight:bold;background:#fef3c7;padding:0 1pt;border-radius:1pt}
+.q-apoio-body u{text-decoration:underline;text-underline-offset:2px}
+.q-apoio-body br{display:block;margin-bottom:0.1em}
+.q-apoio-body p{margin-bottom:0.4em}
 .q-apoio-body br+br{margin-bottom:0.35em}
 .q-apoio-divider{height:1px;background:linear-gradient(to right,#4a7fa5 0%,transparent 80%);margin:10pt 0 8pt}
 .q-img{display:block;max-width:100%;height:auto;margin:8pt auto 10pt;border-radius:4pt;page-break-inside:avoid}
@@ -237,11 +256,10 @@ body{font-family:"Times New Roman",Times,serif;font-size:11pt;color:#000;backgro
 .alt-row{display:flex;gap:5pt;margin-bottom:2pt;line-height:1.45;page-break-inside:avoid}
 .alt-ltr{font-weight:bold;font-size:10pt;min-width:13pt;flex-shrink:0}
 .alt-txt{font-size:10pt;line-height:1.55}
-/* em em alternativa = sublinhado FCC */
-.alt-txt em,.alt-txt i{font-style:normal;text-decoration:underline;text-underline-offset:2px}
+.alt-txt em,.alt-txt i{font-style:italic}
 .alt-txt u{text-decoration:underline;text-underline-offset:2px}
 .alt-txt strong,.alt-txt b{font-weight:bold}
-.alt-txt br{display:block;margin-bottom:0.1em}
+.alt-txt br{display:block;margin-bottom:0.08em}
 
 /* ── PAGE BREAKS ── */
 .pg-break{page-break-before:always}
@@ -418,11 +436,12 @@ function exportResultsPDF(results){
 }
 
 /* SHARED UI */
+const GOLD="#c8a75d";
 const S={
-  card:{borderRadius:16,background:"rgba(255,255,255,0.07)",border:"1px solid rgba(255,255,255,0.14)",backdropFilter:"blur(12px)"},
+  card:{borderRadius:14,background:"linear-gradient(145deg,#0a1628 0%,#0c1d3a 100%)",border:"1px solid rgba(200,167,93,0.18)",backdropFilter:"blur(12px)",boxShadow:"0 4px 24px rgba(0,0,0,0.4),0 1px 0 rgba(200,167,93,0.08) inset"},
   btn:(v="primary")=>({padding:"10px 20px",borderRadius:10,border:"none",fontWeight:700,cursor:"pointer",fontSize:13,transition:"all 0.2s",
-    ...(v==="primary"?{background:"linear-gradient(135deg,#6366f1,#818cf8)",color:"#fff",boxShadow:"0 4px 20px rgba(99,102,241,.35)"}:{}),
-    ...(v==="outline"?{background:"rgba(99,102,241,0.1)",color:"#818cf8",border:"1px solid rgba(99,102,241,0.3)"}:{}),
+    ...(v==="primary"?{background:"linear-gradient(135deg,#1565c0,#1e88e5)",color:"#fff",boxShadow:"0 4px 16px rgba(30,136,229,0.35)"}:{}),
+    ...(v==="outline"?{background:"rgba(30,136,229,0.08)",color:"#64b5f6",border:"1px solid rgba(30,136,229,0.25)"}:{}),
     ...(v==="ghost"?{background:"rgba(255,255,255,0.08)",color:"#94a3b8",border:"1px solid rgba(255,255,255,0.1)"}:{}),
     ...(v==="danger"?{background:"rgba(239,68,68,0.1)",color:"#f87171",border:"1px solid rgba(239,68,68,0.3)"}:{}),
   }),
@@ -456,7 +475,13 @@ function QuestionCard({q, numero, interactive=false, userAnswer=null, onAnswer=n
     s=s.replace(/^(<(?:em|strong|i|b|u)>)\s*[a-eA-E]\)\s*/i,'$1');
     // Strip standalone: "<em>a) </em>text" -> "text"
     s=s.replace(/^<(?:em|strong|i|b|u)>\s*[a-eA-E]\)\s*<\/(?:em|strong|i|b|u)>\s*/i,'');
-    return s.trim();
+    s=s.trim();
+    // Full <em> wrapper = FCC "expressão sublinhada" → convert to <u>
+    if(/^<em>[\s\S]+<\/em>$/.test(s)){
+      s=s.replace(/^<em>([\s\S]+)<\/em>$/,'<u>$1</u>');
+    }
+    return s;
+  };  return s.trim();
   };
 
   const qNum=numero||q.numero_original;
@@ -465,7 +490,7 @@ function QuestionCard({q, numero, interactive=false, userAnswer=null, onAnswer=n
   const renderAlt=(alt,idx)=>{
     const isSelected=userAnswer===idx;
     const isCorrect=q.correta===idx;
-    let bg="rgba(255,255,255,0.05)",bc="rgba(255,255,255,0.13)",col="#c8d6e5",lBg="rgba(255,255,255,0.08)",lCol="#7fa8c9";
+    let bg="rgba(255,255,255,0.025)",bc="rgba(255,255,255,0.08)",col="#92aac8",lBg="rgba(200,167,93,0.08)",lCol="#c8a75d";
     if(isSelected){bg="rgba(99,102,241,0.1)";bc="rgba(99,102,241,0.45)";col="#e2e8f0";lBg="rgba(99,102,241,0.25)";lCol="#818cf8";}
     if(showResult&&isCorrect){bg="rgba(52,211,153,0.08)";bc="rgba(52,211,153,0.4)";col="#34d399";lBg="rgba(52,211,153,0.2)";lCol="#34d399";}
     if(showResult&&isSelected&&!isCorrect){bg="rgba(248,113,113,0.08)";bc="rgba(248,113,113,0.4)";col="#f87171";lBg="rgba(248,113,113,0.2)";lCol="#f87171";}
@@ -485,16 +510,16 @@ function QuestionCard({q, numero, interactive=false, userAnswer=null, onAnswer=n
   };
 
   return(
-    <div style={{borderRadius:14,background:"rgba(255,255,255,0.06)",border:"1px solid rgba(255,255,255,0.13)",overflow:"hidden"}}>
+    <div style={{borderRadius:14,background:"linear-gradient(145deg,#080f1c,#0a1627)",border:"1px solid rgba(200,167,93,0.14)",overflow:"hidden"}}>
 
       {/* ── Header bar (FCC meta) ── */}
       {hdr&&(
-        <div style={{background:"rgba(56,189,248,0.12)",borderBottom:"1px solid rgba(56,189,248,0.22)",padding:"7px 16px",display:"flex",alignItems:"center",gap:8}}>
-          <span style={{fontSize:10.5,color:"#7fa8c9",fontFamily:"monospace",flex:1,overflow:"hidden",textOverflow:"ellipsis",whiteSpace:"nowrap"}}>
-            {qNum&&<strong style={{color:"#38bdf8",marginRight:6}}>#{qNum}</strong>}{hdr}
+        <div style={{background:"linear-gradient(90deg,rgba(13,34,64,0.9),rgba(21,50,98,0.7))",borderBottom:"1px solid rgba(30,136,229,0.2)",padding:"7px 16px",display:"flex",alignItems:"center",gap:8}}>
+          <span style={{fontSize:10.5,color:"#c8a75d",fontFamily:"'JetBrains Mono',monospace",flex:1,overflow:"hidden",textOverflow:"ellipsis",whiteSpace:"nowrap"}}>
+            {qNum&&<strong style={{color:"#c8a75d",marginRight:6}}>#{qNum}</strong>}{hdr}
           </span>
           {q.linkTec&&(
-            <a href={q.linkTec} target="_blank" rel="noreferrer" style={{color:"#38bdf8",fontSize:13,textDecoration:"none",flexShrink:0}} title="Abrir no TEC Concursos">🔗</a>
+            <a href={q.linkTec} target="_blank" rel="noreferrer" style={{color:"#c8a75d",fontSize:13,textDecoration:"none",flexShrink:0}} title="Abrir no TEC Concursos">🔗</a>
           )}
         </div>
       )}
@@ -550,7 +575,7 @@ function QuestionCard({q, numero, interactive=false, userAnswer=null, onAnswer=n
         {q.linkTec&&(
           <div style={{marginTop:14,paddingTop:12,borderTop:"1px solid rgba(255,255,255,0.05)"}}>
             <a href={q.linkTec} target="_blank" rel="noreferrer"
-              style={{display:"inline-flex",alignItems:"center",gap:8,padding:"9px 18px",borderRadius:10,background:"rgba(56,189,248,0.08)",border:"1px solid rgba(56,189,248,0.25)",color:"#5ccbe8",textDecoration:"none",fontSize:12.5,fontWeight:700,transition:"all 0.2s"}}>
+              style={{display:"inline-flex",alignItems:"center",gap:8,padding:"9px 18px",borderRadius:10,background:"rgba(56,189,248,0.08)",border:"1px solid rgba(56,189,248,0.25)",color:"#c8a75d",textDecoration:"none",fontSize:12,fontWeight:700,transition:"all 0.2s"}}>
               <span style={{fontSize:14}}>🔗</span>
               <span>Abrir no TEC Concursos</span>
               <span style={{fontSize:10,opacity:.7}}>↗</span>
@@ -566,11 +591,11 @@ function QuestionCard({q, numero, interactive=false, userAnswer=null, onAnswer=n
 function LoadingScreen({progress,error}){
   return(<div style={{minHeight:"100vh",display:"flex",alignItems:"center",justifyContent:"center",flexDirection:"column",gap:20,background:"radial-gradient(ellipse at 20% 20%,#0d1930 0%,#080c1a 50%,#04060e 100%)"}}>
     <img src="/shield.png" alt="PC-AP" style={{width:90,height:"auto",objectFit:"contain",marginBottom:12}} />
-    <div style={{fontSize:11,fontWeight:900,letterSpacing:4,color:"#38bdf8",fontFamily:"'Courier New',monospace"}}>PC-AP SIMULADOS</div>
+    <div style={{fontSize:11,fontWeight:900,letterSpacing:4,color:"#c8a75d",fontFamily:"'Courier New',monospace"}}>PC-AP SIMULADOS</div>
     {error?(<div style={{maxWidth:480,textAlign:"center"}}>
       <div style={{color:"#f87171",fontSize:14,fontWeight:700,marginBottom:8}}>⚠ Erro ao carregar banco de questões</div>
       <div style={{color:"#7fa8c9",fontSize:12,fontFamily:"monospace",padding:"12px",borderRadius:8,background:"rgba(239,68,68,0.08)",border:"1px solid rgba(239,68,68,0.2)"}}>{error}</div>
-      <div style={{marginTop:16,color:"#6a8da3",fontSize:11}}>Verifique se <code style={{color:"#38bdf8"}}>public/questions/database.json</code> existe.</div>
+      <div style={{marginTop:16,color:"#536880",fontSize:11}}>Verifique se <code style={{color:"#c8a75d"}}>public/questions/database.json</code> existe.</div>
     </div>):(<>
       <div style={{maxWidth:280,width:"100%",height:4,borderRadius:2,background:"rgba(255,255,255,0.06)"}}>
         <div style={{height:"100%",width:`${progress}%`,background:"linear-gradient(90deg,#6366f1,#38bdf8)",borderRadius:2,transition:"width 0.3s"}}/>
@@ -583,16 +608,16 @@ function LoadingScreen({progress,error}){
 /* NAVBAR */
 function NavBar({view,setView,qCount,resetHistory}){
   const items=[{id:"home",icon:"⬡",label:"Dashboard"},{id:"bank",icon:"◈",label:"Banco"},{id:"generator",icon:"⚡",label:"Simulado"},{id:"history",icon:"◎",label:"Histórico"}];
-  return(<nav style={{position:"fixed",top:0,left:0,right:0,zIndex:100,height:58,background:"rgba(8,12,26,0.96)",backdropFilter:"blur(24px)",borderBottom:"1px solid rgba(255,255,255,0.06)",display:"flex",alignItems:"center",padding:"0 16px",gap:4}}>
+  return(<nav style={{position:"fixed",top:0,left:0,right:0,zIndex:100,height:58,className:"pcap-nav",background:"linear-gradient(90deg,#030609 0%,#05111e 50%,#030609 100%)",backdropFilter:"blur(24px)",borderBottom:"1px solid rgba(200,167,93,0.2)",display:"flex",alignItems:"center",padding:"0 16px",gap:4}}>
     <div style={{display:"flex",alignItems:"center",gap:10,marginRight:12,flexShrink:0}}>
       <img src="/shield.png" alt="PC-AP" style={{width:38,height:38,objectFit:"contain",borderRadius:6,flexShrink:0}} />
-      <div><div style={{fontSize:11,fontWeight:900,letterSpacing:2,color:"#38bdf8",fontFamily:"'Courier New',monospace"}}>PC-AP</div><div style={{fontSize:8,color:"#475569",letterSpacing:1}}>SIMULADOS</div></div>
+      <div><div style={{fontSize:9,fontWeight:700,letterSpacing:4,color:"#c8a75d",fontFamily:"'JetBrains Mono','Courier New',monospace"}}>PC-AP</div><div style={{fontSize:8,color:"#475569",letterSpacing:1}}>SIMULADOS</div></div>
     </div>
     <div style={{display:"flex",gap:2,flex:1}}>
       {items.map(n=>(<button key={n.id} onClick={()=>setView(n.id)} style={{padding:"6px 12px",borderRadius:8,border:"none",cursor:"pointer",fontSize:12,fontWeight:700,transition:"all 0.2s",background:view===n.id?"rgba(99,102,241,0.18)":"transparent",color:view===n.id?"#818cf8":"#475569",display:"flex",alignItems:"center",gap:5}}><span style={{fontSize:14}}>{n.icon}</span><span>{n.label}</span></button>))}
     </div>
     <div style={{display:"flex",gap:8,alignItems:"center",flexShrink:0}}>
-      <div style={{padding:"4px 10px",borderRadius:20,background:"rgba(56,189,248,0.1)",border:"1px solid rgba(56,189,248,0.2)",fontSize:10,color:"#38bdf8",fontWeight:700,fontFamily:"monospace"}}>{qCount} Q</div>
+      <div style={{padding:"4px 10px",borderRadius:20,background:"rgba(56,189,248,0.1)",border:"1px solid rgba(56,189,248,0.2)",fontSize:10,color:"#c8a75d",fontWeight:700,fontFamily:"monospace"}}>{qCount} Q</div>
       <button onClick={()=>{if(confirm("Resetar anti-repetição? As questões poderão ser usadas novamente."))resetHistory();}} style={{...S.btn("danger"),padding:"5px 10px",fontSize:10}}>↺ Reset</button>
     </div>
   </nav>);
@@ -607,7 +632,7 @@ function HomeView({stats,history,setView,currentExam,dbInfo,dbUpdated}){
       <span style={{fontSize:18}}>🔄</span>
       <div><div style={{fontSize:13,fontWeight:700,color:"#34d399"}}>Banco atualizado para v{dbInfo?.version}</div><div style={{fontSize:11,color:"#475569"}}>Novas questões disponíveis. Progresso e histórico preservados.</div></div>
     </div>)}
-    <div style={{borderRadius:20,padding:"32px 28px",marginBottom:24,position:"relative",overflow:"hidden",background:"linear-gradient(135deg,rgba(14,26,56,0.95),rgba(21,37,75,0.9))",border:"1px solid rgba(56,189,248,0.2)",boxShadow:"0 0 60px rgba(56,189,248,0.05)"}}>
+    <div style={{borderRadius:20,padding:"32px 28px",marginBottom:24,position:"relative",overflow:"hidden",background:"linear-gradient(135deg,rgba(10,18,40,0.97),rgba(13,28,58,0.95),rgba(10,22,44,0.97))",border:"1px solid rgba(200,167,93,0.2)",boxShadow:"0 0 60px rgba(56,189,248,0.05)"}}>
       <div style={{position:"absolute",right:-10,top:-10,fontSize:160,opacity:0.04,transform:"rotate(-10deg)",pointerEvents:"none"}}><img src="/shield.png" alt="" style={{width:"100%",height:"auto",opacity:0.15,objectFit:"contain"}} /></div>
       <div style={{position:"absolute",bottom:-20,left:-10,fontSize:120,opacity:0.03,pointerEvents:"none"}}>⚖️</div>
       <div style={{position:"relative",zIndex:1}}>
@@ -634,14 +659,14 @@ function HomeView({stats,history,setView,currentExam,dbInfo,dbUpdated}){
     </div>
     <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:20}}>
       <div style={{...S.card,padding:20}}>
-        <div style={{fontSize:11,fontWeight:700,color:"#38bdf8",letterSpacing:2,fontFamily:"monospace",marginBottom:16}}>PROGRESSO POR DISCIPLINA</div>
+        <div style={{fontSize:11,fontWeight:700,color:"#c8a75d",letterSpacing:3,fontFamily:"'JetBrains Mono',monospace",marginBottom:16}}>PROGRESSO POR DISCIPLINA</div>
         <div style={{display:"flex",flexDirection:"column",gap:10}}>
-          {DISCIPLINE_ORDER.map((d,i)=>{const ds=stats.byDisc[d]||{total:0,used:0};const pct=ds.total>0?Math.round(ds.used/ds.total*100):0;return(<div key={d}><div style={{display:"flex",justifyContent:"space-between",marginBottom:4}}><span style={{fontSize:11,color:"#64748b"}}>{DISC_SHORT[i]}</span><span style={{fontSize:10,color:DISC_COLORS[i],fontWeight:700,fontFamily:"monospace"}}>{ds.used}/{ds.total}</span></div><ProgressBar value={pct} color={DISC_COLORS[i]} height={5}/></div>);})}
+          {DISCIPLINE_ORDER.map((d,i)=>{const ds=stats.byDisc[d]||{total:0,used:0};const pct=ds.total>0?Math.round(ds.used/ds.total*100):0;return(<div key={d}><div style={{display:"flex",justifyContent:"space-between",marginBottom:4}}><span style={{fontSize:11,color:"#536880"}}>{DISC_SHORT[i]}</span><span style={{fontSize:10,color:DISC_COLORS[i],fontWeight:700,fontFamily:"monospace"}}>{ds.used}/{ds.total}</span></div><ProgressBar value={pct} color={DISC_COLORS[i]} height={5}/></div>);})}
         </div>
       </div>
       <div style={{...S.card,padding:20}}>
-        <div style={{fontSize:11,fontWeight:700,color:"#38bdf8",letterSpacing:2,fontFamily:"monospace",marginBottom:16}}>ÚLTIMOS SIMULADOS</div>
-        {last.length===0?(<div style={{textAlign:"center",padding:"30px 0",color:"#6a8da3"}}><div style={{fontSize:48,marginBottom:10,opacity:.5}}>◎</div><div style={{fontSize:12}}>Nenhum simulado realizado</div><button onClick={()=>setView("generator")} style={{...S.btn("outline"),marginTop:14,fontSize:11,padding:"7px 14px"}}>Criar primeiro simulado</button></div>):(
+        <div style={{fontSize:11,fontWeight:700,color:"#c8a75d",letterSpacing:3,fontFamily:"'JetBrains Mono',monospace",marginBottom:16}}>ÚLTIMOS SIMULADOS</div>
+        {last.length===0?(<div style={{textAlign:"center",padding:"30px 0",color:"#536880"}}><div style={{fontSize:48,marginBottom:10,opacity:.5}}>◎</div><div style={{fontSize:12}}>Nenhum simulado realizado</div><button onClick={()=>setView("generator")} style={{...S.btn("outline"),marginTop:14,fontSize:11,padding:"7px 14px"}}>Criar primeiro simulado</button></div>):(
           <div style={{display:"flex",flexDirection:"column",gap:8}}>
             {last.map((e,i)=>{const sc=e.percent>=70?"#34d399":e.percent>=50?"#fbbf24":"#f87171";return(<div key={i} style={{padding:"10px 12px",borderRadius:10,background:"rgba(255,255,255,0.02)",border:"1px solid rgba(255,255,255,0.06)",display:"flex",justifyContent:"space-between",alignItems:"center"}}><div><div style={{fontSize:12,fontWeight:700,color:"#cbd5e1"}}>Simulado #{history.length-i}</div><div style={{fontSize:10,color:"#475569"}}>{new Date(e.date).toLocaleDateString("pt-BR")} • {e.total}Q • {fmtTime(e.timeSpent)}</div></div><div style={{fontFamily:"monospace",fontSize:20,fontWeight:900,color:sc}}>{e.percent}%</div></div>);})}
             <button onClick={()=>setView("history")} style={{...S.btn("ghost"),fontSize:11,padding:"7px 14px",marginTop:4}}>Ver histórico completo →</button>
@@ -668,7 +693,7 @@ function BankView({questions,usedIds,dbInfo}){
       <select value={fAno} onChange={e=>{setFAno(e.target.value);setPage(0);}} style={sel}><option value="all">Todos os anos</option>{anos.map(a=><option key={a} value={String(a)}>{a}</option>)}</select>
       <select value={fUsed} onChange={e=>{setFUsed(e.target.value);setPage(0);}} style={sel}><option value="all">Todas</option><option value="unused">Disponíveis</option><option value="used">Utilizadas</option></select>
     </div>
-    {paged.length===0?(<div style={{textAlign:"center",padding:"60px 0",color:"#6a8da3"}}><div style={{fontSize:60,opacity:.4}}>◈</div><div style={{fontSize:14,marginTop:12}}>Nenhuma questão encontrada</div></div>):(
+    {paged.length===0?(<div style={{textAlign:"center",padding:"60px 0",color:"#536880"}}><div style={{fontSize:60,opacity:.4}}>◈</div><div style={{fontSize:14,marginTop:12}}>Nenhuma questão encontrada</div></div>):(
       <div style={{display:"flex",flexDirection:"column",gap:10}}>
         {paged.map(q=>{
           const used=usedIds.includes(q.id);
@@ -691,7 +716,7 @@ function BankView({questions,usedIds,dbInfo}){
                       </div>
                       <p style={{fontSize:12,color:"#8fb5cc",margin:0,lineHeight:1.6}}>{preview}{preview.length>=160?"...":""}</p>
                     </div>
-                    <span style={{color:"#6a8da3",fontSize:12,flexShrink:0,marginTop:2}}>▼</span>
+                    <span style={{color:"#536880",fontSize:12,flexShrink:0,marginTop:2}}>▼</span>
                   </div>
                 </div>
               ):(
@@ -700,7 +725,7 @@ function BankView({questions,usedIds,dbInfo}){
                   <div style={{display:"flex",justifyContent:"space-between",alignItems:"center",padding:"8px 16px",background:"rgba(99,102,241,0.06)",borderBottom:"1px solid rgba(99,102,241,0.15)",borderRadius:"14px 14px 0 0"}}>
                     <div style={{display:"flex",gap:8,alignItems:"center"}}>
                       {used&&<Badge color="#f59e0b">✓ Já utilizada em simulado</Badge>}
-                      <span style={{fontSize:9,color:"#7fa8c9",fontFamily:"monospace"}}>ID: {q.id}</span>
+                      <span style={{fontSize:9,color:"#c8a75d",fontFamily:"'JetBrains Mono',monospace"}}>ID: {q.id}</span>
                     </div>
                     <button onClick={()=>setExpanded(null)} style={{...S.btn("ghost"),padding:"3px 12px",fontSize:11}}>▲ Fechar</button>
                   </div>
@@ -712,7 +737,7 @@ function BankView({questions,usedIds,dbInfo}){
         })}
       </div>
     )}
-    {pages>1&&(<div style={{display:"flex",justifyContent:"center",alignItems:"center",gap:8,marginTop:20}}><button onClick={()=>setPage(p=>Math.max(0,p-1))} disabled={page===0} style={{...S.btn("ghost"),padding:"6px 14px",fontSize:13}}>‹</button><span style={{fontSize:12,color:"#64748b",fontFamily:"monospace"}}>{page+1} / {pages}</span><button onClick={()=>setPage(p=>Math.min(pages-1,p+1))} disabled={page>=pages-1} style={{...S.btn("ghost"),padding:"6px 14px",fontSize:13}}>›</button></div>)}
+    {pages>1&&(<div style={{display:"flex",justifyContent:"center",alignItems:"center",gap:8,marginTop:20}}><button onClick={()=>setPage(p=>Math.max(0,p-1))} disabled={page===0} style={{...S.btn("ghost"),padding:"6px 14px",fontSize:13}}>‹</button><span style={{fontSize:12,color:"#536880",fontFamily:"monospace"}}>{page+1} / {pages}</span><button onClick={()=>setPage(p=>Math.min(pages-1,p+1))} disabled={page>=pages-1} style={{...S.btn("ghost"),padding:"6px 14px",fontSize:13}}>›</button></div>)}
   </div>);
 }
 
@@ -741,27 +766,27 @@ function GeneratorView({questions,usedIds,startExam,notify}){
     <h2 style={{fontSize:22,fontWeight:900,margin:"0 0 6px",fontFamily:"monospace"}}>⚡ GERAR SIMULADO</h2>
     <p style={{color:"#8fb5cc",fontSize:13,marginBottom:24}}>Questões organizadas na ordem oficial das disciplinas do concurso.</p>
     <div style={{...S.card,padding:18,marginBottom:20}}>
-      <div style={{fontSize:10,fontWeight:700,color:"#38bdf8",letterSpacing:2,fontFamily:"monospace",marginBottom:12}}>MODELOS RÁPIDOS</div>
+      <div style={{fontSize:10,fontWeight:700,color:"#c8a75d",letterSpacing:3,fontFamily:"'JetBrains Mono',monospace",marginBottom:12}}>MODELOS RÁPIDOS</div>
       <div style={{display:"flex",gap:8,flexWrap:"wrap"}}>
         {presets.map(p=><button key={p.label} onClick={()=>setCfg(prev=>({...prev,disciplineConfig:{...Object.fromEntries(DISCIPLINE_ORDER.map(d=>[d,0])),...p.vals}}))} style={{...S.btn("outline"),padding:"7px 14px",fontSize:12}}>{p.icon} {p.label}</button>)}
         <button onClick={()=>setCfg(p=>({...p,disciplineConfig:Object.fromEntries(DISCIPLINE_ORDER.map(d=>[d,0]))}))} style={{...S.btn("ghost"),padding:"7px 14px",fontSize:12}}>↺ Limpar</button>
       </div>
     </div>
     <div style={{...S.card,padding:20,marginBottom:20}}>
-      <div style={{fontSize:10,fontWeight:700,color:"#38bdf8",letterSpacing:2,fontFamily:"monospace",marginBottom:16}}>QUESTÕES POR DISCIPLINA</div>
+      <div style={{fontSize:10,fontWeight:700,color:"#c8a75d",letterSpacing:3,fontFamily:"'JetBrains Mono',monospace",marginBottom:16}}>QUESTÕES POR DISCIPLINA</div>
       <div style={{display:"flex",flexDirection:"column",gap:8}}>
         {DISCIPLINE_ORDER.map((d,i)=>{const v=cfg.disciplineConfig[d]||0;const av=avail[d]||0;const tot=allAvail[d]||0;const active=v>0;return(
           <div key={d} style={{display:"flex",alignItems:"center",gap:10,padding:"10px 14px",borderRadius:10,background:active?"rgba(99,102,241,0.07)":"rgba(255,255,255,0.02)",border:`1px solid ${active?"rgba(99,102,241,0.2)":"rgba(255,255,255,0.05)"}`}}>
             <div style={{width:7,height:7,borderRadius:"50%",background:DISC_COLORS[i],flexShrink:0}}/>
             <span style={{flex:1,fontSize:12,fontWeight:600,color:active?"#e2e8f0":"#475569"}}>{d}</span>
-            <span style={{fontSize:10,color:"#7fa8c9",fontFamily:"monospace",minWidth:70,textAlign:"right"}}>{av}/{tot} livre</span>
+            <span style={{fontSize:10,color:"#c8a75d",fontFamily:"'JetBrains Mono',monospace",minWidth:70,textAlign:"right"}}>{av}/{tot} livre</span>
             <div style={{display:"flex",alignItems:"center",gap:4}}>
               <button onClick={()=>setDisc(d,v-1)} style={{width:22,height:22,borderRadius:5,border:"none",background:"rgba(255,255,255,0.06)",color:"#94a3b8",cursor:"pointer",fontSize:13,display:"flex",alignItems:"center",justifyContent:"center",fontWeight:700}}>−</button>
               <input type="number" min={0} max={av} value={v} onChange={e=>setDisc(d,parseInt(e.target.value)||0)} style={{width:44,textAlign:"center",padding:"4px",borderRadius:6,border:"1px solid rgba(255,255,255,0.08)",background:"rgba(255,255,255,0.04)",color:"#e2e8f0",fontSize:12,outline:"none"}}/>
               <button onClick={()=>setDisc(d,v+1)} disabled={v>=av} style={{width:22,height:22,borderRadius:5,border:"none",background:"rgba(255,255,255,0.06)",color:v>=av?"#334155":"#94a3b8",cursor:v>=av?"not-allowed":"pointer",fontSize:13,display:"flex",alignItems:"center",justifyContent:"center",fontWeight:700}}>+</button>
             </div>
             {av===0&&tot>0&&<span style={{fontSize:9,color:"#f59e0b"}}>★ Esgotado</span>}
-            {tot===0&&<span style={{fontSize:9,color:"#6a8da3"}}>Sem questões</span>}
+            {tot===0&&<span style={{fontSize:9,color:"#536880"}}>Sem questões</span>}
           </div>);})}
         <div style={{display:"flex",justifyContent:"space-between",alignItems:"center",padding:"12px 14px",borderRadius:10,background:"rgba(99,102,241,0.1)",border:"1px solid rgba(99,102,241,0.25)",marginTop:4}}>
           <span style={{fontSize:12,fontWeight:700,color:"#818cf8",fontFamily:"monospace"}}>TOTAL DE QUESTÕES</span>
@@ -770,7 +795,7 @@ function GeneratorView({questions,usedIds,startExam,notify}){
       </div>
     </div>
     <div style={{...S.card,padding:20,marginBottom:20}}>
-      <div style={{fontSize:10,fontWeight:700,color:"#38bdf8",letterSpacing:2,fontFamily:"monospace",marginBottom:16}}>CONFIGURAÇÕES</div>
+      <div style={{fontSize:10,fontWeight:700,color:"#c8a75d",letterSpacing:3,fontFamily:"'JetBrains Mono',monospace",marginBottom:16}}>CONFIGURAÇÕES</div>
       <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:16}}>
         <div><div style={{fontSize:10,color:"#475569",fontWeight:700,marginBottom:10,letterSpacing:1}}>MODO</div>
           <div style={{display:"flex",gap:8}}>
@@ -782,7 +807,7 @@ function GeneratorView({questions,usedIds,startExam,notify}){
         </div>
         <div><div style={{fontSize:10,color:"#475569",fontWeight:700,marginBottom:10,letterSpacing:1}}>TEMPO (MIN)</div>
           <input type="number" min={10} max={360} value={cfg.timeMinutes} onChange={e=>setCfg(p=>({...p,timeMinutes:parseInt(e.target.value)||120}))} style={{width:"100%",padding:"10px 12px",borderRadius:10,border:"1px solid rgba(255,255,255,0.08)",background:"rgba(255,255,255,0.04)",color:"#e2e8f0",fontSize:20,fontFamily:"monospace",fontWeight:700,outline:"none",textAlign:"center"}}/>
-          <div style={{fontSize:10,color:"#6a8da3",marginTop:6,textAlign:"center"}}>= {fmtTime(cfg.timeMinutes*60)} de prova</div>
+          <div style={{fontSize:10,color:"#536880",marginTop:6,textAlign:"center"}}>= {fmtTime(cfg.timeMinutes*60)} de prova</div>
         </div>
       </div>
     </div>
@@ -833,7 +858,7 @@ function ExamView({exam,finishExam,setView}){
         <div style={{display:"flex",alignItems:"center",gap:10}}><Badge color={isTreino?"#34d399":"#f87171"}>{isTreino?"📖 TREINO":"🏆 PROVA"}</Badge><span style={{fontSize:12,color:"#475569",fontFamily:"monospace"}}>{answered}/{total} respondidas</span></div>
         <div style={{display:"flex",alignItems:"center",gap:8,padding:"7px 16px",borderRadius:10,background:"rgba(255,255,255,0.04)",border:`1px solid ${tcol}33`}}><span style={{fontSize:12}}>⏱</span><span style={{fontSize:22,fontWeight:900,color:tcol,fontFamily:"monospace"}}>{fmtTime(tLeft)}</span></div>
         <div style={{display:"flex",gap:8}}>
-          <button onClick={()=>exportExamPDF(exam)} style={{...S.btn("ghost"),padding:"6px 12px",fontSize:12,color:"#38bdf8",borderColor:"rgba(56,189,248,0.3)"}}>📄 PDF</button>
+          <button onClick={()=>exportExamPDF(exam)} style={{...S.btn("ghost"),padding:"6px 12px",fontSize:12,color:"#c8a75d",borderColor:"rgba(56,189,248,0.3)"}}>📄 PDF</button>
           <button onClick={()=>setShowGrid(!showGrid)} style={{...S.btn("ghost"),padding:"6px 12px",fontSize:12}}>⊞ Grade</button>
           <button onClick={()=>setShowConfirm(true)} style={{...S.btn("primary"),padding:"6px 16px",fontSize:12}}>✔ Finalizar</button>
         </div>
@@ -863,20 +888,20 @@ function ExamView({exam,finishExam,setView}){
         {/* Navigation */}
         <div style={{display:"flex",justifyContent:"space-between",alignItems:"center",marginTop:16}}>
           <button onClick={()=>setCur(c=>Math.max(0,c-1))} disabled={cur===0} style={{...S.btn("ghost"),opacity:cur===0?.4:1,padding:"9px 18px"}}>← Anterior</button>
-          <span style={{fontSize:11,color:"#7fa8c9",fontFamily:"monospace"}}>{cur+1} / {total}</span>
+          <span style={{fontSize:11,color:"#c8a75d",fontFamily:"'JetBrains Mono',monospace"}}>{cur+1} / {total}</span>
           <button onClick={()=>setCur(c=>Math.min(total-1,c+1))} disabled={cur===total-1} style={{...S.btn("ghost"),opacity:cur===total-1?.4:1,padding:"9px 18px"}}>Próxima →</button>
         </div>
       </div>
       {showGrid&&(<div style={{width:190,flexShrink:0}}>
         <div style={{...S.card,padding:14,position:"sticky",top:80}}>
-          <div style={{fontSize:9,color:"#38bdf8",fontWeight:700,letterSpacing:2,fontFamily:"monospace",marginBottom:10}}>GRADE</div>
+          <div style={{fontSize:9,color:"#c8a75d",fontWeight:700,letterSpacing:2,fontFamily:"monospace",marginBottom:10}}>GRADE</div>
           <div style={{display:"grid",gridTemplateColumns:"repeat(5,1fr)",gap:3}}>
             {exam.questions.map((q2,i)=>{const num=q2.numero_simulado;const isA=answers[num]!==undefined;const isF=flagged.has(num);const isC=i===cur;const di2=DISCIPLINE_ORDER.indexOf(q2.disciplina);const dc2=DISC_COLORS[di2>=0?di2:0];return(
               <button key={num} onClick={()=>{setCur(i);setShowGrid(false);}} style={{width:26,height:26,borderRadius:5,border:`1px solid ${isC?dc2:isA?"rgba(52,211,153,0.4)":"rgba(255,255,255,0.07)"}`,background:isC?`${dc2}33`:isA?"rgba(52,211,153,0.1)":"rgba(255,255,255,0.02)",color:isF?"#fbbf24":isC?dc2:isA?"#34d399":"#334155",cursor:"pointer",fontSize:isF?10:8,fontWeight:700,padding:0,fontFamily:"monospace"}}>
                 {isF?"🚩":num}
               </button>);})}
           </div>
-          <div style={{marginTop:12,display:"flex",flexDirection:"column",gap:5,fontSize:9,color:"#6a8da3"}}>
+          <div style={{marginTop:12,display:"flex",flexDirection:"column",gap:5,fontSize:9,color:"#536880"}}>
             <div style={{display:"flex",gap:5,alignItems:"center"}}><div style={{width:8,height:8,borderRadius:2,background:"rgba(52,211,153,0.3)"}}/> Respondida</div>
             <div style={{display:"flex",gap:5,alignItems:"center"}}><div style={{width:8,height:8,borderRadius:2,background:"rgba(56,189,248,0.4)"}}/> Atual</div>
             <div style={{display:"flex",gap:5,alignItems:"center"}}>🚩 Marcada</div>
@@ -888,7 +913,7 @@ function ExamView({exam,finishExam,setView}){
       <div style={{...S.card,padding:32,maxWidth:380,width:"100%",textAlign:"center",borderColor:"rgba(99,102,241,0.3)"}}>
         <div style={{fontSize:52,marginBottom:16}}>🏁</div>
         <h3 style={{margin:"0 0 10px",fontSize:18,fontWeight:900,fontFamily:"monospace"}}>FINALIZAR SIMULADO?</h3>
-        <p style={{color:"#64748b",fontSize:13,margin:"0 0 6px"}}>{answered}/{total} questões respondidas</p>
+        <p style={{color:"#536880",fontSize:13,margin:"0 0 6px"}}>{answered}/{total} questões respondidas</p>
         {answered<total&&<p style={{color:"#fbbf24",fontSize:12,margin:"0 0 20px"}}>⚠ {total-answered} questões não respondidas</p>}
         <div style={{display:"flex",gap:10,marginTop:20}}>
           <button onClick={()=>setShowConfirm(false)} style={{...S.btn("ghost"),flex:1,padding:"12px"}}>Continuar</button>
@@ -934,7 +959,7 @@ function ResultsView({results,setView}){
           <div style={{display:"flex",gap:10}}>
             <div style={{width:30,height:30,borderRadius:8,background:`${bc}22`,display:"flex",alignItems:"center",justifyContent:"center",color:bc,fontSize:14,flexShrink:0}}>{blank?"—":ok?"✓":"✗"}</div>
             <div style={{flex:1,minWidth:0}}>
-              <div style={{display:"flex",gap:6,marginBottom:5,flexWrap:"wrap"}}><span style={{fontSize:10,color:"#38bdf8",fontWeight:700,fontFamily:"monospace"}}>Q{q.numero_simulado}</span><Badge color={DISC_COLORS[di2>=0?di2:0]}>{q.disciplina}</Badge></div>
+              <div style={{display:"flex",gap:6,marginBottom:5,flexWrap:"wrap"}}><span style={{fontSize:10,color:"#c8a75d",fontWeight:700,fontFamily:"monospace"}}>Q{q.numero_simulado}</span><Badge color={DISC_COLORS[di2>=0?di2:0]}>{q.disciplina}</Badge></div>
               <p style={{fontSize:12,color:"#94a3b8",margin:"0 0 7px",lineHeight:1.5}}>{q.pergunta?.slice(0,200)}{q.pergunta?.length>200?"...":""}</p>
               <div style={{display:"flex",gap:10,flexWrap:"wrap"}}><span style={{fontSize:11,color:"#34d399",fontWeight:700}}>Gabarito: {LETTERS[q.correta]||"?"}</span>{!blank&&!ok&&<span style={{fontSize:11,color:"#f87171",fontWeight:700}}>Sua resp.: {LETTERS[ua]||"?"}</span>}{blank&&<span style={{fontSize:11,color:"#475569"}}>Não respondida</span>}</div>
               {q.linkTec&&<a href={q.linkTec} target="_blank" rel="noopener noreferrer" style={{display:"inline-flex",gap:4,fontSize:10,color:"#6366f1",textDecoration:"none",marginTop:6}}>🔗 TEC Concursos</a>}
