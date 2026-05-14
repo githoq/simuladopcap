@@ -590,11 +590,11 @@
     "imagem": null,
     "pergunta": "Estabelece relação de condição o termo sublinhado em:",
     "alternativas": [
-      "E, realmente, no dia seguinte não foram poucos os <u>que se declararam</u> perplexos com a questão.",
-      "Tirar a camisa no escritório, onde <u>já se vira?</u>",
-      "Curiosamente, fora o seu Justinho e o Simas, <u>ninguém se lembrava</u> como abotoava a camisa.",
-      "E não consigo <u>decidir se começo</u> a abotoar por baixo ou por cima!",
-      "Era como se <u>não se conhecessem.</u>"
+      "E, realmente, no dia seguinte não foram poucos os que se declararam perplexos com a questão.",
+      "Tirar a camisa no escritório, onde já se vira?",
+      "Curiosamente, fora o seu Justinho e o Simas, ninguém se lembrava como abotoava a camisa.",
+      "E não consigo decidir se começo a abotoar por baixo ou por cima!",
+      "Era como se não se conhecessem."
     ],
     "correta": 3,
     "linkTec": "https://www.tecconcursos.com.br/questoes/2849669"
@@ -1017,10 +1017,10 @@
     "ano": 2024,
     "cargo": "TJ TRT11",
     "orgao": "TRT 11",
-    "texto_apoio_titulo": "A mesma regra justifica a presença de acento em todas as palavras em:",
+    "texto_apoio_titulo": null,
     "texto_apoio": null,
     "imagem": null,
-    "pergunta": "",
+    "pergunta": "A mesma regra justifica a presença de acento em todas as palavras em:",
     "alternativas": [
       "fanático, solitário, científico, cômico.",
       "irlandês, polinésio, congolês, indonésio.",
@@ -1041,10 +1041,10 @@
     "ano": 2024,
     "cargo": "Ana Prev (IPREM SP)",
     "orgao": "IPREM SP",
-    "texto_apoio_titulo": "As palavras cuja presença de acento gráfico se justificam pela mesma regra são",
+    "texto_apoio_titulo": null,
     "texto_apoio": null,
     "imagem": null,
-    "pergunta": "",
+    "pergunta": "As palavras cuja presença de acento gráfico se justificam pela mesma regra são",
     "alternativas": [
       "já - ai - há.",
       "abdômen - hífen - ínterim.",
@@ -1146,7 +1146,7 @@
       "chega - descubro",
       "chegará - descobria",
       "chegou - descobri",
-      "<u>chegara</u> - descubro"
+      "chegara - descubro"
     ],
     "correta": 1,
     "linkTec": "https://www.tecconcursos.com.br/questoes/3118033"

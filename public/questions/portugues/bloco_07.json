@@ -38,8 +38,8 @@
     "imagem": null,
     "pergunta": "Em <em>“Luzia-me um romance através daquele misterioso e anônimo bilhete”</em>, a expressão sublinhada exerce a mesma função sintática da expressão\nsublinhada em:",
     "alternativas": [
-      "Li e <u>reli este bilhete.</u>",
-      "entrou-me em <u>casa um sujeito desconhecido.</u>",
+      "<em>Li e reli este bilhete.</em>",
+      "<em>entrou-me em casa um sujeito desconhecido.</em>",
       "<em>Tomei uma resolução definitiva.</em>",
       "<em>entregou-me um rolo de papel contendo uma avultada soma.</em>",
       "<em>recebi no meu escritório, na corte, um bilhete anônimo.</em>"
@@ -160,9 +160,9 @@
     "alternativas": [
       "<em>Que o resultado nem sempre era satisfatório, <strong>mostram </strong>as punições prescritas para o caso de fracasso.</em>",
       "<em>Ali <strong>surgiram </strong>conceitos básicos de matemática; ali foram feitas importantes colaborações à astronomia e à metalurgia.</em>",
-      "<em>muitas de<u>chegaram a um alto grau de sofisticação em termos de arquitetura e arte.</u>e arquitetura e arte</em>.",
-      "<stron<u>divindades da cura,</u>vindades da cura, Ningishzida, cujo símbolo era uma cobra de duas cabeças – a serpente viria a se tornar depois o emblema da</em> <em>medicina.",
-      "<u>O código de Hamurabi mostra</u> que vários tipos de operações <strong>eram </strong>feitas."
+      "<em>muitas dechegaram a um alto grau de sofisticação em termos de arquitetura e arte.e arquitetura e arte</em>.",
+      "<strondivindades da cura,vindades da cura, Ningishzida, cujo símbolo era uma cobra de duas cabeças – a serpente viria a se tornar depois o emblema da</em> <em>medicina.",
+      "O código de Hamurabi mostra que vários tipos de operações <strong>eram </strong>feitas."
     ],
     "correta": 0,
     "linkTec": "https://www.tecconcursos.com.br/questoes/2460423"
@@ -590,11 +590,11 @@
     "imagem": null,
     "pergunta": "Considerado o contexto, o elemento sublinhado exerce a mesma função sintática que o também sublinhado em:",
     "alternativas": [
-      "a) Todos sonhamos: não <u>entendemos nossos sonhos.</u>",
-      "b) <u>então esta verdade é</u> um triste comentário à sabedoria do homem moderno.",
-      "c) e no entanto agimos como se de nada estranho <u>corresse em nossas mentes adormecidas.</u>",
-      "d) <u>Imagina-se que tudo</u> seja conhecido − senão por nós, por algum especialista.",
-      "e) orgulhamo-nos <u>de nosso “realismo”.</u>"
+      "<em>Todos sonhamos: não entendemos nossos sonhos.</em>",
+      "<em>então esta verdade é um triste comentário à sabedoria do homem moderno.</em>",
+      "<em>e no entanto agimos como se de nada estranho corresse em nossas mentes adormecidas.</em>",
+      "<em>Imagina-se que tudo seja conhecido − senão por nós, por algum especialista.</em>",
+      "<em>orgulhamo-nos de nosso “realismo”.</em>"
     ],
     "correta": 0,
     "linkTec": "https://www.tecconcursos.com.br/questoes/2158418"
@@ -683,7 +683,7 @@
     "orgao": "DETRAN AP",
     "texto_apoio_titulo": "Leia os <strong>Textos 01 e 02</strong> para responder à questão.",
     "texto_apoio": "<strong>Texto 01</strong>\n\n(Disponível em: https://site.sabesp.com.br/site/interna/)\n\n<strong>Texto 02</strong>\n<strong>Inquilinos</strong>\nNinguém é responsável pelo funcionamento do mundo. Nenhum de nós precisa acordar cedo para acender as caldeiras e checar se a Terra está\ngirando em torno do seu próprio eixo na velocidade apropriada e em torno do Sol, de modo a garantir a correta sucessão das estações. Como num\nprédio bem administrado, os serviços básicos do planeta são providenciados sem que se enxergue o síndico − e sem taxa de administração.\n\nImagine se coubesse à humanidade, com sua conhecida tendência ao desleixo e à improvisação, manter a Terra na sua órbita e nos seus horários,\nou se − coroando o mais delirante dos sonhos liberais − sua gerência fosse entregue a uma empresa privada, com poderes para remanejar os\nventos e suprimir correntes marítimas, encurtar ou alongar dias e noites, e até mudar de galáxia, conforme as conveniências de mercado, e ainda\npor cima sujeita a decisões catastróficas, fraudes e falência.\n\nÉ verdade que, mesmo sob o atual regime impessoal, o mundo apresenta falhas na distribuição dos seus benefícios, favorecendo alguns andares\ndo prédio metafórico e martirizando outros, tudo devido ao que só pode ser chamado de incompetência administrativa. Mas a responsabilidade\nnão é nossa. A infraestrutura já estava pronta quando nós chegamos. Apesar de tentativas como a construção de grandes obras que afetam o\nclima e redistribuem as águas, há pouco que podemos fazer para alterar as regras do seu funcionamento.\n\nPodemos, isto sim, é colaborar na manutenção da Terra. Todos os argumentos conservacionistas e ambientalistas teriam mais força se\nconseguissem nos convencer de que somos inquilinos no mundo. E que temos as mesmas obrigações de qualquer inquilino, inclusive a de prestar\ncontas por cada arranhão no fim do contrato. A escatologia cristã deveria substituir o Salvador que virá pela segunda vez para nos julgar por um\nProprietário que chegará para retomar seu imóvel. E o Juízo Final, por um cuidadoso inventário em que todos os estragos que fizemos no mundo\nseriam contabilizados e cobrados.\n\nCadê a floresta que estava aqui? − perguntaria o Proprietário. − Valia uma fortuna.\n\nE:\n− Este rio não está como eu deixei…\nE, depois de uma contagem minuciosa:\n− Estão faltando cento e dezessete espécies.\n\nA Humanidade poderia tentar negociar. Apontar as benfeitorias − monumentos, parques, áreas férteis onde outrora existiam desertos − para\ncompensar a devastação. O Proprietário não se impressionaria.\n− Para que eu quero o Taj Mahal? Sete Quedas era muito mais bonita.\n− E a Catedral de Chartres? Fomos nós que construímos. Aumentou o valor do terreno em…\n− Fiquem com todas as suas catedrais, represas, cidades e shoppings, quero o mundo como eu o entreguei.\n\nNão precisamos de uma mentalidade ecológica. Precisamos de uma mentalidade de locatários. E do terror da indenização.\n\n(Adaptado de: VERISSIMO, Luis Fernando. <strong>O mundo é bárbaro e o que nós temos a ver com isso</strong>. Rio de Janeiro: Objetiva, 2010, p. 19-22)",
-    "imagem": "/assets/questions/questao_003.png",
+    "imagem": null,
     "pergunta": "O pronome \"o\", em <em>quero o mundo como eu <strong>o</strong> entreguei</em>, exerce a mesma função sintática que o pronome sublinhado em:",
     "alternativas": [
       "João ofereceu-lhe uma taça de vinho durante a festa.",
@@ -707,7 +707,7 @@
     "orgao": "Pref Recife",
     "texto_apoio_titulo": null,
     "texto_apoio": "O dono do pequeno restaurante é amável, sem derrame, e a fregueses mais antigos oferece, antes do menu, o jornal do dia “facilitado”, isto é,\ncom traços vermelhos cercando as notícias importantes. Vez por outra, indaga se a comida está boa, oferece cigarrinho, queixa-se do resfriado\ncrônico e pergunta pelo nosso, se o temos; se não temos, por aquele regime começado em janeiro, e de que desistimos. Também pelos filmes de\nespionagem, que mexem com ele na alma.\n\nEspetar a despesa não tem problema, em dia de barra pesada. Chega a descontar o cheque a ser recebido no mês que vem (“Falta só uma semana,\nseu Adelino”).\n\nAlém dessas delícias raras, seu Adelino faculta ao cliente dar palpites ao cozinheiro e beneficiar-se com o filé mais fresquinho, o palmito de\nprimeira, a batata feita na hora, especialmente para os eleitos. Enfim, autêntico papo-firme.\n\nUma noite dessas, o movimento era pequeno, seu Adelino veio sentar-se ao lado da antiga freguesa. Era hora do jantar dele, também. O garçom\nestendeu-lhe o menu e esperou. Seu Adelino, calado, olhava para a lista inexpressiva dos pratos do dia. A inspiração não vinha. O garçom já tinha\nido e voltado duas vezes, e nada. A freguesa resolveu colaborar:\n− Que tal um fígado acebolado?\n− Acabou, madame − atalhou o garçom.\n− Deixe ver… Assada com coradas, está bem?\n− Não, não tenho vontade disso − e seu Adelino sacudiu a cabeça.\n− Bem, estou vendo aqui umas costeletas de porco com feijão-branco, farofa e arroz…\n− Não é mau, mas acontece que ainda ontem comi uma carnezita de porco, e há dois dias que me servem feijão ao almoço − ponderou.\n\nA freguesa de boa vontade virou-se para o garçom:\n− Aqui no menu não tem, mas quem sabe se há um bacalhau a qualquer coisa? − pois seu Adelino (refletiu ela) é português, e como todo lusíada\nque se preza, há de achar isso a pedida.\n\nDa cozinha veio a informação:\n− Tem bacalhau à Gomes de Sá. Quer?\n− Pode ser isso − concordou seu Adelino, sem entusiasmo.\n\nAo cabo de dez minutos, veio o garçom brandindo o Gomes de Sá. A freguesa olhou o prato, invejando-o, e, para estimular o apetite de seu Adelino:\n− Está uma beleza!\n− Não acho muito não − retorquiu, inapetente.\n\nO prato foi servido, o azeite adicionado, e seu Adelino traçou o bacalhau, depois de lhe ser desejado bom apetite. Em silêncio.\n\nVendo que ele não se manifestava, sua leal conviva interpelou-o:\n− Como é, está bom?\n\nCom um risinho meio de banda, fez a crítica:\n− Bom nada, madame. Isso não é bacalhau à Gomes de Sá nem aqui nem em Macau. É bacalhau com batatas. E vou lhe dizer: está mais para sem\ngosto do que com ele. A batata me sabe a insossa, e o bacalhau salgado em demasia, ai!\n\nA cliente se lembrou, com saudade vera, daquele maravilhoso Gomes de Sá que se come em casa de d. Concessa. E foi detalhando:\n− Lá em casa é que se prepara um legal, sabe? Muito tomate, pimentão, azeite de verdade, para fazer um molho pra lá de bom, e ainda acrescentam\num ovo…\nSeu Adelino emergiu da apatia, comoveu-se, os olhos brilhando, desta vez em sorriso aberto:\n− Isso mesmo! Ovo cozido e ralado, azeitonas portuguesas, daquelas… Um santo, santíssimo prato!\n\nMas, encarando o concreto:\n− Essa gente aqui não tem a ciência, não tem a ciência!\n− Espera aí, seu Adelino, vamos ver no jornal se tem um bom filme de espionagem para o senhor se consolar.\n\nNão tinha, infelizmente.\n\n(Adaptado de: ANDRADE, Carlos Drummond de. 70 histórias. São Paulo: Companhia das Letras, 2016, p. 110-111)",
-    "imagem": "/assets/questions/questao_003.png",
+    "imagem": null,
     "pergunta": "O termo sublinhado em a fregueses mais antigos oferece, antes do menu, o jornal do dia “facilitado” exerce a mesma função sintática do termo\nsublinhado em:",
     "alternativas": [
       "seu Adelino veio sentar-se ao lado da antiga freguesa",
@@ -734,11 +734,11 @@
     "imagem": null,
     "pergunta": "O termo sublinhado acima exerce, no contexto, a mesma função sintática do que se encontra também sublinhado em:",
     "alternativas": [
-      "<em>A ideia de fuga <u>sido alvo de</u>o de crítica severa nos últimos anos </em>(7º parágrafo).",
-      "<em>A casa junto ao mar, que já <u>razoável delícia (4º</u></em> (4º parágrafo).",
-      "<em>nenhuma central elétrica será capaz de produzir aquilo de que cada um de nós car<u>na cidade excessivamente</u>ente iluminada</em> (7º parágrafo).",
-      "<em>senão um modesto território banhado de água por todos os lados e onde não seja obrigatório sal<u>o mundo (6º</u></em> (6º parágrafo).",
-      "<em>Como se deve<u>o homem consumir-se</u>r-se numa fogueira perene</em> (7º parágrafo)."
+      "<em>A ideia de fuga sido alvo deo de crítica severa nos últimos anos </em>(7º parágrafo).",
+      "<em>A casa junto ao mar, que já razoável delícia (4º</em> (4º parágrafo).",
+      "<em>nenhuma central elétrica será capaz de produzir aquilo de que cada um de nós carna cidade excessivamenteente iluminada</em> (7º parágrafo).",
+      "<em>senão um modesto território banhado de água por todos os lados e onde não seja obrigatório salo mundo (6º</em> (6º parágrafo).",
+      "<em>Como se deveo homem consumir-ser-se numa fogueira perene</em> (7º parágrafo)."
     ],
     "correta": 4,
     "linkTec": "https://www.tecconcursos.com.br/questoes/2021242"
@@ -926,11 +926,11 @@
     "imagem": null,
     "pergunta": "O termo sublinhado exerce, no contexto, a mesma função sintática que o também sublinhado em:",
     "alternativas": [
-      " Mas<u> como a inflação també</u>m era balofa.",
-      "Tive que <u>ouvir um discurso,</u> felizmente breve.",
-      "Depois, quatro músicos interpretaram o “Quarteto Nº <u>1”, de Villa-Lobos.</u>",
-      "dava para <u>alimentar meu gato por</u> três meses.",
-      "o Baiacu de Ouro, um prêmio literário que recebi em Manaus <u>há uns vinte anos.</u>"
+      "<em> Mas como a inflação também era balofa.</em>",
+      "<em>Tive que ouvir um discurso, felizmente breve.</em>",
+      "<em>Depois, quatro músicos interpretaram o “Quarteto Nº 1”, de Villa-Lobos.</em>",
+      "<em>dava para alimentar meu gato por três meses.</em>",
+      "<em>o Baiacu de Ouro, um prêmio literário que recebi em Manaus há uns vinte anos.</em>"
     ],
     "correta": 0,
     "linkTec": "https://www.tecconcursos.com.br/questoes/2454313"
@@ -950,10 +950,10 @@
     "imagem": null,
     "pergunta": "Em Aliás, não respondeu <em>nada</em>, o termo sublinhado exerce a mesma função sintática da expressão sublinhada em:",
     "alternativas": [
-      "<u>Era um espelho muito</u>uito silencioso</em>.",
-      "<u>Um quarto espelho chegou</u>egou a pronunc<u>nitidamente esta frase:</u>ase</em>:",
-      "<u>Era um espelho muito</u>uito silencioso</em>.",
-      "<u>Um quarto espelho chegou</u>egou a pronunc<u>nitidamente esta frase:</u>ase</em>:",
+      "<em>Era um espelho muito silencioso</em>.",
+      "<em>Um quarto espelho chegou a pronunciar nitidamente esta frase</em>:",
+      "<em>Era um espelho muito silencioso</em>.",
+      "<em>Um quarto espelho chegou a pronunciar nitidamente esta frase</em>:",
       "<em>Lavínia apelou para um quinto espelho</em>,"
     ],
     "correta": 1,
@@ -1022,11 +1022,11 @@
     "imagem": null,
     "pergunta": "Um vocábulo também pode ser formado quando passa de uma classe gramatical a outra, sem a modificação de sua forma. É o que se denomina\nderivação imprópria. Constitui exemplo de derivação imprópria o termo sublinhado em:",
     "alternativas": [
-      "“<em>andorinha que se dispers<u>num farfalhar calado</u>lado de gestos</em>”.",
-      "“<em>a ponto de <u>fazerem esquecer o</u>er o pedido de Natividade</em>”.",
-      "“<em>Considerou que não perdia mu<u>em estudar os</u>r os rapazes</em>”.",
-      "“<em>Che<u>a apanhar uma</u> uma hipótese</em>”.",
-      "“<em>A alma do velho ent<u>a ramalhar não</u> não sei que desejos retrospectivos</em>”."
+      "“<em>andorinha que se dispersnum farfalhar caladolado de gestos</em>”.",
+      "“<em>a ponto de fazerem esquecer oer o pedido de Natividade</em>”.",
+      "“<em>Considerou que não perdia muem estudar osr os rapazes</em>”.",
+      "“<em>Chea apanhar uma uma hipótese</em>”.",
+      "“<em>A alma do velho enta ramalhar não não sei que desejos retrospectivos</em>”."
     ],
     "correta": 0,
     "linkTec": "https://www.tecconcursos.com.br/questoes/2340353"
@@ -1046,11 +1046,11 @@
     "imagem": null,
     "pergunta": "Um sufixo é um afixo que se acrescenta ao final de uma palavra para formar novas palavras. O substantivo formado por sufixação a partir de um\noutro substantivo está sublinhado em:",
     "alternativas": [
-      "Acho que apenas escrevo sobres coisas que, acontecendo à minha volta, se <u>relacionem intimamente comigo.</u>",
-      "Este livro é uma surpreendente obra literária e é um libelo <u>acusatório virulento.</u>",
-      "O jovem autor de Nós Matamos o Cão Tinhoso redigira uma nota biográfica <u>igualmente singular.</u>",
-      "Quando tinha 22 anos, e, 1954, fez publicar uma obra seminal <u>e fundadora da</u> moderna ficção moçambicana.",
-      "Honwana é um dos percursores da literatura moçambicana e um dos maiores intérpretes <u>da moçambicanidade.</u>"
+      "Acho que apenas escrevo sobres coisas que, acontecendo à minha volta, se relacionem intimamente comigo.",
+      "Este livro é uma surpreendente obra literária e é um libelo acusatório virulento.",
+      "O jovem autor de Nós Matamos o Cão Tinhoso redigira uma nota biográfica igualmente singular.",
+      "Quando tinha 22 anos, e, 1954, fez publicar uma obra seminal e fundadora da moderna ficção moçambicana.",
+      "Honwana é um dos percursores da literatura moçambicana e um dos maiores intérpretes da moçambicanidade."
     ],
     "correta": 4,
     "linkTec": "https://www.tecconcursos.com.br/questoes/2815806"
