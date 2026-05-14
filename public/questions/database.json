@@ -1,0 +1,16 @@
+{
+  "databaseVersion": "1.0.0",
+  "updatedAt": "2026-05-13",
+  "description": "Banco de questões PC-AP — FCC. Adicione novos arquivos JSON e atualize este arquivo.",
+  "files": [
+    "portugues/bloco_01.json",
+    "historia_ap/bloco_01.json",
+    "raciocinio/bloco_01.json",
+    "informatica/bloco_01.json",
+    "direitos_humanos/bloco_01.json",
+    "administrativo/bloco_01.json",
+    "constitucional/bloco_01.json",
+    "penal/bloco_01.json",
+    "processo_penal/bloco_01.json"
+  ]
+} 
