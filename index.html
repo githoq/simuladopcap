@@ -208,10 +208,21 @@
       }
       .fcc-apoio-titulo em{font-style:italic!important}
       /* CORPO DO TEXTO DE APOIO — preserva estrutura literal do PDF */
+      /* APOIO BODY — fluxo de prosa natural, parágrafos com respiro editorial */
       .fcc-apoio-body{
-        color:var(--text2);font-size:13px;line-height:1.75;font-family:var(--font-b);
-        white-space:pre-wrap;   /* ← preserva \n como quebra visual */
-        word-wrap:break-word;
+        color:var(--text2);font-size:13.5px;line-height:1.78;
+        font-family:var(--font-b);word-wrap:break-word;
+      }
+      .fcc-apoio-body p{margin:0 0 1em;line-height:1.78}
+      .fcc-apoio-body p:last-child{margin-bottom:0}
+      .fcc-apoio-body p+p{margin-top:0}
+      /* MARK — grifo amarelo FCC (cor da imagem de referência) */
+      .fcc-apoio-body mark, .fcc-pergunta mark, .fcc-alt-text mark{
+        background:#d9a441;
+        color:#1a1108;
+        padding:1px 4px;border-radius:2px;
+        text-decoration:none;font-style:inherit;
+        box-decoration-break:clone;-webkit-box-decoration-break:clone;
       }
       .fcc-apoio-body em,.fcc-apoio-body i{font-style:italic!important;color:inherit}
       /* <strong> inline no apoio = grifo/highlight do PDF (palavras destacadas em amarelo) */
@@ -245,7 +256,7 @@
       .fcc-apoio-body p{margin:0 0 .65em;white-space:normal}
       .fcc-apoio-body p:last-child{margin-bottom:0}
       /* Quando o apoio NÃO usa pre-wrap (tem HTML <p>) */
-      .fcc-apoio-body.prose{white-space:normal;line-height:1.7}
+      
       .fcc-apoio-body.prose br{display:block;margin-bottom:.1em}
       .fcc-apoio-body.prose br+br{margin-top:.4em}
 
