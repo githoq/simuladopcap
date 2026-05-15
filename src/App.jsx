@@ -167,20 +167,22 @@ function exportExamPDF(exam){
 /* ── RESET & PAGE ── */
 *{box-sizing:border-box;margin:0;padding:0}
 @page{size:A4 portrait;margin:12mm 13mm 14mm 13mm}
-body{font-family:"Times New Roman",Times,serif;font-size:11pt;color:#000;background:#fff;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+body{font-family:"Times New Roman",Times,serif;font-size:10.5pt;color:#1a1a1a;background:#fff;line-height:1.5;-webkit-print-color-adjust:exact;print-color-adjust:exact}
 
 /* ── COVER HEADER ── */
-.cover-header{border:2.5px solid #000;margin-bottom:18pt}
-.cover-top{background:#1e3a5f;color:#e2e8f0;padding:12pt 16pt;display:flex;align-items:center;gap:14pt}
-.cover-shield{font-size:28pt;flex-shrink:0}
-.cover-titles{flex:1}
-.cover-titles h1{font-size:13pt;font-weight:bold;letter-spacing:.5px;text-transform:uppercase}
-.cover-titles h2{font-size:10pt;font-weight:normal;margin-top:3pt;opacity:.85}
-.cover-meta{display:grid;grid-template-columns:repeat(3,1fr);border-top:1.5px solid #000;font-size:9.5pt}
-.cover-meta-item{padding:7pt 12pt;border-right:1px solid #000}
-.cover-meta-item:last-child{border-right:none}
-.cover-meta-item .lbl{font-size:7.5pt;text-transform:uppercase;letter-spacing:.5px;color:#555;display:block;margin-bottom:2pt}
-.cover-meta-item .val{font-weight:bold;font-size:10.5pt}
+/* ── COVER HEADER (estilo prova oficial FCC, impressão limpa) ── */
+.cover-header{margin-bottom:16pt;padding-bottom:10pt;border-bottom:1.5pt solid #000}
+.cover-top{padding:4pt 0 8pt;display:flex;align-items:center;gap:14pt}
+.cover-shield-img{width:56pt;height:auto;object-fit:contain;flex-shrink:0}
+.cover-titles{flex:1;text-align:center}
+.cover-titles h1{font-size:13pt;font-weight:bold;letter-spacing:.3px;text-transform:uppercase;margin:0;line-height:1.25}
+.cover-titles .subtitle{font-size:9.5pt;font-weight:normal;margin-top:4pt;color:#333;letter-spacing:.2px}
+.cover-titles .institution{font-size:8pt;font-weight:bold;letter-spacing:1.5px;color:#666;text-transform:uppercase;margin-top:6pt}
+.cover-meta{display:grid;grid-template-columns:repeat(3,1fr);font-size:8.5pt;margin-top:6pt;padding-top:6pt;border-top:.5pt solid #999}
+.cover-meta-item{padding:0 8pt;text-align:center}
+.cover-meta-item:not(:last-child){border-right:.5pt solid #ccc}
+.cover-meta-item .lbl{font-size:7pt;text-transform:uppercase;letter-spacing:.8px;color:#666;display:block;margin-bottom:2pt}
+.cover-meta-item .val{font-weight:bold;font-size:10pt;color:#000}
 
 /* ── CANDIDATE FIELDS ── */
 .candidate-fields{margin-bottom:14pt;border:1px solid #ccc;padding:8pt 12pt}
@@ -202,7 +204,7 @@ body{font-family:"Times New Roman",Times,serif;font-size:11pt;color:#000;backgro
 .disc-name{color:#333}.disc-cnt{font-weight:bold;color:#000}
 
 /* ── DISCIPLINE HEADER ── */
-.disc-hd{background:#1e3a5f;color:#e2e8f0;padding:5pt 12pt;font-size:9.5pt;font-weight:bold;letter-spacing:1.5px;margin:18pt 0 10pt;text-transform:uppercase;page-break-after:avoid;border-left:3px solid #4f9ecf}
+.disc-hd{background:#fff;color:#e2e8f0;padding:5pt 12pt;font-size:9.5pt;font-weight:bold;letter-spacing:1.5px;margin:18pt 0 10pt;text-transform:uppercase;page-break-after:avoid;border-left:2pt solid #333}
 
 /* ── QUESTION ── */
 /* ── QUESTÃO: regras de paginação inteligente ── */
@@ -234,11 +236,14 @@ body{font-family:"Times New Roman",Times,serif;font-size:11pt;color:#000;backgro
 .q-apoio{orphans:3;widows:3}
 .q-num{font-weight:bold;font-size:10.5pt;color:#000;display:inline-block}
 .q-sub{font-size:8.5pt;color:#555;font-style:italic}
-.q-apoio{background:#f0f4f8;border-left:3px solid #4a7fa5;padding:10pt 14pt;margin-bottom:0;border-radius:0 4pt 4pt 0;page-break-inside:avoid}
+.q-apoio{background:#fafafa;border-left:2pt solid #333;padding:10pt 14pt;margin-bottom:0;border-radius:0 4pt 4pt 0;page-break-inside:avoid}
 .q-apoio-title{text-align:center;font-weight:bold;font-size:10.5pt;margin-bottom:7pt;color:#1a2b3c}
 .q-apoio-body{font-size:9.5pt;line-height:1.55;color:#1a1a1a;white-space:pre-wrap;word-wrap:break-word}
 .q-apoio-body em,.q-apoio-body i{font-style:italic}
-.q-apoio-body strong,.q-apoio-body b{font-weight:bold;background:#fef3c7;padding:0 1pt;border-radius:1pt}
+.q-apoio-body strong,.q-apoio-body b{font-weight:bold;background:#fff4ce;padding:0 1.5pt;border-radius:0}
+.q-apoio-body center.apoio-title,.q-apoio-body .apoio-title{display:block;text-align:center;margin:0 auto 6pt}
+.q-apoio-body .apoio-attrib{display:block;text-align:right;margin-top:4pt;font-size:.92em;color:#555;font-style:italic}
+.q-apoio-body .apoio-title strong,.q-apoio-body center.apoio-title strong{background:transparent!important;font-weight:bold;font-size:1.05em;padding:0!important;color:#000}
 .q-apoio-body u{text-decoration:underline;text-underline-offset:2px}
 .q-apoio-body br{display:block;margin-bottom:0.1em}
 .q-apoio-body p{margin-bottom:0.4em}
@@ -312,16 +317,18 @@ body{font-family:"Times New Roman",Times,serif;font-size:11pt;color:#000;backgro
 <!-- ══════════ PÁGINA 1 — CAPA + QUESTÕES ══════════ -->
 <div class="cover-header">
   <div class="cover-top">
-    <img src="/shield.png" alt="PC-AP" style="width:60pt;height:auto;object-fit:contain;flex-shrink:0" />
+    <img class="cover-shield-img" src="/shield.png" alt="PC-AP" />
     <div class="cover-titles">
-      <h1>Polícia Civil do Estado do Amapá</h1>
-      <h2>Simulado de Concurso Público — Banca FCC</h2>
+      <div class="institution">Polícia Civil do Estado do Amapá</div>
+      <h1>Concurso Público — Simulado</h1>
+      <div class="subtitle">Banca Examinadora: Fundação Carlos Chagas (FCC)</div>
     </div>
+    <div style="width:56pt"></div>
   </div>
   <div class="cover-meta">
-    <div class="cover-meta-item"><span class="lbl">Data</span><span class="val">${hoje}</span></div>
-    <div class="cover-meta-item"><span class="lbl">Total de Questões</span><span class="val">${exam.questions.length} questões</span></div>
-    <div class="cover-meta-item"><span class="lbl">Tempo de Prova</span><span class="val">${exam.timeMinutes} minutos</span></div>
+    <div class="cover-meta-item"><span class="lbl">Data de aplicação</span><span class="val">${hoje}</span></div>
+    <div class="cover-meta-item"><span class="lbl">Total de questões</span><span class="val">${exam.questions.length}</span></div>
+    <div class="cover-meta-item"><span class="lbl">Tempo de prova</span><span class="val">${exam.timeMinutes} min</span></div>
   </div>
 </div>
 
@@ -623,7 +630,7 @@ function NavBar({view,setView,qCount,resetHistory}){
 }
 
 /* HOME VIEW */
-function HomeView({stats,history,setView,currentExam,dbInfo,dbUpdated}){
+function HomeView({stats,history,setView,currentExam,dbInfo,dbUpdated,favorites}){
   const last=history.slice(0,5);
   const avg=history.length?Math.round(history.reduce((s,e)=>s+e.percent,0)/history.length):0;
   return(<div style={{maxWidth:1100,margin:"0 auto",padding:"24px 16px"}}>
@@ -845,6 +852,38 @@ function GeneratorView({questions,usedIds,startExam,notify}){
 /* EXAM VIEW */
 function ExamView({exam,finishExam,setView}){
   const [answers,setAnswers]=useState({});const [cur,setCur]=useState(0);const [tLeft,setTLeft]=useState((exam?.timeMinutes||120)*60);const [tSpent,setTSpent]=useState(0);const [flagged,setFlagged]=useState(new Set());const [showConfirm,setShowConfirm]=useState(false);const [showGrid,setShowGrid]=useState(false);const timerRef=useRef();
+  useEffect(()=>{
+    const handler=(e)=>{
+      if(!exam||showConfirm||showGrid)return;
+      // Skip if user typing in input
+      if(e.target.tagName==="INPUT"||e.target.tagName==="TEXTAREA")return;
+      // 1-5 → select alternatives A-E
+      if(e.key>="1"&&e.key<="5"){
+        const idx=parseInt(e.key)-1;
+        const q=exam.questions[cur];if(!q)return;
+        setAnswers(a=>({...a,[q.id]:idx}));
+        e.preventDefault();
+      }
+      // ← / → → navigate questions
+      else if(e.key==="ArrowRight"||e.key==="PageDown"){
+        if(cur<exam.questions.length-1)setCur(cur+1);
+        e.preventDefault();
+      }
+      else if(e.key==="ArrowLeft"||e.key==="PageUp"){
+        if(cur>0)setCur(cur-1);
+        e.preventDefault();
+      }
+      // F → flag/unflag
+      else if(e.key==="f"||e.key==="F"){
+        const q=exam.questions[cur];if(!q)return;
+        setFlagged(s=>{const ns=new Set(s);ns.has(q.id)?ns.delete(q.id):ns.add(q.id);return ns;});
+        e.preventDefault();
+      }
+    };
+    window.addEventListener("keydown",handler);
+    return()=>window.removeEventListener("keydown",handler);
+  },[exam,cur,showConfirm,showGrid]);
+
   useEffect(()=>{if(!exam)return;timerRef.current=setInterval(()=>{setTLeft(t=>{if(t<=1){clearInterval(timerRef.current);return 0;}return t-1;});setTSpent(s=>s+1);},1000);return()=>clearInterval(timerRef.current);},[exam]);
   useEffect(()=>{if(tLeft===0&&exam)finishExam(answers,tSpent);},[tLeft]);
   if(!exam)return(<div style={{display:"flex",alignItems:"center",justifyContent:"center",minHeight:"100vh",flexDirection:"column",gap:16}}><div style={{fontSize:48,opacity:.5}}>◎</div><p style={{color:"#475569"}}>Nenhum simulado ativo</p><button onClick={()=>setView("generator")} style={S.btn("primary")}>Criar Simulado</button></div>);
@@ -886,7 +925,17 @@ function ExamView({exam,finishExam,setView}){
 
         {/* Navigation */}
         <div style={{display:"flex",justifyContent:"space-between",alignItems:"center",marginTop:16}}>
-          <button onClick={()=>setCur(c=>Math.max(0,c-1))} disabled={cur===0} style={{...S.btn("ghost"),opacity:cur===0?.4:1,padding:"9px 18px"}}>← Anterior</button>
+          <div style={{display:"flex",alignItems:"center",gap:12}}>
+            <button onClick={()=>setCur(c=>Math.max(0,c-1))} disabled={cur===0} style={{...S.btn("ghost"),opacity:cur===0?.4:1,padding:"9px 18px"}}>← Anterior</button>
+            <div style={{display:"none",alignItems:"center",gap:6,fontSize:9,color:"#4a6078",fontFamily:"'JetBrains Mono',monospace",letterSpacing:1}} className="kbd-hints">
+              <kbd style={{padding:"2px 5px",borderRadius:3,background:"rgba(200,167,93,0.08)",border:"1px solid rgba(200,167,93,0.18)",color:"#c8a75d",fontSize:9}}>1–5</kbd>
+              <span>alt</span>
+              <kbd style={{padding:"2px 5px",borderRadius:3,background:"rgba(200,167,93,0.08)",border:"1px solid rgba(200,167,93,0.18)",color:"#c8a75d",fontSize:9}}>←→</kbd>
+              <span>nav</span>
+              <kbd style={{padding:"2px 5px",borderRadius:3,background:"rgba(200,167,93,0.08)",border:"1px solid rgba(200,167,93,0.18)",color:"#c8a75d",fontSize:9}}>F</kbd>
+              <span>marcar</span>
+            </div>
+          </div>
           <span style={{fontSize:11,color:"#c8a75d",fontFamily:"'JetBrains Mono',monospace"}}>{cur+1} / {total}</span>
           <button onClick={()=>setCur(c=>Math.min(total-1,c+1))} disabled={cur===total-1} style={{...S.btn("ghost"),opacity:cur===total-1?.4:1,padding:"9px 18px"}}>Próxima →</button>
         </div>
@@ -1012,10 +1061,12 @@ export default function App(){
   const [loadError,setLoadError]=useState(null);
   const [dbInfo,setDbInfo]=useState(null);
   const [dbUpdated,setDbUpdated]=useState(false);
+  const [favorites,setFavorites]=useState(new Set());
 
   useEffect(()=>{
     setUsedIds(store.load(SK.USED,[]));
     setHistory(store.load(SK.HIST,[]));
+    try{setFavorites(new Set(store.load(SK.favs,[])));}catch(e){}
     const cur=store.load(SK.CUR,null);if(cur)setCurrentExam(cur);
     loadQuestionDatabase(setLoadProg)
       .then(({questions:qs,version,updatedAt,totalFiles})=>{
@@ -1032,6 +1083,15 @@ export default function App(){
   const notify=useCallback((msg,type="success")=>{setToast({msg,type});setTimeout(()=>setToast(null),3200);},[]);
 
   const startExam=useCallback(exam=>{const data={...exam,answers:{},startTime:Date.now()};setCurrentExam(data);store.save(SK.CUR,data);setView("exam");},[]);
+
+  const toggleFavorite=useCallback((qid)=>{
+    setFavorites(s=>{
+      const ns=new Set(s);
+      ns.has(qid)?ns.delete(qid):ns.add(qid);
+      try{store.save(SK.favs,Array.from(ns));}catch(e){}
+      return ns;
+    });
+  },[]);
 
   const finishExam=useCallback((answers,timeSpent)=>{
     if(!currentExam)return;
@@ -1061,13 +1121,13 @@ export default function App(){
   if(loading||loadError)return <LoadingScreen progress={loadProg} error={loadError}/>;
 
   const render=()=>{switch(view){
-    case"home":return <HomeView stats={stats} history={history} setView={setView} currentExam={currentExam} dbInfo={dbInfo} dbUpdated={dbUpdated}/>;
+    case"home":return <HomeView stats={stats} history={history} setView={setView} currentExam={currentExam} dbInfo={dbInfo} dbUpdated={dbUpdated} favorites={favorites}/>;
     case"bank":return <BankView questions={questions} usedIds={usedIds} dbInfo={dbInfo}/>;
     case"generator":return <GeneratorView questions={questions} usedIds={usedIds} startExam={startExam} notify={notify}/>;
     case"exam":return <ExamView exam={currentExam} finishExam={finishExam} setView={setView}/>;
     case"results":return <ResultsView results={examResults} setView={setView}/>;
     case"history":return <HistoryView history={history} setView={setView} setExamResults={setExamResults}/>;
-    default:return <HomeView stats={stats} history={history} setView={setView} currentExam={currentExam} dbInfo={dbInfo} dbUpdated={dbUpdated}/>;
+    default:return <HomeView stats={stats} history={history} setView={setView} currentExam={currentExam} dbInfo={dbInfo} dbUpdated={dbUpdated} favorites={favorites}/>;
   }};
 
   return(<div style={{minHeight:"100vh",background:"radial-gradient(ellipse 120% 80% at 20% 20%,#060c1a 0%,#04060c 50%,#020308 100%)",color:"#eef1f7",fontFamily:"'Barlow','Segoe UI','Helvetica Neue',system-ui,sans-serif"}}>
