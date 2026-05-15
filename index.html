@@ -214,11 +214,31 @@
         word-wrap:break-word;
       }
       .fcc-apoio-body em,.fcc-apoio-body i{font-style:italic!important;color:inherit}
-      /* <strong> no apoio = grifo/highlight do PDF original */
+      /* <strong> inline no apoio = grifo/highlight do PDF (palavras destacadas em amarelo) */
       .fcc-apoio-body strong,.fcc-apoio-body b{
         font-weight:700!important;
         background:rgba(200,167,93,0.16);border-radius:2px;
         padding:0 2px;color:#e8d87a;
+      }
+      
+      /* Atribuições/fontes ("(Autor)", "(Adaptado de:...)") — alinhadas à direita, em itálico discreto */
+      .fcc-apoio-body .apoio-attrib{
+        display:block;text-align:right;margin-top:6px;
+        font-size:.9em;color:var(--text3);font-style:italic;
+      }
+      /* Título centralizado dentro do apoio (poemas, contos) — SEM highlight */
+      .fcc-apoio-body center.apoio-title,
+      .fcc-apoio-body .apoio-title{
+        display:block;text-align:center;
+        margin:0 auto 8px;padding:0;
+      }
+      .fcc-apoio-body center.apoio-title strong,
+      .fcc-apoio-body .apoio-title strong{
+        font-weight:700!important;
+        background:transparent!important;
+        color:var(--text1)!important;
+        padding:0!important;font-size:1.05em;
+        letter-spacing:.3px;
       }
       .fcc-apoio-body u{text-decoration:underline!important;text-underline-offset:3px}
       /* Parágrafos dentro do apoio */
@@ -286,6 +306,9 @@
       @keyframes pulseGold{0%,100%{box-shadow:0 0 0 0 rgba(200,167,93,0)}50%{box-shadow:0 0 0 8px rgba(200,167,93,0.06)}}
       @keyframes slideIn{from{transform:translateX(20px);opacity:0}to{transform:translateX(0);opacity:1}}
       .fade-up{animation:fadeUp .35s ease forwards}
+
+      /* ══ DESKTOP+ ══ */
+      @media(min-width:900px){.kbd-hints{display:inline-flex!important}}
 
       /* ══ MOBILE ══ */
       @media(max-width:640px){
