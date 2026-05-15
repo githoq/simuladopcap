@@ -23,28 +23,87 @@ const store = {
 };
 
 /* HTML SANITIZER — safe render of formatted question text */
+/**
+ * sanitizeHTML — whitelist-based sanitizer that PRESERVES semantic HTML.
+ * Allows: em, strong, b, i, u, s, sup, sub, br, p, span, div, center,
+ *         blockquote, ul, ol, li, table, thead, tbody, tr, td, th, mark
+ * Allows attributes: class, style (filtered)
+ * Allowed style properties: text-align, font-style, font-weight,
+ *         text-decoration, margin-left, padding-left, font-size
+ * Strips: script, iframe, on* handlers, javascript: URIs, unknown tags
+ */
+const SAFE_TAGS = new Set(['em','strong','b','i','u','s','sup','sub','br','p',
+  'span','div','center','blockquote','ul','ol','li','table','thead','tbody',
+  'tr','td','th','mark']);
+const SAFE_STYLE_PROPS = new Set(['text-align','font-style','font-weight',
+  'text-decoration','text-decoration-line','margin-left','padding-left',
+  'font-size','color','background-color','text-indent']);
+
+function sanitizeStyle(styleStr){
+  if(!styleStr) return '';
+  const safe = [];
+  styleStr.split(';').forEach(decl=>{
+    const [prop,...rest] = decl.split(':');
+    if(!prop||!rest.length) return;
+    const p = prop.trim().toLowerCase();
+    const v = rest.join(':').trim();
+    if(!SAFE_STYLE_PROPS.has(p)) return;
+    // block any url(), expression(), javascript:
+    if(/url\(|expression|javascript:/i.test(v)) return;
+    safe.push(`${p}:${v}`);
+  });
+  return safe.join(';');
+}
+
 function sanitizeHTML(html){
   if(!html||typeof html!=='string') return '';
-  return html
+  // 1. Remove script/iframe blocks
+  let s = html
     .replace(/<script[\s\S]*?<\/script>/gi,'')
     .replace(/<iframe[\s\S]*?>/gi,'')
-    .replace(/on\w+="[^"]*"/gi,'')
-    .replace(/on\w+='[^']*'/gi,'')
     .replace(/javascript:/gi,'#');
+  // 2. Filter every tag through whitelist; sanitize attributes
+  s = s.replace(/<(\/?)(\w+)([^>]*)>/g,(match,slash,tag,attrs)=>{
+    const tagL = tag.toLowerCase();
+    if(!SAFE_TAGS.has(tagL)) return ''; // strip unknown tag
+    if(slash) return `</${tagL}>`;
+    // Process allowed attributes: class, style, align
+    const out = [];
+    // class
+    const cm = attrs.match(/\bclass=["']([^"']*)["']/i);
+    if(cm) out.push(`class="${cm[1].replace(/[<>"]/g,'')}"`);
+    // style — sanitize properties
+    const sm = attrs.match(/\bstyle=["']([^"']*)["']/i);
+    if(sm){
+      const safeStyle = sanitizeStyle(sm[1]);
+      if(safeStyle) out.push(`style="${safeStyle}"`);
+    }
+    // align (legacy HTML)
+    const am = attrs.match(/\balign=["']?(\w+)["']?/i);
+    if(am && /^(left|right|center|justify)$/i.test(am[1])) out.push(`align="${am[1].toLowerCase()}"`);
+    return `<${tagL}${out.length?' '+out.join(' '):''}>`;
+  });
+  return s;
 }
 
 /* Render HTML with proper line-break and paragraph conversion */
+/**
+ * renderHTML — minimal-transformation renderer.
+ * Pipeline: input -> [optional \n->br for non-prewrap context] -> sanitize -> return.
+ * Default opts: { prewrap: false }
+ *   - prewrap=true:  CSS handles \n via white-space:pre-wrap. NO transformation.
+ *   - prewrap=false: convert raw \n to <br> ONLY if input has no block-level tags.
+ */
 function renderHTML(html,opts){
   if(!html||typeof html!=='string') return '';
-  let s=html;
-  const prewrap=opts&&opts.prewrap;
+  let s = html;
+  const prewrap = opts && opts.prewrap;
   if(!prewrap){
-    const hasBlock=/<(p|br|div|ul|ol|li|table|blockquote)\b/i.test(s);
+    const hasBlock = /<(p|br|div|center|blockquote|table|ul|ol|li)\b/i.test(s);
     if(!hasBlock){
-      s=s.replace(/\n\n+/g,'<br><br>').replace(/\n/g,'<br>');
-    } else {
-      s=s.replace(/\n/g,'<br>');
+      s = s.replace(/\n\n+/g,'<br><br>').replace(/\n/g,'<br>');
     }
+    // If hasBlock=true, leave \n alone — they're cosmetic whitespace inside HTML structure.
   }
   return sanitizeHTML(s);
 }
@@ -87,9 +146,16 @@ function exportExamPDF(exam){
   /* ── Build questions section ── */
   let questionsHTML="";let lastDisc=null;
   const pdfRender=(html)=>{
-    if(!html) return '';
-    // Convert \n to <br> for proper line breaks in PDF HTML
-    return html.replace(/\n\n+/g,'<br><br>').replace(/\n/g,'<br>');
+    if(!html||typeof html!=='string') return '';
+    let s = html;
+    // PDF uses HTML rendering — preserve structure.
+    // Convert \n to <br> ONLY where there's no block-level structure.
+    const hasBlock = /<(p|br|div|center|blockquote|table|ul|ol|li)\b/i.test(s);
+    if(!hasBlock){
+      s = s.replace(/\n\n+/g,'<br><br>').replace(/\n/g,'<br>');
+    }
+    // No further transformation — sanitization happens at PDF embed time if needed
+    return s;
   };
   const stripPdfLetter=(a)=>{
     let s=(a||'').trim();
