@@ -10,7 +10,7 @@
     "cargo": "Ana Prev (IPREM SP)",
     "orgao": "IPREM SP",
     "texto_apoio_titulo": "Considere a tira de Angeli para responder a questão seguinte.",
-    "texto_apoio": "<span class=\"apoio-attrib\">(ANGELI, Rusga e Rabujo. Folha de São Paulo. Disponível em: <https://cartum.folha.uol.com.br. Publicado em 7 de jul. de 2024. Acesso em: 15 de jul. de 2024)</span>",
+    "texto_apoio": "<span class=\"apoio-attrib\">(ANGELI, Rusga e Rabujo. Folha de São Paulo. Disponível em: https://cartum.folha.uol.com.br. Publicado em 7 de jul. de 2024. Acesso em: 15 de jul. de 2024)</span",
     "imagem": "/assets/questions/questao_007.png",
     "pergunta": "Na tira, a relação entre as palavras \"preservada\", \"conservada\" e \"intacta\" constitui um exemplo de",
     "alternativas": [
@@ -830,9 +830,9 @@
     "imagem": null,
     "pergunta": "O elemento sublinhado em <em>Ainda no século 17 os filósofos iluministas ensinaram o valor do devaneio</em> (3º parágrafo) exerce a mesma função sintática\ndaquele sublinhado em:",
     "alternativas": [
-      "<epara isso recorroorro à inteligência artificial generativa</em> (2º parágrafo)",
+      " (2º parágrafo)",
       "<em>pois se a pessoa não eprejudicando ninguém (1º</em> (1º parágrafo)",
-      "<emque a mecanização não não ativa a Inteligência nem a razão</em> (3º parágrafo)",
+      " (3º parágrafo)",
       "<em>As três pessoas que estacomigo no elevador ser se recusavam a devanear</em> (1º parágrafo)",
       "<em>ela está deixando de exiscomo indivíduo (1º</em> (1º parágrafo)"
     ],

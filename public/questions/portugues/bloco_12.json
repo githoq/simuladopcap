@@ -418,7 +418,7 @@
     "cargo": "Ana Prev (IPREM SP)",
     "orgao": "IPREM SP",
     "texto_apoio_titulo": "Considere a tira de Angeli para responder a questão seguinte.",
-    "texto_apoio": "<span class=\"apoio-attrib\">(ANGELI, Rusga e Rabujo. Folha de São Paulo. Disponível em: <https://cartum.folha.uol.com.br. Publicado em 7 de jul. de 2024. Acesso em: 15 de jul. de 2024)</span>",
+    "texto_apoio": "<span class=\"apoio-attrib\">(ANGELI, Rusga e Rabujo. Folha de São Paulo. Disponível em: https://cartum.folha.uol.com.br. Publicado em 7 de jul. de 2024. Acesso em: 15 de jul. de 2024)</span",
     "imagem": "/assets/questions/questao_007.png",
     "pergunta": "É um pronome adjetivo o termo",
     "alternativas": [
