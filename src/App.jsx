@@ -304,7 +304,10 @@ body{font-family:"Times New Roman",Times,serif;font-size:10.5pt;color:#1a1a1a;ba
 .q-sub{font-size:8.5pt;color:#555;font-style:italic}
 .q-apoio{background:#fafafa;border-left:2pt solid #333;padding:10pt 14pt;margin-bottom:0;border-radius:0 4pt 4pt 0;page-break-inside:avoid}
 .q-apoio-title{text-align:center;font-weight:bold;font-size:10.5pt;margin-bottom:7pt;color:#1a2b3c}
-.q-apoio-body{font-size:9.5pt;line-height:1.55;color:#1a1a1a;white-space:pre-wrap;word-wrap:break-word}
+.q-apoio-body{font-size:10pt;line-height:1.55;color:#1a1a1a;word-wrap:break-word}
+.q-apoio-body p{margin:0 0 6pt;line-height:1.55}
+.q-apoio-body p:last-child{margin-bottom:0}
+.q-apoio-body mark{background:#fde68a;color:#1a1108;padding:0 2pt;border-radius:1pt}
 .q-apoio-body em,.q-apoio-body i{font-style:italic}
 .q-apoio-body strong,.q-apoio-body b{font-weight:bold;background:#fff4ce;padding:0 1.5pt;border-radius:0}
 .q-apoio-body center.apoio-title,.q-apoio-body .apoio-title{display:block;text-align:center;margin:0 auto 6pt}
