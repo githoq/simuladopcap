@@ -260,6 +260,28 @@
       .fcc-apoio-body.prose br{display:block;margin-bottom:.1em}
       .fcc-apoio-body.prose br+br{margin-top:.4em}
 
+      /* Trecho de referência (excerpt após atribuição — o que a questão analisa) */
+      .fcc-apoio-body p.fcc-excerpt{
+        margin-top:14px;
+        padding:10px 14px;
+        border-top:1px solid rgba(200,167,93,0.2);
+        border-left:2px solid rgba(200,167,93,0.4);
+        border-radius:0 6px 6px 0;
+        background:rgba(200,167,93,0.04);
+        font-style:normal;
+        line-height:1.75;
+      }
+      /* <u> dentro do excerpt = sublinhado confirmado do PDF */
+      .fcc-apoio-body p.fcc-excerpt u{
+        text-decoration:underline!important;
+        text-underline-offset:3px;
+        font-style:inherit;
+      }
+      /* <em> dentro do excerpt = itálico genuíno */
+      .fcc-apoio-body p.fcc-excerpt em{
+        font-style:italic!important;
+      }
+
       /* Verso/Poema — linhas com quebra de linha explícita */
       .fcc-apoio-body .fcc-verse{
         display:block;line-height:1.8;margin:0 0 .85em;
