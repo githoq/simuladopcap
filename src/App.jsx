@@ -306,6 +306,8 @@ body{font-family:"Times New Roman",Times,serif;font-size:10.5pt;color:#1a1a1a;ba
 .q-apoio-title{text-align:center;font-weight:bold;font-size:10.5pt;margin-bottom:7pt;color:#1a2b3c}
 .q-apoio-body{font-size:10pt;line-height:1.55;color:#1a1a1a;word-wrap:break-word}
 .q-apoio-body p{margin:0 0 6pt;line-height:1.55}
+.q-apoio-body p.fcc-excerpt{margin-top:8pt;padding:5pt 8pt;border-top:.5pt solid #999;border-left:1.5pt solid #c8a75d;background:#fffbf0}
+.q-apoio-body p.fcc-excerpt u{text-decoration:underline;text-underline-offset:2pt}
 .q-apoio-body p:last-child{margin-bottom:0}
 .q-apoio-body mark{background:#fde68a;color:#1a1108;padding:0 2pt;border-radius:1pt}
 .q-apoio-body em,.q-apoio-body i{font-style:italic}
