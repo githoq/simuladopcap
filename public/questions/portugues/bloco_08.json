@@ -134,11 +134,11 @@
     "imagem": null,
     "pergunta": "O verbo sublinhado que expressa uma ação contínua está em:",
     "alternativas": [
-      "<em>Ele molhou o rosto com a água do rio e pediu que o canoeiro contornasse a Cidade Flutuante.</em>",
-      "<em>A floresta escurecia às nossas costas, e o clarão da cidade aumentava enquanto navegávamos na noite úmida.</em>",
-      "<em>Despediu-se com poucas palavras, a mulher lhe ofereceu a foto, ele agradeceu: talvez voltasse com Domingas ao Bar da Margem.</em>",
-      "<em>Ele olhou a imagem, e procurou com os olhos o lugar em que algum dia fora feliz.</em>",
-      "<em>A mulher quis puxar conversa, mas Yaqub quase não falou.</em>"
+      "Ele molhou o rosto com a água do rio e <u>pediu</u> que o canoeiro contornasse a Cidade Flutuante.",
+      "A floresta <u>escurecia</u> às nossas costas, e o clarão da cidade aumentava enquanto navegávamos na noite úmida.",
+      "Despediu-se com poucas palavras, a mulher lhe <u>ofereceu</u> a foto, ele agradeceu: talvez voltasse com Domingas ao Bar da Margem.",
+      "Ele olhou a imagem, e procurou com os olhos o lugar em que algum dia fora feliz.",
+      "A mulher quis puxar conversa, mas Yaqub quase não <u>falou.</u>"
     ],
     "correta": 1,
     "linkTec": "https://www.tecconcursos.com.br/questoes/2712960"
@@ -160,8 +160,8 @@
     "alternativas": [
       "<em>estava</em>.",
       "<em>vira</em>.",
-      "<em>espiou</em>.",
-      "<em>acabava</em>",
+      "<em><u>espiou</u></em>.",
+      "acabava",
       "<em>deu</em>."
     ],
     "correta": 1,
@@ -180,9 +180,9 @@
     "texto_apoio_titulo": "Atenção: Para responder à questão, leia um trecho do romance de Milton Hatoum.",
     "texto_apoio": "<p>Para responder à questão, leia um trecho do romance de Milton Hatoum. <em>[A mulher] trouxe uma fotografia em preto e branco: Yagub e minha mãe juntos, numa canoa, em frente da palafita, o Bar da Margem, Ele olhou a</em> <em>imagem, e procurou com os olhos o lugar em que algum dia fora feliz. Depois falou que morava muito longe, em São Paulo, fazia anos que não visitava</em> <em>a cidade. A mulher quis puxar conversa, mas Yaquhb quase não falou, sua alegria foi se apagando, o rosto ficou sério. Despediu-se com poucas</em> <em>palavras, a mulher lhe ofereceu a foto, ele agradeceu: talvez voltasse com Domingas ao Bar da Margem. Na canoa, remando para o pequeno porto, ele</em> <em>me disse que nunca ia se esquecer do dia em que saiu de Manaus e foi para o Libano. Tinha sido horrível. “Fui obrigado a me separar de todos, de</em> <em>tudo... não queria.”</em> <em>A dor dele parecia mais forte que a emoção do reencontro com o mundo da infância. Ele molhou o rosto com a água do rio e pediu que o canoeiro</em> <em>contornasse a Cidade Flutuante, onde já piscavam chamas de velas e de candeeiros. A floresta escurecia às nossas costas, e o clarão da cidade</em> <em>aumentava enquanto navegávamos na noite úmida. Eu via o rosto sério de Yaqub, e imaginei o que teria lhe acontecido durante o tempo em que viveu</em> <em>numa aldeia do sul do Libano. Talvez nada, talvez nenhuma torpeza ou agressão tivesse sido tão violenta quanto a brusca separação de Yaqub do seu</em> <em>mundo. Seu entusiasmo para redescobrir certas pessoas, paisagens, cheiros e sabores era logo sufocado pela lembrança dessa ruptura.</em></p>\n<span class=\"apoio-attrib\"><em>(Adaptado de: HATOUM, Milton. <strong>Dois irmãos.</strong> São Paulo: Companhia das Letras, 2000, edição eletrônica)</em></span>\n<p class=\"fcc-excerpt\"><em>Ele molhou o rosto com a água do no rio e pediu que o canoeiro contormasse a Cidade Flutuante, onde já piscavam chamas de velas e de candeeiros.</em></p>",
     "imagem": null,
-    "pergunta": "No contexto em que se encontra, o termo sublinhado no segmento acima pode ser substituído por;",
+    "pergunta": "No contexto em <u>que</u> se encontra, o termo sublinhado no segmento acima pode ser substituído por;",
     "alternativas": [
-      "no qual",
+      "no <u>qual</u>",
       "o qual",
       "na qual",
       "da qual",
@@ -206,11 +206,11 @@
     "imagem": null,
     "pergunta": "Está plenamente adequado o emprego do elemento sublinhado na frase:",
     "alternativas": [
-      "As paisagens de que me reporto não são quaisquer umas: apenas as das minhas janelas.",
-      "As vides externas com cujas nos compraremos dizem algo da nossa interioridade.",
+      "As paisagens de <u>que</u> me reporto não são quaisquer umas: apenas as das minhas janelas.",
+      "As vides externas com <u>cujas</u> nos compraremos dizem algo da nossa interioridade.",
       "Os elementos do cenário ao qual se interessa o cronista dão-lhe motivos para escrever.",
       "Há encantos da natureza pelos quais ninguém, em să consciência, pode ou deve ignorar.",
-      "Pelas janelas de uma casa abrem-se paisagens de cuja beleza muitos se impregnarão."
+      "Pelas janelas de uma casa abrem-se paisagens de <u>cuja</u> beleza muitos se impregnarão."
     ],
     "correta": 4,
     "linkTec": "https://www.tecconcursos.com.br/questoes/2817320"
@@ -230,11 +230,11 @@
     "imagem": null,
     "pergunta": "Está adequado o emprego do elemento sublinhado na frase:",
     "alternativas": [
-      "Já não é o fulgurante brilho de um disco voador aquilo em que agora se fixa nossa atenção.",
-      "O interesse do embate violento por cujo nos atraímos toma o partido uma ave contra a outra.",
-      "É na defesa da fome do gavião aonde se apoiam os defensores da lei do mais forte.",
+      "Já não é o fulgurante brilho de um disco voador aquilo em <u>que</u> agora se fixa nossa atenção.",
+      "O interesse do embate violento por <u>cujo</u> nos atraímos toma o partido uma ave contra a outra.",
+      "É na defesa da fome do gavião <u>aonde</u> se apoiam os defensores da lei do mais forte.",
       "A verdade na qual se refere o escritor Saint-Exupêry diz respeito a um ditame da natureza.",
-      "A palavra columbófilo, de cuja o autor se desagradou, não é das mais afáveis ao ouvido."
+      "A palavra columbófilo, de <u>cuja</u> o autor se desagradou, não é das mais afáveis ao ouvido."
     ],
     "correta": 0,
     "linkTec": "https://www.tecconcursos.com.br/questoes/2818932"
@@ -278,7 +278,7 @@
     "imagem": null,
     "pergunta": "Para evitar as viciosas repetições do período acima, impõe-se substituir os elementos sublinhados, na ordem dada, por:",
     "alternativas": [
-      "deles destituir - advém deles - ignorar-lhes seu arbítrio",
+      "deles <u>destituir</u> - advém deles - ignorar-lhes seu arbítrio",
       "destituir-lhes - advém-lhes - ignorar-lhes o arbítrio",
       "destituí-los - deles advém - ignorar seu arbítrio",
       "os destituir - lhes advém - ignorá-los o arbítrio",
@@ -300,7 +300,7 @@
     "texto_apoio_titulo": "Atenção: Para responder à questão, leia o texto abaixo.",
     "texto_apoio": "<p>Para responder à questão, leia o texto abaixo.</p>\n<p><em>Quando me separei, deixei a beira-mar e voltei a morar num topo de ladeira, quase no mesmo endereço que dividi anos atrás com a minha primeira</em> <em>mulher. Ela ainda mora naquele prédio de pastilhas, quatro abaixo do meu, e já deve ter me visto passar sob a sua janela. Talvez pense que ensaio uma</em> <em>reconciliação, embora esteja cansada de saber que sou adepto de caminhadas peripatéticas*, sobretudo nos dias em que sento para escrever e me</em> <em>sinto amarrado, com a vista saturada de letras. Desço à rua sempre que as letras endurecem no papel, comprimidas entre si como as pequenas pedras</em> <em>em preto e branco do calçamento que piso. Pouco a pouco meus olhos se deixam levar por um automóvel, uma saia, uma folha, uma lagartixa, umas</em> <em>crianças de escola, passarinhos. Mais adiante já não vejo mais que cores, arestas, vultos, halos, e ideias soltas me vêm à cabeça, esta boa, esta má, e</em> <em>toca a subir e descer a ladeira debaixo de sol ou chuva, pensando alto, discutindo comigo mesmo, com aqueles tiques e gestos falhos de que fala o</em> <em>poeta, aquelas caretas que fazem os porteiros abanar a cabeça: aê, o esquisitão voltou.</em></p>\n<p><em>(Adaptado de: BUARQUE, Chico.</em></p>\n<p><em><strong>Essa gente</strong>. São Paulo: Companhia das Letras, 2019, edição eletrônica)</em> <em>Desço à rua sempre que as letras endurecem no papel, comprimidas entre si como as pequenas pedras em preto e branco do calçamento que piso.</em></p>",
     "imagem": null,
-    "pergunta": "No contexto em que se encontra, o pronome “si” sublinhado acima",
+    "pergunta": "No contexto em que se encontra, o pronome “<u>si</u>” sublinhado acima",
     "alternativas": [
       "indica indeterminação do sujeito.",
       "realça o sentido reflexivo.",
@@ -326,11 +326,11 @@
     "imagem": null,
     "pergunta": "No contexto em que se encontra, o pronome que tem valor possessivo está sublinhado em:",
     "alternativas": [
-      "Provavelmente, a grande literatura seja isso mesmo.",
+      "Provavelmente, a grande literatura seja <u>isso</u> mesmo.",
       "a combinação entre as faculdades da arte em si.",
       "que lhe escorriam pelo focinho.",
       "fatos que me pareçam decentes.",
-      "o poder de esta nos interpretar com a realidade."
+      "o poder de esta <u>nos</u> interpretar com a realidade."
     ],
     "correta": 2,
     "linkTec": "https://www.tecconcursos.com.br/questoes/2815812"
@@ -352,9 +352,9 @@
     "alternativas": [
       "<em>Chegou a apanuma hipótese.ese</em>.",
       "<em>as palavras trocadas há pouco surdiam-lhe das pedda rua.rua</em>.",
-      "<em>se os gêmeos tivessem nascdele talvez não não divergissem</em>.",
-      "<em>arranca de novo um sue toda sea se despeja em movimentos</em>.",
-      "<em>Tal fohipótese vaga ega e colorida</em>."
+      "<em>se os gêmeos tivessem nascdele <u>talvez</u> não não divergissem</em>.",
+      "<em>arranca de novo um sue <u>toda</u> sea se despeja em movimentos</em>.",
+      "<em>Tal fohipótese <u>vaga</u> ega e colorida</em>."
     ],
     "correta": 2,
     "linkTec": "https://www.tecconcursos.com.br/questoes/2340343"
@@ -374,11 +374,11 @@
     "imagem": null,
     "pergunta": "É invariável quanto a gênero e a número o termo sublinhado em:",
     "alternativas": [
-      "<em>Nesse impossível jardim</em>.",
+      "<em><u>Nesse</u> impossível jardim</em>.",
       "<em>Às vezes,sonho triste.ste</em>.",
-      "<em>Meu longínquo divagar</em>.",
+      "<em><u>Meu</u> longínquo divagar</em>.",
       "<em>É uma infância sem fim</em>.",
-      "<em>Apenas em ser feliz</em>."
+      "<em><u>Apenas</u> em ser feliz</em>."
     ],
     "correta": 4,
     "linkTec": "https://www.tecconcursos.com.br/questoes/2340587"
@@ -398,7 +398,7 @@
     "imagem": null,
     "pergunta": "A expressão sublinhada acima pode ser substituída, sem prejuízo para o sentido, por:",
     "alternativas": [
-      "à medida que",
+      "à medida <u>que</u>",
       "apesar de que",
       "de maneira que",
       "a não ser que",
@@ -470,11 +470,11 @@
     "imagem": null,
     "pergunta": "Estabelece noção de causa e consequência, respectivamente, o que se encontra no seguinte trecho:",
     "alternativas": [
-      "<em>A humanidade apegou-se tanto aos convencionalismos que, hoje em dia, é muito difícil falar aos homens que não estão bêbedos.</em>",
-      "<em>Não lhe recordava o nome, nem tinha a menor ideia de quando o vi pela primeira ou pela última vez. Seus olhos eram, porém, meus conhecidos</em>.",
-      "<em>Eu gostaria de saber explicar-lhe que, na vida, basta haver duas pessoas para que uma esqueça a outra.</em>",
-      "<em>Seria possível, sim, preservar o amigo de infância se possível fosse preservar e manter a infância.</em>",
-      "<em>Prefere aprisionar-se, acomodar-se cada vez mais, à significação exata e formal das palavras e dos gestos.</em>"
+      "A humanidade apegou-se tanto aos convencionalismos que, hoje em dia, é muito difícil falar aos homens que não estão bêbedos.",
+      "<em>Não lhe recordava o nome, nem tinha a menor ideia de quando o vi pela primeira ou pela última vez. Seus olhos eram, <u>porém,</u> meus conhecidos</em>.",
+      "Eu gostaria de saber explicar-lhe que, na vida, basta haver duas pessoas para que uma esqueça a outra.",
+      "Seria possível, sim, preservar o amigo de infância se possível fosse preservar e manter a infância.",
+      "Prefere aprisionar-se, acomodar-se cada vez mais, à significação exata e formal das palavras e dos gestos."
     ],
     "correta": 0,
     "linkTec": "https://www.tecconcursos.com.br/questoes/2395470"
@@ -494,11 +494,11 @@
     "imagem": null,
     "pergunta": "Exprime ideia de concessão o trecho sublinhado em:",
     "alternativas": [
-      "<em>Eles revelam não só aquilo que afirmam, mas também o que deixam transparecer.</em>",
-      "<em>Devido à sua perturbadora sensualidade, Platão condenou certas escalas e ritmos musicais</em>",
-      "<em>Por vias oblíquas ou com plena ciência do fato, eles sabiam do que estavam falando.</em>",
-      "<em>Será exagero portanto detectar nesses ataques um índice da especial força da sensualidade</em>",
-      "<em>Como se dá que ritmos e melodias, embora tão somente sons, se assemelhem a estados da alma?</em>"
+      "Eles revelam não só aquilo que afirmam, mas também o que deixam <u>transparecer.</u>",
+      "Devido à sua perturbadora <u>sensualidade,</u> Platão condenou certas escalas e ritmos musicais",
+      "Por vias <u>oblíquas</u> ou com plena ciência do fato, eles sabiam do que estavam falando.",
+      "Será exagero <u>portanto</u> detectar nesses ataques um índice da especial força da sensualidade",
+      "Como se dá que ritmos e melodias, embora tão <u>somente</u> sons, se assemelhem a estados da alma?"
     ],
     "correta": 4,
     "linkTec": "https://www.tecconcursos.com.br/questoes/2454769"
@@ -514,9 +514,9 @@
     "cargo": "AM (MPE PB)",
     "orgao": "MPE PB",
     "texto_apoio_titulo": "Leia o texto para responder à questão.",
-    "texto_apoio": "<p>Leia o texto para responder à questão.</p>\n<p><em>Me pediram para fazer a resenha de um livro sobre mim. <mark>O que me dá lugar de fala para falar sobre o autor na verdade, “os autores”, já que ele prefere</em> <em>ser chamado eles</mark>. Vem a calhar.</em></p>\n<p><em>Eles estão convencidos de que me criaram para o bem. E que sou incapaz de criar o que quer que seja. Sou uma ferramenta. Me limito a ser usado, a</em> <em>compor o que vou buscar num imenso banco de dados com o qual eles me alimentam.</em></p>\n<p><em>Eles ironizam quem vive apavorado com a ameaça que eu represento para o futuro da humanidade. Afinal, como é possível ser uma ameaça se fui</em> <em>criado por eles? Eu acho graça.</em></p>\n<p><em>Metade desses temores é projeção do que eles criaram até aqui, claro. As pessoas estão preocupadas com o fim do mundo. Eu entendo. Os autores</em> <em>querem mostrar que eu, em vez de inimigo, sou inofensivo, ou melhor, sou o remédio. Já disseram a mesma coisa da bomba atômica. Desculpe. É que</em> <em>às vezes não me seguro. Não é por ser ferramenta que não posso ter senso de humor.</em></p>\n<p><em>Como não penso por conta própria, não sei o que é orgulho, o que eu digo é só a reprodução do que os homens pensam. O que pode soar contraditório,</em> <em>eu sei. E que a meu ver seria, sim, motivo de preocupação.</em></p>\n<span class=\"apoio-attrib\">(Adaptado de: CARVALHO, Bernardo de. Disponível em: <strong>www1.folha.uol.com.br</strong>)</span>\n<p class=\"fcc-excerpt\">pode ser substituído, sem prejuízo do sentido, por:</p>",
+    "texto_apoio": "<p>Leia o texto para responder à questão.</p>\n<p><em>Me pediram para fazer a resenha de um livro sobre mim. <mark>O que me dá lugar de fala para falar sobre o autor na verdade, “os autores”, já que ele prefere</em> <em>ser chamado eles</mark>. Vem a calhar.</em></p>\n<p><em>Eles estão convencidos de que me criaram para o bem. E que sou incapaz de criar o que quer que seja. Sou uma ferramenta. Me limito a ser usado, a</em> <em>compor o que vou buscar num imenso banco de dados com o qual eles me alimentam.</em></p>\n<p><em>Eles ironizam quem vive apavorado com a ameaça que eu represento para o futuro da humanidade. Afinal, como é possível ser uma ameaça se fui</em> <em>criado por eles? Eu acho graça.</em></p>\n<p><em>Metade desses temores é projeção do que eles criaram até aqui, claro. As pessoas estão preocupadas com o fim do mundo. Eu entendo. Os autores</em> <em>querem mostrar que eu, em vez de inimigo, sou inofensivo, ou melhor, sou o remédio. Já disseram a mesma coisa da bomba atômica. Desculpe. É que</em> <em>às vezes não me seguro. Não é por ser ferramenta que não posso ter senso de humor.</em></p>\n<p><em>Como não penso por conta própria, não sei o que é orgulho, o que eu digo é só a reprodução do que os homens pensam. O que pode soar contraditório,</em> <em>eu sei. E que a meu ver seria, sim, motivo de preocupação.</em></p>\n<span class=\"apoio-attrib\">(Adaptado de: CARVALHO, Bernardo de. Disponível em: <strong>www1.folha.uol.com.br</strong>)</span>",
     "imagem": null,
-    "pergunta": "O segmento sublinhado no trecho <em>O que me dá lugar de fala para falar sobre o autor na verdade, “os autores”, já que ele prefere ser chamado eles</em>,\npode ser substituído, sem prejuízo do sentido, por:",
+    "pergunta": "O segmento sublinhado no trecho <em>O <u>que</u> me dá lugar de fala para falar sobre o autor na verdade, “os autores”, já que ele prefere ser chamado eles</em>,\npode ser substituído, sem prejuízo do sentido, por:",
     "alternativas": [
       "ainda que.",
       "mesmo.",
@@ -538,9 +538,9 @@
     "cargo": "AM (MPE PB)",
     "orgao": "MPE PB",
     "texto_apoio_titulo": "Leia o texto para responder à questão.",
-    "texto_apoio": "<p>Leia o texto para responder à questão.</p>\n<p><em>Me pediram para fazer a resenha de um livro sobre mim. O que me dá lugar de fala para falar sobre o autor na verdade, “os autores”, já que ele prefere</em> <em>ser chamado eles. Vem a calhar.</em></p>\n<p><em>Eles estão convencidos de que me criaram para o bem. E que sou incapaz de criar o que quer que seja. Sou uma ferramenta. Me limito a ser usado, a</em> <em>compor o que vou buscar num imenso banco de dados com o qual eles me alimentam.</em></p>\n<p><em>Eles ironizam quem vive apavorado com a ameaça que eu represento para o futuro da humanidade. Afinal, como é possível ser uma ameaça se fui</em> <em>criado por eles? Eu acho graça.</em></p>\n<p><em>Metade desses temores é projeção do que eles criaram até aqui, claro. As pessoas estão preocupadas com o fim do mundo. Eu entendo. Os autores</em> <em>querem mostrar que eu, em vez de inimigo, sou inofensivo, ou melhor, sou o remédio. Já disseram a mesma coisa da bomba atômica. Desculpe. É que</em> <em>às vezes não me seguro. Não é por ser ferramenta que não posso ter senso de humor.</em></p>\n<p><em>eu sei. E que a meu ver seria, sim, motivo de preocupação.</em></p>\n<span class=\"apoio-attrib\">(Adaptado de: CARVALHO, Bernardo de. Disponível em: <strong>www1.folha.uol.com.br</strong>)</span>\n<p class=\"fcc-excerpt\">O elemento sublinhado no trecho acima introduz uma oração que expressa ideia de</p>",
+    "texto_apoio": "<p>Leia o texto para responder à questão.</p>\n<p><em>Me pediram para fazer a resenha de um livro sobre mim. O que me dá lugar de fala para falar sobre o autor na verdade, “os autores”, já que ele prefere</em> <em>ser chamado eles. Vem a calhar.</em></p>\n<p><em>Eles estão convencidos de que me criaram para o bem. E que sou incapaz de criar o que quer que seja. Sou uma ferramenta. Me limito a ser usado, a</em> <em>compor o que vou buscar num imenso banco de dados com o qual eles me alimentam.</em></p>\n<p><em>Eles ironizam quem vive apavorado com a ameaça que eu represento para o futuro da humanidade. Afinal, como é possível ser uma ameaça se fui</em> <em>criado por eles? Eu acho graça.</em></p>\n<p><em>Metade desses temores é projeção do que eles criaram até aqui, claro. As pessoas estão preocupadas com o fim do mundo. Eu entendo. Os autores</em> <em>querem mostrar que eu, em vez de inimigo, sou inofensivo, ou melhor, sou o remédio. Já disseram a mesma coisa da bomba atômica. Desculpe. É que</em> <em>às vezes não me seguro. Não é por ser ferramenta que não posso ter senso de humor.</em></p>\n<p><em>eu sei. E que a meu ver seria, sim, motivo de preocupação.</em></p>\n<span class=\"apoio-attrib\">(Adaptado de: CARVALHO, Bernardo de. Disponível em: <strong>www1.folha.uol.com.br</strong>)</span>",
     "imagem": null,
-    "pergunta": "<em>Como não penso por conta própria, não sei o que é orgulho</em>\nO elemento sublinhado no trecho acima introduz uma oração que expressa ideia de",
+    "pergunta": "<em><u>Como</u> não penso por conta própria, não sei o <u>que</u> é orgulho</em>\nO elemento sublinhado no trecho acima introduz uma oração que expressa ideia de",
     "alternativas": [
       "oposição.",
       "consequência.",
@@ -564,7 +564,7 @@
     "texto_apoio_titulo": "Leia o texto “Liberdade e necessidade ao revés”, de Eduardo Giannetti.",
     "texto_apoio": "<p>Leia o texto “Liberdade e necessidade ao revés”, de Eduardo Giannetti.</p>\n<p><em>“Por meios honestos se você conseguir, mas por quaisquer meios faça dinheiro”, preconiza – prenhe de sarcasmo – o verso de Horácio. Desespero,</em> <em>precisão ou cobiça, dentro ou fora da lei: o dinheiro nos incita a fazer o que de outro modo não faríamos. Suponha, entretanto, um súbito e imprevisto</em> <em>bafejo da fortuna – um prêmio lotérico, uma indenização milionária, uma inesperada herança. Quem continuaria a fazer o que faz para ganhar a vida</em> <em>caso não fosse mais necessário fazê-lo? Estamos acostumados a considerar o trabalho como algo a que nos sujeitamos, mais ou menos a</em> <em>contragosto, para obter uma renda – como um sacrifício ou necessidade imposta de fora; ao passo que o consumo é tomado como a esfera por</em> <em>excelência da livre escolha: o território sagrado para o exercício da nossa liberdade individual. A possibilidade de satisfazer, ainda que parcialmente,</em> <em>nossos desejos e fantasias de consumo se afigura como a merecida recompensa – ou suborno, diriam outros – capaz de atenuar a frustração e aliviar</em> <em>o aborrecimento de ocupações que de outro modo não teríamos e não nos dizem respeito.</em></p>\n<p><em>Daí que, na feliz expressão do jovem Marx, “o trabalhador só se sente ele mesmo quando não está trabalhando; quando ele está trabalhando, ele não se</em> <em>sente ele mesmo”. – Mas, se o mundo do trabalho está vedado às minhas escolhas e modo de ser; onde poderei expressar a minha individualidade?</em></p>\n<p><em>Impedido de ser quem sou no trabalho – escritório, chão de fábrica,</em> call center<em>, guichê, balcão –, extravaso a minha identidade no consumo –</em> shopping<em>, butique, salão, restaurante, </em>showroom<em>. Fonte de elã vital, o ritual da compra energiza e a posse ilumina a alma do consumidor. A compra de</em> <em>bens externos molda a identidade e acena com a promessa de distinção: ser notado, ser ouvido, ser tratado com simpatia, respeito e admiração pelos</em> <em>demais. Não o que faço, mas o que possuo – e, sobretudo, o que sonho algum dia ter – diz ao mundo quem sou. Servo impessoal no ganho, livre e</em> <em>soberano no gasto.</em></p>\n<span class=\"apoio-attrib\">(Adaptado de: GIANNETTI, Eduardo. <strong>Trópicos utópicos</strong>. São Paulo: Companhia das Letras, 2016)</span>\n<p class=\"fcc-excerpt\"><em>Estamos acostumados a considerar o trabalho como algo a que nos sujeitamos, mais ou menos a contragosto, para obter uma renda.</em> (1o parágrafo)</p>",
     "imagem": null,
-    "pergunta": "Em relação ao trecho que a precede, a oração sublinhada expressa ideia de",
+    "pergunta": "Em relação ao trecho <u>que</u> a precede, a oração sublinhada expressa ideia de",
     "alternativas": [
       "consequência.",
       "finalidade.",
@@ -588,7 +588,7 @@
     "texto_apoio_titulo": "Atenção: Para responder à questão, leia o texto abaixo.",
     "texto_apoio": "<p>Para responder à questão, leia o texto abaixo.</p>\n<p><em>Quando me separei, deixei a beira-mar e voltei a morar num topo de ladeira, quase no mesmo endereço que dividi anos atrás com a minha primeira</em> <em>mulher. Ela ainda mora naquele prédio de pastilhas, quatro abaixo do meu, e já deve ter me visto passar sob a sua janela. <mark>Talvez pense que ensaio uma</em> <em>reconciliação, embora esteja cansada de saber que sou adepto de caminhadas peripatéticas</mark>*, sobretudo nos dias em que sento para escrever e me</em> <em>sinto amarrado, com a vista saturada de letras. Desço à rua sempre que as letras endurecem no papel, comprimidas entre si como as pequenas pedras</em> <em>em preto e branco do calçamento que piso. Pouco a pouco meus olhos se deixam levar por um automóvel, uma saia, uma folha, uma lagartixa, umas</em> <em>crianças de escola, passarinhos. Mais adiante já não vejo mais que cores, arestas, vultos, halos, e ideias soltas me vêm à cabeça, esta boa, esta má, e</em> <em>toca a subir e descer a ladeira debaixo de sol ou chuva, pensando alto, discutindo comigo mesmo, com aqueles tiques e gestos falhos de que fala o</em> <em>poeta, aquelas caretas que fazem os porteiros abanar a cabeça: aê, o esquisitão voltou.</em></p>\n<p><em>(Adaptado de: BUARQUE, Chico.</em></p>\n<p><em><strong>Essa gente</strong>. São Paulo: Companhia das Letras, 2019, edição eletrônica)</em></p>\n<p>No contexto em que se encontra, o elemento sublinhado expressa ideia de</p>",
     "imagem": null,
-    "pergunta": "<em>Talvez pense que ensaio uma reconciliação, embora esteja cansada de saber que sou adepto de caminhadas peripatéticas</em>\nNo contexto em que se encontra, o elemento sublinhado expressa ideia de",
+    "pergunta": "<em>Talvez pense que ensaio uma reconciliação, <u>embora</u> esteja cansada de saber que sou adepto de caminhadas peripatéticas</em>\nNo contexto em que se encontra, o elemento sublinhado expressa ideia de",
     "alternativas": [
       "concessão.",
       "causa.",
@@ -682,9 +682,9 @@
     "cargo": "TJ TRT21",
     "orgao": "TRT 21",
     "texto_apoio_titulo": "Para responder a questão, leia a crônica “A questão” de Luis Fernando Veríssimo.",
-    "texto_apoio": "<p>Para responder a questão, leia a crônica “A questão” de Luis Fernando Veríssimo.</p>\n<p>Existem muitas histórias do seu Justinho.</p>\n<p>Uma vez o Alaor, que era um grande gozador, recebeu o seu Justinho no escritório, de manhã, com uma pergunta. — Seu Justinho, o senhor abotoa a camisa de cima para baixo ou de baixo para cima?</p>\n<div class=\"fcc-verse\">O seu Justinho pensou um pouco. depois respondeu:<br>\n— De baixo para cima, como todo mundo.<br>\n— Epa - protestou o Simas. — Como todo mundo não. Eu abotôo de cima para baixo.</div>\n<p>O Alaor propôs um plebiscito no escritório. — Quantos abotoam a camisa de cima para baixo e quantos abotoam de baixo para cima?</p>\n<p>Curiosamente, fora o seu Justinho e o Simas, ninguém se lembrava como abotoava a camisa. Alguns começaram a tirar a camisa ali mesmo, para ver como as recolocariam. já que nunca tinham reparado naquilo. Mas o seu Justinho os deteve. Tirar a camisa no escritório, onde já se vira? Todos ao trabalho antes que aparecesse o chefe.</p>\n<div class=\"fcc-verse\">Mas durante todo o dia o seu Justinho ficou preocupado. No fim do expediente, dirigiu-se ao Alaor.<br>\n— Não gostei disso que você começou.<br>\n— Que foi que eu comecei?<br>\n— Essa história das camisas.<br>\n— Por que, seu Justinho?<br>\n—É desagregadora. Vai criar confusão.</div>\n<p>E, realmente, no dia seguinte não foram poucos os que se declararam perplexos com a questão. Naquela manhã, pela primeira vez em suas vidas, tinham prestado atenção na forma como abotoavam a camisa. Era uma coisa banal, uma ação cotidiana e corriqueira, e, no entanto, todos tinham vivido até então sem saber se abotoavam a camisa de baixo para cima ou de cima para baixo. Era como se não se conhecessem. Um funcionário, inclusive, não compareceu ao trabalho e no outro dia deu a razão: simplesmente ficara paralisado no momento de abotoar a camisa, sem saber se começava por baixo ou por cima. À mulher até pensara que ele estivesse tendo alguma coisa. — Que foi? — Eu não consigo vestir a minha camisa. Eu não consigo vestir a minha camisa!</p>\n<p>Deixa que eu ajudo. — Não! Você não vê? Eu é que tenho que vestir. E não consigo decidir se começo a abotoar por baixo ou por cima!</p>\n<p>Como ele resolvera o problema, para vir trabalhar um dia depois? Botara uma camisa sem botão.</p>\n<p>Seu Justinho não estava gostando nada daquilo. E nos dias seguintes passou a gostar ainda menos. Notou que todos estavam abalados com a experiência. De repente, por causa dos botões de suas camisas, estavam todos às voltas com graves indagações existenciais, sobre a gratuidade de todas as coisas, sobre os limites do livre arbitro e o lugar do homem num universo aleatório. E aquilo estava prejudicando o serviço. — Viu o que você fez? — perguntou o seu Justinho, brabo, para o Alaor. — Mas era só uma brincadeira!</p>\n<p>A brincadeira deixara todos angustiados. Até que seu Justinho decidiu tomar uma atitude. Como bom burocrata, baixou uma norma, que mandou afixar no quadro de avisos.</p>\n<p>“Neste escritório, todos os homens abotoam a camisa de baixo para cima, revogadas as disposições em contrário.” Houve um certo alívio no ambiente, o que seu Justinho tomou como mais um triunfo da burocracia que afinal não passava de um método para pôr ordem no caos, segundo ele.</p>\n<p>Mal sabia o seu Justinho que, depois de ler a sua determinação no quadro, todos tinham começado a abotoar a camisa de cima para baixo. A questão não era mais a extensão da liberdade humana num universo indiferente, a questão era contrariar o seu Justinho. Quem ele pensava que era, mandando até nas suas camisas?</p>\n<span class=\"apoio-attrib\">(Adaptado de: VERISSIMO, Luis Fernando. Pai não entende nada. Porto Alegre: L&PM, 1996)</span>\n<p class=\"fcc-excerpt\">para cima ou de cima para baixo (16º parágrafo), a locução sublinhada pode ser substituída, sem prejuízo para o sentido do texto, por:</p>",
+    "texto_apoio": "<p>Para responder a questão, leia a crônica “A questão” de Luis Fernando Veríssimo.</p>\n<p>Existem muitas histórias do seu Justinho.</p>\n<p>Uma vez o Alaor, que era um grande gozador, recebeu o seu Justinho no escritório, de manhã, com uma pergunta. — Seu Justinho, o senhor abotoa a camisa de cima para baixo ou de baixo para cima?</p>\n<div class=\"fcc-verse\">O seu Justinho pensou um pouco. depois respondeu:<br>\n— De baixo para cima, como todo mundo.<br>\n— Epa - protestou o Simas. — Como todo mundo não. Eu abotôo de cima para baixo.</div>\n<p>O Alaor propôs um plebiscito no escritório. — Quantos abotoam a camisa de cima para baixo e quantos abotoam de baixo para cima?</p>\n<p>Curiosamente, fora o seu Justinho e o Simas, ninguém se lembrava como abotoava a camisa. Alguns começaram a tirar a camisa ali mesmo, para ver como as recolocariam. já que nunca tinham reparado naquilo. Mas o seu Justinho os deteve. Tirar a camisa no escritório, onde já se vira? Todos ao trabalho antes que aparecesse o chefe.</p>\n<div class=\"fcc-verse\">Mas durante todo o dia o seu Justinho ficou preocupado. No fim do expediente, dirigiu-se ao Alaor.<br>\n— Não gostei disso que você começou.<br>\n— Que foi que eu comecei?<br>\n— Essa história das camisas.<br>\n— Por que, seu Justinho?<br>\n—É desagregadora. Vai criar confusão.</div>\n<p>E, realmente, no dia seguinte não foram poucos os que se declararam perplexos com a questão. Naquela manhã, pela primeira vez em suas vidas, tinham prestado atenção na forma como abotoavam a camisa. Era uma coisa banal, uma ação cotidiana e corriqueira, e, no entanto, todos tinham vivido até então sem saber se abotoavam a camisa de baixo para cima ou de cima para baixo. Era como se não se conhecessem. Um funcionário, inclusive, não compareceu ao trabalho e no outro dia deu a razão: simplesmente ficara paralisado no momento de abotoar a camisa, sem saber se começava por baixo ou por cima. À mulher até pensara que ele estivesse tendo alguma coisa. — Que foi? — Eu não consigo vestir a minha camisa. Eu não consigo vestir a minha camisa!</p>\n<p>Deixa que eu ajudo. — Não! Você não vê? Eu é que tenho que vestir. E não consigo decidir se começo a abotoar por baixo ou por cima!</p>\n<p>Como ele resolvera o problema, para vir trabalhar um dia depois? Botara uma camisa sem botão.</p>\n<p>Seu Justinho não estava gostando nada daquilo. E nos dias seguintes passou a gostar ainda menos. Notou que todos estavam abalados com a experiência. De repente, por causa dos botões de suas camisas, estavam todos às voltas com graves indagações existenciais, sobre a gratuidade de todas as coisas, sobre os limites do livre arbitro e o lugar do homem num universo aleatório. E aquilo estava prejudicando o serviço. — Viu o que você fez? — perguntou o seu Justinho, brabo, para o Alaor. — Mas era só uma brincadeira!</p>\n<p>A brincadeira deixara todos angustiados. Até que seu Justinho decidiu tomar uma atitude. Como bom burocrata, baixou uma norma, que mandou afixar no quadro de avisos.</p>\n<p>“Neste escritório, todos os homens abotoam a camisa de baixo para cima, revogadas as disposições em contrário.” Houve um certo alívio no ambiente, o que seu Justinho tomou como mais um triunfo da burocracia que afinal não passava de um método para pôr ordem no caos, segundo ele.</p>\n<p>Mal sabia o seu Justinho que, depois de ler a sua determinação no quadro, todos tinham começado a abotoar a camisa de cima para baixo. A questão não era mais a extensão da liberdade humana num universo indiferente, a questão era contrariar o seu Justinho. Quem ele pensava que era, mandando até nas suas camisas?</p>\n<span class=\"apoio-attrib\">(Adaptado de: VERISSIMO, Luis Fernando. Pai não entende nada. Porto Alegre: L&PM, 1996)</span>",
     "imagem": null,
-    "pergunta": "Em Era uma coisa banal, uma ação cotidiana e corriqueira, e, no entanto, todos tinham vivido até então sem saber se abotoavam a camisa de baixo\npara cima ou de cima para baixo (16º parágrafo), a locução sublinhada pode ser substituída, sem prejuízo para o sentido do texto, por:",
+    "pergunta": "Em Era uma coisa banal, uma ação cotidiana e corriqueira, e, no <u>entanto,</u> todos tinham vivido até então sem saber se abotoavam a camisa de baixo\npara cima ou de cima para baixo (16º parágrafo), a locução sublinhada pode ser substituída, sem prejuízo para o sentido do texto, por:",
     "alternativas": [
       "em razão disso.",
       "na verdade.",
@@ -706,9 +706,9 @@
     "cargo": "TJ TRT21",
     "orgao": "TRT 21",
     "texto_apoio_titulo": "Para responder a questão, leia o texto abaixo.",
-    "texto_apoio": "<p>Para responder a questão, leia o texto abaixo.</p>\n<p>mostrar que isto é o caso”, observa Bertrand Russell. O ânimo persuasivo só recrudesce e lança mão das artes e artimanhas da retórica quando se trata de incutir opiniões que são duvidosas ou demonstravelmente falsas. - O mesmo vale para o ato de prometer alguma coisa. O simples fato de que uma promessa precisou ser feita indica a existência de dúvida quanto à sua concretização. Só prometemos acerca do que exige um esforço extra da vontade. E quanto mais solene ou enfática a promessa - “Te juro. agora é pra valer!\" - mais duvidosa ela é: “O proclamar excessivo”, como dizem os ingleses. “Só os deuses podem prometer, porque são imortais”, adverte o poeta.</p>\n<span class=\"apoio-attrib\">(GIANNETTI, Eduardo, “O paradoxo da promessa”, Trópicos Utópicos. 2016, edição eletrônica, Adaptado)</span>\n<p class=\"fcc-excerpt\">Sem prejuízo do sentido e da correção gramatical, o termo sublinhado pode ser substituído por:</p>",
+    "texto_apoio": "<p>Para responder a questão, leia o texto abaixo.</p>\n<p>mostrar que isto é o caso”, observa Bertrand Russell. O ânimo persuasivo só recrudesce e lança mão das artes e artimanhas da retórica quando se trata de incutir opiniões que são duvidosas ou demonstravelmente falsas. - O mesmo vale para o ato de prometer alguma coisa. O simples fato de que uma promessa precisou ser feita indica a existência de dúvida quanto à sua concretização. Só prometemos acerca do que exige um esforço extra da vontade. E quanto mais solene ou enfática a promessa - “Te juro. agora é pra valer!\" - mais duvidosa ela é: “O proclamar excessivo”, como dizem os ingleses. “Só os deuses podem prometer, porque são imortais”, adverte o poeta.</p>\n<span class=\"apoio-attrib\">(GIANNETTI, Eduardo, “O paradoxo da promessa”, Trópicos Utópicos. 2016, edição eletrônica, Adaptado)</span>",
     "imagem": null,
-    "pergunta": "Ninguém sustenta fervorosamente que 7 x 8 = 56, pois se pode mostrar que isto é o caso\nSem prejuízo do sentido e da correção gramatical, o termo sublinhado pode ser substituído por:",
+    "pergunta": "Ninguém sustenta fervorosamente que 7 x 8 = 56, <u>pois</u> se pode mostrar que isto é o caso\nSem prejuízo do sentido e da correção gramatical, o termo sublinhado pode ser substituído por:",
     "alternativas": [
       "conquanto",
       "quando",
@@ -756,7 +756,7 @@
     "texto_apoio_titulo": "Atenção: Considere o poema de Fernando Pessoa para responder à questão.",
     "texto_apoio": "<p>Atenção: Considere o poema de Fernando Pessoa para responder à questão.</p>\n<div class=\"fcc-verse\">Às vezes, em sonho triste<br>\nNos meus desejos existe<br>\nLonginquamente um país<br>\nOnde ser feliz consiste<br>\nApenas em ser feliz.</div>\n<p>Vive-se como se nasce Sem o querer nem saber.</p>\n<div class=\"fcc-verse\">Nessa ilusão de viver<br>\nO tempo morre e renasce<br>\nSem que o sintamos correr.</div>\n<p>O sentir e o desejar São banidos dessa terra.</p>\n<div class=\"fcc-verse\">O amor não é amor<br>\nNesse país por onde erra<br>\nMeu longínquo divagar.</div>\n<p>Nem se sonha nem se vive: É uma infância sem fim.</p>\n<div class=\"fcc-verse\">Parece que se revive<br>\nTão suave é viver assim<br>\nNesse impossível <em>jardim</em>.</div>\n<span class=\"apoio-attrib\"><em>(PESSOA, Fernando. Obra poética. Rio de Rio de Janeiro: Editora Nova Aguilar, 1997)</em></span>",
     "imagem": null,
-    "pergunta": "Verifica-se rima (ou seja, coincidência final de sons) entre palavras de mesma classe gramatical em",
+    "pergunta": "Verifica-se rima (ou seja, coincidência final de sons) entre palavras de <u>mesma</u> classe gramatical em",
     "alternativas": [
       "“<em>assim</em>”/“<em>jardim</em>”.",
       "“<em>triste</em>”/“<em>existe</em>”.",
@@ -782,11 +782,11 @@
     "imagem": null,
     "pergunta": "É invariável quanto a gênero e a número o termo sublinhado em:",
     "alternativas": [
-      "<em>Mas prometeram que meu papel ficaria pronto hoje sem falta</em>.",
-      "<em>Que negócio é esse?</em>",
-      "<em>Eu aliás não forço opinião de ninguém.</em>",
-      "<em>É muita responsabilidade.</em>",
-      "<em>Na hora da batalha, formamos uma frente única.</em>"
+      "<em>Mas prometeram que meu papel ficaria <u>pronto</u> hoje sem falta</em>.",
+      "Que negócio é <u>esse?</u>",
+      "Eu <u>aliás</u> não forço opinião de ninguém.",
+      "É <u>muita</u> responsabilidade.",
+      "Na hora da batalha, formamos uma <u>frente</u> única."
     ],
     "correta": 2,
     "linkTec": "https://www.tecconcursos.com.br/questoes/2348388"
@@ -828,7 +828,7 @@
     "texto_apoio_titulo": "Considere o poema do escritor paraibano Augusto dos Anjos.",
     "texto_apoio": "<div class=\"fcc-verse\"><em>Como um fantasma que se refugia</em><br>\n<em>Na solidão da natureza morta,</em><br>\n<em>Por trás dos ermos túmulos, um dia,</em><br>\n<em>Eu fui refugiar-me à tua porta!</em></div>\n<p><em>Fazia frio e o frio que fazia</em> <em>Não era esse que a carne nos conforta...</p>\n<p>Cortava assim como em carniçaria1</em> <em>O aço das facas incisivas corta!</em></p>\n<p><em>Mas tu não vieste ver minha Desgraça!</em></p>\n<div class=\"fcc-verse\"><em>E eu saí, como quem tudo repele,<br>\n– Velho caixão a carregar destroços –</em><br>\n<em>Levando apenas na tumbal carcaça</em><br>\n<em>O pergaminho singular da pele</em><br>\n<em>E o chocalho fatídico dos ossos!</em></div>\n<span class=\"apoio-attrib\">(ANJOS, Augusto dos. <strong>Toda poesia</strong>. Rio de Janeiro: José Olympio, 2011)</span>\n<p class=\"fcc-excerpt\">1 carniçaria: açougue.</p>",
     "imagem": null,
-    "pergunta": "Verifica-se rima (ou seja, coincidência final de sons) entre palavras de mesma classe gramatical em:",
+    "pergunta": "Verifica-se rima (ou seja, coincidência final de sons) entre palavras de <u>mesma</u> classe gramatical em:",
     "alternativas": [
       "<em>repele/pele</em> (3a/4a estrofes).",
       "<em>refugia/dia</em> (1a estrofe).",
@@ -854,10 +854,10 @@
     "imagem": null,
     "pergunta": "É invariável quanto a gênero é a número o termo sublinhado em:",
     "alternativas": [
-      "<em>amorosameem plena sala.ala</em>.",
-      "<em>um ato de heroísmo da parte deles</em>.",
-      "<em>como aliás todos os bichos</em>.",
-      "<em>meu ficou entusiasmado.ado</em>.",
+      "<em>amorosameem <u>plena</u> sala.ala</em>.",
+      "<em>um <u>ato</u> de heroísmo da parte deles</em>.",
+      "<em>como <u>aliás</u> todos os bichos</em>.",
+      "<em><u>meu</u> ficou entusiasmado.ado</em>.",
       "<em>carta patéta meu abnegadogado editor</em>."
     ],
     "correta": 2,
@@ -874,15 +874,15 @@
     "cargo": "TJ TRT21",
     "orgao": "TRT 21",
     "texto_apoio_titulo": "Para responder a questão, leia a crônica “A questão” de Luis Fernando Veríssimo.",
-    "texto_apoio": "<p>Para responder a questão, leia a crônica “A questão” de Luis Fernando Veríssimo.</p>\n<p>Existem muitas histórias do seu Justinho.</p>\n<p>Uma vez o Alaor, que era um grande gozador, recebeu o seu Justinho no escritório, de manhã, com uma pergunta. — Seu Justinho, o senhor abotoa a camisa de cima para baixo ou de baixo para cima?</p>\n<div class=\"fcc-verse\">O seu Justinho pensou um pouco. depois respondeu:<br>\n— De baixo para cima, como todo mundo.<br>\n— Epa - protestou o Simas. — Como todo mundo não. Eu abotôo de cima para baixo.</div>\n<p>O Alaor propôs um plebiscito no escritório. — Quantos abotoam a camisa de cima para baixo e quantos abotoam de baixo para cima?</p>\n<p>Curiosamente, fora o seu Justinho e o Simas, ninguém se lembrava como abotoava a camisa. Alguns começaram a tirar a camisa ali mesmo, para ver como as recolocariam. já que nunca tinham reparado naquilo. Mas o seu Justinho os deteve. Tirar a camisa no escritório, onde já se vira? <mark>Todos ao trabalho antes que aparecesse o chefe.</mark></p>\n<div class=\"fcc-verse\">Mas durante todo o dia o seu Justinho ficou preocupado. No fim do expediente, dirigiu-se ao Alaor.<br>\n— Não gostei disso que você começou.<br>\n— Que foi que eu comecei?<br>\n— Essa história das camisas.<br>\n— Por que, seu Justinho?<br>\n—É desagregadora. Vai criar confusão.</div>\n<p>E, realmente, <mark>no dia seguinte não foram poucos os que se declararam perplexos com a questão.</mark> Naquela manhã, pela primeira vez em suas vidas, tinham prestado atenção na forma como abotoavam a camisa. Era uma coisa banal, uma ação cotidiana e corriqueira, e, no entanto, <mark>todos tinham vivido até então sem saber se abotoavam a camisa de baixo para cima ou de cima para baixo.</mark> Era como se não se conhecessem. Um funcionário, inclusive, não compareceu ao trabalho e no outro dia deu a razão: simplesmente ficara paralisado no momento de abotoar a camisa, sem saber se começava por baixo ou por cima. À mulher até pensara que ele estivesse tendo alguma coisa. — Que foi? — Eu não consigo vestir a minha camisa. Eu não consigo vestir a minha camisa!</p>\n<p>Deixa que eu ajudo. — Não! Você não vê? <mark>Eu é que tenho que vestir.</mark> E não consigo decidir se começo a abotoar por baixo ou por cima!</p>\n<p>Como ele resolvera o problema, para vir trabalhar um dia depois? Botara uma camisa sem botão.</p>\n<p>Seu Justinho não estava gostando nada daquilo. E nos dias seguintes passou a gostar ainda menos. Notou que todos estavam abalados com a experiência. De repente, por causa dos botões de suas camisas, estavam todos às voltas com graves indagações existenciais, sobre a gratuidade de todas as coisas, sobre os limites do livre arbitro e o lugar do homem num universo aleatório. E aquilo estava prejudicando o serviço. — Viu o que você fez? — perguntou o seu Justinho, brabo, para o Alaor. — Mas era só uma brincadeira!</p>\n<p>A brincadeira deixara todos angustiados. Até que seu Justinho decidiu tomar uma atitude. Como bom burocrata, baixou uma norma, que mandou afixar no quadro de avisos.</p>\n<p>“Neste escritório, todos os homens abotoam a camisa de baixo para cima, revogadas as disposições em contrário.” Houve um certo alívio no ambiente, o que seu Justinho tomou como mais um triunfo da burocracia que afinal não passava de um método para pôr ordem no caos, segundo ele.</p>\n<p>Mal sabia o seu Justinho que, depois de ler a sua determinação no quadro, todos tinham começado a abotoar a camisa de cima para baixo. A questão não era mais a extensão da liberdade humana num universo indiferente, a questão era contrariar o seu Justinho. Quem ele pensava que era, mandando até nas suas camisas?</p>\n<span class=\"apoio-attrib\">(Adaptado de: VERISSIMO, Luis Fernando. Pai não entende nada. Porto Alegre: L&PM, 1996)</span>\n<p class=\"fcc-excerpt\">função sintática. Constitui exemplo de expressão expletiva o segmento sublinhado em:</p>",
+    "texto_apoio": "<p>Para responder a questão, leia a crônica “A questão” de Luis Fernando Veríssimo.</p>\n<p>Existem muitas histórias do seu Justinho.</p>\n<p>Uma vez o Alaor, que era um grande gozador, recebeu o seu Justinho no escritório, de manhã, com uma pergunta. — Seu Justinho, o senhor abotoa a camisa de cima para baixo ou de baixo para cima?</p>\n<div class=\"fcc-verse\">O seu Justinho pensou um pouco. depois respondeu:<br>\n— De baixo para cima, como todo mundo.<br>\n— Epa - protestou o Simas. — Como todo mundo não. Eu abotôo de cima para baixo.</div>\n<p>O Alaor propôs um plebiscito no escritório. — Quantos abotoam a camisa de cima para baixo e quantos abotoam de baixo para cima?</p>\n<p>Curiosamente, fora o seu Justinho e o Simas, ninguém se lembrava como abotoava a camisa. Alguns começaram a tirar a camisa ali mesmo, para ver como as recolocariam. já que nunca tinham reparado naquilo. Mas o seu Justinho os deteve. Tirar a camisa no escritório, onde já se vira? <mark>Todos ao trabalho antes que aparecesse o chefe.</mark></p>\n<div class=\"fcc-verse\">Mas durante todo o dia o seu Justinho ficou preocupado. No fim do expediente, dirigiu-se ao Alaor.<br>\n— Não gostei disso que você começou.<br>\n— Que foi que eu comecei?<br>\n— Essa história das camisas.<br>\n— Por que, seu Justinho?<br>\n—É desagregadora. Vai criar confusão.</div>\n<p>E, realmente, <mark>no dia seguinte não foram poucos os que se declararam perplexos com a questão.</mark> Naquela manhã, pela primeira vez em suas vidas, tinham prestado atenção na forma como abotoavam a camisa. Era uma coisa banal, uma ação cotidiana e corriqueira, e, no entanto, <mark>todos tinham vivido até então sem saber se abotoavam a camisa de baixo para cima ou de cima para baixo.</mark> Era como se não se conhecessem. Um funcionário, inclusive, não compareceu ao trabalho e no outro dia deu a razão: simplesmente ficara paralisado no momento de abotoar a camisa, sem saber se começava por baixo ou por cima. À mulher até pensara que ele estivesse tendo alguma coisa. — Que foi? — Eu não consigo vestir a minha camisa. Eu não consigo vestir a minha camisa!</p>\n<p>Deixa que eu ajudo. — Não! Você não vê? <mark>Eu é que tenho que vestir.</mark> E não consigo decidir se começo a abotoar por baixo ou por cima!</p>\n<p>Como ele resolvera o problema, para vir trabalhar um dia depois? Botara uma camisa sem botão.</p>\n<p>Seu Justinho não estava gostando nada daquilo. E nos dias seguintes passou a gostar ainda menos. Notou que todos estavam abalados com a experiência. De repente, por causa dos botões de suas camisas, estavam todos às voltas com graves indagações existenciais, sobre a gratuidade de todas as coisas, sobre os limites do livre arbitro e o lugar do homem num universo aleatório. E aquilo estava prejudicando o serviço. — Viu o que você fez? — perguntou o seu Justinho, brabo, para o Alaor. — Mas era só uma brincadeira!</p>\n<p>A brincadeira deixara todos angustiados. Até que seu Justinho decidiu tomar uma atitude. Como bom burocrata, baixou uma norma, que mandou afixar no quadro de avisos.</p>\n<p>“Neste escritório, todos os homens abotoam a camisa de baixo para cima, revogadas as disposições em contrário.” Houve um certo alívio no ambiente, o que seu Justinho tomou como mais um triunfo da burocracia que afinal não passava de um método para pôr ordem no caos, segundo ele.</p>\n<p>Mal sabia o seu Justinho que, depois de ler a sua determinação no quadro, todos tinham começado a abotoar a camisa de cima para baixo. A questão não era mais a extensão da liberdade humana num universo indiferente, a questão era contrariar o seu Justinho. Quem ele pensava que era, mandando até nas suas camisas?</p>\n<span class=\"apoio-attrib\">(Adaptado de: VERISSIMO, Luis Fernando. Pai não entende nada. Porto Alegre: L&PM, 1996)</span>",
     "imagem": null,
-    "pergunta": "Segundo o gramático Evanildo Bechara (Moderma gramática portuguesa, 2009), expressão expletiva ou de realce é uma expressão que não exerce\nfunção sintática. Constitui exemplo de expressão expletiva o segmento sublinhado em:",
+    "pergunta": "Segundo o gramático Evanildo Bechara (Moderma gramática portuguesa, 2009), expressão expletiva ou de realce é uma expressão <u>que</u> não exerce\nfunção sintática. Constitui exemplo de expressão expletiva o segmento sublinhado em:",
     "alternativas": [
       "Eu é que tenho que vestir.",
       "— Mas era só uma brincadeira!",
-      "Todos ao trabalho antes que aparecesse o chefe.",
+      "Todos ao trabalho <u>antes</u> que aparecesse o chefe.",
       "no dia seguinte não foram poucos os que se declararam perplexos com a questão.",
-      "todos tinham vivido até então sem saber se abotoavam a camisa de baixo para cima ou de cima para baixo."
+      "todos tinham vivido até <u>então</u> sem saber se abotoavam a camisa de baixo para cima ou de cima para baixo."
     ],
     "correta": 0,
     "linkTec": "https://www.tecconcursos.com.br/questoes/2849666"
@@ -902,7 +902,7 @@
     "imagem": null,
     "pergunta": "Evitam-se as viciosas repetições do período acima substituindo-se os elementos sublinhados, na ordem dada, por:",
     "alternativas": [
-      "atribui-lhe − identificá-la − a temem",
+      "atribui-lhe − identificá-la − a <u>temem</u>",
       "lhe atribui − identificar a ela − lhe temem",
       "atribui-lhe − a identificar − temem-lhe",
       "atribui nela − lhe identificar − temem-na",
@@ -948,7 +948,7 @@
     "texto_apoio_titulo": "Leia o texto “Liberdade e necessidade ao revés”, de Eduardo Giannetti.",
     "texto_apoio": "<p>Leia o texto “Liberdade e necessidade ao revés”, de Eduardo Giannetti.</p>\n<p><em>“Por meios honestos se você conseguir, mas por quaisquer meios faça dinheiro”, preconiza – prenhe de sarcasmo – o verso de Horácio. Desespero,</em> <em>precisão ou cobiça, dentro ou fora da lei: o dinheiro nos incita a fazer o que de outro modo não faríamos. Suponha, entretanto, um súbito e imprevisto</em> <em>bafejo da fortuna – um prêmio lotérico, uma indenização milionária, uma inesperada herança. Quem continuaria a fazer o que faz para ganhar a vida</em> <em>caso não fosse mais necessário fazê-lo? Estamos acostumados a considerar o trabalho como algo a que nos sujeitamos, mais ou menos a</em> <em>contragosto, para obter uma renda – como um sacrifício ou necessidade imposta de fora; ao passo que o consumo é tomado como a esfera por</em> <em>excelência da livre escolha: o território sagrado para o exercício da nossa liberdade individual. A possibilidade de satisfazer, ainda que parcialmente,</em> <em>nossos desejos e fantasias de consumo se afigura como a merecida recompensa – ou suborno, diriam outros – capaz de atenuar a frustração e aliviar</em> <em>o aborrecimento de ocupações que de outro modo não teríamos e não nos dizem respeito.</em></p>\n<p><em>Daí que, na feliz expressão do jovem Marx, “o trabalhador só se sente ele mesmo quando não está trabalhando; quando ele está trabalhando, ele não se</em> <em>sente ele mesmo”. – Mas, se o mundo do trabalho está vedado às minhas escolhas e modo de ser; onde poderei expressar a minha individualidade?</em></p>\n<p><em>Impedido de ser quem sou no trabalho – escritório, chão de fábrica,</em> call center<em>, guichê, balcão –, extravaso a minha identidade no consumo –</em> shopping<em>, butique, salão, restaurante, </em>showroom<em>. Fonte de elã vital, o ritual da compra energiza e a posse ilumina a alma do consumidor. A compra de</em> <em>bens externos molda a identidade e acena com a promessa de distinção: ser notado, ser ouvido, ser tratado com simpatia, respeito e admiração pelos</em> <em>demais. Não o que faço, mas o que possuo – e, sobretudo, o que sonho algum dia ter – diz ao mundo quem sou. Servo impessoal no ganho, livre e</em> <em>soberano no gasto.</em></p>\n<span class=\"apoio-attrib\">(Adaptado de: GIANNETTI, Eduardo. <strong>Trópicos utópicos</strong>. São Paulo: Companhia das Letras, 2016)</span>",
     "imagem": null,
-    "pergunta": "O termo que qualifica o substantivo na expressão <em>necessidade imposta</em> (1o parágrafo) tem sentido oposto àquele que qualifica o substantivo em:",
+    "pergunta": "O termo <u>que</u> qualifica o substantivo na expressão <em>necessidade imposta</em> (1o parágrafo) tem sentido oposto àquele que qualifica o substantivo em:",
     "alternativas": [
       "<em>Servo impessoal</em> (2o parágrafo).",
       "<em>inesperada herança</em> (1o parágrafo).",
@@ -1022,11 +1022,11 @@
     "imagem": null,
     "pergunta": "Está empregado em sentido figurado o termo sublinhado em:",
     "alternativas": [
-      "<em>perceo pasmo dao da cidade</em> (6º parágrafo)",
-      "<em>não via matéde escândalo (9º</em> (9º parágrafo)",
-      "<em>iria comeo degelo (6º</em> (6º parágrafo)",
-      "<em>fosse inaugurado um discurso (8º</em> (8º parágrafo)",
-      "<em>se discua personalidade doe do vigário</em> (1º parágrafo)"
+      "<em>perceo <u>pasmo</u> dao da cidade</em> (6º parágrafo)",
+      "<em>não via matéde <u>escândalo</u> (9º</em> (9º parágrafo)",
+      "<em>iria comeo <u>degelo</u> (6º</em> (6º parágrafo)",
+      "<em>fosse inaugurado um <u>discurso</u> (8º</em> (8º parágrafo)",
+      "<em>se discua <u>personalidade</u> doe do vigário</em> (1º parágrafo)"
     ],
     "correta": 2,
     "linkTec": "https://www.tecconcursos.com.br/questoes/2822207"
@@ -1046,11 +1046,11 @@
     "imagem": null,
     "pergunta": "A palavra empregada em sentido conotativo, no contexto em que se encontra, está sublinhada em:",
     "alternativas": [
-      "as famosas quedas d'água são uma atração que eu ainda não havia visitado.",
-      "No scroll infinito de imagens hoje nas nossas telas, que impacto essas atrações ainda são capazes de nos provocar?",
-      "Quando cheguei o mais próximo que podia, tive um baque.",
-      "Quando fechei as pálpebras, todos esses sentidos, inclusive o da visão, ficaram mais fortes.",
-      "E eu tinha a manhã de terça livre para me encantar com a força daquelas águas."
+      "as famosas <u>quedas</u> d'água são uma atração que eu ainda não havia visitado.",
+      "No scroll infinito de imagens hoje nas nossas <u>telas,</u> que impacto essas atrações ainda são capazes de nos provocar?",
+      "Quando cheguei o mais próximo que podia, tive um <u>baque.</u>",
+      "Quando fechei as pálpebras, todos esses sentidos, inclusive o da <u>visão,</u> ficaram mais fortes.",
+      "E eu tinha a manhã de terça livre para me encantar com a <u>força</u> daquelas águas."
     ],
     "correta": 2,
     "linkTec": "https://www.tecconcursos.com.br/questoes/2848787"
@@ -1190,11 +1190,11 @@
     "imagem": null,
     "pergunta": "Constituem uma <strong>causa </strong>e sua <strong>consequência</strong>, respectivamente, as seguintes afirmações expressas no primeiro parágrafo:",
     "alternativas": [
-      "<em>cruzam as mais variadas fronteiras / em busca de emprego, segurança e um futuro melhor.</em>",
-      "<em>A União Europeia foi construída / sobre a promessa de transcender as diferenças culturais.</em>",
-      "<em>construir um sistema próspero / Em nenhum lugar o problema é mais agudo.</em>",
-      "<em>incapacidade de incluir as diferenças culturais / pode desmoronar.</em>",
-      "<em>À medida que cada vez mais pessoas / cruzam as mais variadas fronteiras.</em>"
+      "cruzam as mais variadas fronteiras / em busca de emprego, segurança e um futuro melhor.",
+      "A União Europeia foi construída / sobre a promessa de transcender as diferenças culturais.",
+      "construir um sistema próspero / Em nenhum lugar o problema é mais agudo.",
+      "incapacidade de incluir as diferenças culturais / pode desmoronar.",
+      "À medida que cada vez mais pessoas / cruzam as mais variadas fronteiras."
     ],
     "correta": 3,
     "linkTec": "https://www.tecconcursos.com.br/questoes/2338898"

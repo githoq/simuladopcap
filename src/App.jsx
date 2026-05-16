@@ -547,18 +547,16 @@ function QuestionCard({q, numero, interactive=false, userAnswer=null, onAnswer=n
   const cleanAlt=(a,i)=>{
     if(!a) return '';
     let s=a.trim();
-    // Strip plain: "a) text"
+    // Strip plain letter prefix: "a) text" → "text"
     s=s.replace(/^[a-eA-E]\)\s*/,'');
-    // Strip inside HTML: "<em>a) text" -> "<em>text"
+    // Strip inside HTML: "<em>a) text" → "<em>text"
     s=s.replace(/^(<(?:em|strong|i|b|u)>)\s*[a-eA-E]\)\s*/i,'$1');
-    // Strip standalone: "<em>a) </em>text" -> "text"
+    // Strip standalone prefix: "<em>a) </em>text" → "text"
     s=s.replace(/^<(?:em|strong|i|b|u)>\s*[a-eA-E]\)\s*<\/(?:em|strong|i|b|u)>\s*/i,'');
-    s=s.trim();
-    // Full <em> wrapper = FCC "expressão sublinhada" → convert to <u>
-    if(/^<em>[\s\S]+<\/em>$/.test(s)){
-      s=s.replace(/^<em>([\s\S]+)<\/em>$/,'<u>$1</u>');
-    }
-    return s;
+    // NOTE: NO full-em→full-u conversion.
+    // Underlines are applied at DATA level via pdfplumber (<u>word</u> in JSON).
+    // <em> in alts renders as italic (faithful to PDF italic formatting).
+    return s.trim();
   };
 
   const qNum=numero||q.numero_original;
@@ -612,10 +610,16 @@ function QuestionCard({q, numero, interactive=false, userAnswer=null, onAnswer=n
         {/* ── Texto de Apoio ── */}
         {q.texto_apoio&&(
           <div className="fcc-apoio-wrap">
-            {q.texto_apoio_titulo&&(
-              <div className="fcc-html fcc-apoio-titulo"
-                dangerouslySetInnerHTML={{__html:renderHTML(q.texto_apoio_titulo)}}/>
-            )}
+            {q.texto_apoio_titulo&&(()=>{
+              // Não exibir se o titulo já aparece como apoio-title no corpo do apoio
+              const t=q.texto_apoio_titulo.replace(/<[^>]+>/g,'').trim();
+              const bodyHasSameTitle=q.texto_apoio&&
+                q.texto_apoio.includes('apoio-title')&&
+                q.texto_apoio.replace(/<[^>]+>/g,'').includes(t.substring(0,Math.min(t.length,25)));
+              if(bodyHasSameTitle)return null;
+              return<div className="fcc-html fcc-apoio-titulo"
+                dangerouslySetInnerHTML={{__html:renderHTML(q.texto_apoio_titulo)}}/>;
+            })()}
             <div className="fcc-html fcc-apoio-body"
               dangerouslySetInnerHTML={{__html:renderHTML(q.texto_apoio)}}/>
           </div>

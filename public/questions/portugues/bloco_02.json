@@ -17,7 +17,7 @@
       "Mas este ano<strong> teve</strong> de desistir.",
       "havia</strong> argumento</em>s.",
       "<em>c) Foi então que <strong>encontrou </strong>a garrafa de champanh</em>e.",
-      "<em>d) E aí <strong>intervinha </strong>outra vozinha</em>",
+      "d) E aí <strong>intervinha </strong>outra <u>vozinha</u>",
       "<em>e) <strong> Foi </strong>a gota d’água</em>."
     ],
     "correta": 3,
@@ -110,11 +110,11 @@
     "imagem": null,
     "pergunta": "Verifica-se a ocorrência de voz passiva no seguinte trecho:",
     "alternativas": [
-      "<em>a) o dinheiro da inscrição (...) foi usado para pagar a prestação de uma nova</em>",
-      "<em>b) Amélia, 80, interrompe sonho de ter vaga na universidade</em>",
-      "<em>c) Mas este ano teve de desistir</em>",
-      "<em>d) O curso era algo com que sonhava havia muito tempo</em>",
-      "<em>e) A verdade é que ela precisava de uma geladeira nova</em>"
+      "a) o dinheiro da inscrição (...) foi usado para pagar a prestação de uma nova",
+      "b) Amélia, 80, interrompe sonho de ter vaga na universidade",
+      "c) Mas este ano teve de desistir",
+      "d) O curso era algo com que sonhava havia muito tempo",
+      "e) A verdade é que ela precisava de uma geladeira nova"
     ],
     "correta": 0,
     "linkTec": "https://www.tecconcursos.com.br/questoes/1818130"
@@ -230,11 +230,11 @@
     "imagem": null,
     "pergunta": "Retoma um termo mencionado anteriormente no texto a palavra sublinhada em:",
     "alternativas": [
-      "<em>Durante duas noites não dormiu, fazendo <strong>a</strong> si própria cálculos e ponderações</em>",
-      "<em>A antiga estava estragada, e tão estragada que o homem do conserto a aconselhara <strong>a</strong> esquecer “aquele traste”</em>",
+      "Durante duas noites não dormiu, fazendo <strong>a</strong> si própria cálculos e ponderações",
+      "A antiga estava estragada, e tão estragada que o homem do conserto a aconselhara <strong>a</strong> esquecer “aquele traste”",
       "<em> Dar de presente para o sobr que a ajudarong>a</strong> ajudara com o dinheiro da inscrição</em>?",
-      "<em>Foi até lá, abriu a geladeira e, claro, era <strong>a</strong> carne que simplesmente tinha apodrecido</em>",
-      "<em>Vestiu-se, foi até <strong>a</strong> loja, e comprou a geladeira nova.</em>"
+      "Foi até lá, abriu a geladeira e, claro, era <strong>a</strong> carne que simplesmente tinha apodrecido",
+      "Vestiu-se, foi até <strong>a</strong> loja, e comprou a geladeira nova."
     ],
     "correta": 2,
     "linkTec": "https://www.tecconcursos.com.br/questoes/1818145"
@@ -255,10 +255,10 @@
     "pergunta": "Verifica-se a supressão de um substantivo que pode ser inferido pelo contexto no seguinte trecho:",
     "alternativas": [
       "<em>a) Como é que você vai se alimentar se a comida continuar estragando desse jeito</em>?",
-      "<em>b) A favor de ambas as coisas, o curso e a geladeira, havia argumentos.</em>",
-      "<em>c) Não foi uma decisão fácil, como se pode imaginar</em>",
-      "<em>o homem do conserto a aconselhara a esquecer “aquele traste”</em>",
-      "<em> o dinheiro da inscrição − ajuda de um sobrinho − foi usado para pagar a prestação de uma nova.</em>"
+      "b) A favor de ambas as coisas, o curso e a geladeira, havia argumentos.",
+      "c) Não foi uma decisão fácil, como se pode imaginar",
+      "o homem do conserto a aconselhara a esquecer “aquele traste”",
+      " o dinheiro da inscrição − ajuda de um sobrinho − foi usado para pagar a prestação de uma nova."
     ],
     "correta": 4,
     "linkTec": "https://www.tecconcursos.com.br/questoes/1818157"
@@ -423,7 +423,7 @@
     "pergunta": "Sem prejuízo para a correção e o sentido, o trecho sublinhado pode ser substituído pelo que se encontra entre parênteses em:",
     "alternativas": [
       "A máxima, irretocável, à exceção de (àm> (à despeito de) <em>pequenos detalhes, funcionou tal qual intuíra Moore.",
-      "<em>Máquinas similares às hoje existentes </em>(as quais se fabrica atualmente) <em>serão construídas a custos mais baixos.</em>",
+      "Máquinas similares às hoje existentes </em>(as quais se fabrica atualmente) <em>serão construídas a custos mais baixos.",
       "Pela (De> (De acordo com a)<em> “Lei de Moore”, a cada dois anos, em média, o desempenho dos chips de computador dobra",
       "Assim (Portanto),nto)<em>, em um artigo de 1965, o empreendedor Gordon Moore, hoje com 90 anos de idade, apresentou sua célebre ideia.",
       "Mas só por enquanto, pois (conquanto)anto)<em> se trata do início de um caminho que levará a transformações radicais em diversas áreas."
@@ -446,11 +446,11 @@
     "imagem": null,
     "pergunta": "No contexto, o termo “nomenclatura” refere-se a",
     "alternativas": [
-      "<em>supremacia quântica.</em>",
-      "<em>seres humanos.</em>",
-      "<em>feito.</em>",
-      "<em>computadores.</em>",
-      "<em>momento da civilização.</em>"
+      "supremacia quântica.",
+      "seres humanos.",
+      "feito.",
+      "computadores.",
+      "momento da civilização."
     ],
     "correta": 0,
     "linkTec": "https://www.tecconcursos.com.br/questoes/1240776"
@@ -566,11 +566,11 @@
     "imagem": null,
     "pergunta": "A figura de sintaxe que omite um termo, permitida por um determinado contexto e situação, está presente em:",
     "alternativas": [
-      "<em> ... político obscuro, que subiu logo à poltrona ducal, com espanto geral da república.</em>",
-      "<em> A devassa mostrou que o oficial das inscrições intencionalmente viciara a ortografia de seus nomes.</em>",
-      "<em> ... a do primeiro por faltar a primeira letra do nome, a do segundo por lhe faltar a última.</em>",
-      "<em> A assembleia, com exemplar paciência, restaurou o tecido espesso do regime anterior ...</em>",
-      "<em> A mesma porta aberta à lealdade serviu à astúcia de um certo Nabiga ...</em>"
+      " ... político obscuro, que subiu logo à poltrona ducal, com espanto geral da república.",
+      " A devassa mostrou que o oficial das inscrições intencionalmente viciara a ortografia de seus nomes.",
+      " ... a do primeiro por faltar a primeira letra do nome, a do segundo por lhe faltar a última.",
+      " A assembleia, com exemplar paciência, restaurou o tecido espesso do regime anterior ...",
+      " A mesma porta aberta à lealdade serviu à astúcia de um certo Nabiga ..."
     ],
     "correta": 2,
     "linkTec": "https://www.tecconcursos.com.br/questoes/1241281"
@@ -782,11 +782,11 @@
     "imagem": null,
     "pergunta": "Uma revolução que vem ocorrendo no campo da medicina é expressa pelo que se encontra no seguinte segmento:",
     "alternativas": [
-      "<em> cálculos de computadores</em>",
-      "<em>b) livre capacidade de escolha</em>",
-      "<em>c) domínio do nosso inacessível reino interior</em>",
-      "<em>d) sensação de estarmos doentes ou saudáveis</em>",
-      "<em>e) prognósticos informados por nosso médico</em>"
+      " cálculos de computadores",
+      "b) livre capacidade de escolha",
+      "c) domínio do nosso inacessível reino interior",
+      "d) sensação de estarmos doentes ou saudáveis",
+      "e) prognósticos informados por nosso médico"
     ],
     "correta": 0,
     "linkTec": "https://www.tecconcursos.com.br/questoes/1817747"
@@ -1090,15 +1090,15 @@
     "cargo": "Vest (UNILUS)",
     "orgao": "UNILUS",
     "texto_apoio_titulo": "Considere o trecho do poema “Da Minha Aldeia” de Alberto Caeiro, heterônimo de Fernando Pessoa.",
-    "texto_apoio": "<p><em>Da minha aldeia vejo quanto da terra se pode ver no Universo...</em></p>\n<div class=\"fcc-verse\"><em>Por isso a minha aldeia é tão grande como outra terra qualquer</em><br>\n<em>Porque eu sou do tamanho do que vejo</em><br>\n<em>E não do tamanho da minha altura...</em></div>\n<p><em>Nas cidades a vida é mais pequena</em> <em>Que aqui na minha casa no cimo deste outeiro.</em></p>\n<div class=\"fcc-verse\"><em>Na cidade as grandes casas fecham a vista à chave,</em><br>\n<em>Escondem o horizonte, empurram o nosso olhar para longe de todo o céu,</em><br>\n<em>Tornam-nos pequenos porque nos tiram o que os nossos olhos nos podem dar,</em><br>\n<em>E tornam-nos pobres porque a nossa única riqueza é ver.</em></div>\n<span class=\"apoio-attrib\">(PESSOA, Fernando. “O Guardador de Rebanhos”, em Poemas de Alberto Caeiro. Lisboa: Ática, 1946)</span>\n<p class=\"fcc-excerpt\">desse recurso expressivo em:</p>",
+    "texto_apoio": "<p><em>Da minha aldeia vejo quanto da terra se pode ver no Universo...</em></p>\n<div class=\"fcc-verse\"><em>Por isso a minha aldeia é tão grande como outra terra qualquer</em><br>\n<em>Porque eu sou do tamanho do que vejo</em><br>\n<em>E não do tamanho da minha altura...</em></div>\n<p><em>Nas cidades a vida é mais pequena</em> <em>Que aqui na minha casa no cimo deste outeiro.</em></p>\n<div class=\"fcc-verse\"><em>Na cidade as grandes casas fecham a vista à chave,</em><br>\n<em>Escondem o horizonte, empurram o nosso olhar para longe de todo o céu,</em><br>\n<em>Tornam-nos pequenos porque nos tiram o que os nossos olhos nos podem dar,</em><br>\n<em>E tornam-nos pobres porque a nossa única riqueza é ver.</em></div>\n<span class=\"apoio-attrib\">(PESSOA, Fernando. “O Guardador de Rebanhos”, em Poemas de Alberto Caeiro. Lisboa: Ática, 1946)</span>",
     "imagem": null,
     "pergunta": "A personificação consiste na atribuição de sentimentos, psicologia e comportamento humanos a seres inanimados e a animais. O eu lírico faz uso\ndesse recurso expressivo em:",
     "alternativas": [
-      "<em>Porque eu sou do tamanho do que vejo</em>",
-      "<em>a nossa única riqueza é ver</em>",
-      "<em>as grandes casas fecham a vista à chave</em>",
-      "<em>Por isso a minha aldeia é tão grande</em>",
-      "<em>Nas cidades a vida é mais pequena</em>"
+      "Porque eu sou do tamanho do que vejo",
+      "a nossa única riqueza é ver",
+      "as grandes casas fecham a vista à chave",
+      "Por isso a minha aldeia é tão grande",
+      "Nas cidades a vida é mais pequena"
     ],
     "correta": 2,
     "linkTec": "https://www.tecconcursos.com.br/questoes/1885207"

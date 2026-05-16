@@ -106,7 +106,7 @@
     "cargo": "Tec S (J Guararapes)",
     "orgao": "Pref J Guararapes",
     "texto_apoio_titulo": "Atenção: para responder a questão a seguir, leia o texto abaixo.",
-    "texto_apoio": "<p>: para responder a questão a seguir, leia o texto abaixo.</p>\n<p>Temos a tendência de memorizar os fatos de nossa vida, positivos ou negativos, que apresentam alta carga emocional. Isso envolve estruturas cerebrais, como a amígdala, e redes neurais, como o sistema dopaminérgico, mais conhecido como sistema de recompensa.</p>\n<p>Considerando nossas memórias autobiográficas, a notícia ruim é que não temos autonomia para decidir o que vai ser memorizado. Fatores como transtornos depressivos, transtornos de ansiedade mesmo o estresse afetam o processamento de memória em todas as suas fases, sejam elas a de aquisição, a de consolidação & a de recuperação da lembrança.</p>\n<p>O que vivenciamos no dia a dia pode - ou não — ser memorizado. E isso é bom, pois informações ou vivências irrelevantes são mantidas apenas por curto período de tempo no nosso cérebro. É o que se denomina de memória de curta duração.</p>\n<p>Outras informações ou vivências perduram por dias, meses e até por toda a vida. São as chamadas memórias de longa dir ração. Logo, temos sistemas de curta e de longa duração. E essas informações consolidadas no sistema de longa duração têm conteúdos específicos.</p>\n<p>procedimento (andar de bicicleta ou nadar, por exemplo). que são, após consolidadas, realizadas de forma automática; memórias declarativas, que podem ser autobibliográficas ou semânticas (como o conhecimento que você tem de biologia).</p>\n<p>A capacidade de reorganização e adaptação do cérebro pode ser induzida ou facilitada mediante a aprendizagem. Por isso, é muito importante aprender coisas novas sempre, e o envelhecimento não é desculpa para o chamado sedentarismo intelectual.</p>\n<span class=\"apoio-attrib\">(Adaptado de: SOARES, Edvaldo. Disponível em: https://thoconversation.com)</span>\n<p class=\"fcc-excerpt\">O emprego da vírgula que antecede a conjunção “e” se justifica porque</p>",
+    "texto_apoio": "<p>: para responder a questão a seguir, leia o texto abaixo.</p>\n<p>Temos a tendência de memorizar os fatos de nossa vida, positivos ou negativos, que apresentam alta carga emocional. Isso envolve estruturas cerebrais, como a amígdala, e redes neurais, como o sistema dopaminérgico, mais conhecido como sistema de recompensa.</p>\n<p>Considerando nossas memórias autobiográficas, a notícia ruim é que não temos autonomia para decidir o que vai ser memorizado. Fatores como transtornos depressivos, transtornos de ansiedade mesmo o estresse afetam o processamento de memória em todas as suas fases, sejam elas a de aquisição, a de consolidação & a de recuperação da lembrança.</p>\n<p>O que vivenciamos no dia a dia pode - ou não — ser memorizado. E isso é bom, pois informações ou vivências irrelevantes são mantidas apenas por curto período de tempo no nosso cérebro. É o que se denomina de memória de curta duração.</p>\n<p>Outras informações ou vivências perduram por dias, meses e até por toda a vida. São as chamadas memórias de longa dir ração. Logo, temos sistemas de curta e de longa duração. E essas informações consolidadas no sistema de longa duração têm conteúdos específicos.</p>\n<p>procedimento (andar de bicicleta ou nadar, por exemplo). que são, após consolidadas, realizadas de forma automática; memórias declarativas, que podem ser autobibliográficas ou semânticas (como o conhecimento que você tem de biologia).</p>\n<p>A capacidade de reorganização e adaptação do cérebro pode ser induzida ou facilitada mediante a aprendizagem. Por isso, é muito importante aprender coisas novas sempre, e o envelhecimento não é desculpa para o chamado sedentarismo intelectual.</p>\n<span class=\"apoio-attrib\">(Adaptado de: SOARES, Edvaldo. Disponível em: https://thoconversation.com)</span>",
     "imagem": null,
     "pergunta": "<em>é muito importante aprender coisas novas sempre, e o envelhecimento não é desculpa para o chamado sedentarismo intelectual</em>\nO emprego da vírgula que antecede a conjunção “e” se justifica porque",
     "alternativas": [
@@ -206,11 +206,11 @@
     "imagem": null,
     "pergunta": "O trecho em que o emprego da virgula indica uma elipse está em",
     "alternativas": [
-      "<em>Apenas as umburanas se levantam, de quando em quando</em>",
-      "<em>b) Os arbustos ralos elevam-se por léguas e léguas no sertão seco e bravio, como um deserto de espinhos</em>",
+      "Apenas as umburanas se levantam, de quando em quando",
+      "b) Os arbustos ralos elevam-se por léguas e léguas no sertão seco e bravio, como um deserto de espinhos",
       "<em>c) Cobras e lagartos arrastam-se por entre as pedras, sob o sol escaldante do meio-dia",
       "Um emaranhado de espinhos, impossível de transpor</em>",
-      "<em>e) Os espinhos se cruzam na caatinga, é o intransponível deserto</em>"
+      "e) Os espinhos se cruzam na caatinga, é o intransponível deserto"
     ],
     "correta": 3,
     "linkTec": "https://www.tecconcursos.com.br/questoes/3204567"
@@ -590,11 +590,11 @@
     "imagem": null,
     "pergunta": "O verbo em negrito deve sua flexão à expressão sublinhada em:",
     "alternativas": [
-      "<em><strong>houve </strong>mão que abriu à porta dá capoeira</em>",
-      "<em><strong>Cortou </strong>a areia deixando um rastro longo</em>",
-      "<em>Não <strong>sei </strong>se os presentes compreenderam</em>",
-      "<em>no meio daquele quase nada <strong>apareceu </strong>um bicho estranho</em>",
-      "<em><strong>voltou</strong> a cabeça ainda assustada</em>"
+      "<strong>houve </strong>mão que abriu à porta dá capoeira",
+      "<strong>Cortou </strong>a areia deixando um rastro longo",
+      "Não <strong>sei </strong>se os presentes compreenderam",
+      "no meio daquele quase nada <strong>apareceu </strong>um bicho estranho",
+      "<strong>voltou</strong> a cabeça ainda assustada"
     ],
     "correta": 3,
     "linkTec": "https://www.tecconcursos.com.br/questoes/2872317"
@@ -854,9 +854,9 @@
     "imagem": null,
     "pergunta": "A forma verbal em negrito deve sua flexão ao termo sublinhado no seguinte trecho:",
     "alternativas": [
-      "<em> Poucos bilhetes <strong>comprava</strong> a princípio.</em>",
+      " Poucos bilhetes <strong>comprava</strong> a princípio.",
       "b) e durante algumas loterias <strong>a promessa.trong>a promessa.",
-      "<em>c) lá <strong>aparecia </strong>alguém que o convidava a ficar com um bonito número.</em>",
+      "c) lá <strong>aparecia </strong>alguém que o convidava a ficar com um bonito número.",
       "d) Aparentemente poucos espetáculos tão melancólicos.",
       "e) Não <strong>deixa irmandade.logo a irmandade."
     ],
@@ -1114,7 +1114,7 @@
     "cargo": "GM (J Guararapes)",
     "orgao": "Pref J Guararapes",
     "texto_apoio_titulo": "Atenção: Leia o texto para responder a questão a seguir.",
-    "texto_apoio": "<p>: Leia o texto para responder a questão a seguir.</p>\n<center class=\"apoio-title\"><strong>Vladimir Maiakóvski: o profeta de um tempo que rugia</strong></center>\n<p>Apenas nove meses após a publicação do único livro do paraibano Augusto dos Anjos, Vladimir Maiakôvski lançava em Moscou sua primeira obra com título igual em russo: \"Eu!\".</p>\n<p>Ao contrário de Augusto dos Anjos, a família de Maiakóvski não pertencia à aristocracia. Vladimir, que deu ao filho o seu nome, era um agente florestal na pequena Bagdádl, na Geórgia, à época Integrante do império russo. Se Augusto dos Anjos valia-se da técnica do impressionismo para a composição de suas metáforas, Maiakóvski dava a impressão de imaginar pinturas cubistas e, em seguida, escrever um poema a partir dos quadros que existiam só na sua cabeça, transpondo para a escrita técnicas das artes plásticas.</p>\n<p>Em 1913, ao estrear na literatura, Maiakóvski não só pressentia a vibração do novo mundo que chegaria como o celebrava a plenos pulmões. Ao amigo, e colega de futurismo, Boris Pasternak, Maiakóvski disse algo que poderia muito bem ser repelido a Augusto dos Anjos: \"O senhor ama o relâmpago no céu enquanto eu, o ferro elétrico\".</p>\n<span class=\"apoio-attrib\">(Disponível em: https://pernambucorevista.com.br/.Adaptado)</span>\n<p class=\"fcc-excerpt\">Transpondo-se a frase acima para a voz passiva, a forma verbal resultante será:</p>",
+    "texto_apoio": "<p>: Leia o texto para responder a questão a seguir.</p>\n<center class=\"apoio-title\"><strong>Vladimir Maiakóvski: o profeta de um tempo que rugia</strong></center>\n<p>Apenas nove meses após a publicação do único livro do paraibano Augusto dos Anjos, Vladimir Maiakôvski lançava em Moscou sua primeira obra com título igual em russo: \"Eu!\".</p>\n<p>Ao contrário de Augusto dos Anjos, a família de Maiakóvski não pertencia à aristocracia. Vladimir, que deu ao filho o seu nome, era um agente florestal na pequena Bagdádl, na Geórgia, à época Integrante do império russo. Se Augusto dos Anjos valia-se da técnica do impressionismo para a composição de suas metáforas, Maiakóvski dava a impressão de imaginar pinturas cubistas e, em seguida, escrever um poema a partir dos quadros que existiam só na sua cabeça, transpondo para a escrita técnicas das artes plásticas.</p>\n<p>Em 1913, ao estrear na literatura, Maiakóvski não só pressentia a vibração do novo mundo que chegaria como o celebrava a plenos pulmões. Ao amigo, e colega de futurismo, Boris Pasternak, Maiakóvski disse algo que poderia muito bem ser repelido a Augusto dos Anjos: \"O senhor ama o relâmpago no céu enquanto eu, o ferro elétrico\".</p>\n<span class=\"apoio-attrib\">(Disponível em: https://pernambucorevista.com.br/.Adaptado)</span>",
     "imagem": null,
     "pergunta": "<em>Vladimir Maiakóvski lançava em Moscou sua primeira obra com título igual em russo</em>\nTranspondo-se a frase acima para a voz passiva, a forma verbal resultante será:",
     "alternativas": [
