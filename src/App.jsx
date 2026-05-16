@@ -615,7 +615,7 @@ function QuestionCard({q, numero, interactive=false, userAnswer=null, onAnswer=n
                 dangerouslySetInnerHTML={{__html:renderHTML(q.texto_apoio_titulo)}}/>
             )}
             <div className="fcc-html fcc-apoio-body"
-              dangerouslySetInnerHTML={{__html:renderHTML(q.texto_apoio,{prewrap:true})}}/>
+              dangerouslySetInnerHTML={{__html:renderHTML(q.texto_apoio)}}/>
           </div>
         )}
 
