@@ -399,10 +399,10 @@
     "pergunta": "Retoma um termo mencionado anteriormente no texto a palavra sublinhada em:",
     "alternativas": [
       "<em>penetrou na água como um barco a deslizar do estaleiro</em> (3º parágrafo).",
-      "<em>voltou a cabeça ainda assustada paqueaquele mundo sujo, escuro, inimigo, onde viviam os homens</em> (3º parágrafo).",
+      "<em>voltou a cabeça ainda assustada para aquele mundo sujo, escuro, inimigo, onde viviam os homens</em> (3º parágrafo).",
       "<em>Mas felizmente para a tartaruga, incerto é o coração do homem</em> (3º parágrafo).",
       "<em>tanto procura devorar hoje o seu irmão bicho, como amanhã o festeja e liberta</em> (3º parágrafo).",
-      "<em>houve que que abriu a porta da capoeira e encaminhou a marcha rampante do bicho marinho</em> (3º parágrafo)."
+      "<em>houve mão que abriu a porta da capoeira e encaminhou a marcha rampante do bicho marinho</em> (3º parágrafo)."
     ],
     "correta": 3,
     "linkTec": "https://www.tecconcursos.com.br/questoes/2872296"
