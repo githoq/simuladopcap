@@ -233,7 +233,7 @@ function exportExamPDF(exam){
 /* ── RESET & PAGE ── */
 *{box-sizing:border-box;margin:0;padding:0}
 @page{size:A4 portrait;margin:12mm 13mm 14mm 13mm}
-body{font-family:"Times New Roman",Times,serif;font-size:10.5pt;color:#1a1a1a;background:#fff;line-height:1.5;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+body{font-family:"Times New Roman",Times,serif;font-size:10pt;color:#1a1a1a;background:#fff;line-height:1.4;-webkit-print-color-adjust:exact;print-color-adjust:exact}
 
 /* ── COVER HEADER ── */
 /* ── COVER HEADER (estilo prova oficial FCC, impressão limpa) ── */
@@ -275,7 +275,7 @@ body{font-family:"Times New Roman",Times,serif;font-size:10.5pt;color:#1a1a1a;ba
 /* ── QUESTION ── */
 /* ── QUESTÃO: regras de paginação inteligente ── */
 .question{
-  margin-bottom:11pt;padding-bottom:8pt;border-bottom:1px dotted #ccc;
+  margin-bottom:8pt;padding-bottom:6pt;border-bottom:.5pt solid #ccc;
   /* NÃO usar page-break-inside:avoid aqui — questões longas
      inevitavelmente quebrarão; controlamos onde ocorre a quebra */
   break-inside:auto;page-break-inside:auto;
@@ -289,12 +289,12 @@ body{font-family:"Times New Roman",Times,serif;font-size:10.5pt;color:#1a1a1a;ba
 /* Pergunta não começa em página nova separada do apoio */
 .q-text{
   break-before:avoid;page-break-before:avoid;
-  break-inside:avoid;page-break-inside:avoid;
+  break-inside:auto;page-break-inside:auto;
 }
 /* Alternativas ficam com a pergunta */
 .alts{
   break-before:avoid;page-break-before:avoid;
-  break-inside:avoid;page-break-inside:avoid;
+  break-inside:auto;page-break-inside:auto;
 }
 /* Cada alternativa individual não quebra */
 .alt-row{break-inside:avoid;page-break-inside:avoid}
@@ -377,7 +377,7 @@ body{font-family:"Times New Roman",Times,serif;font-size:10.5pt;color:#1a1a1a;ba
   .no-print{display:none!important}
   .pg-break{page-break-before:always}
   .disc-hd{page-break-after:avoid}
-  .question{page-break-inside:avoid}
+  /* .question: break-inside:auto is set above */
   .ans-row{page-break-inside:avoid}
   .gab-cell{page-break-inside:avoid}
 }
