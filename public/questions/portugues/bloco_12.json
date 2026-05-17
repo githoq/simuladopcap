@@ -230,7 +230,7 @@
     "imagem": null,
     "pergunta": "<u>É</u> adequada a articulação entre os tempos e modos verbais na seguinte frase:",
     "alternativas": [
-      "Ficamos sem saber por <u>que</u> vem ela se dedicado a atos virtuosos que sua doença lhe impedisse de haver praticado,",
+      "Ficamos sem saber <u>por que</u> vem ela se dedicado a atos virtuosos que sua doença lhe impedisse de haver praticado,",
       "Quando perdesse a voz, em função da distrofia <u>que</u> lhe acometeria, ela passará a ensinar surdos e mudos.",
       "Fora uma mulher em paz consigo mesma, apesar dos sofrimentos que a vida lhe reserve, ao desafiar seus limites.",
       "Quando me confessou que se mataria, não me surpreendi e disse que muita gente poderia vir a tomar igual decisão.",
@@ -327,7 +327,7 @@
     "pergunta": "<u>É</u> plenamente adequada a correlação entre tempos e modos verbais na seguinte construção:",
     "alternativas": [
       "Eu entendi <u>que</u> ser especula não devesse ser muito elogioso, sobretudo quando sou assim acusado.",
-      "Os homens mais curiosos analisavam os astros na esperança de <u>que</u> viessem <u>a</u> entender seus périplos no céu.",
+      "Os homens mais curiosos analisavam os astros na esperança <u>de que</u> viessem <u>a</u> entender seus périplos no céu.",
       "Os antigos valiam-se de um espelho quando pretendam demarcar <u>a</u> posição e os movimentos dos astros.",
       "Especular passou a ser um processo que formulara hipóteses e ideias que instiguem a curiosidade humana.",
       "Estou interessado em saber <u>o</u> que houvesse entre o céu e a terra, além do que ensinasse a nossa filosofia."
@@ -420,7 +420,7 @@
     "texto_apoio_titulo": "Considere a tira de Angeli para responder a questão seguinte.",
     "texto_apoio": "<span class=\"apoio-attrib\">(ANGELI, Rusga e Rabujo. Folha de São Paulo. Disponível em: ",
     "imagem": "/assets/questions/questao_007.png",
-    "pergunta": "É um pronome adjetivo o termo",
+    "pergunta": "É um pronome adjetivo <u>o</u> termo",
     "alternativas": [
       "\"Ninguém\" (1° quadrinho).",
       "\"neste\" (1° quadrinho).",
@@ -830,7 +830,7 @@
     "imagem": null,
     "pergunta": "No contexto em que <u>se</u> encontra, o termo como, sublinhado acima,",
     "alternativas": [
-      "introduz uma exemplificação necessária para a compreensão do <u>que</u> a antecede.",
+      "introduz uma exemplificação necessária para a compreensão <u>do que</u> a antecede.",
       "realça um dos termos da frase.",
       "indica a causa de uma ação.",
       "estabelece uma comparação, indicando equivalência entre dois termos.",
