@@ -225,11 +225,10 @@
         box-decoration-break:clone;-webkit-box-decoration-break:clone;
       }
       .fcc-apoio-body em,.fcc-apoio-body i{font-style:italic!important;color:inherit}
-      /* <strong> inline no apoio = grifo/highlight do PDF (palavras destacadas em amarelo) */
+      /* <strong> inline no apoio = negrito puro (idêntico ao original)
+         Grifos amarelos ficam apenas em <mark> — detectados via pdfplumber */
       .fcc-apoio-body strong,.fcc-apoio-body b{
         font-weight:700!important;
-        background:rgba(200,167,93,0.16);border-radius:2px;
-        padding:0 2px;color:#e8d87a;
       }
       
       /* Atribuições/fontes ("(Autor)", "(Adaptado de:...)") — alinhadas à direita, em itálico discreto */

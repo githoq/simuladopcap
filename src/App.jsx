@@ -311,7 +311,7 @@ body{font-family:"Times New Roman",Times,serif;font-size:10pt;color:#1a1a1a;back
 .q-apoio-body p:last-child{margin-bottom:0}
 .q-apoio-body mark{background:#fde68a;color:#1a1108;padding:0 2pt;border-radius:1pt}
 .q-apoio-body em,.q-apoio-body i{font-style:italic}
-.q-apoio-body strong,.q-apoio-body b{font-weight:bold;background:#fff4ce;padding:0 1.5pt;border-radius:0}
+.q-apoio-body strong,.q-apoio-body b{font-weight:bold;}
 .q-apoio-body center.apoio-title,.q-apoio-body .apoio-title{display:block;text-align:center;margin:0 auto 6pt}
 .q-apoio-body .apoio-attrib{display:block;text-align:right;margin-top:4pt;font-size:.92em;color:#555;font-style:italic}
 .q-apoio-body .apoio-title strong,.q-apoio-body center.apoio-title strong{background:transparent!important;font-weight:bold;font-size:1.05em;padding:0!important;color:#000}
