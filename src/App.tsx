@@ -9,42 +9,39 @@ import { Loading } from "./components/ui/Loading";
 import { AnimatedPage } from "./components/motion/AnimatedPage";
 import { useQuestions } from "./hooks/useQuestions";
 import { useProgress } from "./hooks/useProgress";
-import LandingPage     from "./pages/LandingPage";
-import DashboardPage   from "./pages/DashboardPage";
-import GeneratorPage   from "./pages/GeneratorPage";
-import ExamPage        from "./pages/ExamPage";
-import ResultsPage     from "./pages/ResultsPage";
-import HistoryPage     from "./pages/HistoryPage";
-import BankPage        from "./pages/BankPage";
-import FocusPage       from "./pages/FocusPage";
-import AIAssistantPage from "./pages/AIAssistantPage";
+import LandingPage        from "./pages/LandingPage";
+import DashboardPage      from "./pages/DashboardPage";
+import GeneratorPage      from "./pages/GeneratorPage";
+import ExamPage           from "./pages/ExamPage";
+import ResultsPage        from "./pages/ResultsPage";
+import HistoryPage        from "./pages/HistoryPage";
+import BankPage           from "./pages/BankPage";
+import FocusPage          from "./pages/FocusPage";
+import AIAssistantPage    from "./pages/AIAssistantPage";
 import SimuladoActionsPage from "./pages/SimuladoActionsPage";
 import type { Exam, ExamResult, ToastData } from "./types";
 
 function AppRoutes() {
   const location = useLocation();
 
-  // All hooks called at top level — never conditionally
   const { questions, loading, progress, error } = useQuestions();
   const { history, usedIds, addResult, resetHistory, streak } = useProgress();
-  const [currentExam, setCurrentExam] = useState<Exam | null>(null);
-  const [lastResult,  setLastResult]  = useState<ExamResult | null>(null);
-  const [toast,       setToast]       = useState<ToastData | null>(null);
-  const [sideOpen,    setSideOpen]    = useState(false);
+
+  const [currentExam,  setCurrentExam]  = useState<Exam | null>(null);
+  const [pendingExam,  setPendingExam]  = useState<Exam | null>(null);
+  const [lastResult,   setLastResult]   = useState<ExamResult | null>(null);
+  const [toast,        setToast]        = useState<ToastData | null>(null);
+  const [sideOpen,     setSideOpen]     = useState(false);
 
   const notify = useCallback((msg: string, type: ToastData["type"] = "success") => {
     setToast({ msg, type });
     setTimeout(() => setToast(null), 3200);
   }, []);
 
-  const [pendingExam, setPendingExam] = useState<Exam | null>(null);
-
-  // Called from GeneratorPage: store exam and go to actions screen
   const prepareExam = useCallback((exam: Exam) => {
     setPendingExam(exam);
   }, []);
 
-  // Called from SimuladoActionsPage: move pending → current and start
   const startExam = useCallback((exam: Exam) => {
     setCurrentExam(exam);
     setPendingExam(null);
@@ -57,16 +54,19 @@ function AppRoutes() {
     notify(`Finalizado! ${result.score}/${result.total} — ${result.percent}%`);
   }, [addResult, notify]);
 
-  const isLanding      = location.pathname === "/";
-  const isExamOrFocus  = location.pathname === "/exam" || location.pathname === "/focus";
+  const isExamOrFocus = location.pathname === "/exam" || location.pathname === "/focus";
+  const isLanding     = location.pathname === "/";
+
+  // Helper: wrap routes that need questions with a loading gate
+  const withQuestions = (el: JSX.Element) =>
+    loading ? <Loading progress={progress} error={error} /> : el;
 
   return (
     <div style={{ background: "#0B0F14", minHeight: "100vh" }}>
 
-      {/* ── FloatingNav: always present, hides on exam/focus internally ── */}
+      {/* ── Shell: always present on every route ─────────────────────── */}
       <FloatingNav onMenuOpen={() => setSideOpen(true)} />
 
-      {/* ── SidePanel: global hamburger overlay ─────────────────────── */}
       <SidePanel
         open={sideOpen}
         onClose={() => setSideOpen(false)}
@@ -77,76 +77,92 @@ function AppRoutes() {
         onReset={resetHistory}
       />
 
-      {/* ── Content routing ──────────────────────────────────────────── */}
-      {isLanding ? (
-        // Landing: full-screen cinematic, FloatingNav already rendered above
-        <LandingPage />
+      {/* Mobile bottom tabs — hidden on landing, exam, focus */}
+      {!isLanding && !isExamOrFocus && <NavBar qCount={questions.length} />}
 
-      ) : loading ? (
-        <Loading progress={progress} error={error} />
+      {/* ── All routes inside AnimatePresence ────────────────────────── */}
+      <AnimatePresence mode="wait">
+        <Routes location={location} key={location.pathname}>
 
-      ) : (
-        <>
-          {/* Mobile bottom tabs — desktop handled by FloatingNav */}
-          {!isExamOrFocus && <NavBar qCount={questions.length} />}
+          {/* Landing — no questions required, renders immediately */}
+          <Route path="/" element={<LandingPage />} />
 
-          <AnimatePresence mode="wait">
-            <Routes location={location} key={location.pathname}>
-              <Route path="/app" element={
-                <AnimatedPage>
-                  <DashboardPage history={history} usedIds={usedIds} totalQuestions={questions.length} streak={streak} onReset={resetHistory} />
-                </AnimatedPage>
-              } />
-              <Route path="/generator" element={
-                <AnimatedPage>
-                  <GeneratorPage questions={questions} usedIds={usedIds} onStartExam={(exam) => { prepareExam(exam); }} />
-                </AnimatedPage>
-              } />
-              <Route path="/ready" element={
-                <AnimatedPage>
-                  <SimuladoActionsPage
-                    exam={pendingExam}
-                    onStartExam={() => pendingExam && startExam(pendingExam)}
-                  />
-                </AnimatedPage>
-              } />
-              <Route path="/exam" element={
-                currentExam
-                  ? <ExamPage exam={currentExam} onFinish={finishExam} />
-                  : <Navigate to="/generator" replace />
-              } />
-              <Route path="/focus" element={
-                currentExam
-                  ? <FocusPage exam={currentExam} onFinish={finishExam} />
-                  : <Navigate to="/generator" replace />
-              } />
-              <Route path="/results" element={
-                <AnimatedPage>
-                  <ResultsPage result={lastResult} />
-                </AnimatedPage>
-              } />
-              <Route path="/history" element={
-                <AnimatedPage>
-                  <HistoryPage history={history} />
-                </AnimatedPage>
-              } />
-              <Route path="/bank" element={
-                <AnimatedPage>
-                  <BankPage questions={questions} usedIds={usedIds} />
-                </AnimatedPage>
-              } />
-              <Route path="/ai" element={
-                <AnimatedPage className="h-screen">
-                  <AIAssistantPage />
-                </AnimatedPage>
-              } />
-              <Route path="*" element={<Navigate to="/app" replace />} />
-            </Routes>
-          </AnimatePresence>
+          {/* App routes — gated behind question loading */}
+          <Route path="/app" element={withQuestions(
+            <AnimatedPage>
+              <DashboardPage
+                history={history}
+                usedIds={usedIds}
+                totalQuestions={questions.length}
+                streak={streak}
+                onReset={resetHistory}
+              />
+            </AnimatedPage>
+          )} />
 
-          <Toast toast={toast} onClose={() => setToast(null)} />
-        </>
-      )}
+          <Route path="/generator" element={withQuestions(
+            <AnimatedPage>
+              <GeneratorPage
+                questions={questions}
+                usedIds={usedIds}
+                onStartExam={prepareExam}
+              />
+            </AnimatedPage>
+          )} />
+
+          <Route path="/ready" element={withQuestions(
+            <AnimatedPage>
+              <SimuladoActionsPage
+                exam={pendingExam}
+                onStartExam={() => pendingExam && startExam(pendingExam)}
+              />
+            </AnimatedPage>
+          )} />
+
+          <Route path="/exam" element={
+            currentExam
+              ? <ExamPage exam={currentExam} onFinish={finishExam} />
+              : <Navigate to="/generator" replace />
+          } />
+
+          <Route path="/focus" element={
+            currentExam
+              ? <FocusPage exam={currentExam} onFinish={finishExam} />
+              : <Navigate to="/generator" replace />
+          } />
+
+          <Route path="/results" element={withQuestions(
+            <AnimatedPage>
+              <ResultsPage result={lastResult} />
+            </AnimatedPage>
+          )} />
+
+          <Route path="/history" element={withQuestions(
+            <AnimatedPage>
+              <HistoryPage history={history} />
+            </AnimatedPage>
+          )} />
+
+          <Route path="/bank" element={withQuestions(
+            <AnimatedPage>
+              <BankPage questions={questions} usedIds={usedIds} />
+            </AnimatedPage>
+          )} />
+
+          <Route path="/ai" element={
+            <AnimatedPage className="h-screen">
+              <AIAssistantPage />
+            </AnimatedPage>
+          } />
+
+          <Route path="*" element={<Navigate to="/app" replace />} />
+
+        </Routes>
+      </AnimatePresence>
+
+      {/* Toast — outside AnimatePresence so it persists across route transitions */}
+      <Toast toast={toast} onClose={() => setToast(null)} />
+
     </div>
   );
 }
