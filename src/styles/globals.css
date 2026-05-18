@@ -1,0 +1,246 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ── Fonts ─────────────────────────────────────────────────────────── */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Barlow:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&family=Barlow+Condensed:wght@500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+/* ── Base ───────────────────────────────────────────────────────────── */
+@layer base {
+  *, *::before, *::after { box-sizing: border-box; }
+
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+
+  body {
+    @apply bg-bg-base text-text-primary font-sans;
+    min-height: 100dvh;
+    overflow-x: hidden;
+  }
+
+  ::selection {
+    background: rgba(255, 255, 255, 0.09);
+    color: #F3F4F6;
+  }
+
+  ::-webkit-scrollbar { width: 5px; height: 5px; }
+  ::-webkit-scrollbar-track { background: transparent; }
+  ::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.06); border-radius: 99px; }
+  ::-webkit-scrollbar-thumb:hover { background: rgba(255,255,255,0.10); }
+
+  :focus-visible {
+    outline: 2px solid rgba(200, 167, 93, 0.40);
+    outline-offset: 2px;
+    border-radius: 3px;
+  }
+}
+
+/* ── Question rendering ─────────────────────────────────────────────── */
+@layer components {
+
+  /* ════════════════════════════════════════════════════════════════════
+     FCC INSTITUTIONAL RENDERING
+     Target: visually indistinguishable from FCC printed exam booklet.
+     Font:   Georgia 14px / 1.60 line-height
+     Density: compact, academic, editorial
+     ════════════════════════════════════════════════════════════════════ */
+
+  /* ── Apoio body (support text) ─────────────────────────────────────── */
+  .fcc-apoio-body {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 14px;              /* exactly 14px — institutional */
+    line-height: 1.60;            /* academic density, not modern readability */
+    color: #D1D5DB;
+    word-break: break-word;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .fcc-apoio-body p {
+    margin-bottom: 0.50em;        /* FCC institutional rhythm */
+    font-style: italic;
+    line-height: 1.60;
+  }
+
+  .fcc-apoio-body p:last-child { margin-bottom: 0; }
+
+  /* Inline marks — preserve semantic emphasis */
+  .fcc-apoio-body em,
+  .fcc-apoio-body i   { font-style: italic; }
+
+  .fcc-apoio-body strong,
+  .fcc-apoio-body b   { font-weight: 700; color: #E9E9E9; }
+
+  /* ── UNDERLINE — critical fidelity ──────────────────────────────── */
+  .fcc-apoio-body u {
+    text-decoration: underline;
+    text-decoration-thickness: from-font;  /* institutional, rigid */
+    text-underline-offset: 1px;            /* tight, print-like */
+    text-decoration-skip-ink: none;        /* no modern skip — full underline */
+    text-decoration-color: currentColor;   /* matches text, always visible */
+    font-style: inherit;
+  }
+
+  /* ── Mark (grifo FCC) ───────────────────────────────────────────── */
+  .fcc-apoio-body mark {
+    background: rgba(255, 255, 255, 0.09);
+    color: inherit;
+    padding: 0 2px;
+    border-radius: 2px;
+    font-style: normal;
+  }
+
+  /* Title (centered, not italic) */
+  .fcc-apoio-body center.apoio-title,
+  .fcc-apoio-body .apoio-title {
+    display: block;
+    text-align: center;
+    font-style: normal;
+    font-weight: 700;
+    color: #F3F4F6;
+    margin-bottom: 0.65em;
+    letter-spacing: 0.015em;
+  }
+
+  .fcc-apoio-body .apoio-title strong,
+  .fcc-apoio-body center.apoio-title strong {
+    background: transparent !important;
+    font-weight: 700;
+    padding: 0 !important;
+  }
+
+  /* Attribution line */
+  .fcc-apoio-body .apoio-attrib {
+    display: block;
+    text-align: right;
+    margin-top: 0.5em;
+    font-size: 12px;
+    color: #4B5563;
+    font-style: italic;
+  }
+
+  /* Verse / poetry */
+  .fcc-apoio-body .fcc-verse {
+    font-style: italic;
+    display: block;
+    line-height: 1.65;
+  }
+
+  /* Highlighted excerpt — institutional left-rule style */
+  .fcc-apoio-body .fcc-excerpt {
+    display: block;
+    margin-top: 6px !important;
+    padding: 0;
+    border: none;
+    background: transparent;
+    font-style: italic;
+    font-size: 13.5px;
+    line-height: 1.60;
+    color: #C9CDD4;
+  }
+
+  .fcc-apoio-body .fcc-excerpt u {
+    text-decoration: underline;
+    text-decoration-thickness: from-font;
+    text-underline-offset: 1px;
+    text-decoration-skip-ink: none;
+    text-decoration-color: currentColor;
+  }
+
+  /* ── Pergunta (question stem) ─────────────────────────────────────── */
+  .fcc-pergunta {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 14px;
+    line-height: 1.62;
+    color: #F3F4F6;
+    word-break: break-word;
+  }
+
+  .fcc-pergunta u {
+    text-decoration: underline;
+    text-decoration-thickness: from-font;
+    text-underline-offset: 1px;
+    text-decoration-skip-ink: none;
+    text-decoration-color: currentColor;
+  }
+
+  .fcc-pergunta em,
+  .fcc-pergunta i    { font-style: italic; }
+
+  .fcc-pergunta strong,
+  .fcc-pergunta b    { font-weight: 700; }
+
+  .fcc-pergunta mark {
+    background: rgba(255, 255, 255, 0.08);
+    color: inherit;
+    padding: 0 2px;
+    border-radius: 2px;
+  }
+
+  /* ── Alternative text ────────────────────────────────────────────── */
+  .fcc-alt-text {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 14px;
+    line-height: 1.58;
+    color: inherit;               /* inherits from container state */
+  }
+
+  /* Critical: underline in alternatives must be unmistakable */
+  .fcc-alt-text u {
+    text-decoration: underline;
+    text-decoration-thickness: from-font;
+    text-underline-offset: 1px;
+    text-decoration-skip-ink: none;
+    text-decoration-color: currentColor;
+  }
+
+  .fcc-alt-text em,
+  .fcc-alt-text i    { font-style: italic; }
+
+  .fcc-alt-text strong,
+  .fcc-alt-text b    { font-weight: 700; }
+
+  .fcc-alt-text mark {
+    background: rgba(255, 255, 255, 0.07);
+    color: inherit;
+    padding: 0 2px;
+    border-radius: 2px;
+  }
+
+  /* ── Input base ──────────────────────────────────────────────────── */
+  .input-base {
+    @apply bg-bg-input border border-border-subtle rounded-xl px-3.5 py-2.5 text-sm
+           text-text-primary placeholder-text-muted font-sans
+           focus:outline-none focus:border-border-gold transition-colors duration-200;
+  }
+
+  .glass {
+    background: rgba(22, 27, 34, 0.88);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+  }
+
+  .pb-safe {
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+  }
+}
+
+/* ── Utilities ──────────────────────────────────────────────────────── */
+@layer utilities {
+  .text-balance { text-wrap: balance; }
+
+  .text-gradient-gold {
+    background: linear-gradient(135deg, #c8a75d 0%, #d6b97a 45%, #c8a75d 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  /* Prevent text-fill from leaking on non-gradient elements */
+  .text-gradient-gold * {
+    -webkit-text-fill-color: inherit;
+  }
+}

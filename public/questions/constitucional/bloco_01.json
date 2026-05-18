@@ -1,0 +1,74 @@
+[
+  {
+    "id": "fcc_const_2024_001",
+    "disciplina": "Direito Constitucional",
+    "assunto": "Direitos Fundamentais",
+    "banca": "FCC",
+    "ano": 2024,
+    "orgao": "PC-AP",
+    "pergunta": "De acordo com a CF/1988, NÃO é direito ou garantia fundamental:",
+    "alternativas": [
+      "A) inviolabilidade do direito à vida",
+      "B) liberdade de expressão",
+      "C) direito à propriedade",
+      "D) prisão por dívida civil em qualquer caso",
+      "E) igualdade perante a lei"
+    ],
+    "correta": 3,
+    "linkTec": ""
+  },
+  {
+    "id": "fcc_const_2023_001",
+    "disciplina": "Direito Constitucional",
+    "assunto": "Organização do Estado",
+    "banca": "FCC",
+    "ano": 2023,
+    "orgao": "PC-AP",
+    "pergunta": "São Poderes da União, independentes e harmônicos entre si:",
+    "alternativas": [
+      "A) Executivo, Legislativo e Judiciário",
+      "B) Executivo, Legislativo e Ministério Público",
+      "C) Federal, Estadual e Municipal",
+      "D) Executivo, Judiciário e Defensoria Pública",
+      "E) Legislativo, Judiciário e Tribunais de Contas"
+    ],
+    "correta": 0,
+    "linkTec": ""
+  },
+  {
+    "id": "fcc_const_2022_001",
+    "disciplina": "Direito Constitucional",
+    "assunto": "Segurança Pública",
+    "banca": "FCC",
+    "ano": 2022,
+    "orgao": "PC-AP",
+    "pergunta": "Segundo a CF/88, NÃO é órgão de segurança pública:",
+    "alternativas": [
+      "A) Polícia Federal",
+      "B) Polícia Rodoviária Federal",
+      "C) Polícia Civil",
+      "D) Forças Armadas",
+      "E) Polícia Militar"
+    ],
+    "correta": 3,
+    "linkTec": ""
+  },
+  {
+    "id": "fcc_const_2021_001",
+    "disciplina": "Direito Constitucional",
+    "assunto": "Remédios Constitucionais",
+    "banca": "FCC",
+    "ano": 2021,
+    "orgao": "PC-AP",
+    "pergunta": "O instrumento constitucional para proteger direito líquido e certo não amparado por habeas corpus ou habeas data é:",
+    "alternativas": [
+      "A) Ação Popular",
+      "B) Mandado de Segurança",
+      "C) Mandado de Injunção",
+      "D) Habeas Corpus",
+      "E) Ação Civil Pública"
+    ],
+    "correta": 1,
+    "linkTec": ""
+  }
+]
