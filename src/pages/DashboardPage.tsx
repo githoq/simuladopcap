@@ -8,6 +8,7 @@ import {
 import {
   Layers, Clock, TrendingUp, Zap, BookOpen,
   ChevronRight, RotateCcw, Award, Target, Flame,
+  ExternalLink,
 } from "lucide-react";
 import { ProgressBar } from "../components/ui/ProgressBar";
 import { Button } from "../components/ui/Button";
@@ -161,7 +162,7 @@ export default function DashboardPage({ history, usedIds, totalQuestions, streak
 
           {/* Quick actions */}
           <StaggerItem>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
+            <div className="grid grid-cols-2 gap-2.5">
               <motion.button
                 whileHover={{ y: -1 }}
                 whileTap={{ scale: 0.99 }}
@@ -199,6 +200,44 @@ export default function DashboardPage({ history, usedIds, totalQuestions, streak
                 </div>
                 <ChevronRight className="w-3.5 h-3.5 text-text-muted opacity-40 group-hover:opacity-70 transition-opacity" />
               </motion.button>
+
+              <motion.button
+                whileHover={{ y: -1 }}
+                whileTap={{ scale: 0.99 }}
+                onClick={() => navigate("/bank")}
+                className="group flex items-center gap-4 p-4 rounded-xl border text-left"
+                style={{ background: "rgba(255,255,255,0.018)", borderColor: "rgba(255,255,255,0.05)" }}
+              >
+                <div className="w-9 h-9 rounded-xl border flex items-center justify-center shrink-0"
+                  style={{ background: "rgba(255,255,255,0.04)", borderColor: "rgba(255,255,255,0.07)" }}>
+                  <BookOpen className="w-4 h-4 text-text-secondary" />
+                </div>
+                <div className="flex-1">
+                  <div className="text-text-primary font-semibold text-sm font-sans">Banco de Questões</div>
+                  <div className="text-text-muted text-xs mt-0.5 font-sans">{totalQuestions} questões FCC</div>
+                </div>
+                <ChevronRight className="w-3.5 h-3.5 text-text-muted opacity-40 group-hover:opacity-70 transition-opacity" />
+              </motion.button>
+
+              <motion.a
+                href="https://www.tecconcursos.com.br"
+                target="_blank"
+                rel="noopener noreferrer"
+                whileHover={{ y: -1 }}
+                whileTap={{ scale: 0.99 }}
+                className="group flex items-center gap-4 p-4 rounded-xl border text-left"
+                style={{ background: "rgba(59,130,246,0.04)", borderColor: "rgba(59,130,246,0.12)" }}
+              >
+                <div className="w-9 h-9 rounded-xl border flex items-center justify-center shrink-0"
+                  style={{ background: "rgba(59,130,246,0.08)", borderColor: "rgba(59,130,246,0.18)" }}>
+                  <ExternalLink className="w-4 h-4 text-blue-400" />
+                </div>
+                <div className="flex-1">
+                  <div className="text-text-primary font-semibold text-sm font-sans">TEC Concursos</div>
+                  <div className="text-text-muted text-xs mt-0.5 font-sans">Mais questões online</div>
+                </div>
+                <ExternalLink className="w-3 h-3 text-blue-400 opacity-40 group-hover:opacity-80 transition-opacity" />
+              </motion.a>
             </div>
           </StaggerItem>
 

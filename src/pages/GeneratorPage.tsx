@@ -53,7 +53,7 @@ export default function GeneratorPage({ questions, usedIds, onStartExam }: Gener
       if (!confirm(`Questões insuficientes:\n${msg}\n\nContinuar?`)) return;
     }
     onStartExam(exam);
-    navigate("/exam");
+    navigate("/ready");
   };
 
   return (

@@ -6,7 +6,7 @@
 import { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useNavigate } from "react-router-dom";
-import { ArrowRight, Check } from "lucide-react";
+import { ArrowRight, Check, ExternalLink } from "lucide-react";
 import { BackgroundPaths } from "../components/ui/BackgroundPaths";
 
 const PROOF = [
@@ -104,11 +104,12 @@ export default function LandingPage() {
           {subtitle}
         </motion.p>
 
-        {/* CTA Button */}
+        {/* CTA Buttons */}
         <motion.div
           initial={{ opacity: 0, y: 8 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.35, delay: 0.7 }}
+          className="flex flex-wrap items-center justify-center gap-3"
         >
           <motion.button
             whileHover={{ y: -1, scale: 1.01 }}
@@ -133,6 +134,30 @@ export default function LandingPage() {
               style={{ opacity: 0.6 }}
             />
           </motion.button>
+
+          {/* TEC Concursos secondary CTA */}
+          <motion.a
+            href="https://www.tecconcursos.com.br"
+            target="_blank"
+            rel="noopener noreferrer"
+            whileHover={{ y: -1 }}
+            whileTap={{ scale: 0.98 }}
+            transition={{ duration: 0.18 }}
+            className="group inline-flex items-center gap-2 font-sans font-medium"
+            style={{
+              fontSize: "0.9rem",
+              padding: "13px 22px",
+              borderRadius: "14px",
+              background: "rgba(59,130,246,0.08)",
+              color: "rgba(147,197,253,0.85)",
+              border: "1px solid rgba(59,130,246,0.22)",
+              cursor: "pointer",
+              textDecoration: "none",
+            }}
+          >
+            <ExternalLink className="w-3.5 h-3.5 opacity-70" />
+            TEC Concursos
+          </motion.a>
         </motion.div>
 
         {/* Proof items */}

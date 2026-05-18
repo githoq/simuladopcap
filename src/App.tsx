@@ -18,6 +18,7 @@ import HistoryPage     from "./pages/HistoryPage";
 import BankPage        from "./pages/BankPage";
 import FocusPage       from "./pages/FocusPage";
 import AIAssistantPage from "./pages/AIAssistantPage";
+import SimuladoActionsPage from "./pages/SimuladoActionsPage";
 import type { Exam, ExamResult, ToastData } from "./types";
 
 function AppRoutes() {
@@ -36,7 +37,18 @@ function AppRoutes() {
     setTimeout(() => setToast(null), 3200);
   }, []);
 
-  const startExam = useCallback((exam: Exam) => setCurrentExam(exam), []);
+  const [pendingExam, setPendingExam] = useState<Exam | null>(null);
+
+  // Called from GeneratorPage: store exam and go to actions screen
+  const prepareExam = useCallback((exam: Exam) => {
+    setPendingExam(exam);
+  }, []);
+
+  // Called from SimuladoActionsPage: move pending → current and start
+  const startExam = useCallback((exam: Exam) => {
+    setCurrentExam(exam);
+    setPendingExam(null);
+  }, []);
 
   const finishExam = useCallback((result: ExamResult) => {
     addResult(result);
@@ -87,7 +99,15 @@ function AppRoutes() {
               } />
               <Route path="/generator" element={
                 <AnimatedPage>
-                  <GeneratorPage questions={questions} usedIds={usedIds} onStartExam={startExam} />
+                  <GeneratorPage questions={questions} usedIds={usedIds} onStartExam={(exam) => { prepareExam(exam); }} />
+                </AnimatedPage>
+              } />
+              <Route path="/ready" element={
+                <AnimatedPage>
+                  <SimuladoActionsPage
+                    exam={pendingExam}
+                    onStartExam={() => pendingExam && startExam(pendingExam)}
+                  />
                 </AnimatedPage>
               } />
               <Route path="/exam" element={
