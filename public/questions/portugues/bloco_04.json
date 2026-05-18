@@ -34,7 +34,7 @@
     "cargo": "AJ TRT5",
     "orgao": "TRT 5",
     "texto_apoio_titulo": "<u>Atenção:</u> Considere o trecho do poema abaixo para responder às questão.",
-    "texto_apoio": "<p>Atenção: Considere o trecho do poema abaixo para responder às questão.</p>\n<div class=\"fcc-verse\"><em><mark>Esta velha angústia,</mark></em><br>\n<em>Esta angústia que trago há séculos em mim,</em><br>\n<em>Transbordou da <u>vasilha,</u></em><br>\n<em>Em lágrimas, em grandes imaginações,</em><br>\n<em>Em sonhos em estilo de pesadelo sem terror,</em><br>\n<em>Em grandes emoções súbitas sem sentido nenhum.</em></div>\n<p><em>Transbordou.</em></p>\n<p><em>Mal sei como conduzir-me na vida</em> <em>Com este mal-estar a fazer-me pregas na alma!</em></p>\n<p><em>Se ao menos endoidecesse deveras!</em></p>\n<div class=\"fcc-verse\"><em>Mas não: é este estar-entre,</em><br>\n<em><mark>Este <u>quase,</u></mark></em><br>\n<em>Este poder ser que...,</em><br>\n<em>Isto.</em></div>\n<p><em>Um internado num manicômio é, ao menos, alguém.</em></p>\n<p><em>Eu sou um internado num manicômio sem manicômio.</em></p>\n<div class=\"fcc-verse\"><em>Estou doido a frio,</em><br>\n<em>Estou lúcido e louco,</em><br>\n<em>Estou alheio a tudo e igual a todos:</em><br>\n<em>Estou dormindo desperto com sonhos que são loucura</em><br>\n<em>Porque não são sonhos.</em></div>\n<p><em><mark>Estou assim...</mark></em></p>\n<span class=\"apoio-attrib\"><em>(Fernando Pessoa. <strong>Obra poética</strong>. Rio de Janeiro: Editora Nova Aguilar, 1997)</em></span>\n<p class=\"fcc-excerpt\"><em>As palavras podem mudar de classe gramatical sem sofrer modificação na forma. <u>A</u> este processo de enriquecimento vocabular pela mudança de</em> <em>classe das palavras dá-se o nome de</em> “<em>derivação imprópria</em>”.</p>\n<span class=\"apoio-attrib\"><em>(Adaptado de CUNHA, Celso. Gramática essencial. Rio de Janeiro: Lexikon, 2013)</em></span>",
+    "texto_apoio": "<p>Atenção: Considere o trecho do poema abaixo para responder às questão.</p>\n<div class=\"fcc-verse\"><em><mark>Esta velha angústia,</mark></em><br>\n<em>Esta angústia que trago há séculos em mim,</em><br>\n<em>Transbordou da vasilha,</em><br>\n<em>Em lágrimas, em grandes imaginações,</em><br>\n<em>Em sonhos em estilo de pesadelo sem terror,</em><br>\n<em>Em grandes emoções súbitas sem sentido nenhum.</em></div>\n<p><em>Transbordou.</em></p>\n<p><em>Mal sei como conduzir-me na vida</em> <em>Com este mal-estar a fazer-me pregas na alma!</em></p>\n<p><em>Se ao menos endoidecesse deveras!</em></p>\n<div class=\"fcc-verse\"><em>Mas não: é este estar-entre,</em><br>\n<em><mark>Este quase,</mark></em><br>\n<em>Este poder ser que...,</em><br>\n<em>Isto.</em></div>\n<p><em>Um internado num manicômio é, ao menos, alguém.</em></p>\n<p><em>Eu sou um internado num manicômio sem manicômio.</em></p>\n<div class=\"fcc-verse\"><em>Estou doido a frio,</em><br>\n<em>Estou lúcido e louco,</em><br>\n<em>Estou alheio a tudo e igual a todos:</em><br>\n<em>Estou dormindo desperto com sonhos que são loucura</em><br>\n<em>Porque não são sonhos.</em></div>\n<p><em><mark>Estou assim...</mark></em></p>\n<span class=\"apoio-attrib\"><em>(Fernando Pessoa. <strong>Obra poética</strong>. Rio de Janeiro: Editora Nova Aguilar, 1997)</em></span>\n<p class=\"fcc-excerpt\"><em>As palavras podem mudar de classe gramatical sem sofrer modificação na forma. <u>A</u> este processo de enriquecimento vocabular pela mudança de</em> <em>classe das palavras dá-se o nome de</em> “<em>derivação imprópria</em>”.</p>\n<span class=\"apoio-attrib\"><em>(Adaptado de CUNHA, Celso. Gramática essencial. Rio de Janeiro: Lexikon, 2013)</em></span>",
     "imagem": null,
     "pergunta": "Constitui exemplo de derivação imprópria o vocábulo sublinhado em:",
     "alternativas": [
@@ -154,7 +154,7 @@
     "cargo": "TJ TRT23",
     "orgao": "TRT 23",
     "texto_apoio_titulo": null,
-    "texto_apoio": "<p>Para responder a questão a seguir, considere o conto “O perguntar e o responder”, de Carlos Drummond de Andrade.</p>\n<p>O espelho recusou-se a responder a Lavínia que ela é a mais bela mulher do Brasil. Aliás, não respondeu nada. Era um espelho muito silencioso.</p>\n<p>Lavínia retirou-o da parede e colocou outro, que emitia sons ininteligíveis, e foi também substituído. O terceiro espelho já fazia uso moderado da palavra, porém não dizia coisa com coisa.</p>\n<p>Um quarto espelho chegou a pronunciar nitidamente esta frase: “Vou pensar”. Ficou pensando a semana inteira, sem chegar à conclusão.</p>\n<p>Lavínia apelou <u>para um quinto espelho,</u> e este, antes que a vaidosa senhora fizesse a interrogação aflita, perguntou-lhe: − Mulher, haverá no Brasil espelho mais belo do que eu?</p>\n<span class=\"apoio-attrib\">(Adaptado de: ANDRADE, Carlos Drummond de. Contos plausíveis. São Paulo: Companhia das Letras, 2012)</span>",
+    "texto_apoio": "<p>Para responder a questão a seguir, considere o conto “O perguntar e o responder”, de Carlos Drummond de Andrade.</p>\n<p>O espelho recusou-se a responder a Lavínia que ela é a mais bela mulher do Brasil. Aliás, não respondeu nada. Era um espelho muito silencioso.</p>\n<p>Lavínia retirou-o da parede e colocou outro, que emitia sons ininteligíveis, e foi também substituído. O terceiro espelho já fazia uso moderado da palavra, porém não dizia coisa com coisa.</p>\n<p>Um quarto espelho chegou a pronunciar nitidamente esta frase: “Vou pensar”. Ficou pensando a semana inteira, sem chegar à conclusão.</p>\n<p>Lavínia apelou para um quinto espelho, e este, antes que a vaidosa senhora fizesse a interrogação aflita, perguntou-lhe: − Mulher, haverá no Brasil espelho mais belo do que eu?</p>\n<span class=\"apoio-attrib\">(Adaptado de: ANDRADE, Carlos Drummond de. Contos plausíveis. São Paulo: Companhia das Letras, 2012)</span>",
     "imagem": null,
     "pergunta": "Em “O espelho recusou-se a responder a Lavínia <u>que</u> ela é a mais bela mulher do Brasil.”, os termos sublinhados constituem, respectivamente,",
     "alternativas": [
@@ -182,11 +182,11 @@
     "imagem": null,
     "pergunta": "O termo <u>que</u> qualifica o substantivo na expressão “sorte geral” tem sentido oposto ao termo que qualifica o substantivo em:",
     "alternativas": [
-      " encanto imemorial.",
-      "b) obstinada contemplação.",
-      "c) cor incomum.",
-      "d) presteza austera.",
-      "<em>e) nota grave</em>."
+      "encanto imemorial.",
+      "obstinada contemplação.",
+      "cor incomum.",
+      "presteza austera.",
+      "<em>nota grave</em>."
     ],
     "correta": 2,
     "linkTec": "https://www.tecconcursos.com.br/questoes/2039105"
@@ -234,7 +234,7 @@
       "verdadeiro produto.",
       "falsas notícias.",
       "necessária reflexão.",
-      "<em>e) </em>interesses alheios."
+      "<em></em>interesses alheios."
     ],
     "correta": 1,
     "linkTec": "https://www.tecconcursos.com.br/questoes/2153963"
@@ -254,11 +254,11 @@
     "imagem": null,
     "pergunta": "O termo <u>que</u> qualifica o substantivo na expressão<em> lógica autônoma</em> tem sentido equivalente ao termo que qualifica o substantivo em:",
     "alternativas": [
-      "<em> racismo estrutural</em> .",
-      "<em>b) garantias fundamentais</em>.",
-      "<em>c) existência independente</em>.",
-      "d) requisitos minimalistas",
-      "e) últimas exigências."
+      "<em> racismo estrutural</em>.",
+      "<em>garantias fundamentais</em>.",
+      "<em>existência independente</em>.",
+      "requisitos minimalistas",
+      "últimas exigências."
     ],
     "correta": 2,
     "linkTec": "https://www.tecconcursos.com.br/questoes/2195825"
@@ -586,15 +586,15 @@
     "cargo": "TJ TRT22",
     "orgao": "TRT 22",
     "texto_apoio_titulo": "<u>Atenção:</u> Considere o texto a seguir para responder à questão.",
-    "texto_apoio": "<p><em><mark>A independência política em 1822 não trouxe muitas novidades</mark><strong>d</strong> em termos institucionais, mas consolidou um objetivo claro, qual seja: estruturar e</em> <em>justificar uma nova nação.</em></p>\n<p><em>A tarefa não era pequena e quem a assumiu foi o Instituto Histórico e Geográfico Brasileiro (IHGB), que, aberto em 1838, no Rio de Janeiro, logo deixaria</em> <em>claras suas principais metas: construir uma história que elevasse o passado e que fosse patriótica nas suas proposições, trabalhos e argumentos.</em></p>\n<p><em>Para referendar a coerência da filosofia que inaugurou o IHGB, basta prestar atenção no primeiro concurso público por lá organizado. Em 1844, abriam-</em> <em>se as portas para os candidatos que se dispusessem a discorrer sobre uma questão espinhosa: “Como se deve escrever a história do Brasil”. Tratava-se</em> <em>de inventar uma nova história do e para o Brasil. Foi dado, então, um pontapé inicial, e fundamental, para <mark>a disciplina que chamaríamos, anos mais tarde, e com grande naturalidade</mark><strong>a</strong>, de “História do Brasil”.</em></p>\n<p><em>A singularidade da competição também ficou associada a seu resultado e à divulgação do nome do vencedor. <mark>O primeiro lugar, nessa disputa histórica, foi para um estrangeiro</mark><strong>c</strong> − o conhecido naturalista bávaro Karl von Martius (1794-1868), cientista de ilibada importância, embora novato no que dizia</em> <em>respeito à história em geral e àquela do Brasil em particular − , o qual advogou a tese de que o país se definia por sua mistura, sem igual, de gentes e</em> <em>povos. Utilizando a metáfora de um caudaloso rio, correspondente à herança portuguesa que acabaria por “limpar” e “absorver os pequenos</em> <em>confluentes das raças índia e etiópica”, representava o país a partir da singularidade e dimensão da mestiçagem de povos por aqui existentes.</em></p>\n<p><em>A essa altura, porém, e depois de tantos séculos de vigência de um sistema violento como o escravocrata, era no mínimo complicado simplesmente</em> <em>exaltar a harmonia. Além do mais, indígenas continuavam sendo dizimados no litoral e no interior do país.</em></p>\n<p><em>Martius, que em 1832 havia publicado um ensaio chamado “O estado do direito entre os autóctones no Brasil”, condenando os indígenas ao desaparecimento, agora optava por definir o país por meio da redentora metáfora fluvial. <mark>Três longos rios resumiriam a nação</mark><strong>b</strong>: um grande e caudaloso,</em> <em>formado pelas populações brancas; outro um pouco menor, nutrido pelos indígenas; e ainda outro, mais diminuto, alimentado pelos negros.</em></p>\n<p><em>Ali estavam, pois, os três povos formadores do Brasil; todos juntos, mas (também) diferentes e separados. <mark>Mistura não era (e nunca foi) sinônimo de</em> <em>igualdade</mark>. Essa era uma ótima maneira de “inventar” uma história não só particular (uma monarquia tropical e mestiçada) como também muito otimista: <mark>a água que corria representava o futuro desse país</mark><strong>e</strong> constituído por um grande rio caudaloso no qual desaguavam os demais pequenos</em> <em>afluentes.</em></p>\n<p><em>É possível dizer que começava a ganhar força então a ladainha das três raças formadoras da nação, que continuaria encontrando ampla ressonância no</em> <em>Brasil, pelo tempo afora.</em></p>\n<span class=\"apoio-attrib\"><em>(Adaptado de: SCHWARCZ, Lilia Moritz.<strong> Sobre o autoritarismo brasileiro.</strong> São Paulo: Companhia das Letras, 2019)</em></span>\n<p class=\"fcc-excerpt\">em:</p>",
+    "texto_apoio": "<p><em><mark>A independência política em 1822 não trouxe muitas novidades</mark><strong>d</strong> em termos institucionais, mas consolidou um objetivo claro, qual seja: estruturar e</em> <em>justificar uma nova nação.</em></p>\n<p><em>A tarefa não era pequena e quem a assumiu foi o Instituto Histórico e Geográfico Brasileiro (IHGB), que, aberto em 1838, no Rio de Janeiro, logo deixaria</em> <em>claras suas principais metas: construir uma história que elevasse o passado e que fosse patriótica nas suas proposições, trabalhos e argumentos.</em></p>\n<p><em>Para referendar a coerência da filosofia que inaugurou o IHGB, basta prestar atenção no primeiro concurso público por lá organizado. Em 1844, abriam-</em> <em>se as portas para os candidatos que se dispusessem a discorrer sobre uma questão espinhosa: “Como se deve escrever a história do Brasil”. Tratava-se</em> <em>de inventar uma nova história do e para o Brasil. Foi dado, então, um pontapé inicial, e fundamental, para <mark>a disciplina que chamaríamos, anos mais tarde, e com grande naturalidade</mark><strong>a</strong>, de “História do Brasil”.</em></p>\n<p><em>A singularidade da competição também ficou associada a seu resultado e à divulgação do nome do vencedor. <mark>O primeiro lugar, nessa disputa histórica, foi para um estrangeiro</mark><strong>c</strong> − o conhecido naturalista bávaro Karl von Martius (1794-1868), cientista de ilibada importância, embora novato no que dizia</em> <em>respeito à história em geral e àquela do Brasil em particular −, o qual advogou a tese de que o país se definia por sua mistura, sem igual, de gentes e</em> <em>povos. Utilizando a metáfora de um caudaloso rio, correspondente à herança portuguesa que acabaria por “limpar” e “absorver os pequenos</em> <em>confluentes das raças índia e etiópica”, representava o país a partir da singularidade e dimensão da mestiçagem de povos por aqui existentes.</em></p>\n<p><em>A essa altura, porém, e depois de tantos séculos de vigência de um sistema violento como o escravocrata, era no mínimo complicado simplesmente</em> <em>exaltar a harmonia. Além do mais, indígenas continuavam sendo dizimados no litoral e no interior do país.</em></p>\n<p><em>Martius, que em 1832 havia publicado um ensaio chamado “O estado do direito entre os autóctones no Brasil”, condenando os indígenas ao desaparecimento, agora optava por definir o país por meio da redentora metáfora fluvial. <mark>Três longos rios resumiriam a nação</mark><strong>b</strong>: um grande e caudaloso,</em> <em>formado pelas populações brancas; outro um pouco menor, nutrido pelos indígenas; e ainda outro, mais diminuto, alimentado pelos negros.</em></p>\n<p><em>Ali estavam, pois, os três povos formadores do Brasil; todos juntos, mas (também) diferentes e separados. <mark>Mistura não era (e nunca foi) sinônimo de</em> <em>igualdade</mark>. Essa era uma ótima maneira de “inventar” uma história não só particular (uma monarquia tropical e mestiçada) como também muito otimista: <mark>a água que corria representava o futuro desse país</mark><strong>e</strong> constituído por um grande rio caudaloso no qual desaguavam os demais pequenos</em> <em>afluentes.</em></p>\n<p><em>É possível dizer que começava a ganhar força então a ladainha das três raças formadoras da nação, que continuaria encontrando ampla ressonância no</em> <em>Brasil, pelo tempo afora.</em></p>\n<span class=\"apoio-attrib\"><em>(Adaptado de: SCHWARCZ, Lilia Moritz.<strong> Sobre o autoritarismo brasileiro.</strong> São Paulo: Companhia das Letras, 2019)</em></span>\n<p class=\"fcc-excerpt\">em:</p>",
     "imagem": null,
     "pergunta": "O verbo sublinhado no segmento <em>Mistura não era (e nunca foi) sinônimo de igualdade </em>está flexionado nos mesmos tempo e modo <u>que</u> o sublinhado\nem:",
     "alternativas": [
-      "a) a disciplina que <u>chamaríamos,</u> anos mais tarde, e com grande naturalidade",
-      "b) Três longos rios <u>resumiriam</u> a nação",
-      "c) O primeiro lugar, nessa disputa histórica, <u>foi</u> para um estrangeiro",
-      "d) A independência política em 1822 não <u>trouxe</u> muitas novidades",
-      "e) a água que <u>corria</u> representava o futuro desse país"
+      "a disciplina que <u>chamaríamos,</u> anos mais tarde, e com grande naturalidade",
+      "Três longos rios <u>resumiriam</u> a nação",
+      "O primeiro lugar, nessa disputa histórica, <u>foi</u> para um estrangeiro",
+      "A independência política em 1822 não <u>trouxe</u> muitas novidades",
+      "a água que <u>corria</u> representava o futuro desse país"
     ],
     "correta": 4,
     "linkTec": "https://www.tecconcursos.com.br/questoes/2160271"
@@ -1022,11 +1022,11 @@
     "imagem": null,
     "pergunta": "<strong>*comborça</strong>: qualificação humilhante da amante de homem casado\nO verbo em negrito deve sua flexão ao termo sublinhado em:",
     "alternativas": [
-      "“<em><strong>Tinha </strong>três chaves <u>a porta;</u> uma <u>estava</u> com o escrivão, eu levaria outra, a terceira ficava em casa.</em>”",
-      "“<em>A casa em que eu <strong><u>estava</u> </strong>hospedado <u>era</u> a do escrivão Meneses, que fora casado, em primeiras núpcias, com uma de minhas primas.</em>”",
-      "“<em><strong>Chamavam</strong>-<u>lhe</u> “<u>a santa”,</u> e fazia jus ao título, tão facilmente suportava os esquecimentos do marido.</em>”",
+      "“<em><strong>Tinha </strong>três chaves <u>a porta;</u> uma estava com o escrivão, eu levaria outra, a terceira ficava em casa.</em>”",
+      "“<em>A casa em que eu <strong><u>estava</u> </strong>hospedado era a do escrivão Meneses, que fora casado, em primeiras núpcias, com uma de minhas primas.</em>”",
+      "“<em><strong>Chamavam</strong>-lhe “<u>a santa”,</u> e fazia jus ao título, tão facilmente suportava os esquecimentos do marido.</em>”",
       "“<em>Naquela noite de Natal <strong>foi </strong>o escrivão ao teatro.</em>”",
-      "“<em><strong>Tinha </strong>comigo <u>um romance,</u> os </em>Três Mosqueteiros<em>, velha tradução <u>creio</u> do Jornal do Comércio.</em>”"
+      "“<em><strong>Tinha </strong>comigo <u>um romance,</u> os </em>Três Mosqueteiros<em>, velha tradução creio do Jornal do Comércio.</em>”"
     ],
     "correta": 0,
     "linkTec": "https://www.tecconcursos.com.br/questoes/2152444"

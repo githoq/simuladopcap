@@ -58,7 +58,7 @@
     "cargo": "TJ TRT18",
     "orgao": "TRT 18",
     "texto_apoio_titulo": "<u>Atenção:</u> Considere o poema de Fernando Pessoa para responder à questão.",
-    "texto_apoio": "<p>Atenção: Considere o poema de Fernando Pessoa para responder à questão.</p>\n<div class=\"fcc-verse\">Às vezes, em sonho triste<br>\nNos meus desejos existe<br>\nLonginquamente um país<br>\nOnde ser feliz consiste<br>\nApenas em ser feliz.</div>\n<p>Vive-se <u>como se nasce</u> Sem o querer nem saber.</p>\n<div class=\"fcc-verse\">Nessa ilusão de viver<br>\nO tempo morre e renasce<br>\nSem que o sintamos correr.</div>\n<p>O sentir e o desejar São banidos dessa terra.</p>\n<div class=\"fcc-verse\">O amor não é amor<br>\nNesse país por onde erra<br>\nMeu longínquo divagar.</div>\n<p>Nem se sonha nem se vive: É uma infância sem fim.</p>\n<div class=\"fcc-verse\">Parece que se revive<br>\nTão suave é viver assim<br>\nNesse impossível <em>jardim</em>.</div>\n<span class=\"apoio-attrib\"><em>(PESSOA, Fernando. Obra poética. Rio de Rio de Janeiro: Editora Nova Aguilar, 1997)</em></span>",
+    "texto_apoio": "<p>Atenção: Considere o poema de Fernando Pessoa para responder à questão.</p>\n<div class=\"fcc-verse\">Às vezes, em sonho triste<br>\nNos meus desejos existe<br>\nLonginquamente um país<br>\nOnde ser feliz consiste<br>\nApenas em ser feliz.</div>\n<p>Vive-se como se nasce Sem o querer nem saber.</p>\n<div class=\"fcc-verse\">Nessa ilusão de viver<br>\nO tempo morre e renasce<br>\nSem que o sintamos correr.</div>\n<p>O sentir e o desejar São banidos dessa terra.</p>\n<div class=\"fcc-verse\">O amor não é amor<br>\nNesse país por onde erra<br>\nMeu longínquo divagar.</div>\n<p>Nem se sonha nem se vive: É uma infância sem fim.</p>\n<div class=\"fcc-verse\">Parece que se revive<br>\nTão suave é viver assim<br>\nNesse impossível <em>jardim</em>.</div>\n<span class=\"apoio-attrib\"><em>(PESSOA, Fernando. Obra poética. Rio de Rio de Janeiro: Editora Nova Aguilar, 1997)</em></span>",
     "imagem": null,
     "pergunta": "Exerce a função sintática de sujeito a expressão sublinhada em:",
     "alternativas": [
@@ -137,7 +137,7 @@
       "A água <u>que</u> corre",
       "<u>a cidadezinha</u> está calada, entrevada.",
       "Eu fico cá embaixo maginando na ponte <u>moderna</u>",
-      "O Rio <u>das Velhas</u> lambe <u>as casas velhas</u>",
+      "O Rio das Velhas lambe <u>as casas velhas</u>",
       "só <u>as torres</u> pontudas das igrejas / não brincam de esconder"
     ],
     "correta": 3,
@@ -158,11 +158,11 @@
     "imagem": null,
     "pergunta": "<em>O ânimo persuasivo só recrudesce e lança mão das artes e artimanhas da retórica quando se trata de incutir <u>opiniões</u></em>\nO termo sublinhado acima exerce a mesma função sintática <u>que</u> o também sublinhado em:",
     "alternativas": [
-      "<u>Em que</u> circunstâncias <u>alguém</u> se exalta e defende com ardor uma opinião",
-      "O simples fato <u>de que</u> uma <u>promessa</u> precisou ser feita",
+      "<u>Em que</u> circunstâncias alguém se exalta e defende com ardor uma opinião",
+      "O simples fato de que uma <u>promessa</u> precisou ser feita",
       "Só os deuses podem prometer, porque são <u>imortais</u>",
       "Ninguém sustenta fervorosamente que 7 x 8= 56, pois se pode mostrar que isto é <u>o caso</u>",
-      "O mesmo vale <u>para</u> o ato de prometer <u>alguma</u> coisa"
+      "O mesmo vale para o ato de prometer <u>alguma</u> coisa"
     ],
     "correta": 4,
     "linkTec": "https://www.tecconcursos.com.br/questoes/2850344"
@@ -298,7 +298,7 @@
     "cargo": "TJ TRT18",
     "orgao": "TRT 18",
     "texto_apoio_titulo": null,
-    "texto_apoio": "<p>Atenção: Leia a crônica “Pai de família sem plantação”, de Paulo Mendes Campos, para responder à questão.</p>\n<p><em>Sempre me lembro <u>da história exemplar</u> de um mineiro que veio até a capital, zanzou por aqui, e voltou para contar em casa os assombros da cidade.</em></p>\n<p><em>Seu velho pai balançou a cabeça; fazendo da própria dúvida a sua sabedoria: “É, meu filho, tudo isso pode ser muito bonito, mas pai de família que não</em> <em>tem plantação, não sei não...”</em> <em><mark>Às vezes morro de nostalgia.</mark> São momentos de sinceridade, nos quais todo o meu ser denuncia minha falsa condição de morador do Rio de Janeiro. A</em> <em>trepidação desta cidade não é minha. Sou mais, muito mais, querendo ou não querendo, de uma indolência de sol parado e gerânios. Minha terra é</em> <em>outra, minha gente não é esta, meu tempo é mais pausado, meus assuntos são mais humildes, minha fala, mais arrastada. O milho pendoou? Vamos ao</em> <em>pasto dos Macacos matar codorna? A vaca do coronel já deu cria? <mark>Desta literatura rural é que preciso.</mark></em></p>\n<p><em>Eis em torno de mim, a cingir-me como um anel, o Rio de Janeiro. Velozes automóveis me perseguem na rua, novos edifícios crescem fazendo barulho</em> <em>em meus ouvidos, a guerra comercial não me dá tréguas, o clamor do telefone me põe a funcionar sem querer, a vaga se espraia e repercute no meu</em> <em>peito, minha inocência não percebe o negócio de milhões articulado com um sorriso e um aperto de mão. <mark>Pois eu não sou <u>daqui.</u></mark></em></p>\n<p><em>Vivo em apartamento só por ter cedido a uma perversão coletiva; nasci em casa de dois planos, o de cima, da família, sobre tábuas lavadas, claro e sem</em> <em>segredos, e o de baixo, das crianças, o porão escuro, onde a vida se tece de nada, de pressentimentos, de imaginação, do estofo dos sonhos. A maciez</em> <em>das mãos que me cumprimentam na cidade tem qualquer coisa de peixe e mentira; não sou desta viração mesclada de maresia; não sei comer este</em> <em>prato vermelho e argênteo de crustáceos; não entendo os sinais que os navios trocam na cerração além da minha janela. Confio mais em mãos</em> <em>calosas, meus sentidos querem uma brisa à boca da noite cheirando a capim-gordura; um prato de tutu e torresmos para minha fome; e quando o trem</em> <em>distante apitasse na calada, pelo menos eu saberia em que sentimentos desfalecer.</em></p>\n<p><em>Ando bem sem automóvel, mas sinto falta de uma charrete. Com um matungo que me criasse amizade, eu visitaria o vigário, o médico, o turco, o</em> <em>promotor que lê Victor Hugo, o italiano que tem uma horta, o ateu local, o criminoso da cadeia, todos eles muitos meus amigos. Se aqui não vou à</em> <em>igreja, lá pelo menos frequentaria a doçura do adro, olhando o cemitério em aclive sobre a encosta, emoldurado em muros brancos. Aqui jaz Paulo</em> <em>Mendes Campos. Por favor, engavetem-me com simplicidade do lado da sombra. É tudo o que peço. E não é preciso rezar por minha alma</em> <em>desgovernada.</em></p>\n<span class=\"apoio-attrib\"><em>(Adaptado de: CAMPOS, Paulo Mendes. <strong>Balé do pato</strong>. São Paulo: Ática, 2012)</em></span>\n<p class=\"fcc-excerpt\">Expressão expletiva é uma expressão <u>que</u> não exerce função sintática. (Adaptado de: BECHARA, Evanildo. <strong>Moderna gramática portuguesa</strong>, 2009)</p>",
+    "texto_apoio": "<p>Atenção: Leia a crônica “Pai de família sem plantação”, de Paulo Mendes Campos, para responder à questão.</p>\n<p><em>Sempre me lembro da história exemplar de um mineiro que veio até a capital, zanzou por aqui, e voltou para contar em casa os assombros da cidade.</em></p>\n<p><em>Seu velho pai balançou a cabeça; fazendo da própria dúvida a sua sabedoria: “É, meu filho, tudo isso pode ser muito bonito, mas pai de família que não</em> <em>tem plantação, não sei não...”</em> <em><mark>Às vezes morro de nostalgia.</mark> São momentos de sinceridade, nos quais todo o meu ser denuncia minha falsa condição de morador do Rio de Janeiro. A</em> <em>trepidação desta cidade não é minha. Sou mais, muito mais, querendo ou não querendo, de uma indolência de sol parado e gerânios. Minha terra é</em> <em>outra, minha gente não é esta, meu tempo é mais pausado, meus assuntos são mais humildes, minha fala, mais arrastada. O milho pendoou? Vamos ao</em> <em>pasto dos Macacos matar codorna? A vaca do coronel já deu cria? <mark>Desta literatura rural é que preciso.</mark></em></p>\n<p><em>Eis em torno de mim, a cingir-me como um anel, o Rio de Janeiro. Velozes automóveis me perseguem na rua, novos edifícios crescem fazendo barulho</em> <em>em meus ouvidos, a guerra comercial não me dá tréguas, o clamor do telefone me põe a funcionar sem querer, a vaga se espraia e repercute no meu</em> <em>peito, minha inocência não percebe o negócio de milhões articulado com um sorriso e um aperto de mão. <mark>Pois eu não sou daqui.</mark></em></p>\n<p><em>Vivo em apartamento só por ter cedido a uma perversão coletiva; nasci em casa de dois planos, o de cima, da família, sobre tábuas lavadas, claro e sem</em> <em>segredos, e o de baixo, das crianças, o porão escuro, onde a vida se tece de nada, de pressentimentos, de imaginação, do estofo dos sonhos. A maciez</em> <em>das mãos que me cumprimentam na cidade tem qualquer coisa de peixe e mentira; não sou desta viração mesclada de maresia; não sei comer este</em> <em>prato vermelho e argênteo de crustáceos; não entendo os sinais que os navios trocam na cerração além da minha janela. Confio mais em mãos</em> <em>calosas, meus sentidos querem uma brisa à boca da noite cheirando a capim-gordura; um prato de tutu e torresmos para minha fome; e quando o trem</em> <em>distante apitasse na calada, pelo menos eu saberia em que sentimentos desfalecer.</em></p>\n<p><em>Ando bem sem automóvel, mas sinto falta de uma charrete. Com um matungo que me criasse amizade, eu visitaria o vigário, o médico, o turco, o</em> <em>promotor que lê Victor Hugo, o italiano que tem uma horta, o ateu local, o criminoso da cadeia, todos eles muitos meus amigos. Se aqui não vou à</em> <em>igreja, lá pelo menos frequentaria a doçura do adro, olhando o cemitério em aclive sobre a encosta, emoldurado em muros brancos. Aqui jaz Paulo</em> <em>Mendes Campos. Por favor, engavetem-me com simplicidade do lado da sombra. É tudo o que peço. E não é preciso rezar por minha alma</em> <em>desgovernada.</em></p>\n<span class=\"apoio-attrib\"><em>(Adaptado de: CAMPOS, Paulo Mendes. <strong>Balé do pato</strong>. São Paulo: Ática, 2012)</em></span>\n<p class=\"fcc-excerpt\">Expressão expletiva é uma expressão <u>que</u> não exerce função sintática. (Adaptado de: BECHARA, Evanildo. <strong>Moderna gramática portuguesa</strong>, 2009)</p>",
     "imagem": null,
     "pergunta": "Constitui uma expressão expletiva o <u>que</u> está sublinhado em:",
     "alternativas": [
@@ -327,7 +327,7 @@
     "pergunta": "O elemento sublinhado em “<em>pela maneira como se obtêm essas coisas</em>” (3o parágrafo) exerce a mesma função sintática daquele sublinhado em:",
     "alternativas": [
       "<em>A baleia telegrafou ao <u>superintendente</u> da Pesca</em> (1o parágrafo).",
-      "<em>O superintendente</em> [...] <em>respondeu à baleia <u>que</u> <u>não</u> podia fazer <u>nada</u></em> (2o parágrafo).",
+      "<em>O superintendente</em> [...] <em>respondeu à baleia que não podia fazer <u>nada</u></em> (2o parágrafo).",
       "<em>o esguicho dos cetáceos</em> [...] <em>dava <u>ideia de imenso jardim</u></em> (3o parágrafo).",
       "<em>Em face dessa <u>resolução,</u> todas as baleias providenciaram registro</em> (3o parágrafo).",
       "<em>Um inspetor <u>da Superintendência</u></em> [...] <em>pôs-se a examinar os livros</em> (4o parágrafo)."
@@ -346,7 +346,7 @@
     "cargo": "Ass TD (DPE AM)",
     "orgao": "DPE AM",
     "texto_apoio_titulo": "<u>Atenção:</u> Para responder à questão, leia o texto abaixo.",
-    "texto_apoio": "<p>Para responder à questão, leia o texto abaixo.</p>\n<p><em>A emissão de gases de efeito estufa é o principal motivo que torna o clima na Terra progressivamente mais quente a partir de meados do século XIX.</em></p>\n<p><em>Do início da Segunda Revolução Industrial até hoje, a temperatura média do planeta subiu cerca de 1,1 grau Celsius (ºC). No plano local, o estilo de vida</em> <em>urbano adotado atualmente pela maior parte da população global potencializa ainda mais o calor de fundo criado pelas mudanças climáticas. Desde</em> <em>2007, segundo estimativas da Organização das Nações Unidas (ONU), mais pessoas vivem em cidades do que no campo, <mark>um padrão de habitação e</mark></em> <em>ocupação do solo provavelmente inédito <u>na história da humanidade.</u></mark> Hoje, mais de 55% dos de bilhões de habitantes do planeta moram em centros</em> <em>urbanos. Em muitos países, esse percentual é bem maior e, no Brasil, chega a 88%.</em></p>\n<p><em>Com menos <u>áreas verdes,</u> mais concreto e asfalto e ocupação geralmente desordenada do solo. as cidades são mais abafadas do que as áreas rurais.</em></p>\n<p><em>Dentro do meio urbano. as zonas com menos árvores e vegetação são ainda mais quentes e formam bolsões de clima abafado. Esse efeito é</em> <em>denominado ilha de calor urbana. Até poucos anos atrás, ele era mais sentido e estudado em grandes cidades. com milhões de habitantes. como São</em> <em>Paulo, Rio de Janeiro ou qualquer outra grande metrópole. <mark>Hoje, as ilhas de calor se manifestam em cidades de qualquer tamanho, das menores às</mark></em> <em>maiores.</mark></em></p>\n<span class=\"apoio-attrib\"><em>(PIVETTA, Marcos. Disponivel em: https:revistapesquisa fapesp.br)</em></span>\n<p class=\"fcc-excerpt\"><em>Do início da Segunda Revolução Industrial até hoje, <u>a temperatura média do planeta</u> subiu cerca de 1,1 grau Celsius (ºC).</em></p>",
+    "texto_apoio": "<p>Para responder à questão, leia o texto abaixo.</p>\n<p><em>A emissão de gases de efeito estufa é o principal motivo que torna o clima na Terra progressivamente mais quente a partir de meados do século XIX.</em></p>\n<p><em>Do início da Segunda Revolução Industrial até hoje, a temperatura média do planeta subiu cerca de 1,1 grau Celsius (ºC). No plano local, o estilo de vida</em> <em>urbano adotado atualmente pela maior parte da população global potencializa ainda mais o calor de fundo criado pelas mudanças climáticas. Desde</em> <em>2007, segundo estimativas da Organização das Nações Unidas (ONU), mais pessoas vivem em cidades do que no campo, <mark>um padrão de habitação e</mark></em> <em>ocupação do solo provavelmente inédito na história da humanidade.</mark> Hoje, mais de 55% dos de bilhões de habitantes do planeta moram em centros</em> <em>urbanos. Em muitos países, esse percentual é bem maior e, no Brasil, chega a 88%.</em></p>\n<p><em>Com menos áreas verdes, mais concreto e asfalto e ocupação geralmente desordenada do solo. as cidades são mais abafadas do que as áreas rurais.</em></p>\n<p><em>Dentro do meio urbano. as zonas com menos árvores e vegetação são ainda mais quentes e formam bolsões de clima abafado. Esse efeito é</em> <em>denominado ilha de calor urbana. Até poucos anos atrás, ele era mais sentido e estudado em grandes cidades. com milhões de habitantes. como São</em> <em>Paulo, Rio de Janeiro ou qualquer outra grande metrópole. <mark>Hoje, as ilhas de calor se manifestam em cidades de qualquer tamanho, das menores às</mark></em> <em>maiores.</mark></em></p>\n<span class=\"apoio-attrib\"><em>(PIVETTA, Marcos. Disponivel em: https:revistapesquisa fapesp.br)</em></span>\n<p class=\"fcc-excerpt\"><em>Do início da Segunda Revolução Industrial até hoje, <u>a temperatura média do planeta</u> subiu cerca de 1,1 grau Celsius (ºC).</em></p>",
     "imagem": null,
     "pergunta": "O elemento <u>que</u> exerce, no contexto em que se encontra, a mesma função sintática que o sublinhado na frase acima está também sublinhado em:",
     "alternativas": [
@@ -376,8 +376,8 @@
     "alternativas": [
       "Provavelmente, a grande <u>literatura</u> seja isso mesmo.",
       "o poder de esta nos interpelar com a realidade <u>que</u> ilustra ou denuncia.",
-      "<u>Este</u> livro é uma surpreendente obra literária e é um libelo <u>acusatório</u> virulento.",
-      "O Cão Tinhoso tinha uns <u>olhos</u> azuis <u>que</u> <u>não</u> tinham brilho nenhum.",
+      "Este livro é uma surpreendente obra literária e é um libelo <u>acusatório</u> virulento.",
+      "O Cão Tinhoso tinha uns <u>olhos</u> azuis que não tinham brilho nenhum.",
       "escrevo sobre coisas que, acontecendo <u>à minha</u> volta se relacionem intimamente comigo."
     ],
     "correta": 0,
@@ -422,8 +422,8 @@
     "imagem": null,
     "pergunta": "A expressão sublinhada em<em> Pouco tempo depois fugiu o <u>rapaz</u> ao seminário</em> (4º parágrafo) exerce a mesma função sintática daquela sublinhada em:",
     "alternativas": [
-      "<em><u>Este</u> <u>não</u> deu por ele</em> (8º parágrafo)",
-      "<em><u>Não</u> posso <u>nada</u></em> (14º parágrafo)",
+      "<em><u>Este</u> não deu por ele</em> (8º parágrafo)",
+      "<em>Não posso <u>nada</u></em> (14º parágrafo)",
       "<em>A verdadeira grandeza é <u>chã</u></em> (3º parágrafo)",
       "<em>Desconhecia <u>as ruas</u></em> (1º partgrafo)",
       "<em>Não assentara no ponto de refugio</em> (1º parágrafo)"
@@ -447,9 +447,9 @@
     "pergunta": "Constitui uma expressão expletiva a expressão sublinhada em:",
     "alternativas": [
       "<em><u>Enfim,</u> o padre tomara uma atitude perfeitamente normal</em> (6° parágrafo)",
-      "<em>estas esperavam <u>que</u> o senhor vigário arrancasse sem mais <u>demora</u> todos os pés de hortaliças.</em> (9º parágrafo)",
+      "<em>estas esperavam que o senhor vigário arrancasse sem mais <u>demora</u> todos os pés de hortaliças.</em> (9º parágrafo)",
       "<em>Deus, <u>de repente,</u> chamara o farmacêutico.</em> (8º parágrafo)",
-      "<em><u>Parece</u> <u>que</u> ele até faz pouco-caso da gente.</em> (2º parágrafo)",
+      "<em><u>Parece</u> que ele até faz pouco-caso da gente.</em> (2º parágrafo)",
       "<em>Na porta do estabelecimento deste último <u>é que</u> se discutia a personalidade do vigário.</em> (1º parágrafo)"
     ],
     "correta": 4,
@@ -640,9 +640,9 @@
     "alternativas": [
       "O natural é que o gato seja manhoso; a águia, nobre;",
       "E, na vida, há tanta gente.",
-      " Aquele homem, porém, estava lúcido.",
+      "Aquele homem, porém, estava lúcido.",
       "Não lhe recordava o nome, nem tinha a menor ideia de quando o vi pela primeira ou pela última vez.",
-      " A beleza, a coragem e as esperanças do menino."
+      "A beleza, a coragem e as esperanças do menino."
     ],
     "correta": 0,
     "linkTec": "https://www.tecconcursos.com.br/questoes/2395473"
@@ -734,11 +734,11 @@
     "imagem": null,
     "pergunta": "O emprego da vírgula antes de uma conjunção se justifica porque assinala que há duas orações com sujeitos diferentes no seguinte trecho:",
     "alternativas": [
-      "a) Eu via o rosto sério de Yaqub, e imaginei o que teria lhe acontecido.",
-      "b) Fui obrigado a me separar de todos, de tudo.",
-      "<em>c) Yaqub e minha mãe juntos, numa canoa.",
+      "Eu via o rosto sério de Yaqub, e imaginei o que teria lhe acontecido.",
+      "Fui obrigado a me separar de todos, de tudo.",
+      "<em>Yaqub e minha mãe juntos, numa canoa.",
       "Ele olhou a imagem, e procurou com os olhos o lugar da margem em que algum dia fora feliz.</em>",
-      "e) A floresta escurecia às nossas costas, e o clarão da cidade aumentava"
+      "A floresta escurecia às nossas costas, e o clarão da cidade aumentava"
     ],
     "correta": 4,
     "linkTec": "https://www.tecconcursos.com.br/questoes/2712949"
@@ -999,7 +999,7 @@
     "pergunta": "Está plenamente adequado o emprego do elemento sublinhado na frase:",
     "alternativas": [
       "As reações hostis <u>com que</u> são vítimas os imigrantes constituem um crime contra a humanidade.",
-      "Os preconceitos culturais <u>aos quais</u> tantos povos <u>que</u> se dizem superiores se nutrem são abomináveis.",
+      "Os preconceitos culturais <u>aos quais</u> tantos povos que se dizem superiores se nutrem são abomináveis.",
       "Os valores <u>por cujos</u> algumas culturas se afirmam podem ser perfeitamente contraditados por outras.",
       "Os critérios de valor <u>dos quais</u> algumas civilizações não prescindiram acabaram por se tornar anacrônicos.",
       "A diversidade de valores, <u>da qual</u> tantos fazem questão de ignorar, deveria ser vista como natural num mundo globalizado."
@@ -1073,7 +1073,7 @@
       "A tradição dos relatos orais, <u>na qual</u> o velho Braga não desconhecia, representava-se em suas crônicas.",
       "O processo de coordenação <u>a que</u> o cronista recorria costumeiramente era uma das marcas de seu estilo.",
       "As crônicas de Rubem Braga <u>das quais</u> todos esperavam com ansiedade, eram simples e densas.",
-      "A impressão <u>por cuja</u> somos tomados, quando lemos o velho Braga, é <u>a de que</u> se trata de um mágico",
+      "A impressão <u>por cuja</u> somos tomados, quando lemos o velho Braga, é a de que se trata de um mágico",
       "A experiência pessoal não costuma ser uma fonte <u>aonde</u> os escritores costumam se valer o tempo lado."
     ],
     "correta": 1,
@@ -1090,7 +1090,7 @@
     "cargo": "Sold (PM BA)",
     "orgao": "PM BA",
     "texto_apoio_titulo": "Leia o texto do economista Ignacy Sachs para responder a questão.",
-    "texto_apoio": "<p>Leia o texto do economista Ignacy Sachs para responder a questão.</p>\n<p><em>Será o Brasil o eterno país do futuro? Quase sessenta após ...I... publicação do conhecido livro de Stefan Zweig, não obstante um século de crescimento</em> <em>econômico sobremodo rápido e de modernização espetacular no decurso do qual a sua produção decuplicou e o PIB foi multiplicado por quarenta, o</em> <em>Brasil não consegue superar o seu fantástico atraso social. Graças ...II.... bem- -sucedida industrialização substitutiva das importações, conduzida nas</em> <em>décadas de 1950, 1960 e 1970, o Brasil se ergueu ...III.... posição de nona potência econômica do mundo. É hoje um país mal desenvolvido por ter</em> <em>adotado um padrão de crescimento socialmente perverso. Ostenta uma das mais regressivas repartições da renda no mundo, com diferenças abismais</em> <em>entre a minoria dos ganhadores e a massa dos sacrificados.</em></p>\n<span class=\"apoio-attrib\">(Adaptado de: PINHEIRO, Paulo Sérgio et al. (orgs.). Brasil: um século de transformações. São Paulo: Companhia das Letras, 2001)</span>",
+    "texto_apoio": "<p>Leia o texto do economista Ignacy Sachs para responder a questão.</p>\n<p><em>Será o Brasil o eterno país do futuro? Quase sessenta após...I... publicação do conhecido livro de Stefan Zweig, não obstante um século de crescimento</em> <em>econômico sobremodo rápido e de modernização espetacular no decurso do qual a sua produção decuplicou e o PIB foi multiplicado por quarenta, o</em> <em>Brasil não consegue superar o seu fantástico atraso social. Graças...II... bem- -sucedida industrialização substitutiva das importações, conduzida nas</em> <em>décadas de 1950, 1960 e 1970, o Brasil se ergueu...III... posição de nona potência econômica do mundo. É hoje um país mal desenvolvido por ter</em> <em>adotado um padrão de crescimento socialmente perverso. Ostenta uma das mais regressivas repartições da renda no mundo, com diferenças abismais</em> <em>entre a minoria dos ganhadores e a massa dos sacrificados.</em></p>\n<span class=\"apoio-attrib\">(Adaptado de: PINHEIRO, Paulo Sérgio et al. (orgs.). Brasil: um século de transformações. São Paulo: Companhia das Letras, 2001)</span>",
     "imagem": null,
     "pergunta": "Em conformidade com a norma-padrão da língua portuguesa, as lacunas I, II e III devem ser preenchidas, respectivamente, por:",
     "alternativas": [

@@ -233,7 +233,7 @@ function exportExamPDF(exam){
 /* ── RESET & PAGE ── */
 *{box-sizing:border-box;margin:0;padding:0}
 @page{size:A4 portrait;margin:12mm 13mm 14mm 13mm}
-body{font-family:"Times New Roman",Times,serif;font-size:10pt;color:#1a1a1a;background:#fff;line-height:1.4;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+body{font-family:"Times New Roman",Times,serif;font-size:9.5pt;color:#1a1a1a;background:#fff;line-height:1.38;-webkit-print-color-adjust:exact;print-color-adjust:exact}
 
 /* ── COVER HEADER ── */
 /* ── COVER HEADER (estilo prova oficial FCC, impressão limpa) ── */
@@ -275,7 +275,7 @@ body{font-family:"Times New Roman",Times,serif;font-size:10pt;color:#1a1a1a;back
 /* ── QUESTION ── */
 /* ── QUESTÃO: regras de paginação inteligente ── */
 .question{
-  margin-bottom:8pt;padding-bottom:6pt;border-bottom:.5pt solid #ccc;
+  margin-bottom:6pt;padding-bottom:4pt;border-bottom:.5pt solid #ccc;
   /* NÃO usar page-break-inside:avoid aqui — questões longas
      inevitavelmente quebrarão; controlamos onde ocorre a quebra */
   break-inside:auto;page-break-inside:auto;
@@ -284,7 +284,7 @@ body{font-family:"Times New Roman",Times,serif;font-size:10pt;color:#1a1a1a;back
 /* Cabeçalho NUNCA fica sozinho na página */
 .q-header{
   display:block;margin-bottom:4pt;
-  break-after:avoid;page-break-after:avoid;
+  
 }
 /* Pergunta não começa em página nova separada do apoio */
 .q-text{
@@ -299,13 +299,13 @@ body{font-family:"Times New Roman",Times,serif;font-size:10pt;color:#1a1a1a;back
 /* Cada alternativa individual não quebra */
 .alt-row{break-inside:avoid;page-break-inside:avoid}
 /* Apoio longo pode quebrar, mas com orfãos/viúvas controlados */
-.q-apoio{orphans:3;widows:3}
+
 .q-num{font-weight:bold;font-size:10.5pt;color:#000;display:inline-block}
 .q-sub{font-size:8.5pt;color:#555;font-style:italic}
-.q-apoio{background:#fafafa;border-left:2pt solid #333;padding:10pt 14pt;margin-bottom:0;border-radius:0 4pt 4pt 0;page-break-inside:avoid}
+.q-apoio{background:#fafafa;border-left:2pt solid #333;padding:7pt 10pt;margin-bottom:0;border-radius:0 4pt 4pt 0}
 .q-apoio-title{text-align:center;font-weight:bold;font-size:10.5pt;margin-bottom:7pt;color:#1a2b3c}
-.q-apoio-body{font-size:10pt;line-height:1.55;color:#1a1a1a;word-wrap:break-word}
-.q-apoio-body p{margin:0 0 6pt;line-height:1.55;font-style:italic}
+.q-apoio-body{font-size:9.5pt;line-height:1.45;color:#1a1a1a;word-wrap:break-word}
+.q-apoio-body p{margin:0 0 4pt;line-height:1.45;font-style:italic}
 .q-apoio-body p.fcc-excerpt{margin-top:8pt;padding:5pt 8pt;border-top:.5pt solid #999;border-left:1.5pt solid #c8a75d;background:#fffbf0}
 .q-apoio-body p.fcc-excerpt u{text-decoration:underline;text-underline-offset:2pt}
 .q-apoio-body p:last-child{margin-bottom:0}
@@ -316,10 +316,10 @@ body{font-family:"Times New Roman",Times,serif;font-size:10pt;color:#1a1a1a;back
 .q-apoio-body .apoio-attrib{display:block;text-align:right;margin-top:4pt;font-size:.92em;color:#555;font-style:italic}
 .q-apoio-body .apoio-title strong,.q-apoio-body center.apoio-title strong{background:transparent!important;font-weight:bold;font-size:1.05em;padding:0!important;color:#000}
 .q-apoio-body u{text-decoration:underline;text-underline-offset:2px}
-.q-apoio-body br{display:block;margin-bottom:0.1em}
-.q-apoio-body p{margin-bottom:0.4em}
-.q-apoio-body br+br{margin-bottom:0.35em}
-.q-apoio-divider{height:1px;background:linear-gradient(to right,#4a7fa5 0%,transparent 80%);margin:10pt 0 8pt}
+
+
+
+.q-apoio-divider{height:.5pt;background:#ccc;margin:8pt 0 6pt}
 .q-img{display:block;max-width:100%;height:auto;margin:8pt auto 10pt;border-radius:4pt;page-break-inside:avoid}
 .q-img-wrap{text-align:center;margin:6pt 0 10pt;page-break-inside:avoid}
 .q-text{line-height:1.55;text-align:justify;margin-bottom:5pt;font-size:10pt;color:#111}
@@ -329,7 +329,7 @@ body{font-family:"Times New Roman",Times,serif;font-size:10pt;color:#1a1a1a;back
 .q-text br{display:block;margin-bottom:0.12em}
 .q-text p{margin-bottom:0.45em}
 .alts{margin-left:4pt}
-.alt-row{display:flex;gap:5pt;margin-bottom:1.5pt;line-height:1.4;page-break-inside:avoid}
+.alt-row{display:flex;gap:4pt;margin-bottom:1pt;line-height:1.38;page-break-inside:avoid}
 .alt-ltr{font-weight:bold;font-size:10pt;min-width:13pt;flex-shrink:0}
 .alt-txt{font-size:10pt;line-height:1.55}
 .alt-txt em,.alt-txt i{font-style:italic}
