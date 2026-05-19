@@ -43,7 +43,6 @@ export function SidePanel({
     : 0;
 
   return (
-  return (
     <>
       {/* ── Backdrop: CSS transition — pointer-events-none quando fechado ── */}
       <div
