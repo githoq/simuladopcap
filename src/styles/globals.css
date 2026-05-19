@@ -52,19 +52,30 @@
   .fcc-apoio-body {
     font-family: Georgia, "Times New Roman", serif;
     font-size: 14px;              /* exactly 14px — institutional */
-    line-height: 1.60;            /* academic density, not modern readability */
+    line-height: 1.58;            /* slightly tighter than before */
     color: #D1D5DB;
     word-break: break-word;
     -webkit-font-smoothing: antialiased;
   }
 
   .fcc-apoio-body p {
-    margin-bottom: 0.50em;        /* FCC institutional rhythm */
+    margin-bottom: 0.45em;        /* FCC institutional rhythm — compact */
     font-style: italic;
-    line-height: 1.60;
+    line-height: 1.58;
   }
 
   .fcc-apoio-body p:last-child { margin-bottom: 0; }
+
+  /* ── EXAM MODE apoio — pure editorial, no chrome ─────────────────── */
+  .fcc-apoio-exam {
+    padding: 0;
+    margin-bottom: 0.65rem;
+  }
+
+  .fcc-apoio-exam .fcc-apoio-body {
+    /* Exam mode: slightly lighter italic to distinguish from stem */
+    color: #C8CDD6;
+  }
 
   /* Inline marks — preserve semantic emphasis */
   .fcc-apoio-body em,
@@ -81,6 +92,33 @@
     text-decoration-skip-ink: none;        /* no modern skip — full underline */
     text-decoration-color: currentColor;   /* matches text, always visible */
     font-style: inherit;
+  }
+
+  /* ── CRITICAL: <em><u> and <u><em> — italic + underline combined ─── */
+  /* 55 questions in the bank require this — must be explicit            */
+  .fcc-apoio-body em u,
+  .fcc-apoio-body u em,
+  .fcc-pergunta em u,
+  .fcc-pergunta u em,
+  .fcc-alt-text em u,
+  .fcc-alt-text u em {
+    text-decoration: underline;
+    text-decoration-thickness: from-font;
+    text-underline-offset: 1px;
+    text-decoration-skip-ink: none;
+    text-decoration-color: currentColor;
+    font-style: italic;
+  }
+
+  /* <strong><u> combination */
+  .fcc-apoio-body strong u,
+  .fcc-pergunta strong u,
+  .fcc-alt-text strong u {
+    text-decoration: underline;
+    text-decoration-thickness: from-font;
+    text-underline-offset: 1px;
+    text-decoration-skip-ink: none;
+    font-weight: 700;
   }
 
   /* ── Mark (grifo FCC) ───────────────────────────────────────────── */
@@ -100,7 +138,7 @@
     font-style: normal;
     font-weight: 700;
     color: #F3F4F6;
-    margin-bottom: 0.65em;
+    margin-bottom: 0.60em;
     letter-spacing: 0.015em;
   }
 
@@ -115,7 +153,7 @@
   .fcc-apoio-body .apoio-attrib {
     display: block;
     text-align: right;
-    margin-top: 0.5em;
+    margin-top: 0.45em;
     font-size: 12px;
     color: #4B5563;
     font-style: italic;
@@ -125,7 +163,7 @@
   .fcc-apoio-body .fcc-verse {
     font-style: italic;
     display: block;
-    line-height: 1.65;
+    line-height: 1.62;
   }
 
   /* Highlighted excerpt — institutional left-rule style */
@@ -137,7 +175,7 @@
     background: transparent;
     font-style: italic;
     font-size: 13.5px;
-    line-height: 1.60;
+    line-height: 1.58;
     color: #C9CDD4;
   }
 

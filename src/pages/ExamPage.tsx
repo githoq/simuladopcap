@@ -171,6 +171,7 @@ export default function ExamPage({ exam, onFinish }: ExamPageProps) {
             userAnswer={answers[q.numero_simulado] ?? null}
             isFlagged={flagged.has(q.numero_simulado)}
             isTreino={isTreino}
+            isExam={true}
             showResult={false}
             onAnswer={handleAnswer}
             onFlag={toggleFlag}

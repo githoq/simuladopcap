@@ -30,6 +30,7 @@ interface QuestionCardProps {
   userAnswer?: number | null;
   isFlagged?:  boolean;
   isTreino?:   boolean;
+  isExam?:     boolean;   // true = modo prova: apoio sem label/accordion
   showResult?: boolean;
   onAnswer?:   (numero: number, idx: number) => void;
   onFlag?:     (numero: number) => void;
@@ -40,7 +41,7 @@ interface QuestionCardProps {
 
 export function QuestionCard({
   question, numero, total, userAnswer, isFlagged = false,
-  isTreino = false, showResult = false,
+  isTreino = false, isExam = false, showResult = false,
   onAnswer, onFlag, onNext, onPrev, onSkip,
 }: QuestionCardProps) {
   const [localAnswer, setLocalAnswer] = useState<number | null>(
@@ -108,10 +109,10 @@ export function QuestionCard({
         </div>
 
         {/* ── Body — compact institutional spacing ──────────────────── */}
-        <div className="px-4 py-2 space-y-2">
+        <div className="px-4 py-2 space-y-1.5">
 
           {question.texto_apoio && (
-            <ApoioBlock question={question} />
+            <ApoioBlock question={question} isExam={isExam} />
           )}
 
           {question.imagem && (

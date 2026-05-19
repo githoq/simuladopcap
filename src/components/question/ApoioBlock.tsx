@@ -1,14 +1,12 @@
 /**
  * ApoioBlock — FCC support text block.
  *
- * Design target: NOT a UI callout component.
- * Target: embedded editorial passage, document-native.
+ * EXAM MODE (isExam=true):
+ *   Pure editorial inline flow — no label, no toggle, no wrapper chrome.
+ *   Identical to reading a printed FCC exam booklet.
  *
- * Visual treatment:
- * - No border-left (removed — was too "callout box")
- * - Hairline border-top + border-bottom (document passage separator)
- * - Ultra-minimal label, almost invisible
- * - Content flows as part of the document
+ * REVIEW MODE (isExam=false, default):
+ *   Collapsible with "Texto de apoio" label — for post-exam review.
  */
 
 import { useState } from "react";
@@ -20,9 +18,10 @@ import type { Question } from "../../types";
 interface ApoioBlockProps {
   question:   Question;
   className?: string;
+  isExam?:    boolean;   // true = prova real: sem label, sem accordion
 }
 
-export function ApoioBlock({ question, className }: ApoioBlockProps) {
+export function ApoioBlock({ question, className, isExam = false }: ApoioBlockProps) {
   const [collapsed, setCollapsed] = useState(false);
 
   if (!question.texto_apoio) return null;
@@ -31,12 +30,20 @@ export function ApoioBlock({ question, className }: ApoioBlockProps) {
   const content  = renderer.renderApoio(question.texto_apoio, question);
   if (!content) return null;
 
+  // ── EXAM MODE — editorial puro ──────────────────────────────────────
+  if (isExam) {
+    return (
+      <div className={cn("fcc-apoio-exam w-full", className)}>
+        {content}
+      </div>
+    );
+  }
+
+  // ── REVIEW MODE — collapsível com label ─────────────────────────────
   return (
     <div className={cn("w-full", className)}>
-      {/* ── Horizontal separator (top) ─────────────────────────────── */}
       <div className="h-px bg-white/[0.05] mb-2" />
 
-      {/* ── Minimal collapse trigger ────────────────────────────────── */}
       <button
         onClick={() => setCollapsed((v) => !v)}
         className="flex items-center gap-1.5 mb-1.5 group"
@@ -46,7 +53,6 @@ export function ApoioBlock({ question, className }: ApoioBlockProps) {
         </span>
       </button>
 
-      {/* ── Content — document-embedded ───────────────────────────── */}
       <AnimatePresence initial={false}>
         {!collapsed && (
           <motion.div
@@ -63,7 +69,6 @@ export function ApoioBlock({ question, className }: ApoioBlockProps) {
         )}
       </AnimatePresence>
 
-      {/* ── Horizontal separator (bottom) ──────────────────────────── */}
       {!collapsed && <div className="h-px bg-white/[0.05] mt-2" />}
     </div>
   );

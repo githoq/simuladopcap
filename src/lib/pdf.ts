@@ -41,7 +41,7 @@ export function exportExamPDF(exam: Exam): void {
       font-size: 11pt;
       color: #000;
       background: #fff;
-      line-height: 1.46;
+      line-height: 1.42;
     }
 
     /* ── Compact editorial header ──────────────────────── */
@@ -73,7 +73,7 @@ export function exportExamPDF(exam: Exam): void {
 
     /* ── Question wrapper ───────────────────────────────── */
     .question {
-      margin-bottom: 12pt;
+      margin-bottom: 10pt;
       page-break-inside: auto;
     }
 
@@ -91,7 +91,7 @@ export function exportExamPDF(exam: Exam): void {
     }
     .q-apoio-body {
       font-size: 10pt;
-      line-height: 1.46;
+      line-height: 1.42;
       font-style: italic;
     }
     .q-apoio-body p { margin-bottom: 5pt; }
@@ -141,7 +141,7 @@ export function exportExamPDF(exam: Exam): void {
     /* ── Question stem — block, no hanging indent ───────── */
     .q-text {
       font-size: 11pt;
-      line-height: 1.46;
+      line-height: 1.42;
       margin-bottom: 5pt;
     }
     .q-text p { margin-bottom: 4pt; }
@@ -163,7 +163,7 @@ export function exportExamPDF(exam: Exam): void {
       margin-bottom: 1.5pt;
       page-break-inside: avoid;
       font-size: 11pt;
-      line-height: 1.46;
+      line-height: 1.42;
     }
     .alt-ltr { display: inline; margin-right: 2pt; }
     .alt-txt { display: inline; }

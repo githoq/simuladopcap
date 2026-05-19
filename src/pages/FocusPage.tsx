@@ -175,6 +175,7 @@ export default function FocusPage({ exam, onFinish }: FocusPageProps) {
                 total={total}
                 userAnswer={answers[q.numero_simulado] ?? null}
                 isTreino={isTreino}
+              isExam={true}
                 showResult={false}
                 onAnswer={(num, idx) => setAnswers((a) => ({ ...a, [num]: idx }))}
                 onPrev={cur > 0          ? () => setCur((c) => c - 1) : undefined}
