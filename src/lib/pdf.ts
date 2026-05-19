@@ -56,16 +56,8 @@ export function exportExamPDF(exam: Exam): void {
       text-transform: uppercase;
       letter-spacing: 0.8pt;
     }
-    .h-sub {
-      font-size: 9pt;
-      color: #222;
-      margin-top: 1pt;
-    }
-    .h-info {
-      font-size: 8pt;
-      color: #555;
-      margin-top: 1pt;
-    }
+    .h-sub  { font-size: 9pt;  color: #222; margin-top: 1pt; }
+    .h-info { font-size: 8pt;  color: #555; margin-top: 1pt; }
 
     /* ── Discipline block header ────────────────────────── */
     .disc-title {
@@ -79,12 +71,21 @@ export function exportExamPDF(exam: Exam): void {
       page-break-after: avoid;
     }
 
-    /* ── Question ───────────────────────────────────────── */
+    /* ── Question wrapper ───────────────────────────────── */
     .question {
-      margin-bottom: 10pt;
+      margin-bottom: 12pt;
+      page-break-inside: auto;
     }
 
-    /* ── Support text — plain editorial ─────────────────── */
+    /* ── Question number — OWN LINE, before everything ──── */
+    .q-num {
+      font-size: 11pt;
+      font-weight: bold;
+      line-height: 1.3;
+      margin-bottom: 3pt;
+    }
+
+    /* ── Support text — plain editorial, after number ───── */
     .q-apoio {
       margin-bottom: 5pt;
     }
@@ -96,12 +97,35 @@ export function exportExamPDF(exam: Exam): void {
     .q-apoio-body p { margin-bottom: 5pt; }
     .q-apoio-body p:last-child { margin-bottom: 0; }
     .q-apoio-body .apoio-title,
-    .q-apoio-body center { text-align: center; font-style: normal; font-weight: bold; margin-bottom: 4pt; }
-    .q-apoio-body .apoio-attrib { text-align: right; font-size: 9pt; color: #444; margin-top: 3pt; }
-    .q-apoio-body .fcc-excerpt { display: block; margin: 4pt 0; padding-left: 8pt; border-left: 0.5pt solid #888; }
-    .q-apoio-body .fcc-verse { font-style: italic; display: block; }
-    .q-apoio-body u { text-decoration: underline; text-decoration-skip-ink: none; text-decoration-thickness: from-font; text-underline-offset: 0.5px; }
-    .q-apoio-body em, .q-apoio-body i { font-style: italic; }
+    .q-apoio-body center {
+      text-align: center;
+      font-style: normal;
+      font-weight: bold;
+      margin-bottom: 4pt;
+    }
+    .q-apoio-body .apoio-attrib {
+      text-align: right;
+      font-size: 9pt;
+      color: #444;
+      margin-top: 3pt;
+    }
+    .q-apoio-body .fcc-excerpt {
+      display: block;
+      margin: 4pt 0;
+      padding-left: 10pt;
+      border-left: 0.5pt solid #888;
+    }
+    .q-apoio-body .fcc-verse {
+      font-style: italic;
+      display: block;
+    }
+    .q-apoio-body u {
+      text-decoration-line: underline;
+      text-decoration-thickness: from-font;
+      text-underline-offset: 1px;
+      text-decoration-skip-ink: none;
+    }
+    .q-apoio-body em, .q-apoio-body i  { font-style: italic; }
     .q-apoio-body strong, .q-apoio-body b { font-weight: bold; }
     .q-apoio-body mark { background: transparent; font-weight: bold; }
 
@@ -114,40 +138,47 @@ export function exportExamPDF(exam: Exam): void {
       page-break-inside: avoid;
     }
 
-    /* ── Question stem with hanging number ──────────────── */
-    .q-stem {
+    /* ── Question stem — block, no hanging indent ───────── */
+    .q-text {
       font-size: 11pt;
       line-height: 1.46;
-      margin-bottom: 4pt;
-      text-indent: -14pt;
-      padding-left: 14pt;
+      margin-bottom: 5pt;
     }
-    .q-stem p { display: inline; margin: 0; }
-    .q-stem u { text-decoration: underline; text-decoration-skip-ink: none; text-decoration-thickness: from-font; text-underline-offset: 0.5px; }
-    .q-stem em, .q-stem i { font-style: italic; }
-    .q-stem strong, .q-stem b { font-weight: bold; }
-    .q-stem mark { background: transparent; font-weight: bold; }
+    .q-text p { margin-bottom: 4pt; }
+    .q-text p:last-child { margin-bottom: 0; }
+    .q-text u {
+      text-decoration-line: underline;
+      text-decoration-thickness: from-font;
+      text-underline-offset: 1px;
+      text-decoration-skip-ink: none;
+    }
+    .q-text em, .q-text i  { font-style: italic; }
+    .q-text strong, .q-text b { font-weight: bold; }
+    .q-text mark { background: transparent; font-weight: bold; }
 
     /* ── Alternatives ───────────────────────────────────── */
-    .alts { margin-top: 2pt; padding-left: 4pt; }
+    .alts { margin-top: 3pt; }
     .alt-row {
       display: block;
-      margin-bottom: 1pt;
+      margin-bottom: 1.5pt;
       page-break-inside: avoid;
       font-size: 11pt;
       line-height: 1.46;
     }
-    .alt-ltr { display: inline; margin-right: 1pt; }
+    .alt-ltr { display: inline; margin-right: 2pt; }
     .alt-txt { display: inline; }
-    .alt-txt u { text-decoration: underline; text-decoration-skip-ink: none; text-decoration-thickness: from-font; text-underline-offset: 0.5px; }
-    .alt-txt em, .alt-txt i { font-style: italic; }
+    .alt-txt u {
+      text-decoration-line: underline;
+      text-decoration-thickness: from-font;
+      text-underline-offset: 1px;
+      text-decoration-skip-ink: none;
+    }
+    .alt-txt em, .alt-txt i  { font-style: italic; }
     .alt-txt strong, .alt-txt b { font-weight: bold; }
     .alt-txt mark { background: transparent; font-weight: bold; }
 
     /* ── Answer key ─────────────────────────────────────── */
-    .gab-section {
-      page-break-before: always;
-    }
+    .gab-section { page-break-before: always; }
     .gab-title {
       font-size: 10pt;
       font-weight: bold;
@@ -165,8 +196,8 @@ export function exportExamPDF(exam: Exam): void {
       line-height: 1.65;
     }
     .gab-row { display: block; break-inside: avoid; white-space: nowrap; }
-    .gab-n { display: inline-block; width: 20pt; text-align: right; }
-    .gab-a { display: inline; margin-left: 5pt; }
+    .gab-n   { display: inline-block; width: 20pt; text-align: right; }
+    .gab-a   { display: inline; margin-left: 5pt; }
 
     @media print {
       body { print-color-adjust: exact; -webkit-print-color-adjust: exact; }
@@ -196,6 +227,10 @@ export function exportExamPDF(exam: Exam): void {
       const showApoio = Boolean(apoioKey) && apoioKey !== prevApoioKey;
       if (apoioKey) prevApoioKey = apoioKey;
 
+      // ── Structure: NUMBER → APOIO → IMAGE → STEM → ALTS ─────────
+      // Number is ALWAYS first, on its own line, isolated.
+      const numHTML = `<div class="q-num">${q.numero_simulado})</div>`;
+
       const apoioHTML = showApoio
         ? `<div class="q-apoio"><div class="q-apoio-body">${stripHtml(q.texto_apoio ?? "")}</div></div>`
         : "";
@@ -204,15 +239,15 @@ export function exportExamPDF(exam: Exam): void {
         ? `<div style="text-align:center;margin:5pt 0"><img class="q-img" src="${q.imagem}" /></div>`
         : "";
 
+      // Stem = question text only. Number is separate above.
+      const stemHTML = `<div class="q-text">${stripHtml(q.pergunta)}</div>`;
+
       // Lowercase a) b) c) d) e) — FCC standard
       const altsHTML = q.alternativas.map((a, i) =>
         `<div class="alt-row"><span class="alt-ltr">${String.fromCharCode(97 + i)})</span><span class="alt-txt">${stripHtml(stripAltPrefix(a))}</span></div>`
       ).join("");
 
-      // Hanging-indent stem: "1) question text..."
-      const stemHTML = `<div class="q-stem"><strong>${q.numero_simulado})</strong> ${stripHtml(q.pergunta)}</div>`;
-
-      return `<div class="question">${apoioHTML}${imgHTML}${stemHTML}<div class="alts">${altsHTML}</div></div>`;
+      return `<div class="question">${numHTML}${apoioHTML}${imgHTML}${stemHTML}<div class="alts">${altsHTML}</div></div>`;
     }).join("");
 
     return `${header}${qsHTML}`;
@@ -223,24 +258,24 @@ export function exportExamPDF(exam: Exam): void {
     `<span class="gab-row"><span class="gab-n">${q.numero_simulado}</span><span class="gab-a">${LETTERS[q.correta] ?? "?"}</span></span>`
   ).join("");
 
-  // ── Header ────────────────────────────────────────────────────────
+  // ── Minimal institutional header ──────────────────────────────────
   const examDate = new Date().toLocaleDateString("pt-BR", {
     day: "2-digit", month: "long", year: "numeric"
   });
   const modeLabel = exam.mode === "prova" ? "Simulado de Prova" : "Simulado de Treino";
-  const timeLabel = exam.mode === "prova" ? ` · ${exam.timeLimit / 60} min` : "";
+  const timeLabel = exam.mode === "prova" ? ` &middot; ${exam.timeLimit / 60} min` : "";
 
   const html = `<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>PC-AP Simulados — ${modeLabel}</title>
+  <title>PC-AP Simulados &mdash; ${modeLabel}</title>
   <style>${css}</style>
 </head>
 <body>
   <div class="exam-header">
     <div class="h-title">PC-AP Simulados</div>
-    <div class="h-sub">Polícia Civil do Amapá &mdash; ${modeLabel}</div>
+    <div class="h-sub">Pol&iacute;cia Civil do Amap&aacute; &mdash; ${modeLabel}</div>
     <div class="h-info">${examDate}${timeLabel} &nbsp;&middot;&nbsp; ${exam.questions.length} quest&otilde;es</div>
   </div>
 
