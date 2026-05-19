@@ -21,6 +21,7 @@ export default function ExamPage({ exam, onFinish }: ExamPageProps) {
   const [flagged, setFlagged] = useState(new Set<number>());
   const [tLeft, setTLeft] = useState(exam?.timeLimit ?? 0);
   const [showNav, setShowNav] = useState(false);
+  const [isFinishing, setIsFinishing] = useState(false);
   const timerRef = useRef<ReturnType<typeof setInterval> | null>(null);
 
   useEffect(() => {
@@ -69,15 +70,17 @@ export default function ExamPage({ exam, onFinish }: ExamPageProps) {
 
   const handleFinish = useCallback(() => {
     clearInterval(timerRef.current!);
+    setIsFinishing(true);          // ← desabilita toda interação imediatamente
+    setShowNav(false);             // ← fecha o nav panel
     const result = calcResults({ ...exam, answers });
     onFinish(result);
     navigate("/results");
   }, [exam, answers, onFinish, navigate]);
 
   return (
-    <div className="min-h-screen bg-bg-base">
-      {/* Sticky header */}
-      <div className="fixed top-0 left-0 right-0 z-30 bg-bg-base/90 backdrop-blur-xl border-b border-border-subtle/60">
+    <div className={cn("min-h-screen bg-bg-base", isFinishing && "pointer-events-none")}>
+      {/* Sticky header — sem backdrop-blur para evitar residual no unmount */}
+      <div className="fixed top-0 left-0 right-0 z-30 bg-bg-base border-b border-border-subtle/60">
         <div className="max-w-3xl mx-auto px-4 py-3 flex items-center gap-4">
           {/* Progress */}
           <div className="flex-1">
@@ -127,7 +130,7 @@ export default function ExamPage({ exam, onFinish }: ExamPageProps) {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -8 }}
             transition={{ duration: 0.2 }}
-            className="fixed top-14 left-0 right-0 z-20 bg-bg-overlay/95 backdrop-blur-xl border-b border-border-subtle shadow-elevated"
+            className="fixed top-14 left-0 right-0 z-20 bg-bg-overlay border-b border-border-subtle shadow-elevated"
           >
             <div className="max-w-3xl mx-auto px-4 py-3">
               <div className="flex flex-wrap gap-1.5">

@@ -1,26 +1,24 @@
 /**
  * SimuladoActionsPage — Tela intermediária após gerar o simulado.
- * Fluxo: GeneratorPage → SimuladoActionsPage → ExamPage
+ * Fluxo: GeneratorPage → SimuladoActionsPage → ExamPage ou FocusPage
  *
- * Ações disponíveis:
- * 1. Iniciar Prova → /exam
- * 2. Exportar PDF  → exportExamPDF (caderno A4 institucional)
- * 3. Compartilhar  → navigator.share / clipboard
- * 4. Abrir Banco   → /bank
- * 5. TEC Concursos → link externo
+ * Ações:
+ * 1. Iniciar Prova  → /exam
+ * 2. Modo Foco      → /focus (leitura contínua sem distração)
+ * 3. Exportar PDF   → exportExamPDF (caderno A4 institucional)
+ * 4. Compartilhar   → navigator.share / clipboard
+ * 5. Abrir Banco    → /bank
  */
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
 import {
-  Play, Download, Share2, BookOpen, ExternalLink,
-  FileText, Clock, Layers, CheckCircle, ArrowLeft,
+  Play, Download, Share2, BookOpen,
+  FileText, Clock, Layers, CheckCircle, ArrowLeft, Focus,
 } from "lucide-react";
 import { Button } from "../components/ui/Button";
 import { fadeUp, timing } from "../lib/motion";
 import { exportExamPDF } from "../lib/pdf";
-import { LETTERS } from "../lib/constants";
-import { fmtTime } from "../lib/utils";
 import type { Exam } from "../types";
 
 interface SimuladoActionsPageProps {
@@ -30,13 +28,13 @@ interface SimuladoActionsPageProps {
 
 export default function SimuladoActionsPage({ exam, onStartExam }: SimuladoActionsPageProps) {
   const navigate = useNavigate();
-  const [copied, setCopied] = useState(false);
+  const [copied,  setCopied]  = useState(false);
   const [pdfDone, setPdfDone] = useState(false);
 
   if (!exam) {
     return (
       <div className="flex flex-col items-center justify-center min-h-screen gap-4">
-        <p className="text-text-secondary">Nenhum simulado configurado.</p>
+        <p className="text-text-secondary font-sans">Nenhum simulado configurado.</p>
         <Button variant="primary" onClick={() => navigate("/generator")}>
           Criar simulado
         </Button>
@@ -44,11 +42,9 @@ export default function SimuladoActionsPage({ exam, onStartExam }: SimuladoActio
     );
   }
 
-  const totalQ = exam.questions.length;
-  const discs = [...new Set(exam.questions.map((q) => q.disciplina))];
-  const timeStr = exam.mode === "prova"
-    ? `${exam.timeLimit / 60} min`
-    : "Sem limite";
+  const totalQ  = exam.questions.length;
+  const discs   = [...new Set(exam.questions.map((q) => q.disciplina))];
+  const timeStr = exam.mode === "prova" ? `${exam.timeLimit / 60} min` : "Sem limite";
 
   const handleExportPDF = () => {
     exportExamPDF(exam);
@@ -59,20 +55,16 @@ export default function SimuladoActionsPage({ exam, onStartExam }: SimuladoActio
   const handleShare = async () => {
     const text = `PC-AP Simulados — ${totalQ} questões FCC | ${discs.slice(0, 3).join(", ")}${discs.length > 3 ? "…" : ""}`;
     if (navigator.share) {
-      try {
-        await navigator.share({ title: "PC-AP Simulados", text, url: window.location.origin });
-        return;
-      } catch (_) {}
+      try { await navigator.share({ title: "PC-AP Simulados", text, url: window.location.origin }); return; }
+      catch (_) {}
     }
     await navigator.clipboard.writeText(text + " → " + window.location.origin);
     setCopied(true);
     setTimeout(() => setCopied(false), 2400);
   };
 
-  const handleStart = () => {
-    onStartExam();
-    navigate("/exam");
-  };
+  const handleStart = () => { onStartExam(); navigate("/exam"); };
+  const handleFocus = () => { onStartExam(); navigate("/focus"); };
 
   return (
     <motion.div
@@ -89,7 +81,7 @@ export default function SimuladoActionsPage({ exam, onStartExam }: SimuladoActio
         Reconfigurar
       </button>
 
-      {/* Simulado summary card */}
+      {/* Summary card */}
       <motion.div
         initial={{ opacity: 0, scale: 0.98 }}
         animate={{ opacity: 1, scale: 1 }}
@@ -97,39 +89,28 @@ export default function SimuladoActionsPage({ exam, onStartExam }: SimuladoActio
         className="rounded-2xl border overflow-hidden"
         style={{ background: "rgba(200,167,93,0.05)", borderColor: "rgba(200,167,93,0.18)" }}
       >
-        {/* Shimmer top */}
-        <div
-          className="h-px"
-          style={{ background: "linear-gradient(90deg, transparent, rgba(200,167,93,0.5), transparent)" }}
-        />
+        <div className="h-px" style={{ background: "linear-gradient(90deg,transparent,rgba(200,167,93,0.5),transparent)" }} />
         <div className="p-6 text-center">
-          <div
-            className="w-12 h-12 rounded-2xl border flex items-center justify-center mx-auto mb-4"
-            style={{ background: "rgba(200,167,93,0.10)", borderColor: "rgba(200,167,93,0.22)" }}
-          >
+          <div className="w-12 h-12 rounded-2xl border flex items-center justify-center mx-auto mb-4"
+            style={{ background: "rgba(200,167,93,0.10)", borderColor: "rgba(200,167,93,0.22)" }}>
             <FileText className="w-5 h-5 text-gold" />
           </div>
-          <h1 className="text-2xl font-bold font-mono text-text-primary mb-1 tabular-nums">
-            {totalQ} questões
-          </h1>
+          <h1 className="text-2xl font-bold font-mono text-text-primary mb-1 tabular-nums">{totalQ} questões</h1>
           <p className="text-text-secondary text-sm font-sans">
             {exam.mode === "prova" ? "Prova cronometrada" : "Modo treino"} · {timeStr}
           </p>
         </div>
 
-        {/* Stats strip */}
-        <div
-          className="grid grid-cols-3 divide-x border-t"
-          style={{ borderColor: "rgba(200,167,93,0.10)", "--tw-divide-opacity": 1 } as any}
-        >
-          {[
-            { icon: Layers, label: "Disciplinas", value: discs.length },
-            { icon: Clock, label: "Tempo", value: timeStr },
-            { icon: CheckCircle, label: "Questões", value: totalQ },
-          ].map((s) => {
+        <div className="grid grid-cols-3 border-t" style={{ borderColor: "rgba(200,167,93,0.10)" }}>
+          {([
+            { icon: Layers,       label: "Disciplinas", value: discs.length },
+            { icon: Clock,        label: "Tempo",       value: timeStr },
+            { icon: CheckCircle,  label: "Questões",    value: totalQ },
+          ] as const).map((s, si) => {
             const Icon = s.icon;
             return (
-              <div key={s.label} className="flex flex-col items-center py-3 gap-1">
+              <div key={si} className={`flex flex-col items-center py-3 gap-1 ${si < 2 ? "border-r" : ""}`}
+                style={{ borderColor: "rgba(200,167,93,0.10)" }}>
                 <Icon className="w-3.5 h-3.5 text-gold opacity-60" />
                 <span className="text-base font-bold font-mono text-text-primary tabular-nums">{s.value}</span>
                 <span className="text-[10px] text-text-muted font-sans uppercase tracking-wide">{s.label}</span>
@@ -139,65 +120,60 @@ export default function SimuladoActionsPage({ exam, onStartExam }: SimuladoActio
         </div>
       </motion.div>
 
-      {/* Disciplines pills */}
+      {/* Discipline pills */}
       <div className="flex flex-wrap gap-1.5">
         {discs.map((d) => (
-          <span
-            key={d}
-            className="text-[10px] px-2 py-0.5 rounded-full font-sans font-medium"
-            style={{ background: "rgba(255,255,255,0.04)", color: "rgba(255,255,255,0.38)", border: "0.5px solid rgba(255,255,255,0.07)" }}
-          >
+          <span key={d} className="text-[10px] px-2 py-0.5 rounded-full font-sans font-medium"
+            style={{ background: "rgba(255,255,255,0.04)", color: "rgba(255,255,255,0.38)", border: "0.5px solid rgba(255,255,255,0.07)" }}>
             {d.length > 20 ? d.slice(0, 18) + "…" : d}
           </span>
         ))}
       </div>
 
-      {/* ── PRIMARY ACTION ── */}
-      <Button
-        variant="primary"
-        size="lg"
-        className="w-full text-base"
-        icon={<Play className="w-4 h-4" />}
-        onClick={handleStart}
-      >
+      {/* PRIMARY */}
+      <Button variant="primary" size="lg" className="w-full text-base"
+        icon={<Play className="w-4 h-4" />} onClick={handleStart}>
         Iniciar Prova
       </Button>
 
-      {/* ── SECONDARY ACTIONS ── */}
+      {/* SECONDARY GRID */}
       <div className="grid grid-cols-2 gap-3">
 
+        {/* Modo Foco */}
+        <motion.button whileHover={{ y: -1 }} whileTap={{ scale: 0.98 }} onClick={handleFocus}
+          className="group flex flex-col items-center gap-2 p-4 rounded-2xl border transition-all font-sans"
+          style={{ background: "rgba(255,255,255,0.02)", borderColor: "rgba(255,255,255,0.07)" }}>
+          <Focus className="w-5 h-5 text-text-secondary group-hover:text-text-primary transition-colors" />
+          <div className="text-center">
+            <div className="text-sm font-semibold text-text-primary">Modo Foco</div>
+            <div className="text-[10px] text-text-muted mt-0.5">Sem distração</div>
+          </div>
+        </motion.button>
+
         {/* Exportar PDF */}
-        <motion.button
-          whileHover={{ y: -1 }}
-          whileTap={{ scale: 0.98 }}
-          onClick={handleExportPDF}
+        <motion.button whileHover={{ y: -1 }} whileTap={{ scale: 0.98 }} onClick={handleExportPDF}
           className="group flex flex-col items-center gap-2 p-4 rounded-2xl border transition-all font-sans"
           style={{
-            background: pdfDone ? "rgba(34,197,94,0.06)" : "rgba(255,255,255,0.02)",
-            borderColor: pdfDone ? "rgba(34,197,94,0.25)" : "rgba(255,255,255,0.07)",
-          }}
-        >
-          <Download className={`w-5 h-5 ${pdfDone ? "text-[#22c55e]" : "text-text-secondary group-hover:text-text-primary"} transition-colors`} />
+            background:   pdfDone ? "rgba(34,197,94,0.06)"  : "rgba(255,255,255,0.02)",
+            borderColor:  pdfDone ? "rgba(34,197,94,0.25)"  : "rgba(255,255,255,0.07)",
+          }}>
+          <Download className={`w-5 h-5 transition-colors ${pdfDone ? "text-[#22c55e]" : "text-text-secondary group-hover:text-text-primary"}`} />
           <div className="text-center">
             <div className={`text-sm font-semibold ${pdfDone ? "text-[#22c55e]" : "text-text-primary"}`}>
               {pdfDone ? "PDF gerado!" : "Exportar PDF"}
             </div>
-            <div className="text-[10px] text-text-muted mt-0.5">Caderno A4 oficial</div>
+            <div className="text-[10px] text-text-muted mt-0.5">Caderno A4</div>
           </div>
         </motion.button>
 
         {/* Compartilhar */}
-        <motion.button
-          whileHover={{ y: -1 }}
-          whileTap={{ scale: 0.98 }}
-          onClick={handleShare}
+        <motion.button whileHover={{ y: -1 }} whileTap={{ scale: 0.98 }} onClick={handleShare}
           className="group flex flex-col items-center gap-2 p-4 rounded-2xl border transition-all font-sans"
           style={{
-            background: copied ? "rgba(200,167,93,0.06)" : "rgba(255,255,255,0.02)",
+            background:  copied ? "rgba(200,167,93,0.06)" : "rgba(255,255,255,0.02)",
             borderColor: copied ? "rgba(200,167,93,0.25)" : "rgba(255,255,255,0.07)",
-          }}
-        >
-          <Share2 className={`w-5 h-5 ${copied ? "text-gold" : "text-text-secondary group-hover:text-text-primary"} transition-colors`} />
+          }}>
+          <Share2 className={`w-5 h-5 transition-colors ${copied ? "text-gold" : "text-text-secondary group-hover:text-text-primary"}`} />
           <div className="text-center">
             <div className={`text-sm font-semibold ${copied ? "text-gold" : "text-text-primary"}`}>
               {copied ? "Link copiado!" : "Compartilhar"}
@@ -206,46 +182,20 @@ export default function SimuladoActionsPage({ exam, onStartExam }: SimuladoActio
           </div>
         </motion.button>
 
-        {/* Banco de Questões */}
-        <motion.button
-          whileHover={{ y: -1 }}
-          whileTap={{ scale: 0.98 }}
-          onClick={() => navigate("/bank")}
+        {/* Banco */}
+        <motion.button whileHover={{ y: -1 }} whileTap={{ scale: 0.98 }} onClick={() => navigate("/bank")}
           className="group flex flex-col items-center gap-2 p-4 rounded-2xl border transition-all font-sans"
-          style={{ background: "rgba(255,255,255,0.02)", borderColor: "rgba(255,255,255,0.07)" }}
-        >
+          style={{ background: "rgba(255,255,255,0.02)", borderColor: "rgba(255,255,255,0.07)" }}>
           <BookOpen className="w-5 h-5 text-text-secondary group-hover:text-text-primary transition-colors" />
           <div className="text-center">
             <div className="text-sm font-semibold text-text-primary">Abrir Banco</div>
             <div className="text-[10px] text-text-muted mt-0.5">Browsear questões</div>
           </div>
         </motion.button>
-
-        {/* TEC Concursos */}
-        <motion.a
-          href="https://www.tecconcursos.com.br"
-          target="_blank"
-          rel="noopener noreferrer"
-          whileHover={{ y: -1 }}
-          whileTap={{ scale: 0.98 }}
-          className="group flex flex-col items-center gap-2 p-4 rounded-2xl border transition-all font-sans cursor-pointer"
-          style={{
-            background: "rgba(59,130,246,0.04)",
-            borderColor: "rgba(59,130,246,0.15)",
-            textDecoration: "none",
-          }}
-        >
-          <ExternalLink className="w-5 h-5 text-blue-400 group-hover:text-blue-300 transition-colors" />
-          <div className="text-center">
-            <div className="text-sm font-semibold text-text-primary">TEC Concursos</div>
-            <div className="text-[10px] text-text-muted mt-0.5">tecconcursos.com.br</div>
-          </div>
-        </motion.a>
       </div>
 
-      {/* Dica */}
       <p className="text-center text-[11px] text-text-muted font-sans leading-relaxed">
-        O caderno PDF é idêntico ao formato FCC oficial — imprima para estudar offline.
+        O caderno PDF usa formato FCC oficial — imprima para estudar offline.
       </p>
     </motion.div>
   );

@@ -14,6 +14,7 @@ export interface Question {
   correta: number;
   imagem?: string;
   tags?: string[];
+  linkTec?: string;
 }
 
 export interface ExamConfig {

@@ -7,7 +7,6 @@
  */
 import { NavLink, useLocation } from "react-router-dom";
 import { motion } from "framer-motion";
-import { ExternalLink } from "lucide-react";
 import { cn } from "../../lib/utils";
 import { HamburgerButton } from "./SidePanel";
 
@@ -86,16 +85,6 @@ export function FloatingNav({ onMenuOpen }: FloatingNavProps) {
               {label}
             </NavLink>
           ))}
-          {/* TEC Concursos */}
-          <a
-            href="https://www.tecconcursos.com.br"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center gap-1 px-3 py-1.5 rounded-full text-xs font-sans font-medium text-blue-400/60 hover:text-blue-400/90 hover:bg-white/[0.04] transition-all duration-150"
-          >
-            <ExternalLink className="w-3 h-3" />
-            TEC
-          </a>
         </div>
 
         {/* Divider */}

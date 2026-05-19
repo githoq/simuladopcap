@@ -8,7 +8,7 @@ import { NavLink, useNavigate } from "react-router-dom";
 import {
   X, LayoutDashboard, Layers, BookOpen, Clock, Bot,
   Focus, Download, RotateCcw, Settings, ChevronRight,
-  Flame, ExternalLink,
+  Flame,
 } from "lucide-react";
 import { cn } from "../../lib/utils";
 import type { ProgressEntry } from "../../types";
@@ -43,21 +43,22 @@ export function SidePanel({
     : 0;
 
   return (
-    <AnimatePresence>
-      {open && (
-        <>
-          {/* Backdrop */}
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            transition={{ duration: 0.22 }}
-            onClick={onClose}
-            className="fixed inset-0 z-[60] bg-black/50"
-            style={{ backdropFilter: "blur(4px)" }}
-          />
+  return (
+    <>
+      {/* ── Backdrop: CSS transition — pointer-events-none quando fechado ── */}
+      <div
+        onClick={onClose}
+        aria-hidden
+        className={cn(
+          "fixed inset-0 z-[60] bg-black/50 transition-opacity duration-200",
+          open ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
+        )}
+        style={{ backdropFilter: open ? "blur(4px)" : "none" }}
+      />
 
-          {/* Panel */}
+      {/* ── Panel: framer-motion slide ────────────────────────────────── */}
+      <AnimatePresence>
+        {open && (
           <motion.div
             initial={{ x: -300, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
@@ -123,17 +124,6 @@ export function SidePanel({
 
             {/* Footer actions */}
             <div className="px-3 pb-5 pt-2 border-t border-white/[0.04] space-y-0.5">
-              {/* TEC Concursos — link externo */}
-              <a
-                href="https://www.tecconcursos.com.br"
-                target="_blank"
-                rel="noopener noreferrer"
-                onClick={onClose}
-                className="w-full flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm text-blue-400 hover:bg-white/[0.04] hover:text-blue-300 transition-colors duration-150 font-sans"
-              >
-                <ExternalLink className="w-4 h-4" />
-                TEC Concursos
-              </a>
               {onExportPDF && (
                 <button
                   onClick={() => { onExportPDF(); onClose(); }}
@@ -156,9 +146,9 @@ export function SidePanel({
               )}
             </div>
           </motion.div>
-        </>
-      )}
-    </AnimatePresence>
+        )}
+      </AnimatePresence>
+    </>
   );
 }
 

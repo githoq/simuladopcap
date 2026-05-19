@@ -13,7 +13,7 @@
 
 import { useState, useCallback } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Flag, ChevronLeft, ChevronRight, Eye, EyeOff } from "lucide-react";
+import { Flag, ChevronLeft, ChevronRight, Eye, EyeOff, ExternalLink } from "lucide-react";
 import { ApoioBlock } from "./ApoioBlock";
 import { AlternativeRow } from "./AlternativeRow";
 import type { AltState } from "./AlternativeRow";
@@ -83,22 +83,13 @@ export function QuestionCard({
         {/* ── Header ────────────────────────────────────────────────── */}
         <div className="flex items-center justify-between px-4 py-2 border-b border-white/[0.05]">
           <div className="flex items-center gap-2">
-            {/* Discipline indicator — dot + text, institutional */}
-            <span className="text-xs font-sans text-text-muted">
-              {question.disciplina}
+            {/* Question counter only — no metadata */}
+            <span className="text-[10px] text-text-muted font-mono font-sans tabular-nums">
+              {String(numero).padStart(2, "0")}/{String(total).padStart(2, "0")}
             </span>
-            {question.banca && (
-              <span className="text-[10px] text-text-tertiary font-sans">· {question.banca}</span>
-            )}
-            {question.ano && (
-              <span className="text-[10px] text-text-tertiary font-sans">· {question.ano}</span>
-            )}
           </div>
 
           <div className="flex items-center gap-2">
-            <span className="text-[10px] text-text-tertiary font-mono font-sans tabular-nums">
-              {String(numero).padStart(2, "0")}/{String(total).padStart(2, "0")}
-            </span>
             {onFlag && (
               <button
                 onClick={() => onFlag(question.numero_simulado)}
@@ -196,6 +187,22 @@ export function QuestionCard({
             )}
           </div>
         </div>
+
+        {/* ── Link TecConcursos — extremamente discreto ─────────────── */}
+        {question.linkTec && (
+          <div className="flex justify-end px-4 pb-2">
+            <a
+              href={question.linkTec}
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={(e) => e.stopPropagation()}
+              className="flex items-center gap-1 text-[11px] text-white/[0.28] hover:text-white/[0.55] transition-colors duration-150 font-sans select-none"
+            >
+              <ExternalLink className="w-2.5 h-2.5" aria-hidden />
+              <span>Ver questão original</span>
+            </a>
+          </div>
+        )}
       </div>
 
       {/* ── Explanation ──────────────────────────────────────────────── */}

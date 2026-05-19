@@ -27,13 +27,13 @@ function stripAltPrefix(a: string): string {
     .trim();
 }
 
-/** Single-column A4 exam booklet */
+/** A4 exam booklet — editorial FCC format */
 export function exportExamPDF(exam: Exam): void {
-  // ── Official exam CSS ─────────────────────────────────────────────
+
   const css = `
     @page {
       size: A4 portrait;
-      margin: 25mm 20mm 22mm 20mm;
+      margin: 20mm 16mm 20mm 16mm;
     }
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
@@ -41,77 +41,66 @@ export function exportExamPDF(exam: Exam): void {
       font-size: 11pt;
       color: #000;
       background: #fff;
-      line-height: 1.50;
-      font-kerning: normal;
-      font-variant-ligatures: none;
-      -webkit-font-smoothing: none;
+      line-height: 1.46;
     }
 
-    /* ── Header ─────────────────────────────────────────── */
+    /* ── Compact editorial header ──────────────────────── */
     .exam-header {
-      text-align: center;
-      /* border-bottom: 0.5pt solid #333;
-      padding-bottom: 6pt;
-      margin-bottom: 14pt;
+      border-bottom: 0.75pt solid #000;
+      padding-bottom: 5pt;
+      margin-bottom: 12pt;
     }
-    .exam-header h1 {
-      font-size: 13pt;
+    .h-title {
+      font-size: 9pt;
       font-weight: bold;
       text-transform: uppercase;
-      letter-spacing: 0.5pt;
+      letter-spacing: 0.8pt;
     }
-    .exam-header h2 {
-      font-size: 11pt;
-      font-weight: normal;
-      margin-top: 3pt;
-    }
-    .exam-header p {
+    .h-sub {
       font-size: 9pt;
-      color: #333;
-      margin-top: 4pt;
+      color: #222;
+      margin-top: 1pt;
+    }
+    .h-info {
+      font-size: 8pt;
+      color: #555;
+      margin-top: 1pt;
+    }
+
+    /* ── Discipline block header ────────────────────────── */
+    .disc-title {
+      font-size: 10pt;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 0.6pt;
+      border-bottom: 0.5pt solid #000;
+      padding-bottom: 2pt;
+      margin: 16pt 0 8pt 0;
+      page-break-after: avoid;
     }
 
     /* ── Question ───────────────────────────────────────── */
     .question {
-      margin-bottom: 16pt;
-      page-break-inside: auto;
+      margin-bottom: 10pt;
     }
 
-    .q-head {
-      display: block;
-      margin-bottom: 5pt;
-    }
-    .q-num {
-      font-size: 11pt;
-      font-weight: bold;
-      min-width: 20pt;
-    }
-    .q-meta {
-      display: none;
-    }
-
-    /* ── Support text (apoio) ───────────────────────────── */
+    /* ── Support text — plain editorial ─────────────────── */
     .q-apoio {
-      margin-top: 4pt;
-      margin-bottom: 6pt;
-      page-break-inside: avoid;
-    }
-    .q-apoio-label {
-      display: none;
+      margin-bottom: 5pt;
     }
     .q-apoio-body {
       font-size: 10pt;
-      line-height: 1.48;
+      line-height: 1.46;
       font-style: italic;
     }
-    .q-apoio-body p { margin-bottom: 6pt; }
+    .q-apoio-body p { margin-bottom: 5pt; }
     .q-apoio-body p:last-child { margin-bottom: 0; }
     .q-apoio-body .apoio-title,
-    .q-apoio-body center { text-align: center; font-style: normal; font-weight: bold; margin-bottom: 5pt; }
-    .q-apoio-body .apoio-attrib { text-align: right; font-size: 9pt; color: #444; margin-top: 4pt; }
-    .q-apoio-body .fcc-excerpt { display: block; margin: 5pt 0; padding-left: 8pt; border-left: 1pt solid #888; }
+    .q-apoio-body center { text-align: center; font-style: normal; font-weight: bold; margin-bottom: 4pt; }
+    .q-apoio-body .apoio-attrib { text-align: right; font-size: 9pt; color: #444; margin-top: 3pt; }
+    .q-apoio-body .fcc-excerpt { display: block; margin: 4pt 0; padding-left: 8pt; border-left: 0.5pt solid #888; }
     .q-apoio-body .fcc-verse { font-style: italic; display: block; }
-    .q-apoio-body u { text-decoration: underline; }
+    .q-apoio-body u { text-decoration: underline; text-decoration-skip-ink: none; text-decoration-thickness: from-font; text-underline-offset: 0.5px; }
     .q-apoio-body em, .q-apoio-body i { font-style: italic; }
     .q-apoio-body strong, .q-apoio-body b { font-weight: bold; }
     .q-apoio-body mark { background: transparent; font-weight: bold; }
@@ -121,123 +110,117 @@ export function exportExamPDF(exam: Exam): void {
       display: block;
       max-width: 100%;
       max-height: 200pt;
-      margin: 6pt auto 8pt;
+      margin: 5pt auto 6pt;
       page-break-inside: avoid;
     }
 
-    /* ── Question stem ──────────────────────────────────── */
-    .q-text {
+    /* ── Question stem with hanging number ──────────────── */
+    .q-stem {
       font-size: 11pt;
-      line-height: 1.50;
-      margin-bottom: 8pt;
+      line-height: 1.46;
+      margin-bottom: 4pt;
+      text-indent: -14pt;
+      padding-left: 14pt;
     }
-    .q-text u { text-decoration: underline; text-decoration-skip-ink: none; text-decoration-thickness: from-font; text-underline-offset: 0.5px; }
-    .q-text em, .q-text i { font-style: italic; }
-    .q-text strong, .q-text b { font-weight: bold; }
-    .q-text mark { background: transparent; font-weight: bold; }
+    .q-stem p { display: inline; margin: 0; }
+    .q-stem u { text-decoration: underline; text-decoration-skip-ink: none; text-decoration-thickness: from-font; text-underline-offset: 0.5px; }
+    .q-stem em, .q-stem i { font-style: italic; }
+    .q-stem strong, .q-stem b { font-weight: bold; }
+    .q-stem mark { background: transparent; font-weight: bold; }
 
     /* ── Alternatives ───────────────────────────────────── */
-    .alts { margin-top: 4pt; }
-    /* Alternatives: editorial paragraph flow, NOT flex rows */
+    .alts { margin-top: 2pt; padding-left: 4pt; }
     .alt-row {
       display: block;
-      margin-bottom: 2pt;
+      margin-bottom: 1pt;
       page-break-inside: avoid;
       font-size: 11pt;
-      line-height: 1.50;
+      line-height: 1.46;
     }
-    .alt-ltr {
-      display: inline;
-      font-weight: bold;
-      margin-right: 2pt;
-    }
+    .alt-ltr { display: inline; margin-right: 1pt; }
     .alt-txt { display: inline; }
-    .alt-txt u { text-decoration: underline; text-decoration-skip-ink: none; text-decoration-thickness: from-font; text-underline-offset: 0.5px; }
-    .alt-txt em, .alt-txt i { font-style: italic; }
-    .alt-txt strong, .alt-txt b { font-weight: bold; }
     .alt-txt u { text-decoration: underline; text-decoration-skip-ink: none; text-decoration-thickness: from-font; text-underline-offset: 0.5px; }
     .alt-txt em, .alt-txt i { font-style: italic; }
     .alt-txt strong, .alt-txt b { font-weight: bold; }
     .alt-txt mark { background: transparent; font-weight: bold; }
 
-    /* ── Divider between questions ──────────────────────── */
-    .q-divider { margin-bottom: 14pt; }
-
     /* ── Answer key ─────────────────────────────────────── */
     .gab-section {
       page-break-before: always;
-      margin-top: 0;
     }
     .gab-title {
-      font-size: 12pt;
+      font-size: 10pt;
       font-weight: bold;
       text-transform: uppercase;
-      letter-spacing: 0.5pt;
-      text-align: center;
-      margin-bottom: 14pt;
-      /* border-bottom: 1pt solid #000;
-      padding-bottom: 6pt;
+      letter-spacing: 0.6pt;
+      border-bottom: 0.5pt solid #000;
+      padding-bottom: 2pt;
+      margin-bottom: 8pt;
     }
-    .gab-grid {
-      display: grid;
-      grid-template-columns: repeat(10, 1fr);
-      gap: 3pt;
+    .gab-cols {
+      column-count: 5;
+      column-gap: 0;
+      font-family: "Courier New", Courier, monospace;
+      font-size: 9.5pt;
+      line-height: 1.65;
     }
-    .gab-item {
-      border: 0.5pt solid #888;
-      text-align: center;
-      padding: 2pt 0;
-    }
-    .gab-n { font-size: 7pt; color: #555; display: block; }
-    .gab-a { font-size: 10pt; font-weight: bold; display: block; }
+    .gab-row { display: block; break-inside: avoid; white-space: nowrap; }
+    .gab-n { display: inline-block; width: 20pt; text-align: right; }
+    .gab-a { display: inline; margin-left: 5pt; }
 
-    /* ── Print ──────────────────────────────────────────── */
     @media print {
-      body { print-color-adjust: exact; }
+      body { print-color-adjust: exact; -webkit-print-color-adjust: exact; }
     }
   `;
 
-  // ── Build questions HTML ──────────────────────────────────────────
-  const questionsHTML = exam.questions.map((q, qi) => {
-    const apoioHTML = q.texto_apoio ? `
-      <div class="q-apoio">
-        <div class="q-apoio-label">${q.texto_apoio_titulo || "Texto"}</div>
-        <div class="q-apoio-body">${stripHtml(q.texto_apoio)}</div>
-      </div>` : "";
+  // ── Group questions by discipline (preserve exam order) ───────────
+  type QGroup = { disc: string; qs: (typeof exam.questions) };
+  const groups: QGroup[] = [];
+  for (const q of exam.questions) {
+    const last = groups[groups.length - 1];
+    if (!last || last.disc !== q.disciplina) {
+      groups.push({ disc: q.disciplina, qs: [q] });
+    } else {
+      last.qs.push(q);
+    }
+  }
 
-    const imgHTML = q.imagem
-      ? `<div style="text-align:center;margin:6pt 0"><img class="q-img" src="${q.imagem}" /></div>`
-      : "";
+  // ── Build body HTML ───────────────────────────────────────────────
+  const bodyHTML = groups.map(({ disc, qs }) => {
+    const header = `<div class="disc-title">${disc.toUpperCase()}</div>`;
 
-    const altsHTML = q.alternativas.map((a, i) => `
-      <div class="alt-row">
-        <span class="alt-ltr">${LETTERS[i] ?? String.fromCharCode(65 + i)})</span>
-        <span class="alt-txt">${stripHtml(stripAltPrefix(a))}</span>
-      </div>`
-    ).join("");
+    // Deduplicate apoio: show only on first occurrence within each group
+    let prevApoioKey = "";
+    const qsHTML = qs.map((q) => {
+      const apoioKey = (q.texto_apoio ?? "").trim();
+      const showApoio = Boolean(apoioKey) && apoioKey !== prevApoioKey;
+      if (apoioKey) prevApoioKey = apoioKey;
 
-    const isLast = qi === exam.questions.length - 1;
+      const apoioHTML = showApoio
+        ? `<div class="q-apoio"><div class="q-apoio-body">${stripHtml(q.texto_apoio ?? "")}</div></div>`
+        : "";
 
-    return `
-      <div class="question">
-        <div class="q-head">
-          <span class="q-num">${q.numero_simulado}.</span>
-          <span class="q-meta">${q.disciplina}${q.banca ? ` · ${q.banca}` : ""}${q.ano ? ` · ${q.ano}` : ""}</span>
-        </div>
-        ${apoioHTML}${imgHTML}
-        <div class="q-text">${stripHtml(q.pergunta)}</div>
-        <div class="alts">${altsHTML}</div>
-      </div>
-      ${!isLast ? '<div class="q-divider"></div>' : ""}
-    `;
+      const imgHTML = q.imagem
+        ? `<div style="text-align:center;margin:5pt 0"><img class="q-img" src="${q.imagem}" /></div>`
+        : "";
+
+      // Lowercase a) b) c) d) e) — FCC standard
+      const altsHTML = q.alternativas.map((a, i) =>
+        `<div class="alt-row"><span class="alt-ltr">${String.fromCharCode(97 + i)})</span><span class="alt-txt">${stripHtml(stripAltPrefix(a))}</span></div>`
+      ).join("");
+
+      // Hanging-indent stem: "1) question text..."
+      const stemHTML = `<div class="q-stem"><strong>${q.numero_simulado})</strong> ${stripHtml(q.pergunta)}</div>`;
+
+      return `<div class="question">${apoioHTML}${imgHTML}${stemHTML}<div class="alts">${altsHTML}</div></div>`;
+    }).join("");
+
+    return `${header}${qsHTML}`;
   }).join("");
 
-  // ── Answer key ────────────────────────────────────────────────────
-  const gabHTML = exam.questions.map((q) => `
-    <div class="gab-item">
-      <span class="gab-n">${q.numero_simulado}</span>
-      <span class="gab-a">${LETTERS[q.correta] ?? "?"}</span>
-    </div>`
+  // ── Compact answer key ────────────────────────────────────────────
+  const gabHTML = exam.questions.map((q) =>
+    `<span class="gab-row"><span class="gab-n">${q.numero_simulado}</span><span class="gab-a">${LETTERS[q.correta] ?? "?"}</span></span>`
   ).join("");
 
   // ── Header ────────────────────────────────────────────────────────
@@ -245,7 +228,7 @@ export function exportExamPDF(exam: Exam): void {
     day: "2-digit", month: "long", year: "numeric"
   });
   const modeLabel = exam.mode === "prova" ? "Simulado de Prova" : "Simulado de Treino";
-  const discs = [...new Set(exam.questions.map((q) => q.disciplina))].join(" · ");
+  const timeLabel = exam.mode === "prova" ? ` · ${exam.timeLimit / 60} min` : "";
 
   const html = `<!DOCTYPE html>
 <html lang="pt-BR">
@@ -256,17 +239,16 @@ export function exportExamPDF(exam: Exam): void {
 </head>
 <body>
   <div class="exam-header">
-    <h1>PC-AP Simulados</h1>
-    <h2>Polícia Civil do Amapá — ${modeLabel}</h2>
-    <p>${discs}</p>
-    <p>${examDate} &nbsp;·&nbsp; ${exam.questions.length} questões${exam.mode === "prova" ? ` &nbsp;·&nbsp; ${exam.timeLimit / 60} minutos` : ""}</p>
+    <div class="h-title">PC-AP Simulados</div>
+    <div class="h-sub">Polícia Civil do Amapá &mdash; ${modeLabel}</div>
+    <div class="h-info">${examDate}${timeLabel} &nbsp;&middot;&nbsp; ${exam.questions.length} quest&otilde;es</div>
   </div>
 
-  ${questionsHTML}
+  ${bodyHTML}
 
   <div class="gab-section">
     <div class="gab-title">Gabarito</div>
-    <div class="gab-grid">${gabHTML}</div>
+    <div class="gab-cols">${gabHTML}</div>
   </div>
 </body>
 </html>`;
