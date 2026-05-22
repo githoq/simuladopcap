@@ -21,7 +21,8 @@
       "ironia."
     ],
     "correta": 3,
-    "linkTec": "https://www.tecconcursos.com.br/questoes/2858334"
+    "linkTec": "https://www.tecconcursos.com.br/questoes/2858334",
+    "_bloco": 9
   },
   {
     "id": "fcc_port_gab3_060",
@@ -45,7 +46,8 @@
       "quando remara para o pequeno porto"
     ],
     "correta": 3,
-    "linkTec": "https://www.tecconcursos.com.br/questoes/2712957"
+    "linkTec": "https://www.tecconcursos.com.br/questoes/2712957",
+    "_bloco": 9
   },
   {
     "id": "fcc_port_gab3_061",
@@ -69,7 +71,8 @@
       "<em>Tão suave é viver assim</em> / <em>Nesse <u>impossível</u> jardim</em>."
     ],
     "correta": 2,
-    "linkTec": "https://www.tecconcursos.com.br/questoes/2340583"
+    "linkTec": "https://www.tecconcursos.com.br/questoes/2340583",
+    "_bloco": 9
   },
   {
     "id": "fcc_port_gab3_062",
@@ -93,7 +96,8 @@
       "<em>Não diga uma <u>besteira</u> dessas</em> (20º parágrafo)."
     ],
     "correta": 2,
-    "linkTec": "https://www.tecconcursos.com.br/questoes/2348396"
+    "linkTec": "https://www.tecconcursos.com.br/questoes/2348396",
+    "_bloco": 9
   },
   {
     "id": "fcc_port_gab3_063",
@@ -108,7 +112,7 @@
     "texto_apoio_titulo": "<u>Atenção:</u> Leia a crônica “A casadeira”, de Carlos Drummond de Andrade, para responder à questão.",
     "texto_apoio": "<p>Atenção: Leia a crônica “A casadeira”, de Carlos Drummond de Andrade, para responder à questão.</p>\n<p><em>Testemunhei ontem, na loja de Copacabana, um acontecimento banal e maravilhoso. A senhora sentou-se na banqueta e cruzou elegantemente as</em> <em>pernas. O vendedor, agachado, calçou-lhe o par de sapatos. Ela se ergueu, ensaiou alguns passos airosos em frente do espelho, mirou-se, remirou-se,</em> <em>voltou à banqueta. O sapato foi substituído por outro. Seguiu-se na mesma autocontemplação, e o novo par de sapatos foi experimentado, e nova</em> <em>verificação especular. Isso, infinitas vezes. No semblante do vendedor, nem cansaço, nem impaciência. Explica-se: a cliente não refugava os sapatos</em> <em>experimentados. Adquiria-os todos. Adquiriu dozes pares, se bem contei.</em> <em>− Ela está fazendo sua reforma de base? − perguntei a outro vendedor, que sorriu e esclareceu:</em> <em>− A de base e a civil. Vai se casar pela terceira vez.</em> <em>− Coitada... Vocação de viúva.</em> <em>− Não é isso, senhor. Os dois primeiros maridos estão vivos. É casadeira, sabe como é?</em></p>\n<p><em>Não me pareceu que, para casar pela terceira vez, ela tivesse necessidade de tanto calçamento. Oito ou nove pares seriam talvez para irmãs de pé igual</em> <em>ao seu, que ficaram em casa? Hipótese boba, que formulei e repeli incontinente. Ninguém neste mundo tem pé igual ao de ninguém, nem sequer ao de</em> <em>si mesmo, quanto mais ao da irmã. Daí avancei para outra hipótese mais plausível. Aquela senhora, na aparência normal, devia ter pés suplementares,</em> <em>Deus me perdoe, e usava-os dois de cada vez, recolhendo os demais mediante uma organização anatômica (ou eletrônica) absolutamente inédita.</em></p>\n<p><em>Observei-a com atenção e zelo científico, na expectativa de movimento menos controlado, que denunciasse o segredo. Nada disso. Até onde se podia</em> <em>perceber, eram apenas duas pernas, e bem agradáveis, terminando em dois exclusivos pés, de esbelto formato.</em></p>\n<p><em>Assim, a coleção era mesmo para casar − e fiquei conjeturando que o casamento é uma rara coisa, exigindo a todo instante que a mulher troque de</em> <em>sapato, não se sabe bem para quê − a menos que os vá perdendo no afã de atirá-los sobre o marido, e eles (não o marido) sumam pela janela do</em> <em>apartamento.</em></p>\n<p><em>A senhora pagou − não em dinheiro ou cheque, mas com um sorriso que mandava receber num lugar bastante acreditado, pois já reparei que as</em> <em>maiores compras são sempre pagas nele, e aos comerciantes agrada-lhes o sistema. As caixas de sapato adquiridas foram transportadas para o carro,</em> <em>estacionado em frente à loja. Mentiria se dissesse que eram doze carros monumentais, com doze motoristas louros, de olhos azuis. Não. Era um carro</em> <em>só, simplesinho, sem motorista, nem precisava dele, pois logo se percebeu sua natureza de teleguiado. Sem manobra, flechou no espaço e sumiu,</em> <em>levando a noiva e seus doze pares de França, perdão! de sapatos. Eu preveni que o caso era banal e maravilhoso.</em></p>\n<span class=\"apoio-attrib\"><em>(Adaptado de: ANDRADE, Carlos Drummond de. <strong>Cadeira de balanço</strong>. São Paulo: Companhia das Letras, 2020)</em></span>",
     "imagem": null,
-    "pergunta": "Sempre <u>que</u> haja necessidade expressiva de reforço, de ênfase, pode o objeto indireto vir repetido. Essa reiteração recebe o nome de objeto indireto\npleonástico. Ocorre objeto indireto pleonástico no seguinte trecho:",
+    "pergunta": "Sempre que haja necessidade expressiva de reforço, de ênfase, pode o objeto indireto vir repetido. Essa reiteração recebe o nome de objeto indireto\npleonástico. Ocorre objeto indireto pleonástico no seguinte trecho:",
     "alternativas": [
       "<em>aos comerciantes agrada-lhes o sistema</em>.",
       "<em>O vendedor, agachado, calçou-lhe o par de sapatos</em>.",
@@ -117,7 +121,8 @@
       "<em>Observei-a com atenção e zelo científico</em>."
     ],
     "correta": 0,
-    "linkTec": "https://www.tecconcursos.com.br/questoes/2340574"
+    "linkTec": "https://www.tecconcursos.com.br/questoes/2340574",
+    "_bloco": 9
   },
   {
     "id": "fcc_port_gab3_064",
@@ -141,7 +146,8 @@
       "só <u>as torres</u> pontudas das igrejas / não brincam de esconder"
     ],
     "correta": 3,
-    "linkTec": "https://www.tecconcursos.com.br/questoes/2454805"
+    "linkTec": "https://www.tecconcursos.com.br/questoes/2454805",
+    "_bloco": 9
   },
   {
     "id": "fcc_port_gab3_065",
@@ -156,7 +162,7 @@
     "texto_apoio_titulo": "Para responder a questão, leia o texto abaixo.",
     "texto_apoio": "<p>Para responder a questão, leia o texto abaixo. - <mark>Em que circunstâncias <u>alguém</u> se exalta e defende com ardor uma opinião</mark>? “Ninguém sustenta fervorosamente que 7 x 8 = 56, pois se pode</p>\n<p>trata de incutir opiniões que são duvidosas ou demonstravelmente falsas. - <mark>O mesmo vale para o ato de prometer <u>alguma coisa</u></mark>. <mark>O simples fato de que <u>uma promessa</u> precisou ser feita</mark> indica a existência de dúvida quanto à sua concretização. Só prometemos acerca do que exige um esforço extra da vontade. E quanto mais solene ou enfática a promessa - “Te juro. agora é pra valer!\" - mais duvidosa ela é: “O proclamar excessivo”, como dizem os ingleses. “<mark>Só os deuses podem prometer, porque são imortais</mark>”, adverte o poeta.</p>\n<span class=\"apoio-attrib\">(GIANNETTI, Eduardo, “O paradoxo da promessa”, Trópicos Utópicos. 2016, edição eletrônica, Adaptado)</span>",
     "imagem": null,
-    "pergunta": "<em>O ânimo persuasivo só recrudesce e lança mão das artes e artimanhas da retórica quando se trata de incutir <u>opiniões</u></em>\nO termo sublinhado acima exerce a mesma função sintática <u>que</u> o também sublinhado em:",
+    "pergunta": "<em>O ânimo persuasivo só recrudesce e lança mão das artes e artimanhas da retórica quando se trata de incutir <u>opiniões</u></em>\nO termo sublinhado acima exerce a mesma função sintática que o também sublinhado em:",
     "alternativas": [
       "<u>Em que</u> circunstâncias alguém se exalta e defende com ardor uma opinião",
       "O simples fato de que uma <u>promessa</u> precisou ser feita",
@@ -165,7 +171,8 @@
       "O mesmo vale para o ato de prometer <u>alguma</u> coisa"
     ],
     "correta": 4,
-    "linkTec": "https://www.tecconcursos.com.br/questoes/2850344"
+    "linkTec": "https://www.tecconcursos.com.br/questoes/2850344",
+    "_bloco": 9
   },
   {
     "id": "fcc_port_gab3_066",
@@ -180,7 +187,7 @@
     "texto_apoio_titulo": "<u>Atenção:</u> Leia a crônica “A casadeira”, de Carlos Drummond de Andrade, para responder à questão.",
     "texto_apoio": "<p>Atenção: Leia a crônica “A casadeira”, de Carlos Drummond de Andrade, para responder à questão.</p>\n<p><em>Testemunhei ontem, na loja de Copacabana, um acontecimento banal e maravilhoso. A senhora sentou-se na banqueta e cruzou elegantemente as</em> <em>pernas. O vendedor, agachado, calçou-lhe o par de sapatos. Ela se ergueu, ensaiou alguns passos airosos em frente do espelho, mirou-se, remirou-se,</em> <em>voltou à banqueta. O sapato foi substituído por outro. Seguiu-se na mesma autocontemplação, e o novo par de sapatos foi experimentado, e nova</em> <em>verificação especular. Isso, infinitas vezes. No semblante do vendedor, nem cansaço, nem impaciência. Explica-se: a cliente não refugava os sapatos</em> <em>experimentados. Adquiria-os todos. Adquiriu dozes pares, se bem contei.</em> <em>− Ela está fazendo sua reforma de base? − perguntei a outro vendedor, que sorriu e esclareceu:</em> <em>− A de base e a civil. Vai se casar pela terceira vez.</em> <em>− Coitada... Vocação de viúva.</em> <em>− Não é isso, senhor. Os dois primeiros maridos estão vivos. É casadeira, sabe como é?</em></p>\n<p><em>Não me pareceu que, para casar pela terceira vez, ela tivesse necessidade de tanto calçamento. Oito ou nove pares seriam talvez para irmãs de pé igual</em> <em>ao seu, que ficaram em casa? Hipótese boba, que formulei e repeli incontinente. Ninguém neste mundo tem pé igual ao de ninguém, nem sequer ao de</em> <em>si mesmo, quanto mais ao da irmã. Daí avancei para outra hipótese mais plausível. Aquela senhora, na aparência normal, devia ter pés suplementares,</em> <em>Deus me perdoe, e usava-os dois de cada vez, recolhendo os demais mediante uma organização anatômica (ou eletrônica) absolutamente inédita.</em></p>\n<p><em>Observei-a com atenção e zelo científico, na expectativa de movimento menos controlado, que denunciasse o segredo. Nada disso. Até onde se podia</em> <em>perceber, eram apenas duas pernas, e bem agradáveis, terminando em dois exclusivos pés, de esbelto formato.</em></p>\n<p><em>Assim, a coleção era mesmo para casar − e fiquei conjeturando que o casamento é uma rara coisa, exigindo a todo instante que a mulher troque de</em> <em>sapato, não se sabe bem para quê − a menos que os vá perdendo no afã de atirá-los sobre o marido, e eles (não o marido) sumam pela janela do</em> <em>apartamento.</em></p>\n<p><em>A senhora pagou − não em dinheiro ou cheque, mas com um sorriso que mandava receber num lugar bastante acreditado, pois já reparei que as</em> <em>maiores compras são sempre pagas nele, e aos comerciantes agrada-lhes o sistema. As caixas de sapato adquiridas foram transportadas para o carro,</em> <em>estacionado em frente à loja. Mentiria <u>se dissesse que eram doze carros monumentais, com doze motoristas louros, de olhos azuis.</u> Não. Era um carro</em> <em>só, simplesinho, sem motorista, nem precisava dele, pois logo se percebeu sua natureza de teleguiado. Sem manobra, flechou no espaço e sumiu,</em> <em>levando a noiva e seus doze pares de França, perdão! de sapatos. Eu preveni que o caso era banal e maravilhoso.</em></p>\n<span class=\"apoio-attrib\"><em>(Adaptado de: ANDRADE, Carlos Drummond de. <strong>Cadeira de balanço</strong>. São Paulo: Companhia das Letras, 2020)</em></span>\n<p class=\"fcc-excerpt\"><em>Mentiria se dissesse <u>que</u> eram doze carros monumentais, com doze motoristas louros, de olhos azuis</em>.</p>",
     "imagem": null,
-    "pergunta": "Em relação à oração <u>que</u> o precede, o trecho sublinhado expressa ideia de",
+    "pergunta": "Em relação à oração que o precede, o trecho sublinhado expressa ideia de",
     "alternativas": [
       "consequência.",
       "oposição.",
@@ -189,7 +196,8 @@
       "condição."
     ],
     "correta": 4,
-    "linkTec": "https://www.tecconcursos.com.br/questoes/2340573"
+    "linkTec": "https://www.tecconcursos.com.br/questoes/2340573",
+    "_bloco": 9
   },
   {
     "id": "fcc_port_gab3_067",
@@ -213,7 +221,8 @@
       "condição."
     ],
     "correta": 1,
-    "linkTec": "https://www.tecconcursos.com.br/questoes/2857646"
+    "linkTec": "https://www.tecconcursos.com.br/questoes/2857646",
+    "_bloco": 9
   },
   {
     "id": "fcc_port_gab3_068",
@@ -228,7 +237,7 @@
     "texto_apoio_titulo": null,
     "texto_apoio": "<p>Atenção: Leia a crônica “Pai de família sem plantação”, de Paulo Mendes Campos, para responder à questão.</p>\n<p><em>Sempre me lembro da história exemplar de um mineiro que veio até a capital, zanzou por aqui, e voltou para contar em casa os assombros da cidade.</em></p>\n<p><em>Seu velho pai balançou a cabeça; fazendo da própria dúvida a sua sabedoria: “É, meu filho, tudo isso pode ser muito bonito, mas pai de família que não</em> <em>tem plantação, não sei não...”</em> <em>Às vezes morro de nostalgia. São momentos de sinceridade, nos quais todo o meu ser denuncia minha falsa condição de morador do Rio de Janeiro. A</em> <em>trepidação desta cidade não é minha. Sou mais, muito mais, querendo ou não querendo, de uma indolência de sol parado e gerânios. Minha terra é</em> <em>outra, minha gente não é esta, meu tempo é mais pausado, meus assuntos são mais humildes, minha fala, mais arrastada. O milho pendoou? Vamos ao</em> <em>pasto dos Macacos matar codorna? A vaca do coronel já deu cria? Desta literatura rural é que preciso.</em></p>\n<p><em>Eis em torno de mim, a cingir-me como um anel, o Rio de Janeiro. Velozes automóveis me perseguem na rua, novos edifícios crescem fazendo barulho</em> <em>em meus ouvidos, a guerra comercial não me dá tréguas, o clamor do telefone me põe a funcionar sem querer, a vaga se espraia e repercute no meu</em> <em>peito, minha inocência não percebe o negócio de milhões articulado com um sorriso e um aperto de mão. Pois eu não sou daqui.</em></p>\n<p><em>Vivo em apartamento só por ter cedido a uma perversão coletiva; nasci em casa de dois planos, o de cima, da família, sobre tábuas lavadas, claro e sem</em> <em>segredos, e o de baixo, das crianças, o porão escuro, onde a vida se tece de nada, de pressentimentos, de imaginação, do estofo dos sonhos. A maciez</em> <em>das mãos que me cumprimentam na cidade tem qualquer coisa de peixe e mentira; não sou desta viração mesclada de maresia; não sei comer este</em> <em>prato vermelho e argênteo de crustáceos; não entendo os sinais que os navios trocam na cerração além da minha janela. Confio mais em mãos</em> <em>calosas, meus sentidos querem uma brisa à boca da noite cheirando a capim-gordura; um prato de tutu e torresmos para minha fome; e quando o trem</em> <em>distante apitasse na calada, pelo menos eu saberia em que sentimentos desfalecer.</em></p>\n<p><em>Ando bem sem automóvel, mas sinto falta de uma charrete. Com um matungo que me criasse amizade, eu visitaria o vigário, o médico, o turco, o</em> <em>promotor que lê Victor Hugo, o italiano que tem uma horta, o ateu local, o criminoso da cadeia, todos eles muitos meus amigos. Se aqui não vou à</em> <em>igreja, lá pelo menos frequentaria a doçura do adro, olhando o cemitério em aclive sobre a encosta, emoldurado em muros brancos. Aqui jaz Paulo</em> <em>Mendes Campos. Por favor, engavetem-me com simplicidade do lado da sombra. É tudo o que peço. E não é preciso rezar por minha alma</em> <em>desgovernada.</em></p>\n<span class=\"apoio-attrib\"><em>(Adaptado de: CAMPOS, Paulo Mendes. <strong>Balé do pato</strong>. São Paulo: Ática, 2012)</em></span>\n<p class=\"fcc-excerpt\"><em>Sempre me lembro da história exemplar de um mineiro <u>que</u> veio até a capital, zanzou por aqui, e voltou para contar em casa os assombros da cidade</em>.</p>",
     "imagem": null,
-    "pergunta": "O termo sublinhado acima introduz uma oração <u>que</u> expressa ideia de",
+    "pergunta": "O termo sublinhado acima introduz uma oração que expressa ideia de",
     "alternativas": [
       "condição.",
       "consequência.",
@@ -237,7 +246,8 @@
       "proporção."
     ],
     "correta": 3,
-    "linkTec": "https://www.tecconcursos.com.br/questoes/2340327"
+    "linkTec": "https://www.tecconcursos.com.br/questoes/2340327",
+    "_bloco": 9
   },
   {
     "id": "fcc_port_gab3_069",
@@ -261,7 +271,8 @@
       "finalidade."
     ],
     "correta": 0,
-    "linkTec": "https://www.tecconcursos.com.br/questoes/2822215"
+    "linkTec": "https://www.tecconcursos.com.br/questoes/2822215",
+    "_bloco": 9
   },
   {
     "id": "fcc_port_gab3_070",
@@ -285,7 +296,8 @@
       "o verbo <em><strong>tornar </strong></em>está conjugado na voz passiva."
     ],
     "correta": 0,
-    "linkTec": "https://www.tecconcursos.com.br/questoes/2338925"
+    "linkTec": "https://www.tecconcursos.com.br/questoes/2338925",
+    "_bloco": 9
   },
   {
     "id": "fcc_port_gab3_071",
@@ -300,7 +312,7 @@
     "texto_apoio_titulo": null,
     "texto_apoio": "<p><u>Atenção:</u> Leia a crônica “Pai de família sem plantação”, de Paulo Mendes Campos, para responder à questão.</p>\n<p><em>Sempre me lembro da história exemplar de um mineiro que veio até a capital, zanzou por aqui, e voltou para contar em casa os assombros da cidade.</em></p>\n<p><em>Seu velho pai balançou a cabeça; fazendo da própria dúvida a sua sabedoria: “É, meu filho, tudo isso pode ser muito bonito, mas pai de família que não</em> <em>tem plantação, não sei não...”</em> <em><mark>Às vezes morro de nostalgia.</mark> São momentos de sinceridade, nos quais todo o meu ser denuncia minha falsa condição de morador do Rio de Janeiro. A</em> <em>trepidação desta cidade não é minha. Sou mais, muito mais, querendo ou não querendo, de uma indolência de sol parado e gerânios. Minha terra é</em> <em>outra, minha gente não é esta, meu tempo é mais pausado, meus assuntos são mais humildes, minha fala, mais arrastada. O milho pendoou? Vamos ao</em> <em>pasto dos Macacos matar codorna? A vaca do coronel já deu cria? <mark>Desta literatura rural é que preciso.</mark></em></p>\n<p><em>Eis em torno de mim, a cingir-me como um anel, o Rio de Janeiro. Velozes automóveis me perseguem na rua, novos edifícios crescem fazendo barulho</em> <em>em meus ouvidos, a guerra comercial não me dá tréguas, o clamor do telefone me põe a funcionar sem querer, a vaga se espraia e repercute no meu</em> <em>peito, minha inocência não percebe o negócio de milhões articulado com um sorriso e um aperto de mão. <mark>Pois eu não sou <u>daqui.</u></mark></em></p>\n<p><em>Vivo em apartamento só por ter cedido a uma perversão coletiva; nasci em casa de dois planos, o de cima, da família, sobre tábuas lavadas, claro e sem</em> <em>segredos, e o de baixo, das crianças, o porão escuro, onde a vida se tece de nada, de pressentimentos, de imaginação, do estofo dos sonhos. A maciez</em> <em>das mãos que me cumprimentam na cidade tem qualquer coisa de peixe e mentira; não sou desta viração mesclada de maresia; não sei comer este</em> <em>prato vermelho e argênteo de crustáceos; não entendo os sinais que os navios trocam na cerração além da minha janela. Confio mais em mãos</em> <em>calosas, meus sentidos querem uma brisa à boca da noite cheirando a capim-gordura; um prato de tutu e torresmos para minha fome; e quando o trem</em> <em>distante apitasse na calada, pelo menos eu saberia em que sentimentos desfalecer.</em></p>\n<p><em>Ando bem sem automóvel, mas sinto falta de uma charrete. Com um matungo que me criasse amizade, eu visitaria o vigário, o médico, o turco, o</em> <em>promotor que lê Victor Hugo, o italiano que tem uma horta, o ateu local, o criminoso da cadeia, todos eles muitos meus amigos. Se aqui não vou à</em> <em>igreja, lá pelo menos frequentaria a doçura do adro, olhando o cemitério em aclive sobre a encosta, emoldurado em muros brancos. Aqui jaz Paulo</em> <em>Mendes Campos. Por favor, engavetem-me com simplicidade do lado da sombra. É tudo o que peço. E não é preciso rezar por minha alma</em> <em>desgovernada.</em></p>\n<span class=\"apoio-attrib\"><em>(Adaptado de: CAMPOS, Paulo Mendes. <strong>Balé do pato</strong>. São Paulo: Ática, 2012)</em></span>\n<p class=\"fcc-excerpt\">Expressão expletiva é uma expressão <u>que</u> não exerce função sintática. (Adaptado de: BECHARA, Evanildo. <strong>Moderna gramática portuguesa</strong>, 2009)</p>",
     "imagem": null,
-    "pergunta": "Constitui uma expressão expletiva o <u>que</u> está sublinhado em:",
+    "pergunta": "Constitui uma expressão expletiva o que está sublinhado em:",
     "alternativas": [
       "<em>Desta literatura rural <u>é que</u> preciso</em>.",
       "<em>Sempre me lembro da história exemplar</em>.",
@@ -309,7 +321,8 @@
       "<em><u>Às vezes</u> morro de nostalgia</em>."
     ],
     "correta": 0,
-    "linkTec": "https://www.tecconcursos.com.br/questoes/2340329"
+    "linkTec": "https://www.tecconcursos.com.br/questoes/2340329",
+    "_bloco": 9
   },
   {
     "id": "fcc_port_gab3_072",
@@ -324,7 +337,7 @@
     "texto_apoio_titulo": "Leia o conto “Casos de baleias”, de Carlos Drummond de Andrade.",
     "texto_apoio": "<p>Leia o conto “Casos de baleias”, de Carlos Drummond de Andrade.</p>\n<p><em>A baleia telegrafou ao <u>superintendente da Pesca</u>, queixando-se de que estava sendo caçada demais, e a continuar assim sua espécie desapareceria</em> <em>com prejuízo geral do meio ambiente e dos usuários.</em></p>\n<p><em>O superintendente, em ofício, respondeu à baleia que não podia fazer nada senão recomendar que de duas baleias uma fosse poupada, e esta</em> <em>ganhasse número de registro para identificar-se.</em></p>\n<p><em><u>Em face dessa resolução</u>, todas as baleias providenciaram registro, e o obtiveram <mark>pela maneira como se obtêm essas coisas</mark>, à margem dos</em> <em>regulamentos. O mar ficou coalhado de números, que rabeavam alegremente, e o esguicho dos cetáceos, formando verdadeiros festivais no alto</em> <em>oceano, dava ideia de imenso jardim explodindo em repuxos, dourados de sol, ou prateados de lua.</em></p>\n<p><em><u>Um inspetor da Superintendência</u>, intrigado com o fato de que ninguém mais conseguia caçar baleia, pôs-se a examinar os livros e verificou que havia</em> <em>infinidade de números repetidos. Cancelou-se o registro, e os funcionários responsáveis pela fraude, jogados ao mar, foram devorados pelas baleias,</em> <em>que passaram a ser caçadas indiscriminadamente. A recomendação internacional para suspender a caça por tempo indeterminado só alcançará duas</em> <em>baleias vivas, escondidas e fantasiadas de rochedo, no litoral do Espírito Santo.</em></p>\n<span class=\"apoio-attrib\">(ANDRADE, Carlos Drummond de. <strong>Contos plausíveis</strong>. São Paulo: Companhia das Letras, 2012)</span>",
     "imagem": null,
-    "pergunta": "O elemento sublinhado em “<em>pela maneira como se obtêm essas coisas</em>” (3o parágrafo) exerce a mesma função sintática daquele sublinhado em:",
+    "pergunta": "O elemento sublinhado em “<u><em>pela maneira como se obtêm essas coisas</em></u>” (3o parágrafo) exerce a mesma função sintática daquele sublinhado em:",
     "alternativas": [
       "<em>A baleia telegrafou ao <u>superintendente</u> da Pesca</em> (1o parágrafo).",
       "<em>O superintendente</em> [...] <em>respondeu à baleia que não podia fazer <u>nada</u></em> (2o parágrafo).",
@@ -333,7 +346,8 @@
       "<em>Um inspetor <u>da Superintendência</u></em> [...] <em>pôs-se a examinar os livros</em> (4o parágrafo)."
     ],
     "correta": 4,
-    "linkTec": "https://www.tecconcursos.com.br/questoes/2456383"
+    "linkTec": "https://www.tecconcursos.com.br/questoes/2456383",
+    "_bloco": 9
   },
   {
     "id": "fcc_port_gab3_073",
@@ -348,7 +362,7 @@
     "texto_apoio_titulo": "<u>Atenção:</u> Para responder à questão, leia o texto abaixo.",
     "texto_apoio": "<p>Para responder à questão, leia o texto abaixo.</p>\n<p><em>A emissão de gases de efeito estufa é o principal motivo que torna <u>o clima na Terra</u> progressivamente mais quente a partir de meados do século XIX.</em></p>\n<p><em>Do início da Segunda Revolução Industrial até hoje, a temperatura média do planeta subiu cerca de 1,1 grau Celsius (ºC). No plano local, o estilo de vida</em> <em>urbano adotado atualmente pela maior parte da população global potencializa ainda mais o calor de fundo criado pelas <u>mudanças climáticas.</u> Desde</em> <em>2007, segundo estimativas da Organização das Nações Unidas (ONU), mais pessoas vivem em cidades do que no campo, <mark>um padrão de habitação e</mark></em> <em>ocupação do solo provavelmente inédito <u>na história da humanidade.</u></mark> Hoje, mais de 55% dos de bilhões de habitantes do planeta moram em centros</em> <em>urbanos. Em muitos países, esse percentual é bem maior e, no Brasil, chega a 88%.</em></p>\n<p><em>Com menos <u>áreas verdes</u>, mais concreto e asfalto e ocupação geralmente desordenada do solo. as cidades são mais abafadas do que as áreas rurais.</em></p>\n<p><em>Dentro do meio urbano. as zonas com menos árvores e vegetação são ainda mais quentes e formam bolsões de clima abafado. Esse efeito é</em> <em>denominado ilha de calor urbana. Até poucos anos atrás, ele era mais sentido e estudado em grandes cidades. com milhões de habitantes. como São</em> <em>Paulo, Rio de Janeiro ou qualquer outra grande metrópole. <mark>Hoje, <u>as ilhas de calor</u> se manifestam em cidades de qualquer tamanho, das menores às</mark></em> <em>maiores.</mark></em></p>\n<span class=\"apoio-attrib\"><em>(PIVETTA, Marcos. Disponivel em: https:revistapesquisa fapesp.br)</em></span>\n<p class=\"fcc-excerpt\"><em>Do início da Segunda Revolução Industrial até hoje, <u>a temperatura média do planeta</u> subiu cerca de 1,1 grau Celsius (ºC).</em></p>",
     "imagem": null,
-    "pergunta": "O elemento <u>que</u> exerce, no contexto em que se encontra, a mesma função sintática que o sublinhado na frase acima está também sublinhado em:",
+    "pergunta": "O elemento que exerce, no contexto em que se encontra, a mesma função sintática que o sublinhado na frase acima está também sublinhado em:",
     "alternativas": [
       "um padrão de habitação e ocupação do solo provavelmente inédito <em>na história da humanidade</em>.",
       "Hoje, <em>as ilhas <u>de calor</u></em> se manifestam em cidades de qualquer tamanho, das menores às maiores.",
@@ -357,7 +371,8 @@
       "Com menos <em>áreas verdes</em>, mais concreto e asfalto e ocupação geralmente desordenada do solo, as cidades são mais abafadas."
     ],
     "correta": 1,
-    "linkTec": "https://www.tecconcursos.com.br/questoes/2712998"
+    "linkTec": "https://www.tecconcursos.com.br/questoes/2712998",
+    "_bloco": 9
   },
   {
     "id": "fcc_port_gab3_074",
@@ -381,7 +396,8 @@
       "escrevo sobre coisas que, acontecendo <u>à minha</u> volta se relacionem intimamente comigo."
     ],
     "correta": 0,
-    "linkTec": "https://www.tecconcursos.com.br/questoes/2815828"
+    "linkTec": "https://www.tecconcursos.com.br/questoes/2815828",
+    "_bloco": 9
   },
   {
     "id": "fcc_port_gab3_075",
@@ -394,18 +410,19 @@
     "cargo": "AJ (TJ BA)",
     "orgao": "TJ BA",
     "texto_apoio_titulo": "Tempos, lugares mágicos",
-    "texto_apoio": "<center class=\"apoio-title\"><strong>Tempos, lugares mágicos</strong></center>\n<p><em>Sim, já faz tempo, éramos jovem casa/ e estávamos de férias, à toa na vida. Provavelmente aquele nosso cenário mágico de então terá Incorporado</em> <em>novidades: haverá lugar Incólume ao tempo? Deixemos oculta a medida comum do tempo e digamos que tudo aconteceu já faz alguns séculos: cada</em> <em>um carrega dentro de si seu singular relógio emocional.</em></p>\n<p><em>Estávamos os dois na praia de Amaral/na, tomando cerveja num fim de tarde de verão (haverá outras estações em Salvador?). Aquele momento azul</em> <em>bem que podia ser eterno, sentíamos. Passamos a conversar sobre o Tempo. Imaginei então o que seria feito daquele lugar, dali a um mínimo de anos.</em></p>\n<p><em>E especulava, manhoso: ' Existirá talvez o planeta, mas alguma coisa guardará algo do sol desta tarde, destes coqueiros, de nós?'</em> <em>Você então lembrou que não há eliminação cabal da matéria, há transformações sucessivas. E eu Imaginei que, decorridos milênios, nós dois seriamos</em> <em>duas moléculas avulsas, viajantes do espaço que, de repente, poderiam cruzar seus caminhos vertiginosos exatamente onde milênios antes teria</em> <em>havido uma cidade, uma praia, uma conversa a dois. Então lhe propus um pacto: que essas duas moléculas, ao se cruzarem numa fração de segundo</em> <em>em melo a tantas no caos, se façam notar por um quase Imperceptível código luminoso, uma faísca fulminante, uma piscadela guardada por milênios</em> <em>no coração da matéria cósmica.</em></p>\n<p><em>Você achou minha imaginação exuberante demais e preferiu olhar em volta, conferir a brisa que batia nas folhas dos coqueiros de Amaral/na. Há</em> <em>lugares assim, neste nosso planeta: excitam a imaginação até o limite do Imponderável, e ao mesmo tempo exercem toda a sua sedução telúrica.</em></p>\n<p><em>Acabamos um chope e andamos um bocado, a tempo de ver o sol desaparecer. Depois, Já avistando o Farol da Barra, passei a Imaginar que aquele</em> <em>farol mágico, daquela terra mágica, assim que escurecesse passaria a acender estrelas altíssimas. Mas você olhava distraída para algum ponto da linha</em> <em>do horizonte.</em></p>\n<span class=\"apoio-attrib\"><em><strong>(Jehová de Brito, a publicar)</strong></em></span>\n<p class=\"fcc-excerpt\">O <u>tempo</u> passa implacavelmente, enquanto pretendemos <u>que</u> <u>deveria caber ao tempo</u> preservar os objetos do nosso afeto, e depois <u>imputamos ao</u> tempo a responsabilidade de <u>corroer os objetos do nosso afeto</u> de modo impiedoso.</p>",
+    "texto_apoio": "<center class=\"apoio-title\"><strong>Tempos, lugares mágicos</strong></center>\n<p><em>Sim, já faz tempo, éramos jovem casa/ e estávamos de férias, à toa na vida. Provavelmente aquele nosso cenário mágico de então terá Incorporado</em> <em>novidades: haverá lugar Incólume ao tempo? Deixemos oculta a medida comum do tempo e digamos que tudo aconteceu já faz alguns séculos: cada</em> <em>um carrega dentro de si seu singular relógio emocional.</em></p>\n<p><em>Estávamos os dois na praia de Amaral/na, tomando cerveja num fim de tarde de verão (haverá outras estações em Salvador?). Aquele momento azul</em> <em>bem que podia ser eterno, sentíamos. Passamos a conversar sobre o Tempo. Imaginei então o que seria feito daquele lugar, dali a um mínimo de anos.</em></p>\n<p><em>E especulava, manhoso: ' Existirá talvez o planeta, mas alguma coisa guardará algo do sol desta tarde, destes coqueiros, de nós?'</em> <em>Você então lembrou que não há eliminação cabal da matéria, há transformações sucessivas. E eu Imaginei que, decorridos milênios, nós dois seriamos</em> <em>duas moléculas avulsas, viajantes do espaço que, de repente, poderiam cruzar seus caminhos vertiginosos exatamente onde milênios antes teria</em> <em>havido uma cidade, uma praia, uma conversa a dois. Então lhe propus um pacto: que essas duas moléculas, ao se cruzarem numa fração de segundo</em> <em>em melo a tantas no caos, se façam notar por um quase Imperceptível código luminoso, uma faísca fulminante, uma piscadela guardada por milênios</em> <em>no coração da matéria cósmica.</em></p>\n<p><em>Você achou minha imaginação exuberante demais e preferiu olhar em volta, conferir a brisa que batia nas folhas dos coqueiros de Amaral/na. Há</em> <em>lugares assim, neste nosso planeta: excitam a imaginação até o limite do Imponderável, e ao mesmo tempo exercem toda a sua sedução telúrica.</em></p>\n<p><em>Acabamos um chope e andamos um bocado, a tempo de ver o sol desaparecer. Depois, Já avistando o Farol da Barra, passei a Imaginar que aquele</em> <em>farol mágico, daquela terra mágica, assim que escurecesse passaria a acender estrelas altíssimas. Mas você olhava distraída para algum ponto da linha</em> <em>do horizonte.</em></p>\n<span class=\"apoio-attrib\"><em><strong>(Jehová de Brito, a publicar)</strong></em></span>\n<p class=\"fcc-excerpt\">O <u>tempo</u> passa implacavelmente, enquanto pretendemos <u>que deveria caber ao tempo</u> preservar os objetos do nosso afeto, e depois <u>imputamos ao</u> tempo a responsabilidade de <u>corroer os objetos do nosso afeto</u> de modo impiedoso.</p>",
     "imagem": null,
     "pergunta": "Evitam-se as repetições viciosas do período acima substituindo-se os elementos sublinhados, na ordem dada, por:",
     "alternativas": [
       "deveria cabê-lo - <u>o Imputamos</u> - corroer-lhes",
-      "lhe deveria caber - imputamo-lo - lhes corroer",
-      "o deveria caber - lhe imputamos - corroê-los",
+      "lhe deveria caber - <u>imputamo-lo</u> - lhes corroer",
+      "o deveria caber - <u>lhe imputamos</u> - corroê-los",
       "deveria caber a ele - o Imputamos - os corroer",
-      "deveria caber-lhe - lhe imputamos - corroê-los"
+      "deveria caber-lhe - <u>lhe imputamos</u> - corroê-los"
     ],
     "correta": 4,
-    "linkTec": "https://www.tecconcursos.com.br/questoes/2817096"
+    "linkTec": "https://www.tecconcursos.com.br/questoes/2817096",
+    "_bloco": 9
   },
   {
     "id": "fcc_port_gab3_076",
@@ -429,7 +446,8 @@
       "<em>Não assentara no ponto de refugio</em> (1º parágrafo)"
     ],
     "correta": 0,
-    "linkTec": "https://www.tecconcursos.com.br/questoes/2820549"
+    "linkTec": "https://www.tecconcursos.com.br/questoes/2820549",
+    "_bloco": 9
   },
   {
     "id": "fcc_port_gab3_077",
@@ -453,7 +471,8 @@
       "<em>Na porta do estabelecimento deste último <u>é que</u> se discutia a personalidade do vigário.</em> (1º parágrafo)"
     ],
     "correta": 4,
-    "linkTec": "https://www.tecconcursos.com.br/questoes/2822208"
+    "linkTec": "https://www.tecconcursos.com.br/questoes/2822208",
+    "_bloco": 9
   },
   {
     "id": "fcc_port_gab3_078",
@@ -477,7 +496,8 @@
       "Agora temos dois <u>cachorros.</u>"
     ],
     "correta": 4,
-    "linkTec": "https://www.tecconcursos.com.br/questoes/2826818"
+    "linkTec": "https://www.tecconcursos.com.br/questoes/2826818",
+    "_bloco": 9
   },
   {
     "id": "fcc_port_gab3_079",
@@ -501,7 +521,8 @@
       "Os empreiteiros não se importam com as cidades históricas, que pretendem tornar modernas."
     ],
     "correta": 4,
-    "linkTec": "https://www.tecconcursos.com.br/questoes/2338921"
+    "linkTec": "https://www.tecconcursos.com.br/questoes/2338921",
+    "_bloco": 9
   },
   {
     "id": "fcc_port_gab3_080",
@@ -525,7 +546,8 @@
       "O conceito de igualitarismo, desde sempre vacilante aguarda, que sua prática, enfim venha a se dar, entre os que nele confiam."
     ],
     "correta": 3,
-    "linkTec": "https://www.tecconcursos.com.br/questoes/2339951"
+    "linkTec": "https://www.tecconcursos.com.br/questoes/2339951",
+    "_bloco": 9
   },
   {
     "id": "fcc_port_gab3_081",
@@ -549,7 +571,8 @@
       "“<em>Se aqui não vou à igreja, lá pelo menos frequentaria a doçura do adro, olhando o cemitério em aclive sobre a encosta, emoldurado em muros</em> <em>brancos</em>.”"
     ],
     "correta": 1,
-    "linkTec": "https://www.tecconcursos.com.br/questoes/2340321"
+    "linkTec": "https://www.tecconcursos.com.br/questoes/2340321",
+    "_bloco": 9
   },
   {
     "id": "fcc_port_gab3_082",
@@ -573,7 +596,8 @@
       "<em>Não. Era um carro só, simplesinho, sem motorista, nem precisava dele, pois logo se percebeu sua natureza de teleguiado</em>."
     ],
     "correta": 1,
-    "linkTec": "https://www.tecconcursos.com.br/questoes/2340572"
+    "linkTec": "https://www.tecconcursos.com.br/questoes/2340572",
+    "_bloco": 9
   },
   {
     "id": "fcc_port_gab3_083",
@@ -597,7 +621,8 @@
       "<em>Seja razoável, meu amigo, procure colaborar. </em>(18º parágrafo)"
     ],
     "correta": 4,
-    "linkTec": "https://www.tecconcursos.com.br/questoes/2348390"
+    "linkTec": "https://www.tecconcursos.com.br/questoes/2348390",
+    "_bloco": 9
   },
   {
     "id": "fcc_port_gab3_084",
@@ -621,7 +646,8 @@
       "[...] <em>um dia lhe dou outro, e esse você não perderá. </em>(18º parágrafo)"
     ],
     "correta": 4,
-    "linkTec": "https://www.tecconcursos.com.br/questoes/2348551"
+    "linkTec": "https://www.tecconcursos.com.br/questoes/2348551",
+    "_bloco": 9
   },
   {
     "id": "fcc_port_gab3_085",
@@ -645,7 +671,8 @@
       "A beleza, a coragem e as esperanças do menino."
     ],
     "correta": 0,
-    "linkTec": "https://www.tecconcursos.com.br/questoes/2395473"
+    "linkTec": "https://www.tecconcursos.com.br/questoes/2395473",
+    "_bloco": 9
   },
   {
     "id": "fcc_port_gab3_086",
@@ -669,7 +696,8 @@
       "em <em>Compras estando feitas, botei a mão no bolso, o cartão ficou em casa</em>, as vírgulas separam orações."
     ],
     "correta": 4,
-    "linkTec": "https://www.tecconcursos.com.br/questoes/2396311"
+    "linkTec": "https://www.tecconcursos.com.br/questoes/2396311",
+    "_bloco": 9
   },
   {
     "id": "fcc_port_gab3_087",
@@ -693,7 +721,8 @@
       "<em>Impedido de ser quem sou no trabalho – escritório, chão de fábrica, </em>call center<em>, guichê, balcão</em> (2o parágrafo)."
     ],
     "correta": 4,
-    "linkTec": "https://www.tecconcursos.com.br/questoes/2456425"
+    "linkTec": "https://www.tecconcursos.com.br/questoes/2456425",
+    "_bloco": 9
   },
   {
     "id": "fcc_port_gab3_088",
@@ -717,7 +746,8 @@
       "As várias idades que atravessamos, em ritmos tão diferentes têm, cada uma delas, suas marcas de fogo."
     ],
     "correta": 1,
-    "linkTec": "https://www.tecconcursos.com.br/questoes/2712386"
+    "linkTec": "https://www.tecconcursos.com.br/questoes/2712386",
+    "_bloco": 9
   },
   {
     "id": "fcc_port_gab3_089",
@@ -741,7 +771,8 @@
       "A floresta escurecia às nossas costas, e o clarão da cidade aumentava"
     ],
     "correta": 4,
-    "linkTec": "https://www.tecconcursos.com.br/questoes/2712949"
+    "linkTec": "https://www.tecconcursos.com.br/questoes/2712949",
+    "_bloco": 9
   },
   {
     "id": "fcc_port_gab3_090",
@@ -765,7 +796,8 @@
       "discutindo comigo mesmo, com aqueles tiques e gestos falhos de que fala o poeta"
     ],
     "correta": 3,
-    "linkTec": "https://www.tecconcursos.com.br/questoes/2713018"
+    "linkTec": "https://www.tecconcursos.com.br/questoes/2713018",
+    "_bloco": 9
   },
   {
     "id": "fcc_port_gab3_091",
@@ -789,7 +821,8 @@
       "A fim de compreendê-la melhor, pesquisadores de capital catarinense observam, desde os anos 1980, a interação entre pescadores e golfinhos nariz-de-garrafa."
     ],
     "correta": 4,
-    "linkTec": "https://www.tecconcursos.com.br/questoes/2815616"
+    "linkTec": "https://www.tecconcursos.com.br/questoes/2815616",
+    "_bloco": 9
   },
   {
     "id": "fcc_port_gab3_092",
@@ -813,7 +846,8 @@
       "a hospitalidade é concebida, não apenas como uma forma essencial."
     ],
     "correta": 3,
-    "linkTec": "https://www.tecconcursos.com.br/questoes/2817126"
+    "linkTec": "https://www.tecconcursos.com.br/questoes/2817126",
+    "_bloco": 9
   },
   {
     "id": "fcc_port_gab3_093",
@@ -837,7 +871,8 @@
       "Está na alma de cada um, a discórdia moral, razão da enfermidade do Ocidente, que impede a realização das criaturas."
     ],
     "correta": 0,
-    "linkTec": "https://www.tecconcursos.com.br/questoes/2817389"
+    "linkTec": "https://www.tecconcursos.com.br/questoes/2817389",
+    "_bloco": 9
   },
   {
     "id": "fcc_port_gab3_094",
@@ -861,7 +896,8 @@
       "<em> Lembrou-se do padrinho, João Carneiro, mas o padrinho era um moleirão sem vontade, que por si só não faria coisa útil.</em> (1º parágrafo)"
     ],
     "correta": 3,
-    "linkTec": "https://www.tecconcursos.com.br/questoes/2820610"
+    "linkTec": "https://www.tecconcursos.com.br/questoes/2820610",
+    "_bloco": 9
   },
   {
     "id": "fcc_port_gab3_095",
@@ -885,7 +921,8 @@
       "Wolf cuida da frente, parte da casa onde absolutamente ninguém é bem recebido."
     ],
     "correta": 3,
-    "linkTec": "https://www.tecconcursos.com.br/questoes/2826811"
+    "linkTec": "https://www.tecconcursos.com.br/questoes/2826811",
+    "_bloco": 9
   },
   {
     "id": "fcc_port_gab3_096",
@@ -909,7 +946,8 @@
       "Uma pessoa de 30 anos, hoje pode dizer, a adolescentes incrédulos honestamente."
     ],
     "correta": 0,
-    "linkTec": "https://www.tecconcursos.com.br/questoes/2849396"
+    "linkTec": "https://www.tecconcursos.com.br/questoes/2849396",
+    "_bloco": 9
   },
   {
     "id": "fcc_port_gab3_097",
@@ -933,7 +971,8 @@
       "Em que circunstâncias alguém, se exalta, e defende com ardor uma opinião"
     ],
     "correta": 2,
-    "linkTec": "https://www.tecconcursos.com.br/questoes/2850350"
+    "linkTec": "https://www.tecconcursos.com.br/questoes/2850350",
+    "_bloco": 9
   },
   {
     "id": "fcc_port_gab3_098",
@@ -957,7 +996,8 @@
       "Ainda hoje, quando lanço o olhar ao mar, imagino a vida de meus avós como ilhas distantes."
     ],
     "correta": 3,
-    "linkTec": "https://www.tecconcursos.com.br/questoes/2857647"
+    "linkTec": "https://www.tecconcursos.com.br/questoes/2857647",
+    "_bloco": 9
   },
   {
     "id": "fcc_port_gab3_099",
@@ -981,7 +1021,8 @@
       "Diziam que — talvez fosse por conta do passado minerador do povo que chegou à região —, ensandecido pela sorte de encontrar um diamante."
     ],
     "correta": 0,
-    "linkTec": "https://www.tecconcursos.com.br/questoes/2857651"
+    "linkTec": "https://www.tecconcursos.com.br/questoes/2857651",
+    "_bloco": 9
   },
   {
     "id": "fcc_port_gab3_100",
@@ -1005,7 +1046,8 @@
       "A diversidade de valores, <u>da qual</u> tantos fazem questão de ignorar, deveria ser vista como natural num mundo globalizado."
     ],
     "correta": 3,
-    "linkTec": "https://www.tecconcursos.com.br/questoes/2338913"
+    "linkTec": "https://www.tecconcursos.com.br/questoes/2338913",
+    "_bloco": 9
   },
   {
     "id": "fcc_port_gab3_101",
@@ -1029,7 +1071,8 @@
       "Conheceu um novo aplicativo com o qual ampliou a rede de contatos."
     ],
     "correta": 4,
-    "linkTec": "https://www.tecconcursos.com.br/questoes/2454857"
+    "linkTec": "https://www.tecconcursos.com.br/questoes/2454857",
+    "_bloco": 9
   },
   {
     "id": "fcc_port_gab3_102",
@@ -1053,7 +1096,8 @@
       "Ele se dedicou a escritos <u>em cujos</u> procurou aplicar todo o seu talento de ensaísta."
     ],
     "correta": 2,
-    "linkTec": "https://www.tecconcursos.com.br/questoes/2456168"
+    "linkTec": "https://www.tecconcursos.com.br/questoes/2456168",
+    "_bloco": 9
   },
   {
     "id": "fcc_port_gab3_103",
@@ -1077,7 +1121,8 @@
       "A experiência pessoal não costuma ser uma fonte <u>aonde</u> os escritores costumam se valer o tempo lado."
     ],
     "correta": 1,
-    "linkTec": "https://www.tecconcursos.com.br/questoes/2711986"
+    "linkTec": "https://www.tecconcursos.com.br/questoes/2711986",
+    "_bloco": 9
   },
   {
     "id": "fcc_port_gab3_104",
@@ -1101,7 +1146,8 @@
       "a – a – à."
     ],
     "correta": 3,
-    "linkTec": "https://www.tecconcursos.com.br/questoes/2348405"
+    "linkTec": "https://www.tecconcursos.com.br/questoes/2348405",
+    "_bloco": 9
   },
   {
     "id": "fcc_port_gab3_105",
@@ -1125,7 +1171,8 @@
       "sempre que um substantivo feminino for antecedido por um artigo feminino."
     ],
     "correta": 0,
-    "linkTec": "https://www.tecconcursos.com.br/questoes/2348552"
+    "linkTec": "https://www.tecconcursos.com.br/questoes/2348552",
+    "_bloco": 9
   },
   {
     "id": "fcc_port_gab3_106",
@@ -1149,7 +1196,8 @@
       "A menos que hajam apelos à força e ao domínio físico, não é comum que o sistema de uma cultura apague o de outra."
     ],
     "correta": 0,
-    "linkTec": "https://www.tecconcursos.com.br/questoes/2338912"
+    "linkTec": "https://www.tecconcursos.com.br/questoes/2338912",
+    "_bloco": 9
   },
   {
     "id": "fcc_port_gab3_107",
@@ -1173,7 +1221,8 @@
       "Deverá sobrevir como efeito imediato do fim das práticas autoritárias as práticas possíveis de um real igualitarismo."
     ],
     "correta": 3,
-    "linkTec": "https://www.tecconcursos.com.br/questoes/2339948"
+    "linkTec": "https://www.tecconcursos.com.br/questoes/2339948",
+    "_bloco": 9
   },
   {
     "id": "fcc_port_gab3_108",
@@ -1197,6 +1246,7 @@
       "Fui tomado por uma emoção <u>profunda,</u> também comecei a chorar (emoções profundas)."
     ],
     "correta": 0,
-    "linkTec": "https://www.tecconcursos.com.br/questoes/2396317"
+    "linkTec": "https://www.tecconcursos.com.br/questoes/2396317",
+    "_bloco": 9
   }
 ]

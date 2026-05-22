@@ -98,12 +98,15 @@ export default function FocusPage({ exam, onFinish }: FocusPageProps) {
   }, [exam, answers, onFinish, navigate]);
 
   return (
-    <div className="min-h-screen bg-bg-base" style={{ background: "#0B0F14" }}>
+    <div className="min-h-screen" style={{ background: "#06080B" }}>
       {/* ── Ultra-thin progress line — always visible ─────────────── */}
-      <div className="fixed top-0 left-0 right-0 z-50 h-px bg-border-subtle">
+      <div className="fixed top-0 left-0 right-0 z-50 h-px" style={{ background: "rgba(255,255,255,0.04)" }}>
         <motion.div
           className="h-full"
-          style={{ background: "#c8a75d" }}
+          style={{
+            background: "linear-gradient(90deg, #8a7240, #c8a75d 50%, #e4cc95)",
+            boxShadow: "0 0 8px rgba(200,167,93,0.6)",
+          }}
           animate={{ width: `${pct}%` }}
           transition={{ duration: 0.4, ease: [0.4, 0, 0.2, 1] }}
         />

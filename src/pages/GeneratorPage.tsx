@@ -1,10 +1,15 @@
+/**
+ * GeneratorPage — Premium configurator.
+ * Sticky CTA bar, refined steppers, gold-accent mode selector.
+ */
 import { useState, useMemo } from "react";
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
-import { Layers, Play, Info } from "lucide-react";
+import { Play, Minus, Plus, Trash2, Timer, Settings2, BookOpen } from "lucide-react";
 import { Button } from "../components/ui/Button";
 import { Badge } from "../components/ui/Badge";
-import { fadeUp, timing } from "../lib/motion";
+import { AmbientBackground } from "../components/ui/AmbientBackground";
+import { StaggerList, StaggerItem } from "../components/motion/StaggerList";
 import { generateExam } from "../lib/exam";
 import { DISCIPLINE_ORDER, DISC_COLORS } from "../lib/constants";
 import { cn } from "../lib/utils";
@@ -57,138 +62,257 @@ export default function GeneratorPage({ questions, usedIds, onStartExam }: Gener
   };
 
   return (
-    <motion.div
-      {...fadeUp}
-      transition={timing.smooth}
-      className="max-w-2xl mx-auto px-4 pb-24 pt-6 md:pb-8 md:pt-20 space-y-6"
+    <div className="min-h-screen relative" style={{ background: "#06080B" }}>
+      <AmbientBackground variant="workspace" />
+
+      <div className="relative z-10 max-w-3xl mx-auto px-4 pb-36 pt-24 md:pb-24">
+        <StaggerList className="space-y-6">
+
+          {/* Header */}
+          <StaggerItem>
+            <div className="text-[10px] uppercase tracking-wider text-text-muted font-sans mb-1.5">
+              Configurador
+            </div>
+            <h1 className="text-3xl sm:text-4xl font-sans font-semibold tracking-tightest text-gradient-muted">
+              Configurar simulado
+            </h1>
+            <p className="text-text-tertiary text-sm mt-2 font-sans tracking-tight max-w-md">
+              Escolha o modo, defina o tempo e selecione as disciplinas para gerar uma prova personalizada.
+            </p>
+          </StaggerItem>
+
+          {/* Mode selector */}
+          <StaggerItem>
+            <Section icon={Settings2} title="Modo de execução">
+              <div className="grid grid-cols-2 gap-2 p-3">
+                {(["prova", "treino"] as const).map((m) => (
+                  <button
+                    key={m}
+                    onClick={() => setMode(m)}
+                    className={cn(
+                      "group relative overflow-hidden p-4 rounded-xl text-left transition-all duration-300",
+                      mode === m ? "" : "hover:bg-white/[0.02]"
+                    )}
+                    style={
+                      mode === m
+                        ? {
+                            background: "linear-gradient(180deg, rgba(200,167,93,0.12) 0%, rgba(200,167,93,0.02) 100%)",
+                            border: "1px solid rgba(200,167,93,0.30)",
+                            boxShadow: "inset 0 1px 0 rgba(200,167,93,0.10), 0 0 20px -6px rgba(200,167,93,0.25)",
+                          }
+                        : {
+                            background: "linear-gradient(180deg, rgba(255,255,255,0.022) 0%, rgba(255,255,255,0.004) 100%)",
+                            border: "1px solid rgba(255,255,255,0.06)",
+                          }
+                    }
+                  >
+                    <div className="flex items-center gap-2 mb-1.5">
+                      <div className={cn("w-1.5 h-1.5 rounded-full", mode === m ? "bg-gold shadow-[0_0_8px_rgba(200,167,93,0.6)]" : "bg-white/20")} />
+                      <div className={cn(
+                        "font-semibold text-sm font-sans tracking-tight",
+                        mode === m ? "text-gold" : "text-text-primary"
+                      )}>
+                        {m === "prova" ? "Prova cronometrada" : "Modo treino"}
+                      </div>
+                    </div>
+                    <div className="text-xs font-sans text-text-tertiary">
+                      {m === "prova" ? "Com limite de tempo · sem feedback imediato" : "Sem cronômetro · feedback ao responder"}
+                    </div>
+                  </button>
+                ))}
+              </div>
+            </Section>
+          </StaggerItem>
+
+          {/* Time selector (only for prova mode) */}
+          {mode === "prova" && (
+            <StaggerItem>
+              <Section icon={Timer} title="Tempo limite">
+                <div className="p-3 flex gap-2 overflow-x-auto">
+                  {[60, 90, 120, 180, 240].map((t) => (
+                    <button
+                      key={t}
+                      onClick={() => setTime(t)}
+                      className={cn(
+                        "flex-1 min-w-[68px] py-3 px-3 rounded-xl text-sm font-mono font-medium transition-all duration-200 tabular-nums",
+                        time === t ? "" : "hover:bg-white/[0.02]"
+                      )}
+                      style={
+                        time === t
+                          ? {
+                              background: "linear-gradient(180deg, rgba(200,167,93,0.14) 0%, rgba(200,167,93,0.02) 100%)",
+                              border: "1px solid rgba(200,167,93,0.30)",
+                              color: "#e4cc95",
+                              boxShadow: "inset 0 1px 0 rgba(200,167,93,0.12)",
+                            }
+                          : {
+                              background: "rgba(255,255,255,0.015)",
+                              border: "1px solid rgba(255,255,255,0.06)",
+                              color: "rgba(255,255,255,0.6)",
+                            }
+                      }
+                    >
+                      {t < 60 ? `${t}m` : `${t / 60}h`}
+                    </button>
+                  ))}
+                </div>
+              </Section>
+            </StaggerItem>
+          )}
+
+          {/* Disciplines */}
+          <StaggerItem>
+            <Section icon={BookOpen} title="Disciplinas" trailing={
+              <Badge variant={total > 0 ? "gold" : "neutral"} size="sm">
+                {total} {total === 1 ? "questão" : "questões"}
+              </Badge>
+            }>
+              <div>
+                {DISCIPLINE_ORDER.map((disc, i) => {
+                  const color = DISC_COLORS[i];
+                  const val = cfg[disc] ?? 0;
+                  const max = avail[disc] ?? 0;
+                  const allMax = allAvail[disc] ?? 0;
+                  const active = val > 0;
+                  return (
+                    <motion.div
+                      key={disc}
+                      initial={{ opacity: 0 }}
+                      animate={{ opacity: 1 }}
+                      transition={{ delay: i * 0.03 }}
+                      className={cn(
+                        "flex items-center gap-3 px-5 py-3.5 border-b border-white/[0.04] last:border-0 transition-colors",
+                        active && "bg-white/[0.015]"
+                      )}
+                    >
+                      <div
+                        className="w-2 h-2 rounded-full shrink-0"
+                        style={{
+                          background: color,
+                          boxShadow: active ? `0 0 8px ${color}` : "none",
+                        }}
+                      />
+                      <div className="flex-1 min-w-0">
+                        <div className={cn("text-sm font-sans truncate tracking-tight", active ? "text-text-primary" : "text-text-secondary")}>
+                          {disc}
+                        </div>
+                        <div className="text-[11px] text-text-tertiary font-sans">
+                          {max} disponíveis <span className="text-text-muted">· {allMax} total</span>
+                        </div>
+                      </div>
+                      <div className="flex items-center gap-1 shrink-0">
+                        <button
+                          onClick={() => setDisc(disc, val - 1)}
+                          disabled={val === 0}
+                          className="w-8 h-8 rounded-lg flex items-center justify-center text-text-secondary disabled:opacity-30 disabled:cursor-not-allowed enabled:hover:bg-white/[0.06] enabled:hover:text-text-primary transition-colors duration-150"
+                        >
+                          <Minus className="w-3.5 h-3.5" />
+                        </button>
+                        <span className={cn(
+                          "w-9 text-center font-mono text-sm font-semibold tabular-nums",
+                          active ? "text-gold" : "text-text-muted"
+                        )}>
+                          {val}
+                        </span>
+                        <button
+                          onClick={() => setDisc(disc, val + 1)}
+                          disabled={val >= max}
+                          className={cn(
+                            "w-8 h-8 rounded-lg flex items-center justify-center transition-all duration-150 disabled:opacity-30 disabled:cursor-not-allowed",
+                            "text-text-secondary enabled:hover:bg-white/[0.06] enabled:hover:text-gold"
+                          )}
+                        >
+                          <Plus className="w-3.5 h-3.5" />
+                        </button>
+                      </div>
+                    </motion.div>
+                  );
+                })}
+              </div>
+            </Section>
+          </StaggerItem>
+
+          {/* Spacer for sticky bar */}
+          <div className="h-4" />
+        </StaggerList>
+      </div>
+
+      {/* Sticky CTA Bar */}
+      <motion.div
+        initial={{ y: 100, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ duration: 0.5, delay: 0.3, ease: [0.16, 1, 0.3, 1] }}
+        className="fixed bottom-0 md:bottom-0 left-0 right-0 z-30 pb-safe"
+        style={{ paddingBottom: "calc(env(safe-area-inset-bottom, 0px) + 64px)" }}
+      >
+        <div className="md:hidden h-0" />
+        <div
+          className="mx-3 sm:mx-auto sm:max-w-2xl rounded-2xl p-3 flex items-center gap-3 mb-3"
+          style={{
+            background: "linear-gradient(180deg, rgba(15,20,27,0.92) 0%, rgba(11,15,20,0.96) 100%)",
+            backdropFilter: "blur(20px) saturate(160%)",
+            WebkitBackdropFilter: "blur(20px) saturate(160%)",
+            border: "1px solid rgba(255,255,255,0.08)",
+            boxShadow:
+              "inset 0 1px 0 rgba(255,255,255,0.06), 0 24px 48px -16px rgba(0,0,0,0.6), 0 8px 24px rgba(0,0,0,0.4)",
+          }}
+        >
+          <Button
+            variant="ghost" size="md"
+            onClick={() => setCfg(Object.fromEntries(DISCIPLINE_ORDER.map((d) => [d, 0])))}
+            icon={<Trash2 className="w-3.5 h-3.5" />}
+            disabled={total === 0}
+          >
+            <span className="hidden sm:inline">Limpar</span>
+          </Button>
+          <div className="flex-1 text-center px-2">
+            {total > 0 ? (
+              <div className="text-xs font-sans tracking-tight">
+                <span className="text-text-primary font-semibold tabular-nums">{total}</span>
+                <span className="text-text-tertiary"> {total === 1 ? "questão selecionada" : "questões selecionadas"}</span>
+              </div>
+            ) : (
+              <div className="text-xs text-text-muted font-sans tracking-tight">Selecione disciplinas para começar</div>
+            )}
+          </div>
+          <Button
+            variant="gold" size="lg"
+            disabled={total === 0}
+            icon={<Play className="w-3.5 h-3.5" />}
+            onClick={handleStart}
+            className="!h-11"
+          >
+            Iniciar
+          </Button>
+        </div>
+      </motion.div>
+    </div>
+  );
+}
+
+/* ── Section primitive ──────────────────────────────────────────────── */
+function Section({
+  title, icon: Icon, trailing, children,
+}: { title: string; icon: any; trailing?: React.ReactNode; children: React.ReactNode }) {
+  return (
+    <div
+      className="rounded-2xl overflow-hidden"
+      style={{
+        background: "linear-gradient(180deg, rgba(255,255,255,0.025) 0%, rgba(255,255,255,0.005) 100%)",
+        border: "1px solid rgba(255,255,255,0.06)",
+        boxShadow: "inset 0 1px 0 rgba(255,255,255,0.04), 0 4px 16px -6px rgba(0,0,0,0.35)",
+      }}
     >
-      <div>
-        <h1 className="text-2xl font-display font-semibold text-text-primary tracking-tight">
-          Configurar Simulado
-        </h1>
-        <p className="text-text-secondary text-sm mt-1">
-          Escolha as disciplinas e configure a prova.
-        </p>
-      </div>
-
-      {/* Mode */}
-      <div className="rounded-2xl bg-bg-elevated border border-border-subtle overflow-hidden">
-        <div className="px-5 py-4 border-b border-border-subtle/60">
-          <h2 className="text-sm font-semibold text-text-primary">Modo</h2>
-        </div>
-        <div className="p-4 grid grid-cols-2 gap-2">
-          {(["prova", "treino"] as const).map((m) => (
-            <button
-              key={m}
-              onClick={() => setMode(m)}
-              className={cn(
-                "py-4 px-4 rounded-xl border text-sm font-medium transition-all",
-                mode === m
-                  ? "bg-gold-subtle border-border-gold text-gold"
-                  : "border-border-subtle text-text-secondary hover:border-border-gold/40 hover:text-text-primary"
-              )}
-            >
-              <div className="font-semibold capitalize">{m === "prova" ? "Prova cronometrada" : "Modo treino"}</div>
-              <div className="text-xs mt-1 opacity-70">
-                {m === "prova" ? "Com limite de tempo" : "Ver resposta ao responder"}
-              </div>
-            </button>
-          ))}
-        </div>
-      </div>
-
-      {/* Time (prova mode) */}
-      {mode === "prova" && (
-        <div className="rounded-2xl bg-bg-elevated border border-border-subtle overflow-hidden">
-          <div className="px-5 py-4 border-b border-border-subtle/60">
-            <h2 className="text-sm font-semibold text-text-primary">Tempo limite</h2>
+      <div className="flex items-center justify-between px-5 py-3.5 border-b border-white/[0.04]">
+        <div className="flex items-center gap-2.5">
+          <div className="w-7 h-7 rounded-lg flex items-center justify-center bg-white/[0.04] border border-white/[0.08]">
+            <Icon className="w-3.5 h-3.5 text-text-secondary" />
           </div>
-          <div className="p-4 flex items-center gap-3">
-            {[60, 90, 120, 180, 240].map((t) => (
-              <button
-                key={t}
-                onClick={() => setTime(t)}
-                className={cn(
-                  "flex-1 py-2.5 rounded-xl text-sm font-mono font-medium border transition-all",
-                  time === t
-                    ? "bg-gold-subtle border-border-gold text-gold"
-                    : "border-border-subtle text-text-secondary hover:border-border-faint hover:text-text-primary"
-                )}
-              >
-                {t < 60 ? `${t}m` : `${t / 60}h`}
-              </button>
-            ))}
-          </div>
+          <h2 className="text-sm font-semibold text-text-primary font-sans tracking-tight">{title}</h2>
         </div>
-      )}
-
-      {/* Disciplines */}
-      <div className="rounded-2xl bg-bg-elevated border border-border-subtle overflow-hidden">
-        <div className="flex items-center justify-between px-5 py-4 border-b border-border-subtle/60">
-          <h2 className="text-sm font-semibold text-text-primary">Disciplinas</h2>
-          <Badge variant="gold" size="sm">{total} questões</Badge>
-        </div>
-        <div className="divide-y divide-border-subtle/40">
-          {DISCIPLINE_ORDER.map((disc, i) => {
-            const color = DISC_COLORS[i];
-            const val = cfg[disc] ?? 0;
-            const max = avail[disc] ?? 0;
-            const allMax = allAvail[disc] ?? 0;
-            return (
-              <div key={disc} className="flex items-center gap-4 px-5 py-3.5">
-                <div
-                  className="w-2 h-2 rounded-full shrink-0"
-                  style={{ background: color }}
-                />
-                <div className="flex-1 min-w-0">
-                  <div className="text-sm text-text-primary truncate">{disc}</div>
-                  <div className="text-xs text-text-tertiary">{max} disponíveis / {allMax} total</div>
-                </div>
-                <div className="flex items-center gap-2 shrink-0">
-                  <button
-                    onClick={() => setDisc(disc, val - 1)}
-                    className="w-7 h-7 rounded-lg bg-bg-overlay border border-border-subtle text-text-secondary hover:border-border-gold/40 hover:text-gold transition-all text-lg leading-none flex items-center justify-center"
-                  >
-                    −
-                  </button>
-                  <span className="w-8 text-center font-mono text-sm font-semibold text-text-primary tabular-nums">
-                    {val}
-                  </span>
-                  <button
-                    onClick={() => setDisc(disc, val + 1)}
-                    disabled={val >= max}
-                    className="w-7 h-7 rounded-lg bg-bg-overlay border border-border-subtle text-text-secondary hover:border-border-gold/40 hover:text-gold transition-all text-lg leading-none flex items-center justify-center disabled:opacity-30 disabled:cursor-not-allowed"
-                  >
-                    +
-                  </button>
-                </div>
-              </div>
-            );
-          })}
-        </div>
+        {trailing}
       </div>
-
-      {/* CTA */}
-      <div className="flex gap-3">
-        <Button
-          variant="secondary"
-          size="lg"
-          className="flex-1"
-          onClick={() => setCfg(Object.fromEntries(DISCIPLINE_ORDER.map((d) => [d, 0])))}
-        >
-          Limpar
-        </Button>
-        <Button
-          variant="primary"
-          size="lg"
-          className="flex-2"
-          disabled={total === 0}
-          icon={<Play className="w-4 h-4" />}
-          onClick={handleStart}
-        >
-          Iniciar com {total} questões
-        </Button>
-      </div>
-    </motion.div>
+      {children}
+    </div>
   );
 }

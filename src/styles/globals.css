@@ -2,8 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-/* ── Fonts ─────────────────────────────────────────────────────────── */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Barlow:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&family=Barlow+Condensed:wght@500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap');
+/* ═══════════════════════════════════════════════════════════════════════
+   PC-AP SIMULADOS — Cinematic Premium Theme
+   Visual stack: Geist (UI) + Instrument Serif (display) + Georgia (questions)
+   Inspired by: Linear, Vercel, Stripe, Apple
+   ═══════════════════════════════════════════════════════════════════════ */
 
 /* ── Base ───────────────────────────────────────────────────────────── */
 @layer base {
@@ -13,40 +16,58 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
+    font-feature-settings: "ss01", "ss02", "cv01", "cv02", "cv11";
+    /* OpenType features for Geist */
   }
 
   body {
     @apply bg-bg-base text-text-primary font-sans;
     min-height: 100dvh;
     overflow-x: hidden;
+    background:
+      radial-gradient(ellipse 90% 60% at 50% -10%, rgba(124,92,255,0.06), transparent 60%),
+      radial-gradient(ellipse 60% 50% at 110% 50%, rgba(200,167,93,0.04), transparent 60%),
+      #06080B;
   }
 
   ::selection {
-    background: rgba(255, 255, 255, 0.09);
-    color: #F3F4F6;
+    background: rgba(200,167,93,0.22);
+    color: #F4F5F7;
   }
 
-  ::-webkit-scrollbar { width: 5px; height: 5px; }
+  /* Premium scrollbar — barely visible, refined */
+  ::-webkit-scrollbar { width: 6px; height: 6px; }
   ::-webkit-scrollbar-track { background: transparent; }
-  ::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.06); border-radius: 99px; }
-  ::-webkit-scrollbar-thumb:hover { background: rgba(255,255,255,0.10); }
+  ::-webkit-scrollbar-thumb {
+    background: rgba(255,255,255,0.06);
+    border-radius: 99px;
+    transition: background 200ms;
+  }
+  ::-webkit-scrollbar-thumb:hover { background: rgba(255,255,255,0.14); }
 
   :focus-visible {
-    outline: 2px solid rgba(200, 167, 93, 0.40);
+    outline: 2px solid rgba(200, 167, 93, 0.45);
     outline-offset: 2px;
-    border-radius: 3px;
+    border-radius: 4px;
+  }
+
+  /* Reduced motion respect */
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
   }
 }
 
-/* ── Question rendering ─────────────────────────────────────────────── */
+/* ═══════════════════════════════════════════════════════════════════════
+   FCC INSTITUTIONAL RENDERING — PRESERVED EXACTLY
+   ⚠️  DO NOT MODIFY. Required for PDF fidelity, underlines, italics,
+       and visual match with real FCC printed exam booklets.
+   Target: Georgia 14px / 1.60 line-height — academic, editorial
+   ═══════════════════════════════════════════════════════════════════════ */
 @layer components {
-
-  /* ════════════════════════════════════════════════════════════════════
-     FCC INSTITUTIONAL RENDERING
-     Target: visually indistinguishable from FCC printed exam booklet.
-     Font:   Georgia 14px / 1.60 line-height
-     Density: compact, academic, editorial
-     ════════════════════════════════════════════════════════════════════ */
 
   /* ── Apoio body (support text) ─────────────────────────────────────── */
   .fcc-apoio-body {
@@ -246,6 +267,7 @@
     padding: 0 2px;
     border-radius: 2px;
   }
+  /* ════════════════ END FCC INSTITUTIONAL RENDERING ════════════════ */
 
   /* ── Input base ──────────────────────────────────────────────────── */
   .input-base {
@@ -254,31 +276,214 @@
            focus:outline-none focus:border-border-gold transition-colors duration-200;
   }
 
+  /* ════════════════════════════════════════════════════════════════════
+     PREMIUM COMPONENT PRIMITIVES — Linear / Vercel / Apple-grade
+     ════════════════════════════════════════════════════════════════════ */
+
+  /* Glass surface — refined translucency */
   .glass {
-    background: rgba(22, 27, 34, 0.88);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
+    background: linear-gradient(180deg, rgba(15,20,27,0.72) 0%, rgba(11,15,20,0.85) 100%);
+    backdrop-filter: blur(20px) saturate(140%);
+    -webkit-backdrop-filter: blur(20px) saturate(140%);
+    border: 1px solid rgba(255, 255, 255, 0.07);
+    box-shadow:
+      inset 0 1px 0 rgba(255,255,255,0.05),
+      0 8px 32px rgba(0,0,0,0.40);
+  }
+
+  .glass-light {
+    background: linear-gradient(180deg, rgba(255,255,255,0.04) 0%, rgba(255,255,255,0.01) 100%);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
     border: 1px solid rgba(255, 255, 255, 0.06);
   }
 
-  .pb-safe {
-    padding-bottom: env(safe-area-inset-bottom, 0px);
+  /* Premium card — gradient surface + inner highlight */
+  .surface {
+    background: linear-gradient(180deg, rgba(255,255,255,0.025) 0%, rgba(255,255,255,0.005) 100%), #0F141B;
+    border: 1px solid rgba(255,255,255,0.06);
+    box-shadow:
+      inset 0 1px 0 rgba(255,255,255,0.04),
+      0 1px 3px rgba(0,0,0,0.35),
+      0 8px 24px rgba(0,0,0,0.30);
+  }
+
+  .surface-elevated {
+    background: linear-gradient(180deg, rgba(255,255,255,0.035) 0%, rgba(255,255,255,0.008) 100%), #141A22;
+    border: 1px solid rgba(255,255,255,0.08);
+    box-shadow:
+      inset 0 1px 0 rgba(255,255,255,0.06),
+      0 2px 4px rgba(0,0,0,0.40),
+      0 16px 48px -8px rgba(0,0,0,0.50);
+  }
+
+  /* Gradient border — Linear-style premium edge */
+  .border-gradient {
+    position: relative;
+    background-clip: padding-box;
+  }
+  .border-gradient::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    padding: 1px;
+    background: linear-gradient(135deg, rgba(255,255,255,0.14), rgba(255,255,255,0.04) 35%, transparent 70%);
+    -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+    -webkit-mask-composite: xor;
+            mask-composite: exclude;
+    pointer-events: none;
+  }
+
+  .border-gradient-gold::before {
+    background: linear-gradient(135deg, rgba(200,167,93,0.55), rgba(200,167,93,0.10) 40%, transparent 75%);
+  }
+
+  /* Spotlight effect on hover (mouse-tracking via CSS variables) */
+  .spotlight {
+    position: relative;
+    overflow: hidden;
+  }
+  .spotlight::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(
+      circle 240px at var(--mx, 50%) var(--my, 50%),
+      rgba(200,167,93,0.08),
+      transparent 50%
+    );
+    opacity: 0;
+    transition: opacity 280ms cubic-bezier(0.32,0.72,0,1);
+    pointer-events: none;
+  }
+  .spotlight:hover::before { opacity: 1; }
+
+  /* Premium button shimmer */
+  .btn-shimmer {
+    position: relative;
+    overflow: hidden;
+  }
+  .btn-shimmer::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(
+      90deg,
+      transparent,
+      rgba(255,255,255,0.18),
+      transparent
+    );
+    transition: left 800ms cubic-bezier(0.16, 1, 0.3, 1);
+    pointer-events: none;
+  }
+  .btn-shimmer:hover::after { left: 150%; }
+
+  /* Safe area padding for mobile */
+  .pb-safe { padding-bottom: env(safe-area-inset-bottom, 0px); }
+
+  /* Noise texture — subtle grain for cinematic feel */
+  .noise {
+    position: relative;
+  }
+  .noise::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0.3 0 0 0 0 0.3 0 0 0 0 0.3 0 0 0 1 0' /%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.6'/%3E%3C/svg%3E");
+    opacity: 0.035;
+    mix-blend-mode: overlay;
+    pointer-events: none;
+    z-index: 0;
   }
 }
 
 /* ── Utilities ──────────────────────────────────────────────────────── */
 @layer utilities {
   .text-balance { text-wrap: balance; }
+  .text-pretty  { text-wrap: pretty; }
 
+  /* Premium gold gradient text */
   .text-gradient-gold {
-    background: linear-gradient(135deg, #c8a75d 0%, #d6b97a 45%, #c8a75d 100%);
+    background: linear-gradient(135deg, #c8a75d 0%, #e4cc95 45%, #c8a75d 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
   }
 
-  /* Prevent text-fill from leaking on non-gradient elements */
-  .text-gradient-gold * {
+  /* Soft white gradient for premium headlines */
+  .text-gradient-white {
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.65) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  /* Cinematic muted headline */
+  .text-gradient-muted {
+    background: linear-gradient(180deg, rgba(255,255,255,0.92) 0%, rgba(255,255,255,0.45) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  /* Prevent fill from leaking on non-gradient children */
+  .text-gradient-gold *,
+  .text-gradient-white *,
+  .text-gradient-muted * {
     -webkit-text-fill-color: inherit;
   }
+
+  /* Letter-tracking presets for premium typography */
+  .tracking-display { letter-spacing: -0.035em; }
+  .tracking-tightest { letter-spacing: -0.045em; }
+
+  /* Aurora ambient layer — fixed-position cinematic backdrop */
+  .ambient-aurora {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 0;
+    overflow: hidden;
+  }
+
+  .grid-mask {
+    -webkit-mask-image: radial-gradient(ellipse 70% 60% at 50% 30%, #000, transparent 80%);
+            mask-image: radial-gradient(ellipse 70% 60% at 50% 30%, #000, transparent 80%);
+  }
+
+  /* Hover lift — premium magnetic motion */
+  .hover-lift {
+    transition: transform 350ms cubic-bezier(0.16,1,0.3,1), box-shadow 350ms cubic-bezier(0.16,1,0.3,1);
+  }
+  .hover-lift:hover {
+    transform: translateY(-2px);
+  }
+
+  /* Reveal on scroll utility (controlled by Framer Motion) */
+  .will-reveal { opacity: 0; transform: translateY(16px); }
+
+  /* No-text-fill restoration for nested icons */
+  svg { -webkit-text-fill-color: initial; }
+}
+
+/* ── Keyframes (extra, beyond Tailwind config) ──────────────────────── */
+@keyframes ambient-drift {
+  0%, 100% { transform: translate3d(0, 0, 0) scale(1); }
+  33%      { transform: translate3d(-1.5%, 1%, 0) scale(1.05); }
+  66%      { transform: translate3d(1.5%, -1%, 0) scale(1.02); }
+}
+
+@keyframes pulse-soft {
+  0%, 100% { opacity: 0.6; }
+  50%      { opacity: 1; }
+}
+
+@keyframes shimmer-line {
+  0%   { transform: translateX(-100%); opacity: 0; }
+  50%  { opacity: 1; }
+  100% { transform: translateX(100%); opacity: 0; }
 }

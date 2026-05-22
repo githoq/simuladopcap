@@ -1,6 +1,7 @@
 import { useState, useRef, useEffect, useCallback } from "react";
-import { motion, AnimatePresence } from "framer-motion";
-import { Send, Bot, User, Sparkles, BookOpen, Target, Lightbulb, RotateCcw } from "lucide-react";
+import { motion } from "framer-motion";
+import { Send, Sparkles, RotateCcw } from "lucide-react";
+import { AmbientBackground } from "../components/ui/AmbientBackground";
 import { cn } from "../lib/utils";
 
 interface Message {
@@ -27,7 +28,7 @@ function getMockedResponse(msg: string): string {
   const lower = msg.toLowerCase();
   if (lower.includes("concordância") || lower.includes("concordancia")) return MOCKED_RESPONSES.concordancia;
   if (lower.includes("voz passiva") || lower.includes("passiva")) return MOCKED_RESPONSES.passiva;
-  return `Ótima pergunta sobre **"${msg.slice(0, 40)}${msg.length > 40 ? "…" : ""}"**!\n\nEste é um tema importante para o concurso PC-AP. Vou analisar em detalhes:\n\n1. **Conceito fundamental** — Compreender a base teórica é essencial.\n2. **Aplicação prática** — A FCC costuma testar com questões contextualizadas.\n3. **Padrão FCC** — Questões de Português geralmente envolvem análise sintática e semântica.\n\n💡 Continue estudando com os simulados para fixar o conteúdo. Posso explicar qualquer conceito específico que apareça nas questões!`;
+  return `Ótima pergunta sobre **"${msg.slice(0, 40)}${msg.length > 40 ? "…" : ""}"**!\n\nEste é um tema importante para o concurso PC-AP. Vou analisar em detalhes:\n\n1. **Conceito fundamental** — Compreender a base teórica é essencial.\n2. **Aplicação prática** — A FCC costuma testar com questões contextualizadas.\n3. **Padrão FCC** — Questões de Português geralmente envolvem análise sintática e semântica.\n\n💡 Continue estudando com os simulados para fixar o conteúdo.`;
 }
 
 function renderMarkdown(text: string): string {
@@ -50,7 +51,6 @@ export default function AIAssistantPage() {
   const [input, setInput] = useState("");
   const [thinking, setThinking] = useState(false);
   const bottomRef = useRef<HTMLDivElement>(null);
-  const inputRef = useRef<HTMLTextAreaElement>(null);
 
   useEffect(() => {
     bottomRef.current?.scrollIntoView({ behavior: "smooth" });
@@ -78,166 +78,207 @@ export default function AIAssistantPage() {
   };
 
   return (
-    <div className="flex flex-col h-screen md:h-[calc(100vh-56px)] md:pt-14 bg-bg-base">
-      {/* Ambient */}
-      <div className="fixed inset-0 pointer-events-none overflow-hidden">
-        <div className="absolute top-0 right-0 w-[500px] h-[400px] rounded-full bg-violet-900/8 blur-[100px]" />
-        <div className="absolute bottom-0 left-0 w-[400px] h-[300px] rounded-full bg-gold/4 blur-[100px]" />
-      </div>
+    <div className="flex flex-col h-screen md:h-[calc(100vh-56px)] md:pt-14 relative" style={{ background: "#06080B" }}>
+      <AmbientBackground variant="workspace" />
 
       {/* Header */}
-      <div className="flex items-center justify-between px-5 py-4 border-b border-border-subtle/60 bg-bg-base/90 backdrop-blur-xl relative z-10">
+      <div
+        className="relative z-10 flex items-center justify-between px-5 py-4 border-b border-white/[0.05]"
+        style={{
+          background: "linear-gradient(180deg, rgba(6,8,11,0.85) 0%, rgba(6,8,11,0.5) 100%)",
+          backdropFilter: "blur(16px)",
+          WebkitBackdropFilter: "blur(16px)",
+        }}
+      >
         <div className="flex items-center gap-3">
           <div className="relative">
-            <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-violet-500/20 to-gold/20 border border-violet-500/20 flex items-center justify-center">
-              <Sparkles className="w-4 h-4 text-violet-400" />
+            <div
+              className="w-10 h-10 rounded-xl flex items-center justify-center"
+              style={{
+                background: "linear-gradient(135deg, rgba(124,92,255,0.25), rgba(200,167,93,0.10))",
+                border: "1px solid rgba(124,92,255,0.30)",
+                boxShadow: "0 0 24px -6px rgba(124,92,255,0.4)",
+              }}
+            >
+              <Sparkles className="w-4 h-4" style={{ color: "#a698ff" }} />
             </div>
-            <div className="absolute -bottom-0.5 -right-0.5 w-2.5 h-2.5 rounded-full bg-correct-DEFAULT border-2 border-bg-base" />
+            <div className="absolute -bottom-0.5 -right-0.5 w-3 h-3 rounded-full bg-emerald-400 ring-2" style={{ "--tw-ring-color": "#06080B" } as any} />
           </div>
           <div>
-            <h1 className="text-sm font-semibold text-text-primary">Assistente IA</h1>
-            <p className="text-[10px] text-text-tertiary">Especialista PC-AP · Online</p>
+            <h1 className="text-sm font-semibold text-text-primary font-sans tracking-tight">Assistente IA</h1>
+            <p className="text-[10px] text-text-tertiary font-sans">Especialista PC-AP · Online</p>
           </div>
         </div>
         <button
-          onClick={() => setMessages([{ id: "welcome", role: "assistant", content: MOCKED_RESPONSES.default, ts: Date.now() }])}
-          className="flex items-center gap-1.5 text-xs text-text-tertiary hover:text-text-secondary transition-colors px-2 py-1.5 rounded-lg hover:bg-white/5"
+          onClick={() => setMessages([messages[0]])}
+          className="text-text-muted hover:text-text-secondary text-xs flex items-center gap-1 px-3 py-1.5 rounded-lg hover:bg-white/[0.04] transition-colors font-sans tracking-tight"
         >
           <RotateCcw className="w-3 h-3" />
-          Limpar
+          Nova conversa
         </button>
       </div>
 
       {/* Messages */}
-      <div className="flex-1 overflow-y-auto px-4 py-5 space-y-5 relative">
-        <AnimatePresence initial={false}>
-          {messages.map((msg) => (
+      <div className="relative z-10 flex-1 overflow-y-auto px-4 py-6 space-y-4">
+        <div className="max-w-2xl mx-auto space-y-4">
+          {messages.map((msg, i) => (
             <motion.div
               key={msg.id}
-              initial={{ opacity: 0, y: 12, scale: 0.98 }}
-              animate={{ opacity: 1, y: 0, scale: 1 }}
-              transition={{ duration: 0.35, ease: [0.16, 1, 0.3, 1] }}
-              className={cn("flex gap-3", msg.role === "user" ? "flex-row-reverse" : "flex-row")}
+              initial={{ opacity: 0, y: 8 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: i === messages.length - 1 ? 0 : 0.02 * i, duration: 0.35, ease: [0.16, 1, 0.3, 1] }}
+              className={cn("flex gap-3", msg.role === "user" ? "justify-end" : "justify-start")}
             >
-              {/* Avatar */}
-              <div className={cn(
-                "w-7 h-7 rounded-xl flex items-center justify-center shrink-0 mt-0.5",
-                msg.role === "assistant"
-                  ? "bg-gradient-to-br from-violet-500/20 to-gold/10 border border-violet-500/20"
-                  : "bg-gold-subtle border border-border-gold"
-              )}>
-                {msg.role === "assistant"
-                  ? <Bot className="w-3.5 h-3.5 text-violet-400" />
-                  : <User className="w-3.5 h-3.5 text-gold" />
-                }
-              </div>
-
-              {/* Bubble */}
-              <div className={cn(
-                "max-w-[85%] rounded-2xl px-4 py-3 text-sm leading-relaxed",
-                msg.role === "assistant"
-                  ? "bg-bg-elevated border border-border-subtle text-text-primary rounded-tl-sm"
-                  : "bg-gold-subtle border border-border-gold text-text-primary rounded-tr-sm"
-              )}>
-                {msg.role === "assistant" ? (
-                  <div
-                    className="prose-sm [&_strong]:text-text-primary [&_strong]:font-semibold [&_em]:text-text-secondary [&_em]:italic [&_p]:mb-2 [&_p:last-child]:mb-0"
-                    dangerouslySetInnerHTML={{ __html: renderMarkdown(msg.content) }}
-                  />
-                ) : (
-                  <p>{msg.content}</p>
+              {msg.role === "assistant" && (
+                <div
+                  className="w-7 h-7 rounded-lg flex items-center justify-center shrink-0 mt-1"
+                  style={{
+                    background: "linear-gradient(135deg, rgba(124,92,255,0.20), rgba(200,167,93,0.10))",
+                    border: "1px solid rgba(124,92,255,0.25)",
+                  }}
+                >
+                  <Sparkles className="w-3 h-3" style={{ color: "#a698ff" }} />
+                </div>
+              )}
+              <div
+                className={cn(
+                  "rounded-2xl px-4 py-3 max-w-[85%] text-sm font-sans leading-relaxed tracking-tight",
+                  msg.role === "user"
+                    ? "text-bg-base font-medium"
+                    : "text-text-primary"
                 )}
+                style={
+                  msg.role === "user"
+                    ? {
+                        background: "linear-gradient(180deg, #ffffff 0%, #e4e4e7 100%)",
+                        boxShadow: "0 4px 16px -4px rgba(0,0,0,0.4)",
+                      }
+                    : {
+                        background: "linear-gradient(180deg, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0.005) 100%)",
+                        border: "1px solid rgba(255,255,255,0.07)",
+                      }
+                }
+              >
+                <div
+                  className="prose prose-sm max-w-none [&>p]:my-2 [&>p:first-child]:mt-0 [&>p:last-child]:mb-0"
+                  dangerouslySetInnerHTML={{ __html: renderMarkdown(msg.content) }}
+                />
               </div>
             </motion.div>
           ))}
-        </AnimatePresence>
 
-        {/* Thinking indicator */}
-        <AnimatePresence>
           {thinking && (
             <motion.div
-              initial={{ opacity: 0, y: 8 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: 4 }}
-              className="flex gap-3"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              className="flex gap-3 justify-start"
             >
-              <div className="w-7 h-7 rounded-xl bg-gradient-to-br from-violet-500/20 to-gold/10 border border-violet-500/20 flex items-center justify-center">
-                <Bot className="w-3.5 h-3.5 text-violet-400" />
+              <div
+                className="w-7 h-7 rounded-lg flex items-center justify-center shrink-0 mt-1"
+                style={{
+                  background: "linear-gradient(135deg, rgba(124,92,255,0.20), rgba(200,167,93,0.10))",
+                  border: "1px solid rgba(124,92,255,0.25)",
+                }}
+              >
+                <Sparkles className="w-3 h-3" style={{ color: "#a698ff" }} />
               </div>
-              <div className="bg-bg-elevated border border-border-subtle rounded-2xl rounded-tl-sm px-4 py-3.5 flex items-center gap-1.5">
-                {[0, 1, 2].map((i) => (
-                  <motion.div
-                    key={i}
-                    className="w-1.5 h-1.5 rounded-full bg-text-tertiary"
-                    animate={{ y: [0, -4, 0], opacity: [0.4, 1, 0.4] }}
-                    transition={{ duration: 0.9, delay: i * 0.15, repeat: Infinity }}
-                  />
-                ))}
+              <div
+                className="rounded-2xl px-4 py-3"
+                style={{
+                  background: "linear-gradient(180deg, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0.005) 100%)",
+                  border: "1px solid rgba(255,255,255,0.07)",
+                }}
+              >
+                <div className="flex gap-1.5">
+                  {[0, 1, 2].map((i) => (
+                    <motion.div
+                      key={i}
+                      className="w-1.5 h-1.5 rounded-full bg-violet-400/60"
+                      animate={{ opacity: [0.3, 1, 0.3], y: [0, -2, 0] }}
+                      transition={{ duration: 1.2, repeat: Infinity, delay: i * 0.15 }}
+                    />
+                  ))}
+                </div>
               </div>
             </motion.div>
           )}
-        </AnimatePresence>
-        <div ref={bottomRef} />
+
+          {messages.length === 1 && (
+            <motion.div
+              initial={{ opacity: 0, y: 8 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.3 }}
+              className="grid grid-cols-1 sm:grid-cols-2 gap-2 mt-6"
+            >
+              {SUGGESTIONS.map((s, i) => (
+                <motion.button
+                  key={s}
+                  whileHover={{ y: -2 }}
+                  whileTap={{ scale: 0.98 }}
+                  initial={{ opacity: 0, y: 4 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0.4 + i * 0.05 }}
+                  onClick={() => send(s)}
+                  className="text-left px-4 py-3 rounded-xl text-sm text-text-secondary hover:text-text-primary transition-all duration-200 font-sans tracking-tight"
+                  style={{
+                    background: "linear-gradient(180deg, rgba(255,255,255,0.022) 0%, rgba(255,255,255,0.004) 100%)",
+                    border: "1px solid rgba(255,255,255,0.07)",
+                  }}
+                >
+                  {s}
+                </motion.button>
+              ))}
+            </motion.div>
+          )}
+
+          <div ref={bottomRef} />
+        </div>
       </div>
 
-      {/* Suggestions (show when only welcome message) */}
-      {messages.length === 1 && (
-        <motion.div
-          initial={{ opacity: 0, y: 8 }}
-          animate={{ opacity: 1, y: 0 }}
-          className="px-4 pb-3"
-        >
-          <div className="grid grid-cols-2 gap-2">
-            {SUGGESTIONS.map((s) => (
-              <button
-                key={s}
-                onClick={() => send(s)}
-                className="flex items-start gap-2 px-3 py-2.5 rounded-xl border border-border-subtle bg-bg-elevated hover:border-border-gold/40 hover:bg-gold-subtle/30 transition-all text-left group"
-              >
-                <Lightbulb className="w-3.5 h-3.5 text-gold/60 group-hover:text-gold shrink-0 mt-0.5 transition-colors" />
-                <span className="text-xs text-text-secondary group-hover:text-text-primary transition-colors leading-relaxed">{s}</span>
-              </button>
-            ))}
-          </div>
-        </motion.div>
-      )}
-
       {/* Input */}
-      <div className="px-4 pb-4 pt-2 border-t border-border-subtle/60 bg-bg-base/90 backdrop-blur-xl">
-        <div className="flex items-end gap-3 bg-bg-elevated border border-border-subtle rounded-2xl px-4 py-3 focus-within:border-border-gold transition-colors">
-          <textarea
-            ref={inputRef}
-            value={input}
-            onChange={(e) => setInput(e.target.value)}
-            onKeyDown={handleKeyDown}
-            placeholder="Tire uma dúvida, peça explicação..."
-            rows={1}
-            className="flex-1 bg-transparent text-text-primary text-sm placeholder-text-tertiary resize-none focus:outline-none leading-relaxed max-h-28 overflow-y-auto"
-            style={{ minHeight: "24px" }}
-            onInput={(e) => {
-              const t = e.currentTarget;
-              t.style.height = "auto";
-              t.style.height = Math.min(t.scrollHeight, 112) + "px";
+      <div
+        className="relative z-10 px-4 py-4 border-t border-white/[0.05]"
+        style={{
+          background: "linear-gradient(180deg, rgba(6,8,11,0.5) 0%, rgba(6,8,11,0.9) 100%)",
+          backdropFilter: "blur(16px)",
+          WebkitBackdropFilter: "blur(16px)",
+        }}
+      >
+        <div className="max-w-2xl mx-auto">
+          <div
+            className="flex items-end gap-2 rounded-2xl p-2"
+            style={{
+              background: "linear-gradient(180deg, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0.008) 100%)",
+              border: "1px solid rgba(255,255,255,0.08)",
             }}
-          />
-          <motion.button
-            whileHover={{ scale: 1.08 }}
-            whileTap={{ scale: 0.92 }}
-            onClick={() => send(input)}
-            disabled={!input.trim() || thinking}
-            className={cn(
-              "w-8 h-8 rounded-xl flex items-center justify-center transition-all shrink-0",
-              input.trim() && !thinking
-                ? "bg-gold text-bg-base hover:bg-gold-400"
-                : "bg-white/5 text-text-tertiary cursor-not-allowed"
-            )}
           >
-            <Send className="w-3.5 h-3.5" />
-          </motion.button>
+            <textarea
+              value={input}
+              onChange={(e) => setInput(e.target.value)}
+              onKeyDown={handleKeyDown}
+              placeholder="Pergunte sobre qualquer tópico..."
+              rows={1}
+              className="flex-1 bg-transparent text-text-primary text-sm placeholder-text-muted resize-none focus:outline-none px-3 py-2 font-sans tracking-tight"
+              style={{ minHeight: "36px", maxHeight: "120px" }}
+            />
+            <button
+              onClick={() => send(input)}
+              disabled={!input.trim() || thinking}
+              className="w-9 h-9 rounded-xl flex items-center justify-center transition-all duration-200 disabled:opacity-40 disabled:cursor-not-allowed"
+              style={{
+                background: input.trim() && !thinking
+                  ? "linear-gradient(180deg, #ffffff 0%, #e4e4e7 100%)"
+                  : "rgba(255,255,255,0.04)",
+                color: input.trim() && !thinking ? "#06080B" : "rgba(255,255,255,0.4)",
+                boxShadow: input.trim() && !thinking
+                  ? "0 1px 0 rgba(255,255,255,0.6) inset, 0 4px 12px -2px rgba(255,255,255,0.20)"
+                  : "none",
+              }}
+            >
+              <Send className="w-4 h-4" />
+            </button>
+          </div>
         </div>
-        <p className="text-center text-[10px] text-text-tertiary/50 mt-2">
-          Enter para enviar · Shift+Enter para nova linha
-        </p>
       </div>
     </div>
   );

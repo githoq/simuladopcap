@@ -79,10 +79,17 @@ export function QuestionCard({
       transition={{ duration: 0.22, ease: [0.4, 0, 0.2, 1] }}
       className="w-full"
     >
-      <div className="rounded-sm border border-white/[0.02] bg-white/[0.006] overflow-hidden">
+      <div
+        className="rounded-2xl overflow-hidden"
+        style={{
+          background: "linear-gradient(180deg, rgba(255,255,255,0.022) 0%, rgba(255,255,255,0.004) 100%)",
+          border: "1px solid rgba(255,255,255,0.07)",
+          boxShadow: "inset 0 1px 0 rgba(255,255,255,0.04), 0 4px 16px -6px rgba(0,0,0,0.35)",
+        }}
+      >
 
         {/* ── Header ────────────────────────────────────────────────── */}
-        <div className="flex items-center justify-between px-4 py-2 border-b border-white/[0.05]">
+        <div className="flex items-center justify-between px-5 py-2.5 border-b border-white/[0.05]">
           <div className="flex items-center gap-2">
             {/* Question counter only — no metadata */}
             <span className="text-[10px] text-text-muted font-mono font-sans tabular-nums">
@@ -109,7 +116,7 @@ export function QuestionCard({
         </div>
 
         {/* ── Body — compact institutional spacing ──────────────────── */}
-        <div className="px-4 py-2 space-y-1.5">
+        <div className="px-5 py-3 space-y-2">
 
           {question.texto_apoio && (
             <ApoioBlock question={question} isExam={isExam} />
@@ -147,7 +154,7 @@ export function QuestionCard({
         </div>
 
         {/* ── Footer ───────────────────────────────────────────────── */}
-        <div className="flex items-center justify-between px-4 py-2 border-t border-white/[0.05]">
+        <div className="flex items-center justify-between px-5 py-2.5 border-t border-white/[0.05]">
           <div className="flex items-center gap-1">
             {onPrev && (
               <Button variant="ghost" size="sm" onClick={onPrev} disabled={numero === 1}

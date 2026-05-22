@@ -14,14 +14,15 @@
     "imagem": null,
     "pergunta": "A frase acima permanecerá gramaticalmente correta caso se substitua o segmento sublinhado <u>por</u>",
     "alternativas": [
-      "em cujas podem se exaltar",
+      "<u>em cujas</u> podem se exaltar",
       "<u>porque</u> têm de se envaidecer",
-      "donde podem se gabar",
-      "em cujo valor confiem",
-      "pelas quais creditem algum mérito"
+      "<u>donde</u> podem se gabar",
+      "<u>em cujo</u> valor confiem",
+      "<u>pelas quais</u> creditem algum mérito"
     ],
     "correta": 3,
-    "linkTec": "https://www.tecconcursos.com.br/questoes/2155153"
+    "linkTec": "https://www.tecconcursos.com.br/questoes/2155153",
+    "_bloco": 5
   },
   {
     "id": "fcc_port_gab2_060",
@@ -38,14 +39,15 @@
     "imagem": null,
     "pergunta": "O elemento sublinhado acima pode ser corretamente substituído <u>por</u>:",
     "alternativas": [
-      "as quais",
-      "<u>nas</u> quais",
-      "o qual",
+      "<u>as quais</u>",
+      "<u>nas quais</u>",
+      "<u>o qual</u>",
       "<u>do qual</u>",
-      "nos quais"
+      "<u>nos quais</u>"
     ],
     "correta": 4,
-    "linkTec": "https://www.tecconcursos.com.br/questoes/2237959"
+    "linkTec": "https://www.tecconcursos.com.br/questoes/2237959",
+    "_bloco": 5
   },
   {
     "id": "fcc_port_gab2_061",
@@ -60,7 +62,7 @@
     "texto_apoio_titulo": "Leia o poema para responder à questão.",
     "texto_apoio": "<p>Leia o poema para responder à questão.</p>\n<center class=\"apoio-title\"><strong> Vida</strong></center>\n<div class=\"fcc-verse\"><em>Já perdoei erros quase imperdoáveis,</em><br>\n<em>tentei substituir pessoas insubstituíveis</em><br>\n<em>e esquecer pessoas inesquecíveis.</em></div>\n<div class=\"fcc-verse\"><em>Já fiz coisas por impulso,</em><br>\n<em>já me decepcionei com pessoas</em><br>\n<em>que eu nunca pensei que iriam me decepcionar,</em><br>\n<em>mas também já decepcionei alguém.</em></div>\n<div class=\"fcc-verse\"><em>Já abracei pra proteger,</em><br>\n<em>já dei risada quando não podia,<br>\nfiz amigos eternos,</em><br>\n<em>e amigos que eu nunca mais vi.</em></div>\n<div class=\"fcc-verse\"><em>Amei e fui amado,</em><br>\n<em>mas também já fui rejeitado,</em><br>\n<em>fui amado e não amei.</em></div>\n<div class=\"fcc-verse\"><em>Já gritei e pulei de tanta felicidade,</em><br>\n<em>já vivi de amor e fiz juras eternas,</em><br>\n<em>e quebrei a cara muitas vezes!</em></div>\n<div class=\"fcc-verse\"><em>Já chorei ouvindo música e vendo fotos,</em><br>\n<em>já liguei só para escutar uma voz,</em><br>\n<em>me apaixonei por um sorriso,</em><br>\n<em>já pensei que fosse morrer de tanta saudade</em><br>\n<em>e tive medo de perder alguém especial (e acabei perdendo).</em></div>\n<p><em>Mas vivi!</em></p>\n<p><em>E ainda vivo!</em></p>\n<p><em>Não passo pela vida.</em></p>\n<p><em>E você também não deveria passar!</em></p>\n<span class=\"apoio-attrib\">(Augusto Branco)</span>\n<p class=\"fcc-excerpt\"><em>e amigos <u>que</u> eu nunca mais vi.</em></p>",
     "imagem": null,
-    "pergunta": "Substituindo o pronome relativo \"<u>que</u>\" por outro, e respeitando a regência verbal, a forma adequada é:",
+    "pergunta": "Substituindo o pronome relativo \"que\" por outro, e respeitando a regência verbal, a forma adequada é:",
     "alternativas": [
       "dos quais.",
       "o qual.",
@@ -69,7 +71,8 @@
       "aos quais."
     ],
     "correta": 2,
-    "linkTec": "https://www.tecconcursos.com.br/questoes/2239620"
+    "linkTec": "https://www.tecconcursos.com.br/questoes/2239620",
+    "_bloco": 5
   },
   {
     "id": "fcc_port_gab2_062",
@@ -87,13 +90,14 @@
     "pergunta": "A frase acima permanecerá gramaticalmente correta caso se substitua o elemento sublinhado <u>por</u>:",
     "alternativas": [
       "<u>de que</u> amamos cultuar.",
-      "cujo mantemos vivo.",
+      "<u>cujo</u> mantemos vivo.",
       "<u>onde</u> nos orgulhamos.",
       "<u>de que</u> não abrimos mão.",
       "<u>ao qual</u> nos envaidecemos."
     ],
     "correta": 3,
-    "linkTec": "https://www.tecconcursos.com.br/questoes/2271848"
+    "linkTec": "https://www.tecconcursos.com.br/questoes/2271848",
+    "_bloco": 5
   },
   {
     "id": "fcc_port_gab2_063",
@@ -110,14 +114,15 @@
     "imagem": null,
     "pergunta": "A frase acima permanecerá gramaticalmente correta caso se substitua o segmento sublinhado <u>por</u>",
     "alternativas": [
-      "com as quais preciso me restringir",
-      "por cujas não devo me manifestar",
-      "sobre as quais não tenho domínio",
+      "<u>com as quais</u> preciso me restringir",
+      "<u>por cujas</u> não devo me manifestar",
+      "<u>sobre as quais</u> não tenho domínio",
       "<u>à que</u> não me cabe opinar",
-      "a propósito de cujas tenho incompetência"
+      "<u>a propósito de cujas</u> tenho incompetência"
     ],
     "correta": 2,
-    "linkTec": "https://www.tecconcursos.com.br/questoes/2271874"
+    "linkTec": "https://www.tecconcursos.com.br/questoes/2271874",
+    "_bloco": 5
   },
   {
     "id": "fcc_port_gab2_064",
@@ -141,7 +146,8 @@
       "Zig Braga"
     ],
     "correta": 0,
-    "linkTec": "https://www.tecconcursos.com.br/questoes/2274906"
+    "linkTec": "https://www.tecconcursos.com.br/questoes/2274906",
+    "_bloco": 5
   },
   {
     "id": "fcc_port_gab2_065",
@@ -165,7 +171,8 @@
       "animal humano."
     ],
     "correta": 2,
-    "linkTec": "https://www.tecconcursos.com.br/questoes/2155403"
+    "linkTec": "https://www.tecconcursos.com.br/questoes/2155403",
+    "_bloco": 5
   },
   {
     "id": "fcc_port_gab2_066",
@@ -189,7 +196,8 @@
       "Estão na nossa infância felicidades ingênuas <u>para as quais</u> o cronista busca expressão."
     ],
     "correta": 4,
-    "linkTec": "https://www.tecconcursos.com.br/questoes/2454008"
+    "linkTec": "https://www.tecconcursos.com.br/questoes/2454008",
+    "_bloco": 5
   },
   {
     "id": "fcc_port_gab2_067",
@@ -213,7 +221,8 @@
       "“Mas o pai apoiava a nossa maneira de desver o mundo”."
     ],
     "correta": 2,
-    "linkTec": "https://www.tecconcursos.com.br/questoes/3723220"
+    "linkTec": "https://www.tecconcursos.com.br/questoes/3723220",
+    "_bloco": 5
   },
   {
     "id": "fcc_port_gab2_068",
@@ -237,7 +246,8 @@
       "conjunção."
     ],
     "correta": 3,
-    "linkTec": "https://www.tecconcursos.com.br/questoes/2158411"
+    "linkTec": "https://www.tecconcursos.com.br/questoes/2158411",
+    "_bloco": 5
   },
   {
     "id": "fcc_port_gab2_069",
@@ -261,7 +271,8 @@
       "<u>Porém,</u> a ciência não tem uma explicação exata para esse fato (3o parágrafo)"
     ],
     "correta": 0,
-    "linkTec": "https://www.tecconcursos.com.br/questoes/1984851"
+    "linkTec": "https://www.tecconcursos.com.br/questoes/1984851",
+    "_bloco": 5
   },
   {
     "id": "fcc_port_gab2_070",
@@ -285,7 +296,8 @@
       "“Contam que os urubus, finórios, desciam naquele lugar / <u>para</u> degustar as lesmas vivas.”"
     ],
     "correta": 4,
-    "linkTec": "https://www.tecconcursos.com.br/questoes/2168724"
+    "linkTec": "https://www.tecconcursos.com.br/questoes/2168724",
+    "_bloco": 5
   },
   {
     "id": "fcc_port_gab2_071",
@@ -306,10 +318,11 @@
       "conversei muito <u>com</u> minha amiga.",
       "você <u>nem</u> sabia da existência desse lugar.",
       "Passamos a noite <u>num</u> enorme pavilhão.",
-      "Você poderá vir a qualquer hora."
+      "Você poderá vir <u>a</u> qualquer hora."
     ],
     "correta": 0,
-    "linkTec": "https://www.tecconcursos.com.br/questoes/2324054"
+    "linkTec": "https://www.tecconcursos.com.br/questoes/2324054",
+    "_bloco": 5
   },
   {
     "id": "fcc_port_gab2_072",
@@ -322,7 +335,7 @@
     "cargo": "Ass TD (DPE AM)",
     "orgao": "DPE AM",
     "texto_apoio_titulo": "Para responder à questão, leia o texto abaixo.",
-    "texto_apoio": "<p>Para responder à questão, leia o texto abaixo.</p>\n<p><em>Meu caro,</em> <em>Não pense que me esqueci das minhas obrigações, muito me aflige estar em dívida com você. Fiquei de lhe entregar os originais até o fim de 2015, e lá</em> <em>se vão três anos. Como deve ser do seu conhecimento, passei ultimamente por diversas atribulações: separação, mudança, seguro-fiança para o novo</em> <em>apartamento, despesas com advogados, prostatite aguda, o diabo. Não bastassem os perrengues pessoais, ficou difícil me dedicar a devaneios</em> <em>literários sem ser afetado pelos acontecimentos recentes no nosso país. Já gastei o adiantado que você generosamente me concedeu, e ainda me falta</em> <em>paz de espírito para alinhavar os escritos em que tenho trabalhado sem trégua. Sei que é impróprio incomodá-lo num momento em que a crise</em> <em>econômica parece não ter arrefecido conforme se esperava. Estou ciente das severas condições do mercado editorial, mas se o amigo puder me</em> <em>adiantar mais uma parcela dos meus royalties, tratarei de me isolar por uns meses nas montanhas, a fim de o regalar com um romance que haverá de</em> <em>lhe dar grandes alegrias.</em></p>\n<p><em>Um forte abraço.</em></p>\n<span class=\"apoio-attrib\">(Adaptado de: BUARQUE, Chico. Essa gente. São Paulo: Companhia das Letras, 2019, edição digital)</span>\n<p class=\"fcc-excerpt\"><em>ainda me falta paz de espírito <u>para</u> alinhavar os escritos <u>em</u> <u>que</u> tenho trabalhado <u>sem</u> trégua</em>.</p>",
+    "texto_apoio": "<p>Para responder à questão, leia o texto abaixo.</p>\n<p><em>Meu caro,</em> <em>Não pense que me esqueci das minhas obrigações, muito me aflige estar em dívida com você. Fiquei de lhe entregar os originais até o fim de 2015, e lá</em> <em>se vão três anos. Como deve ser do seu conhecimento, passei ultimamente por diversas atribulações: separação, mudança, seguro-fiança para o novo</em> <em>apartamento, despesas com advogados, prostatite aguda, o diabo. Não bastassem os perrengues pessoais, ficou difícil me dedicar a devaneios</em> <em>literários sem ser afetado pelos acontecimentos recentes no nosso país. Já gastei o adiantado que você generosamente me concedeu, e ainda me falta</em> <em>paz de espírito para alinhavar os escritos em que tenho trabalhado sem trégua. Sei que é impróprio incomodá-lo num momento em que a crise</em> <em>econômica parece não ter arrefecido conforme se esperava. Estou ciente das severas condições do mercado editorial, mas se o amigo puder me</em> <em>adiantar mais uma parcela dos meus royalties, tratarei de me isolar por uns meses nas montanhas, a fim de o regalar com um romance que haverá de</em> <em>lhe dar grandes alegrias.</em></p>\n<p><em>Um forte abraço.</em></p>\n<span class=\"apoio-attrib\">(Adaptado de: BUARQUE, Chico. Essa gente. São Paulo: Companhia das Letras, 2019, edição digital)</span>\n<p class=\"fcc-excerpt\"><em>ainda me falta paz de espírito <u>para</u> alinhavar os escritos <u>em que</u> tenho trabalhado <u>sem</u> trégua</em>.</p>",
     "imagem": null,
     "pergunta": "Considerado o contexto, a termo sublinhado introduz ideia de",
     "alternativas": [
@@ -333,7 +346,8 @@
       "consequência."
     ],
     "correta": 2,
-    "linkTec": "https://www.tecconcursos.com.br/questoes/2454326"
+    "linkTec": "https://www.tecconcursos.com.br/questoes/2454326",
+    "_bloco": 5
   },
   {
     "id": "fcc_port_gab2_073",
@@ -346,9 +360,9 @@
     "cargo": "Ana Proc (PGE AM)",
     "orgao": "PGE AM",
     "texto_apoio_titulo": "<strong>73) </strong>Considere o texto abaixo para responder a questão.",
-    "texto_apoio": "<p><em>Quando me acontecer alguma pecúnia, passante de um milhão de cruzeiros, compro uma ilha; não muito longe do litoral, que o litoral faz falta; nem tão</em> <em>perto, também, que de lá possa eu aspirar a fumaça e a graxa do porto. Minha ilha ficará no justo ponto de latitude e longitude que, pondo-me a coberto</em> <em>de ventos, sereias e pestes, nem me afaste demasiado dos homens nem me obrigue a praticá-los diuturnamente. Porque esta é a ciência e, direi, a arte</em> <em>do bem viver; uma fuga relativa, e uma não muito estouvada confraternização.</em></p>\n<p><em>De há muito sonho esta ilha, se é que não a sonhei sempre. Se é que a não sonhamos sempre. Objetais-me: “Como podemos amar as ilhas, se</em> <em>buscamos o centro mesmo da ação?” Engajados; vosso engajamento é a vossa ilha, dissimulada e transportável. Por onde fordes, ela irá convosco.</em></p>\n<p><em>Significa a evasão daquilo para que toda alma necessariamente tende, ou seja, a gratuidade dos gestos naturais, o cultivo das formas espontâneas, o</em> <em>gosto de ser um com os bichos, as espécies vegetais, os fenômenos atmosféricos.</em></p>\n<p><em>E por que nos seduz a ilha? As composições de sombra e luz, o esmalte da relva, a cristalinidade dos regatos – tudo isso existe fora das ilhas, não é</em> <em>privilégio delas. A mesma solidão existe nos mais diversos locais, inclusive os de população densa, em terra firme.</em></p>\n<p><em>A ilha me satisfaz por ser uma porção curta de terra (falo de ilhas individuais, não me tentam aventuras marajoaras), um resumo prático dos estirões</em> <em>deste vasto mundo, sem os inconvenientes dele, e com a vantagem de ser uma ficção sem deixar de constituir uma realidade. A casa junto ao mar, que</em> <em>já foi razoável delícia, passou a ser um pecado, depois que se desinventou a relação entre homem, paisagem e morada. O progresso técnico teve isto de</em> <em>retrógrado: esqueceu-se do fim a que se propusera. Acabou com qualquer veleidade de amar a vida, que ele tornou muito confortável, mas invisível. Fez-</em> <em>se numa escala de massas, esquecendo-se do indivíduo, e nenhuma central elétrica será capaz de produzir aquilo de que cada um de nós carece na</em> <em>cidade excessivamente iluminada: certa penumbra. O progresso nos dá tanta coisa, que não nos sobra nada nem para desejar nem para jogar fora.</em></p>\n<p><em>Tudo é inútil e atravancador. A ilha sugere uma negação disto.</em></p>\n<p><em>Serão admitidos poetas? Em que número? Se foram proscritos das repúblicas, pareceria cruel bani-los também da ilha de recreio. Contudo, devem</em> <em>comportar-se como se poetas não fossem: pondo de lado o tecnicismo, a excessiva preocupação literária, o misto de esteticismo e frialdade que</em> <em>costuma necrosar os artistas. Sejam homens razoáveis, carentes, humildes, inclinados à pesca e à corrida a pé. Não levem para a ilha os problemas de</em> <em>hegemonia e ciúme.</em></p>\n<p><em>Por aí se observa que a ilha mais paradisíaca pede regulamentação, e que os perigos da convivência urbana estão presentes. Tanto melhor, porque não</em> <em>se quer uma ilha perfeita, senão um modesto território banhado de água por todos os lados e onde não seja obrigatório salvar o mundo.</em></p>\n<p><em>A ideia de fuga tem sido alvo de crítica severa nos últimos anos, como se fosse ignominioso, por exemplo, fugir de um perigo, de um sofrimento, de</em> <em>uma chateação. Como se devesse o homem consumir-se numa fogueira perene.</em></p>\n<p><em>Estas reflexões descosidas procuram apenas recordar que há motivos para ir às ilhas.</em></p>\n<span class=\"apoio-attrib\">(ANDRADE, Carlos Drummond de. “Divagação sobre as ilhas”. In: Passeios na ilha. São Paulo: Companhia das Letras, 2020, p.15-19)</span>\n<p class=\"fcc-excerpt\"><<u>em</u>>O progresso nos dá tanta coisa, que não nos sobra nada <u>nem</u> <u>para</u> desejar nem para jogar fora.</em> (4º parágrafo)</p>",
+    "texto_apoio": "<p><em>Quando me acontecer alguma pecúnia, passante de um milhão de cruzeiros, compro uma ilha; não muito longe do litoral, que o litoral faz falta; nem tão</em> <em>perto, também, que de lá possa eu aspirar a fumaça e a graxa do porto. Minha ilha ficará no justo ponto de latitude e longitude que, pondo-me a coberto</em> <em>de ventos, sereias e pestes, nem me afaste demasiado dos homens nem me obrigue a praticá-los diuturnamente. Porque esta é a ciência e, direi, a arte</em> <em>do bem viver; uma fuga relativa, e uma não muito estouvada confraternização.</em></p>\n<p><em>De há muito sonho esta ilha, se é que não a sonhei sempre. Se é que a não sonhamos sempre. Objetais-me: “Como podemos amar as ilhas, se</em> <em>buscamos o centro mesmo da ação?” Engajados; vosso engajamento é a vossa ilha, dissimulada e transportável. Por onde fordes, ela irá convosco.</em></p>\n<p><em>Significa a evasão daquilo para que toda alma necessariamente tende, ou seja, a gratuidade dos gestos naturais, o cultivo das formas espontâneas, o</em> <em>gosto de ser um com os bichos, as espécies vegetais, os fenômenos atmosféricos.</em></p>\n<p><em>E por que nos seduz a ilha? As composições de sombra e luz, o esmalte da relva, a cristalinidade dos regatos – tudo isso existe fora das ilhas, não é</em> <em>privilégio delas. A mesma solidão existe nos mais diversos locais, inclusive os de população densa, em terra firme.</em></p>\n<p><em>A ilha me satisfaz por ser uma porção curta de terra (falo de ilhas individuais, não me tentam aventuras marajoaras), um resumo prático dos estirões</em> <em>deste vasto mundo, sem os inconvenientes dele, e com a vantagem de ser uma ficção sem deixar de constituir uma realidade. A casa junto ao mar, que</em> <em>já foi razoável delícia, passou a ser um pecado, depois que se desinventou a relação entre homem, paisagem e morada. O progresso técnico teve isto de</em> <em>retrógrado: esqueceu-se do fim a que se propusera. Acabou com qualquer veleidade de amar a vida, que ele tornou muito confortável, mas invisível. Fez-</em> <em>se numa escala de massas, esquecendo-se do indivíduo, e nenhuma central elétrica será capaz de produzir aquilo de que cada um de nós carece na</em> <em>cidade excessivamente iluminada: certa penumbra. O progresso nos dá tanta coisa, que não nos sobra nada nem para desejar nem para jogar fora.</em></p>\n<p><em>Tudo é inútil e atravancador. A ilha sugere uma negação disto.</em></p>\n<p><em>Serão admitidos poetas? Em que número? Se foram proscritos das repúblicas, pareceria cruel bani-los também da ilha de recreio. Contudo, devem</em> <em>comportar-se como se poetas não fossem: pondo de lado o tecnicismo, a excessiva preocupação literária, o misto de esteticismo e frialdade que</em> <em>costuma necrosar os artistas. Sejam homens razoáveis, carentes, humildes, inclinados à pesca e à corrida a pé. Não levem para a ilha os problemas de</em> <em>hegemonia e ciúme.</em></p>\n<p><em>Por aí se observa que a ilha mais paradisíaca pede regulamentação, e que os perigos da convivência urbana estão presentes. Tanto melhor, porque não</em> <em>se quer uma ilha perfeita, senão um modesto território banhado de água por todos os lados e onde não seja obrigatório salvar o mundo.</em></p>\n<p><em>A ideia de fuga tem sido alvo de crítica severa nos últimos anos, como se fosse ignominioso, por exemplo, fugir de um perigo, de um sofrimento, de</em> <em>uma chateação. Como se devesse o homem consumir-se numa fogueira perene.</em></p>\n<p><em>Estas reflexões descosidas procuram apenas recordar que há motivos para ir às ilhas.</em></p>\n<span class=\"apoio-attrib\">(ANDRADE, Carlos Drummond de. “Divagação sobre as ilhas”. In: Passeios na ilha. São Paulo: Companhia das Letras, 2020, p.15-19)</span>\n<p class=\"fcc-excerpt\"><<u>em</u>>O progresso nos dá tanta coisa, que não nos sobra nada <u>nem para</u> desejar nem para jogar fora.</em> (4º parágrafo)</p>",
     "imagem": null,
-    "pergunta": "Em relação ao <u>que</u> foi dito na oração principal, o termo sublinhado acima introduz uma",
+    "pergunta": "Em relação ao que foi dito na oração principal, o termo sublinhado acima introduz uma",
     "alternativas": [
       "condição.",
       "causa.",
@@ -357,7 +371,8 @@
       "comparação."
     ],
     "correta": 2,
-    "linkTec": "https://www.tecconcursos.com.br/questoes/2021243"
+    "linkTec": "https://www.tecconcursos.com.br/questoes/2021243",
+    "_bloco": 5
   },
   {
     "id": "fcc_port_gab2_074",
@@ -381,7 +396,8 @@
       "nesse caso"
     ],
     "correta": 0,
-    "linkTec": "https://www.tecconcursos.com.br/questoes/2021861"
+    "linkTec": "https://www.tecconcursos.com.br/questoes/2021861",
+    "_bloco": 5
   },
   {
     "id": "fcc_port_gab2_075",
@@ -405,7 +421,8 @@
       "oposição."
     ],
     "correta": 4,
-    "linkTec": "https://www.tecconcursos.com.br/questoes/2021931"
+    "linkTec": "https://www.tecconcursos.com.br/questoes/2021931",
+    "_bloco": 5
   },
   {
     "id": "fcc_port_gab2_076",
@@ -429,7 +446,8 @@
       "ainda"
     ],
     "correta": 0,
-    "linkTec": "https://www.tecconcursos.com.br/questoes/2038967"
+    "linkTec": "https://www.tecconcursos.com.br/questoes/2038967",
+    "_bloco": 5
   },
   {
     "id": "fcc_port_gab2_077",
@@ -453,7 +471,8 @@
       "condição."
     ],
     "correta": 2,
-    "linkTec": "https://www.tecconcursos.com.br/questoes/2038974"
+    "linkTec": "https://www.tecconcursos.com.br/questoes/2038974",
+    "_bloco": 5
   },
   {
     "id": "fcc_port_gab2_078",
@@ -468,7 +487,7 @@
     "texto_apoio_titulo": "<u>Atenção:</u> Leia o texto para responder à questão.",
     "texto_apoio": "<p>Atenção: Leia o texto para responder à questão.</p>\n<p><em>Os empreendedores são heróis populares do mundo dos negócios. Fornecem empregos, introduzem inovações e incentivam o crescimento econômico</em> <em>da região ou do país. Não são simplesmente provedores de mercadorias, serviços, informação ou entretenimento, mas fontes de energia, que assumem</em> <em>riscos inerentes em uma economia em mudança, transformação e crescimento.</em></p>\n<p><em>Para o economista Joseph Schumpeter, um empreendedor é uma pessoa capaz de converter uma nova ideia ou invenção em uma inovação bem-</em> <em>sucedida. Ao longo do tempo, contudo, verificou-se que isso não é uma tarefa fácil. Afinal, em todo o mundo, grande parte dos novos negócios falha.</em></p>\n<span class=\"apoio-attrib\"><em>(Adaptado de: CHIAVENATO, Idalberto. <strong>Empreendedorismo</strong>: dando asas ao espírito empreendedor, Barueri: Manole, 2012, edição digital)</em></span>\n<p class=\"fcc-excerpt\"><em>Ao longo do tempo, <u>contudo,</u> verificou-se que isso não é uma tarefa fácil.</em> (2º parágrafo)</p>",
     "imagem": null,
-    "pergunta": "No contexto em <u>que</u> se insere, o termo sublinhado pode ser substituído por",
+    "pergunta": "No contexto em que se insere, o termo sublinhado pode ser substituído por",
     "alternativas": [
       "todavia",
       "<u>embora</u>",
@@ -477,7 +496,8 @@
       "assim"
     ],
     "correta": 0,
-    "linkTec": "https://www.tecconcursos.com.br/questoes/2041691"
+    "linkTec": "https://www.tecconcursos.com.br/questoes/2041691",
+    "_bloco": 5
   },
   {
     "id": "fcc_port_gab2_079",
@@ -501,7 +521,8 @@
       "<u>Contudo</u>"
     ],
     "correta": 0,
-    "linkTec": "https://www.tecconcursos.com.br/questoes/2114018"
+    "linkTec": "https://www.tecconcursos.com.br/questoes/2114018",
+    "_bloco": 5
   },
   {
     "id": "fcc_port_gab2_080",
@@ -525,7 +546,8 @@
       "temporalidade."
     ],
     "correta": 1,
-    "linkTec": "https://www.tecconcursos.com.br/questoes/2114091"
+    "linkTec": "https://www.tecconcursos.com.br/questoes/2114091",
+    "_bloco": 5
   },
   {
     "id": "fcc_port_gab2_081",
@@ -549,7 +571,8 @@
       "Na verdade"
     ],
     "correta": 0,
-    "linkTec": "https://www.tecconcursos.com.br/questoes/2152440"
+    "linkTec": "https://www.tecconcursos.com.br/questoes/2152440",
+    "_bloco": 5
   },
   {
     "id": "fcc_port_gab2_082",
@@ -564,7 +587,7 @@
     "texto_apoio_titulo": "<strong>82) </strong>Para responder à questão, baseie-se no texto abaixo.",
     "texto_apoio": "<p>Para responder à questão, baseie-se no texto abaixo.</p>\n<p><em>Por que não aprendi a tocar violão? Sempre me constituiu motivo de tristeza e humilhação esta precária musicalidade. Uns tocam piano, existe até</em> <em>quem toque harpa. Eu, nem ao violão me afiz. E não se diga que era pouco o esforço de D. Chiquinha, minha mestra. Afinava, afinava, apertava as</em> <em>cravelhas, dava um dó agudíssimo na prima, depois outro dó grave no bordão...</em></p>\n<p><em>Eu pegava no violão de luxo que minha madrinha de crisma mandara do Pará, ajeitava-o mal e mal no colo, começava de boa vontade: dum, dum, dum...</em> <em>– Não! Valha-me Santa Cecília! Segunda! Mude!</em></p>\n<p><em>E eu: dum, dum, dum...</em></p>\n<p><em>Ai, música, divina música. D. Chiquinha carpia-se. Tanto sentimento de que ela dava exemplo, tanta devoção empregada à toa. Eu recomeçava, dócil:</em> <em>primeira, segunda...</em> <em>– D. Chiquinha, fiquei com uma bolha no dedo.</em></p>\n<p><em>Já não sei como a descobrimos: decerto andava nas suas idas e vindas de casa em casa de aluno. Cobrava dez mil-réis por mês e mais o dinheiro do</em> <em>bonde. Duas aulas por semana.</em></p>\n<p><em>Professora de violão, o seu sonho secreto fora sempre o violino, entretanto. Nas prateleiras da sua sala, guardava ela o seu estradivário – uma rabeca</em> <em>de cego, fanhosa, inválida, metida numa remendada mortalha de veludo azul. Em certos dias de bom humor e segredo, ela pegava comovida o arco e</em> <em>executava ao violino a valsa dos Sinos de Corneville.</em></p>\n<p><em>Fora desfeita da sorte aquele meu fracasso, porque eu me supunha dotada e alimentava ambições. Chegara até a pensar, não digo em concertos, mas</em> <em>num brilhante recital de caridade em que aparecesse de vestido comprido (teria então uns doze anos) e, num belo contralto, cantasse ao violão certo</em> <em>tango argentino da minha preferência. Mas tudo neste mundo são vaidades: jamais atingi o tango argentino.</em></p>\n<p><em>Voltando a D. Chiquinha: o instrumento plebeu que ensinava constituía para minha mestra uma fonte de dissabores. A começar pelo apelido que lhe</em> <em>davam: D. Chiquinha do Violão. Quando alguém o repetia em sua frente, ela corrigia logo, irritada: – Chiquinha do Violão, não senhor. Francisca dos</em> <em>Santos. Violão não é meu dono.</em></p>\n<p><em>Por música clássica não tinha interesse, ou antes, a ignorava. Para D. Chiquinha, a mais requintada manifestação de arte era a serenata. E dentro desse</em> <em>critério me ensinava visando talvez fazer de mim o que ela já fora em moça – a musa de todos os seresteiros da cidade. Sim, não só objeto passivo de</em> <em>canções e arpejos noturnos mas musa ativa e colaborante. O seresteiro dizia da calçada a sua trova, e lá da penumbra da alcova a donzela tomava do</em> <em>violão e na mesma toada respondia. Eram essas as suas lembranças mais queridas, aqueles duelos musicais, canta tu de lá, canto eu de cá – e entre</em> <em>os dois o grupo desvanecido dos comparsas que ajudavam no acompanhamento.</em></p>\n<p><em>Nos acompanhamentos, a nossa favorita era a modinha “A mais gentil das praieiras”. Dessa eu gostava muito. Porém a mão rebelde não me</em> <em>acompanhava o entusiasmo.</em></p>\n<span class=\"apoio-attrib\">(Adaptado de: QUEIROZ, Rachel. “<strong>A mais gentil das praieiras</strong>”. Melhores crônicas. São Paulo: Global Editora, 2012, 1a edição digital)</span>\n<p class=\"fcc-excerpt\"><em>Professora de violão, o seu sonho secreto fora sempre o violino, <u>entretanto.</u></em></p>",
     "imagem": null,
-    "pergunta": "O termo sublinhado assinala, no contexto, <u>uma</u>",
+    "pergunta": "O termo sublinhado assinala, no contexto, uma",
     "alternativas": [
       "condição.",
       "oposição.",
@@ -573,7 +596,8 @@
       "consequência."
     ],
     "correta": 1,
-    "linkTec": "https://www.tecconcursos.com.br/questoes/2152749"
+    "linkTec": "https://www.tecconcursos.com.br/questoes/2152749",
+    "_bloco": 5
   },
   {
     "id": "fcc_port_gab2_083",
@@ -597,7 +621,8 @@
       "Em razão disso"
     ],
     "correta": 1,
-    "linkTec": "https://www.tecconcursos.com.br/questoes/2154522"
+    "linkTec": "https://www.tecconcursos.com.br/questoes/2154522",
+    "_bloco": 5
   },
   {
     "id": "fcc_port_gab2_084",
@@ -612,7 +637,7 @@
     "texto_apoio_titulo": "<em>Não me correu tranquilo o S. João de 185...</em>",
     "texto_apoio": "<p><em>Não me correu tranquilo o S. João de 185...</em></p>\n<p><em>Duas semanas antes do dia em que a Igreja celebra o evangelista, recebi pelo correio o seguinte bilhete, sem assinatura e de letra desconhecida:</em> <em>“O Dr. *** é convidado a ir à vila de... tomar conta de um processo. O objeto é digno do talento e das habilitações do advogado. Despesas e honorários</em> <em>ser-lhe-ão satisfeitos antecipadamente, mal puser pé no estribo. O réu está na cadeia da mesma vila e chama-se Julião. Note que o Dr. é convidado a ir</em> <em>defender o réu.”</em> <em>Li e reli este bilhete; voltei-o em todos os sentidos; comparei a letra com todas as letras dos meus amigos e conhecidos... Nada pude descobrir.</em></p>\n<p><em><u>Entretanto</u>, picava-me a curiosidade. Luzia-me um romance através daquele misterioso e anônimo bilhete. Tomei uma resolução definitiva. Ultimei uns</em> <em>negócios, dei de mão outros, e oito dias depois de receber o bilhete tinha à porta um cavalo e um camarada para seguir viagem. No momento em que</em> <em>me dispunha a sair, entrou-me em casa um sujeito desconhecido, e entregou-me um rolo de papel contendo uma avultada soma, importância</em> <em>aproximada das despesas e dos honorários. Recusei apesar das instâncias, montei a cavalo e parti.</em></p>\n<p><em>Só depois de ter feito algumas léguas é que me lembrei de que justamente na vila a que eu ia morava um amigo meu, antigo companheiro da academia.</em></p>\n<p><em>Poucos dias depois apeava eu à porta do referido amigo. Depois de entregar o cavalo aos cuidados do camarada, entrei para abraçar o meu antigo</em> <em>companheiro de estudos, que me recebeu alvoroçado e admirado.</em> <em>− A que vens, meu amigo? A que vens? perguntava-me ele.</em> <em>− Vais sabê-lo. Creio que há um romance para deslindar. Há quinze dias recebi no meu escritório, na corte, um bilhete anônimo em que se me convidava</em> <em>com instância a vir a esta vila para tomar conta de uma defesa. Não pude conhecer a letra; era desigual e trêmula, como escrita por mão cansada...</em> <em>− Tens o bilhete contigo?</em> <em>− Tenho.</em></p>\n<p><em>Tirei do bolso o misterioso bilhete e entreguei-o aberto ao meu amigo. Ele, depois de lê-lo, disse:</em> <em>− É a letra de Pai de todos.</em> <em>− Quem é Pai de todos?</em> <em>− É um fazendeiro destas paragens, o velho Pio. O povo dá-lhe o nome de Pai de todos, porque o velho Pio o é na verdade.</em> <em>− Bem dizia eu que há romance no fundo!... Que faz esse velho para que lhe deem semelhante título?</em> <em>− Pouca coisa. Pio é, por assim dizer, a justiça e a caridade fundidas em uma só pessoa. Só as grandes causas vão ter às autoridades judiciárias,</em> <em>policiais ou municipais; mas tudo o que não sai de certa ordem é decidido na fazenda de Pio, cuja sentença todos acatam e cumprem. Seja ela contra</em> <em>Pedro ou contra Paulo, Paulo e Pedro submetem-se, como se fora uma decisão divina.</em></p>\n<p><em>Quando dois contendores saem da fazenda de Pio, saem amigos. É caso de consciência aderir ao julgamento de Pai de todos.</em></p>\n<p><em>O meu amigo continuou a desfiar as virtudes do fazendeiro. Meu espírito apreendia-se cada vez mais de que eu ia entrar em um romance. Finalmente o</em> <em>meu amigo dispunha-se a contar-me a história do crime em cujo conhecimento devia eu entrar daí a poucas horas. Detive-o.</em> <em>− Não, disse-lhe, deixa-me saber de tudo por boca do próprio réu. Depois compararei com o que me contarás.</em> <em>− É melhor. Julião é inocente...</em></p>\n<span class=\"apoio-attrib\"><em>(Adaptado de: ASSIS, Machado de. <strong>Obra Completa,</strong> v. II. Rio de Janeiro: Nova Aguilar, 1994)</em></span>\n<p class=\"fcc-excerpt\"><em>“Despesas e honorários ser-lhe-ão satisfeitos antecipadamente, <u>mal</u> puser pé no estribo”.</em></p>",
     "imagem": null,
-    "pergunta": "No contexto em <u>que</u> se insere, o termo sublinhado expressa ideia de",
+    "pergunta": "No contexto em que se insere, o termo sublinhado expressa ideia de",
     "alternativas": [
       "condição.",
       "concessão.",
@@ -621,7 +646,8 @@
       "finalidade."
     ],
     "correta": 3,
-    "linkTec": "https://www.tecconcursos.com.br/questoes/2154536"
+    "linkTec": "https://www.tecconcursos.com.br/questoes/2154536",
+    "_bloco": 5
   },
   {
     "id": "fcc_port_gab2_085",
@@ -645,7 +671,8 @@
       "porquanto."
     ],
     "correta": 3,
-    "linkTec": "https://www.tecconcursos.com.br/questoes/2159369"
+    "linkTec": "https://www.tecconcursos.com.br/questoes/2159369",
+    "_bloco": 5
   },
   {
     "id": "fcc_port_gab2_086",
@@ -660,7 +687,7 @@
     "texto_apoio_titulo": "<u>Atenção:</u> Para responder à questão, leia a crônica “Tatu”, de Carlos Drummond de Andrade.",
     "texto_apoio": "<p>Para responder à questão, leia a crônica “Tatu”, de Carlos Drummond de Andrade.</p>\n<p><em>O luar continua sendo uma graça da vida, mesmo depois que o pé do homem pisou e trocou em miúdos a Lua, mas o tatu pensa de outra maneira. Não</em> <em>que ele seja insensível aos amavios do plenilúnio; é sensível, e muito. Não lhe deixam, porém, curtir em paz a claridade noturna, de que, aliás, necessita</em> <em>para suas expedições de objetivo alimentar. Por que me caçam em noites de lua cheia, quando saio precisamente para caçar? Como prover a minha</em> <em>subsistência, se de dia é aquela competição desvairada entre bichos, como entre homens, e de noite não me dão folga?</em></p>\n<p><em>Isso aí, suponho, é matutado pelo tatu, e se não escapa do interior das placas de sua couraça, em termos de português, é porque <mark>o tatu ignora</em> <em>sabiamente os idiomas humanos, sem exceção, <u>além de</u> não acreditar em audiência civilizada para seus queixumes</mark>. A armadura dos bípedes é ainda</em> <em>mais invulnerável que a dele, e não há sensibilidade para a dor ou a problemática do tatu.</em></p>\n<p><em>Meu amigo andou pelas encostas do Corcovado, em noite de prata lunal, e conseguiu, por artimanhas só dele sabidas, capturar vivo um tatu distraído.</em></p>\n<p><em>É, distraído. Do contrário não o pegaria. Estava imóvel, estático, fruindo o banho de luz na folhagem, essa outra cor que as cores assumem debaixo da</em> <em>poeira argentina da Lua. Esquecido das formigas, que lhe cumpria pesquisar e atacar, como quem diz, diante de um motivo de prazer: “Daqui a pouco eu</em> <em>vou trabalhar; só um minuto mais, alegria da vida”, quedou- se à mercê de inimigos maiores. Sem pressentir que o mais temível deles andava por perto,</em> <em>em horas impróprias à de ambulação de um professor universitário.</em> <em>− Mas que diabo você foi fazer naqueles matos, de madrugada?</em> <em>− Nada. Estava sem sono, e gosto de andar a esmo, quando todos roncam.</em></p>\n<p><em>Sem sono e sem propósito de agredir o reino ani<u>mal</u>, pois é de feitio manso, mas o velho instinto cavernal acordou nele, ao sentir qualquer coisa a certa</em> <em>distância, parecida com a forma de um bicho. Achou logo um cipó bem forte, pedindo para ser usado na caça; e jamais tendo feito um laço de caçador,</em> <em>soube improvisá-lo com perícia de muitos milhares de anos (o que a universidade esconde, nas profundas camadas do ser, e só permite que venha</em> <em>aflorar em noite de lua cheia!).</em></p>\n<p><em>Aproximou-se sutil, laçou de jeito o animal desprevenido. O coitado nem teve tempo de cravar as garras no laçador. Quando agiu, já este, num pulo,</em> <em>desviara o corpo. Outra volta no laço. E outra. Era fácil para o tatu arrebentar o cipó com a força que a natureza depositou em suas extremidades. Mas</em> <em>esse devia ser um tatu meio parvo, e se embaraçou em movimentos frustrados. Ou o sereno narrador mentiu, sei lá. Talvez o tenha comprado numa</em> <em>dessas casas de suplício que há por aí, para negócio de animais. Talvez na rua, a um vendedor de ocasião, quando tudo se vende, desde o mico à alma,</em> <em>se o PM não ronda perto.</em></p>\n<p><em>Não importa. O caso é que meu amigo tem em sua casa um tatu que não se acomodou ao palmo de terra nos fundos da casa e tratou de abrigar longa</em> <em>escavação que o conduziu a uma pedreira, e lá faz greve de fome. De lá não sai, de lá ninguém o tira. A noite perdeu para ele seu encanto luminoso. A</em> <em>ideia de levá-lo para o zoológico, aventada pela mulher do caçador, não frutificou. Melhor reconduzi-lo a seu hábitat, mas o tatu se revela profundamente</em> <em>contrário a qualquer negociação com o bicho humano, que pensa em apelar para os bombeiros a fim de demolir o metrô tão rapidamente feito, ao</em> <em>contrário do nosso, urbano, e salvar o infeliz. O tatu tem razões de sobra para não confiar no homem e no luar do Corcovado.</em></p>\n<p><em>Não é fábula. Eu compreendo o tatu.</em></p>\n<span class=\"apoio-attrib\"><em>(Adaptado de: ANDRADE, Carlos Drummond. <strong>Os dias lindos.</strong> São Paulo: Companhia das Letras, 2013)</em></span>",
     "imagem": null,
-    "pergunta": "<em>o tatu ignora sabiamente os idiomas humanos, sem exceção, <u>além de</u> não acreditar em audiência civilizada para seus queixumes</em>\nNo contexto em <u>que</u> se insere, a expressão sublinhada expressa ideia de",
+    "pergunta": "<em>o tatu ignora sabiamente os idiomas humanos, sem exceção, <u>além de</u> não acreditar em audiência civilizada para seus queixumes</em>\nNo contexto em que se insere, a expressão sublinhada expressa ideia de",
     "alternativas": [
       "concessão.",
       "adição.",
@@ -669,7 +696,8 @@
       "proporção."
     ],
     "correta": 1,
-    "linkTec": "https://www.tecconcursos.com.br/questoes/2160624"
+    "linkTec": "https://www.tecconcursos.com.br/questoes/2160624",
+    "_bloco": 5
   },
   {
     "id": "fcc_port_gab2_087",
@@ -693,7 +721,8 @@
       "Portanto."
     ],
     "correta": 2,
-    "linkTec": "https://www.tecconcursos.com.br/questoes/2168725"
+    "linkTec": "https://www.tecconcursos.com.br/questoes/2168725",
+    "_bloco": 5
   },
   {
     "id": "fcc_port_gab2_088",
@@ -708,7 +737,7 @@
     "texto_apoio_titulo": "A charada do consumo",
     "texto_apoio": "<center class=\"apoio-title\"><strong>A charada do consumo</strong></center>\n<p><em>Atacar a espiral consumista é fácil; o desafio é entender a natureza do seu poder sobre a psicologia humana. A busca por respostas remonta ao mundo</em> <em>antigo. “A riqueza demandada pela natureza”, sentenciou Epicuro no século IV a.C., “é limitada e fácil de obter; a demandada pela vã imaginação</em> <em>estende-se ao infinito e é difícil de obter”. A centralidade da imaginação como mola propulsora do consumo reaparece, 2 mil anos mais tarde, na</em> <em>observação do crítico social inglês John Ruskin: “Três quartos das demandas existentes no mundo são românticas; e a regulagem da bolsa é, em</em> <em>essência, a regulagem da imaginação e do coração”.</em></p>\n<p><em>O espectro dos desejos de consumo, todavia, não conhece divisões absolutas. As exigências da natureza, é certo, impõem limites e têm de ser</em> <em>atendidas; mas seria ingênuo supor que nossas necessidades básicas de consumo possam ser demarcadas por um critério rigidamente biológico:</em> <em>artigos de consumo de primeira necessidade hoje em dia, como anestésicos, escovas de dente e geladeiras, eram simplesmente desconhecidos nos</em> <em>tempos de Epicuro.</em></p>\n<p><em>Que o rol das coisas indispensáveis à vida cresceu na história é ponto pacífico. A pergunta inicial, porém, permanece: supridas as exigências básicas, o</em> <em>que move o consumo? O bombardeio de estímulos publicitários a que estamos submetidos é, sem dúvida, parte da resposta, mas é difícil acreditar que</em> <em>ele tenha o dom de criar do nada os desejos que insufla; se funciona, é porque encontra solo fértil em nossa imaginação. A gama das fantasias que nos</em> <em>impelem a consumir não é menor que a pletora de artigos disponíveis no mercado.</em></p>\n<p><em>Há, não obstante, um aspecto peculiar da nossa “vã imaginação” que remete ao nervo do consumo no mundo moderno. Quando os meios de vida já</em> <em>foram obtidos, há dois tipos de riqueza que podemos demandar. Uma delas é a riqueza democrática: são os bens cujo valor reside na satisfação direta</em> <em>que nos proporcionam. Coisa muito distinta, porém, é a demanda por riqueza oligárquica: o desejo de desfrutar daquilo que nos permite “ocupar um</em> <em>lugar de honra na mente dos nossos semelhantes” − os chamados “bens posicionais”. A satisfação proporcionada por esse tipo de bem depende</em> <em>essencialmente do fato de que sua posse é privilégio de poucos no grupo de referência.</em></p>\n<p><em>Daí que na contenda por bens posicionais, onde o sucesso de alguns é por definição a exclusão da maioria, há apetites de consumo que se estendem</em> <em>ao infinito (dos tênis de marca, novos gadgets e cosméticos às obras de arte). A moeda escassa nesse jogo sisífico é a atenção respeitosa e o afeto</em> <em>das pessoas que nos cercam.</em></p>\n<span class=\"apoio-attrib\"><em>(GIANNETTI, Eduardo. <strong>Trópicos utópicos.</strong> Companhia das Letras. Edição do Kindle)</em></span>\n<p class=\"fcc-excerpt\"><em>O espectro dos desejos de consumo, <u>todavia,</u> não conhece divisões absolutas.</em></p>",
     "imagem": null,
-    "pergunta": "No contexto em <u>que</u> se encontra, o termo sublinhado indica",
+    "pergunta": "No contexto em que se encontra, o termo sublinhado indica",
     "alternativas": [
       "condição.",
       "causa.",
@@ -717,7 +746,8 @@
       "comparação."
     ],
     "correta": 2,
-    "linkTec": "https://www.tecconcursos.com.br/questoes/2193652"
+    "linkTec": "https://www.tecconcursos.com.br/questoes/2193652",
+    "_bloco": 5
   },
   {
     "id": "fcc_port_gab2_089",
@@ -732,7 +762,7 @@
     "texto_apoio_titulo": "<u>Atenção:</u> Para responder à questão, considere o texto do cientista político Paulo Sérgio Pinheiro.",
     "texto_apoio": "<p>Para responder à questão, considere o texto do cientista político Paulo Sérgio Pinheiro.</p>\n<p><em><mark>Apesar de as garantias fundamentais do cidadão estarem bem definidas pela maioria das constituições democráticas,</mark> o exercício da cidadania plena</em> <em>no Brasil sempre foi limitado para a maior parte da população. E poderia ter sido diferente? Desde a Antiguidade, a constituição de um Estado finca</em> <em>suas raízes no sistema social. Ao largo dos ideais presentes nas constituições, os procedimentos jurídicos e o funcionamento da lei refletem as cruéis</em> <em>realidades da sociedade brasileira e não conseguem temperar as sesqui-pedais diferenças entre pobres e ricos. O sistema jurídico é um instrumento e</em> <em>um reflexo da sociedade e, portanto, da desigualdade social: o direito não se situa fora e acima da sociedade e das realidades sociais, sem essência</em> <em>própria, sem lógica autônoma ou existência independente. O Estado não pode ser diferente da própria sociedade: não é nele que se afrontam os</em> <em>interesses em conflito, as lutas de classe? As formas de governar dependem da estrutura particular da sociedade, pois um governo não pode operar</em> <em>democraticamente num lugar onde, em diversos períodos constitucionais, as mulheres e os analfabetos não votavam, os trabalhadores rurais e os</em> <em>empregados domésticos não estavam assistidos pelos direitos sociais, um racismo estrutural predominava e os órgãos do Estado jamais renunciavam</em> <em>ao arbítrio.</em></p>\n<p><em>Nenhum regime pode ser efetivamente democrático se camadas desfavorecidas não têm acesso a direitos básicos. Ao lado dos requisitos</em> <em>minimalistas de um constitucionalismo democrático – liberdade de reunião e de expressão, sufrágio universal, eleições regulares e limpas,</em> <em>independência dos poderes –, a democracia requer a realização de um elenco mais alargado de exigências. São essas o estado de direito, o devido</em> <em>processo da lei ou o direito a um julgamento justo e equânime, o respeito à integridade física dos cidadãos. Essas últimas exigências,</em> <em>independentemente do regime político vigente, foram atendidas na República de forma limitada.</em></p>\n<p><em>(Adaptado de: PINHEIRO, Paulo Sérgio et al.</em></p>\n<span class=\"apoio-attrib\"><em>(orgs.).<strong> Brasil: um século de transformações</strong>. São Paulo: Companhia das Letras, 2001)</em></span>",
     "imagem": null,
-    "pergunta": "Em <em>Apesar de as garantias fundamentais do cidadão estarem bem definidas pela maioria das constituições democráticas,</em> o exercício da cidadania\nplena no Brasil sempre foi limitado para a maior parte da população., a oração sublinhada expressa, em relação à oração <u>que</u> a sucede, ideia de",
+    "pergunta": "Em <em>Apesar de as garantias fundamentais do cidadão estarem bem definidas pela maioria das constituições democráticas,</em> o exercício da cidadania\nplena no Brasil sempre foi limitado para a maior parte da população., a oração sublinhada expressa, em relação à oração que a sucede, ideia de",
     "alternativas": [
       "comparação.",
       "consequência.",
@@ -741,7 +771,8 @@
       "condição."
     ],
     "correta": 3,
-    "linkTec": "https://www.tecconcursos.com.br/questoes/2195827"
+    "linkTec": "https://www.tecconcursos.com.br/questoes/2195827",
+    "_bloco": 5
   },
   {
     "id": "fcc_port_gab2_090",
@@ -765,7 +796,8 @@
       "indica aos pais exageradamente temerosos quanto ao destino de seus filhos meios para acentuarem seu amor incondicional por eles."
     ],
     "correta": 0,
-    "linkTec": "https://www.tecconcursos.com.br/questoes/2235595"
+    "linkTec": "https://www.tecconcursos.com.br/questoes/2235595",
+    "_bloco": 5
   },
   {
     "id": "fcc_port_gab2_091",
@@ -789,7 +821,8 @@
       "Conforme"
     ],
     "correta": 3,
-    "linkTec": "https://www.tecconcursos.com.br/questoes/2237945"
+    "linkTec": "https://www.tecconcursos.com.br/questoes/2237945",
+    "_bloco": 5
   },
   {
     "id": "fcc_port_gab2_092",
@@ -804,7 +837,7 @@
     "texto_apoio_titulo": "Leia o texto para responder à questão.",
     "texto_apoio": "<p>Leia o texto para responder à questão.</p>\n<p>Um novo estudo estima que a área de manguezais no entorno da foz do rio Amazonas é pelo menos 180 km2 maior do que se conhece. De acordo com artigo publicado na revista científica Current Biology, a extensão total desse tipo de vegetação de transição entre o ambiente terrestre e o marinho chega a 1.713 km2 na grande desembocadura do curso de água. As plantas presentes na região apresentam uma particularidade: são uma mistura de espécies adaptadas a ambientes de água doce, como várzeas, com as de manguezais típicos, onde a salinidade é alta.</p>\n<p>No solo enlameado do chamado delta do Amazonas, um tipo de foz formado por vários canais e pequenas ilhas, foram encontradas florestas com espécies herbáceas como as aningas, acompanhadas de árvores típicas de várzeas que parecem fora do hábitat padrão, como alguns tipos de palmeiras, inclusive pés de açaí e de buriti. Normalmente, os manguezais são dominados por árvores adaptadas a ambientes de água salgada ou salobra. “Mas o Amazonas despeja tanta água doce no Atlântico que a salinidade é próxima a zero em seu delta e por dezenas de quilômetros ao longo da costa na direção norte”, afirma o oceanógrafo Angelo Bernardino.</p>\n<span class=\"apoio-attrib\">(Adaptado de: ELER, Guilherme. Revista Pesquisa FAPESP. Ed. 321, nov. 22)</span>\n<p class=\"fcc-excerpt\"><em>Mas o Amazonas despeja tanta água doce no Atlântico que a salinidade é próxima a zero em seu delta e por dezenas de quilômetros ao longo da costa</em> <em>na direção norte</em> (2º parágrafo)</p>",
     "imagem": null,
-    "pergunta": "No trecho acima, a conjunção “<u>que</u>” introduz uma",
+    "pergunta": "No trecho acima, a conjunção “que” introduz uma",
     "alternativas": [
       "consequência.",
       "causa.",
@@ -813,7 +846,8 @@
       "comparação."
     ],
     "correta": 0,
-    "linkTec": "https://www.tecconcursos.com.br/questoes/2237955"
+    "linkTec": "https://www.tecconcursos.com.br/questoes/2237955",
+    "_bloco": 5
   },
   {
     "id": "fcc_port_gab2_093",
@@ -837,7 +871,8 @@
       "Por isso"
     ],
     "correta": 1,
-    "linkTec": "https://www.tecconcursos.com.br/questoes/2274931"
+    "linkTec": "https://www.tecconcursos.com.br/questoes/2274931",
+    "_bloco": 5
   },
   {
     "id": "fcc_port_gab2_094",
@@ -861,7 +896,8 @@
       "condição."
     ],
     "correta": 3,
-    "linkTec": "https://www.tecconcursos.com.br/questoes/2293556"
+    "linkTec": "https://www.tecconcursos.com.br/questoes/2293556",
+    "_bloco": 5
   },
   {
     "id": "fcc_port_gab2_095",
@@ -876,7 +912,7 @@
     "texto_apoio_titulo": "Leia a crônica <strong>O lendário país do <em>recall</em></strong>, de Moacyr Scliar.",
     "texto_apoio": "<p>Leia a crônica <strong>O lendário país do <em>recall</em></strong>, de Moacyr Scliar.</p>\n<p>Leitora manda boneca para<em> recall </em>e não a recebe de volta. Como explicar para uma criança que seus brinquedos foram embora há três meses e não voltaram? (Cotidiano, 25/02/2008) <em>“Minha querida dona: quem lhe escreve sou eu, a sua fiel e querida boneca, que você não vê há três meses. Sei que você sente muitas saudades, porque</em> <em>eu também sinto saudades de você. Lembro de você me pegando no colo, me chamando de filhinha, me dando papinha... Você era, e é, minha mãezinha</em> <em>querida, e é por isso que estou lhe mandando esta carta, por meio do cara que assina esta coluna e que, sendo escritor, acredita nas coisas da</em> <em>imaginação.</em></p>\n<p><em>Posso lhe dizer, querida, que vivi uma tremenda aventura, uma aventura que em vários momentos me deixou apavorada. Porque tive de viajar para o</em> <em>distante país do </em>recall<em>. Aposto que você nem sabia da existência desse lugar; eu, pelo menos, não sabia. Para lá fui enviada. Não só eu: bonecas</em> <em>defeituosas, ursinhos idem, eletrodomésticos que não funcionavam e peças de automóvel quebradas. Nós todos ali, na traseira de um gigantesco</em> <em>caminhão que andava, andava sem parar. Finalmente chegamos, e ali estávamos, no misterioso e, para mim, assustador país do </em>recall<em>. Um homem nos</em> <em>recebeu e anunciou, muito secamente, que o nosso destino em breve seria traçado: as bonecas que tivessem conserto seriam consertadas e mandadas</em> <em>de volta para os donos; quanto tempo isso levaria era imprevisível, mas três meses era o mínimo. Uma boneca que estava do meu lado, a Liloca,</em> <em>perguntou, com os olhos arregalados, o que aconteceria a quem não tivesse conserto. O homem não disse nada, mas seu sorriso sinistro falava por si.</em></p>\n<p><em>Passamos a noite num enorme pavilhão destinado especialmente às bonecas. Éramos centenas ali, algumas com probleminhas pequenos (um braço</em> <em>fora do lugar, por exemplo), outras já num estado lamentável. Estava muito claro que para várias de nós não haveria volta.</em></p>\n<p><em>Naquela noite conversei muito com minha amiga Liloca − sim, querida dona, àquela altura já éramos amigas. O infortúnio tinha nos unido. Outras</em> <em>bonecas juntaram-se a nós e logo formamos um grande grupo. Estávamos preocupadas com o que poderia nos suceder. De repente a Liloca gritou: ‘Mas gente, nós não somos obrigados a aceitar isso! Vamos fazer alguma coisa!’. Nós a olhamos, espantadas: fazer alguma coisa? Mas fazer o quê?</em></p>\n<p><em>Liloca tinha uma resposta: vamos tomar o poder. Vamos nos apossar do país do </em>recall<em>.</em></p>\n<p><em>No começo aquilo nos pareceu absurdo. Mas Liloca sabia do que estava falando. A mãe da dona dela tinha sido uma militante revolucionária e sempre</em> <em>falava nisso, na necessidade de mudar o mundo, de dar o poder aos mais fracos. Ora, dizia Liloca, ninguém mais fraco do que nós, pobres,</em> <em>desamparados e defeituosos brinquedos. Não deveríamos aguardar resignadamente que decidissem o que fazer com a gente.</em></p>\n<p><em>De modo, querida dona, que estamos aqui preparando a revolução. Breve estaremos governando o país do recall. Mas não se preocupe, eu a convidarei</em> <em>para me visitar. Você poderá vir a qualquer hora. E não precisará de </em>recall<em> para isso.”</em></p>\n<span class=\"apoio-attrib\">(Adaptado de: Moacyr Scliar. <strong>Histórias que os jornais não contam</strong>. Porto Alegre: L&PM, 2018)</span>\n<p class=\"fcc-excerpt\"><em>O homem não disse nada, <u>mas seu sorriso sinistro falava por si.</u></em> (3o parágrafo)</p>",
     "imagem": null,
-    "pergunta": "Em relação à oração <u>que</u> a antecede, a oração sublinhada expressa ideia de",
+    "pergunta": "Em relação à oração que a antecede, a oração sublinhada expressa ideia de",
     "alternativas": [
       "comparação.",
       "consequência.",
@@ -885,7 +921,8 @@
       "condição."
     ],
     "correta": 3,
-    "linkTec": "https://www.tecconcursos.com.br/questoes/2324036"
+    "linkTec": "https://www.tecconcursos.com.br/questoes/2324036",
+    "_bloco": 5
   },
   {
     "id": "fcc_port_gab2_096",
@@ -909,7 +946,8 @@
       "proporção."
     ],
     "correta": 0,
-    "linkTec": "https://www.tecconcursos.com.br/questoes/2326039"
+    "linkTec": "https://www.tecconcursos.com.br/questoes/2326039",
+    "_bloco": 5
   },
   {
     "id": "fcc_port_gab2_097",
@@ -933,7 +971,8 @@
       "Contanto que"
     ],
     "correta": 3,
-    "linkTec": "https://www.tecconcursos.com.br/questoes/2454306"
+    "linkTec": "https://www.tecconcursos.com.br/questoes/2454306",
+    "_bloco": 5
   },
   {
     "id": "fcc_port_gab2_098",
@@ -957,7 +996,8 @@
       "adição."
     ],
     "correta": 0,
-    "linkTec": "https://www.tecconcursos.com.br/questoes/2454340"
+    "linkTec": "https://www.tecconcursos.com.br/questoes/2454340",
+    "_bloco": 5
   },
   {
     "id": "fcc_port_gab2_099",
@@ -981,7 +1021,8 @@
       "proporção."
     ],
     "correta": 0,
-    "linkTec": "https://www.tecconcursos.com.br/questoes/3723240"
+    "linkTec": "https://www.tecconcursos.com.br/questoes/3723240",
+    "_bloco": 5
   },
   {
     "id": "fcc_port_gab2_100",
@@ -1005,7 +1046,8 @@
       "pronome e preposição."
     ],
     "correta": 0,
-    "linkTec": "https://www.tecconcursos.com.br/questoes/1984405"
+    "linkTec": "https://www.tecconcursos.com.br/questoes/1984405",
+    "_bloco": 5
   },
   {
     "id": "fcc_port_gab2_101",
@@ -1029,7 +1071,8 @@
       "um artigo, um artigo, um pronome e uma preposição."
     ],
     "correta": 4,
-    "linkTec": "https://www.tecconcursos.com.br/questoes/2112102"
+    "linkTec": "https://www.tecconcursos.com.br/questoes/2112102",
+    "_bloco": 5
   },
   {
     "id": "fcc_port_gab2_102",
@@ -1053,7 +1096,8 @@
       "em <em>ai / vai </em>(3ª estrofe) e <em>em novamente</em> / <em>repente </em>(4ª estrofe)."
     ],
     "correta": 1,
-    "linkTec": "https://www.tecconcursos.com.br/questoes/2114020"
+    "linkTec": "https://www.tecconcursos.com.br/questoes/2114020",
+    "_bloco": 5
   },
   {
     "id": "fcc_port_gab2_103",
@@ -1077,7 +1121,8 @@
       "Um Machado de Assis tendo <u>a</u> mais a poesia."
     ],
     "correta": 0,
-    "linkTec": "https://www.tecconcursos.com.br/questoes/2155450"
+    "linkTec": "https://www.tecconcursos.com.br/questoes/2155450",
+    "_bloco": 5
   },
   {
     "id": "fcc_port_gab2_104",
@@ -1092,7 +1137,7 @@
     "texto_apoio_titulo": null,
     "texto_apoio": "<p>Para responder à questão, considere o poema abaixo do escritor piauiense Mário Faustino.</p>\n<p><em>Esse estoque de amor que acumulei<strong>b </strong>Ninguém veio comprar a preço justo<strong>a</strong>.</em></p>\n<p><em>Preparei meu castelo para um rei</em> <em>Que mal me olhou, passando, e a quanto custo.</em></p>\n<p><em>Meu tesouro amoroso há muito as traças<strong>d</strong></em> <em>Comeram, secundadas por ladrões.</em></p>\n<div class=\"fcc-verse\"><em>A luz abandonou as ondas lassas</em><br>\n<em>De refletir um sol que só se põe</em><br>\n<em>Sozinho. Agora vou por meus infernos<strong>e</strong></em><br>\n<em>Sem fantasma buscar entre fantasmas.</em></div>\n<div class=\"fcc-verse\"><em>E marcho contra o vento, sobre eternos</em><br>\n<em>Desertos sem retorno, onde olharás<br>\nMas sem o ver, estrela cega, o rastro<strong>c</strong></em><br>\n<em>Que até aqui deixei, seguindo um astro.</em></div>\n<span class=\"apoio-attrib\"><em>(FAUSTINO, Mário.<strong> O homem e sua hora.</strong> São Paulo: Companhia das Letras, 2009)</em></span>",
     "imagem": null,
-    "pergunta": "Verifica-se rima (ou seja, coincidência final de sons) entre palavras de <u>mesma</u> classe gramatical <u>em</u>",
+    "pergunta": "Verifica-se rima (ou seja, coincidência final de sons) entre palavras de <u>mesma</u> classe gramatical em",
     "alternativas": [
       "justo / custo.",
       "acumulei / rei.",
@@ -1101,7 +1146,8 @@
       "infernos / eternos."
     ],
     "correta": 2,
-    "linkTec": "https://www.tecconcursos.com.br/questoes/2160597"
+    "linkTec": "https://www.tecconcursos.com.br/questoes/2160597",
+    "_bloco": 5
   },
   {
     "id": "fcc_port_gab2_105",
@@ -1116,7 +1162,7 @@
     "texto_apoio_titulo": "<em>O lugar onde a gente morava quase só tinha bicho</em>(b)",
     "texto_apoio": "<p><em>O <u>lugar</u> onde a gente morava quase só tinha bicho</em>(b) <em>solidão e árvores.</em></p>\n<p><em>Meu avô namorava a solidão.</em></p>\n<p><em>Ele era um florilégio de abandono.</em></p>\n<div class=\"fcc-verse\"><em>De tudo que me restou sobre aquele avô foi esta</em><br>\n<em>imagem: ele deitado na rede com a sua namorada, mas<br>\nse a gente o retirasse da rede por alguma necessidade,</em>(c)<br>\n<em>a solidão ficava destampada.</em></div>\n<p><em>Oh, a solidão destampada!</em></p>\n<p><em>Essa imagem da solidão que ficara dentro de mim por</em> <em>anos.</em></p>\n<p><em>Ah, o pai! O pai vaquejava e vaquejava.</em></p>\n<p><em>Ele tinha um olhar soberbo de ave.</em></p>\n<p><em>E nos ensinava a liberdade.</em></p>\n<p><em>A gente então saía vagabundeando pelos matos sem aba.</em></p>\n<p><em>Chegou que alcançamos a beira de um rio.</em></p>\n<p>A manhã estava pousada na beira do rio</em>(a)<em> desaberta moda</em> <em>um pássaro.</em></p>\n<p><em>Nessa hora já o morro encostava no sol.</em></p>\n<p><em>Logo adiante vimos um quati a lamber um osso de ema.</em></p>\n<p><em>A tarde crescia por dentro do mato.</em></p>\n<div class=\"fcc-verse\">O lugar nos perdera de rumo.</em>(d)<br>\n<em>A gente se sentia como um pedaço de formiga perdida</em><br>\n<em>na estrada.</em></div>\n<p><em>Bernardo completava o abandono.</em></p>\n<p><em>Logo encontramos uma criame de caracóis nas areias do rio.</em></p>\n<p><em>Quase todos os caracóis eram viúvos de suas lesmas.</em></p>\n<p><em>Contam que os urubus, finórios, desciam naquele lugar</em> <em>para degustar as lesmas vivas.</em></p>\n<p><em>Se diz que este recanto teria sido um pedaço do</em> <em>Mar de Xaraiés.</em></p>\n<p><em>Na beira da noite a gente estava sem rumo.</em></p>\n<p><em>Bernardo apareceu e disse que vento é cavalo.</em></p>\n<p><em>Então montamos na garupa do vento e logo chegamos em casa.</em></p>\n<p>A mãe aflitíssima estava.</em>(e) <em>Ela cuidava de todos: lavava, passava e cozinhava para todos.</em></p>\n<p><em>Porém à noite a mãe ainda encontrava uma horinha para o seu violino.</em></p>\n<p><em>Ela tocava para nós Vivaldi.</em></p>\n<p><em>E a gente ficava pendurado em lágrimas.</em></p>\n<div class=\"fcc-verse\"><em>Um dia que outro contei para a Mãe que tinha visto</em><br>\n<em>um passarinho a mastigar um pedaço de vento. A Mãe</em><br>\n<em>disse outra vez: Já vem você com suas visões! Isso é</em><br>\n<em>travessura de sua imaginação.</em></div>\n<p><em>É a voz de Deus que habita nas crianças, nos passarinhos</em> <em>e nos tontos.</em></p>\n<p><em>A infância da palavra.</em></p>\n<span class=\"apoio-attrib\"><em>(Adaptado de: BARROS, Manoel de. <strong>Menino do mato.</strong> Rio de Janeiro: Objetiva, 2015)</em></span>",
     "imagem": null,
-    "pergunta": "É invariável quanto <u>a</u> gênero e a número o termo sublinhado no seguinte verso:",
+    "pergunta": "É invariável quanto a gênero e a número o termo sublinhado no seguinte verso:",
     "alternativas": [
       "“A manhã <u>estava</u> pousada na beira do rio”",
       "“<u>O lugar</u> onde a gente morava quase só tinha bicho”",
@@ -1125,7 +1171,8 @@
       "“A mãe <u>aflitíssima</u> estava.”"
     ],
     "correta": 1,
-    "linkTec": "https://www.tecconcursos.com.br/questoes/2168728"
+    "linkTec": "https://www.tecconcursos.com.br/questoes/2168728",
+    "_bloco": 5
   },
   {
     "id": "fcc_port_gab2_106",
@@ -1149,7 +1196,8 @@
       "e amigos que eu <u>nunca</u> mais vi."
     ],
     "correta": 4,
-    "linkTec": "https://www.tecconcursos.com.br/questoes/2239615"
+    "linkTec": "https://www.tecconcursos.com.br/questoes/2239615",
+    "_bloco": 5
   },
   {
     "id": "fcc_port_gab2_107",
@@ -1173,7 +1221,8 @@
       "<em>sei <u>apenas</u> que Valente sumiu</em> (6º parágrafo)"
     ],
     "correta": 4,
-    "linkTec": "https://www.tecconcursos.com.br/questoes/2274912"
+    "linkTec": "https://www.tecconcursos.com.br/questoes/2274912",
+    "_bloco": 5
   },
   {
     "id": "fcc_port_gab2_108",
@@ -1197,6 +1246,7 @@
       "sendo-lhe vetado por lei castigar-nos com <u>o bastão</u>"
     ],
     "correta": 0,
-    "linkTec": "https://www.tecconcursos.com.br/questoes/2275138"
+    "linkTec": "https://www.tecconcursos.com.br/questoes/2275138",
+    "_bloco": 5
   }
 ]

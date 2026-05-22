@@ -62,7 +62,7 @@ function AppRoutes() {
     loading ? <Loading progress={progress} error={error} /> : el;
 
   return (
-    <div style={{ background: "#0B0F14", minHeight: "100vh" }}>
+    <div style={{ background: "#06080B", minHeight: "100vh" }}>
 
       {/* ── Shell: always present on every route ─────────────────────── */}
       <FloatingNav onMenuOpen={() => setSideOpen(true)} />

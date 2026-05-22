@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef, useCallback } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useNavigate } from "react-router-dom";
-import { Clock, Flag, CheckSquare, AlertCircle } from "lucide-react";
+import { Clock, CheckSquare, AlertCircle } from "lucide-react";
 import { QuestionCard } from "../components/question/QuestionCard";
 import { Button } from "../components/ui/Button";
 import { ProgressBar } from "../components/ui/ProgressBar";
@@ -78,9 +78,17 @@ export default function ExamPage({ exam, onFinish }: ExamPageProps) {
   }, [exam, answers, onFinish, navigate]);
 
   return (
-    <div className={cn("min-h-screen bg-bg-base", isFinishing && "pointer-events-none")}>
-      {/* Sticky header — sem backdrop-blur para evitar residual no unmount */}
-      <div className="fixed top-0 left-0 right-0 z-30 bg-bg-base border-b border-border-subtle/60">
+    <div className={cn("min-h-screen", isFinishing && "pointer-events-none")} style={{ background: "#06080B" }}>
+      {/* Sticky header — premium glass */}
+      <div
+        className="fixed top-0 left-0 right-0 z-30"
+        style={{
+          background: "linear-gradient(180deg, rgba(6,8,11,0.92) 0%, rgba(6,8,11,0.85) 100%)",
+          backdropFilter: "blur(20px) saturate(160%)",
+          WebkitBackdropFilter: "blur(20px) saturate(160%)",
+          borderBottom: "1px solid rgba(255,255,255,0.06)",
+        }}
+      >
         <div className="max-w-3xl mx-auto px-4 py-3 flex items-center gap-4">
           {/* Progress */}
           <div className="flex-1">

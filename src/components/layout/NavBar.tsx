@@ -1,3 +1,6 @@
+/**
+ * NavBar — Mobile bottom tabs only. Premium glass surface with active indicator.
+ */
 import { NavLink, useLocation } from "react-router-dom";
 import { motion } from "framer-motion";
 import { LayoutDashboard, Layers, BookOpen, Clock, Bot } from "lucide-react";
@@ -11,41 +14,65 @@ const NAV_ITEMS = [
   { to: "/ai",        label: "IA",         icon: Bot },
 ] as const;
 
-/**
- * NavBar — Mobile bottom tabs only.
- * Desktop navigation is handled by FloatingNav (pill).
- */
 export function NavBar({ qCount = 0 }: { qCount?: number }) {
   const location = useLocation();
   const hide = ["/", "/focus", "/exam"].includes(location.pathname);
   if (hide) return null;
 
   return (
-    // Mobile only — hidden on md+
     <nav
-      className="md:hidden fixed bottom-0 left-0 right-0 z-40 border-t border-white/[0.05] pb-safe"
-      style={{ background: "rgba(11,15,20,0.96)", backdropFilter: "blur(12px)" }}
+      className="md:hidden fixed bottom-0 left-0 right-0 z-40 pb-safe"
+      style={{
+        background:
+          "linear-gradient(180deg, rgba(6,8,11,0.65) 0%, rgba(6,8,11,0.95) 60%, rgba(6,8,11,1) 100%)",
+        backdropFilter: "blur(24px) saturate(180%)",
+        WebkitBackdropFilter: "blur(24px) saturate(180%)",
+        borderTop: "1px solid rgba(255,255,255,0.05)",
+      }}
     >
-      <div className="flex items-center justify-around px-1 py-1.5">
+      {/* Top hairline glow */}
+      <div
+        aria-hidden
+        className="absolute top-0 left-[15%] right-[15%] h-px"
+        style={{
+          background:
+            "linear-gradient(90deg, transparent, rgba(200,167,93,0.30), transparent)",
+        }}
+      />
+
+      <div className="relative flex items-center justify-around px-2 py-1.5">
         {NAV_ITEMS.map(({ to, label, icon: Icon }) => (
-          <NavLink key={to} to={to}
-            className={({ isActive }) => cn(
-              "relative flex flex-col items-center gap-1 px-3 py-2 rounded-xl",
-              isActive ? "text-gold" : "text-text-muted"
-            )}
+          <NavLink
+            key={to}
+            to={to}
+            end={to === "/app"}
+            className={({ isActive }) =>
+              cn(
+                "relative flex flex-col items-center gap-1 px-3 py-2 rounded-xl flex-1",
+                "transition-colors duration-200",
+                isActive ? "text-gold" : "text-text-muted hover:text-text-secondary"
+              )
+            }
           >
             {({ isActive }) => (
               <>
                 {isActive && (
                   <motion.div
-                    layoutId="nav-active"
+                    layoutId="mobile-nav-active"
                     className="absolute inset-0 rounded-xl"
-                    style={{ background: "rgba(200,167,93,0.08)" }}
+                    style={{
+                      background:
+                        "linear-gradient(180deg, rgba(200,167,93,0.10) 0%, rgba(200,167,93,0.02) 100%)",
+                      boxShadow:
+                        "inset 0 0 0 1px rgba(200,167,93,0.18)",
+                    }}
                     transition={{ type: "spring", stiffness: 400, damping: 30 }}
                   />
                 )}
-                <Icon className="w-4.5 h-4.5 relative" />
-                <span className="text-[10px] font-sans font-medium relative leading-none">{label}</span>
+                <Icon className="w-4 h-4 relative shrink-0" strokeWidth={isActive ? 2.2 : 1.8} />
+                <span className="text-[10px] font-sans font-medium relative leading-none tracking-tight">
+                  {label}
+                </span>
               </>
             )}
           </NavLink>

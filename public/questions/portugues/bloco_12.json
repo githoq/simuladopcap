@@ -21,7 +21,8 @@
       "pode - compreendia"
     ],
     "correta": 0,
-    "linkTec": "https://www.tecconcursos.com.br/questoes/3132506"
+    "linkTec": "https://www.tecconcursos.com.br/questoes/3132506",
+    "_bloco": 12
   },
   {
     "id": "fcc_port_gab4_010",
@@ -45,7 +46,8 @@
       "Tem teu direito sobre a terra que tuas próprias mãos cultivam."
     ],
     "correta": 1,
-    "linkTec": "https://www.tecconcursos.com.br/questoes/3150163"
+    "linkTec": "https://www.tecconcursos.com.br/questoes/3150163",
+    "_bloco": 12
   },
   {
     "id": "fcc_port_gab4_011",
@@ -69,7 +71,8 @@
       "afastaste e impediste."
     ],
     "correta": 1,
-    "linkTec": "https://www.tecconcursos.com.br/questoes/3204545"
+    "linkTec": "https://www.tecconcursos.com.br/questoes/3204545",
+    "_bloco": 12
   },
   {
     "id": "fcc_port_gab4_012",
@@ -93,7 +96,8 @@
       "<u>tivera</u>."
     ],
     "correta": 4,
-    "linkTec": "https://www.tecconcursos.com.br/questoes/3218849"
+    "linkTec": "https://www.tecconcursos.com.br/questoes/3218849",
+    "_bloco": 12
   },
   {
     "id": "fcc_port_gab4_013",
@@ -117,7 +121,8 @@
       "Para Rousseau, os abusos do estado social centralizar-se-iam na perda da consciência a que o conduzirá o culto dos refinamentos artificiais."
     ],
     "correta": 0,
-    "linkTec": "https://www.tecconcursos.com.br/questoes/2873588"
+    "linkTec": "https://www.tecconcursos.com.br/questoes/2873588",
+    "_bloco": 12
   },
   {
     "id": "fcc_port_gab4_014",
@@ -141,7 +146,8 @@
       "No caso de que viessem a se fortalecer ainda mais, quem haverá de fazer frente ao poder dos \"influencers\"?"
     ],
     "correta": 3,
-    "linkTec": "https://www.tecconcursos.com.br/questoes/2975285"
+    "linkTec": "https://www.tecconcursos.com.br/questoes/2975285",
+    "_bloco": 12
   },
   {
     "id": "fcc_port_gab4_015",
@@ -165,7 +171,8 @@
       "Teria sido - sabíamos - estamos"
     ],
     "correta": 3,
-    "linkTec": "https://www.tecconcursos.com.br/questoes/3114560"
+    "linkTec": "https://www.tecconcursos.com.br/questoes/3114560",
+    "_bloco": 12
   },
   {
     "id": "fcc_port_gab4_016",
@@ -183,13 +190,14 @@
     "pergunta": "Em nova redação, a frase acima permanecerá correta e coerente caso se substituam os elementos sublinhados, na ordem dada, por:",
     "alternativas": [
       "<u>Seria</u> - houvesse mantivessem",
-      "Será - hajam - manterem",
-      "Foi - houvessem - mantessem",
-      "Teria sido - tenham havido - manteriam",
-      "Terá sido - tivessem havido - manterão"
+      "<u>Será</u> - hajam - manterem",
+      "<u>Foi</u> - houvessem - mantessem",
+      "<u>Teria sido</u> - tenham havido - manteriam",
+      "<u>Terá sido</u> - tivessem havido - manterão"
     ],
     "correta": 0,
-    "linkTec": "https://www.tecconcursos.com.br/questoes/3125704"
+    "linkTec": "https://www.tecconcursos.com.br/questoes/3125704",
+    "_bloco": 12
   },
   {
     "id": "fcc_port_gab4_017",
@@ -213,7 +221,8 @@
       "A obrigação: foi isso o que pesou. Perdi o sono atormentado por deveres, pensando no que tinha de escrever."
     ],
     "correta": 4,
-    "linkTec": "https://www.tecconcursos.com.br/questoes/3151875"
+    "linkTec": "https://www.tecconcursos.com.br/questoes/3151875",
+    "_bloco": 12
   },
   {
     "id": "fcc_port_gab4_018",
@@ -237,7 +246,8 @@
       "Segundo meu amigo, a dor maior comparece quando nos convencêssemos de que não sejamos os únicos a sofrer."
     ],
     "correta": 3,
-    "linkTec": "https://www.tecconcursos.com.br/questoes/3177739"
+    "linkTec": "https://www.tecconcursos.com.br/questoes/3177739",
+    "_bloco": 12
   },
   {
     "id": "fcc_port_gab4_019",
@@ -261,7 +271,8 @@
       "Nunca houve revisão de opções capaz de virem a alterar o rumo da vida tal como gostássemos."
     ],
     "correta": 2,
-    "linkTec": "https://www.tecconcursos.com.br/questoes/3204167"
+    "linkTec": "https://www.tecconcursos.com.br/questoes/3204167",
+    "_bloco": 12
   },
   {
     "id": "fcc_port_gab4_020",
@@ -285,7 +296,8 @@
       "terão liberado - se elas reconhecessem"
     ],
     "correta": 1,
-    "linkTec": "https://www.tecconcursos.com.br/questoes/3226951"
+    "linkTec": "https://www.tecconcursos.com.br/questoes/3226951",
+    "_bloco": 12
   },
   {
     "id": "fcc_port_gab4_021",
@@ -298,9 +310,9 @@
     "cargo": "TJ TRT20",
     "orgao": "TRT 20",
     "texto_apoio_titulo": "<u>Atenção:</u> Para responder à questão, baseie-se no texto abaixo.",
-    "texto_apoio": "<p>Para responder à questão, baseie-se no texto abaixo.</p>\n<center class=\"apoio-title\"><strong>Hollywood dentro de nós</strong></center>\n<p>A cultura norte-americana, mais do que qualquer outra, vive e pensa a coletividade como um conjunto de indivíduos. Para um europeu ou um sul- americano, comemorar, explicar e mesmo narrar um acontecimento é, no minimo, problemático sem explorar sua dimensão propriamente social: o encontro ou a luta de ideias, classes. nações, grupos. grandes interesses econômicos, etc.</p>\n<p>Hollywood, com a força de seu cinema, só podia nascer numa cultura em que, seja qual for a dimensão social dos fatos, toda experiência toma a forma de uma história de aventuras. Nesse tipo de cultura. qualquer história de vida promete um roteiro de filme.</p>\n<p>Criticamos ou desprezamos Hollywood pelas simplificações, pelos silêncios e pelas ignorâncias, talvez inevitáveis, ao reduzir a complexidade da história às andanças singulares dos indivíduos. Mas, no fundo, essa crítica se endereça a nós mesmos. <u>Defendemos</u> um entendimento do mundo em que causas e confiitos coletivos são mais importantes que a epopeia dos indivíduos. No entanto, a crítica do reducionismo de Hollywood é a maneira que encontramos para reprimir uma dimensão crucial da nossa própria experiência: o mundo nos interessa só porque constitui o cenário da aventura das nossas vidas. Hollywood, desprezada, cativa-nos e fascina-nos porque glorifica um individualismo que é nosso. Portanto envergonhados, entremos no cinema.</p>\n<span class=\"apoio-attrib\"><em>(Adaptaddo e: CALLIGARIS, Contardo.<strong> Terra de ninguém </strong>. São Paulo: Publifolha. 2004. p. 322-323)</em></span>\n<p class=\"fcc-excerpt\"><em><strong>Defendemos </strong>um entendimento do mundo <u>em <u>que</u></u> causas e conflitos <strong><u>são</u></strong> mais importantes que <u>a</u> epopeia dos indivíduos.</em></p>",
+    "texto_apoio": "<p>Para responder à questão, baseie-se no texto abaixo.</p>\n<center class=\"apoio-title\"><strong>Hollywood dentro de nós</strong></center>\n<p>A cultura norte-americana, mais do que qualquer outra, vive e pensa a coletividade como um conjunto de indivíduos. Para um europeu ou um sul- americano, comemorar, explicar e mesmo narrar um acontecimento é, no minimo, problemático sem explorar sua dimensão propriamente social: o encontro ou a luta de ideias, classes. nações, grupos. grandes interesses econômicos, etc.</p>\n<p>Hollywood, com a força de seu cinema, só podia nascer numa cultura em que, seja qual for a dimensão social dos fatos, toda experiência toma a forma de uma história de aventuras. Nesse tipo de cultura. qualquer história de vida promete um roteiro de filme.</p>\n<p>Criticamos ou desprezamos Hollywood pelas simplificações, pelos silêncios e pelas ignorâncias, talvez inevitáveis, ao reduzir a complexidade da história às andanças singulares dos indivíduos. Mas, no fundo, essa crítica se endereça a nós mesmos. <u>Defendemos</u> um entendimento do mundo em que causas e confiitos coletivos são mais importantes que a epopeia dos indivíduos. No entanto, a crítica do reducionismo de Hollywood é a maneira que encontramos para reprimir uma dimensão crucial da nossa própria experiência: o mundo nos interessa só porque constitui o cenário da aventura das nossas vidas. Hollywood, desprezada, cativa-nos e fascina-nos porque glorifica um individualismo que é nosso. Portanto envergonhados, entremos no cinema.</p>\n<span class=\"apoio-attrib\"><em>(Adaptaddo e: CALLIGARIS, Contardo.<strong> Terra de ninguém </strong>. São Paulo: Publifolha. 2004. p. 322-323)</em></span>\n<p class=\"fcc-excerpt\"><em><strong>Defendemos </strong>um entendimento do mundo <u>em que</u></u> causas e conflitos <strong><u>são</u></strong> mais importantes que <u>a epopeia dos indivíduos.</em></p>",
     "imagem": null,
-    "pergunta": "<u>A</u> correlação entre os tempos e modos verbais da frase acima mantém-se correta caso se substituam as formas sublinhadas, na ordem dada, por:",
+    "pergunta": "A correlação entre os tempos e modos verbais da frase acima mantém-se correta caso se substituam as formas sublinhadas, na ordem dada, por:",
     "alternativas": [
       "Tínhamos defendido - forem.",
       "Defenderíamos - fossem.",
@@ -309,7 +321,8 @@
       "Havemos de defender - terão sido."
     ],
     "correta": 1,
-    "linkTec": "https://www.tecconcursos.com.br/questoes/3229328"
+    "linkTec": "https://www.tecconcursos.com.br/questoes/3229328",
+    "_bloco": 12
   },
   {
     "id": "fcc_port_gab4_022",
@@ -333,7 +346,8 @@
       "Estou interessado em saber <u>o</u> que houvesse entre o céu e a terra, além do que ensinasse a nossa filosofia."
     ],
     "correta": 1,
-    "linkTec": "https://www.tecconcursos.com.br/questoes/3231315"
+    "linkTec": "https://www.tecconcursos.com.br/questoes/3231315",
+    "_bloco": 12
   },
   {
     "id": "fcc_port_gab4_023",
@@ -357,7 +371,8 @@
       "cujas as quais"
     ],
     "correta": 0,
-    "linkTec": "https://www.tecconcursos.com.br/questoes/3023338"
+    "linkTec": "https://www.tecconcursos.com.br/questoes/3023338",
+    "_bloco": 12
   },
   {
     "id": "fcc_port_gab4_024",
@@ -372,7 +387,7 @@
     "texto_apoio_titulo": "<u>Atenção:</u> Leia o texto para responder à questão.",
     "texto_apoio": "<p>Leia o texto para responder à questão.</p>\n<p><em>Chamamos nossa espécie de Homo sapiens - o humano sábio. Mas é discutível até que ponto temos feito jus ao nome.</em></p>\n<p><em>Nos últimos 100 mil anos, nós, sapiens, certamente acumulamos um poder enorme. A mera listagem de todas as nossas descobertas, invenções e</em> <em>conquistas ocuparia muitos volumes. Mas poder não é sabedoria e, depois de 100 mil anos de descobertas, invenções e conquistas, a humanidade se</em> <em>arrastou para uma crise existencial. Estamos à beira da catástrofe ambiental, causada pelo mau uso do nosso próprio poder. Também estamos criando</em> <em>novas tecnologias, como a IA (Inteligência Artificial), que podem nos escravizar ou nos aniquilar. Mas em vez de a nossa espécie se unir para lidar com</em> <em>esses grandes problemas existenciais, as tensões internacionais estão aumentando, a cooperação global vem se tornando mais difícil, os países estão</em> <em>ampliando seus arsenais de aniquilação total, e não parece impossível que uma nova guerra mundial aconteça.</em></p>\n<p><em>Apesar da espantosa quantidade de informação à nossa disposição, somos tão suscetíveis à fantasia e à ilusão quanto nossos ancestrais antigos. Por</em> <em>que somos tão bons em acumular mais informação e poder, mas muito menos hábeis em adquirir sabedoria? Muitas tradições ao longo da história</em> <em>acreditaram que temos alguma imperfeição fatal que desperta a tentação de buscar poderes com que não sabemos lidar.</em></p>\n<span class=\"apoio-attrib\"><em>(HARARI, Yuval. <strong>Nexus</strong>. Companhia das Letras, edição digital. Adaptado)</em></span>\n<p class=\"fcc-excerpt\"><em>Muitas tradições ao longo da história acreditaram <u>que</u> temos alguma imperfeição fatal que desperta a tentação de buscar poderes com que não</em> <em>sabemos lidar.</em></p>",
     "imagem": null,
-    "pergunta": "<u>O</u> termo sublinhado no trecho pode ser substituído por:",
+    "pergunta": "O termo sublinhado no trecho pode ser substituído por:",
     "alternativas": [
       "ao qual.",
       "as quais.",
@@ -381,7 +396,8 @@
       "<u>a</u> qual."
     ],
     "correta": 2,
-    "linkTec": "https://www.tecconcursos.com.br/questoes/3225316"
+    "linkTec": "https://www.tecconcursos.com.br/questoes/3225316",
+    "_bloco": 12
   },
   {
     "id": "fcc_port_gab4_025",
@@ -396,7 +412,7 @@
     "texto_apoio_titulo": "Considere a crônica “Tartaruga de arrastão”, de Rachel de Queiroz.",
     "texto_apoio": "<p><em>O caso deu-se aqui na Ilha, numa pescaria de arrastão. Da primeira redada velo um tal peixe que causou espanto: ninguém podia crer que naquele</em> <em>côncavo de mar morasse tanto peixe assim. Havia de ser alguma piracema que ia passando, para lá de três toneladas de pescado foram apanhadas de</em> <em>uma só vez. Na segunda redada nada veio, ou quase nada – fugira a piracema ou fora toda colhida pela rede. Entretanto, no meio daquele quase nada</em> <em>apareceu um bicho estranho: uma tartaruga do mar. Tartaruga diferente daquelas fluviais que a gente conhece, tartaruga das profundezas salinas, meio</em> <em>peixe, porque em vez de pernas tem nadadeiras.</em></p>\n<p><em>Primeiro ela se debateu e tentou de todas as maneiras furar a malha. Depois foi agarrada e atirada ignominiosamente na areia, de barriga para cima.</em></p>\n<p><em>Por fim puseram-na em posição normal; e ela, recuperando imediatamente a compostura, estirou o pescoço enrugado e correu em torno de si um olho</em> <em>temeroso. Não sei se os presentes compreenderam quanto havia de surpresa, terror e pasmo nos olhos da tartaruga. Muito pior que um bicho da terra</em> <em>pego numa rede: este pode estranhar a prisão, mas afinal continua dentro de um elemento conhecido, pisando chão, vendo árvores familiares, sentindo</em> <em>o cheiro da terra. A tartaruga não: para ela, nascida e vivida no mar, aquela era a mais estranha, a mais inacreditável e terrível das aventuras. Para</em> <em>aquela tartaruga era o mesmo que seria para um de nós vermo-nos transportados subitamente, sem dano físico, até o fundo do mar. Imagine que</em> <em>estranho, que portentoso e medonho não parece. As caras desconhecidas de ignorados animais – no caso, homens. E todos, todos, canibais ou pior</em> <em>que isso – pois bem sentia ela sobre o seu casco grosso, sobre a carapaça encaracada, o olhar doce e alento e cobiçoso dos comedores de came.</em></p>\n<p><em>A sorte da coitada foi ninguém chegar a um acordo sobre a forma de abatê-la. E sorte maior o fato de ninguém, pessoalmente, querer se</em> <em>responsabilizar pela carnificina naquela quinta-feira santa. Mas levaram-na para o galinheiro – que ignomínia, uma veterana dos sete mares a ser</em> <em>atirada entre as galinhas, na noite que deveria ser a última da sua vida; ela que decerto esperava sepultar-se entre areias claras, nalgum maciço colorido</em> <em>de anêmonas do mar. Mas felizmente para a tartaruga, incerto é o coração do homem, incertos, os seus impulsos. Tanto vai para um lado como para o</em> <em>outro, tanto procura devorar hoje o seu irmão bicho, como amanhã o festeja e liberta. O fato é que um coração se apiedou da tragédia e houve mão que</em> <em>abriu a porta da capoeira e encaminhou a marcha rampante do bicho marinho em direção da praia, em direção do mar, sua pátria. Ela também não</em> <em>esperou arrependimento, não hesitou, não agradeceu. Cortou a areia deixando um rastro longo, penetrou na água como um barco a deslizar do estaleiro,</em> <em>mergulhou, emergiu, voltou a cabeça ainda assustada para aquele mundo sujo, escuro, inimigo, onde viviam os homens, onde esperava nunca mais</em> <em>voltar; e mergulhou de novo, abraçando toda a água que podia entre as nadadeiras abertas.</em></p>\n<span class=\"apoio-attrib\">(Adaptado de: QUEIROZ, Rachel de. <strong>100 crônicas escolhidas: um alpendre, uma rede, um açude</strong>. Rio de Janeiro: José Olympio, 2021)</span>",
     "imagem": null,
-    "pergunta": "Retoma um termo mencionado anteriormente no texto <u>a</u> palavra sublinhada em:",
+    "pergunta": "Retoma um termo mencionado anteriormente no texto a palavra sublinhada em:",
     "alternativas": [
       "<em>penetrou na água como um barco <u>a</u> deslizar do estaleiro</em> (3º parágrafo).",
       "<em>voltou a cabeça ainda assustada para aquele mundo sujo, escuro, inimigo, onde viviam <u>os</u> homens</em> (3º parágrafo).",
@@ -405,7 +421,8 @@
       "<em>houve mão <u>que</u> abriu a porta da capoeira e encaminhou a marcha rampante do bicho marinho</em> (3º parágrafo)."
     ],
     "correta": 3,
-    "linkTec": "https://www.tecconcursos.com.br/questoes/2872296"
+    "linkTec": "https://www.tecconcursos.com.br/questoes/2872296",
+    "_bloco": 12
   },
   {
     "id": "fcc_port_gab4_026",
@@ -420,7 +437,7 @@
     "texto_apoio_titulo": "Considere a tira de Angeli para responder a questão seguinte.",
     "texto_apoio": "<span class=\"apoio-attrib\">(ANGELI, Rusga e Rabujo. Folha de São Paulo. Disponível em: ",
     "imagem": "/assets/questions/questao_007.png",
-    "pergunta": "É um pronome adjetivo <u>o</u> termo",
+    "pergunta": "É um pronome adjetivo o termo",
     "alternativas": [
       "\"Ninguém\" (1° quadrinho).",
       "\"neste\" (1° quadrinho).",
@@ -429,7 +446,8 @@
       "\"eu\" (2° quadrinho)."
     ],
     "correta": 1,
-    "linkTec": "https://www.tecconcursos.com.br/questoes/3509645"
+    "linkTec": "https://www.tecconcursos.com.br/questoes/3509645",
+    "_bloco": 12
   },
   {
     "id": "fcc_port_gab4_027",
@@ -453,7 +471,8 @@
       "advérbio."
     ],
     "correta": 4,
-    "linkTec": "https://www.tecconcursos.com.br/questoes/3091008"
+    "linkTec": "https://www.tecconcursos.com.br/questoes/3091008",
+    "_bloco": 12
   },
   {
     "id": "fcc_port_gab4_028",
@@ -477,7 +496,8 @@
       "qualifica <u>os</u> versos ecoados."
     ],
     "correta": 0,
-    "linkTec": "https://www.tecconcursos.com.br/questoes/3091023"
+    "linkTec": "https://www.tecconcursos.com.br/questoes/3091023",
+    "_bloco": 12
   },
   {
     "id": "fcc_port_gab4_029",
@@ -498,10 +518,11 @@
       "\"na direção de\" e \"por meio de\".",
       "\"na direção de\" e \"deslocamento\".",
       "\"na direção de\" e \"através de\".",
-      "\"finalidade\" e \"dirigir-se <u>a</u>\"."
+      "\"finalidade\" e \"dirigir-se a\"."
     ],
     "correta": 1,
-    "linkTec": "https://www.tecconcursos.com.br/questoes/1646819"
+    "linkTec": "https://www.tecconcursos.com.br/questoes/1646819",
+    "_bloco": 12
   },
   {
     "id": "fcc_port_gab4_030",
@@ -516,7 +537,7 @@
     "texto_apoio_titulo": null,
     "texto_apoio": "<p>Leia o conto “A condição geral”, de Carlos Drummond de Andrade, O barro entendia que <mark>estavam abusando de sua docilidade para fabricar cerâmicas vulgares.</mark> A água queixou-se de recolher todas as imundícies da Terra, ela que sempre foi sinônimo de limpeza. O boi nem precisou falar: era a imagem da revolta contra o sacrifício da espécie - de todas as espécies imoladas. “E a mim?” - gemeu a árvore -, “a mim, que desempenho função vital no sistema da Terra, tacam-me fogo ou retalham-me a serra e o machado”.</p>\n<p>Os quatro concordaram que não está direito. Reclamaram do homem, que lhes declarou que não podia fazer nada. <mark>Vive onerado de impostos, afligido de doenças, e mal tem tempo de se coçar.</mark> “Em vez de me coçar, acrescentou, “assisto a seriados americanos de televisão, <u>enquanto não se inventa outra coisa.</u> E me entedio. <mark>Voltem para seus lugares e guardem o que lhes digo.</mark> Vocês pensam que ser homem é fácil?”</p>\n<span class=\"apoio-attrib\"><em>(Adaptado de: ANDRADE, Carlos Drummond de. <strong>Contos plausíveis</strong>. São Paulo: Companhia das Letras, 2012)</em></span>",
     "imagem": null,
-    "pergunta": "<u>No</u> contexto em que se insere, expressa sentido de finalidade o termo sublinhado em:",
+    "pergunta": "No contexto em que se insere, expressa sentido de finalidade o termo sublinhado em:",
     "alternativas": [
       "O boi <strong><u>nem</u></strong> precisou falar: era a imagem da revolta contra o sacrifício da espécie.",
       "desempenho função vital <u>no</u> sistema da Terra.",
@@ -525,7 +546,8 @@
       "Vive onerado de impostos, afligido de doenças, e <u>mal</u> tem tempo de se coçar."
     ],
     "correta": 2,
-    "linkTec": "https://www.tecconcursos.com.br/questoes/2869906"
+    "linkTec": "https://www.tecconcursos.com.br/questoes/2869906",
+    "_bloco": 12
   },
   {
     "id": "fcc_port_gab4_031",
@@ -540,7 +562,7 @@
     "texto_apoio_titulo": null,
     "texto_apoio": "<p>Leia o conto “A condição geral”, de Carlos Drummond de Andrade, O barro entendia que estavam abusando de sua docilidade para fabricar cerâmicas vulgares. A água queixou-se de recolher todas as imundícies da Terra, ela que sempre foi sinônimo de limpeza. O boi nem precisou falar: era a imagem da revolta contra o sacrifício da espécie - de todas as espécies imoladas. “E a mim?” - gemeu a árvore -, “a mim, que desempenho função vital no sistema da Terra, tacam-me fogo ou retalham-me a serra e o machado”.</p>\n<p>Os quatro concordaram que não está direito. Reclamaram do homem, que lhes declarou que não podia fazer nada. Vive onerado de impostos, afligido de doenças, e mal tem tempo de se coçar. “Em vez de me coçar, acrescentou, “assisto a seriados americanos de televisão, enquanto não se inventa outra coisa. E me entedio. Voltem para seus lugares e guardem o que lhes digo. Vocês pensam que ser homem é fácil?”</p>\n<span class=\"apoio-attrib\"><em>(Adaptado de: ANDRADE, Carlos Drummond de. <strong>Contos plausíveis</strong>. São Paulo: Companhia das Letras, 2012)</em></span>\n<p class=\"fcc-excerpt\">assisto a seriados americanos de televisão, <u>enquanto não se inventa outra coisa.</u></p>",
     "imagem": null,
-    "pergunta": "Em relação à oração <u>que</u> a precede, a oração sublinhada expressa ideia de",
+    "pergunta": "Em relação à oração que a precede, a oração sublinhada expressa ideia de",
     "alternativas": [
       "adição.",
       "consequência.",
@@ -549,7 +571,8 @@
       "oposição."
     ],
     "correta": 3,
-    "linkTec": "https://www.tecconcursos.com.br/questoes/2869892"
+    "linkTec": "https://www.tecconcursos.com.br/questoes/2869892",
+    "_bloco": 12
   },
   {
     "id": "fcc_port_gab4_032",
@@ -573,7 +596,8 @@
       "entretanto"
     ],
     "correta": 4,
-    "linkTec": "https://www.tecconcursos.com.br/questoes/2869922"
+    "linkTec": "https://www.tecconcursos.com.br/questoes/2869922",
+    "_bloco": 12
   },
   {
     "id": "fcc_port_gab4_033",
@@ -597,7 +621,8 @@
       "não obstante"
     ],
     "correta": 3,
-    "linkTec": "https://www.tecconcursos.com.br/questoes/2871100"
+    "linkTec": "https://www.tecconcursos.com.br/questoes/2871100",
+    "_bloco": 12
   },
   {
     "id": "fcc_port_gab4_034",
@@ -621,7 +646,8 @@
       "Uma vez assoberbado"
     ],
     "correta": 3,
-    "linkTec": "https://www.tecconcursos.com.br/questoes/2873583"
+    "linkTec": "https://www.tecconcursos.com.br/questoes/2873583",
+    "_bloco": 12
   },
   {
     "id": "fcc_port_gab4_035",
@@ -636,7 +662,7 @@
     "texto_apoio_titulo": "Texto",
     "texto_apoio": "<center class=\"apoio-title\"><strong>O viajante clandestino</strong></center>\n<p><em>– Não é arvião. Diz-se: avião.</em></p>\n<p><em>O menino estranhou a emenda de sua mãe. Não mencionava ele uma criatura do ar? A criança tem a vantagem de estrear o mundo, iniciando outro</em> <em>matrimônio entre as coisas e os nomes. Outros a elas se assemelham, à vida sempre recém-chegando. São os homens em estado de poesia, essa</em> <em>infância autorizada pelo brilho da palavra.</em> <em>– Mãe: avioneta é a neta do avião?</em></p>\n<p><em>Vamos para a sala de espera, ordenou a mãe. Sala de esperas? Que o miúdo acreditava que todas as salas fossem iguais, na viscosa espera de nascer</em> <em>sempre menos. Ela lhe admoestou, prescrevendo juízo. Aquilo era um aeroporto, lugar de respeito. A senhora apontou os passageiros, seus ares graves,</em> <em>soturnos. O menino mediu-se com aquele luto, aceitando os deveres do seu tamanho. Depois, se desenrolou do colo materno, fez sua a sua mão e foi à</em> <em>vidraça. Espreitou os imponentes ruídos, alertou a mãe para um qualquer espanto. Mas a sua voz se afogou no tropel dos motores.</em></p>\n<p><em>Eu assistia a criança. Procurava naquele aprendiz de criatura a ingenuidade que nos autoriza a sermos estranhos num mundo que nos estranha. Frágeis</em> <em>onde a mentira credencia os fortes.</em></p>\n<p><em>Seria aquele menino a fratura por onde, naquela toda frieza, espreitava a humanidade? No aeroporto eu me salvava da angústia através de um exemplar</em> <em>da infância. Valha-nos nós.</em></p>\n<p><em>O menino agora contemplava as traseiras do céu, seguindo as fumagens, lentas pegadas dos instantâneos aviões. Ele então se fingiu um aeroplano,</em> <em>braços estendidos em asas. Descolava do chão, o mundo sendo seu enorme brinquedo. E viajava por seus infinitos, roçando as malas e as pernas dos</em> <em>passageiros entediados. Até que a mãe debitou suas ordens. Ele que recolhesse a fantasia, aquele lugar era pertença exclusiva dos adultos.</em> <em>– Arranja-te. Estamos quase a partir.</em> <em>– Então vou despedir do passaporteiro.</em></p>\n<p><em>A mãe corrigiu em dupla dose. Primeiro, não ia a nenhuma parte. Segundo, não se chamava assim ao senhor dos passaportes. Mas só no presente o</em> <em>menino se deixava calar. Porque, em seu sonho, mais adiante, ele se proclama:</em> <em>– Quando for grande quero ser passaporteiro.</em></p>\n<div class=\"fcc-verse\"><em>E ele já se antefruía, de farda, dentro do vidro. Ele é que autorizava a subida aos céus.</em><br>\n<em>– Vou estudar para migraceiro.</em><br>\n<em>– És doido, filho. Fica quieto.</em></div>\n<p><em>O miúdo guardou seus jogos, constrito. Que criança, neste mundo, tem vocação para adulto?</em></p>\n<p><em>Saímos da sala para o avião. Chuviscava. O menino seguia seus passos quando, na lisura do alcatrão, ele viu o sapo. Encharcado, o bicho saltiritava.</em></p>\n<p><em>Sua boca, maior que o corpo, traduzia o espanto das diferenças. Que fazia ali aquele representante dos primórdios, naquele lugar de futuros</em> <em>apressados?</em></p>\n<p><em>O menino parou, observador, cuidando os perigos do batráquio. Na imensa incompreensão do asfalto, o bicho seria esmagado por cega e certeira roda.</em> <em>– Mãe, eu posso levar o sapo?</em></p>\n<p><em>A senhora estremeceu de horror. Olhou vergonhada, pedindo desculpas aos passantes. Então, começou a disputa. A senhora obrigava o braço do filho,</em> <em>os dois se teimavam. Venceu a secular maternidade. O menino, murcho como acento circunflexo, subiu as escadas, ocupou seu lugar, ajeitou o cinto.</em></p>\n<p><em>Do meu assento eu podia ver a tristeza desembrulhando líquidas missangas no seu rosto. Fiz-lhe sinal, ele me encarou de soslado. Então, em seu rosto</em> <em>se acendeu a mais grafa bandeira de felicidade. Porque do côncavo de minhas mãos espreitou o focinho do mais clandestino de todos os passageiros.</em></p>\n<span class=\"apoio-attrib\">(Adaptado de: COUTO, Mia. <strong>Cronicando</strong>. Lisboa: Caminho, 1991)</span>\n<p class=\"fcc-excerpt\"><em>Mas só <u>no</u> presente o menino se deixava calar. <u>Porque,</u> em seu sonho, mais adiante, ele se proclama</em> (10º parágrafo).</p>",
     "imagem": null,
-    "pergunta": "Considerando o contexto, o termo sublinhado pode ser substituído, sem <u>que</u> haja prejuízo para o sentido do texto, por",
+    "pergunta": "Considerando o contexto, o termo sublinhado pode ser substituído, sem que haja prejuízo para o sentido do texto, por",
     "alternativas": [
       "De modo <u>que</u>.",
       "Embora.",
@@ -645,7 +671,8 @@
       "Porquanto."
     ],
     "correta": 4,
-    "linkTec": "https://www.tecconcursos.com.br/questoes/2873624"
+    "linkTec": "https://www.tecconcursos.com.br/questoes/2873624",
+    "_bloco": 12
   },
   {
     "id": "fcc_port_gab4_036",
@@ -669,7 +696,8 @@
       "embora"
     ],
     "correta": 2,
-    "linkTec": "https://www.tecconcursos.com.br/questoes/2873681"
+    "linkTec": "https://www.tecconcursos.com.br/questoes/2873681",
+    "_bloco": 12
   },
   {
     "id": "fcc_port_gab4_037",
@@ -693,7 +721,8 @@
       "concessão."
     ],
     "correta": 2,
-    "linkTec": "https://www.tecconcursos.com.br/questoes/3023322"
+    "linkTec": "https://www.tecconcursos.com.br/questoes/3023322",
+    "_bloco": 12
   },
   {
     "id": "fcc_port_gab4_038",
@@ -717,7 +746,8 @@
       "relativização de um argumento pré-determinado."
     ],
     "correta": 3,
-    "linkTec": "https://www.tecconcursos.com.br/questoes/3091041"
+    "linkTec": "https://www.tecconcursos.com.br/questoes/3091041",
+    "_bloco": 12
   },
   {
     "id": "fcc_port_gab4_039",
@@ -741,7 +771,8 @@
       "condição."
     ],
     "correta": 0,
-    "linkTec": "https://www.tecconcursos.com.br/questoes/3108379"
+    "linkTec": "https://www.tecconcursos.com.br/questoes/3108379",
+    "_bloco": 12
   },
   {
     "id": "fcc_port_gab4_040",
@@ -765,7 +796,8 @@
       "Na medida em que"
     ],
     "correta": 2,
-    "linkTec": "https://www.tecconcursos.com.br/questoes/3121549"
+    "linkTec": "https://www.tecconcursos.com.br/questoes/3121549",
+    "_bloco": 12
   },
   {
     "id": "fcc_port_gab4_041",
@@ -789,7 +821,8 @@
       "proporção."
     ],
     "correta": 3,
-    "linkTec": "https://www.tecconcursos.com.br/questoes/3121555"
+    "linkTec": "https://www.tecconcursos.com.br/questoes/3121555",
+    "_bloco": 12
   },
   {
     "id": "fcc_port_gab4_042",
@@ -813,7 +846,8 @@
       "Isso envolve estruturas cerebrais, <u>como</u> a amígdala, e redes neurais, como 6 sistema dopaminérgico."
     ],
     "correta": 1,
-    "linkTec": "https://www.tecconcursos.com.br/questoes/3132087"
+    "linkTec": "https://www.tecconcursos.com.br/questoes/3132087",
+    "_bloco": 12
   },
   {
     "id": "fcc_port_gab4_043",
@@ -837,7 +871,8 @@
       "Indica o estatuto de uma coisa em relação a outra."
     ],
     "correta": 3,
-    "linkTec": "https://www.tecconcursos.com.br/questoes/3132490"
+    "linkTec": "https://www.tecconcursos.com.br/questoes/3132490",
+    "_bloco": 12
   },
   {
     "id": "fcc_port_gab4_044",
@@ -861,7 +896,8 @@
       "De modo que"
     ],
     "correta": 1,
-    "linkTec": "https://www.tecconcursos.com.br/questoes/3132494"
+    "linkTec": "https://www.tecconcursos.com.br/questoes/3132494",
+    "_bloco": 12
   },
   {
     "id": "fcc_port_gab4_045",
@@ -876,7 +912,7 @@
     "texto_apoio_titulo": null,
     "texto_apoio": "<p><em>A inveja é uma forma de contemplação ressentida pelo sucesso dos outros, imbuída do desejo último de possuí-lo. Sabe-se que ela nunca é geral,</em> <em>mas particular, direcionada a atributos específicos do próximo. O objeto da inveja é inatingível, mas, muitas vezes, causa no invejoso a ilusão do</em> <em>contrário, envolvendo-o em um eterno ciclo de busca. De maneira paradoxal, ela toma conta de todo o seu corpo, física e psiquicamente.</em></p>\n<p><em>Sabe-se que a inveja é tão perniciosa que os invejosos estão dispostos a destituir os outros de seus benefícios, ainda que, para tanto, seja necessário</em> <em>que eles mesmos sofram uma perda, podendo, inclusive, pôr fim à existência daquilo que beneficia sua própria vida. Ela não segue a lógica da</em> <em>coerência ou do sentido. A inveja é irracional, incontrolável e autodestrutiva. Muitos de nós devem ter visto com os próprios olhos.</em></p>\n<p><em>Das 14 figuras que representam o vicio e a virtude, pintadas por Giotto na capela Arena, em Pádua, a inveja é que desempenha o papel mais</em> <em>significativo. Na rigorosa geometria espacial de seu programa de afrescos, Giotto pintou a Inveja em frente e em oposição à alegoria da Caridade. O</em> <em>confronto é um choque entre dois mundos diametralmente opostos: um do egoísmo e avareza e outro da generosidade plena.</em></p>\n<span class=\"apoio-attrib\"><em>(Adaptado de:FIDELIS, Gaudêncio. <strong>Revista Cult</strong>. Acesso em: 06/02/2024)</em></span>\n<p class=\"fcc-excerpt\"><em>A inveja é tão perniciosa <u>que</u> os invejosos estão dispostos a destituir os outros de seus benefícios</em>.</p>",
     "imagem": null,
-    "pergunta": "O termo sublinhado no trecho acima expressa, no contexto em <u>que</u> se encontra, ideia de",
+    "pergunta": "O termo sublinhado no trecho acima expressa, no contexto em que se encontra, ideia de",
     "alternativas": [
       "causa.",
       "consequência.",
@@ -885,7 +921,8 @@
       "condição."
     ],
     "correta": 1,
-    "linkTec": "https://www.tecconcursos.com.br/questoes/3151500"
+    "linkTec": "https://www.tecconcursos.com.br/questoes/3151500",
+    "_bloco": 12
   },
   {
     "id": "fcc_port_gab4_046",
@@ -900,7 +937,7 @@
     "texto_apoio_titulo": null,
     "texto_apoio": "<p><em>Essa crônica é uma despedida. Resolvi, por decisão própria, parar de escrever em Cotidiano [caderno do jornal FSP].</em></p>\n<p><em>Devo ter perdido o juízo. Minha decisão contrária um dos dois maiores sonhos de cada escritor. Primeiro, o sonho de ser um best-seller. Confesso: sou</em> <em>vítima dessa vaidade. O outro sonho dos escritores é ter seus textos publicados num jornal importante. O que significa reconhecimento duplo: do jornal</em> <em>que os publica e dos leitores. Todo escritor tem uma pitada de narcisismo.</em></p>\n<p><em>Fernando Pessoa tem um poema que diz assim: \"tenho dó das estrelas luzindo há tanto tempo, tenho dó delas...\" e Ele se pergunta se \" não haverá um</em> <em>cansaço das coisas, de todas as coisas...\" Respondo: sim. Há um cansaço. A velhice é o tempo do cansaço de todas as coisas. Estou velho. Estou</em> <em>cansado. Já escrevi muito. Mas, agora, meus 78 anos estão pesando. E, como acontece com as estrelas, há sempre a obrigação de brilhar. A obrigação</em> <em>: é isso o que pesa. Perco o sono atormentado por deveres, pensando no que tenho de escrever. Sinto - pode ser que não seja assim, mas é assim que</em> <em>eu sinto - que já disse tudo. Não tenho novidades a escrever. Mas tenho a obrigação de escrever quando minha vontade é não escrever.</em></p>\n<p><em>O tempo dos jornais é o hoje, as presenças. Mas minha alma é movida pelas ausências: nos jornais, não há lugar para ressureições.</em></p>\n<span class=\"apoio-attrib\"><em>(Adaptado de: ALVES, Rubem. \"<strong>Despedida</strong>\". Disponível em: <strong>www1.folha.uol.com.br</strong>. Acesso em: 01/02/2024)</em></span>\n<p class=\"fcc-excerpt\"><em>Mas tenho a obrigação de escrever <u>quando</u> minha vontade é não escrever.</em></p>",
     "imagem": null,
-    "pergunta": "O termo sublinhado expressa, no contexto em <u>que</u> se encontra, uma",
+    "pergunta": "O termo sublinhado expressa, no contexto em que se encontra, uma",
     "alternativas": [
       "advertência.",
       "condição.",
@@ -909,7 +946,8 @@
       "reiteração."
     ],
     "correta": 2,
-    "linkTec": "https://www.tecconcursos.com.br/questoes/3151880"
+    "linkTec": "https://www.tecconcursos.com.br/questoes/3151880",
+    "_bloco": 12
   },
   {
     "id": "fcc_port_gab4_047",
@@ -924,7 +962,7 @@
     "texto_apoio_titulo": "<u>Atenção:</u> Leia o texto para responder à questão.",
     "texto_apoio": "<p>Leia o texto para responder à questão.</p>\n<p><em>Chamamos nossa espécie de Homo sapiens - o humano sábio. Mas é discutível até que ponto temos feito jus ao nome.</em></p>\n<p><em>Nos últimos 100 mil anos, nós, sapiens, certamente acumulamos um poder enorme. A mera listagem de todas as nossas descobertas, invenções e</em> <em>conquistas ocuparia muitos volumes. Mas poder não é sabedoria e, depois de 100 mil anos de descobertas, invenções e conquistas, a humanidade se</em> <em>arrastou para uma crise existencial. Estamos à beira da catástrofe ambiental, causada pelo mau uso do nosso próprio poder. Também estamos criando</em> <em>novas tecnologias, como a IA (Inteligência Artificial), que podem nos escravizar ou nos aniquilar. Mas em vez de a nossa espécie se unir para lidar com</em> <em>esses grandes problemas existenciais, as tensões internacionais estão aumentando, a cooperação global vem se tornando mais difícil, os países estão</em> <em>ampliando seus arsenais de aniquilação total, e não parece impossível que uma nova guerra mundial aconteça.</em></p>\n<p><em>Apesar da espantosa quantidade de informação à nossa disposição, somos tão suscetíveis à fantasia e à ilusão quanto nossos ancestrais antigos. Por</em> <em>que somos tão bons em acumular mais informação e poder, mas muito menos hábeis em adquirir sabedoria? Muitas tradições ao longo da história</em> <em>acreditaram que temos alguma imperfeição fatal que desperta a tentação de buscar poderes com que não sabemos lidar.</em></p>\n<span class=\"apoio-attrib\"><em>(HARARI, Yuval. <strong>Nexus</strong>. Companhia das Letras, edição digital. Adaptado)</em></span>",
     "imagem": null,
-    "pergunta": "No contexto em <u>que</u> se insere, estabelece uma oposição o seguinte trecho:",
+    "pergunta": "No contexto em que se insere, estabelece uma oposição o seguinte trecho:",
     "alternativas": [
       "Apesar da espantosa quantidade de informação <u>à nossa</u> disposição.",
       "Também estamos criando novas tecnologias, <u>como</u> a IA (Inteligência Artificial).",
@@ -933,7 +971,8 @@
       "Estamos à beira da catástrofe ambiental."
     ],
     "correta": 0,
-    "linkTec": "https://www.tecconcursos.com.br/questoes/3225313"
+    "linkTec": "https://www.tecconcursos.com.br/questoes/3225313",
+    "_bloco": 12
   },
   {
     "id": "fcc_port_gab4_048",
@@ -948,16 +987,17 @@
     "texto_apoio_titulo": "<u>Atenção:</u> Leia o texto para responder à questão.",
     "texto_apoio": "<p>Leia o texto para responder à questão.</p>\n<p><em>A lembrança de Torre di Venere evoca uma atmosfera desagradável. Torre fica a cerca de quinze quilômetros de Portoclemente, uma das cidades de</em> <em>veraneio prediletas à margem do mar Tirreno, com uma colorida avenida à beira-mar repleta de hotéis e lojas, gente bronzeada e uma estrondosa</em> <em>indústria da diversão. Margeada de pinhos, a praia mantém ao longo de toda a costa a sua cômoda amplidão de areia fina, portanto não admira que não</em> <em>muito adiante tenha-se aberto uma concorrente mais sossegada. Torre é, como destino turístico, uma ramificação do balneário vizinho e já foi um idflio.</em></p>\n<p><em>Mas, como costuma acontecer com lugares assim, a paz foi há muito obrigada a deslocar-se um trecho mais adiante; o mundo, como se sabe, busca-a</em> <em>e expulsa-a. Foi assim que Torre, <mark><u>ainda que</u> mais introspectiva e modesta que Portoclemente</mark>, caiu no gosto de italianos e estrangeiros.</em></p>\n<p><em>Torre ganhou um Grand Hôtel (onde havíamos reservado quartos). Surgiram inúmeras pensões, luxuosas e mais simples. Em julho, agosto, fervilham</em> <em>berros, brigas, gritos de júbilo de banhistas, cuja pele da nuca se descasca por causa de um sol esturricante. Tal era o aspecto da praia de Torre quando</em> <em>chegamos.</em></p>\n<p><em>Na noite de nossa chegada ao Grand Hôtel, quando aparecemos para o jantar, fomos guiados até uma mesa pelo garçom responsável. Não havia</em> <em>nenhuma objeção a fazer a essa mesa, mas nos cativou a vista da varanda de vidro contígua, que dava para o mar e sobre cujas mesinhas cintilavam</em> <em>lamparinas de abajur vermelho. Os pequenos se mostraram encantados com essa magnificência, e manifestamos de forma singela a decisão de que</em> <em>preferíamos fazer a nossa refeição na varanda - uma declaração de ignorância, como restou claro, pois nos fizeram entender com uma cortesia algo</em> <em>constrangida que aquele aconchegante ambiente era destinado \"aos nossos clientes\". Nossos clientes? Mas isso éramos nós. Não estávamos de</em> <em>passagem ou só por uma noite. Abrimos mão, de resto, do esclarecimento da diferença entre gente como nós e aquela clientela, a quem se servia o</em> <em>jantar à luz de lamparinas vermelhas, e jantamos no refeitório, em nossa mesa de iluminação prosaica - uma refeição bem medíocre, própria do</em> <em>esquema hoteleiro insípido; achamos depois muito melhor a cozinha da pensione Eleonora, dez passos mais distante da praia. Foi justamente para lá</em> <em>que nos transferimos, três ou quatro dias mais tarde.</em></p>\n<p><em>(MANN, Thomas. <strong>Mário e o mágico: uma experiência trágica</strong></em></p>\n<p><em>ainda que mais introspectiva e modesta que Portoclemente</em> Sem prejuízo para a correção e o sentido, o trecho sublinhado acima pode ser substituído por:</p>",
     "imagem": null,
-    "pergunta": "<em><strong>de viagem</strong>. Trad. José Marcos Macedo. Companhia das Letras, edição digital. Adaptado)</em>\n<em><u>ainda</u> <u>que</u> mais introspectiva e modesta que Portoclemente</em>\nSem prejuízo para a correção e o <u>sentido</u>, o trecho sublinhado acima pode ser substituído por:",
+    "pergunta": "<em><strong>de viagem</strong>. Trad. José Marcos Macedo. Companhia das Letras, edição digital. Adaptado)</em>\n<em><u>ainda que</u> mais introspectiva e modesta que Portoclemente</em>\nSem prejuízo para a correção e o sentido, o trecho sublinhado acima pode ser substituído por:",
     "alternativas": [
-      "bem <u>como</u>.",
+      "bem como.",
       "devido a.",
       "conquanto.",
       "porquanto.",
       "tampouco"
     ],
     "correta": 2,
-    "linkTec": "https://www.tecconcursos.com.br/questoes/3225323"
+    "linkTec": "https://www.tecconcursos.com.br/questoes/3225323",
+    "_bloco": 12
   },
   {
     "id": "fcc_port_gab4_049",
@@ -981,7 +1021,8 @@
       "ou o sonho que alguém <u>de outro</u> mundo está sonhando."
     ],
     "correta": 1,
-    "linkTec": "https://www.tecconcursos.com.br/questoes/2869918"
+    "linkTec": "https://www.tecconcursos.com.br/questoes/2869918",
+    "_bloco": 12
   },
   {
     "id": "fcc_port_gab4_050",
@@ -1005,7 +1046,8 @@
       "no meio daquele quase nada apareceu um bicho <u>estranho</u>"
     ],
     "correta": 1,
-    "linkTec": "https://www.tecconcursos.com.br/questoes/2872302"
+    "linkTec": "https://www.tecconcursos.com.br/questoes/2872302",
+    "_bloco": 12
   },
   {
     "id": "fcc_port_gab4_051",
@@ -1029,7 +1071,8 @@
       "substantivo e adjetivo, respectivamente."
     ],
     "correta": 3,
-    "linkTec": "https://www.tecconcursos.com.br/questoes/2873642"
+    "linkTec": "https://www.tecconcursos.com.br/questoes/2873642",
+    "_bloco": 12
   },
   {
     "id": "fcc_port_gab4_052",
@@ -1053,7 +1096,8 @@
       "Verbo."
     ],
     "correta": 3,
-    "linkTec": "https://www.tecconcursos.com.br/questoes/3023334"
+    "linkTec": "https://www.tecconcursos.com.br/questoes/3023334",
+    "_bloco": 12
   },
   {
     "id": "fcc_port_gab4_053",
@@ -1077,7 +1121,8 @@
       "do que uma <u>simplicíssima</u> resposta"
     ],
     "correta": 1,
-    "linkTec": "https://www.tecconcursos.com.br/questoes/3108400"
+    "linkTec": "https://www.tecconcursos.com.br/questoes/3108400",
+    "_bloco": 12
   },
   {
     "id": "fcc_port_gab4_054",
@@ -1101,7 +1146,8 @@
       "<em>olho temeroso</em> (2º parágrafo)."
     ],
     "correta": 1,
-    "linkTec": "https://www.tecconcursos.com.br/questoes/2872276"
+    "linkTec": "https://www.tecconcursos.com.br/questoes/2872276",
+    "_bloco": 12
   },
   {
     "id": "fcc_port_gab4_055",
@@ -1125,7 +1171,8 @@
       "autoperseverança."
     ],
     "correta": 3,
-    "linkTec": "https://www.tecconcursos.com.br/questoes/3023299"
+    "linkTec": "https://www.tecconcursos.com.br/questoes/3023299",
+    "_bloco": 12
   },
   {
     "id": "fcc_port_gab4_056",
@@ -1149,7 +1196,8 @@
       "exceto"
     ],
     "correta": 4,
-    "linkTec": "https://www.tecconcursos.com.br/questoes/3121534"
+    "linkTec": "https://www.tecconcursos.com.br/questoes/3121534",
+    "_bloco": 12
   },
   {
     "id": "fcc_port_gab4_057",
@@ -1173,7 +1221,8 @@
       "conheci Paulo Honório, o coronel assassino, protagonista e narrador do romance."
     ],
     "correta": 0,
-    "linkTec": "https://www.tecconcursos.com.br/questoes/3169639"
+    "linkTec": "https://www.tecconcursos.com.br/questoes/3169639",
+    "_bloco": 12
   },
   {
     "id": "fcc_port_gab4_058",
@@ -1197,6 +1246,7 @@
       "agitadas."
     ],
     "correta": 3,
-    "linkTec": "https://www.tecconcursos.com.br/questoes/3229184"
+    "linkTec": "https://www.tecconcursos.com.br/questoes/3229184",
+    "_bloco": 12
   }
 ]
