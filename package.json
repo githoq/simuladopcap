@@ -4,10 +4,12 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "concurrently -n vite,proxy -c cyan,yellow \"vite\" \"node dev-proxy.mjs\"",
     "build": "tsc -b && vite build",
     "preview": "vite preview",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "dev:vite": "vite",
+    "dev:proxy": "node dev-proxy.mjs"
   },
   "dependencies": {
     "clsx": "^2.1.1",
@@ -28,6 +30,8 @@
     "postcss": "^8.4.45",
     "tailwindcss": "^3.4.11",
     "typescript": "^5.5.4",
-    "vite": "^5.4.2"
+    "vite": "^5.4.2",
+    "concurrently": "^9.0.0",
+    "@cloudflare/workers-types": "^4.0.0"
   }
 }
