@@ -46,7 +46,7 @@ export function NavBar({ qCount = 0 }: { qCount?: number }) {
             key={to}
             to={to}
             end={to === "/app"}
-            className={({ isActive }) =>
+            className={({ isActive }: { isActive: boolean }) =>
               cn(
                 "relative flex flex-col items-center gap-1 px-3 py-2 rounded-xl flex-1",
                 "transition-colors duration-200",
@@ -54,7 +54,7 @@ export function NavBar({ qCount = 0 }: { qCount?: number }) {
               )
             }
           >
-            {({ isActive }) => (
+            {({ isActive }: { isActive: boolean }) => (
               <>
                 {isActive && (
                   <motion.div

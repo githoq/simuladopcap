@@ -27,7 +27,7 @@ export default function ExamPage({ exam, onFinish }: ExamPageProps) {
   useEffect(() => {
     if (!exam || exam.mode === "treino") return;
     timerRef.current = setInterval(() => {
-      setTLeft((t) => {
+      setTLeft((t: number) => {
         if (t <= 1) {
           clearInterval(timerRef.current!);
           handleFinish();
@@ -57,11 +57,11 @@ export default function ExamPage({ exam, onFinish }: ExamPageProps) {
   const tcol = tLeft < 300 ? "text-wrong-DEFAULT" : tLeft < 600 ? "text-yellow-400" : "text-correct-DEFAULT";
 
   const handleAnswer = (num: number, idx: number) => {
-    setAnswers((a) => ({ ...a, [num]: idx }));
+    setAnswers((a: Record<number, number | null>) => ({ ...a, [num]: idx }));
   };
 
   const toggleFlag = (num: number) => {
-    setFlagged((f) => {
+    setFlagged((f: Set<number>) => {
       const n = new Set(f);
       n.has(num) ? n.delete(num) : n.add(num);
       return n;
@@ -109,7 +109,7 @@ export default function ExamPage({ exam, onFinish }: ExamPageProps) {
 
           {/* Nav toggle */}
           <button
-            onClick={() => setShowNav((v) => !v)}
+            onClick={() => setShowNav((v: boolean) => !v)}
             className="flex items-center gap-1.5 text-xs text-text-secondary hover:text-text-primary transition-colors px-2 py-1 rounded-lg hover:bg-white/5"
           >
             <CheckSquare className="w-3.5 h-3.5" />
@@ -183,9 +183,9 @@ export default function ExamPage({ exam, onFinish }: ExamPageProps) {
             showResult={false}
             onAnswer={handleAnswer}
             onFlag={toggleFlag}
-            onPrev={cur > 0 ? () => setCur((c) => c - 1) : undefined}
-            onNext={cur < total - 1 ? () => setCur((c) => c + 1) : undefined}
-            onSkip={cur < total - 1 ? () => setCur((c) => c + 1) : undefined}
+            onPrev={cur > 0 ? () => setCur((c: number) => c - 1) : undefined}
+            onNext={cur < total - 1 ? () => setCur((c: number) => c + 1) : undefined}
+            onSkip={cur < total - 1 ? () => setCur((c: number) => c + 1) : undefined}
           />
         </AnimatePresence>
       </div>

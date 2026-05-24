@@ -104,7 +104,7 @@ export function FloatingNav({ onMenuOpen }: FloatingNavProps) {
           <div className="hidden md:flex items-center gap-0.5 relative">
             {NAV_LINKS.map(({ to, label }) => (
               <NavLink key={to} to={to} end={to === "/app"}>
-                {({ isActive }) => (
+                {({ isActive }: { isActive: boolean }) => (
                   <span
                     className={cn(
                       "relative inline-flex px-3 py-1.5 rounded-full text-xs font-sans font-medium tracking-tight transition-colors duration-200",

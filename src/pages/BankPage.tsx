@@ -1,7 +1,7 @@
 /**
  * BankPage — Premium question bank browser.
  */
-import { useState, useMemo } from "react";
+import { useState, useMemo, type ChangeEvent, type FocusEvent } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Search, ChevronDown, X, Database } from "lucide-react";
 import { AmbientBackground } from "../components/ui/AmbientBackground";
@@ -23,7 +23,7 @@ export default function BankPage({ questions, usedIds }: BankPageProps) {
   const [expanded, setExpanded] = useState<string | null>(null);
 
   const filtered = useMemo(() =>
-    questions.filter((q) => {
+    questions.filter((q: Question) => {
       if (fDisc !== "all" && q.disciplina !== fDisc) return false;
       if (fUsed === "used" && !usedIds.includes(q.id)) return false;
       if (fUsed === "unused" && usedIds.includes(q.id)) return false;
@@ -59,15 +59,15 @@ export default function BankPage({ questions, usedIds }: BankPageProps) {
                 <Search className="absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4 text-text-tertiary pointer-events-none" />
                 <input
                   value={search}
-                  onChange={(e) => setSearch(e.target.value)}
+                  onChange={(e: ChangeEvent<HTMLInputElement>) => setSearch(e.target.value)}
                   placeholder="Buscar questões..."
                   className="w-full pl-10 pr-9 py-2.5 rounded-xl text-text-primary text-sm placeholder-text-tertiary font-sans tracking-tight transition-all duration-200"
                   style={{
                     background: "linear-gradient(180deg, rgba(255,255,255,0.025) 0%, rgba(255,255,255,0.005) 100%)",
                     border: "1px solid rgba(255,255,255,0.07)",
                   }}
-                  onFocus={(e) => { e.currentTarget.style.border = "1px solid rgba(200,167,93,0.40)"; e.currentTarget.style.boxShadow = "0 0 0 3px rgba(200,167,93,0.10)"; }}
-                  onBlur={(e) => { e.currentTarget.style.border = "1px solid rgba(255,255,255,0.07)"; e.currentTarget.style.boxShadow = "none"; }}
+                  onFocus={(e: FocusEvent<HTMLInputElement>) => { e.currentTarget.style.border = "1px solid rgba(200,167,93,0.40)"; e.currentTarget.style.boxShadow = "0 0 0 3px rgba(200,167,93,0.10)"; }}
+                  onBlur={(e: FocusEvent<HTMLInputElement>) => { e.currentTarget.style.border = "1px solid rgba(255,255,255,0.07)"; e.currentTarget.style.boxShadow = "none"; }}
                 />
                 {search && (
                   <button
@@ -99,7 +99,7 @@ export default function BankPage({ questions, usedIds }: BankPageProps) {
           {/* Question list */}
           <StaggerItem>
             <div className="space-y-2">
-              {filtered.slice(0, 50).map((q, i) => {
+              {filtered.slice(0, 50).map((q: Question, i: number) => {
                 const isExp = expanded === q.id;
                 const isUsed = usedIds.includes(q.id);
                 return (
@@ -166,7 +166,7 @@ export default function BankPage({ questions, usedIds }: BankPageProps) {
                           className="overflow-hidden"
                         >
                           <div className="border-t border-white/[0.04] px-4 py-4 space-y-1.5">
-                            {q.alternativas.map((alt, i) => (
+                            {q.alternativas.map((alt: string, i: number) => (
                               <div
                                 key={i}
                                 className={cn(
@@ -228,7 +228,7 @@ function SelectField({
     <div className="relative">
       <select
         value={value}
-        onChange={(e) => onChange(e.target.value)}
+        onChange={(e: ChangeEvent<HTMLSelectElement>) => onChange(e.target.value)}
         className="appearance-none pl-3.5 pr-9 py-2.5 rounded-xl text-text-secondary text-sm font-sans tracking-tight cursor-pointer transition-all duration-200 w-full sm:w-auto"
         style={{
           background: "linear-gradient(180deg, rgba(255,255,255,0.025) 0%, rgba(255,255,255,0.005) 100%)",

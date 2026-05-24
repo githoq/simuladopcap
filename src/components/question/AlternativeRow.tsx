@@ -17,7 +17,7 @@ import { LETTERS } from "../../lib/constants";
 
 export type AltState = "idle" | "selected" | "correct" | "wrong" | "revealed";
 
-interface AlternativeRowProps {
+export interface AlternativeRowProps {
   index:      number;
   content:    string;
   state:      AltState;
@@ -25,6 +25,7 @@ interface AlternativeRowProps {
   onClick?:   () => void;
   isCorrect?: boolean;
   banca?:     string;
+  key?:       string | number | null;
 }
 
 // ── Pure CSS state styles — no transform, no glow ────────────────────

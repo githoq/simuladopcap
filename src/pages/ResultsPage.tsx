@@ -24,7 +24,7 @@ import type { ExamResult } from "../types";
 function AnimatedScore({ target }: { target: number }) {
   const motionVal = useMotionValue(0);
   const spring = useSpring(motionVal, { duration: 2000, bounce: 0 });
-  const display = useTransform(spring, (v) => Math.round(v));
+  const display = useTransform(spring, (v: number) => Math.round(v));
   const [shown, setShown] = useState(0);
 
   useEffect(() => {
@@ -285,7 +285,7 @@ export default function ResultsPage({ result }: { result: ExamResult | null }) {
           {/* Review toggle */}
           <StaggerItem>
             <button
-              onClick={() => setShowReview((v) => !v)}
+              onClick={() => setShowReview((v: boolean) => !v)}
               className="w-full group flex items-center justify-between px-5 py-4 rounded-2xl transition-all duration-300"
               style={{
                 background: "linear-gradient(180deg, rgba(255,255,255,0.025) 0%, rgba(255,255,255,0.005) 100%)",
@@ -321,8 +321,8 @@ export default function ResultsPage({ result }: { result: ExamResult | null }) {
                       userAnswer={result.answers[result.questions[reviewIdx]?.numero_simulado] ?? null}
                       showResult={true}
                       isTreino={false}
-                      onPrev={reviewIdx > 0 ? () => setReviewIdx((q) => q - 1) : undefined}
-                      onNext={reviewIdx < result.questions.length - 1 ? () => setReviewIdx((q) => q + 1) : undefined}
+                      onPrev={reviewIdx > 0 ? () => setReviewIdx((q: number) => q - 1) : undefined}
+                      onNext={reviewIdx < result.questions.length - 1 ? () => setReviewIdx((q: number) => q + 1) : undefined}
                     />
                   </AnimatePresence>
                 </motion.div>

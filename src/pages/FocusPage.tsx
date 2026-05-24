@@ -54,7 +54,7 @@ export default function FocusPage({ exam, onFinish }: FocusPageProps) {
   useEffect(() => {
     if (!exam || exam.mode === "treino") return;
     clockRef.current = setInterval(() =>
-      setTLeft((t) => { if (t <= 1) { clearInterval(clockRef.current!); return 0; } return t - 1; }),
+      setTLeft((t: number) => { if (t <= 1) { clearInterval(clockRef.current!); return 0; } return t - 1; }),
       1000
     );
     return () => clearInterval(clockRef.current!);
@@ -65,8 +65,8 @@ export default function FocusPage({ exam, onFinish }: FocusPageProps) {
     if (!exam) return;
     const total = exam.questions.length;
     const handler = (e: KeyboardEvent) => {
-      if (e.key === "ArrowRight" || e.key === "ArrowDown")  setCur((c) => Math.min(total - 1, c + 1));
-      if (e.key === "ArrowLeft"  || e.key === "ArrowUp")    setCur((c) => Math.max(0, c - 1));
+      if (e.key === "ArrowRight" || e.key === "ArrowDown")  setCur((c: number) => Math.min(total - 1, c + 1));
+      if (e.key === "ArrowLeft"  || e.key === "ArrowUp")    setCur((c: number) => Math.max(0, c - 1));
       if (e.key === "Escape") navigate("/exam");
     };
     window.addEventListener("keydown", handler);
@@ -180,9 +180,9 @@ export default function FocusPage({ exam, onFinish }: FocusPageProps) {
                 isTreino={isTreino}
               isExam={true}
                 showResult={false}
-                onAnswer={(num, idx) => setAnswers((a) => ({ ...a, [num]: idx }))}
-                onPrev={cur > 0          ? () => setCur((c) => c - 1) : undefined}
-                onNext={cur < total - 1  ? () => setCur((c) => c + 1) : undefined}
+                onAnswer={(num, idx) => setAnswers((a: Record<number, number | null>) => ({ ...a, [num]: idx }))}
+                onPrev={cur > 0          ? () => setCur((c: number) => c - 1) : undefined}
+                onNext={cur < total - 1  ? () => setCur((c: number) => c + 1) : undefined}
               />
             </motion.div>
           </AnimatePresence>
@@ -201,7 +201,7 @@ export default function FocusPage({ exam, onFinish }: FocusPageProps) {
           >
             {/* Prev */}
             <button
-              onClick={() => setCur((c) => Math.max(0, c - 1))}
+              onClick={() => setCur((c: number) => Math.max(0, c - 1))}
               disabled={cur === 0}
               className="w-7 h-7 rounded-full border border-border-subtle flex items-center justify-center text-text-muted hover:text-text-secondary hover:border-border-faint transition-colors duration-150 disabled:opacity-30 disabled:cursor-not-allowed"
             >
@@ -242,7 +242,7 @@ export default function FocusPage({ exam, onFinish }: FocusPageProps) {
 
             {/* Next */}
             <button
-              onClick={() => setCur((c) => Math.min(total - 1, c + 1))}
+              onClick={() => setCur((c: number) => Math.min(total - 1, c + 1))}
               disabled={cur === total - 1}
               className="w-7 h-7 rounded-full border border-border-subtle flex items-center justify-center text-text-muted hover:text-text-secondary hover:border-border-faint transition-colors duration-150 disabled:opacity-30 disabled:cursor-not-allowed"
             >

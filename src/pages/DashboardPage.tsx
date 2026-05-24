@@ -9,7 +9,7 @@
  *  - Polished discipline progress bars
  *  - Activity heatmap with gold gradient
  */
-import { useMemo } from "react";
+import { useMemo, type ReactNode } from "react";
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
 import {
@@ -332,7 +332,7 @@ export default function DashboardPage({ history, usedIds, totalQuestions, streak
               <PremiumCard>
                 <CardHeader title="Por disciplina" subtitle={`${discData.length} disciplinas com dados`} icon={Layers} />
                 <div className="p-5 pt-3 space-y-3">
-                  {discData.slice(0, 6).map((r, i) => (
+                  {discData.slice(0, 6).map((r: NonNullable<typeof discData[0]>, i: number) => (
                     <motion.div
                       key={r!.disc}
                       initial={{ opacity: 0, x: -8 }}
@@ -378,7 +378,7 @@ export default function DashboardPage({ history, usedIds, totalQuestions, streak
                 <div className="flex gap-1.5 min-w-max">
                   {Array.from({ length: 9 }).map((_, week) => (
                     <div key={week} className="flex flex-col gap-1.5">
-                      {heatmap.slice(week * 7, week * 7 + 7).map((day, d) => {
+                      {heatmap.slice(week * 7, week * 7 + 7).map((day: { date: number; count: number; pct: number }, d: number) => {
                         const intensity = day.count === 0 ? 0
                           : day.pct >= 70 ? 4 : day.pct >= 50 ? 3 : day.pct >= 30 ? 2 : 1;
                         const bgs = [
@@ -528,7 +528,7 @@ export default function DashboardPage({ history, usedIds, totalQuestions, streak
 
 /* ── Reusable premium components ──────────────────────────────────── */
 
-function PremiumCard({ children }: { children: React.ReactNode }) {
+function PremiumCard({ children }: { children: ReactNode }) {
   return (
     <div
       className="relative rounded-2xl overflow-hidden"

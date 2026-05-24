@@ -45,7 +45,7 @@ export function ApoioBlock({ question, className, isExam = false }: ApoioBlockPr
       <div className="h-px bg-white/[0.05] mb-2" />
 
       <button
-        onClick={() => setCollapsed((v) => !v)}
+        onClick={() => setCollapsed((v: boolean) => !v)}
         className="flex items-center gap-1.5 mb-1.5 group"
       >
         <span className="text-[10px] font-sans text-text-tertiary tracking-widest uppercase opacity-70">

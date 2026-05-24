@@ -7,33 +7,47 @@
  *  - secondary: Glass surface with gradient border.
  *  - ghost:     Pure transparent, hover wash.
  *  - danger:    Restrained crimson.
- *
- * Microinteractions:
- *  - whileTap: 0.98 scale (subtle compress)
- *  - Hover: -1px lift (magnetic feel)
- *  - Shimmer sweep on primary variants
  */
 import { motion } from "framer-motion";
 import { cn } from "../../lib/utils";
-import type { ComponentPropsWithoutRef } from "react";
+import type { ReactNode, MouseEvent, CSSProperties } from "react";
 
 type Variant = "primary" | "secondary" | "ghost" | "danger" | "gold";
 type Size    = "sm" | "md" | "lg";
 
-interface ButtonProps extends ComponentPropsWithoutRef<"button"> {
-  variant?:   Variant;
-  size?:      Size;
-  loading?:   boolean;
-  icon?:      React.ReactNode;
-  iconRight?: React.ReactNode;
-  shimmer?:   boolean;
+// Explicit interface — works with and without @types/react
+// When @types/react is installed, ComponentPropsWithoutRef provides the rest;
+// here we declare the subset we actually use so the compiler is satisfied offline.
+export interface ButtonProps {
+  // Custom props
+  variant?:    Variant;
+  size?:       Size;
+  loading?:    boolean;
+  icon?:       ReactNode;
+  iconRight?:  ReactNode;
+  shimmer?:    boolean;
+  // HTML button props used in this component and by callers
+  children?:   ReactNode;
+  className?:  string;
+  disabled?:   boolean;
+  onClick?:    (e: MouseEvent<HTMLButtonElement>) => void;
+  onMouseEnter?: (e: MouseEvent<HTMLButtonElement>) => void;
+  onMouseLeave?: (e: MouseEvent<HTMLButtonElement>) => void;
+  type?:       "button" | "submit" | "reset";
+  title?:       string;
+  style?:       CSSProperties;
+  "aria-label"?: string;
+  "aria-pressed"?: boolean;
+  id?:          string;
+  tabIndex?:    number;
 }
 
-const base = "inline-flex items-center justify-center font-medium font-sans tracking-tight " +
-             "transition-all duration-base ease-smooth " +
-             "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold/40 " +
-             "disabled:opacity-40 disabled:cursor-not-allowed disabled:hover:transform-none " +
-             "relative overflow-hidden select-none";
+const base =
+  "inline-flex items-center justify-center font-medium font-sans tracking-tight " +
+  "transition-all duration-base ease-smooth " +
+  "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold/40 " +
+  "disabled:opacity-40 disabled:cursor-not-allowed disabled:hover:transform-none " +
+  "relative overflow-hidden select-none";
 
 const variants: Record<Variant, string> = {
   primary:
@@ -69,16 +83,19 @@ const sizes: Record<Size, string> = {
 };
 
 export function Button({
-  variant = "secondary",
-  size = "md",
-  loading = false,
+  variant  = "secondary",
+  size     = "md",
+  loading  = false,
   icon,
   iconRight,
-  shimmer = false,
+  shimmer  = false,
   children,
   className,
   disabled,
-  ...props
+  onClick,
+  type     = "button",
+  style,
+  ...rest
 }: ButtonProps) {
   const hasShimmer = shimmer || variant === "primary" || variant === "gold";
 
@@ -88,9 +105,11 @@ export function Button({
       transition={{ duration: 0.12 }}
       className={cn(base, variants[variant], sizes[size], className)}
       disabled={disabled || loading}
-      {...(props as object)}
+      onClick={onClick}
+      type={type}
+      style={style}
+      {...(rest as object)}
     >
-      {/* Shimmer sweep on premium variants */}
       {hasShimmer && !disabled && !loading && (
         <span
           aria-hidden
@@ -102,8 +121,12 @@ export function Button({
             backgroundPosition: "200% 0",
             transition: "background-position 700ms cubic-bezier(0.16,1,0.3,1)",
           }}
-          onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.backgroundPosition = "-50% 0"; }}
-          onMouseLeave={(e) => { (e.currentTarget as HTMLElement).style.backgroundPosition = "200% 0"; }}
+          onMouseEnter={(e: MouseEvent<HTMLSpanElement>) => {
+            (e.currentTarget as HTMLElement).style.backgroundPosition = "-50% 0";
+          }}
+          onMouseLeave={(e: MouseEvent<HTMLSpanElement>) => {
+            (e.currentTarget as HTMLElement).style.backgroundPosition = "200% 0";
+          }}
         />
       )}
 

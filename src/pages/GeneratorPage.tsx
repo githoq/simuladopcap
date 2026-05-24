@@ -2,7 +2,7 @@
  * GeneratorPage — Premium configurator.
  * Sticky CTA bar, refined steppers, gold-accent mode selector.
  */
-import { useState, useMemo } from "react";
+import { useState, useMemo, type ReactNode } from "react";
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
 import { Play, Minus, Plus, Trash2, Timer, Settings2, BookOpen } from "lucide-react";
@@ -45,10 +45,10 @@ export default function GeneratorPage({ questions, usedIds, onStartExam }: Gener
     return r;
   }, [questions]);
 
-  const total = Object.values(cfg).reduce((a, b) => a + b, 0);
+  const total: number = (Object.values(cfg) as number[]).reduce((a, b) => a + b, 0);
 
   const setDisc = (d: string, v: number) =>
-    setCfg((p) => ({ ...p, [d]: Math.max(0, Math.min(avail[d] ?? 0, v)) }));
+    setCfg((p: Record<string, number>) => ({ ...p, [d]: Math.max(0, Math.min(avail[d] ?? 0, v)) }));
 
   const handleStart = () => {
     if (total === 0) return;
@@ -293,7 +293,7 @@ export default function GeneratorPage({ questions, usedIds, onStartExam }: Gener
 /* ── Section primitive ──────────────────────────────────────────────── */
 function Section({
   title, icon: Icon, trailing, children,
-}: { title: string; icon: any; trailing?: React.ReactNode; children: React.ReactNode }) {
+}: { title: string; icon: ReactNode; trailing?: ReactNode; children: ReactNode }) {
   return (
     <div
       className="rounded-2xl overflow-hidden"

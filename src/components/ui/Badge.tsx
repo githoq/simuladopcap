@@ -1,8 +1,8 @@
 import { cn } from "../../lib/utils";
-import type { CSSProperties } from "react";
+import type { CSSProperties, ReactNode } from "react";
 
 interface BadgeProps {
-  children:  React.ReactNode;
+  children:  ReactNode;
   variant?:  "gold" | "neutral" | "outline" | "correct" | "wrong" | "violet";
   size?:     "sm" | "md";
   className?: string;

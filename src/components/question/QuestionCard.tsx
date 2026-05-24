@@ -11,7 +11,7 @@
  *   - Body gap:      space-y-3 (was space-y-4)
  */
 
-import { useState, useCallback } from "react";
+import { useState, useCallback, type MouseEvent } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Flag, ChevronLeft, ChevronRight, Eye, EyeOff, ExternalLink } from "lucide-react";
 import { ApoioBlock } from "./ApoioBlock";
@@ -23,20 +23,21 @@ import { cn } from "../../lib/utils";
 import { DISCIPLINE_ORDER } from "../../lib/constants";
 import type { ExamQuestion } from "../../types";
 
-interface QuestionCardProps {
+export interface QuestionCardProps {
   question:    ExamQuestion;
   numero:      number;
   total:       number;
   userAnswer?: number | null;
   isFlagged?:  boolean;
   isTreino?:   boolean;
-  isExam?:     boolean;   // true = modo prova: apoio sem label/accordion
+  isExam?:     boolean;
   showResult?: boolean;
   onAnswer?:   (numero: number, idx: number) => void;
   onFlag?:     (numero: number) => void;
   onNext?:     () => void;
   onPrev?:     () => void;
   onSkip?:     () => void;
+  key?:        string | number | null;
 }
 
 export function QuestionCard({
@@ -174,7 +175,7 @@ export function QuestionCard({
             {(showResult || (isTreino && answered)) && (
               <Button
                 variant="ghost" size="sm"
-                onClick={() => setShowExplanation((v) => !v)}
+                onClick={() => setShowExplanation((v: boolean) => !v)}
                 icon={showExplanation
                   ? <EyeOff className="w-3 h-3" />
                   : <Eye className="w-3 h-3" />
@@ -203,7 +204,7 @@ export function QuestionCard({
               href={question.linkTec}
               target="_blank"
               rel="noopener noreferrer"
-              onClick={(e) => e.stopPropagation()}
+              onClick={(e: MouseEvent) => e.stopPropagation()}
               className="flex items-center gap-1 text-[11px] text-white/[0.28] hover:text-white/[0.55] transition-colors duration-150 font-sans select-none"
             >
               <ExternalLink className="w-2.5 h-2.5" aria-hidden />

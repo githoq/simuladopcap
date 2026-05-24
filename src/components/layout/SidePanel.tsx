@@ -154,7 +154,7 @@ export function SidePanel({
                   to={to}
                   end={to === "/app"}
                   onClick={onClose}
-                  className={({ isActive }) =>
+                  className={({ isActive }: { isActive: boolean }) =>
                     cn(
                       "group flex items-center gap-3 px-3 py-2.5 rounded-xl text-sm font-sans font-medium tracking-tight transition-all duration-200 relative",
                       isActive
@@ -163,7 +163,7 @@ export function SidePanel({
                     )
                   }
                 >
-                  {({ isActive }) => (
+                  {({ isActive }: { isActive: boolean }) => (
                     <>
                       {isActive && (
                         <span

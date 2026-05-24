@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { cn } from "../../lib/utils";
 
-export function Skeleton({ className }: { className?: string }) {
+export function Skeleton({ className }: { className?: string; key?: string | number | null }) {
   return (
     <div
       className={cn("relative overflow-hidden rounded-md", className)}

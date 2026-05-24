@@ -23,7 +23,7 @@ export function useProgress() {
       timeSpent: result.timeSpent,
       disciplineStats: result.disciplineStats,
     };
-    setHistory((h) => {
+    setHistory((h: ProgressEntry[]) => {
       const next = [entry, ...h].slice(0, 200);
       store.save(SK.HIST, next);
       return next;
@@ -32,7 +32,7 @@ export function useProgress() {
     // Mark questions as used
     if (result.mode === "prova") {
       const newIds = result.questions.map((q) => q.id);
-      setUsedIds((ids) => {
+      setUsedIds((ids: string[]) => {
         const next = [...new Set([...ids, ...newIds])];
         store.save(SK.USED, next);
         return next;
@@ -54,7 +54,7 @@ export function useProgress() {
     let count = 0;
     let day = today.getTime();
     const byDay = new Map<number, boolean>();
-    history.forEach((e) => {
+    history.forEach((e: ProgressEntry) => {
       const d = new Date(e.date);
       d.setHours(0, 0, 0, 0);
       byDay.set(d.getTime(), true);

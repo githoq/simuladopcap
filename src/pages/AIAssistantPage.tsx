@@ -1,4 +1,4 @@
-import { useState, useRef, useEffect, useCallback } from "react";
+import { useState, useRef, useEffect, useCallback, type KeyboardEvent, type CSSProperties, type ReactNode, type ChangeEvent } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Send, Sparkles, RotateCcw, AlertCircle, BookOpen, Zap, Search, Clock } from "lucide-react";
 import { AmbientBackground } from "../components/ui/AmbientBackground";
@@ -19,7 +19,7 @@ interface Message {
 
 // ─── BADGE DE MODO ─────────────────────────────────────────
 
-const MODO_CONFIG: Record<Modo, { label: string; icon: React.ReactNode; color: string }> = {
+const MODO_CONFIG: Record<Modo, { label: string; icon: ReactNode; color: string }> = {
   padrao: { label: "Padrão", icon: <Sparkles className="w-2.5 h-2.5" />, color: "rgba(124,92,255,0.8)" },
   professor: { label: "Aula", icon: <BookOpen className="w-2.5 h-2.5" />, color: "rgba(52,211,153,0.8)" },
   resolucao: { label: "Resolução", icon: <Search className="w-2.5 h-2.5" />, color: "rgba(251,191,36,0.8)" },
@@ -85,13 +85,13 @@ export default function AIAssistantPage() {
         content: msg.trim(),
         ts: Date.now(),
       };
-      setMessages((prev) => [...prev, userMsg]);
+      setMessages((prev: Message[]) => [...prev, userMsg]);
       setThinking(true);
 
       // Monta histórico (exclui welcome e erros)
       const history: ChatMessage[] = messages
-        .filter((m) => m.id !== "welcome" && !m.error)
-        .map((m) => ({ role: m.role, content: m.content }));
+        .filter((m: Message) => m.id !== "welcome" && !m.error)
+        .map((m: Message) => ({ role: m.role, content: m.content }));
 
       try {
         const response = await enviarMensagem({
@@ -106,7 +106,7 @@ export default function AIAssistantPage() {
           ts: Date.now(),
           modo: response.modo,
         };
-        setMessages((prev) => [...prev, assistantMsg]);
+        setMessages((prev: Message[]) => [...prev, assistantMsg]);
       } catch (err) {
         const errText =
           err instanceof Error ? err.message : "Erro desconhecido";
@@ -119,7 +119,7 @@ export default function AIAssistantPage() {
           ts: Date.now(),
           error: true,
         };
-        setMessages((prev) => [...prev, errMsg]);
+        setMessages((prev: Message[]) => [...prev, errMsg]);
         setError(errText);
       } finally {
         setThinking(false);
@@ -128,7 +128,7 @@ export default function AIAssistantPage() {
     [thinking, messages]
   );
 
-  const handleKeyDown = (e: React.KeyboardEvent<HTMLTextAreaElement>) => {
+  const handleKeyDown = (e: KeyboardEvent<HTMLTextAreaElement>) => {
     if (e.key === "Enter" && !e.shiftKey) {
       e.preventDefault();
       send(input);
@@ -187,7 +187,7 @@ export default function AIAssistantPage() {
                 background: thinking ? "#fbbf24" : "#34d399",
                 "--tw-ring-color": "#06080B",
                 animation: thinking ? "pulse 1.5s ease-in-out infinite" : "none",
-              } as React.CSSProperties}
+              } as CSSProperties}
             />
           </div>
           <div>
@@ -215,7 +215,7 @@ export default function AIAssistantPage() {
       <div className="relative z-10 flex-1 overflow-y-auto px-4 py-6">
         <div className="max-w-2xl mx-auto space-y-4">
           <AnimatePresence initial={false}>
-            {messages.map((msg, i) => (
+            {messages.map((msg: Message, i: number) => (
               <motion.div
                 key={msg.id}
                 initial={{ opacity: 0, y: 10 }}
@@ -411,7 +411,7 @@ export default function AIAssistantPage() {
             <textarea
               ref={textareaRef}
               value={input}
-              onChange={(e) => setInput(e.target.value)}
+              onChange={(e: ChangeEvent<HTMLTextAreaElement>) => setInput(e.target.value)}
               onKeyDown={handleKeyDown}
               placeholder="Pergunte sobre qualquer tema do concurso... (Enter para enviar)"
               rows={1}

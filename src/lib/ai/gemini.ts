@@ -1,11 +1,11 @@
 /**
- * Cliente Gemini — chama o proxy serverless /api/chat
- * A API key NUNCA toca o frontend — fica exclusivamente no servidor.
+ * Cliente do assistente IA — chama o proxy /api/chat
+ * A GEMINI_API_KEY nunca toca o frontend (fica no servidor).
  */
 
 import { buildSystemPrompt, detectarModo, type Modo } from "./prompts";
 
-// ─── TIPOS ─────────────────────────────────────────────────
+// ─── Tipos públicos ──────────────────────────────────────────
 
 export interface ChatMessage {
   role: "user" | "assistant";
@@ -21,66 +21,79 @@ export interface ChatRequest {
 export interface ChatResponse {
   reply: string;
   modo: Modo;
-  error?: string;
 }
 
-// ─── ENDPOINT DO PROXY ──────────────────────────────────────
-// Em produção (Vercel): /api/chat → serverless function
-// Em desenvolvimento: http://localhost:3001/api/chat → dev-proxy.mjs
-// A key fica NO SERVIDOR — nunca exposta ao bundle do cliente
+// Formato de erro retornado pelo proxy /api/chat
+interface ApiErrorBody {
+  error: string;
+}
+
+// ─── Endpoint do proxy ───────────────────────────────────────
+
+// Em desenvolvimento local: porta 3001 (dev-proxy.mjs)
+// Em produção (Cloudflare / Vercel): /api/chat relativo
 const isDev =
   typeof window !== "undefined" &&
   (window.location.hostname === "localhost" ||
     window.location.hostname === "127.0.0.1");
 
-const API_ENDPOINT = isDev
-  ? "http://localhost:3001/api/chat"
-  : "/api/chat";
+const API_ENDPOINT = isDev ? "http://localhost:3001/api/chat" : "/api/chat";
 
-// ─── FUNÇÃO PRINCIPAL ───────────────────────────────────────
+// ─── Função principal ────────────────────────────────────────
 
 /**
- * Envia mensagem ao assistente IA via proxy serverless.
- * Inclui histórico da conversa para memória contextual.
+ * Envia mensagem ao assistente via proxy serverless.
+ * Detecta o modo automaticamente e inclui o histórico completo.
  */
 export async function enviarMensagem(
   request: ChatRequest
 ): Promise<ChatResponse> {
   const modo = request.modo ?? detectarModo(request.message);
 
-  const body = {
+  const payload = {
     message: request.message,
     history: request.history,
     systemPrompt: buildSystemPrompt(modo),
     modo,
   };
 
-  const res = await fetch(API_ENDPOINT, {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify(body),
-  });
+  let res: Response;
+  try {
+    res = await fetch(API_ENDPOINT, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(payload),
+    });
+  } catch (networkErr) {
+    const msg =
+      networkErr instanceof Error
+        ? networkErr.message
+        : "Falha de conexão com o servidor.";
+    throw new Error(`Erro de rede: ${msg}`);
+  }
 
   if (!res.ok) {
-    let errorMsg = `Erro ${res.status}`;
+    // Tenta extrair a mensagem de erro estruturada do proxy
+    let errorMsg = `Erro ${res.status} do servidor.`;
     try {
-      const errData = await res.json();
-      errorMsg = errData.error ?? errorMsg;
+      const errBody = (await res.json()) as ApiErrorBody;
+      if (typeof errBody.error === "string" && errBody.error.length > 0) {
+        errorMsg = errBody.error;
+      }
     } catch {
-      // ignora erro de parse
+      // json parse falhou — mantém errorMsg padrão
     }
     throw new Error(errorMsg);
   }
 
-  const data: ChatResponse = await res.json();
+  const data = (await res.json()) as ChatResponse;
   return { ...data, modo };
 }
 
-// ─── RENDERIZAÇÃO DE MARKDOWN AVANÇADA ──────────────────────
+// ─── Renderização de Markdown ────────────────────────────────
 
 /**
  * Converte Markdown para HTML seguro para exibição no chat.
- * Suporta: negrito, itálico, listas, código, emojis, links.
  */
 export function renderMarkdown(text: string): string {
   let html = text
@@ -90,14 +103,16 @@ export function renderMarkdown(text: string): string {
     .replace(/>/g, "&gt;")
 
     // Blocos de código (```...```)
-    .replace(/```[\w]*\n?([\s\S]*?)```/g, (_m, code) =>
-      `<pre class="code-block"><code>${code.trim()}</code></pre>`
+    .replace(
+      /```[\w]*\n?([\s\S]*?)```/g,
+      (_m, code: string) =>
+        `<pre class="code-block"><code>${code.trim()}</code></pre>`
     )
 
     // Código inline (`...`)
     .replace(/`([^`]+)`/g, "<code>$1</code>")
 
-    // Negrito+itálico (***...*** ou ___...___) 
+    // Negrito + itálico (***...***) 
     .replace(/\*\*\*(.+?)\*\*\*/g, "<strong><em>$1</em></strong>")
 
     // Negrito (**...** ou __...__)
@@ -108,32 +123,40 @@ export function renderMarkdown(text: string): string {
     .replace(/\*([^*\n]+)\*/g, "<em>$1</em>")
     .replace(/_([^_\n]+)_/g, "<em>$1</em>")
 
-    // Títulos (##, ###, ####)
+    // Títulos (####, ###, ##, #)
     .replace(/^#### (.+)$/gm, "<h4>$1</h4>")
     .replace(/^### (.+)$/gm, "<h3>$1</h3>")
     .replace(/^## (.+)$/gm, "<h2>$1</h2>")
     .replace(/^# (.+)$/gm, "<h1>$1</h1>")
 
-    // Linha horizontal (---, ___)
+    // Linha horizontal (--- ou ___)
     .replace(/^[-_]{3,}$/gm, "<hr>")
 
-    // Listas numeradas
+    // Listas numeradas (1. ...)
     .replace(/^\d+\. (.+)$/gm, "<li class='numbered'>$1</li>")
 
     // Listas com bullet (-, *, •)
     .replace(/^[-*•] (.+)$/gm, "<li>$1</li>")
 
-    // Agrupa <li> em <ul> ou <ol>
-    .replace(/(<li class='numbered'>[\s\S]*?<\/li>)(\s*)(?!<li class='numbered'>)/g, "<ol>$1</ol>$2")
-    .replace(/(<li>(?!<\/li>)[\s\S]*?<\/li>)(\s*)(?!<li>)/g, "<ul>$1</ul>$2")
+    // Agrupa <li class='numbered'> em <ol>
+    .replace(
+      /(<li class='numbered'>[\s\S]*?<\/li>)(\s*)(?!<li class='numbered'>)/g,
+      "<ol>$1</ol>$2"
+    )
+
+    // Agrupa <li> simples em <ul>
+    .replace(
+      /(<li>(?!<\/li>)[\s\S]*?<\/li>)(\s*)(?!<li>)/g,
+      "<ul>$1</ul>$2"
+    )
 
     // Blockquote (> ...)
     .replace(/^&gt; (.+)$/gm, "<blockquote>$1</blockquote>")
 
-    // Quebras de parágrafo (linha dupla)
+    // Parágrafos (linha dupla)
     .replace(/\n\n+/g, "</p><p>")
 
-    // Quebras simples dentro de parágrafos
+    // Quebra de linha simples dentro de parágrafo
     .replace(/\n/g, "<br>")
 
     // Wrap em parágrafo

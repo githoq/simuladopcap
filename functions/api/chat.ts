@@ -2,18 +2,56 @@
  * ============================================================
  * CLOUDFLARE PAGES FUNCTION — /api/chat
  * ============================================================
- * Runtime: Workers (Web APIs — sem Node.js)
+ * Runtime: Cloudflare Workers (Web Standard APIs)
  * Variável de ambiente: GEMINI_API_KEY
  *   → Configure em: Cloudflare Pages → Settings → Environment variables
  *
- * Localmente: use dev-proxy.mjs  (npm run dev)
+ * Localmente: dev-proxy.mjs (npm run dev)
  * ============================================================
  */
 
-// Tipos do Cloudflare Pages Functions
+// ─── Tipos do ambiente Cloudflare Pages ─────────────────────
+
 interface Env {
   GEMINI_API_KEY: string;
 }
+
+// Contexto injetado pelo runtime do Cloudflare Pages Functions
+// Definido inline para não depender de @cloudflare/workers-types em tempo de build
+interface EventContext<TEnv = Record<string, string>> {
+  request: Request;
+  env: TEnv;
+  params: Record<string, string | string[]>;
+  waitUntil(promise: Promise<unknown>): void;
+  next(input?: Request | string, init?: RequestInit): Promise<Response>;
+  data: Record<string, unknown>;
+}
+
+// ─── Tipos da API do Gemini ──────────────────────────────────
+
+interface GeminiPart {
+  text: string;
+}
+
+interface GeminiContent {
+  role: string;
+  parts: GeminiPart[];
+}
+
+interface GeminiCandidate {
+  content: GeminiContent;
+  finishReason?: string;
+  index?: number;
+}
+
+interface GeminiResponse {
+  candidates?: GeminiCandidate[];
+  promptFeedback?: {
+    blockReason?: string;
+  };
+}
+
+// ─── Tipos da requisição interna ────────────────────────────
 
 interface ChatMessage {
   role: "user" | "assistant";
@@ -22,18 +60,20 @@ interface ChatMessage {
 
 interface RequestBody {
   message: string;
-  history?: ChatMessage[];
-  systemPrompt?: string;
-  modo?: string;
+  history: ChatMessage[];
+  systemPrompt: string;
+  modo: string;
 }
 
+// ─── Constantes ──────────────────────────────────────────────
+
 const GEMINI_MODEL = "gemini-2.0-flash";
-const GEMINI_API_BASE =
-  "https://generativelanguage.googleapis.com/v1beta/models";
+const GEMINI_API_BASE = "https://generativelanguage.googleapis.com/v1beta/models";
 const MAX_HISTORY = 20;
 
-// ─── Headers CORS ───────────────────────────────────────────
-function corsHeaders(origin: string | null) {
+// ─── Helpers ─────────────────────────────────────────────────
+
+function corsHeaders(origin: string | null): Record<string, string> {
   return {
     "Access-Control-Allow-Origin": origin ?? "*",
     "Access-Control-Allow-Methods": "POST, OPTIONS",
@@ -42,77 +82,65 @@ function corsHeaders(origin: string | null) {
   };
 }
 
-// ─── Handler principal ──────────────────────────────────────
-export const onRequestPost: PagesFunction<Env> = async (context) => {
+function jsonResponse(
+  data: unknown,
+  status: number,
+  origin: string | null
+): Response {
+  return new Response(JSON.stringify(data), {
+    status,
+    headers: {
+      "Content-Type": "application/json",
+      ...corsHeaders(origin),
+    },
+  });
+}
+
+// ─── Handler POST ─────────────────────────────────────────────
+
+export async function onRequestPost(
+  context: EventContext<Env>
+): Promise<Response> {
   const { request, env } = context;
   const origin = request.headers.get("Origin");
 
   // ── API Key ──────────────────────────────────────────────
   const apiKey = env.GEMINI_API_KEY;
   if (!apiKey) {
-    return new Response(
-      JSON.stringify({
-        error:
-          "Assistente IA não configurado. Configure GEMINI_API_KEY no dashboard do Cloudflare Pages.",
-      }),
-      {
-        status: 503,
-        headers: {
-          "Content-Type": "application/json",
-          ...corsHeaders(origin),
-        },
-      }
+    return jsonResponse(
+      { error: "Assistente IA não configurado. Configure GEMINI_API_KEY no dashboard do Cloudflare Pages." },
+      503,
+      origin
     );
   }
 
   // ── Lê e valida o body ───────────────────────────────────
   let body: Partial<RequestBody>;
   try {
-    body = await request.json();
+    body = (await request.json()) as Partial<RequestBody>;
   } catch {
-    return new Response(JSON.stringify({ error: "JSON inválido" }), {
-      status: 400,
-      headers: { "Content-Type": "application/json", ...corsHeaders(origin) },
-    });
+    return jsonResponse({ error: "JSON inválido na requisição." }, 400, origin);
   }
 
-  const {
-    message,
-    history = [],
-    systemPrompt = "",
-    modo = "padrao",
-  } = body;
+  const { message, history = [], systemPrompt = "", modo = "padrao" } = body;
 
-  if (!message || typeof message !== "string") {
-    return new Response(
-      JSON.stringify({ error: "Campo 'message' obrigatório" }),
-      {
-        status: 400,
-        headers: {
-          "Content-Type": "application/json",
-          ...corsHeaders(origin),
-        },
-      }
-    );
+  if (!message || typeof message !== "string" || message.trim() === "") {
+    return jsonResponse({ error: "Campo 'message' é obrigatório." }, 400, origin);
   }
 
   // ── Monta o payload para o Gemini ────────────────────────
-  const historySlice = history.slice(-MAX_HISTORY);
-
-  const contents = [
-    ...historySlice.map((msg) => ({
-      role: msg.role === "assistant" ? "model" : "user",
-      parts: [{ text: msg.content }],
-    })),
+  const contents: GeminiContent[] = [
+    ...history.slice(-MAX_HISTORY).map(
+      (msg): GeminiContent => ({
+        role: msg.role === "assistant" ? "model" : "user",
+        parts: [{ text: msg.content }],
+      })
+    ),
     { role: "user", parts: [{ text: message }] },
   ];
 
-  const geminiUrl = `${GEMINI_API_BASE}/${GEMINI_MODEL}:generateContent?key=${apiKey}`;
-
-  const geminiBody = {
-    system_instruction: {
-      parts: [{ text: systemPrompt }],
-    },
+  const geminiPayload = {
+    system_instruction: { parts: [{ text: systemPrompt }] },
     contents,
     generationConfig: {
       temperature: 0.7,
@@ -122,116 +150,81 @@ export const onRequestPost: PagesFunction<Env> = async (context) => {
       candidateCount: 1,
     },
     safetySettings: [
-      {
-        category: "HARM_CATEGORY_HARASSMENT",
-        threshold: "BLOCK_ONLY_HIGH",
-      },
-      {
-        category: "HARM_CATEGORY_HATE_SPEECH",
-        threshold: "BLOCK_ONLY_HIGH",
-      },
-      {
-        category: "HARM_CATEGORY_SEXUALLY_EXPLICIT",
-        threshold: "BLOCK_ONLY_HIGH",
-      },
-      {
-        category: "HARM_CATEGORY_DANGEROUS_CONTENT",
-        threshold: "BLOCK_ONLY_HIGH",
-      },
+      { category: "HARM_CATEGORY_HARASSMENT", threshold: "BLOCK_ONLY_HIGH" },
+      { category: "HARM_CATEGORY_HATE_SPEECH", threshold: "BLOCK_ONLY_HIGH" },
+      { category: "HARM_CATEGORY_SEXUALLY_EXPLICIT", threshold: "BLOCK_ONLY_HIGH" },
+      { category: "HARM_CATEGORY_DANGEROUS_CONTENT", threshold: "BLOCK_ONLY_HIGH" },
     ],
   };
 
   // ── Chama a API do Gemini ────────────────────────────────
+  const geminiUrl = `${GEMINI_API_BASE}/${GEMINI_MODEL}:generateContent?key=${apiKey}`;
+
   let geminiResponse: Response;
   try {
     geminiResponse = await fetch(geminiUrl, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(geminiBody),
+      body: JSON.stringify(geminiPayload),
     });
-  } catch (err) {
-    return new Response(
-      JSON.stringify({
-        error: "Não foi possível conectar ao serviço de IA. Tente novamente.",
-      }),
-      {
-        status: 502,
-        headers: {
-          "Content-Type": "application/json",
-          ...corsHeaders(origin),
-        },
-      }
+  } catch {
+    return jsonResponse(
+      { error: "Não foi possível conectar ao serviço de IA. Tente novamente." },
+      502,
+      origin
     );
   }
 
   if (!geminiResponse.ok) {
-    const errText = await geminiResponse.text();
-    console.error("Gemini API error:", geminiResponse.status, errText);
+    const errBody = await geminiResponse.text();
+    console.error("Gemini API error:", geminiResponse.status, errBody);
 
     if (geminiResponse.status === 429) {
-      return new Response(
-        JSON.stringify({
-          error:
-            "Limite de requisições atingido. Aguarde alguns segundos e tente novamente.",
-        }),
-        {
-          status: 429,
-          headers: {
-            "Content-Type": "application/json",
-            ...corsHeaders(origin),
-          },
-        }
+      return jsonResponse(
+        { error: "Limite de requisições atingido. Aguarde alguns segundos e tente novamente." },
+        429,
+        origin
       );
     }
-
-    return new Response(
-      JSON.stringify({
-        error: "Erro no serviço de IA. Tente novamente em instantes.",
-      }),
-      {
-        status: 502,
-        headers: {
-          "Content-Type": "application/json",
-          ...corsHeaders(origin),
-        },
-      }
+    if (geminiResponse.status === 401 || geminiResponse.status === 403) {
+      return jsonResponse(
+        { error: "Chave de API inválida ou sem permissão." },
+        503,
+        origin
+      );
+    }
+    return jsonResponse(
+      { error: "Erro no serviço de IA. Tente novamente em instantes." },
+      502,
+      origin
     );
   }
 
-  const geminiData = await geminiResponse.json();
-  const reply =
-    geminiData?.candidates?.[0]?.content?.parts?.[0]?.text;
+  // ── Extrai e tipifica a resposta ─────────────────────────
+  const geminiData = (await geminiResponse.json()) as GeminiResponse;
+
+  const reply = geminiData.candidates?.[0]?.content?.parts?.[0]?.text;
 
   if (!reply) {
-    return new Response(
-      JSON.stringify({
-        error:
-          "O assistente não gerou resposta. Tente reformular sua pergunta.",
-      }),
-      {
-        status: 502,
-        headers: {
-          "Content-Type": "application/json",
-          ...corsHeaders(origin),
-        },
-      }
+    console.error("Gemini empty response:", JSON.stringify(geminiData));
+    return jsonResponse(
+      { error: "O assistente não gerou resposta. Tente reformular sua pergunta." },
+      502,
+      origin
     );
   }
 
-  return new Response(JSON.stringify({ reply, modo }), {
-    status: 200,
-    headers: {
-      "Content-Type": "application/json",
-      ...corsHeaders(origin),
-    },
-  });
-};
+  return jsonResponse({ reply, modo }, 200, origin);
+}
 
-// ─── Handler para OPTIONS (preflight CORS) ──────────────────
-export const onRequestOptions: PagesFunction<Env> = async (context) => {
+// ─── Handler OPTIONS (preflight CORS) ───────────────────────
+
+export async function onRequestOptions(
+  context: EventContext<Env>
+): Promise<Response> {
   const origin = context.request.headers.get("Origin");
   return new Response(null, {
     status: 204,
     headers: corsHeaders(origin),
   });
-};
+}

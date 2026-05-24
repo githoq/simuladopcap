@@ -8,7 +8,7 @@
  *  - Subtle scroll cue
  *  - Premium CTA with shimmer
  */
-import { useRef } from "react";
+import { useRef, type MouseEvent } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useNavigate } from "react-router-dom";
 import { ArrowRight, Sparkles, Activity, Clock, BookOpen, Target } from "lucide-react";
@@ -174,8 +174,8 @@ export default function LandingPage() {
                   backgroundPosition: "200% 0",
                   transition: "background-position 800ms cubic-bezier(0.16,1,0.3,1)",
                 }}
-                onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.backgroundPosition = "-50% 0"; }}
-                onMouseLeave={(e) => { (e.currentTarget as HTMLElement).style.backgroundPosition = "200% 0"; }}
+                onMouseEnter={(e: MouseEvent<HTMLAnchorElement>) => { (e.currentTarget as HTMLElement).style.backgroundPosition = "-50% 0"; }}
+                onMouseLeave={(e: MouseEvent<HTMLAnchorElement>) => { (e.currentTarget as HTMLElement).style.backgroundPosition = "200% 0"; }}
               />
             </motion.button>
           </div>

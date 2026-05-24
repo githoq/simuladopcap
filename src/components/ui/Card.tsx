@@ -15,7 +15,7 @@
  */
 import { motion, type HTMLMotionProps } from "framer-motion";
 import { cn } from "../../lib/utils";
-import { useRef, type MouseEvent } from "react";
+import { useRef, type MouseEvent, type CSSProperties } from "react";
 
 interface CardProps extends Omit<HTMLMotionProps<"div">, "ref"> {
   hover?:     boolean;
@@ -56,7 +56,7 @@ export function Card({
       ? "surface-elevated border-gradient"
       : "surface border-gradient";
 
-  const spotlightStyle: React.CSSProperties | undefined = spotlight
+  const spotlightStyle: CSSProperties | undefined = spotlight
     ? { ["--mx" as never]: "50%", ["--my" as never]: "50%" }
     : undefined;
 
