@@ -889,10 +889,10 @@
         "imagem": null,
         "pergunta": "Sem prejuízo para as relações de <u>sentido</u> e a correção gramatical, o termo sublinhado pode ser substituído por:",
         "alternativas": [
-            "Mesmo <u>que</u>",
-            "Uma vez <u>que</u>",
+            "<u>Mesmo que</u>",
+            "<u>Uma vez que</u>",
             "Conforme",
-            "Enquanto <u>que</u>",
+            "<u>Enquanto que</u>",
             "De modo que"
         ],
         "correta": 1,
