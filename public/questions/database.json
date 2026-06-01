@@ -1,7 +1,7 @@
 {
-  "databaseVersion": "5.4.0",
-  "updatedAt": "2026-05-29",
-  "description": "PC-AP Simulados v5.4 — 3851 questões FCC (9 disciplinas). Auditoria forense completa: schema padronizado, controle de chars removidos, tabelas HTML reconstruídas, figuras de raciocínio restauradas, sanitizador CSS corrigido, OCR normalizado.",
+  "databaseVersion": "5.6.0",
+  "updatedAt": "2026-06-01",
+  "description": "PC-AP Simulados v5.6 — 3851 questões FCC. Distribuição estratificada proporcional: cada bloco contém fatia proporcional de TODOS os assuntos da disciplina. Zero questões mal categorizadas.",
   "totalQuestions": 3851,
   "disciplineCounts": {
     "Raciocínio Lógico-Matemático": 655,
@@ -14,33 +14,12 @@
     "Língua Portuguesa": 342,
     "Direito Processual Penal": 223
   },
-  "schema": {
-    "version": "v5.4",
-    "fields": [
-      "id",
-      "numero_original",
-      "cabecalho",
-      "disciplina",
-      "assunto",
-      "banca",
-      "ano",
-      "cargo",
-      "orgao",
-      "texto_apoio_titulo",
-      "texto_apoio",
-      "imagem",
-      "pergunta",
-      "alternativas",
-      "correta",
-      "linkTec",
-      "_bloco"
-    ],
-    "reference": "Língua Portuguesa bloco_01.json",
-    "notes": [
-      "texto_apoio: string (sempre), '' quando ausente",
-      "pergunta: HTML-safe, <br> para assertivas I/II/III",
-      "alternativas: HTML-safe plain text",
-      "16 questões com <table> HTML em texto_apoio (figuras reconstruídas)"
-    ]
+  "shuffleMethod": "stratified_proportional_v2",
+  "shuffledAt": "2026-06-01T21:36:33.685376",
+  "maxConcentration": {
+    "Raciocínio Lógico-Matemático": "13.0% (era 45.7%)",
+    "Língua Portuguesa": "17.6% (era 30%)",
+    "Direito Administrativo": "6.0%",
+    "História e Geografia": "56.2% (estrutural: apenas 2 assuntos)"
   }
 }
