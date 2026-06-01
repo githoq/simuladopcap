@@ -2,7 +2,7 @@
  * SimuladoActionsPage — Premium intermediate screen between Generator and Exam.
  * Cinematic summary card with gradient halo + asymmetric action grid.
  */
-import { useState } from "react";
+import { useState, type ComponentType } from "react";
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
 import {
@@ -232,7 +232,7 @@ export default function SimuladoActionsPage({ exam, onStartExam }: SimuladoActio
 
 function ActionTile({
   icon: Icon, label, desc, onClick, success = false, gold = false,
-}: { icon: any; label: string; desc: string; onClick: () => void; success?: boolean; gold?: boolean }) {
+}: { icon: ComponentType; label: string; desc: string; onClick: () => void; success?: boolean; gold?: boolean }) {
   return (
     <motion.button
       whileHover={{ y: -2 }}

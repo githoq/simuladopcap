@@ -29,13 +29,15 @@ export default function GeneratorPage({ questions, usedIds, onStartExam }: Gener
     Object.fromEntries(DISCIPLINE_ORDER.map((d) => [d, 0]))
   );
 
+  const usedSet = useMemo(() => new Set(usedIds), [usedIds]);
+
   const avail = useMemo(() => {
     const r: Record<string, number> = {};
     DISCIPLINE_ORDER.forEach((d) => {
-      r[d] = questions.filter((q) => q.disciplina === d && !usedIds.includes(q.id)).length;
+      r[d] = questions.filter((q) => q.disciplina === d && !usedSet.has(q.id)).length;
     });
     return r;
-  }, [questions, usedIds]);
+  }, [questions, usedSet]);
 
   const allAvail = useMemo(() => {
     const r: Record<string, number> = {};

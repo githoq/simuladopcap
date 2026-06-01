@@ -29,6 +29,59 @@ export const SK = {
   DB_VER: "pcsim_db_version",
 } as const;
 
-export const BLOCO_FILES = Array.from({ length: 17 }, (_, i) =>
+// Arquivos de Língua Portuguesa (blocos 01–17)
+const PORTUGUES_FILES = Array.from({ length: 17 }, (_, i) =>
   `/questions/portugues/bloco_${String(i + 1).padStart(2, "0")}.json`
 );
+
+// Arquivos das demais disciplinas (extraídos dos PDFs TecConcursos)
+const OUTRAS_DISCIPLINAS_FILES = [
+  "/questions/raciocinio/bloco_01.json",
+  "/questions/raciocinio/bloco_02.json",
+  "/questions/raciocinio/bloco_03.json",
+  "/questions/raciocinio/bloco_04.json",
+  "/questions/raciocinio/bloco_05.json",
+  "/questions/raciocinio/bloco_06.json",
+  "/questions/raciocinio/bloco_07.json",
+  "/questions/raciocinio/bloco_08.json",
+  "/questions/historia_ap/bloco_01.json",
+  "/questions/historia_ap/bloco_02.json",
+  "/questions/historia_ap/bloco_03.json",
+  "/questions/informatica/bloco_01.json",
+  "/questions/informatica/bloco_02.json",
+  "/questions/informatica/bloco_03.json",
+  "/questions/informatica/bloco_04.json",
+  "/questions/direitos_humanos/bloco_01.json",
+  "/questions/direitos_humanos/bloco_02.json",
+  "/questions/direitos_humanos/bloco_03.json",
+  "/questions/administrativo/bloco_01.json",
+  "/questions/administrativo/bloco_02.json",
+  "/questions/administrativo/bloco_03.json",
+  "/questions/administrativo/bloco_04.json",
+  "/questions/administrativo/bloco_05.json",
+  "/questions/administrativo/bloco_06.json",
+  "/questions/administrativo/bloco_07.json",
+  "/questions/administrativo/bloco_08.json",
+  "/questions/administrativo/bloco_09.json",
+  "/questions/administrativo/bloco_10.json",
+  "/questions/administrativo/bloco_11.json",
+  "/questions/administrativo/bloco_12.json",
+  "/questions/administrativo/bloco_13.json",
+  "/questions/administrativo/bloco_14.json",
+  "/questions/administrativo/bloco_15.json",
+  "/questions/constitucional/bloco_01.json",
+  "/questions/constitucional/bloco_02.json",
+  "/questions/constitucional/bloco_03.json",
+  "/questions/penal/bloco_01.json",
+  "/questions/penal/bloco_02.json",
+  "/questions/penal/bloco_03.json",
+  "/questions/penal/bloco_04.json",
+  "/questions/penal/bloco_05.json",
+  "/questions/penal/bloco_06.json",
+  "/questions/processo_penal/bloco_01.json",
+  "/questions/processo_penal/bloco_02.json",
+  "/questions/processo_penal/bloco_03.json",
+  "/questions/processo_penal/bloco_04.json"
+];
+
+export const BLOCO_FILES = [...PORTUGUES_FILES, ...OUTRAS_DISCIPLINAS_FILES];

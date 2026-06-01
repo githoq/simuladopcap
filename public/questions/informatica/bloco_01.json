@@ -1,11 +1,17 @@
 [
   {
     "id": "fcc_info_2024_001",
+    "numero_original": 1,
+    "cabecalho": "FCC - PC-AP/2024",
     "disciplina": "Noções de Informática",
     "assunto": "Internet",
     "banca": "FCC",
     "ano": 2024,
+    "cargo": "",
     "orgao": "PC-AP",
+    "texto_apoio_titulo": null,
+    "texto_apoio": "",
+    "imagem": null,
     "pergunta": "O protocolo utilizado para navegação segura na internet, que criptografa os dados transmitidos, é o:",
     "alternativas": [
       "A) HTTP",
@@ -15,15 +21,22 @@
       "E) POP3"
     ],
     "correta": 2,
-    "linkTec": ""
+    "linkTec": "",
+    "_bloco": 1
   },
   {
     "id": "fcc_info_2023_001",
+    "numero_original": 2,
+    "cabecalho": "FCC - PC-AP/2023",
     "disciplina": "Noções de Informática",
     "assunto": "Segurança",
     "banca": "FCC",
     "ano": 2023,
+    "cargo": "",
     "orgao": "PC-AP",
+    "texto_apoio_titulo": null,
+    "texto_apoio": "",
+    "imagem": null,
     "pergunta": "Software malicioso que sequestra dados do usuário e exige pagamento para liberá-los é denominado:",
     "alternativas": [
       "A) Spyware",
@@ -33,15 +46,22 @@
       "E) Trojan"
     ],
     "correta": 2,
-    "linkTec": ""
+    "linkTec": "",
+    "_bloco": 1
   },
   {
     "id": "fcc_info_2022_001",
+    "numero_original": 3,
+    "cabecalho": "FCC - PC-AP/2022",
     "disciplina": "Noções de Informática",
     "assunto": "Sistemas Operacionais",
     "banca": "FCC",
     "ano": 2022,
+    "cargo": "",
     "orgao": "PC-AP",
+    "texto_apoio_titulo": null,
+    "texto_apoio": "",
+    "imagem": null,
     "pergunta": "No Windows, o atalho de teclado para copiar um elemento selecionado é:",
     "alternativas": [
       "A) Ctrl + X",
@@ -51,15 +71,22 @@
       "E) Ctrl + A"
     ],
     "correta": 3,
-    "linkTec": ""
+    "linkTec": "",
+    "_bloco": 1
   },
   {
     "id": "fcc_info_2021_001",
+    "numero_original": 4,
+    "cabecalho": "FCC - PC-AP/2021",
     "disciplina": "Noções de Informática",
     "assunto": "Planilhas",
     "banca": "FCC",
     "ano": 2021,
+    "cargo": "",
     "orgao": "PC-AP",
+    "texto_apoio_titulo": null,
+    "texto_apoio": "",
+    "imagem": null,
     "pergunta": "No Microsoft Excel, a fórmula que soma os valores no intervalo de A1 até A10 é:",
     "alternativas": [
       "A) =TOTAL(A1:A10)",
@@ -69,6 +96,7 @@
       "E) =ADD(A1;A10)"
     ],
     "correta": 2,
-    "linkTec": ""
+    "linkTec": "",
+    "_bloco": 1
   }
 ]

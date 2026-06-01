@@ -7,10 +7,23 @@ const SAFE_TAGS = new Set([
   "small","hr","pre","code","figure","figcaption","img",
 ]);
 
+// Extended safe props: includes table layout properties
 const SAFE_STYLE_PROPS = new Set([
+  // Typography
   "text-align","font-style","font-weight","text-decoration",
-  "text-decoration-line","margin-left","padding-left",
-  "font-size","color","background-color","text-indent",
+  "text-decoration-line","font-size","color","background-color",
+  "text-indent","font-family","line-height","letter-spacing",
+  // Spacing
+  "margin","margin-left","margin-right","margin-top","margin-bottom",
+  "padding","padding-left","padding-right","padding-top","padding-bottom",
+  // Box model (needed for table cells and reconstructed figures)
+  "width","height","min-width","max-width",
+  "border","border-top","border-right","border-bottom","border-left",
+  "border-collapse","border-spacing","border-color","border-width","border-style",
+  // Display
+  "display","vertical-align","text-align","white-space",
+  // Background (for highlighted cells in sudoku/tables)
+  "background",
 ]);
 
 function sanitizeStyle(styleStr: string): string {
@@ -21,6 +34,7 @@ function sanitizeStyle(styleStr: string): string {
     const p = prop.trim().toLowerCase();
     const v = rest.join(":").trim();
     if (!SAFE_STYLE_PROPS.has(p)) return acc;
+    // Block dangerous values
     if (/url\(|expression|javascript:/i.test(v)) return acc;
     acc.push(`${p}:${v}`);
     return acc;

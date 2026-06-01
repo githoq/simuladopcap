@@ -23,6 +23,24 @@ export default function ExamPage({ exam, onFinish }: ExamPageProps) {
   const [showNav, setShowNav] = useState(false);
   const [isFinishing, setIsFinishing] = useState(false);
   const timerRef = useRef<ReturnType<typeof setInterval> | null>(null);
+  // ── Ref to always hold latest answers — prevents stale closure in timer ──
+  const answersRef = useRef(answers);
+  useEffect(() => { answersRef.current = answers; }, [answers]);
+
+  // ── handleFinish uses ref so timer always submits the latest answers ──────
+  const handleFinish = useCallback(() => {
+    if (!exam) return;
+    clearInterval(timerRef.current!);
+    setIsFinishing(true);
+    setShowNav(false);
+    const result = calcResults({ ...exam, answers: answersRef.current });
+    onFinish(result);
+    navigate("/results");
+  }, [exam, onFinish, navigate]);
+
+  // Stable ref for use inside setInterval callback
+  const handleFinishRef = useRef(handleFinish);
+  useEffect(() => { handleFinishRef.current = handleFinish; }, [handleFinish]);
 
   useEffect(() => {
     if (!exam || exam.mode === "treino") return;
@@ -30,7 +48,8 @@ export default function ExamPage({ exam, onFinish }: ExamPageProps) {
       setTLeft((t: number) => {
         if (t <= 1) {
           clearInterval(timerRef.current!);
-          handleFinish();
+          // Use ref to avoid stale closure
+          handleFinishRef.current();
           return 0;
         }
         return t - 1;
@@ -67,15 +86,6 @@ export default function ExamPage({ exam, onFinish }: ExamPageProps) {
       return n;
     });
   };
-
-  const handleFinish = useCallback(() => {
-    clearInterval(timerRef.current!);
-    setIsFinishing(true);          // ← desabilita toda interação imediatamente
-    setShowNav(false);             // ← fecha o nav panel
-    const result = calcResults({ ...exam, answers });
-    onFinish(result);
-    navigate("/results");
-  }, [exam, answers, onFinish, navigate]);
 
   return (
     <div className={cn("min-h-screen", isFinishing && "pointer-events-none")} style={{ background: "#06080B" }}>

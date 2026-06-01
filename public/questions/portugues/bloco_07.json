@@ -39,11 +39,11 @@
         "imagem": null,
         "pergunta": "Em <em>“Luzia-me um <u>romance</u> através daquele misterioso e anônimo bilhete”</em>, a expressão sublinhada exerce a mesma função sintática da expressão\nsublinhada em:",
         "alternativas": [
-            "Li e reli este <u>bilhete.</u>",
-            "entrou-me em casa um sujeito <u>desconhecido.</u>",
-            "Tomei uma <u>resolução</u> definitiva.",
-            "entregou-me um rolo <u>de papel</u> contendo uma avultada soma.",
-            "recebi no meu escritório, na corte, um bilhete <u>anônimo.</u>"
+            "<em>Li e reli este <u>bilhete</u>.</em>",
+            "<em>entrou-me em casa um sujeito <u>desconhecido</u>.</em>",
+            "<em>Tomei uma <u>resolução</u> definitiva.</em>",
+            "<em>entregou-me um rolo <u>de papel</u> contendo uma avultada soma.</em>",
+            "<em>recebi no meu escritório, na corte, um bilhete <u>anônimo</u>.</em>"
         ],
         "correta": 1,
         "linkTec": "https://www.tecconcursos.com.br/questoes/2154571",
@@ -92,7 +92,7 @@
             "<em>seu Demóstenes não conseguia conter <u>o riso</u></em> (7º parágrafo).",
             "<em>ele [Risadinha] não teve <u>infância</u></em> (1º parágrafo).",
             "<em>Eu o conheci <u>menino</u></em> (1º parágrafo).",
-            "<em>Levante-se, seu <u>Nestor!</u></em> (4º parágrafo).",
+            "<em>Levante-se, seu <u>Nestor</u>!</em> (4º parágrafo).",
             "<em>perguntou-lhe rosnando <u>o padre</u></em> (8º parágrafo)."
         ],
         "correta": 4,
@@ -115,9 +115,9 @@
         "pergunta": "Em relação à oração centrada no verbo em negrito, exerce a função sintática de sujeito a expressão sublinhada em:",
         "alternativas": [
             "<em>− <em><strong>Descobri</strong> que <u>paciência</u> é uma forma de amor − diz-me uma das filhas, sorrindo.</em></em>",
-            "<em>E depois, <strong>há</strong> espécies <u>fabulosas,</u> que rendem um colosso.</em>",
-            "<em><strong>Tem</strong> horror <u>a criança.</u></em>",
-            "<em>− <em><strong>Acorda</strong>, sua <u>mandriona,</u> o dia já clareou!</em></em>",
+            "<em>E depois, <strong>há</strong> espécies <u>fabulosas</u>, que rendem um colosso.</em>",
+            "<em><strong>Tem</strong> horror <u>a criança</u>.</em>",
+            "<em>− <em><strong>Acorda</strong>, sua <u>mandriona</u>, o dia já clareou!</em></em>",
             "<em>E <strong>é</strong> um custo impedir que ele <u>escaramuce</u> o doente para fora de casa.</em>"
         ],
         "correta": 4,
@@ -165,9 +165,9 @@
         "pergunta": "Considerando a oração centrada no verbo em negrito, exerce a função sintática de sujeito o trecho sublinhado em:",
         "alternativas": [
             "<em>Que o resultado nem sempre era satisfatório, <strong>mostram</strong> as punições <u>prescritas</u> para o caso de fracasso.</em>",
-            "<em>Ali <strong>surgiram</strong><u>conceitos básicos de matemática</u>; ali foram feitas importantes colaborações à astronomia e à metalurgia.</em>",
+            "<em>Ali <strong>surgiram</strong> <u>conceitos básicos de matemática</u>; ali foram feitas importantes colaborações à astronomia e à metalurgia.</em>",
             "<em>muitas delas <strong>chegaram</strong> a um alto grau <u>de sofisticação</u> em termos de arquitetura e arte</em>.",
-            "<em><strong>Havia</strong><u>divindades da cura,</u> Ningishzida, cujo símbolo era uma cobra de duas cabeças – a serpente viria a se tornar depois o emblema da</em>",
+            "<em><strong>Havia</strong> <u>divindades da cura</u>, Ningishzida, cujo símbolo era uma cobra de duas cabeças – a serpente viria a se tornar depois o emblema da</em>",
             "<em>O código <u>de Hamurabi</u> mostra que vários tipos de operações <strong>eram</strong> feitas.</em>"
         ],
         "correta": 0,
@@ -210,15 +210,15 @@
         "cargo": "TJ TRT23",
         "orgao": "TRT 23",
         "texto_apoio_titulo": "<em>O lugar onde a gente morava quase só tinha bicho</em>",
-        "texto_apoio": "<p><em>O lugar onde a gente morava quase só tinha bicho</em> <em>solidão e árvores.</em></p>\n<p><em>Meu avô namorava a solidão.</em></p>\n<p><em>Ele era um florilégio de abandono.</em></p>\n<div class=\"fcc-verse\"><em>De tudo que me restou sobre aquele avô foi esta</em><br>\n<em>imagem: ele deitado na rede com a sua namorada, mas</em><br>\n<em>se a gente o retirasse da rede por alguma necessidade,</em><br>\n<em>a solidão ficava destampada.</em></div>\n<p><em>Oh, a solidão destampada!</em></p>\n<p><em>Essa imagem da solidão que ficara dentro de mim por</em> <em>anos.</em></p>\n<p><em>Ah, o pai! O pai vaquejava e vaquejava.</em></p>\n<p><em>Ele tinha um olhar soberbo de ave.</em></p>\n<p><em>E nos ensinava a liberdade.</em></p>\n<p><em>A gente então saía vagabundeando pelos matos sem aba.</em></p>\n<p><em>Chegou que alcançamos a beira de um rio.</em></p>\n<p><em>A manhã estava pousada na beira do rio desaberta moda</em> <em>um pássaro.</em></p>\n<p><em>Nessa hora já o morro encostava no sol.</em></p>\n<p><em>Logo adiante vimos um quati a lamber um osso de ema.</em></p>\n<p><em>A tarde crescia por dentro do mato.</em></p>\n<p><em>O lugar nos perdera de rumo.</em></p>\n<p><em>A gente se sentia como um pedaço de formiga perdida</em> <em>na estrada.</em></p>\n<p><em>Bernardo completava o abandono.</em></p>\n<p><em>Logo encontramos uma criame de caracóis</em>(a)<em>nas areias do rio.</em></p>\n<div class=\"fcc-verse\">Quase todos os caracóis eram viúvos de suas lesmas.</em>(b)<br>\n<em>Contam que os urubus, finórios, desciam naquele lugar</em>(c)<br>\n<em>para degustar as lesmas vivas.</em></div>\n<p><em>Se diz que este recanto teria sido um pedaço do</em> <em>Mar de Xaraiés.</em></p>\n<p>Na beira da noite a gente estava sem rumo.</em>(d) <em>Bernardo apareceu e disse que vento é cavalo.</em></p>\n<p><em>Então montamos na garupa do vento</em>(e)<em>e logo chegamos em casa.</em></p>\n<p><em>A mãe aflitíssima estava.</em></p>\n<p><em>Ela cuidava de todos: lavava, passava e cozinhava para todos.</em></p>\n<p><em>Porém à noite a mãe ainda encontrava uma horinha para o seu violino.</em></p>\n<p><em>Ela tocava para nós Vivaldi.</em></p>\n<p><em>E a gente ficava pendurado em lágrimas.</em></p>\n<div class=\"fcc-verse\"><em>Um dia que outro contei para a Mãe que tinha visto</em><br>\n<em>um passarinho a mastigar um pedaço de vento. A Mãe</em><br>\n<em>disse outra vez: Já vem você com suas visões! Isso é</em><br>\n<em>travessura de sua imaginação.</em></div>\n<p><em>É a voz de Deus que habita nas crianças, nos passarinhos</em> <em>e nos tontos.</em></p>\n<p><em>A infância da palavra.</em></p>\n<span class=\"apoio-attrib\"><em>(Adaptado de: BARROS, Manoel de. <strong>Menino do mato.</strong> Rio de Janeiro: Objetiva, 2015)</em></span>",
+        "texto_apoio": "<p><em>O lugar onde a gente morava quase só tinha bicho</em> <em>solidão e árvores.</em></p>\n<p><em>Meu avô namorava a solidão.</em></p>\n<p><em>Ele era um florilégio de abandono.</em></p>\n<div class=\"fcc-verse\"><em>De tudo que me restou sobre aquele avô foi esta</em><br>\n<em>imagem: ele deitado na rede com a sua namorada, mas</em><br>\n<em>se a gente o retirasse da rede por alguma necessidade,</em><br>\n<em>a solidão ficava destampada.</em></div>\n<p><em>Oh, a solidão destampada!</em></p>\n<p><em>Essa imagem da solidão que ficara dentro de mim por</em> <em>anos.</em></p>\n<p><em>Ah, o pai! O pai vaquejava e vaquejava.</em></p>\n<p><em>Ele tinha um olhar soberbo de ave.</em></p>\n<p><em>E nos ensinava a liberdade.</em></p>\n<p><em>A gente então saía vagabundeando pelos matos sem aba.</em></p>\n<p><em>Chegou que alcançamos a beira de um rio.</em></p>\n<p><em>A manhã estava pousada na beira do rio desaberta moda</em> <em>um pássaro.</em></p>\n<p><em>Nessa hora já o morro encostava no sol.</em></p>\n<p><em>Logo adiante vimos um quati a lamber um osso de ema.</em></p>\n<p><em>A tarde crescia por dentro do mato.</em></p>\n<p><em>O lugar nos perdera de rumo.</em></p>\n<p><em>A gente se sentia como um pedaço de formiga perdida</em> <em>na estrada.</em></p>\n<p><em>Bernardo completava o abandono.</em></p>\n<p><em>Logo encontramos uma criame de caracóis</em>(a)<em>nas areias do rio.</em></p>\n<div class=\"fcc-verse\">Quase todos os caracóis eram viúvos de suas lesmas.(b)<br>\n<em>Contam que os urubus, finórios, desciam naquele lugar</em>(c)<br>\n<em>para degustar as lesmas vivas.</em></div>\n<p><em>Se diz que este recanto teria sido um pedaço do</em> <em>Mar de Xaraiés.</em></p>\n<p>Na beira da noite a gente estava sem rumo.(d) <em>Bernardo apareceu e disse que vento é cavalo.</em></p>\n<p><em>Então montamos na garupa do vento</em>(e)<em>e logo chegamos em casa.</em></p>\n<p><em>A mãe aflitíssima estava.</em></p>\n<p><em>Ela cuidava de todos: lavava, passava e cozinhava para todos.</em></p>\n<p><em>Porém à noite a mãe ainda encontrava uma horinha para o seu violino.</em></p>\n<p><em>Ela tocava para nós Vivaldi.</em></p>\n<p><em>E a gente ficava pendurado em lágrimas.</em></p>\n<div class=\"fcc-verse\"><em>Um dia que outro contei para a Mãe que tinha visto</em><br>\n<em>um passarinho a mastigar um pedaço de vento. A Mãe</em><br>\n<em>disse outra vez: Já vem você com suas visões! Isso é</em><br>\n<em>travessura de sua imaginação.</em></div>\n<p><em>É a voz de Deus que habita nas crianças, nos passarinhos</em> <em>e nos tontos.</em></p>\n<p><em>A infância da palavra.</em></p>\n<span class=\"apoio-attrib\"><em>(Adaptado de: BARROS, Manoel de. <strong>Menino do mato.</strong> Rio de Janeiro: Objetiva, 2015)</em></span>",
         "imagem": null,
         "pergunta": "Em <em>“Logo adiante vimos <u>um quati”</u></em>, a expressão sublinhada exerce a mesma função sintática da expressão sublinhada em:",
         "alternativas": [
-            "“Logo encontramos uma criame <u>de caracóis”</u>",
-            "“Quase todos os caracóis eram viúvos de suas <u>lesmas”</u>",
-            "“os urubus, finórios, desciam <u>naquele</u> lugar”",
-            "“Na beira da noite a gente estava sem <u>rumo”</u>",
-            "“Então montamos <u>na garupa</u> do vento”"
+            "<em>“Logo encontramos uma criame <u>de caracóis”</u></em>",
+            "<em>“Quase todos os caracóis eram viúvos de suas <u>lesmas”</u></em>",
+            "<em>“os urubus, finórios, desciam <u>naquele</u> lugar”</em>",
+            "<em>“Na beira da noite a gente estava sem <u>rumo”</u></em>",
+            "<em>“Então montamos <u>na garupa</u> do vento”</em>"
         ],
         "correta": 0,
         "linkTec": "https://www.tecconcursos.com.br/questoes/2168780",
@@ -285,7 +285,7 @@
         "cargo": "TJ TRT22",
         "orgao": "TRT 22",
         "texto_apoio_titulo": "<u>Atenção:</u> Para responder à questão, considere o poema abaixo do escritor piauiense Mário Faustino.",
-        "texto_apoio": "<p>Para responder à questão, considere o poema abaixo do escritor piauiense Mário Faustino.</p>\n<p><em><u>Esse estoque de amor que acumulei</u></em> <em>Ninguém veio comprar a preço justo.</em></p>\n<p>Preparei meu castelo<strong>a</strong> para um rei</em> <em>Que mal me olhou, passando, e a quanto custo.</em></p>\n<p><em>Meu tesouro amoroso<strong>c</strong> há muito as traças</em> <em>Comeram, secundadas por ladrões.</em></p>\n<div class=\"fcc-verse\">A luz abandonou as ondas lassas<strong>d</strong></em><br>\n<em>De refletir um sol que só se põe</em><br>\n<em>Sozinho. Agora vou por meus infernos<strong>e</strong></em><br>\n<em>Sem fantasma buscar entre fantasmas.</em></div>\n<div class=\"fcc-verse\"><em>E marcho contra o vento, sobre eternos</em><br>\n<em>Desertos sem retorno, onde olharás<br>\nMas sem o ver, estrela cega<strong>b</strong>, o rastro</em><br>\n<em>Que até aqui deixei, seguindo um astro.</em></div>\n<span class=\"apoio-attrib\"><em>(FAUSTINO, Mário.<strong>O homem e sua hora.</strong> São Paulo: Companhia das Letras, 2009)</em></span>",
+        "texto_apoio": "<p>Para responder à questão, considere o poema abaixo do escritor piauiense Mário Faustino.</p>\n<p><em><u>Esse estoque de amor que acumulei</u></em> <em>Ninguém veio comprar a preço justo.</em></p>\n<p>Preparei meu castelo<strong>a</strong> para um rei <em>Que mal me olhou, passando, e a quanto custo.</em></p>\n<p><em>Meu tesouro amoroso<strong>c</strong> há muito as traças</em> <em>Comeram, secundadas por ladrões.</em></p>\n<div class=\"fcc-verse\">A luz abandonou as ondas lassas<strong>d</strong><br>\n<em>De refletir um sol que só se põe</em><br>\n<em>Sozinho. Agora vou por meus infernos<strong>e</strong></em><br>\n<em>Sem fantasma buscar entre fantasmas.</em></div>\n<div class=\"fcc-verse\"><em>E marcho contra o vento, sobre eternos</em><br>\n<em>Desertos sem retorno, onde olharás<br>\nMas sem o ver, estrela cega<strong>b</strong>, o rastro</em><br>\n<em>Que até aqui deixei, seguindo um astro.</em></div>\n<span class=\"apoio-attrib\"><em>(FAUSTINO, Mário.<strong>O homem e sua hora.</strong> São Paulo: Companhia das Letras, 2009)</em></span>",
         "imagem": null,
         "pergunta": "No poema, o eu lírico dirige-se, mediante vocativo, a",
         "alternativas": [
@@ -312,7 +312,7 @@
         "texto_apoio_titulo": "Leia a crônica <strong>O lendário país do <em>recall</em></strong>, de Moacyr Scliar.",
         "texto_apoio": "<p>Leia a crônica <strong>O lendário país do <em>recall</em></strong>, de Moacyr Scliar.</p>\n<p>Leitora manda boneca para <em>recall</em> e não a recebe de volta. Como explicar para uma criança que seus brinquedos foram embora há três meses e não voltaram? (Cotidiano, 25/02/2008) <em>“Minha querida dona: quem lhe escreve sou eu, a sua fiel e querida boneca, que você não vê há três meses. Sei que você sente muitas saudades, porque</em> <em>eu também sinto saudades de você. Lembro de você me pegando no colo, me chamando de filhinha, me dando papinha... Você era, e é, minha mãezinha</em> <em>querida, e é por isso que estou lhe mandando esta carta, por meio do cara que assina esta coluna e que, sendo escritor, acredita nas coisas da</em> <em>imaginação.</em></p>\n<p><em>Posso lhe dizer, querida, que vivi uma tremenda aventura, uma aventura que em vários momentos me deixou apavorada. Porque tive de viajar para o</em> <em>distante país do</em> recall <em>. Aposto que você nem sabia da existência desse lugar; eu, pelo menos, não sabia. Para lá fui enviada. Não só eu: bonecas</em> <em>defeituosas, ursinhos idem, eletrodomésticos que não funcionavam e peças de automóvel quebradas. Nós todos ali, na traseira de um gigantesco</em> <em>caminhão que andava, andava sem parar. Finalmente chegamos, e ali estávamos, no misterioso e, para mim, assustador país do</em> recall <em>. Um homem nos</em> <em>recebeu e anunciou, muito secamente, que o nosso destino em breve seria traçado: as bonecas que tivessem conserto seriam consertadas e mandadas</em> <em>de volta para os donos; quanto tempo isso levaria era imprevisível, mas três meses era o mínimo. Uma boneca que estava do meu lado, a Liloca,</em> <em>perguntou, com os olhos arregalados, o que aconteceria a quem não tivesse conserto. O homem não disse nada, mas seu sorriso sinistro falava por si.</em></p>\n<p><em>Passamos a noite num enorme pavilhão destinado especialmente às bonecas. Éramos centenas ali, algumas com probleminhas pequenos (um braço</em> <em>fora do lugar, por exemplo), outras já num estado lamentável. Estava muito claro que para várias de nós não haveria volta.</em></p>\n<p><em>Naquela noite conversei muito com minha amiga Liloca − sim, querida dona, àquela altura já éramos amigas. O infortúnio tinha nos unido. Outras</em> <em>bonecas juntaram-se a nós e logo formamos um grande grupo. Estávamos preocupadas com o que poderia nos suceder. De repente a Liloca gritou: ‘Mas gente, nós não somos obrigados a aceitar isso! Vamos fazer alguma coisa!’. Nós a olhamos, espantadas: fazer alguma coisa? Mas fazer o quê?</em></p>\n<p><em>Liloca tinha uma resposta: vamos tomar o poder. Vamos nos apossar do país do</em> recall <em>.</em></p>\n<p><em>No começo aquilo nos pareceu absurdo. Mas Liloca sabia do que estava falando. A mãe da dona dela tinha sido uma militante revolucionária e sempre</em> <em>falava nisso, na necessidade de mudar o mundo, de dar o poder aos mais fracos. Ora, dizia Liloca, ninguém mais fraco do que nós, pobres,</em> <em>desamparados e defeituosos brinquedos. Não deveríamos aguardar resignadamente que decidissem o que fazer com a gente.</em></p>\n<p><em>De modo, querida dona, que estamos aqui preparando a revolução. Breve estaremos governando o país do recall. Mas não se preocupe, eu a convidarei</em> <em>para me visitar. Você poderá vir a qualquer hora. E não precisará de</em> recall <em>para isso.”</em></p>\n<span class=\"apoio-attrib\">(Adaptado de: Moacyr Scliar. <strong>Histórias que os jornais não contam</strong>. Porto Alegre: L&PM, 2018)</span>",
         "imagem": null,
-        "pergunta": "Verifica-se o emprego de vírgulas <u>para</u> separar um vocativo no seguinte trecho:",
+        "pergunta": "Verifica-se o emprego de vírgulas para separar um vocativo no seguinte trecho:",
         "alternativas": [
             "Uma boneca que estava do meu lado, a Liloca, perguntou, com os olhos arregalados, o que aconteceria a quem não tivesse conserto.",
             "Aposto que você nem sabia da existência desse lugar; eu, pelo menos, não sabia.",
@@ -337,7 +337,7 @@
         "texto_apoio_titulo": null,
         "texto_apoio": "<p>Para responder a questão a seguir, considere o conto “O perguntar e o responder”, de Carlos Drummond de Andrade.</p>\n<p>O espelho recusou-se a responder a Lavínia que ela é a mais bela mulher do Brasil. Aliás, não respondeu nada(B). Era um espelho muito silencioso.</p>\n<p>Lavínia retirou-o da parede e colocou outro, que emitia sons ininteligíveis, e foi também substituído(A). O terceiro espelho já fazia uso moderado da palavra, porém não dizia coisa com coisa.(D) Um quarto espelho chegou a pronunciar nitidamente esta frase: “Vou pensar”. Ficou pensando a semana inteira, sem chegar à conclusão.(E) Lavínia apelou para um quinto espelho, e este, antes que a vaidosa senhora fizesse a interrogação aflita, perguntou-lhe: − Mulher, haverá no Brasil espelho mais belo do que eu?(C)</p>\n<span class=\"apoio-attrib\">(Adaptado de: ANDRADE, Carlos Drummond de. Contos plausíveis. São Paulo: Companhia das Letras, 2012)</span>",
         "imagem": null,
-        "pergunta": "Verifica-se o emprego de vírgula <u>para</u> separar um vocativo em:",
+        "pergunta": "Verifica-se o emprego de vírgula para separar um vocativo em:",
         "alternativas": [
             "Lavínia retirou-o da parede e colocou outro, que emitia sons ininteligíveis, e foi também substituído.",
             "Aliás, não respondeu nada.",
@@ -614,11 +614,11 @@
         "imagem": null,
         "pergunta": "Considerado o contexto, o elemento sublinhado exerce a mesma função sintática que o também sublinhado em:",
         "alternativas": [
-            "Todos sonhamos: não entendemos nossos <u>sonhos.</u>",
-            "então esta <u>verdade</u> é um triste comentário à sabedoria do homem moderno.",
-            "e no entanto agimos como se de nada estranho corresse em nossas mentes <u>adormecidas.</u>",
-            "Imagina-se <u>que</u> tudo seja conhecido − senão por nós, por algum especialista.",
-            "orgulhamo-nos de nosso <u>“realismo”.</u>"
+            "<em>Todos sonhamos: não entendemos nossos <u>sonhos</u>.</em>",
+            "<em>então <u>esta verdade</u> é um triste comentário à sabedoria do homem moderno.</em>",
+            "<em>e no entanto agimos como se de nada estranho corresse <u>em nossas mentes adormecidas</u>.</em>",
+            "<em>Imagina-se <u>que</u> tudo seja conhecido − senão por nós, por algum especialista.</em>",
+            "<em>orgulhamo-nos de <u>nosso \"realismo\"</u>.</em>"
         ],
         "correta": 0,
         "linkTec": "https://www.tecconcursos.com.br/questoes/2158418",
@@ -640,10 +640,10 @@
         "pergunta": "<em>Em Escravo <u>que</u> fugia assim</em>, o termo sublinhado exerce a mesma função sintática da expressão sublinhada em:",
         "alternativas": [
             "<em>Era grotesca tal <u>máscara</u></em>.",
-            "<em>Havia também <u>a máscara de folha de flandres.</u></em>",
-            "<em>Tinha só três <u>buracos.</u></em>",
-            "<em>não cuidemos <u>de máscaras.</u></em>",
-            "<em>os escravos fugiam <u>com frequência.</u></em>"
+            "<em>Havia também <u>a máscara de folha de flandres</u>.</em>",
+            "<em>Tinha só três <u>buracos</u>.</em>",
+            "<em>não cuidemos <u>de máscaras</u>.</em>",
+            "<em>os escravos fugiam <u>com frequência</u>.</em>"
         ],
         "correta": 0,
         "linkTec": "https://www.tecconcursos.com.br/questoes/2293561",
@@ -737,11 +737,11 @@
         "texto_apoio_titulo": null,
         "texto_apoio": "<p>O dono do pequeno restaurante é amável, sem derrame, e <u>a fregueses mais antigos</u> oferece, antes do menu, o jornal do dia “facilitado”, isto é, com traços vermelhos cercando as notícias importantes. <mark>Vez por outra, indaga <u>se a comida está boa</u></mark>, oferece cigarrinho, queixa-se do resfriado crônico e pergunta pelo nosso, se o temos; se não temos, por aquele regime começado em janeiro, e de que desistimos. Também pelos filmes de espionagem, que mexem com ele na alma.</p>\n<p>Espetar a despesa não tem problema, em dia de barra pesada. Chega a descontar o cheque a ser recebido no mês que vem (“Falta só uma semana, seu Adelino”).</p>\n<p>Além dessas <u>delícias</u> raras, <mark>seu Adelino faculta ao cliente dar palpites ao cozinheiro</mark> e beneficiar-se com o filé mais fresquinho, o palmito de primeira, a batata feita na hora, especialmente para os eleitos. Enfim, autêntico papo-firme.</p>\n<p><mark><u>Uma noite dessas</u>, o movimento era pequeno</mark>, <mark>seu Adelino veio sentar-se <u>ao lado da antiga freguesa</u></mark>. Era hora do jantar dele, também. <mark>O garçom estendeu-lhe o menu e esperou</mark>. Seu Adelino, calado, olhava para a lista inexpressiva dos pratos do dia. A inspiração não vinha. O garçom já tinha ido e voltado duas vezes, e nada. A freguesa resolveu colaborar: − Que tal um fígado acebolado? − Acabou, madame − atalhou o garçom. − Deixe ver… Assada com coradas, está bem? − Não, não tenho vontade disso − e seu Adelino sacudiu a cabeça. − Bem, estou vendo aqui umas costeletas de porco com feijão-branco, farofa e arroz… − Não é mau, mas acontece que ainda ontem comi uma carnezita de porco, e há dois dias que me servem feijão ao almoço − ponderou.</p>\n<p>A freguesa de boa vontade virou-se para o garçom: − Aqui no menu não tem, mas quem sabe se há um bacalhau a qualquer coisa? − pois seu Adelino (refletiu ela) é português, e como todo lusíada que se preza, há de achar isso a pedida.</p>\n<div class=\"fcc-verse\">Da cozinha veio a informação:<br>\n− Tem bacalhau à Gomes de Sá. Quer?<br>\n− Pode ser isso − concordou seu Adelino, sem entusiasmo.</div>\n<p>Ao cabo de dez minutos, veio o garçom brandindo o Gomes de Sá. A freguesa olhou o prato, invejando-o, e, para estimular o apetite de seu Adelino: − Está uma beleza! − Não acho muito não − retorquiu, inapetente.</p>\n<p>O prato foi servido, o azeite adicionado, e seu Adelino traçou o bacalhau, depois de lhe ser desejado bom apetite. Em silêncio.</p>\n<p>Vendo que ele não se manifestava, sua leal conviva interpelou-o: − Como é, está bom?</p>\n<p>Com um risinho meio de banda, fez a crítica: − Bom nada, madame. Isso não é bacalhau à Gomes de Sá nem aqui nem em Macau. É bacalhau com batatas. E vou lhe dizer: está mais para sem gosto do que com ele. A batata me sabe a insossa, e o bacalhau salgado em demasia, ai!</p>\n<p>A cliente se lembrou, com saudade vera, daquele maravilhoso Gomes de Sá que se come em casa de d. Concessa. E foi detalhando: − Lá em casa é que se prepara um legal, sabe? Muito tomate, pimentão, azeite de verdade, para fazer um molho pra lá de bom, e ainda acrescentam um ovo… Seu Adelino emergiu da apatia, comoveu-se, os olhos brilhando, desta vez em sorriso aberto: − Isso mesmo! Ovo cozido e ralado, azeitonas portuguesas, daquelas… Um santo, santíssimo prato!</p>\n<div class=\"fcc-verse\">Mas, encarando o concreto:<br>\n− Essa gente aqui não tem a ciência, não tem a ciência!<br>\n− Espera aí, seu Adelino, vamos ver no jornal se tem um bom filme de espionagem para o senhor se consolar.</div>\n<p>Não tinha, infelizmente.</p>\n<span class=\"apoio-attrib\">(Adaptado de: ANDRADE, Carlos Drummond de. 70 histórias. São Paulo: Companhia das Letras, 2016, p. 110-111)</span>",
         "imagem": null,
-        "pergunta": "O termo sublinhado <u>em a fregueses mais antigos</u> oferece, antes do menu, o jornal do dia “facilitado” exerce a mesma função sintática do termo\nsublinhado em:",
+        "pergunta": "O termo sublinhado em <u>a fregueses mais antigos</u> oferece, antes do menu, o jornal do dia “facilitado” exerce a mesma função sintática do termo\nsublinhado em:",
         "alternativas": [
-            "seu Adelino veio sentar-se ao lado da antiga <u>freguesa</u>",
-            "Vez por outra, indaga se <u>a comida</u> está boa",
-            "Uma noite <u>dessas,</u> o movimento era pequeno",
+            "seu Adelino veio sentar-se <u>ao lado da antiga frequesa</u>",
+            "Vez por outra, indaga <u>se a comida está boa</u>",
+            "<u>Uma noite dessas</u>, o movimento era pequeno",
             "seu Adelino faculta <u>ao cliente</u> dar palpites ao cozinheiro",
             "<u>O garçom</u> estendeu-lhe o menu e esperou"
         ],
@@ -789,11 +789,11 @@
         "imagem": null,
         "pergunta": "No contexto, o trecho sublinhado acima exerce a mesma função sintática daquele sublinhado em:",
         "alternativas": [
-            "Quando bebia muito, falava <u>das livrarias</u> de Paris.",
-            "Via <u>o advogado</u> com o mesmo paletó branco.",
-            "onde pescaram juntos <u>pela última</u> vez.",
-            "assim <u>meu</u> pai o chamava.",
-            "Os dois <u>sempre</u> se encontravam em Manaus."
+            "<em>Quando bebia muito, falava <u>das livrarias de Paris</u>.</em>",
+            "<em>Via <u>o advogado</u> com o mesmo paletó branco.</em>",
+            "<em>onde pescaram juntos <u>pela última vez</u>.</em>",
+            "<em>assim <u>meu pai</u> o chamava.</em>",
+            "<em>Os dois <u>sempre</u> se encontravam em Manaus.</em>"
         ],
         "correta": 3,
         "linkTec": "https://www.tecconcursos.com.br/questoes/2041642",
@@ -812,13 +812,13 @@
         "texto_apoio_titulo": "<u>Atenção:</u> Para responder à questão, considere o texto abaixo.",
         "texto_apoio": "<p><u>Atenção:</u> Para responder à questão, considere o texto abaixo.</p>\n<center class=\"apoio-title\"><strong>A ingaia ciência</strong></center>\n<div class=\"fcc-verse\"><em>A madureza, essa terrível prenda</em><br>\n<em>que alguém nos dá, raptando-nos, com ela,</em><br>\n<em>todo sabor gratuito de oferenda</em><br>\n<em>sob a glacialidade de uma estela,</em><br>\n<em>a madureza vê, posto que a venda</em><br>\n<em>interrompa a surpresa da janela,<br>\no círculo vazio<strong>II</strong>, onde se estenda,</em><br>\n<em>e que o <u>mundo</u> converte numa cela.</em></div>\n<div class=\"fcc-verse\"><em>A madureza<strong>I</strong> sabe o preço exato<br>\ndos amores<strong>III</strong>, dos ócios, dos quebrantos,</em><br>\n<em>e nada pode contra sua ciência</em><br>\n<em>e nem contra si mesma. O agudo olfato,</em><br>\n<em>o agudo olhar, a mão, livre de encantos,</em><br>\n<em>se destroem no sonho da existência.</em></div>\n<span class=\"apoio-attrib\"><em>(ANDRADE, Carlos Drummond de.<strong>Claro Enigma)</strong></em></span>\n<p class=\"fcc-excerpt\">Leia atentamente as afirmações abaixo.</p>\n<p class=\"fcc-excerpt\"><strong>I.</strong> O sentido da primeira frase do poema, que se inicia em “A madureza”, completa-se ao final do 4o verso.</p>\n<p class=\"fcc-excerpt\"><strong>II.</strong> O trecho o<em>círculo vazio</em> possui a mesma função sintática do trecho o <em>mundo</em> (2a estrofe).</p>\n<p class=\"fcc-excerpt\"><strong>III</strong>. O eu lírico emprega o presente do indicativo a fim de enunciar verdades eternas, como no trecho <em>A madureza sabe o preço exato // dos</em> <em>amores</em>.</p>",
         "imagem": null,
-        "pergunta": "Está correto o que se afirma<strong>APENAS</strong> em",
+        "pergunta": "Está correto o que se afirma <strong>APENAS</strong> em",
         "alternativas": [
             "<strong>I.</strong>",
             "<strong>II.</strong>",
             "<strong>I</strong> e <strong>II.</strong>",
             "<strong>III</strong>.",
-            "<strong>II</strong> e<strong>III.</strong>"
+            "<strong>II</strong> e <strong>III.</strong>"
         ],
         "correta": 3,
         "linkTec": "https://www.tecconcursos.com.br/questoes/2042814",
@@ -839,7 +839,7 @@
         "imagem": null,
         "pergunta": "Em <em><u>Seria</u> indelicado <u>insistir na recusa.</u></em> (11º parágrafo), a expressão sublinhada exerce a mesma função sintática do termo sublinhado em",
         "alternativas": [
-            "<em>“Ou <u>você,</u> João, deseja alguma coisa?”</em> (14º parágrafo)",
+            "<em>“Ou <u>você</u>, João, deseja alguma coisa?”</em> (14º parágrafo)",
             "<em>“Por obséquio, <u>me</u> acompanhe até a sala VIP.”</em> (6º parágrafo)",
             "<em>“Posso esperar perfeitamente <u>aqui</u> mesmo.”</em> (7º parágrafo)",
             "<em>“Vivemos numa república, <u>João.”</u></em> (23º parágrafo)",
@@ -864,11 +864,11 @@
         "imagem": null,
         "pergunta": "No contexto em que se encontra, o segmento sublinhado acima exerce a mesma função sintática do que está também sublinhado em:",
         "alternativas": [
-            "Wagner era um <u>homem</u> casado.",
-            "O enredo gira em torno da transformação da relação entre os dois <u>protagonistas.</u>",
-            "Existem, com efeito, <u>poções</u> em nossos organismos e cérebros",
-            "<u>o</u> que o atraiu para essa história",
-            "Isolda pede à criada, Brangena, que <u>lhe</u> prepare uma poção letal."
+            "<em>Wagner era um <u>homem</u> casado.</em>",
+            "<em>O enredo gira em torno da transformação da relação entre os dois <u>protagonistas</u>.</em>",
+            "<em>Existem, com efeito, <u>poções</u> em nossos organismos e cérebros</em>",
+            "<em><u>o</u> que o atraiu para essa história</em>",
+            "<em>Isolda pede à criada, Brangena, que <u>lhe</u> prepare uma poção letal.</em>"
         ],
         "correta": 3,
         "linkTec": "https://www.tecconcursos.com.br/questoes/2159393",
@@ -889,11 +889,11 @@
         "imagem": null,
         "pergunta": "<em>Em 1844, abriam-se as <u>portas</u> para os candidatos que se dispusessem a discorrer sobre uma questão espinhosa</em>\nConsiderado o contexto, o segmento sublinhado acima exerce a mesma função sintática que o também sublinhado em:",
         "alternativas": [
-            "A tarefa não era pequena e quem a assumiu foi <u>o</u> Instituto Histórico e Geográfico Brasileiro (IHGB)",
-            "começava <u>a ganhar</u> força então a ladainha das três raças formadoras da nação",
-            "Três <u>longos</u> rios resumiriam a nação",
-            "Utilizando <u>a metáfora</u> de um caudaloso rio",
-            "era no mínimo <u>complicado</u> simplesmente exaltar a harmonia"
+            "<em>A tarefa não era pequena e quem <u>a</u> assumiu foi o Instituto Histórico e Geográfico Brasileiro (IHGB)</em>",
+            "<em>começava a <u>ganhar força</u> então a ladainha das três raças formadoras da nação</em>",
+            "<em><u>Três longos rios</u> resumiriam a nação</em>",
+            "<em>Utilizando <u>a metáfora</u> de um caudaloso rio</em>",
+            "<em>era no mínimo <u>complicado</u> simplesmente exaltar a harmonia</em>"
         ],
         "correta": 2,
         "linkTec": "https://www.tecconcursos.com.br/questoes/2160257",
@@ -912,7 +912,7 @@
         "texto_apoio_titulo": null,
         "texto_apoio": "<center class=\"apoio-title\"><strong>[A voz da natureza]</strong></center>\n<p>A natureza diz a todos os homens: fiz todos vós fracos e ignorantes, para vegetarem alguns minutos na terra e para adubaremna com vossos cadáveres. Como sois fracos, socorrei-vos; como sois ignorantes, esclarecei-vos e tolerai-vos. Quando tiverdes todos a mesma opinião, o que certamente não acontecerá jamais, quando houver um único homem de opinião contrária, deveríeis perdoálo: afinal sou eu que o faço pensar como ele pensa.</p>\n<p>Eu vos dei braços para cultivar a terra e uma pequena luz de razão para vos conduzir; coloquei em vossos corações um germe de compaixão para que uns ajudem os outros a suportar a vida. Não abafeis esse germe, não o corrompais, aprendei que ele é divino, e não substituais a voz da natureza pelos miseráveis furores da escola.</p>\n<p>Sou apenas eu que ainda vos une, sem que o desconfieis, por vossas necessidades mútuas, mesmo em vossas guerras cruéis tão ligeiramente empreendidas, teatro eterno dos erros, dos acasos e das infelicidades. Sou apenas eu que, em uma nação, impede as sequências funestas da divisão interminável entre a nobreza e a magistratura, entre esses dois corpos e o do clero, entre o burguês e o cultivador. (...) Parai, afastai esses destroços funestos que são vossa obra e continuai comigo em paz no edifício inabalável que é o meu.</p>\n<span class=\"apoio-attrib\">(Adaptado de: VOLTAIRE, op. cit. Trad. Ana Luiza Reis Bedê. São Paulo: Martin Claret, 2017, p. 98-99)</span>",
         "imagem": null,
-        "pergunta": "Atentando-se <u>para</u> as normas gramaticais, está plenamente clara, coesa e correta a redação deste livre comentário sobre o texto:",
+        "pergunta": "Atentando-se para as normas gramaticais, está plenamente clara, coesa e correta a redação deste livre comentário sobre o texto:",
         "alternativas": [
             "As providências em que os homens deveriam se ater <u>para</u> benefício próprio, na perspectiva da natureza, ligam-se ao uso da razão, a quem lhes cabe cultivar.",
             "Se a natureza nos fez fracos e incultos, nem por <u>isso</u> deixou de legar-nos as virtudes onde podemos encontrar um meio de nos reabilitarem.",
@@ -964,11 +964,11 @@
         "imagem": null,
         "pergunta": "O termo sublinhado exerce, no contexto, a mesma função sintática que o também sublinhado em:",
         "alternativas": [
-            "Mas como <u>a inflação</u> também era balofa.",
-            "Tive que ouvir um <u>discurso,</u> felizmente breve.",
-            "Depois, quatro músicos interpretaram o “Quarteto Nº 1”, <u>de Villa-Lobos.</u>",
-            "dava para alimentar meu <u>gato</u> por três meses.",
-            "o Baiacu de Ouro, um prêmio literário que recebi em Manaus há uns vinte <u>anos.</u>"
+            "<em>Mas como <u>a inflação</u> também era balofa.</em>",
+            "<em>Tive que ouvir <u>um discurso</u>, felizmente breve.</em>",
+            "<em>Depois, quatro músicos interpretaram o \"Quarteto Nº 1\", <u>de Villa-Lobos</u>.</em>",
+            "<em>dava para alimentar <u>meu gato</u> por três meses.</em>",
+            "<em>o Baiacu de Ouro, um prêmio literário que recebi em Manaus há <u>uns vinte anos</u>.</em>"
         ],
         "correta": 0,
         "linkTec": "https://www.tecconcursos.com.br/questoes/2454313",
@@ -1037,7 +1037,7 @@
         "texto_apoio_titulo": "Considere o texto abaixo para responder a questão.",
         "texto_apoio": "<p><em>Quando me acontecer alguma pecúnia, passante de um milhão de cruzeiros, compro uma ilha; não muito longe do litoral, que o litoral faz falta; nem tão</em> <em>perto, também, que de lá possa eu aspirar a fumaça e a graxa do porto. Minha ilha ficará no justo ponto de latitude e longitude que, pondo-me a coberto</em> <em>de ventos, sereias e pestes, nem me afaste demasiado dos homens nem me obrigue a praticá-los diuturnamente. Porque esta é a ciência e, direi, a arte</em> <em>do bem viver; uma fuga relativa, e uma não muito estouvada confraternização.</em></p>\n<p><em>De há muito sonho esta ilha, se é que não a sonhei sempre. Se é que a não sonhamos sempre. Objetais-me: “Como podemos amar as ilhas, se</em> <em>buscamos o centro mesmo da ação?” Engajados; vosso engajamento é a vossa ilha, dissimulada e transportável. Por onde fordes, ela irá convosco.</em></p>\n<p><em>Significa a evasão d<u>aquilo</u> para que toda alma necessariamente tende, ou seja, a gratuidade dos gestos naturais, o cultivo das formas espontâneas, o</em> <em>gosto de ser um com os bichos, as espécies vegetais, os fenômenos atmosféricos.</em></p>\n<p><em>E por que nos seduz a ilha? As composições de sombra e luz, o esmalte da relva, a cristalinidade dos regatos – tudo isso existe fora das ilhas, não é</em> <em>privilégio delas. A mesma solidão existe nos mais diversos locais, inclusive os de população densa, em terra firme.</em></p>\n<p><em>A ilha me satisfaz por ser uma porção curta de terra (falo de ilhas individuais, não me tentam aventuras marajoaras), um resumo prático dos estirões</em> <em>deste vasto mundo, sem os inconvenientes dele, e com a vantagem de ser uma ficção sem deixar de constituir uma realidade. A casa junto ao mar, que</em> <em>já foi razoável delícia, passou a ser um pecado, depois que se desinventou a relação entre homem, paisagem e morada. O progresso técnico teve isto de</em> <em>retrógrado: esqueceu-se do fim a que se propusera. Acabou com qualquer veleidade de amar a vida, que ele tornou muito confortável, mas invisível. Fez-</em> <em>se numa escala de massas, esquecendo-se do indivíduo, e nenhuma central elétrica será capaz de produzir aquilo de que cada um de nós carece na</em> <em>cidade excessivamente iluminada: certa penumbra. O progresso nos dá tanta coisa, que não nos sobra nada nem para desejar nem para jogar fora.</em></p>\n<p><em>Tudo é inútil e atravancador. A ilha sugere uma negação disto.</em></p>\n<p><em>Serão admitidos poetas? Em que número? Se foram proscritos das repúblicas, pareceria cruel bani-los também da ilha de recreio. Contudo, devem</em> <em>comportar-se como se poetas não fossem: pondo de lado o tecnicismo, a excessiva preocupação literária, o misto de esteticismo e frialdade que</em> <em>costuma necrosar os artistas. Sejam homens razoáveis, carentes, humildes, inclinados à pesca e à corrida a pé. Não levem para a ilha os problemas de</em> <em>hegemonia e ciúme.</em></p>\n<p><em>Por aí se observa que a ilha mais paradisíaca pede regulamentação, e que os perigos da convivência urbana estão presentes. Tanto melhor, porque não</em> <em>se quer uma ilha perfeita, senão um modesto território banhado de água por todos os lados e onde não seja obrigatório salvar o mundo.</em></p>\n<p><em>A ideia de fuga tem sido alvo de crítica severa nos últimos anos, como se fosse ignominioso, por exemplo, fugir de um perigo, de um sofrimento, de</em> <em>uma chateação. Como se devesse o homem consumir-se numa fogueira perene.</em></p>\n<p><em>Estas reflexões descosidas procuram apenas recordar que há motivos para ir às ilhas.</em></p>\n<span class=\"apoio-attrib\">(ANDRADE, Carlos Drummond de. “Divagação sobre as ilhas”. In: Passeios na ilha. São Paulo: Companhia das Letras, 2020, p.15-19)</span>",
         "imagem": null,
-        "pergunta": "Emprega-se a vírgula <u>para</u> separar os elementos de uma enumeração no seguinte trecho:",
+        "pergunta": "Emprega-se a vírgula para separar os elementos de uma enumeração no seguinte trecho:",
         "alternativas": [
             "<em>Se foram proscritos das repúblicas, pareceria cruel bani-los também da ilha de recreio</em> (5º parágrafo).",
             "<em>Quando me acontecer alguma pecúnia, passante de um milhão de cruzeiros, compro uma ilha</em> (1º parágrafo).",
@@ -1047,206 +1047,6 @@
         ],
         "correta": 2,
         "linkTec": "https://www.tecconcursos.com.br/questoes/2021230",
-        "_bloco": 7
-    },
-    {
-        "id": "fcc_port_gab3_001",
-        "numero_original": 1,
-        "cabecalho": "FCC - TJ TRT18/TRT 18/Administrativa/Agente da Policia Judicial/2023",
-        "disciplina": "Língua Portuguesa",
-        "assunto": "Formação e Estrutura das Palavras",
-        "banca": "FCC",
-        "ano": 2023,
-        "cargo": "TJ TRT18",
-        "orgao": "TRT 18",
-        "texto_apoio_titulo": null,
-        "texto_apoio": "<p><u>Atenção:</u> Leia o trecho do romance “<strong>Esaú e Jacó</strong>”, de Machado de Assis, para responder à questão.</p>\n<p><em>Visões e reminiscências iam assim comendo o tempo e o espaço ao conselheiro Aires, a ponto de lhe fazerem esquecer o pedido de Natividade; mas</em> <em>não o esqueceu de todo, e as palavras trocadas há pouco surdiam-lhe das pedras da rua. Considerou que não perdia muito em <u>estudar</u> os rapazes.</em></p>\n<p><em>Chegou a <u>apanhar</u> uma hipótese, espécie de andorinha, que avoaça entre árvores, abaixo e acima, pousa aqui, pousa ali, arranca de novo um surto e</em> <em>toda se despeja em movimentos. Tal foi a hipótese vaga e colorida, a saber, que se os gêmeos tivessem nascido dele talvez não divergissem tanto nem</em> <em>nada, graças ao equilíbrio do seu espírito. A alma do velho entrou a <u>ramalhar</u> não sei que desejos retrospectivos, e a rever essa hipótese, ele pai, estes</em> <em>meninos seus, toda a andorinha que se dispersava num farfalhar calado de gestos.</em></p>\n<span class=\"apoio-attrib\"><em>(Adaptado de: ASSIS, Machado de. <strong>Esaú e Jacó</strong>. São Paulo: Companhia das Letras, 2012)</em></span>",
-        "imagem": null,
-        "pergunta": "Um vocábulo também pode ser formado quando passa de uma classe gramatical a outra, sem a modificação de sua forma. É o que se denomina\nderivação imprópria. Constitui exemplo de derivação imprópria o termo sublinhado em:",
-        "alternativas": [
-            "“<em>andorinha que se dispersava num <u>farfalhar</u> calado de gestos</em>”.",
-            "“<em>a ponto de lhe fazerem <u>esquecer</u> o pedido de Natividade</em>”.",
-            "“<em>Considerou que não perdia muito <u>em estudar</u> os rapazes</em>”.",
-            "“<em>Chegou <u>a apanhar</u> uma hipótese</em>”.",
-            "“<em>A alma do velho entrou <u>a ramalhar</u> não sei que desejos retrospectivos</em>”."
-        ],
-        "correta": 0,
-        "linkTec": "https://www.tecconcursos.com.br/questoes/2340353",
-        "_bloco": 7
-    },
-    {
-        "id": "fcc_port_gab3_002",
-        "numero_original": 2,
-        "cabecalho": "FCC - AJ TRT12/TRT 12/Apoio Especializado/Engenharia Elétrica/2023",
-        "disciplina": "Língua Portuguesa",
-        "assunto": "Formação e Estrutura das Palavras",
-        "banca": "FCC",
-        "ano": 2023,
-        "cargo": "AJ TRT12",
-        "orgao": "TRT 12",
-        "texto_apoio_titulo": "Leia o texto abaixo para responder questão.",
-        "texto_apoio": "<p>Leia o texto abaixo para responder questão.</p>\n<p>Luís Bernardo Honwana, que faz hoje, neste sábado, 12 de Novembro, 80 anos, é um dos precursores da literatura moçambicana e um dos maiores intérpretes da <u>moçambicanidade.</u> Quando tinha 22 anos, em 1964, fez publicar uma obra seminal e fundadora da moderna ficção moçambicana – <strong>“</strong><em>Nós Matámos o Cão Tinhoso</em>”. O início desta obra é um dos mais belos que se podem cotejar entre nós: “O Cão-Tinhoso tinha uns olhos azuis que não tinham brilho nenhum, mas eram enormes e estavam sempre cheios de lágrimas, que lhe escorriam pelo focinho. Metiam medo aqueles olhos, assim tão grandes, a olhar como uma pessoa a pedir qualquer coisa sem querer dizer”.</p>\n<p>O jovem autor de <em><strong>“</strong>Nós Matámos o Cão Tinhoso”</em>, redigira uma nota biográfica igualmente singular: “Não sei se sou realmente escritor. Acho que apenas escrevo sobre coisas que, acontecendo à minha volta, se relacionem intimamente comigo ou traduzam fatos que me pareçam decentes.</p>\n<p>Este livro de histórias é o testemunho em que tento retratar uma série de situações e procedimentos que talvez interesse conhecer”.</p>\n<p>A realidade que estas histórias narram ultrapassa, em muito, a circunstância da mera biografia. Estes textos denunciavam, de forma resoluta e corajosa, uma realidade social profundamente injusta e desigual. Textos breves, quase todos, à excepção daquele que nomeia o volume.</p>\n<p>Provavelmente, a grande literatura seja isso mesmo: a combinação entre as faculdades da arte em si e o poder de esta nos interpelar com a realidade que ilustra ou denuncia.</p>\n<span class=\"apoio-attrib\">(Disponível em: https://opais.co.mz. Adaptado)</span>",
-        "imagem": null,
-        "pergunta": "Um sufixo é um afixo que se acrescenta ao final de uma palavra para formar novas palavras. O substantivo formado por sufixação a partir de um\noutro substantivo está sublinhado em:",
-        "alternativas": [
-            "Acho que apenas escrevo sobres coisas que, acontecendo à minha volta, se relacionem <u>intimamente</u> comigo.",
-            "Este livro é uma surpreendente obra literária e é um libelo acusatório <u>virulento.</u>",
-            "O jovem autor de Nós Matamos o Cão Tinhoso redigira uma nota biográfica igualmente <u>singular.</u>",
-            "Quando tinha 22 anos, e, 1954, fez publicar uma obra seminal e <u>fundadora</u> da moderna ficção moçambicana.",
-            "Honwana é um dos percursores da literatura moçambicana e um dos maiores intérpretes <u>da moçambicanidade.</u>"
-        ],
-        "correta": 4,
-        "linkTec": "https://www.tecconcursos.com.br/questoes/2815806",
-        "_bloco": 7
-    },
-    {
-        "id": "fcc_port_gab3_003",
-        "numero_original": 3,
-        "cabecalho": "FCC - TJ TRT21/TRT 21/Administrativa/\"Sem Especialidade\"/2023",
-        "disciplina": "Língua Portuguesa",
-        "assunto": "Formação e Estrutura das Palavras",
-        "banca": "FCC",
-        "ano": 2023,
-        "cargo": "TJ TRT21",
-        "orgao": "TRT 21",
-        "texto_apoio_titulo": "Para responder a questão, leia o texto abaixo.",
-        "texto_apoio": "<p>Para responder a questão, leia o texto abaixo. - Em que circunstâncias alguém se exalta e defende com ardor uma opinião? “Ninguém sustenta fervorosamente que 7 x 8 = 56, pois se pode mostrar que isto é o caso”, observa Bertrand Russell. O ânimo persuasivo só recrudesce e lança mão das artes e artimanhas da retórica quando se trata de incutir opiniões que são duvidosas ou demonstravelmente falsas. - O mesmo vale para o ato de prometer alguma coisa. O simples fato de que uma promessa precisou ser feita indica a existência de dúvida quanto à sua concretização. Só prometemos acerca do que exige um esforço extra da vontade. E quanto mais solene ou enfática a promessa - “Te juro. agora é pra valer!\" - mais duvidosa ela é: “O proclamar excessivo”, como dizem os ingleses. “Só os deuses podem prometer, porque são imortais”, adverte o poeta.</p>\n<span class=\"apoio-attrib\">(GIANNETTI, Eduardo, “O paradoxo da promessa”, Trópicos Utópicos. 2016, edição eletrônica, Adaptado)</span>\n<p class=\"fcc-excerpt\">A derivação imprópria é um processo em que uma palavra muda de classe gramatical sem mudar de forma.</p>",
-        "imagem": null,
-        "pergunta": "Observa-se a ocorrência de derivação imprópria no seguinte segmento:",
-        "alternativas": [
-            "Só os deuses podem prometer",
-            "alguém se exalta",
-            "sustenta fervorosamente",
-            "O proclamar excessivo",
-            "demonstravelmente falsas"
-        ],
-        "correta": 3,
-        "linkTec": "https://www.tecconcursos.com.br/questoes/2850346",
-        "_bloco": 7
-    },
-    {
-        "id": "fcc_port_gab3_004",
-        "numero_original": 4,
-        "cabecalho": "FCC - TJ TRT18/TRT 18/Apoio Especializado/Enfermagem do Trabalho/2023",
-        "disciplina": "Língua Portuguesa",
-        "assunto": "Adjetivo",
-        "banca": "FCC",
-        "ano": 2023,
-        "cargo": "TJ TRT18",
-        "orgao": "TRT 18",
-        "texto_apoio_titulo": "<u>Atenção:</u> Leia a crônica “A casadeira”, de Carlos Drummond de Andrade, para responder à questão.",
-        "texto_apoio": "<p><u>Atenção:</u> Leia a crônica “A casadeira”, de Carlos Drummond de Andrade, para responder à questão.</p>\n<p><em>Testemunhei ontem, na loja de Copacabana, um acontecimento banal e maravilhoso. A senhora sentou-se na banqueta e cruzou elegantemente as</em> <em>pernas. O vendedor, agachado, calçou-lhe o par de sapatos. Ela se ergueu, ensaiou alguns passos airosos em frente do espelho, mirou-se, remirou-se,</em> <em>voltou à banqueta. O sapato foi substituído por outro. Seguiu-se na mesma autocontemplação, e o novo par de sapatos foi experimentado, e nova</em> <em>verificação especular. Isso, infinitas vezes. No semblante do vendedor, nem cansaço, nem impaciência. Explica-se: a cliente não refugava os sapatos</em> <em>experimentados. Adquiria-os todos. Adquiriu dozes pares, se bem contei.</em> <em>− Ela está fazendo sua reforma de base? − perguntei a outro vendedor, que sorriu e esclareceu:</em> <em>− A de base e a civil. Vai se casar pela terceira vez.</em> <em>− Coitada... Vocação de viúva.</em> <em>− Não é isso, senhor. Os dois primeiros maridos estão vivos. É casadeira, sabe como é?</em></p>\n<p><em>Não me pareceu que, para casar pela terceira vez, ela tivesse necessidade de tanto calçamento. Oito ou nove pares seriam talvez para irmãs de pé igual</em> <em>ao seu, que ficaram em casa? Hipótese boba, que formulei e repeli incontinente. Ninguém neste mundo tem pé igual ao de ninguém, nem sequer ao de</em> <em>si mesmo, quanto mais ao da irmã. Daí avancei para outra hipótese mais plausível. Aquela senhora, na aparência normal, devia ter pés suplementares,</em> <em>Deus me perdoe, e usava-os dois de cada vez, recolhendo os demais mediante uma organização anatômica (ou eletrônica) absolutamente inédita.</em></p>\n<p><em>Observei-a com atenção e zelo científico, na expectativa de movimento menos controlado, que denunciasse o segredo. Nada disso. Até onde se podia</em> <em>perceber, eram apenas duas pernas, e bem agradáveis, terminando em dois exclusivos pés, de esbelto formato.</em></p>\n<p><em>Assim, a coleção era mesmo para casar − e fiquei conjeturando que o casamento é uma rara coisa, exigindo a todo instante que a mulher troque de</em> <em>sapato, não se sabe bem para quê − a menos que os vá perdendo no afã de atirá-los sobre o marido, e eles (não o marido) sumam pela janela do</em> <em>apartamento.</em></p>\n<p><em>A senhora pagou − não em dinheiro ou cheque, mas com um sorriso que mandava receber num lugar bastante acreditado, pois já reparei que as</em> <em>maiores compras são sempre pagas nele, e aos comerciantes agrada-lhes o sistema. As caixas de sapato adquiridas foram transportadas para o carro,</em> <em>estacionado em frente à loja. Mentiria se dissesse que eram doze carros monumentais, com doze motoristas louros, de olhos azuis. Não. Era um carro</em> <em>só, simplesinho, sem motorista, nem precisava dele, pois logo se percebeu sua natureza de teleguiado. Sem manobra, flechou no espaço e sumiu,</em> <em>levando a noiva e seus doze pares de França, perdão! de sapatos. Eu preveni que o caso era banal e maravilhoso.</em></p>\n<span class=\"apoio-attrib\"><em>(Adaptado de: ANDRADE, Carlos Drummond de. <strong>Cadeira de balanço</strong>. São Paulo: Companhia das Letras, 2020)</em></span>",
-        "imagem": null,
-        "pergunta": "O termo que qualifica o substantivo na expressão <em>acontecimento banal</em> tem sentido oposto àquele que qualifica o substantivo em:",
-        "alternativas": [
-            "<em>rara coisa</em>.",
-            "<em>nova verificação</em>.",
-            "<em>zelo científico</em>.",
-            "<em>aparência normal</em>.",
-            "<em>exclusivos pés</em>."
-        ],
-        "correta": 0,
-        "linkTec": "https://www.tecconcursos.com.br/questoes/2340569",
-        "_bloco": 7
-    },
-    {
-        "id": "fcc_port_gab3_005",
-        "numero_original": 5,
-        "cabecalho": "FCC - AJ TRT18/TRT 18/Administrativa/Contabilidade/2023",
-        "disciplina": "Língua Portuguesa",
-        "assunto": "Conjugação. Reconhecimento e Emprego dos Modos e Tempos Verbais",
-        "banca": "FCC",
-        "ano": 2023,
-        "cargo": "AJ TRT18",
-        "orgao": "TRT 18",
-        "texto_apoio_titulo": "<u>Atenção:</u> Para responder à questão, baseie-se no texto abaixo.",
-        "texto_apoio": "<center class=\"apoio-title\"><strong>[Cidades devastadas]</strong></center>\n<p><em>Em vinte anos eliminaram a minha cidade e edificaram uma cidade estranha. Para quem continuou morando lá, a amputação pode ter sido lenta, quase</em> <em>indolor; para mim, foi uma cirurgia de urgência, sem a inconsciência do anestésico.</em></p>\n<p><em>Enterraram a minha cidade e muito de mim com ela. Por cima de nós construíram casas modernas, arranha-céus, agências bancárias; pintaram tudo,</em> <em>deceparam árvores, demoliram, mudaram fachadas. Como se tivessem o propósito de desorientar-me, de destruir tudo o que me estendia uma ponte</em> <em>entre o que sou e o que fui. Enterraram-me vivo na cidade morta.</em></p>\n<p><em>Mas, feliz ou infelizmente, ainda não conseguiram soterrar de todo a minha cidade. Vou andando pela paisagem nova, desconhecida, pela paisagem</em> <em>que não me quer e eu não entendo, quando de repente, entre dois prédios hostis, esquecida por enquanto dos zangões imobiliários, surge, intacta e</em> <em>doce, a casa de Maria. Dói também a casa de Maria, mas é uma dor que conheço, íntima e amiga.</em></p>\n<p><em>Não digo nada a ninguém, disfarço o espanto dessa descoberta para não chamar o empreiteiro das demolições. Ah, se eles, os empreiteiros,</em> <em>soubessem que aqui e ali repontam restos emocionantes da minha cidade em ruínas! Se eles soubessem que aqui e ali vou encontrando passadiços</em> <em>que me permitem cruzar o abismo!</em></p>\n<span class=\"apoio-attrib\"><em>(Adaptado de CAMPOS, Paulo Mendes. Os sabiás da crônica. Antologia. Belo Horizonte: Autêntica, 2021, p. 209-210)</em></span>",
-        "imagem": null,
-        "pergunta": "Está correto o emprego de todas as formas verbais na frase:",
-        "alternativas": [
-            "Quem se propor a recuperar a visão de sua cidade natal, municie-se de muita tolerância.",
-            "Para que se revejem vestígios da nossa antiga cidade, urge alimentar a imaginação.",
-            "Conter-se-ia nossa decepção caso déssemos, de súbito, com uma casinha poupada?",
-            "A menos que retêssemos na memória uma imagem fiel, nada escaparia a tal devastação.",
-            "Ele havia salvo da devastação da cidade alguns vestígios que se manteram vivos."
-        ],
-        "correta": 2,
-        "linkTec": "https://www.tecconcursos.com.br/questoes/2338920",
-        "_bloco": 7
-    },
-    {
-        "id": "fcc_port_gab3_006",
-        "numero_original": 6,
-        "cabecalho": "FCC - Ana JD (DPE AM)/DPE AM/Ciências Jurídicas/2023",
-        "disciplina": "Língua Portuguesa",
-        "assunto": "Conjugação. Reconhecimento e Emprego dos Modos e Tempos Verbais",
-        "banca": "FCC",
-        "ano": 2023,
-        "cargo": "Ana JD (DPE AM)",
-        "orgao": "DPE AM",
-        "texto_apoio_titulo": "<u>Atenção:</u> Para responder às questão, baseie-se no texto abaixo.",
-        "texto_apoio": "<p>: Para responder às questão, baseie-se no texto abaixo.</p>\n<center class=\"apoio-title\"><strong>Relógios</strong></center>\n<p><em>O dramaturgo Nelson Rodrigues - criatura de temperamento trágico e célebre autor de frases antológicas - terá dito um dia, talvez paternalmente: “Jovens, envelheçam”. Eis aqui um pedido desnecessário: a velhice virá. de qualquer modo. para quem conseguir envelhecer. Por outro lado, a juventude</em> <em>nunca se perde de todo: aposenta-se. fica guardadinha vocação nostálgica do copo e ainda ajudará, ao fim de tudo, a compor os traços da boa</em> <em>melancolia. das lembranças que Os seres crepusculares ainda consigam tonificar dentro de si.</em></p>\n<p><em>Não fossem os variados impulsos do tempo, com o que iríamos nos distraindo? Todos passamos por várias idades, por vários tipos de relógio. Hã os</em> <em>que adiantam as coisas. há os que as atrasam. E há os que param inteiramente fora de hora. Sem falar nos relógios exibidos que se acham</em> <em>especialmente importantes e Insistem em cantar a cada quarto de hora.</em></p>\n<p><em>Jovens, envelheçam” — eis a provocação desmedida que partiu de um senhor já vivido e definitivamente cético. As paixões juvenis têm pressa, meu</em> <em>caro Nelson Rodrigues. e exigem providências imediatas. Ninguém segura as ondas de um mar revolto.</em></p>\n<p><em>E se fôssemos falar do tempo da infância, quando nossa imaginação esta no grau natural de nossas primeiras reflexões interrogativas? Eis aí um</em> <em>relógio que fica fazendo tique-taque, sem querer parar, em algum canto de alguma casa perdida.</em></p>\n<p><em>Numa cena da minha mais antiga memória de menino, eu estava sentado na sarjeta, depois de uma chuva grossa, em frente de casa, com os pés na</em> <em>água da enxurrada que sequestrava meus olhos fixos, fazendo -me esquecer de mim mesmo e e da necessidade de voltar a algum lugar, enquanto</em> <em>olhava infinitamente para os rebrilhos daquele riachinho escorregando rua abaixo. Creio que foi esta a primeira vez que entrei num tempo especial um</em> <em>tampo esvaziado de tempo. Uma espécie de relógio sem ponteiros. Muito tempo depois, acabei envelhecendo, sim. seu Nelson Rodrigues.</em></p>\n<span class=\"apoio-attrib\"><em>(MEDEIROS, Alcindo Fortunato. <strong>Casos de almanaque,</strong> a editar)</em></span>",
-        "imagem": null,
-        "pergunta": "Os tempos e modos das formas verbais encontram-se adequadamente articulados na frase:",
-        "alternativas": [
-            "Se na infância o tempo surgisse em toda a sua gravidade, que memórias poéticas nos assaltarão?",
-            "Coubesse a cada um escolher um relógio seu para revisitar, imagine-se quantas hesitações haverá.",
-            "Nelson Rodrigues teria dito aos jovens que o ouvissem para que envelheçam e amadurecessem logo.",
-            "Caso os jovens viessem a envelhecer logo, a nostalgia da mocidade só fará crescer ao fim da vida.",
-            "Fosse possível acelerar o envelhecimento, quantos jovens a esse processo haveriam de recorrer?"
-        ],
-        "correta": 4,
-        "linkTec": "https://www.tecconcursos.com.br/questoes/2712109",
-        "_bloco": 7
-    },
-    {
-        "id": "fcc_port_gab3_007",
-        "numero_original": 7,
-        "cabecalho": "FCC - Ass TD (DPE AM)/DPE AM/Assistente Técnico Administrativo/2023",
-        "disciplina": "Língua Portuguesa",
-        "assunto": "Conjugação. Reconhecimento e Emprego dos Modos e Tempos Verbais",
-        "banca": "FCC",
-        "ano": 2023,
-        "cargo": "Ass TD (DPE AM)",
-        "orgao": "DPE AM",
-        "texto_apoio_titulo": "<u>Atenção:</u> Para responder à questão, leia um trecho do romance de Milton Hatoum.",
-        "texto_apoio": "<p>Para responder à questão, leia um trecho do romance de Milton Hatoum. <em><mark>[A mulher] trouxe uma fotografia em preto e branco:</mark><strong>c</strong> Yagub e minha mãe juntos, numa canoa, em frente da palafita, o Bar da Margem, Ele olhou a</em> <em>imagem, e procurou com os olhos o lugar em que algum dia fora feliz. Depois falou que morava muito longe, em São Paulo, fazia anos que não visitava a cidade. A mulher quis puxar conversa, mas Yaquhb quase não falou<strong>a</strong>, sua alegria foi se apagando, o rosto ficou sério. Despediu-se com poucas</em> <em>palavras, a mulher lhe ofereceu a foto, ele agradeceu: talvez voltasse com Domingas ao Bar da Margem. Na canoa, remando para o pequeno porto, ele</em> <em>me disse que nunca ia se esquecer do dia em que saiu de Manaus e foi para o Libano. Tinha sido horrível. “Fui obrigado a me separar de todos, de</em> <em>tudo... não queria.”</em> <em>A dor dele parecia mais forte que a emoção do reencontro com o mundo da infância. Ele molhou o rosto com a água do no e pediu que o canoeiro contornasse a Cidade Flutuante, <mark>onde já piscavam chamas de velas e de candeeiros.</mark><strong>e</strong> A floresta escurecia às nossas costas, e o clarão da cidade</em> <em>aumentava enquanto navegávamos na noite úmida. Eu via o rosto sério de Yaqub,<strong>b</strong> e imaginei o que teria lhe acontecido durante o tempo em que viveu numa aldeia do sul do Libano. Talvez nada, <mark>talvez nenhuma torpeza ou agressão tivesse sido tão violenta</mark><strong>d</strong> quanto a brusca separação de Yaqub do seu</em> <em>mundo. Seu entusiasmo para redescobrir certas pessoas, paisagens, cheiros e sabores era logo sufocado pela lembrança dessa ruptura.</em></p>\n<span class=\"apoio-attrib\"><em>(Adaptado de: HATOUM, Milton. <strong>Dois irmãos.</strong> São Paulo: Companhia das Letras, 2000, edição eletrônica)</em></span>\n<p class=\"fcc-excerpt\"><em>e pediu que o canoeiro <u>contornasse</u> a Cidade Flutuante. onde já <u>piscavam</u> chamas de velas e de candeeiros.</em></p>",
-        "imagem": null,
-        "pergunta": "O verbo flexionado nos mesmos tempo e modo que o da frase acima está sublinhado em:",
-        "alternativas": [
-            "<em>A mulher <u>quis</u> puxar conversa, mas Yaqub quase não falou</em>",
-            "<em>Eu <u>via</u> o rosto sério de Yagub,</em>",
-            "<em>[A mulher] <u>trouxe</u> uma fotografia em preto e branco:</em>",
-            "<em>talvez nenhuma torpeza ou agressão <u>tivesse</u> sido tão violenta</em>",
-            "<em>onde já <u>piscavam</u> chamas de velas e de candeeiros.</em>"
-        ],
-        "correta": 3,
-        "linkTec": "https://www.tecconcursos.com.br/questoes/2712974",
-        "_bloco": 7
-    },
-    {
-        "id": "fcc_port_gab3_008",
-        "numero_original": 8,
-        "cabecalho": "FCC - TJ TRT12/TRT 12/Administrativa/\"Sem Especialidade\"/2023",
-        "disciplina": "Língua Portuguesa",
-        "assunto": "Conjugação. Reconhecimento e Emprego dos Modos e Tempos Verbais",
-        "banca": "FCC",
-        "ano": 2023,
-        "cargo": "TJ TRT12",
-        "orgao": "TRT 12",
-        "texto_apoio_titulo": "Leia a crônica de Paulo Mendes Campos, para responder a questão.",
-        "texto_apoio": "<p>Leia a crônica de Paulo Mendes Campos, para responder a questão.</p>\n<p><em>Os paroquianos estranharam que, apesar de tão moço, o vigário novo fosse a tal ponto reservado, só falando o indispensável, sempre com a batina</em> <em>lambuzada de terra ou de tinta, às voltas com os reparos materiais da igreja. Com o tempo, acreditou-se, o sacerdote se faria amigo pelo menos das</em> <em>pessoas mais importantes do lugar, o prefeito, o presidente da Câmara, os representantes da Justiça, o médico, dois ou três fazendeiros, o</em> <em>farmacêutico. Na porta do estabelecimento deste último é que se discutia a personalidade do vigário, formando-se um grupo contra e outro a favor.</em> <em>- Parece que ele até faz pouco-caso da gente.</em> <em>- Nunca vi um sujeito de cara tão amarrada.</em></p>\n<p><em>Os simpatizantes pegavam pelo aspecto mais evidente do padre.</em> <em>- Mas que homem danado de trabalhador!</em></p>\n<p><em>E o padre, sem dar mostras de perceber o pasmo da cidade, sempre com suas ferramentas, ativo e suarento. Uma notícia, entretanto, deu aos</em> <em>munícipes a impressão de que iria começar o degelo, isto é, o vigário passaria a ter um contato mais direto e caloroso com o povo e os interesses</em> <em>locais. Ele procurara o prefeito e os vereadores para pleitear um cemitério novo; o velho, nos fundos da casa paroquial, estava mesmo impraticável. Foi</em> <em>um alívio. Enfim, o padre tomara uma atitude perfeitamente normal, uma atitude que o incorporava à comunidade.</em> <em>- Eu não dizia - exclamava o farmacêutico, eu apostava que o homem quer é trabalhar por nós. Francamente, este cemitério é indigno do progresso da</em> <em>cidade. A gente aqui nem pode morrer por falta de lugar.</em></p>\n<p><em>Com o entusiasmo, a Câmara votou uma verba especial para a <u>aquisição de um terreno e benfeitorias adequadas. E não demorou que o novo campo-</em> <em>santo, depois de abençoado, fosse inaugurado com um discurso, no qual o prefeito apelava para os céus: aprouvesse a Deus que jamais um corpo</em> <em>inânime viesse a transpor os umbrais daquela necrópole. Seis dias depois, entretanto, um corpo inânime transpunha os umbrais daquela necrópole:</em> <em>Deus, de repente, chamara o farmacêutico.</em></p>\n<p><em>O vigário, realizada a sua única aspiração, passou a desaparecer por longas horas do dia, fora dos ofícios religiosos, raramente era visto, inquietando</em> <em>ainda mais os habitantes. Uma tarde, a bomba estourou: a viúva do coronel Inácio, indo levar flores à campa do falecido, no velho cemitério, descobrira</em> <em>a verdade macabra, a paisagem inacreditável: o antigo cemitério da cidade transformara-se escandalosamente numa horta. O estupor e a revolta não</em> <em>tiveram limites. Depois de muitos debates, uma comissão foi encarregada de levar ao vigário um pedido enérgico: aquilo não podia continuar, ali</em> <em>repousavam os entes queridos de todas as famílias da cidade: e estas esperavam que o senhor vigário arrancasse sem mais demora todos os pés de</em> <em>hortaliças. O vigário respondeu que não via matéria de escândalo, citou um versículo do Antigo Testamento e despediu a todos com impaciência.</em></p>\n<p><em>Foi aí que os homens válidos, pedindo a compreensão de Deus, resolveram invadir o cemitério, munidos de enxadas, facas e varapaus, para acabar com</em> <em>a horta que já não deixava ninguém dormir em paz, nem os mortos, nem os vivos. Pois, quando se aproximaram do cemitério, foram barrados pelo cano</em> <em>de espingarda do vigário: ali ninguém entrava vivo. Os homens voltaram desapontados e tornaram a discutir o impasse. Alguém então teve a ideia de se</em> <em>levar uma denúncia ao bispo da diocese. Uma semana depois, o padre embarcava numa jardineira com a mala, a espingarda e a cara amarrada. A</em> <em>população toda, depois de decidir que as hortaliças seriam destruídas, e não doadas aos pobres, entrou com o máximo respeito no velho cemitério e</em> <em>devastou a bela plantação.</em></p>\n<span class=\"apoio-attrib\">(Adaptado de: CAMPOS, Paulo Mendes. Balé do pato e outras crônicas. São Paulo: Ática, 2012)</span>\n<p class=\"fcc-excerpt\"><em>Uma notícia, entretanto, <u>deu</u> aos munícipes a impressão de que <u>iria</u> começar o degelo, isto <u>é</u>, o vigário <u>passaria</u> a ter um contato mais direto e caloroso</em> <em>com o povo e os interesses locais. Ele <u>procurara</u> o prefeito e os vereadores para <u>pleitear</u> um cemitério novo; o velho, nos fundos da casa paroquial,</em> <em>estava mesmo impraticável.</em> (6º parágrafo)</p>\n<p class=\"fcc-excerpt\">forma verbal:</p>",
-        "imagem": null,
-        "pergunta": "No trecho acima, o cronista relata uma série de fatos ocorridos no passado. Um fato anterior a esse tempo passado está indicado pela seguinte\nforma verbal:",
-        "alternativas": [
-            "<u>procurara</u>",
-            "<u>pleitear</u>",
-            "<u>passaria</u>",
-            "<u>deu</u>",
-            "<u>iria</u>"
-        ],
-        "correta": 0,
-        "linkTec": "https://www.tecconcursos.com.br/questoes/2822211",
         "_bloco": 7
     }
 ]

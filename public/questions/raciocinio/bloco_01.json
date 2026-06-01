@@ -1,11 +1,17 @@
 [
   {
     "id": "fcc_rac_2024_001",
+    "numero_original": 1,
+    "cabecalho": "FCC - PC-AP/2024",
     "disciplina": "Raciocínio Lógico-Matemático",
     "assunto": "Proposições Lógicas",
     "banca": "FCC",
     "ano": 2024,
+    "cargo": "",
     "orgao": "PC-AP",
+    "texto_apoio_titulo": null,
+    "texto_apoio": "",
+    "imagem": null,
     "pergunta": "Se 'Todo policial é honesto' e 'João é policial', pode-se concluir que:",
     "alternativas": [
       "A) João pode não ser honesto",
@@ -15,15 +21,22 @@
       "E) João é o único honesto"
     ],
     "correta": 1,
-    "linkTec": ""
+    "linkTec": "",
+    "_bloco": 1
   },
   {
     "id": "fcc_rac_2023_001",
+    "numero_original": 2,
+    "cabecalho": "FCC - PC-AP/2023",
     "disciplina": "Raciocínio Lógico-Matemático",
     "assunto": "Sequências Numéricas",
     "banca": "FCC",
     "ano": 2023,
+    "cargo": "",
     "orgao": "PC-AP",
+    "texto_apoio_titulo": null,
+    "texto_apoio": "",
+    "imagem": null,
     "pergunta": "Qual é o próximo número da sequência: 2, 6, 12, 20, 30, ?",
     "alternativas": [
       "A) 38",
@@ -33,15 +46,22 @@
       "E) 48"
     ],
     "correta": 2,
-    "linkTec": ""
+    "linkTec": "",
+    "_bloco": 1
   },
   {
     "id": "fcc_rac_2022_001",
+    "numero_original": 3,
+    "cabecalho": "FCC - PC-AP/2022",
     "disciplina": "Raciocínio Lógico-Matemático",
     "assunto": "Porcentagem",
     "banca": "FCC",
     "ano": 2022,
+    "cargo": "",
     "orgao": "PC-AP",
+    "texto_apoio_titulo": null,
+    "texto_apoio": "",
+    "imagem": null,
     "pergunta": "Um delegado recebeu R$ 5.000,00 e gastou 20% em equipamentos. Quanto restou?",
     "alternativas": [
       "A) R$ 3.500,00",
@@ -51,15 +71,22 @@
       "E) R$ 3.800,00"
     ],
     "correta": 1,
-    "linkTec": ""
+    "linkTec": "",
+    "_bloco": 1
   },
   {
     "id": "fcc_rac_2021_001",
+    "numero_original": 4,
+    "cabecalho": "FCC - PC-AP/2021",
     "disciplina": "Raciocínio Lógico-Matemático",
     "assunto": "Conjuntos",
     "banca": "FCC",
     "ano": 2021,
+    "cargo": "",
     "orgao": "PC-AP",
+    "texto_apoio_titulo": null,
+    "texto_apoio": "",
+    "imagem": null,
     "pergunta": "Em uma delegacia com 30 policiais, 18 falam inglês e 15 falam espanhol. Todos falam ao menos uma língua. Quantos falam as duas?",
     "alternativas": [
       "A) 1",
@@ -69,6 +96,7 @@
       "E) 5"
     ],
     "correta": 2,
-    "linkTec": ""
+    "linkTec": "",
+    "_bloco": 1
   }
 ]

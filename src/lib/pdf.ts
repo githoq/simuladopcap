@@ -310,11 +310,11 @@ export function exportResultsPDF(results: ExamResult): void {
     @page { size: A4; margin: 25mm 20mm; }
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body { font-family: Georgia,"Times New Roman",serif; font-size: 11pt; color: #000; line-height: 1.50; }
-    h1 { font-size: 14pt; font-weight: bold; /* border-bottom: 1.5pt solid #000; padding-bottom: 6pt; margin-bottom: 14pt; }
-    h2 { font-size: 11pt; font-weight: bold; margin: 14pt 0 6pt; /* border-bottom: 0.5pt solid #ccc; padding-bottom: 3pt; }
+    h1 { font-size: 14pt; font-weight: bold; border-bottom: 1.5pt solid #000; padding-bottom: 6pt; margin-bottom: 14pt; }
+    h2 { font-size: 11pt; font-weight: bold; margin: 14pt 0 6pt; border-bottom: 0.5pt solid #ccc; padding-bottom: 3pt; }
     .score { font-size: 32pt; font-weight: bold; margin: 10pt 0 4pt; }
     .sub { font-size: 11pt; color: #333; margin-bottom: 14pt; }
-    .disc-row { display: flex; justify-content: space-between; padding: 3pt 0; /* border-bottom: 0.5pt solid #eee; font-size: 10pt; }
+    .disc-row { display: flex; justify-content: space-between; padding: 3pt 0; border-bottom: 0.5pt solid #eee; font-size: 10pt; }
     .qi { margin: 8pt 0; padding: 5pt 0 5pt 8pt; border-left: 2pt solid #ccc; page-break-inside: avoid; }
     .qi.ok { border-color: #006600; }
     .qi.err { border-color: #cc0000; }

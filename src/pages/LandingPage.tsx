@@ -8,7 +8,7 @@
  *  - Subtle scroll cue
  *  - Premium CTA with shimmer
  */
-import { useRef, type MouseEvent } from "react";
+import { useRef, type MouseEvent, type ComponentType } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useNavigate } from "react-router-dom";
 import { ArrowRight, Sparkles, Activity, Clock, BookOpen, Target } from "lucide-react";
@@ -415,7 +415,7 @@ export default function LandingPage() {
   );
 }
 
-function MockStat({ icon: Icon, label, value, color }: { icon: any; label: string; value: string; color: string }) {
+function MockStat({ icon: Icon, label, value, color }: { icon: ComponentType; label: string; value: string; color: string }) {
   return (
     <div
       className="rounded-xl p-3.5 relative"

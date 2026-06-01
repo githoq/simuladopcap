@@ -208,6 +208,44 @@
     text-decoration-color: currentColor;
   }
 
+  /* ── Tables inside apoio / pergunta (reconstructed grids, sudoku, data) ─ */
+  .fcc-apoio-body table,
+  .fcc-pergunta table {
+    border-collapse: collapse;
+    margin: 8px auto;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 13px;
+    color: #E9E9E9;
+    font-style: normal;
+  }
+
+  .fcc-apoio-body td,
+  .fcc-apoio-body th,
+  .fcc-pergunta td,
+  .fcc-pergunta th {
+    border: 1px solid rgba(200, 200, 200, 0.45);
+    padding: 4px 10px;
+    text-align: center;
+    vertical-align: middle;
+    font-style: normal;
+    line-height: 1.4;
+    min-width: 32px;
+  }
+
+  .fcc-apoio-body th,
+  .fcc-pergunta th {
+    background: rgba(255, 255, 255, 0.06);
+    font-weight: 600;
+    font-size: 12px;
+    text-transform: none;
+  }
+
+  /* Highlighted cell (e.g., X in sudoku, cinza cell) */
+  .fcc-apoio-body td[style*="background"],
+  .fcc-pergunta td[style*="background"] {
+    background: rgba(255, 255, 255, 0.10) !important;
+  }
+
   /* ── Pergunta (question stem) ─────────────────────────────────────── */
   .fcc-pergunta {
     font-family: Georgia, "Times New Roman", serif;

@@ -22,15 +22,25 @@ export default function BankPage({ questions, usedIds }: BankPageProps) {
   const [fUsed, setFUsed] = useState("all");
   const [expanded, setExpanded] = useState<string | null>(null);
 
+  // O(1) lookup instead of O(n) Array.includes
+  const usedSet = useMemo(() => new Set(usedIds), [usedIds]);
+
+  // Lowercase search once, not per-item
+  const searchLower = useMemo(() => search.toLowerCase().trim(), [search]);
+
   const filtered = useMemo(() =>
     questions.filter((q: Question) => {
       if (fDisc !== "all" && q.disciplina !== fDisc) return false;
-      if (fUsed === "used" && !usedIds.includes(q.id)) return false;
-      if (fUsed === "unused" && usedIds.includes(q.id)) return false;
-      if (search && !q.pergunta?.toLowerCase().includes(search.toLowerCase())) return false;
+      if (fUsed === "used"   && !usedSet.has(q.id)) return false;
+      if (fUsed === "unused" &&  usedSet.has(q.id)) return false;
+      if (searchLower) {
+        const inPergunta = q.pergunta?.toLowerCase().includes(searchLower) ?? false;
+        const inAssunto  = q.assunto?.toLowerCase().includes(searchLower) ?? false;
+        if (!inPergunta && !inAssunto) return false;
+      }
       return true;
     }),
-    [questions, fDisc, fUsed, search, usedIds]
+    [questions, fDisc, fUsed, searchLower, usedSet]
   );
 
   return (
@@ -101,7 +111,7 @@ export default function BankPage({ questions, usedIds }: BankPageProps) {
             <div className="space-y-2">
               {filtered.slice(0, 50).map((q: Question, i: number) => {
                 const isExp = expanded === q.id;
-                const isUsed = usedIds.includes(q.id);
+                const isUsed = usedSet.has(q.id);
                 return (
                   <motion.div
                     key={q.id}
@@ -112,7 +122,7 @@ export default function BankPage({ questions, usedIds }: BankPageProps) {
                     onClick={() => setExpanded(isExp ? null : q.id)}
                     className={cn(
                       "rounded-2xl overflow-hidden cursor-pointer transition-all duration-300",
-                      isExp ? "border-gradient-gold" : "hover:bg-white/[0.015]"
+                      isExp ? "border-gradient border-gradient-gold" : "hover:bg-white/[0.015]"
                     )}
                     style={{
                       background: isExp

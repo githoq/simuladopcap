@@ -9,7 +9,7 @@
  *  - Polished discipline progress bars
  *  - Activity heatmap with gold gradient
  */
-import { useMemo, type ReactNode } from "react";
+import { useMemo, type ReactNode, type ComponentType } from "react";
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
 import {
@@ -36,7 +36,7 @@ interface DashboardPageProps {
   onReset: () => void;
 }
 
-const CustomTooltip = ({ active, payload, label }: any) => {
+const CustomTooltip = ({ active, payload, label }: { active?: boolean; payload?: Array<{ name: string; value: number; color: string }>; label?: string }) => {
   if (!active || !payload?.length) return null;
   return (
     <div
@@ -49,7 +49,7 @@ const CustomTooltip = ({ active, payload, label }: any) => {
       }}
     >
       <p style={{ color: "rgba(255,255,255,0.45)" }} className="mb-1 text-[10px] uppercase tracking-wider">{label}</p>
-      {payload.map((p: any) => (
+      {payload.map((p: { name: string; value: number; color: string }) => (
         <p key={p.name} style={{ color: p.color }} className="font-mono font-semibold text-sm tabular-nums">
           {p.value}{p.name === "%" ? "%" : ""}
         </p>
@@ -543,7 +543,7 @@ function PremiumCard({ children }: { children: ReactNode }) {
   );
 }
 
-function CardHeader({ title, subtitle, icon: Icon }: { title: string; subtitle?: string; icon: any }) {
+function CardHeader({ title, subtitle, icon: Icon }: { title: string; subtitle?: string; icon: ComponentType }) {
   return (
     <div className="flex items-center gap-2.5 px-5 pt-5 pb-3 border-b border-white/[0.04]">
       <div className="w-7 h-7 rounded-lg flex items-center justify-center bg-white/[0.04] border border-white/[0.08]">

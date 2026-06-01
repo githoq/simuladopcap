@@ -18,6 +18,7 @@ import { ApoioBlock } from "./ApoioBlock";
 import { AlternativeRow } from "./AlternativeRow";
 import type { AltState } from "./AlternativeRow";
 import { Button } from "../ui/Button";
+import { sanitizeHTML } from "../../lib/sanitize";
 import { getRenderer } from "./FCCRenderer";
 import { cn } from "../../lib/utils";
 import { DISCIPLINE_ORDER } from "../../lib/constants";
@@ -235,7 +236,7 @@ export function QuestionCard({
                 {" — "}
                 <span className="fcc-alt-text text-text-primary"
                   dangerouslySetInnerHTML={{
-                    __html: question.alternativas[question.correta] ?? "",
+                    __html: sanitizeHTML(question.alternativas[question.correta] ?? ""),
                   }}
                 />
               </p>

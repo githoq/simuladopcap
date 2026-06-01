@@ -1,11 +1,17 @@
 [
   {
     "id": "fcc_const_2024_001",
+    "numero_original": 1,
+    "cabecalho": "FCC - PC-AP/2024",
     "disciplina": "Direito Constitucional",
     "assunto": "Direitos Fundamentais",
     "banca": "FCC",
     "ano": 2024,
+    "cargo": "",
     "orgao": "PC-AP",
+    "texto_apoio_titulo": null,
+    "texto_apoio": "",
+    "imagem": null,
     "pergunta": "De acordo com a CF/1988, NÃO é direito ou garantia fundamental:",
     "alternativas": [
       "A) inviolabilidade do direito à vida",
@@ -15,15 +21,22 @@
       "E) igualdade perante a lei"
     ],
     "correta": 3,
-    "linkTec": ""
+    "linkTec": "",
+    "_bloco": 1
   },
   {
     "id": "fcc_const_2023_001",
+    "numero_original": 2,
+    "cabecalho": "FCC - PC-AP/2023",
     "disciplina": "Direito Constitucional",
     "assunto": "Organização do Estado",
     "banca": "FCC",
     "ano": 2023,
+    "cargo": "",
     "orgao": "PC-AP",
+    "texto_apoio_titulo": null,
+    "texto_apoio": "",
+    "imagem": null,
     "pergunta": "São Poderes da União, independentes e harmônicos entre si:",
     "alternativas": [
       "A) Executivo, Legislativo e Judiciário",
@@ -33,15 +46,22 @@
       "E) Legislativo, Judiciário e Tribunais de Contas"
     ],
     "correta": 0,
-    "linkTec": ""
+    "linkTec": "",
+    "_bloco": 1
   },
   {
     "id": "fcc_const_2022_001",
+    "numero_original": 3,
+    "cabecalho": "FCC - PC-AP/2022",
     "disciplina": "Direito Constitucional",
     "assunto": "Segurança Pública",
     "banca": "FCC",
     "ano": 2022,
+    "cargo": "",
     "orgao": "PC-AP",
+    "texto_apoio_titulo": null,
+    "texto_apoio": "",
+    "imagem": null,
     "pergunta": "Segundo a CF/88, NÃO é órgão de segurança pública:",
     "alternativas": [
       "A) Polícia Federal",
@@ -51,15 +71,22 @@
       "E) Polícia Militar"
     ],
     "correta": 3,
-    "linkTec": ""
+    "linkTec": "",
+    "_bloco": 1
   },
   {
     "id": "fcc_const_2021_001",
+    "numero_original": 4,
+    "cabecalho": "FCC - PC-AP/2021",
     "disciplina": "Direito Constitucional",
     "assunto": "Remédios Constitucionais",
     "banca": "FCC",
     "ano": 2021,
+    "cargo": "",
     "orgao": "PC-AP",
+    "texto_apoio_titulo": null,
+    "texto_apoio": "",
+    "imagem": null,
     "pergunta": "O instrumento constitucional para proteger direito líquido e certo não amparado por habeas corpus ou habeas data é:",
     "alternativas": [
       "A) Ação Popular",
@@ -69,6 +96,7 @@
       "E) Ação Civil Pública"
     ],
     "correta": 1,
-    "linkTec": ""
+    "linkTec": "",
+    "_bloco": 1
   }
 ]

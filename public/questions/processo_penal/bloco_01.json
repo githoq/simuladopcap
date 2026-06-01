@@ -1,11 +1,17 @@
 [
   {
     "id": "fcc_proc_2024_001",
+    "numero_original": 1,
+    "cabecalho": "FCC - PC-AP/2024",
     "disciplina": "Direito Processual Penal",
     "assunto": "Inquérito Policial",
     "banca": "FCC",
     "ano": 2024,
+    "cargo": "",
     "orgao": "PC-AP",
+    "texto_apoio_titulo": null,
+    "texto_apoio": "",
+    "imagem": null,
     "pergunta": "O inquérito policial é caracterizado por ser:",
     "alternativas": [
       "A) judicial, acusatório e público",
@@ -15,15 +21,22 @@
       "E) judicial, inquisitório e público"
     ],
     "correta": 1,
-    "linkTec": ""
+    "linkTec": "",
+    "_bloco": 1
   },
   {
     "id": "fcc_proc_2023_001",
+    "numero_original": 2,
+    "cabecalho": "FCC - PC-AP/2023",
     "disciplina": "Direito Processual Penal",
     "assunto": "Prisão em Flagrante",
     "banca": "FCC",
     "ano": 2023,
+    "cargo": "",
     "orgao": "PC-AP",
+    "texto_apoio_titulo": null,
+    "texto_apoio": "",
+    "imagem": null,
     "pergunta": "A prisão em flagrante pode ser realizada por:",
     "alternativas": [
       "A) qualquer do povo ou autoridade policial",
@@ -33,15 +46,22 @@
       "E) qualquer funcionário público"
     ],
     "correta": 0,
-    "linkTec": ""
+    "linkTec": "",
+    "_bloco": 1
   },
   {
     "id": "fcc_proc_2022_001",
+    "numero_original": 3,
+    "cabecalho": "FCC - PC-AP/2022",
     "disciplina": "Direito Processual Penal",
     "assunto": "Ação Penal",
     "banca": "FCC",
     "ano": 2022,
+    "cargo": "",
     "orgao": "PC-AP",
+    "texto_apoio_titulo": null,
+    "texto_apoio": "",
+    "imagem": null,
     "pergunta": "A ação penal pública incondicionada é promovida pelo:",
     "alternativas": [
       "A) ofendido ou seus representantes",
@@ -51,15 +71,22 @@
       "E) Juiz de ofício"
     ],
     "correta": 1,
-    "linkTec": ""
+    "linkTec": "",
+    "_bloco": 1
   },
   {
     "id": "fcc_proc_2021_001",
+    "numero_original": 4,
+    "cabecalho": "FCC - PC-AP/2021",
     "disciplina": "Direito Processual Penal",
     "assunto": "Provas",
     "banca": "FCC",
     "ano": 2021,
+    "cargo": "",
     "orgao": "PC-AP",
+    "texto_apoio_titulo": null,
+    "texto_apoio": "",
+    "imagem": null,
     "pergunta": "São inadmissíveis no processo penal as provas:",
     "alternativas": [
       "A) obtidas por meios lícitos",
@@ -69,6 +96,7 @@
       "E) emprestadas de outro processo"
     ],
     "correta": 2,
-    "linkTec": ""
+    "linkTec": "",
+    "_bloco": 1
   }
 ]

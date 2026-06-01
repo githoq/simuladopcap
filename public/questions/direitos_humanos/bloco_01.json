@@ -1,11 +1,17 @@
 [
   {
     "id": "fcc_dh_2024_001",
+    "numero_original": 1,
+    "cabecalho": "FCC - PC-AP/2024",
     "disciplina": "Direitos Humanos",
     "assunto": "Fundamentos",
     "banca": "FCC",
     "ano": 2024,
+    "cargo": "",
     "orgao": "PC-AP",
+    "texto_apoio_titulo": null,
+    "texto_apoio": "",
+    "imagem": null,
     "pergunta": "A Declaração Universal dos Direitos Humanos foi adotada pela ONU em:",
     "alternativas": [
       "A) 1945",
@@ -15,15 +21,22 @@
       "E) 1988"
     ],
     "correta": 1,
-    "linkTec": ""
+    "linkTec": "",
+    "_bloco": 1
   },
   {
     "id": "fcc_dh_2023_001",
+    "numero_original": 2,
+    "cabecalho": "FCC - PC-AP/2023",
     "disciplina": "Direitos Humanos",
     "assunto": "Dignidade da Pessoa Humana",
     "banca": "FCC",
     "ano": 2023,
+    "cargo": "",
     "orgao": "PC-AP",
+    "texto_apoio_titulo": null,
+    "texto_apoio": "",
+    "imagem": null,
     "pergunta": "Segundo a CF/1988, a dignidade da pessoa humana é:",
     "alternativas": [
       "A) um objetivo fundamental da República",
@@ -33,15 +46,22 @@
       "E) um princípio só da administração pública"
     ],
     "correta": 2,
-    "linkTec": ""
+    "linkTec": "",
+    "_bloco": 1
   },
   {
     "id": "fcc_dh_2022_001",
+    "numero_original": 3,
+    "cabecalho": "FCC - PC-AP/2022",
     "disciplina": "Direitos Humanos",
     "assunto": "Tortura",
     "banca": "FCC",
     "ano": 2022,
+    "cargo": "",
     "orgao": "PC-AP",
+    "texto_apoio_titulo": null,
+    "texto_apoio": "",
+    "imagem": null,
     "pergunta": "De acordo com a Constituição Federal, a prática de tortura:",
     "alternativas": [
       "A) é crime inafiançável e insuscetível de graça",
@@ -51,6 +71,7 @@
       "E) admite graça mas não anistia"
     ],
     "correta": 0,
-    "linkTec": ""
+    "linkTec": "",
+    "_bloco": 1
   }
 ]

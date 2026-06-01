@@ -64,11 +64,11 @@
         "imagem": null,
         "pergunta": "Um novo vocábulo pode ser formado quando passa de uma classe gramatical a outra, sem a modificação de sua forma. É o que se denomina\nderivação imprópria. Constitui exemplo de derivação imprópria o termo sublinhado em:",
         "alternativas": [
-            "<em>Leva vinte anos <u>para dar</u> uma parasita que preste, não tenho lucro nenhum</em>.",
-            "Por que o senhor não vai <u>plantar</u> em terreno ainda não cultivado?",
-            "<em>E cisma <u>de ganhar</u> dinheiro na cidade, podando árvore de rua</em>.",
-            "<em><u>No trocar</u> de roupa, atira ao chão as peças usadas</em>.",
-            "A patroa acorda cedo, <u>para despertar</u> a cozinheira."
+            "<em>Leva vinte anos para <u>dar</u> uma parasita que preste, não tenho lucro nenhum.</em>",
+            "<em>Por que o senhor não vai <u>plantar</u> em terreno ainda não cultivado?</em>",
+            "<em>E cisma de <u>ganhar</u> dinheiro na cidade, podando árvore de rua.</em>",
+            "<em>No <u>trocar</u> de roupa, atira ao chão as peças usadas.</em>",
+            "<em>A patroa acorda cedo, para <u>despertar</u> a cozinheira.</em>"
         ],
         "correta": 3,
         "linkTec": "https://www.tecconcursos.com.br/questoes/2296319",
@@ -87,7 +87,7 @@
         "texto_apoio_titulo": "Leia o texto abaixo para responder à questão.",
         "texto_apoio": "<p>Leia o texto abaixo para responder à questão.</p>\n<center class=\"apoio-title\"><strong>Brasil inventou a fuzarca e precisa exportar a tecnologia do furdunço</strong></center>\n<p><em>País da algazarra, alvoroço, arruaça, baderna, bagunça e bafafá tem uma desordem que há de nos levar ao progresso</em> 1. Duvido que tenha alguma língua no mundo com tanta palavra pra bagunça quanto a nossa. E o léxico não vem do grego ou do latim: nossos termos pra desordem nasceram por aqui, às vezes sem pai nem mãe. 2. Bagunça, por exemplo: tem pais desconhecidos, assim como furdunço e fuzuê. O Brasil inventou a fuzarca − ou talvez o contrário. 3. Auê, fuzuê, frege, bafafá, rebuliço. Qualquer falante do português saberá do que trata essas palavras, mesmo que nunca as tenha ouvido.</p>\n<p>Escarcéu e banzeiro vieram do mar. O primeiro é a onda gigante, o segundo é o mar agitado, e ambos passaram a designar agitação de gente que se comporta como o mar. 4. Minha vó chamava de murundum um baú cheio de cartas e fotos − corruptela de murundu, sinônimo de barafunda, aquele amontoado de</p>\n<p>bailarico. Gandaia ainda se usa, mas só pra cair nela. Já ninguém se levanta pra uma gandaia. 5. Baderna veio da Marietta − a bailarina italiana que fez um sucesso estrondoso no Rio ao misturar danças africanas e balé clássico − isso em 1850. Proibida de dançar lundu nos palcos, passou a dançar ao ar livre, no largo da Carioca, junto com africanos escravizados. 6. Baderna virou, primeiro, sinônimo de beleza, depois de tumulto: seus fãs, os badernistas, protestaram contra a proibição fazendo o que melhor sabiam fazer: fuzuê. (Chamei minha filha de Marieta por causa dela, e os nomes têm força: quando não está no balé, está na bagunça − geralmente nos dois.) 7. Arruaça quem faz são os outros − e geralmente quem acusa é a imprensa. Quando a polícia chega, o que podia ser um tumulto vira quebra-pau.</p>\n<p>Perceba que, quando a confusão vira porradaria, ela ganha um hífen: se transforma num quebra-quebra, um pega- pra-capar, um deus-nos-acuda, um salve-se-quem-puder, uma casa-da-mãe-joana, vulgo casa-da-sogra (pobre da sogra chamada Joana). 8. Alvoroço vem do árabe, onde servia pra designar um tipo muito específico de confusão: os gritos de alegria que a gente dá ao receber alguém querido. Algazarra também vem dos mouros, mas designa um tipo de tumulto mais específico: o banzeiro que o Exército mouro promovia antes de atacar, pra assustar o inimigo. Os árabes, assim como nós, tinham pós-graduação em gritaria. 9. Gosto das palavras que servem pra designar ao mesmo tempo uma forma de confusão e uma forma de comida − sururu, sarapatel, angu de caroço. Grande parte da nossa culinária tem origem na bagunça. Não é só o prato que parece um murundum, mas também a ocasião em que se come: não se degusta um sururu sem promover um sarapatel, e vice-versa. Galhofa já significou banquete, até virar sinônimo de bagunça, e hoje virou humor fácil − no teatro, quando o comediante perde a mão, alerta-se, na coxia: “Cuidado com a galhofa”. 10. Tem ritmo que leva a confusão no nome: pagode, forró e frevo já significaram balbúrdia, antes de ela se organizar em notas musicais. Até hoje carregam a confusão em que nasceram, e, assim que as notas soam, logo se promove um furdunço. Um pagode, quando tocado sozinho, não é um pagode, mas outra coisa. Pra virar pagode precisa de alguém atrapalhando quem toca. Forró precisa de pelo menos três pessoas, uma tocando e duas dançando. Frevo precisa de uma cidade inteira. 11. Dominamos, como ninguém, a tecnologia do furdunço. Tudo o que funciona, no Brasil, do forró ao sarapatel, conseguimos através de algazarra.</p>\n<p>Toda tentativa de moralizar o galinheiro saiu pela culatra: a ordem só levou ao regresso. O progresso só alcançamos na fuzarca − sem cair na galhofa jamais. Não existe contradição entre o balé e a bagunça.</p>\n<p>(DUVIVIER, Gregório. “Brasil inventou a fuzarca e precisa exportar a tecnologia do furdunço”. Folha de São Paulo [online], São Paulo, 15 fev. 2022. Disponível em: https://www1.folha.uol.com.br. Acessado em: 15 set. 2022)</p>",
         "imagem": null,
-        "pergunta": "O processo de formação da palavra <em>porradaria</em> é <u>conhecido</u> como derivação",
+        "pergunta": "O processo de formação da palavra <em>porradaria</em> é conhecido como derivação",
         "alternativas": [
             "regressiva.",
             "prefixal.",
@@ -114,11 +114,11 @@
         "imagem": null,
         "pergunta": "Derivação imprópria é um processo em que uma palavra muda de classe gramatical sem mudar de forma. Assim, observa-se esse processo no\nseguinte trecho:",
         "alternativas": [
-            "Estou ciente das severas <u>condições</u> do mercado editorial",
-            "Não pense que me esqueci das minhas <u>obrigações</u>",
-            "Fiquei de lhe entregar os originais até <u>o fim</u> de 2015",
-            "Já gastei <u>o adiantado</u> que você generosamente me concedeu",
-            "tratarei de me isolar por uns meses <u>nas montanhas,</u>"
+            "<em>Estou ciente das severas <u>condições</u> do mercado editorial</em>",
+            "<em>Não pense que me esqueci das minhas <u>obrigações</u></em>",
+            "<em>Fiquei de lhe entregar os originais até o <u>fim</u> de 2015</em>",
+            "<em>Já gastei o <u>adiantado</u> que você generosamente me concedeu</em>",
+            "<em>tratarei de me isolar por uns meses nas <u>montanhas,</u></em>"
         ],
         "correta": 3,
         "linkTec": "https://www.tecconcursos.com.br/questoes/2454324",
@@ -312,7 +312,7 @@
         "texto_apoio_titulo": "Leia a crônica “Cobrança”, de Moacyr Scliar, para responder a questão.",
         "texto_apoio": "<p>Leia a crônica “Cobrança”, de Moacyr Scliar, para responder a questão.</p>\n<p><em>“Cobrador usa intimidação como estratégia. Empresas de cobrança usam técnicas abusivas, como tornar pública a dívida.” (Cotidiano, 10.09.2001)</em> <em>Ela abriu a janela e ali estava ele, diante da casa, caminhando de um lado para outro. Carregava um cartaz, cujos dizeres atraíam a atenção dos</em> <em>passantes: “Aqui mora uma devedora inadimplente.”</em> <em>− Você não pode fazer isso comigo − protestou ela.</em> <em>− Claro que posso − replicou ele. − Você comprou, não pagou. Você é uma devedora inadimplente. E eu sou cobrador. Por diversas vezes tentei lhe</em> <em>cobrar, você não pagou.</em> <em>− Não paguei porque não tenho dinheiro. Esta crise...</em> <em>− Já sei − ironizou ele. − Você vai me dizer que por causa daquele ataque lá em Nova York seus negócios ficaram prejudicados. Problema seu, ouviu?</em></p>\n<p><em>Problema seu. Meu problema é lhe cobrar. E é o que estou fazendo.</em> <em>− Mas você podia fazer isso de uma forma mais discreta...</em> <em>− Negativo. Já usei todas as formas discretas que podia. Falei com você, expliquei, avisei. Nada. Você fazia de conta que nada tinha a ver com o</em> <em>assunto. Minha paciência foi se esgotando, até que não me restou outro recurso: vou ficar aqui, carregando este cartaz, até você saldar sua dívida.</em></p>\n<p><em>Neste momento começou a chuviscar.</em> <em>− Você vai se molhar − advertiu ela. − Vai acabar ficando doente.</em></p>\n<div class=\"fcc-verse\"><em>Ele riu, amargo:</em><br>\n<em>− E daí? Se você está preocupada com minha saúde, pague o que deve.</em><br>\n<em>− Posso lhe dar um guarda-chuva...</em><br>\n<em>− Não quero. Tenho de carregar o cartaz, não um guarda-chuva.</em></div>\n<p><em>Ela agora estava irritada:</em> <em>− Acabe com isso, Aristides, e venha para dentro. Afinal, você é meu marido, você mora aqui.</em> <em>− Sou seu marido − retrucou ele − e você é minha mulher, mas eu sou cobrador profissional e você, devedora. Eu a avisei: não compre essa geladeira, eu</em> <em>não ganho o suficiente para pagar as prestações. Mas não, você não me ouviu. E agora o pessoal lá da empresa de cobrança quer o dinheiro. O que</em> <em>quer você que eu faça? Que perca meu emprego? De jeito nenhum. Vou ficar aqui até você cumprir sua obrigação.</em></p>\n<p><em>Chovia mais forte, agora. Borrada, a inscrição tornara-se ilegível. A ele, isso pouco importava: continuava andando de um lado para outro, diante da</em> <em>casa, carregando o seu cartaz.</em></p>\n<span class=\"apoio-attrib\">(Adaptado de: SCLIAR, Moacyr. O imaginário cotidiano. São Paulo: Global, 2002)</span>\n<p class=\"fcc-excerpt\"><em>Chovia mais forte, agora. Borrada, <u>a</u> inscrição tornara-se ilegível. A ele, isso pouco importava: continuava andando de um lado para outro, diante da</em> <em>casa, carregando o seu cartaz</em>. (18º parágrafo).</p>\n<p class=\"fcc-excerpt\">verbal:</p>",
         "imagem": null,
-        "pergunta": "No trecho acima, o narrador relata alguns fatos ocorridos no passado. Um fato anterior a esse tempo passado está indicado <u>pela</u> seguinte forma\nverbal:",
+        "pergunta": "No trecho acima, o narrador relata alguns fatos ocorridos no passado. Um fato anterior a esse tempo passado está indicado pela seguinte forma\nverbal:",
         "alternativas": [
             "Chovia.",
             "tornara.",
@@ -364,11 +364,11 @@
         "imagem": null,
         "pergunta": "O cronista relata uma série de eventos ocorridos no passado. Um evento anterior a esse tempo passado está indicado pela forma verbal sublinhada\nem:",
         "alternativas": [
-            "Inácio estava na graça do crescimento, e suas atitudes <u>faziam</u> descobrir um encanto novo no encanto imemorial dos gatos.",
-            "Mas Inácio <u>desapareceu</u> − e sua falta é mais importante para mim do que as reformas do ministério.",
-            "Eram duas da madrugada quando o pintor Reis Júnior, que <u>passeia</u> a essa hora com o seu cachimbo e o seu cão, me bateu à porta, noticioso.",
-            "Em suas andanças, <u>vira</u> um gato cor de ouro como Inácio − cor incomum em gatos comuns − e se dispunha a ajudar-me na captura.",
-            "Se for Inácio, pensei, dentro de um ou dois dias <u>estará</u> de volta."
+            "<em>Inácio estava na graça do crescimento, e suas atitudes <u>faziam</u> descobrir um encanto novo no encanto imemorial dos gatos.</em>",
+            "<em>Mas Inácio <u>desapareceu</u> − e sua falta é mais importante para mim do que as reformas do ministério.</em>",
+            "<em>Eram duas da madrugada quando o pintor Reis Júnior, que <u>passeia</u> a essa hora com o seu cachimbo e o seu cão, me bateu à porta, noticioso.</em>",
+            "<em>Em suas andanças, <u>vira</u> um gato cor de ouro como Inácio − cor incomum em gatos comuns − e se dispunha a ajudar-me na captura.</em>",
+            "<em>Se for Inácio, pensei, dentro de um ou dois dias <u>estará</u> de volta.</em>"
         ],
         "correta": 3,
         "linkTec": "https://www.tecconcursos.com.br/questoes/2039109",
@@ -387,13 +387,13 @@
         "texto_apoio_titulo": null,
         "texto_apoio": "<p>Para responder a questão, considere o trecho da crônica “O VIP sem querer”, de Carlos Drummond de Andrade.</p>\n<p><em>João Brandão foi ao Aeroporto Internacional para abraçar um amigo dileto, que viajava com destino ao Paraguai. Pessoa comum despedindo-se de</em> <em>pessoa comum. Mas acontecem coisas. Alguém, informado da viagem, pedira ao amigo que levasse uma encomenda a Assunção. A encomenda</em> <em>apareceu na hora, entregue por um senhor que foi logo dizendo:</em> <em>– O doutor não precisa se incomodar. Eu providencio o despacho e tudo mais.</em></p>\n<p><em>O avião estava atrasado duas horas, o que não é muito, em comparação com outros atrasos por aí, inclusive o da chegada do estado de direito. O</em> <em>senhor da encomenda procurou amenizar a espera:</em> <em>– O doutor não vai ficar duas horas sentado numa dessas cadeiras aí, vendo os minutos se arrastarem. Espere um momento, que eu dou um jeitinho.</em></p>\n<div class=\"fcc-verse\"><em>Saiu para confabular mais adiante e voltou com a boa nova:</em><br>\n<em>– Por obséquio, me acompanhe até a sala VIP.</em><br>\n<em>– Não é preciso – objetou o meu amigo. – Posso esperar perfeitamente aqui mesmo.</em><br>\n<em>– Não senhor. Estará melhor lá em cima.</em><br>\n<em>– Acontece que estou aqui com um amigo.</em><br>\n<em>− Ele também vai com o doutor.</em></div>\n<p><em>Não havia remédio senão subir à sala VIP. Seu amigo, encabulado, e João Brandão mais ainda. Seria indelicado insistir na recusa. E depois, por que não</em> <em>ir àquela sala?</em></p>\n<p><em>Subiram pelas escadas rolantes, precedidos de um abridor de caminhos, que com o indicador ia pedindo passagem para os dois ilustres</em> <em>desconhecidos.</em></p>\n<p><em>Na sala VIP, enorme e vazia, pois há uma hora na vida em que até os VIP escasseiam, João Brandão e seu amigo foram convidados por um garçom</em> <em>solícito a beber qualquer coisa, a ler revistas, a pedir o que lhes aprouvesse.</em> <em>– Obrigado – respondeu o amigo. – Não desejamos nada. Ou você, João, deseja alguma coisa?</em> <em>– Também não. Obrigado.</em></p>\n<p><em>O garçom insistia:</em> <em>– Nem um cafezinho, doutor?</em></p>\n<p><em>Vá lá, um cafezinho. Sorvendo-o a lentos goles, pareciam sorver o espanto de serem promovidos a VIP.</em> <em>– Veja como são as coisas, João. Nós aqui na maciota, em poltronas deleitáveis, contemplando quadros abstratos, e lá embaixo o povo concreto</em> <em>fazendo fila para conferir as passagens ou esperando em cadeiras padronizadas a hora do embarque.</em> <em>– É mesmo, sô.</em> <em>– Entretanto eles pagaram imposto como nós, custearam como nós a construção deste edifício, têm direitos iguais ao nosso de desfrutar as</em> <em>comodidades deste salão, mas na hora de desfrutá-las só nós dois é que somos convocados.</em> <em>– Nem me fale. Estou ficando com remorso.</em> <em>– Vivemos numa república, João. Você acha isso republicano?</em> <em>– Eu? Eu acho que estou aqui de intrometido. Você ainda passa, porque está levando alguma coisa a alguém, e por isso lhe conferiram honras de VIP.</em></p>\n<p><em>Mas eu sou apenas acompanhante de um VIP, e acompanhante por cento e vinte minutos. E agora que você me disse essas coisas, não aguento mais,</em> <em>vou-me embora já. Desculpe.</em> <em>– Que é isso, João, estava brincando. Pensando bem, o povão foi homenageado em nossas humildes pessoas. E, como diz o Milton Carneiro na</em> <em>televisão, a vida é curta, e isto é muito bom!</em></p>\n<p><em>João Brandão quis assimilar o sentimento do amigo, se é que este sentia realmente a doçura da situação, mas quando a gente é promovida a VIP e não</em> <em>tem estrutura de VIP (é uma coisa que nasce com o indivíduo, ou não nasce, e jamais lhe será consubstancial)... A verdade é que os dois continuaram</em> <em>ali sem a menor convicção de serem VIP.</em></p>\n<span class=\"apoio-attrib\">(Adaptado de: ANDRADE, Carlos Drummond de. Boca de luar. São Paulo: Companhia das Letras, 2014)</span>\n<p class=\"fcc-excerpt\"><em>João Brandão <u>foi</u> ao Aeroporto Internacional para abraçar um amigo dileto, que <u>viajava</u> com destino ao Paraguai. Pessoa comum despedindo-se de</em> <em>pessoa comum. Mas <u>acontecem</u> coisas. Alguém, informado da viagem, <u>pedira</u> ao amigo que <u>levasse</u> uma encomenda a Assunção.</em> (1º parágrafo)</p>\n<p class=\"fcc-excerpt\">verbal:</p>",
         "imagem": null,
-        "pergunta": "No trecho acima, o narrador relata alguns fatos ocorridos no passado. Um fato anterior a esse tempo passado está indicado <u>pela</u> seguinte forma\nverbal:",
+        "pergunta": "No trecho acima, o narrador relata alguns fatos ocorridos no passado. Um fato anterior a esse tempo passado está indicado pela seguinte forma\nverbal:",
         "alternativas": [
-            "“<em><u>levasse</u></em>”",
-            "“<em><u>foi</u></em>”",
-            "“<em><u>viajava</u></em>”",
-            "“<em><u>acontecem</u></em>”",
-            "“<em><u>pedira</u></em>”"
+            "\"levasse\"",
+            "\"foi\"",
+            "\"viajava\"",
+            "\"acontecem\"",
+            "\"pedira\""
         ],
         "correta": 4,
         "linkTec": "https://www.tecconcursos.com.br/questoes/2114025",
@@ -414,11 +414,11 @@
         "imagem": null,
         "pergunta": "O verbo flexionado nos mesmos tempo e modo do da frase acima está em:",
         "alternativas": [
-            "para que ele não se <u>perca</u> nas nuvens da fantasia.",
-            "<u>Era</u> um homem sem remorso.",
-            "um universo de aventuras insólitas, em que se <u>entrelaçam</u> audácia, absurdo e humor.",
-            "O leitor da obra de Muñoz Machado <u>encontrará</u> tudo.",
-            "ele <u>poderia</u> muito bem se tornar ressentido."
+            "<em>para que ele não se perca nas nuvens da fantasia.</em>",
+            "<em>Era um homem sem remorso.</em>",
+            "<em>um universo de aventuras insólitas, em que se entrelaçam audácia, absurdo e humor.</em>",
+            "<em>O leitor da obra de Muñoz Machado encontrará tudo.</em>",
+            "<em>ele poderia muito bem se tornar ressentido.</em>"
         ],
         "correta": 1,
         "linkTec": "https://www.tecconcursos.com.br/questoes/2114100",
@@ -493,7 +493,7 @@
             "“ouvindo dizer”.",
             "“ia”.",
             "“tinha ido”.",
-            "“<u>levasse</u>”."
+            "\"levasse\"."
         ],
         "correta": 3,
         "linkTec": "https://www.tecconcursos.com.br/questoes/2152443",
@@ -512,7 +512,7 @@
         "texto_apoio_titulo": "Para responder à questão, baseie-se no texto abaixo.",
         "texto_apoio": "<p>Para responder à questão, baseie-se no texto abaixo.</p>\n<p><em>Por que não aprendi a tocar violão? Sempre me constituiu motivo de tristeza e humilhação esta precária musicalidade. Uns tocam piano, existe até</em> <em>quem toque harpa. Eu, nem ao violão me afiz. E não se diga que era pouco o esforço de D. Chiquinha, minha mestra. Afinava, afinava, apertava as</em> <em>cravelhas, dava um dó agudíssimo na prima, depois outro dó grave no bordão...</em></p>\n<p><em>Eu pegava no violão de luxo que minha madrinha de crisma mandara do Pará, ajeitava-o mal e mal no colo, começava de boa vontade: dum, dum, dum...</em> <em>– Não! Valha-me Santa Cecília! Segunda! Mude!</em></p>\n<p><em>E eu: dum, dum, dum...</em></p>\n<p><em>Ai, música, divina música. D. Chiquinha carpia-se. Tanto sentimento de que ela dava exemplo, tanta devoção empregada à toa. Eu recomeçava, dócil:</em> <em>primeira, segunda...</em> <em>– D. Chiquinha, fiquei com uma bolha no dedo.</em></p>\n<p><em>Já não sei como a descobrimos: decerto andava nas suas idas e vindas de casa em casa de aluno. Cobrava dez mil-réis por mês e mais o dinheiro do</em> <em>bonde. Duas aulas por semana.</em></p>\n<p><em>Professora de violão, o seu sonho secreto fora sempre o violino, entretanto. Nas prateleiras da sua sala, guardava ela o seu estradivário – uma rabeca</em> <em>de cego, fanhosa, inválida, metida numa remendada mortalha de veludo azul. Em certos dias de bom humor e segredo, ela pegava comovida o arco e</em> <em>executava ao violino a valsa dos Sinos de Corneville.</em></p>\n<p><em>Fora desfeita da sorte aquele meu fracasso, porque eu me supunha dotada e alimentava ambições. Chegara até a pensar, não digo em concertos, mas</em> <em>num brilhante recital de caridade em que aparecesse de vestido comprido (teria então uns doze anos) e, num belo contralto, cantasse ao violão certo</em> <em>tango argentino da minha preferência. Mas tudo neste mundo são vaidades: jamais atingi o tango argentino.</em></p>\n<p><em>Voltando a D. Chiquinha: o instrumento plebeu que ensinava constituía para minha mestra uma fonte de dissabores. A começar pelo apelido que lhe</em> <em>davam: D. Chiquinha do Violão. Quando alguém o repetia em sua frente, ela corrigia logo, irritada: – Chiquinha do Violão, não senhor. Francisca dos</em> <em>Santos. Violão não é meu dono.</em></p>\n<p><em>Por música clássica não tinha interesse, ou antes, a ignorava. Para D. Chiquinha, a mais requintada manifestação de arte era a serenata. E dentro desse</em> <em>critério me ensinava visando talvez fazer de mim o que ela já fora em moça – a musa de todos os seresteiros da cidade. Sim, não só objeto passivo de</em> <em>canções e arpejos noturnos mas musa ativa e colaborante. O seresteiro dizia da calçada a sua trova, e lá da penumbra da alcova a donzela tomava do</em> <em>violão e na mesma toada respondia. Eram essas as suas lembranças mais queridas, aqueles duelos musicais, canta tu de lá, canto eu de cá – e entre</em> <em>os dois o grupo desvanecido dos comparsas que ajudavam no acompanhamento.</em></p>\n<p><em>Nos acompanhamentos, a nossa favorita era a modinha “A mais gentil das praieiras”. Dessa eu gostava muito. Porém a mão rebelde não me</em> <em>acompanhava o entusiasmo.</em></p>\n<span class=\"apoio-attrib\">(Adaptado de: QUEIROZ, Rachel. “<strong>A mais gentil das praieiras</strong>”. Melhores crônicas. São Paulo: Global Editora, 2012, 1a edição digital)</span>\n<p class=\"fcc-excerpt\"><em>Chegara até a pensar, não digo em concertos, mas num brilhante recital de caridade em que <u>aparecesse</u> de vestido comprido (teria então uns</em> <em>doze anos) e, num belo contralto, <u>cantasse</u> ao violão certo tango argentino da minha preferência.</em></p>\n<p class=\"fcc-excerpt\">seguintes formas:</p>",
         "imagem": null,
-        "pergunta": "Consideradas as relações de sentido estabelecidas pelo contexto, substituindo “Chegara\" <u>por</u> “Cheguei”, os verbos sublinhados assumirão as\nseguintes formas:",
+        "pergunta": "Consideradas as relações de sentido estabelecidas pelo contexto, substituindo “Chegara\" por “Cheguei”, os verbos sublinhados assumirão as\nseguintes formas:",
         "alternativas": [
             "apareceria – cantaria",
             "aparecera – cantarei",
@@ -537,7 +537,7 @@
         "texto_apoio_titulo": null,
         "texto_apoio": "<p><em>As redes sociais se apresentam como uma espécie de “praça pública virtual”, na qual indivíduos interagem e empresas anunciam seus produtos.</em></p>\n<p><em>Entretanto, ao contrário do espaço público tradicional (físico), plataformas de redes sociais moldam quem e o que encontraremos durante a conexão. A</em> <em>lógica por trás disso é que tenhamos um espaço customizado, no qual nos deparemos com aqueles que conosco se assemelham e com produtos que</em> <em>almejamos. Conectar-se de forma sadia às redes sociais demanda alguns cuidados. O primeiro deles, é saber como a maior parte das redes sociais</em> <em>funciona. Não ignorar que cada um de nós é o verdadeiro produto pode nos garantir experiência saudável nesse ambiente. Desconsiderar esse ponto é</em> <em>o atalho para vivenciar aquilo que se pode definir como conectividade tóxica.</em></p>\n<p><em>Um segundo aspecto, decorrente do anterior, diz respeito às pessoas, às notícias e aos produtos com os quais nos deparamos.</em></p>\n<p><em>Nosso histórico de acessos na internet permite que as plataformas direcionem conteúdo sob medida a cada um de nós. Isso inclui sugestões de</em> <em>amizade, apresentação de notícias e, claro, publicidade. A depender das configurações de nossos aparelhos eletrônicos, falas simples, mesmo</em> <em>enquanto não usamos tais dispositivos, podem ser captadas por mecanismos de inteligência artificial e transformadas em material que chega às</em> <em>nossas telas sem que nada busquemos. Um terceiro aspecto consiste em não nos deixarmos levar pelo aparente conforto que as redes propiciam. Com</em> <em>o uso frequente, permitimos que as plataformas criem nossa “própria bolha”.</em></p>\n<p><em>Levados pelo desejo, curvamo-nos à facilidade do consumo e tornamo-nos presas fáceis de golpes que prometem vantagens fantásticas e inverídicas.</em></p>\n<p><em>Diante de falsas notícias, que tendem a nos agradar ou atemorizar, abrimos mão da necessária reflexão, e preferimos compartilhá-las sem nem mesmo</em> <em>conferir se provêm de fonte confiável. Em ambos os casos, <u>somos</u> fantoches manipulados por interesses alheios.</em></p>\n<span class=\"apoio-attrib\"><em>(Adaptado de: AMARAL, Luiz Fernando. Conexão Sadia. Disponível em: <strong>Istoe.com.br/conexao − sadia</strong>)</em></span>\n<p class=\"fcc-excerpt\"><em>Nosso histórico de acessos na internet permite que as plataformas direcionem conteúdo sob medida a cada um de nós. Isso inclui sugestões de</em> <em>amizade, apresentação de notícias e, claro, publicidade.</em></p>\n<p class=\"fcc-excerpt\">as seguintes formas:</p>",
         "imagem": null,
-        "pergunta": "Substituindo no trecho acima a forma verbal “permite” <u>por</u> “permitia”, e fazendo as adaptações necessárias, estão adequadamente correlacionadas\nas seguintes formas:",
+        "pergunta": "Substituindo no trecho acima a forma verbal “permite” por “permitia”, e fazendo as adaptações necessárias, estão adequadamente correlacionadas\nas seguintes formas:",
         "alternativas": [
             "direcionassem e incluía.",
             "direcionariam e incluiria.",
@@ -564,11 +564,11 @@
         "imagem": null,
         "pergunta": "<em><u>tratava-se</u> de compreender suas regularidades</em>\nO verbo sublinhado acima está flexionado nos mesmos tempo e modo que o verbo sublinhado em:",
         "alternativas": [
-            "Se a realidade designada pelo termo civilização não se <u>deixa</u> definir com facilidade",
-            "<u>podiam</u> se tornar inigualáveis aliados na luta pelo sustento diário.",
-            "nenhum conceito ou definição que <u>deixe</u> de dar o devido peso a essa mudança",
-            "A domesticação sistemática, em larga escala, de plantas e animais <u>deu</u> à humanidade maior segurança",
-            "nenhum conceito que <u>deixe</u> de dar o devido peso a essa mudança na relação homem-natureza <u>poderá</u> ser julgado completo."
+            "<em>Se a realidade designada pelo termo civilização não se <u>deixa</u> definir com facilidade</em>",
+            "<em><u>podiam</u> se tornar inigualáveis aliados na luta pelo sustento diário.</em>",
+            "<em>nenhum conceito ou definição que <u>deixe</u> de dar o devido peso a essa mudança</em>",
+            "<em>A domesticação sistemática, em larga escala, de plantas e animais <u>deu</u> à humanidade maior segurança</em>",
+            "<em>nenhum conceito que deixe de dar o devido peso a essa mudança na relação homem-natureza <u>poderá</u> ser julgado completo.</em>"
         ],
         "correta": 1,
         "linkTec": "https://www.tecconcursos.com.br/questoes/2155427",
@@ -587,7 +587,7 @@
         "texto_apoio_titulo": "<u>Atenção:</u> Para responder à questão, baseie-se no texto abaixo.",
         "texto_apoio": "<p>Atenção: Para responder à questão, baseie-se no texto abaixo.</p>\n<p><em>Se é verdade que a capacidade de ficar perplexo é o começo da sabedoria, então esta verdade é um triste comentário à sabedoria do homem moderno.</em></p>\n<p><em>Quaisquer que sejam os méritos de nosso elevado grau de educação literária e universal, perdemos o dom de ficar perplexos. Imagina-se que tudo seja</em> <em>conhecido − senão por nós, por algum especialista cujo mister seja saber aquilo que não sabemos. De fato, ficar perplexo é constrangedor, um indício</em> <em>de inferioridade intelectual. À medida que vamos envelhecendo, aos poucos perdemos a capacidade de ficar surpresos. Até as crianças raramente se</em> <em>surpreendem, ou pelo menos procuram não demonstrar isso. Saber as respostas certas parece ser o principal; em comparação, considera-se</em> <em>insignificante o saber fazer as perguntas certas.</em></p>\n<p><em>Quiçá seja esta atitude uma razão por que um dos mais enigmáticos fenômenos de nossa vida, os nossos sonhos, dê margem a pouco espanto e</em> <em>suscite tão poucas perguntas. Todos sonhamos: não entendemos nossos sonhos, e no entanto agimos como se de nada estranho corresse em nossas</em> <em>mentes adormecidas, estranho ao menos em comparação com as atividades lógicas, deliberadas, de nossas mentes quando estamos acordados.</em></p>\n<p><em>Quando acordados, somos seres ativos, racionais, ávidos por tentar obter o que desejamos e prontos a defender-nos contra qualquer ataque. Agimos e</em> <em>observamos; vemos o mundo exterior, talvez não como seja, mas no mínimo de maneira tal que o possamos usar e manipular. Todavia, também somos</em> <em>bastante desprovidos de imaginação, e raramente − exceto quando crianças ou se somos poetas − logramos conceber mais do que meras duplicações</em> <em>dos acontecimentos e tramas de nossa experiência concreta. Somos eficientes, mas um tanto desenxabidos. Denominamos ao campo de nossa</em> <em>observação diurna “realidade” e orgulhamo-nos de nosso “realismo” e de nossa habilidade de manipulá-la.</em></p>\n<span class=\"apoio-attrib\"><em>(Adaptado de: FROMM, Erich<strong>. A linguagem esquecida</strong>. Trad.: VELHO, Octavio Alves. Rio de Janeiro: Editora Zahar, 1966)</em></span>\n<p class=\"fcc-excerpt\"><em>Todavia, também <u>somos</u> bastante desprovidos de imaginação, e raramente − exceto quando crianças ou se somos poetas − <u>logramos</u> conceber mais</em> <em>do que meras duplicações dos acontecimentos e tramas de nossa experiência concreta</em>.</p>\n<p class=\"fcc-excerpt\">por:</p>",
         "imagem": null,
-        "pergunta": "Numa nova redação, mantém-se a adequada correlação entre os tempos e modos verbais da frase acima substituindo-se os verbos sublinhados\n<u>por</u>:",
+        "pergunta": "Numa nova redação, mantém-se a adequada correlação entre os tempos e modos verbais da frase acima substituindo-se os verbos sublinhados\npor:",
         "alternativas": [
             "seremos, seríamos, lográvamos",
             "<u>somos</u>, fomos, lográvamos",
@@ -614,11 +614,11 @@
         "imagem": null,
         "pergunta": "O verbo sublinhado no segmento <em>Mistura não era (e nunca foi) sinônimo de igualdade</em> está flexionado nos mesmos tempo e modo que o sublinhado\nem:",
         "alternativas": [
-            "a disciplina que <u>chamaríamos,</u> anos mais tarde, e com grande naturalidade",
-            "Três longos rios <u>resumiriam</u> a nação",
-            "O primeiro lugar, nessa disputa histórica, <u>foi</u> para um estrangeiro",
-            "A independência política em 1822 não <u>trouxe</u> muitas novidades",
-            "a água que <u>corria</u> representava o futuro desse país"
+            "<em>a disciplina que <u>chamaríamos</u>, anos mais tarde, e com grande naturalidade</em>",
+            "<em>Três longos rios <u>resumiriam</u> a nação</em>",
+            "<em>O primeiro lugar, nessa disputa histórica, <u>foi</u> para um estrangeiro</em>",
+            "<em>A independência política em 1822 não <u>trouxe</u> muitas novidades</em>",
+            "<em>a água que <u>corria</u> representava o futuro desse país</em>"
         ],
         "correta": 4,
         "linkTec": "https://www.tecconcursos.com.br/questoes/2160271",
@@ -637,7 +637,7 @@
         "texto_apoio_titulo": "<u>Atenção:</u> Para responder à questão, considere o texto do filósofo francês Yves Michaud.",
         "texto_apoio": "<p>Para responder à questão, considere o texto do filósofo francês Yves Michaud.</p>\n<p><em>Atualmente, a maioria das considerações sobre a violência se concentra na criminalidade, cujo aumento quer denunciar. Mas essa progressão da</em> <em>violência criminal não foi provada e o que se assiste é, ao contrário, uma pacificação progressiva da sociedade; admitindo-se ou não, os costumes se</em> <em>civilizaram. O fato de a opinião pública preocupar-se com uma crescente insegurança não tem entretanto nada a ver com o volume efetivo da criminalidade, mas sim com as normas a partir das quais concebemos os fenômenos criminosos<strong>b</strong>. Ao contrário das sociedades do passado, as nossas estão habituadas a uma segurança cada vez maior,<strong>c</strong> que não depende só dos números da criminalidade, mas também e até mais da organização dos</em> <em>seguros e da previdência social, da homogeneidade de um espaço de livre circulação, da regulação de múltiplos aspectos da vida através do Estado.</em></p>\n<p><em>Sobre o pano de fundo de uma segurança crescente, os comportamentos criminosos são percebidos com uma ansiedade desproporcional em relação</em> <em>ao seu volume real. No entanto, isso não significa que a mudança das normas possa ser subestimada.</em></p>\n<p><em>Do ponto de vista histórico, é difícil dispor de informações quantitativas certas sobre um passado distante, mas nossa ignorância não é total;<strong>a</strong> em todo caso, tudo o que sabemos vai na mesma direção<strong>e</strong>: a violência é a marca registrada de períodos inteiros do passado<strong>d</strong>.</em></p>\n<span class=\"apoio-attrib\"><em>(Adaptado de: MICHAUD, Yves.<strong>A violência</strong>. Tradução de L. Garcia. São Paulo: Editora Ática,1989)</em></span>",
         "imagem": null,
-        "pergunta": "Dos seguintes trechos extraídos do texto, aquele cujo enunciado<strong><u>NÃO</u></strong> carrega marca da 1ª pessoa do plural é:",
+        "pergunta": "Dos seguintes trechos extraídos do texto, aquele cujo enunciado <strong>NÃO</strong> carrega marca da 1ª pessoa do plural é:",
         "alternativas": [
             "Do ponto de vista histórico, é difícil dispor de informações quantitativas certas sobre um passado distante, mas nossa ignorância não é total...",
             "... mas sim com as normas a partir das quais concebemos os fenômenos criminosos.",
@@ -737,7 +737,7 @@
         "texto_apoio_titulo": null,
         "texto_apoio": "<p>Atenção: Leia o trecho da crônica “Modéstia”, de Carlos Drummond de Andrade, para responder à questão.</p>\n<p>Certo Juca Ludovico, oficial de carpinteiro, acordou um dia com a alma transformada. Começou por faltar ao serviço, a que era assíduo.</p>\n<p>Surpreendendo a consorte, dirigiu-se ao botequim e pagou cerveja para todos. Juca não era forreta, mas a libação matinal e coletiva não tinha propósito. Aos que chegavam e inquiriam com o olhar, ele ia dizendo: “Abanquem-se e tomem parte na minha satisfação. Vão acontecer grandes coisas por meu arbítrio, e quero estar à altura dos acontecimentos”. Os ouvintes pasmavam e bebiam. Juca não entrava no miúdo, falava em honras, feitos e bens, sem particularizá-los, mas sentia-se que pisara a caçamba de altas cavalarias.</p>\n<p>O pior é que não endoidecera; estava dominado pelo Capeta, que no sono lhe inflara o apetite de glória. Raciocinava perfeitamente nas coisas triviais, insistindo porém em que sua vida mudara. Ofereceu emprego a um, deu a outro uma fazenda de gado. Pedia apenas que esperassem duas semanas, tempo bastante para receber do Banco da Inglaterra o ouro que ali devia estar à sua disposição, e que de boa mente partilharia com a multidão. Pode-se descrer do juízo de um homem que rasgue dinheiro, não porém do de outro que reparta dinheiro conosco.</p>\n<p>Disfarçado em fogueteiro, e por via das dúvidas embuçado na capa preta, o Diabo misturava-se com a turba, sorria, esfregava os cascos. Apenas dona Neném, senhora idosa e devota, olhava tudo de beiço reprovador, e interpelou-o: “Juca, meu sobrinho, de onde te vem tamanho poder?”. Ele não se deu por achado: “Ora, minha tia, então não vê que é de meu padrinho sr. são José? Ele me procurou esta noite e disse: Vai e faze brilhar o nosso nome. És a flor dos Josés, e por tua valia serei cultuado na terra toda”. “Pois eu duvido”, retrucou dona Neném. “Vamos entrar na igreja e conversar com são José.” Dona Neném, Juca e a multidão entraram de roldão. O altar do santo nem estava florido; era todo humildade e recato. Juca postou-se em relevo e soltou o verbo: “Aqui está, meu padrinho, a multidão que eu <u>trouxe</u> para servi-lo. Se o senhor me prestigiar, como espero, eles levarão sua imagem por toda parte e receberão grandezas. Faça um sinal com a ponta do dedo mindinho, e minha tia se convencerá”.</p>\n<p>O dedo de são José não se mexeu. “São José”, continuou Juca, “nosso trato está firme. Eu o estou cumprindo, agora é a sua vez. Preciso de meios para agir. A propaganda custa caro. Tenho de distribuir mercês a amigos e inimigos, atrair incrédulos. Depende do senhor, padrinho”.</p>\n<p>São José não respondia. “Será possível que o senhor não escute bem? Uma palavrinha sua, e irei a uma cadeia de rádio e televisão iniciar a campanha de esclarecimento universal.” O santo, na moita. “Ele está assim porque ainda não me lembrei de melhorar o seu altarzinho, ora veja! Fique tranquilo, meu santo. Vou fazer-lhe uma igreja de ouro e em volta construirei uma cidade inteira em sua honra; será a primeira do mundo e nela só habitarão os eleitos, sob minha chefia. Combinado? Agora mova o dedinho.” A expectativa era enorme. Dona Neném, trêmula, chegada ao altar, viu, horrorizada, mover-se, não o dedo, mas a mão inteira de são José. E estendendo-se o braço, a mão pousou no ombro de Juca. “Estão vendo?”, parecia dizer o olhar deste, pois a boca, maravilhada, não piava. E são José sorrindo, mansamente, disse estas palavras: “Juca, volte à oficina, pegue da enxó e da plaina e trabalhe como de costume. Essas coisas não lhe ficam bem, meu filho”. Ouviu-se um estouro no adro. Era o Diabo que explodia, de ódio.</p>\n<span class=\"apoio-attrib\"><em>(Adaptado de: ANDRADE, Carlos Drummond de. <strong>A bolsa e a vida</strong>. São Paulo: Companhia das Letras, 2012)</em></span>\n<p class=\"fcc-excerpt\"><em>Raciocinava perfeitamente nas coisas triviais, insistindo porém em que sua vida mudara. Ofereceu emprego a um, <u>deu</u> a outro uma fazenda de gado</em>.</p>\n<p class=\"fcc-excerpt\">verbal:</p>",
         "imagem": null,
-        "pergunta": "No trecho acima, o cronista relata alguns fatos ocorridos no passado. Um fato anterior a esse tempo passado está indicado <u>pela</u> seguinte forma\nverbal:",
+        "pergunta": "No trecho acima, o cronista relata alguns fatos ocorridos no passado. Um fato anterior a esse tempo passado está indicado pela seguinte forma\nverbal:",
         "alternativas": [
             "“Raciocinava”.",
             "“mudara”.",
@@ -962,7 +962,7 @@
         "texto_apoio_titulo": "Para responder a questão, baseie-se no texto abaixo.",
         "texto_apoio": "<p>Para responder a questão, baseie-se no texto abaixo.</p>\n<center class=\"apoio-title\"><strong>Retrato de um amigo</strong></center>\n<p><em>A cidade que era amada por nosso amigo continua a mesma: há algumas mudanças, mas coisa pouca. Nossa cidade se parece – só agora nos damos</em> <em>conta disso – com o amigo que perdemos e que a amava; ela é, assim como ele era, intratável em sua operosidade febril e obstinada; e é ao mesmo</em> <em>tempo desinteressada e disposta ao ócio e ao sonho.</em></p>\n<p><em>Na cidade que se parece com ele, sentimos nosso amigo reviver por todos os lados: em cada esquina e em cada canto achamos que de repente possa</em> <em>aparecer sua alta figura de capote escuro cintado, o rosto escondido na gola, o chapéu enterrado nos olhos. O amigo media a cidade com seu longo</em> <em>passo, obstinado e solitário. Ele entocava nos cafés mais apertados e fumarentos, enchia folhas e folhas com sua caligrafia larga e rápida, e celebrava a</em> <em>cidade em seus versos.</em></p>\n<p><em>Seus versos ressoam em nossos ouvidos quando retornamos à cidade ou quando pensamos nela. Nosso amigo vivia na cidade como um adolescente</em> <em>e até o final viveu assim. Seus dias eram longuíssimos como os dos adolescentes, e cheios de tempo; sabia achar espaço para estudar e escrever, para</em> <em>ganhar a vida e vadiar; e nós, que resfolegávamos divididos entre preguiça e produtividade, perdíamos horas na incerteza de decidirmos se éramos</em> <em>preguiçosos ou produtivos. Mesmo sua tristeza nos parecia meio juvenil, como a melancolia voluptuosa e distraída do rapaz que ainda não tocou a terra</em> <em>e se move no mundo árido e solitário dos sonhos.</em></p>\n<span class=\"apoio-attrib\">(Adaptado de GINZBURG, Natalia. As pequenas virtudes. Trad. Maurício Santana Dias. São Paulo: Cosac Naify, 2015, p. 24-26)</span>\n<p class=\"fcc-excerpt\"><em>Seus versos <u>ressoam</u> em nossos ouvidos quando <u>retornamos</u> à cidade ou quando <u>pensamos</u> nela</em>.</p>",
         "imagem": null,
-        "pergunta": "A frase acima ganhará uma nova e correta articulação temporal caso se substituam as formas sublinhadas <u>por</u>",
+        "pergunta": "A frase acima ganhará uma nova e correta articulação temporal caso se substituam as formas sublinhadas por",
         "alternativas": [
             "ressoavam − retornávamos − pensaríamos",
             "ressoariam − retornemos − pensássemos",
@@ -987,13 +987,13 @@
         "texto_apoio_titulo": "Leia a crônica <strong>O lendário país do <em>recall</em></strong>, de Moacyr Scliar.",
         "texto_apoio": "<p>Leia a crônica <strong>O lendário país do <em>recall</em></strong>, de Moacyr Scliar.</p>\n<p>Leitora manda boneca para <em>recall</em> e não a recebe de volta. Como explicar para uma criança que seus brinquedos foram embora há três meses e não voltaram? (Cotidiano, 25/02/2008) <em>“Minha querida dona: quem lhe escreve sou eu, a sua fiel e querida boneca, que você não vê há três meses. Sei que você sente muitas saudades, porque</em> <em>eu também sinto saudades de você. Lembro de você me pegando no colo, me chamando de filhinha, me dando papinha... Você era, e é, minha mãezinha</em> <em>querida, e é por isso que estou lhe mandando esta carta, por meio do cara que assina esta coluna e que, sendo escritor, acredita nas coisas da</em> <em>imaginação.</em></p>\n<p><em>Posso lhe dizer, querida, que vivi uma tremenda aventura, uma aventura que em vários momentos me deixou apavorada. Porque tive de viajar para o</em> <em>distante país do</em> recall <em>. Aposto que você nem sabia da existência desse lugar; eu, pelo menos, não sabia. Para lá fui enviada. Não só eu: bonecas</em> <em>defeituosas, ursinhos idem, eletrodomésticos que não funcionavam e peças de automóvel quebradas. Nós todos ali, na traseira de um gigantesco</em> <em>caminhão que andava, andava sem parar. Finalmente chegamos, e ali estávamos, no misterioso e, para mim, assustador país do</em> recall <em>. Um homem nos</em> <em>recebeu e anunciou, muito secamente, que o nosso destino em breve seria traçado: as bonecas que tivessem conserto seriam consertadas e mandadas</em> <em>de volta para os donos; quanto tempo isso levaria era imprevisível, mas três meses era o mínimo. Uma boneca que estava do meu lado, a Liloca,</em> <em>perguntou, com os olhos arregalados, o que aconteceria a quem não tivesse conserto. O homem não disse nada, mas seu sorriso sinistro falava por si.</em></p>\n<p><em>Passamos a noite num enorme pavilhão destinado especialmente às bonecas. Éramos centenas ali, algumas com probleminhas pequenos (um braço</em> <em>fora do lugar, por exemplo), outras já num estado lamentável. Estava muito claro que para várias de nós não haveria volta.</em></p>\n<p><em>Naquela noite conversei muito com minha amiga Liloca − sim, querida dona, àquela altura já éramos amigas. O infortúnio tinha nos unido. Outras</em> <em>bonecas juntaram-se a nós e logo formamos um grande grupo. Estávamos preocupadas com o que poderia nos suceder. De repente a Liloca gritou: ‘Mas gente, nós não somos obrigados a aceitar isso! Vamos fazer alguma coisa!’. Nós a olhamos, espantadas: fazer alguma coisa? Mas fazer o quê?</em></p>\n<p><em>Liloca tinha uma resposta: vamos tomar o poder. Vamos nos apossar do país do</em> recall <em>.</em></p>\n<p><em>No começo aquilo nos pareceu absurdo. Mas Liloca sabia do que estava falando. A mãe da dona dela tinha sido uma militante revolucionária e sempre</em> <em>falava nisso, na necessidade de mudar o mundo, de dar o poder aos mais fracos. Ora, dizia Liloca, ninguém mais fraco do que nós, pobres,</em> <em>desamparados e defeituosos brinquedos. Não deveríamos aguardar resignadamente que decidissem o que fazer com a gente.</em></p>\n<p><em>De modo, querida dona, que estamos aqui preparando a revolução. Breve estaremos governando o país do recall. Mas não se preocupe, eu a convidarei</em> <em>para me visitar. Você poderá vir a qualquer hora. E não precisará de</em> recall <em>para isso.”</em></p>\n<span class=\"apoio-attrib\">(Adaptado de: Moacyr Scliar. <strong>Histórias que os jornais não contam</strong>. Porto Alegre: L&PM, 2018)</span>\n<p class=\"fcc-excerpt\"><em>No começo aquilo nos <u>pareceu</u> absurdo. Mas Liloca <u>sabia</u> do que <u>estava falando.</u> A mãe da dona dela <u>tinha sido</u> uma militante revolucionária e sempre <u>falava</u> nisso, na necessidade de mudar o mundo, de dar o poder aos mais fracos.</em> (6o parágrafo)</p>\n<p class=\"fcc-excerpt\">forma verbal:</p>",
         "imagem": null,
-        "pergunta": "No trecho acima, a narradora-personagem relata fatos ocorridos no passado. Um fato anterior a esse tempo passado está indicado <u>pela</u> seguinte\nforma verbal:",
+        "pergunta": "No trecho acima, a narradora-personagem relata fatos ocorridos no passado. Um fato anterior a esse tempo passado está indicado pela seguinte\nforma verbal:",
         "alternativas": [
-            "<em><u>sabia</u></em>.",
-            "<em><u>pareceu</u></em>.",
-            "<em><u>tinha sido</u></em>.",
-            "<em><u>estava</u> falando</em>.",
-            "<em><u>falava</u></em>."
+            "<em>sabia</em>.",
+            "<em>pareceu</em>.",
+            "<em>tinha sido</em>.",
+            "<em>estava falando</em>.",
+            "<em>falava</em>."
         ],
         "correta": 2,
         "linkTec": "https://www.tecconcursos.com.br/questoes/2324030",
@@ -1039,11 +1039,11 @@
         "imagem": null,
         "pergunta": "<strong>*comborça</strong>: qualificação humilhante da amante de homem casado\nNo contexto, denota incerteza o verbo sublinhado em:",
         "alternativas": [
-            "“<em><u>A casa</u> em que eu <u>estava</u> hospedado <u>era</u> a do escrivão Meneses.</em>”",
-            "“<em>Não dizia mal de ninguém, <u>perdoava</u> tudo.</em>”",
-            "“<em>Tinha comigo um <u>romance,</u> os Três Mosqueteiros, velha tradução <u>creio</u> do Jornal do Comércio.</em>”",
-            "“<em>A família <u>recolheu-se</u> à hora do costume; eu meti-me na sala da frente, vestido e pronto.</em>”",
-            "“<em>Tinha três chaves <u>a porta; uma estava</u> com o escrivão, eu levaria outra, a terceira ficava em casa.</em>”"
+            "\"<em>A casa em que eu estava hospedado <u>era</u> a do escrivão Meneses.</em>\"",
+            "\"<em>Não dizia mal de ninguém, <u>perdoava</u> tudo.</em>\"",
+            "\"<em>Tinha comigo um romance, os Três Mosqueteiros, velha tradução <u>creio</u> do Jornal do Comércio.</em>\"",
+            "\"<em>A família <u>recolheu-se</u> à hora do costume; eu meti-me na sala da frente, vestido e pronto.</em>\"",
+            "\"<em>Tinha três chaves a porta; uma <u>estava</u> com o escrivão, eu levaria outra, a terceira ficava em casa.</em>\""
         ],
         "correta": 2,
         "linkTec": "https://www.tecconcursos.com.br/questoes/2152433",
@@ -1064,11 +1064,11 @@
         "imagem": null,
         "pergunta": "<strong>*comborça</strong>: qualificação humilhante da amante de homem casado\nO verbo em negrito deve sua flexão ao termo sublinhado em:",
         "alternativas": [
-            "“<em><strong>Tinha</strong> três chaves <u>a porta;</u> uma estava com o escrivão, eu levaria outra, a terceira ficava em casa.</em>”",
-            "“<em>A casa em que eu <strong><u>estava</u></strong> hospedado era a do escrivão Meneses, que fora casado, em primeiras núpcias, com uma de minhas primas.</em>”",
-            "“<em><strong>Chamavam</strong>-lhe “<u>a santa”,</u> e fazia jus ao título, tão facilmente suportava os esquecimentos do marido.</em>”",
-            "“<em>Naquela noite de Natal <strong>foi</strong><u>o escrivão</u> ao teatro.</em>”",
-            "“<em><strong>Tinha</strong> comigo <u>um romance,</u> os</em> Três Mosqueteiros <em>, velha tradução creio do Jornal do Comércio.</em>”"
+            "\"<em><strong>Tinha</strong> três chaves <u>a porta</u>; uma estava com o escrivão, eu levaria outra, a terceira ficava em casa.</em>\"",
+            "\"<em><u>A casa</u> em que eu <strong>estava</strong> hospedado era a do escrivão Meneses, que fora casado, em primeiras núpcias, com uma de minhas primas.</em>\"",
+            "\"<em><strong>Chamavam</strong>-lhe \"<u>a santa</u>\", e fazia jus ao título, tão facilmente suportava os esquecimentos do marido.</em>\"",
+            "\"<em><u>Naquela noite de Natal</u> <strong>foi</strong> o escrivão ao teatro.</em>\"",
+            "\"<em><strong>Tinha</strong> comigo <u>um romance</u>, os Três Mosqueteiros, velha tradução creio do Jornal do Comércio.</em>\""
         ],
         "correta": 0,
         "linkTec": "https://www.tecconcursos.com.br/questoes/2152444",
@@ -1087,7 +1087,7 @@
         "texto_apoio_titulo": "Para responder a questão, baseie-se no texto abaixo.",
         "texto_apoio": "<center class=\"apoio-title\"><strong>[Vida literária]</strong></center>\n<p><em>Aqueles que fazem versos e já atingiram a idade madura costumam receber cartas de outros que também os fazem, mas estão na casa dos vinte.</em></p>\n<p><em>Parece que esse é um dos prêmios (muito discutíveis) de envelhecer: ser solicitado pelos mais novos a dar opiniões sobre os vagidos do talento. O</em> <em>moço apresenta-se confiante, às vezes entusiástico, sempre respeitoso; o “mestre” responde benévolo, paciente, minucioso, interessado em</em> <em>pormenores biográficos, ocultando sua vaidade sob um verniz de simpatia: “Escreva sempre, meu filho.” A isto se chama vida literária.</em></p>\n<p><em>Sendo a literatura fenômeno socializante por excelência, contudo permanece fenômeno individual quanto à produção. E eu vos pergunto: pode a</em> <em>experiência do mais idoso servir à hesitação do jovem, dissolvê-la em certeza, encaminhá-la a rumo certo? Haverá utilidade nessa conversa de</em> <em>gerações?</em></p>\n<p><em>É certo que cinco ou dez anos depois a receita do mais velho foi esquecida e o mestre com ela. Sucede também que após esse lapso de tempo o</em> <em>mestre seja, não esquecido, mas negado. Ataca-se o mestre, descobre-se que ele o não é. Noventa (que digo? cem por cento) de nossas admirações da</em> <em>adolescência resolvem-se em indiferença, vergonha ou desprezo. Na força do adulto, vingase o homem das debilidades do período de crescimento</em> <em>físico e intelectual, negando o que adorara. Os mestres de poesia não escapam a essa contingência, e ao escreverem uma “carta ao jovem poeta”</em> <em>deveriam meditar bem na escolha das palavras e no prazo de validade do sortilégio.</em></p>\n<p><em>Mas o pessimismo da verificação não deve secar no homem de cinquenta o terno interesse pelo rapaz de vinte. O admirador juvenil é tão autêntico e</em> <em>honesto quanto o lapidador de vinte e cinco ou trinta. Cada idade tem sua moral e sua sensibilidade.</em></p>\n<span class=\"apoio-attrib\">(Adaptado de: ANDRADE, Carlos Drummond. Passeios na ilha. São Paulo: Cosac Naify, 2011, p. 113-114)</span>\n<p class=\"fcc-excerpt\">Eu vos pergunto: pode a experiência do mais velho servir às hesitações do jovem, <u>fazer o jovem</u> superar essas hesitações, <u>convencer o jovem</u> a não mais <u>render culto às hesitações?</u></p>",
         "imagem": null,
-        "pergunta": "Evitam-se as viciosas repetições do período acima substituindo-se os segmentos sublinhados, na ordem dada, <u>por</u>:",
+        "pergunta": "Evitam-se as viciosas repetições do período acima substituindo-se os segmentos sublinhados, na ordem dada, por:",
         "alternativas": [
             "fazê-lo − convencê-lo − lhes render culto",
             "fazer-lhe − convencer-lhe − render culto às mesmas",
@@ -1142,7 +1142,7 @@
             "<em>a prefeitura não <u>lhe</u> sente a falta</em>.",
             "<em>Ponderam-<u>lhe</u></em>:",
             "<em>Espanta-<u>se</u> com os direitos concedidos às empregadas</em>.",
-            "<em><u>diz-me</u> uma das filhas, sorrindo.</em>",
+            "<em>diz-<u>me</u> uma das filhas, sorrindo.</em>",
             "<em>Vocês <u>me</u> deixam esbodegado</em>."
         ],
         "correta": 0,
@@ -1164,11 +1164,11 @@
         "imagem": null,
         "pergunta": "Está correto o emprego de ambos os elementos sublinhados na frase:",
         "alternativas": [
-            "A racionalidade <u>de que</u> devemos nos basear evita decisões <u>incompreensíveis,</u> como legitimar uma sentença de morte <u>aonde</u> a reparação é nula.",
-            "Uma punição <u>de cuja</u> utilidade se estenda <u>à sociedade</u> é preferível <u>do que aquela</u> que nenhuma reparação traz em sua aplicação.",
-            "Ao contrário de uma sentença <u>na qual</u> decorrem benefícios sociais, <u>a condenação</u> à morte não <u>lhes</u> propicia a ninguém.",
-            "A legislação <u>à quem</u> cabe estipular <u>as punições</u> deve atentar <u>nas</u> consequências finais da aplicação das sanções.",
-            "Não faltam exemplos <u>com os quais</u> Voltaire lembra certas medidas <u>punitivas cujos</u> efeitos propiciam algo de bom para a sociedade."
+            "A racionalidade <u>de que</u> devemos nos basear evita decisões incompreensíveis, como legitimar uma sentença de morte <u>aonde</u> a reparação é nula.",
+            "Uma punição <u>de cuja</u> utilidade se estenda à sociedade é preferível <u>do que aquela</u> que nenhuma reparação traz em sua aplicação.",
+            "Ao contrário de uma sentença <u>na qual</u> decorrem benefícios sociais, a condenação à morte não <u>lhes</u> propicia a ninguém.",
+            "A legislação <u>à quem</u> cabe estipular as punições deve atentar <u>nas</u> consequências finais da aplicação das sanções.",
+            "Não faltam exemplos <u>com os quais</u> Voltaire lembra certas medidas punitivas <u>cujos</u> efeitos propiciam algo de bom para a sociedade."
         ],
         "correta": 4,
         "linkTec": "https://www.tecconcursos.com.br/questoes/2038514",
