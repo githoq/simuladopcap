@@ -1,11 +1,12 @@
 /**
  * GeneratorPage — Premium configurator.
  * Sticky CTA bar, refined steppers, gold-accent mode selector.
+ * Includes Padrão PC-AP preset (60 questões).
  */
-import { useState, useMemo, type ReactNode } from "react";
+import { useState, useMemo, useCallback, type ReactNode } from "react";
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
-import { Play, Minus, Plus, Trash2, Timer, Settings2, BookOpen } from "lucide-react";
+import { Play, Minus, Plus, Trash2, Timer, Settings2, BookOpen, Zap, CheckCircle2 } from "lucide-react";
 import { Button } from "../components/ui/Button";
 import { Badge } from "../components/ui/Badge";
 import { AmbientBackground } from "../components/ui/AmbientBackground";
@@ -19,6 +20,48 @@ interface GeneratorPageProps {
   questions: Question[];
   usedIds: string[];
   onStartExam: (exam: Exam) => void;
+}
+
+// ── Presets de prova ─────────────────────────────────────────────────────────
+interface Preset {
+  id:          string;
+  label:       string;
+  sublabel:    string;
+  totalQ:      number;
+  timeMinutes: number;
+  config:      Partial<Record<typeof DISCIPLINE_ORDER[number], number>>;
+}
+
+const PRESETS: Preset[] = [
+  {
+    id:          "padrao-pc-ap",
+    label:       "Padrão PC-AP",
+    sublabel:    "Edital oficial · Distribuição real das provas FCC",
+    totalQ:      60,
+    timeMinutes: 120,
+    config: {
+      "Língua Portuguesa":            10,
+      "Raciocínio Lógico-Matemático":  5,
+      "História e Geografia do Amapá": 5,
+      "Noções de Informática":          5,
+      "Direitos Humanos":               5,
+      "Direito Administrativo":         7,
+      "Direito Penal":                  8,
+      "Direito Processual Penal":       8,
+      "Direito Constitucional":         7,
+    },
+  },
+];
+
+// ── Helpers ───────────────────────────────────────────────────────────────────
+function cfgMatchesPreset(
+  cfg: Record<string, number>,
+  preset: Preset
+): boolean {
+  return DISCIPLINE_ORDER.every((d) => {
+    const expected = preset.config[d as keyof typeof preset.config] ?? 0;
+    return (cfg[d] ?? 0) === expected;
+  });
 }
 
 export default function GeneratorPage({ questions, usedIds, onStartExam }: GeneratorPageProps) {
@@ -52,6 +95,18 @@ export default function GeneratorPage({ questions, usedIds, onStartExam }: Gener
   const setDisc = (d: string, v: number) =>
     setCfg((p: Record<string, number>) => ({ ...p, [d]: Math.max(0, Math.min(avail[d] ?? 0, v)) }));
 
+  // ── Apply a preset, capping each discipline at available ───────────────────
+  const applyPreset = useCallback((preset: Preset) => {
+    const newCfg = Object.fromEntries(DISCIPLINE_ORDER.map((d) => {
+      const wanted  = preset.config[d as keyof typeof preset.config] ?? 0;
+      const maxAvail = avail[d] ?? 0;
+      return [d, Math.min(wanted, maxAvail)];
+    }));
+    setCfg(newCfg);
+    setTime(preset.timeMinutes);
+    setMode("prova");
+  }, [avail]);
+
   const handleStart = () => {
     if (total === 0) return;
     const exam = generateExam({ disciplineConfig: cfg, mode, timeMinutes: time }, questions, usedIds);
@@ -81,6 +136,123 @@ export default function GeneratorPage({ questions, usedIds, onStartExam }: Gener
             <p className="text-text-tertiary text-sm mt-2 font-sans tracking-tight max-w-md">
               Escolha o modo, defina o tempo e selecione as disciplinas para gerar uma prova personalizada.
             </p>
+          </StaggerItem>
+
+          {/* ── PRESETS ────────────────────────────────────────────────── */}
+          <StaggerItem>
+            <Section icon={Zap} title="Modelos de prova">
+              <div className="p-3 space-y-2">
+                {PRESETS.map((preset) => {
+                  const isActive    = cfgMatchesPreset(cfg, preset);
+                  const previewItems = DISCIPLINE_ORDER.map((d, i) => ({
+                    d, short: DISC_SHORT[i],
+                    color: DISC_COLORS[i],
+                    n: preset.config[d as keyof typeof preset.config] ?? 0,
+                  })).filter((x) => x.n > 0);
+
+                  return (
+                    <button
+                      key={preset.id}
+                      onClick={() => applyPreset(preset)}
+                      className={cn(
+                        "w-full text-left rounded-xl p-4 transition-all duration-200 group",
+                        isActive ? "" : "hover:bg-white/[0.02]"
+                      )}
+                      style={
+                        isActive
+                          ? {
+                              background:
+                                "linear-gradient(180deg, rgba(200,167,93,0.10) 0%, rgba(200,167,93,0.02) 100%)",
+                              border: "1px solid rgba(200,167,93,0.30)",
+                              boxShadow:
+                                "inset 0 1px 0 rgba(200,167,93,0.12), 0 0 24px -8px rgba(200,167,93,0.20)",
+                            }
+                          : {
+                              background:
+                                "linear-gradient(180deg, rgba(255,255,255,0.022) 0%, rgba(255,255,255,0.004) 100%)",
+                              border: "1px solid rgba(255,255,255,0.07)",
+                            }
+                      }
+                    >
+                      {/* Title row */}
+                      <div className="flex items-start justify-between gap-3 mb-3">
+                        <div>
+                          <div className="flex items-center gap-2 mb-0.5">
+                            {isActive ? (
+                              <CheckCircle2
+                                className="w-4 h-4 text-gold shrink-0"
+                                strokeWidth={2}
+                              />
+                            ) : (
+                              <div className="w-4 h-4 rounded-full border border-white/[0.15] shrink-0" />
+                            )}
+                            <span className={cn(
+                              "font-semibold text-sm font-sans tracking-tight",
+                              isActive ? "text-gold" : "text-text-primary"
+                            )}>
+                              {preset.label}
+                            </span>
+                            <span
+                              className="text-[9px] font-sans font-bold uppercase tracking-widest px-1.5 py-0.5 rounded-full"
+                              style={{
+                                background: isActive
+                                  ? "rgba(200,167,93,0.15)"
+                                  : "rgba(255,255,255,0.05)",
+                                color: isActive ? "#e4cc95" : "rgba(255,255,255,0.4)",
+                                border: isActive
+                                  ? "1px solid rgba(200,167,93,0.25)"
+                                  : "1px solid rgba(255,255,255,0.07)",
+                              }}
+                            >
+                              Oficial
+                            </span>
+                          </div>
+                          <p className="text-[11px] text-text-tertiary font-sans ml-6">
+                            {preset.sublabel}
+                          </p>
+                        </div>
+                        <div className="shrink-0 text-right">
+                          <div className={cn(
+                            "text-2xl font-mono font-bold tabular-nums leading-none",
+                            isActive ? "text-gold" : "text-text-secondary"
+                          )}>
+                            {preset.totalQ}
+                          </div>
+                          <div className="text-[10px] text-text-muted font-sans mt-0.5">
+                            questões · {preset.timeMinutes} min
+                          </div>
+                        </div>
+                      </div>
+
+                      {/* Distribution pills */}
+                      <div className="flex flex-wrap gap-1.5 ml-6">
+                        {previewItems.map(({ d, short, color, n }) => (
+                          <span
+                            key={d}
+                            className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-[10px] font-sans font-medium"
+                            style={{
+                              background: `${color}14`,
+                              border: `1px solid ${color}28`,
+                              color,
+                            }}
+                          >
+                            <span className="font-bold font-mono">{n}</span>
+                            <span className="opacity-80">{short}</span>
+                          </span>
+                        ))}
+                      </div>
+
+                      {/* Apply hint when not active */}
+                      {!isActive && (
+                        <div className="mt-2.5 ml-6 text-[10px] text-text-muted font-sans group-hover:text-text-tertiary transition-colors">
+                          Clique para aplicar este modelo
+                        </div>
+                      )}
+                    </button>
+                  );
+                })}
+              </div>
+            </Section>
           </StaggerItem>
 
           {/* Mode selector */}
