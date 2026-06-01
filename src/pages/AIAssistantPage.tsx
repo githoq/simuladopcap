@@ -394,8 +394,8 @@ export default function AIAssistantPage() {
         style={{
           background:
             "linear-gradient(180deg, rgba(6,8,11,0.5) 0%, rgba(6,8,11,0.95) 100%)",
-          backdropFilter: "blur(20px)",
-          WebkitBackdropFilter: "blur(20px)",
+          backdropFilter: "blur(14px)",
+          WebkitBackdropFilter: "blur(14px)",
         }}
       >
         <div className="max-w-2xl mx-auto">

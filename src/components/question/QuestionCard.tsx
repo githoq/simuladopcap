@@ -1,17 +1,9 @@
 /**
  * QuestionCard — FCC institutional exam rendering.
- *
- * Calibrated against real FCC printed exam booklets.
- * Compact, dense, academic — not a SaaS card.
- *
- * Spacing:
- *   - Card padding:  px-4 py-3 (was px-5 py-4)
- *   - Header:        px-4 py-2.5
- *   - Alt gap:       gap-y-1 (was space-y-1.5)
- *   - Body gap:      space-y-3 (was space-y-4)
+ * Compact, academic. Shows discipline chip in header for context.
  */
 
-import { useState, useCallback, type MouseEvent } from "react";
+import { useState, useCallback, memo, type MouseEvent } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Flag, ChevronLeft, ChevronRight, Eye, EyeOff, ExternalLink } from "lucide-react";
 import { ApoioBlock } from "./ApoioBlock";
@@ -21,7 +13,7 @@ import { Button } from "../ui/Button";
 import { sanitizeHTML } from "../../lib/sanitize";
 import { getRenderer } from "./FCCRenderer";
 import { cn } from "../../lib/utils";
-import { DISCIPLINE_ORDER } from "../../lib/constants";
+import { DISCIPLINE_ORDER, DISC_COLORS, DISC_SHORT } from "../../lib/constants";
 import type { ExamQuestion } from "../../types";
 
 export interface QuestionCardProps {
@@ -38,10 +30,16 @@ export interface QuestionCardProps {
   onNext?:     () => void;
   onPrev?:     () => void;
   onSkip?:     () => void;
-  key?:        string | number | null;
 }
 
-export function QuestionCard({
+// Resolve discipline color + short label
+function getDiscInfo(disciplina: string) {
+  const idx = DISCIPLINE_ORDER.indexOf(disciplina as typeof DISCIPLINE_ORDER[number]);
+  if (idx < 0) return { color: "#6B7280", label: disciplina.split(" ").slice(-1)[0] };
+  return { color: DISC_COLORS[idx], label: DISC_SHORT[idx] };
+}
+
+export const QuestionCard = memo(function QuestionCard({
   question, numero, total, userAnswer, isFlagged = false,
   isTreino = false, isExam = false, showResult = false,
   onAnswer, onFlag, onNext, onPrev, onSkip,
@@ -54,7 +52,7 @@ export function QuestionCard({
   const answered = localAnswer !== null;
   const isLast   = numero === total;
   const renderer = getRenderer(question.banca);
-
+  const disc     = getDiscInfo(question.disciplina);
 
   const handleAnswer = useCallback((idx: number) => {
     if (answered && !isTreino) return;
@@ -74,11 +72,10 @@ export function QuestionCard({
   return (
     <motion.div
       key={question.id}
-      // ── Restrained entry — no blur, no exaggerated Y ──────────────
-      initial={{ opacity: 0, x: 10 }}
+      initial={{ opacity: 0, x: 8 }}
       animate={{ opacity: 1, x: 0 }}
-      exit={{ opacity: 0, x: -6 }}
-      transition={{ duration: 0.22, ease: [0.4, 0, 0.2, 1] }}
+      exit={{ opacity: 0, x: -5 }}
+      transition={{ duration: 0.18, ease: [0.4, 0, 0.2, 1] }}
       className="w-full"
     >
       <div
@@ -86,29 +83,36 @@ export function QuestionCard({
         style={{
           background: "linear-gradient(180deg, rgba(255,255,255,0.022) 0%, rgba(255,255,255,0.004) 100%)",
           border: "1px solid rgba(255,255,255,0.07)",
-          boxShadow: "inset 0 1px 0 rgba(255,255,255,0.04), 0 4px 16px -6px rgba(0,0,0,0.35)",
+          boxShadow: "inset 0 1px 0 rgba(255,255,255,0.04), 0 4px 20px -6px rgba(0,0,0,0.4)",
         }}
       >
-
-        {/* ── Header ────────────────────────────────────────────────── */}
-        <div className="flex items-center justify-between px-5 py-2.5 border-b border-white/[0.05]">
-          <div className="flex items-center gap-2">
-            {/* Question counter only — no metadata */}
-            <span className="text-[10px] text-text-muted font-mono font-sans tabular-nums">
+        {/* ── Header ─────────────────────────────────────────────────── */}
+        <div className="flex items-center justify-between px-4 py-2 border-b border-white/[0.05]">
+          <div className="flex items-center gap-2.5">
+            {/* Question counter */}
+            <span className="text-[10px] text-text-muted font-mono tabular-nums">
               {String(numero).padStart(2, "0")}/{String(total).padStart(2, "0")}
+            </span>
+            {/* Discipline chip */}
+            <span
+              className="hidden sm:inline-flex items-center px-1.5 py-0.5 rounded text-[9px] font-sans font-semibold uppercase tracking-wide"
+              style={{
+                color: disc.color,
+                background: `${disc.color}18`,
+                border: `1px solid ${disc.color}30`,
+              }}
+            >
+              {disc.label}
             </span>
           </div>
 
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-1.5">
             {onFlag && (
               <button
                 onClick={() => onFlag(question.numero_simulado)}
                 className={cn(
-                  "w-5 h-5 flex items-center justify-center rounded",
-                  "transition-colors duration-150",
-                  isFlagged
-                    ? "text-gold"
-                    : "text-text-muted hover:text-text-secondary"
+                  "w-6 h-6 flex items-center justify-center rounded transition-colors duration-150",
+                  isFlagged ? "text-gold" : "text-text-muted hover:text-text-secondary"
                 )}
               >
                 <Flag className="w-3 h-3" fill={isFlagged ? "currentColor" : "none"} />
@@ -117,12 +121,9 @@ export function QuestionCard({
           </div>
         </div>
 
-        {/* ── Body — compact institutional spacing ──────────────────── */}
-        <div className="px-5 py-3 space-y-2">
-
-          {question.texto_apoio && (
-            <ApoioBlock question={question} isExam={isExam} />
-          )}
+        {/* ── Body ───────────────────────────────────────────────────── */}
+        <div className="px-4 py-3 space-y-2">
+          {question.texto_apoio && <ApoioBlock question={question} isExam={isExam} />}
 
           {question.imagem && (
             <div className="rounded border border-border-subtle overflow-hidden">
@@ -135,10 +136,8 @@ export function QuestionCard({
             </div>
           )}
 
-          {/* Question stem — institutional serif */}
           <div>{renderer.renderPergunta(question.pergunta)}</div>
 
-          {/* Alternatives — compact gap */}
           <div className="flex flex-col gap-y-1 pt-0.5">
             {question.alternativas.map((alt, idx) => (
               <AlternativeRow
@@ -155,8 +154,8 @@ export function QuestionCard({
           </div>
         </div>
 
-        {/* ── Footer ───────────────────────────────────────────────── */}
-        <div className="flex items-center justify-between px-5 py-2.5 border-t border-white/[0.05]">
+        {/* ── Footer ─────────────────────────────────────────────────── */}
+        <div className="flex items-center justify-between px-4 py-2 border-t border-white/[0.05]">
           <div className="flex items-center gap-1">
             {onPrev && (
               <Button variant="ghost" size="sm" onClick={onPrev} disabled={numero === 1}
@@ -177,10 +176,7 @@ export function QuestionCard({
               <Button
                 variant="ghost" size="sm"
                 onClick={() => setShowExplanation((v: boolean) => !v)}
-                icon={showExplanation
-                  ? <EyeOff className="w-3 h-3" />
-                  : <Eye className="w-3 h-3" />
-                }
+                icon={showExplanation ? <EyeOff className="w-3 h-3" /> : <Eye className="w-3 h-3" />}
               >
                 <span className="hidden sm:inline text-xs">Gabarito</span>
               </Button>
@@ -198,7 +194,6 @@ export function QuestionCard({
           </div>
         </div>
 
-        {/* ── Link TecConcursos — extremamente discreto ─────────────── */}
         {question.linkTec && (
           <div className="flex justify-end px-4 pb-2">
             <a
@@ -206,7 +201,7 @@ export function QuestionCard({
               target="_blank"
               rel="noopener noreferrer"
               onClick={(e: MouseEvent) => e.stopPropagation()}
-              className="flex items-center gap-1 text-[11px] text-white/[0.28] hover:text-white/[0.55] transition-colors duration-150 font-sans select-none"
+              className="flex items-center gap-1 text-[10px] text-white/[0.22] hover:text-white/[0.5] transition-colors duration-150 font-sans"
             >
               <ExternalLink className="w-2.5 h-2.5" aria-hidden />
               <span>Ver questão original</span>
@@ -215,22 +210,22 @@ export function QuestionCard({
         )}
       </div>
 
-      {/* ── Explanation ──────────────────────────────────────────────── */}
+      {/* ── Gabarito expandido ─────────────────────────────────────── */}
       <AnimatePresence>
         {showExplanation && (
           <motion.div
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
-            transition={{ duration: 0.20, ease: [0.4, 0, 0.2, 1] }}
+            transition={{ duration: 0.18, ease: [0.4, 0, 0.2, 1] }}
             className="mt-1.5 overflow-hidden"
           >
-            <div className="rounded border border-white/[0.07] bg-white/[0.025] px-3 py-2">
-              <p className="text-[11px] font-medium text-text-muted uppercase tracking-wide mb-1 font-sans">
+            <div className="rounded border border-emerald-500/20 bg-emerald-500/[0.04] px-3 py-2">
+              <p className="text-[10px] font-medium text-emerald-400/70 uppercase tracking-wide mb-1 font-sans">
                 Gabarito
               </p>
               <p className="text-sm font-sans">
-                <strong className="font-semibold text-text-secondary">
+                <strong className="font-semibold text-emerald-300">
                   {String.fromCharCode(65 + question.correta)}
                 </strong>
                 {" — "}
@@ -246,4 +241,4 @@ export function QuestionCard({
       </AnimatePresence>
     </motion.div>
   );
-}
+});

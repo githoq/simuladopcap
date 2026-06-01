@@ -62,9 +62,9 @@ export function NavBar({ qCount = 0 }: { qCount?: number }) {
                     className="absolute inset-0 rounded-xl"
                     style={{
                       background:
-                        "linear-gradient(180deg, rgba(200,167,93,0.10) 0%, rgba(200,167,93,0.02) 100%)",
+                        "linear-gradient(180deg, rgba(200,167,93,0.13) 0%, rgba(200,167,93,0.03) 100%)",
                       boxShadow:
-                        "inset 0 0 0 1px rgba(200,167,93,0.18)",
+                        "inset 0 0 0 1px rgba(200,167,93,0.22)",
                     }}
                     transition={{ type: "spring", stiffness: 400, damping: 30 }}
                   />

@@ -94,8 +94,8 @@ export default function ExamPage({ exam, onFinish }: ExamPageProps) {
         className="fixed top-0 left-0 right-0 z-30"
         style={{
           background: "linear-gradient(180deg, rgba(6,8,11,0.92) 0%, rgba(6,8,11,0.85) 100%)",
-          backdropFilter: "blur(20px) saturate(160%)",
-          WebkitBackdropFilter: "blur(20px) saturate(160%)",
+          backdropFilter: "blur(14px) saturate(160%)",
+          WebkitBackdropFilter: "blur(14px) saturate(160%)",
           borderBottom: "1px solid rgba(255,255,255,0.06)",
         }}
       >

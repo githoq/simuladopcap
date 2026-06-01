@@ -9,14 +9,14 @@
  *  - Premium CTA with shimmer
  */
 import { useRef, type MouseEvent, type ComponentType } from "react";
-import { motion, useScroll, useTransform } from "framer-motion";
+import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
 import { ArrowRight, Sparkles, Activity, Clock, BookOpen, Target } from "lucide-react";
 import { AmbientBackground } from "../components/ui/AmbientBackground";
 
 const STATS = [
-  { label: "Questões FCC", value: "741" },
-  { label: "Disciplinas",  value: "8" },
+  { label: "Questões FCC", value: "3.851" },
+  { label: "Disciplinas",  value: "9" },
   { label: "Modos",        value: "3" },
 ];
 
@@ -29,9 +29,6 @@ const PROOF = [
 export default function LandingPage() {
   const navigate = useNavigate();
   const containerRef = useRef<HTMLDivElement>(null);
-  const { scrollY } = useScroll();
-  const heroY = useTransform(scrollY, [0, 500], [0, 100]);
-  const heroOpacity = useTransform(scrollY, [0, 300], [1, 0.2]);
 
   return (
     <div
@@ -44,7 +41,7 @@ export default function LandingPage() {
 
       {/* HERO */}
       <motion.section
-        style={{ y: heroY, opacity: heroOpacity }}
+
         className="relative z-10 min-h-screen flex flex-col items-center justify-center px-6 pt-24 pb-12"
       >
         {/* Top status badge */}
@@ -117,7 +114,7 @@ export default function LandingPage() {
           className="text-center font-sans text-base sm:text-lg max-w-xl mx-auto mb-12 leading-relaxed tracking-tight"
           style={{ color: "rgba(255,255,255,0.55)" }}
         >
-          Plataforma cinematográfica de simulados para a Polícia Civil do Amapá.
+          O banco mais completo de questões FCC para a Polícia Civil do Amapá.
           Banco com <span className="text-text-primary font-medium">741 questões FCC</span> originais e analytics profundo.
         </motion.p>
 

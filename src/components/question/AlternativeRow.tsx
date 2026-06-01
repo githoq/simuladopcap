@@ -1,15 +1,9 @@
 /**
- * AlternativeRow — Institutional FCC exam alternatives.
- *
- * Design target: Like a printed FCC exam booklet.
- * - Compact spacing: py-1.5 px-2.5
- * - NO hover lift, NO scale, NO glow
- * - State changes via border-color + background only
- * - Underline in alternatives: text-decoration: underline (never faked)
- * - Georgia serif content via .fcc-alt-text
+ * AlternativeRow — FCC institutional alternatives.
+ * Pure CSS transitions — no Framer Motion (was 5 instances per question).
+ * State feedback via border + background only. No transform/scale.
  */
 
-import { motion } from "framer-motion";
 import { Check, X } from "lucide-react";
 import { getRenderer } from "./FCCRenderer";
 import { cn } from "../../lib/utils";
@@ -28,30 +22,25 @@ export interface AlternativeRowProps {
   key?:       string | number | null;
 }
 
-// ── Pure CSS state styles — no transform, no glow ────────────────────
 const ROW: Record<AltState, string> = {
-  // Idle: invisible container, barely perceptible hover
   idle:
-    "border-white/[0.05] bg-transparent text-text-secondary " +
-    "hover:border-white/[0.08] hover:bg-white/[0.02] hover:text-text-primary",
-  // Selected: barely perceptible gold — institutional acknowledgment only
+    "border-white/[0.06] bg-transparent text-text-secondary " +
+    "hover:border-white/[0.11] hover:bg-white/[0.025] hover:text-text-primary",
   selected:
-    "border-[rgba(200,167,93,0.38)] bg-[rgba(200,167,93,0.035)] text-text-primary",
-  // Correct/wrong: neutral institutional tones, no color spectacle
+    "border-[rgba(200,167,93,0.42)] bg-[rgba(200,167,93,0.04)] text-text-primary",
   correct:
-    "border-white/[0.12] bg-white/[0.04] text-text-primary",
+    "border-emerald-500/30 bg-emerald-500/[0.06] text-text-primary",
   wrong:
-    "border-white/[0.06] bg-transparent text-text-tertiary",
+    "border-rose-500/20 bg-rose-500/[0.04] text-text-tertiary line-through decoration-rose-500/30",
   revealed:
     "border-white/[0.10] bg-white/[0.03] text-text-secondary",
 };
 
 const LETTER: Record<AltState, string> = {
-  // Dry, institutional letter badges
-  idle:     "bg-white/[0.03]  text-text-muted    border border-white/[0.06]",
-  selected: "bg-[rgba(200,167,93,0.45)] text-bg-base border-transparent",
-  correct:  "bg-white/[0.15]  text-text-primary  border-transparent",
-  wrong:    "bg-white/[0.05]  text-text-muted    border-transparent",
+  idle:     "bg-white/[0.03]  text-text-muted    border border-white/[0.07]",
+  selected: "bg-[rgba(200,167,93,0.5)] text-[#06080B] border-transparent font-bold",
+  correct:  "bg-emerald-500/25 text-emerald-300   border-transparent",
+  wrong:    "bg-rose-500/15    text-rose-400       border-transparent",
   revealed: "bg-white/[0.10]  text-text-secondary border-transparent",
 };
 
@@ -64,24 +53,20 @@ export function AlternativeRow({
   const canClick = state === "idle" && !disabled;
 
   return (
-    <motion.button
+    <button
       onClick={canClick ? onClick : undefined}
-      // ── No transform animations — opacity entry only ──────────────
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 0.15, delay: index * 0.025 }}
       className={cn(
-        // ── Institutional compact sizing — py-1.5 px-2.5 ───────────
         "w-full flex items-baseline gap-2.5 px-2.5 py-1.5 rounded-md",
         "border text-left",
-        // ── Transition: color + border only, 150ms ──────────────────
-        "transition-[border-color,background-color,color] duration-150",
+        "transition-[border-color,background-color,color,opacity] duration-150",
         "focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gold-subtle",
+        "alt-entry",
         ROW[state],
         disabled && state === "idle" ? "opacity-40 cursor-not-allowed" : "cursor-pointer"
       )}
+      style={{ animationDelay: `${index * 30}ms` }}
     >
-      {/* Letter — compact, matches FCC exam convention */}
+      {/* Letter badge */}
       <span
         className={cn(
           "flex-shrink-0 w-5 h-5 rounded text-[11px] font-semibold font-sans",
@@ -98,8 +83,8 @@ export function AlternativeRow({
         }
       </span>
 
-      {/* Content — institutional Georgia serif via .fcc-alt-text ──── */}
+      {/* Content */}
       <span className="flex-1">{renderer.renderAlt(content)}</span>
-    </motion.button>
+    </button>
   );
 }

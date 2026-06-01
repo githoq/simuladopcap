@@ -11,7 +11,7 @@ import { Badge } from "../components/ui/Badge";
 import { AmbientBackground } from "../components/ui/AmbientBackground";
 import { StaggerList, StaggerItem } from "../components/motion/StaggerList";
 import { generateExam } from "../lib/exam";
-import { DISCIPLINE_ORDER, DISC_COLORS } from "../lib/constants";
+import { DISCIPLINE_ORDER, DISC_COLORS, DISC_SHORT } from "../lib/constants";
 import { cn } from "../lib/utils";
 import type { Question, Exam } from "../types";
 
@@ -172,46 +172,50 @@ export default function GeneratorPage({ questions, usedIds, onStartExam }: Gener
               <div>
                 {DISCIPLINE_ORDER.map((disc, i) => {
                   const color = DISC_COLORS[i];
+                  const shortLabel = DISC_SHORT[i];
                   const val = cfg[disc] ?? 0;
                   const max = avail[disc] ?? 0;
                   const allMax = allAvail[disc] ?? 0;
                   const active = val > 0;
                   return (
-                    <motion.div
+                    <div
                       key={disc}
-                      initial={{ opacity: 0 }}
-                      animate={{ opacity: 1 }}
-                      transition={{ delay: i * 0.03 }}
                       className={cn(
-                        "flex items-center gap-3 px-5 py-3.5 border-b border-white/[0.04] last:border-0 transition-colors",
-                        active && "bg-white/[0.015]"
+                        "flex items-center gap-3 px-4 py-3 border-b border-white/[0.04] last:border-0 transition-colors duration-150",
+                        active && "bg-white/[0.02]"
                       )}
                     >
+                      {/* Color dot with glow when active */}
                       <div
-                        className="w-2 h-2 rounded-full shrink-0"
+                        className="w-2 h-2 rounded-full shrink-0 transition-shadow duration-200"
                         style={{
                           background: color,
-                          boxShadow: active ? `0 0 8px ${color}` : "none",
+                          boxShadow: active ? `0 0 6px ${color}99` : "none",
                         }}
                       />
                       <div className="flex-1 min-w-0">
-                        <div className={cn("text-sm font-sans truncate tracking-tight", active ? "text-text-primary" : "text-text-secondary")}>
-                          {disc}
+                        <div className={cn(
+                          "text-sm font-sans truncate tracking-tight leading-tight",
+                          active ? "text-text-primary" : "text-text-secondary"
+                        )}>
+                          <span className="hidden sm:inline">{disc}</span>
+                          <span className="sm:hidden">{shortLabel}</span>
                         </div>
-                        <div className="text-[11px] text-text-tertiary font-sans">
-                          {max} disponíveis <span className="text-text-muted">· {allMax} total</span>
+                        <div className="text-[11px] text-text-tertiary font-sans mt-0.5">
+                          {max > 0 ? <><span style={{ color }}>{max}</span> disponíveis</> : <span className="text-rose-400/70">Esgotadas</span>}
+                          <span className="text-text-muted"> · {allMax} total</span>
                         </div>
                       </div>
-                      <div className="flex items-center gap-1 shrink-0">
+                      <div className="flex items-center gap-0.5 shrink-0">
                         <button
                           onClick={() => setDisc(disc, val - 1)}
                           disabled={val === 0}
-                          className="w-8 h-8 rounded-lg flex items-center justify-center text-text-secondary disabled:opacity-30 disabled:cursor-not-allowed enabled:hover:bg-white/[0.06] enabled:hover:text-text-primary transition-colors duration-150"
+                          className="w-7 h-7 rounded-lg flex items-center justify-center text-text-secondary disabled:opacity-25 disabled:cursor-not-allowed enabled:hover:bg-white/[0.07] enabled:hover:text-text-primary transition-colors duration-150"
                         >
-                          <Minus className="w-3.5 h-3.5" />
+                          <Minus className="w-3 h-3" />
                         </button>
                         <span className={cn(
-                          "w-9 text-center font-mono text-sm font-semibold tabular-nums",
+                          "w-8 text-center font-mono text-sm font-semibold tabular-nums",
                           active ? "text-gold" : "text-text-muted"
                         )}>
                           {val}
@@ -220,14 +224,14 @@ export default function GeneratorPage({ questions, usedIds, onStartExam }: Gener
                           onClick={() => setDisc(disc, val + 1)}
                           disabled={val >= max}
                           className={cn(
-                            "w-8 h-8 rounded-lg flex items-center justify-center transition-all duration-150 disabled:opacity-30 disabled:cursor-not-allowed",
-                            "text-text-secondary enabled:hover:bg-white/[0.06] enabled:hover:text-gold"
+                            "w-7 h-7 rounded-lg flex items-center justify-center transition-colors duration-150 disabled:opacity-25 disabled:cursor-not-allowed",
+                            "text-text-secondary enabled:hover:bg-white/[0.07] enabled:hover:text-gold"
                           )}
                         >
-                          <Plus className="w-3.5 h-3.5" />
+                          <Plus className="w-3 h-3" />
                         </button>
                       </div>
-                    </motion.div>
+                    </div>
                   );
                 })}
               </div>
@@ -252,8 +256,8 @@ export default function GeneratorPage({ questions, usedIds, onStartExam }: Gener
           className="mx-3 sm:mx-auto sm:max-w-2xl rounded-2xl p-3 flex items-center gap-3 mb-3"
           style={{
             background: "linear-gradient(180deg, rgba(15,20,27,0.92) 0%, rgba(11,15,20,0.96) 100%)",
-            backdropFilter: "blur(20px) saturate(160%)",
-            WebkitBackdropFilter: "blur(20px) saturate(160%)",
+            backdropFilter: "blur(14px) saturate(160%)",
+            WebkitBackdropFilter: "blur(14px) saturate(160%)",
             border: "1px solid rgba(255,255,255,0.08)",
             boxShadow:
               "inset 0 1px 0 rgba(255,255,255,0.06), 0 24px 48px -16px rgba(0,0,0,0.6), 0 8px 24px rgba(0,0,0,0.4)",

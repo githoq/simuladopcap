@@ -180,7 +180,7 @@ export default function FocusPage({ exam, onFinish }: FocusPageProps) {
                 isTreino={isTreino}
               isExam={true}
                 showResult={false}
-                onAnswer={(num, idx) => setAnswers((a: Record<number, number | null>) => ({ ...a, [num]: idx }))}
+                onAnswer={(num: number, idx: number) => setAnswers((a: Record<number, number | null>) => ({ ...a, [num]: idx }))}
                 onPrev={cur > 0          ? () => setCur((c: number) => c - 1) : undefined}
                 onNext={cur < total - 1  ? () => setCur((c: number) => c + 1) : undefined}
               />

@@ -42,7 +42,7 @@ export function FloatingNav({ onMenuOpen }: FloatingNavProps) {
       <div className="relative">
         <div
           aria-hidden
-          className="absolute inset-0 rounded-full blur-2xl opacity-60 pointer-events-none"
+          className="absolute inset-0 rounded-full blur-xl opacity-60 pointer-events-none"
           style={{
             background:
               "linear-gradient(90deg, rgba(124,92,255,0.15), rgba(200,167,93,0.12), rgba(62,215,194,0.10))",
@@ -57,8 +57,8 @@ export function FloatingNav({ onMenuOpen }: FloatingNavProps) {
           style={{
             background:
               "linear-gradient(180deg, rgba(15,20,27,0.85) 0%, rgba(11,15,20,0.92) 100%)",
-            backdropFilter: "blur(24px) saturate(180%)",
-            WebkitBackdropFilter: "blur(24px) saturate(180%)",
+            backdropFilter: "blur(18px) saturate(160%)",
+            WebkitBackdropFilter: "blur(18px) saturate(160%)",
             boxShadow:
               "0 1px 0 rgba(255,255,255,0.06) inset, " +
               "0 24px 64px -16px rgba(0,0,0,0.7), " +
